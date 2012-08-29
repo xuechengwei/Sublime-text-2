@@ -1,0 +1,30 @@
+{
+	"auto_upgrade_last_run": 1346201379,
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"BracketHighlighter",
+		"Case Conversion",
+		"ChangeQuotes",
+		"CodeIgniter Snippets",
+		"CSSTidy",
+		"DetectSyntax",
+		"HTML Compressor",
+		"HTML5",
+		"IndentGuides",
+		"jQuery",
+		"JsFormat",
+		"JsMinifier",
+		"Package Control",
+		"Prefixr",
+		"SideBarEnhancements",
+		"Sublime-HTMLPrettify",
+		"SublimeLinter",
+		"Tag",
+		"Theme - Soda",
+		"TrailingSpaces",
+		"YUI Compressor",
+		"ZenCoding"
+	]
+}

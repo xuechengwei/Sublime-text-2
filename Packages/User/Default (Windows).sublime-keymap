@@ -1,0 +1,10 @@
+[
+	{"args": {"doctype": "xt"},"command": "set_html_syntax_and_insert_skel", "keys": ["ctrl+alt+shift+h"]},
+	{ "keys": ["ctrl+super+t"], "command": "delete_trailing_spaces" },
+	{ "keys": ["ctrl+alt+a"], "command": "alignment" },
+	{ "keys": ["ctrl+alt+x"], "command": "prefixr" },
+	{ "keys": ["ctrl+shift+'"], "command": "change_quotes" },
+	{ "keys": ["ctrl+q"], "command": "close_window" },
+	{ "keys": ["ctrl+shift+w"], "command": "close_all" },
+	{ "keys": ["ctrl+alt+x"], "command": "prefixr" }
+]
