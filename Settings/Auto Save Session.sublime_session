@@ -1,304 +1,19 @@
 {
 	"folder_history":
 	[
+		"/Z/xue/nfl0906.com",
+		"/C/Documents and Settings/Administrator/Desktop/0905-2-nfl",
+		"/C/Documents and Settings/Administrator/Desktop/newSite2",
+		"/C/Documents and Settings/Administrator/Desktop/newSite1",
 		"/C/Documents and Settings/Administrator/Desktop",
 		"/C/Documents and Settings/Administrator/desktop/44",
 		"/D/wamp/www"
 	],
-	"last_window_id": 6,
+	"last_window_id": 7,
 	"settings":
 	{
 		"new_window_height": 583.0,
 		"new_window_settings":
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
-				]
-			},
-			"build_system": "",
-			"command_palette":
-			{
-				"height": 375.0,
-				"selected_items":
-				[
-					[
-						"syntax",
-						"Set Syntax: C++"
-					],
-					[
-						"pip",
-						"Package Control: Install Package"
-					],
-					[
-						"tidy",
-						"Tidy CSS"
-					],
-					[
-						"lis",
-						"Package Control: List Packages"
-					],
-					[
-						"pi",
-						"Package Control: Install Package"
-					],
-					[
-						"listp",
-						"Package Control: List Packages"
-					],
-					[
-						"tra",
-						"Trailing Spaces: Delete Trailing Spaces"
-					]
-				],
-				"width": 514.0
-			},
-			"console":
-			{
-				"height": 153.0
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"file_history":
-			[
-				"/C/Documents and Settings/Administrator/桌面/Your Store.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/site/css/style.css",
-				"/C/Documents and Settings/Administrator/Desktop/site/css/css.css",
-				"/D/wamp/www/js/ajax.js",
-				"/D/php/php.ini",
-				"/D/Apache2.2/conf/httpd.conf",
-				"/D/wamp/www/index.php",
-				"/D/Program Files/Vim/README.md",
-				"/E/Downloads/imsky-holder-v1.3-0-g18c9e38/imsky-holder-18c9e38/README.md",
-				"/E/Downloads/tpope-vim-pathogen-v2.0-21-g5e3fdd3/tpope-vim-pathogen-5e3fdd3/README.markdown",
-				"/D/Program Files/Vim/.gitignore",
-				"/D/Program Files/Vim/zencoding-vim/README.mkd",
-				"/C/Documents and Settings/Administrator/.ssh/id_rsa.pub",
-				"/E/Downloads/easymotion-1.3-0/.gitignore",
-				"/D/Program Files/Vim/_vimrc",
-				"/C/Documents and Settings/Administrator/desktop/_vimrc",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-				"/C/Documents and Settings/Administrator/desktop/awsomeProject/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/awsomeProject1/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/caonimei/index.html",
-				"/D/wamp/www/testmysql.php",
-				"/C/Documents and Settings/Administrator/Desktop/gittest/css/reset.css",
-				"/c/Documents and Settings/Administrator/desktop/testsite/index.html",
-				"/C/Documents and Settings/Administrator/desktop/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/gittest/.git/description",
-				"/C/Documents and Settings/Administrator/Desktop/gittest/.git/config",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
-				"/C/Documents and Settings/Administrator/Local Settings/Application Data/Google/Chrome/Application/21.0.1180.75/Extensions/external_extensions.json",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/resources.py",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/html_matcher.py",
-				"/C/Documents and Settings/Administrator/desktop/44/css/list.css",
-				"/C/Documents and Settings/Administrator/desktop/44/list.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/ZenCoding.tmLanguage",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/sublimezenplugin.py",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/sublimezenplugin.pyc",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/sublimezen.py",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/dynamicsnippets.py",
-				"/E/Mac/Mac OS X Lion/FreeBSD.vmx",
-				"/D/Program Files/goagent/local/proxy.ini",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-				"/C/WINDOWS/system32/drivers/etc/hosts",
-				"/E/Downloads/Mac OS X Snow Leopard 10.6.8 VMware Image [Ultimate Build]/Mac OS X Snow Leopard/Mac OS X Snow Leopard.vmx",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/Mac OS X Lion.vmx",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/vmware-0.log",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/vmware-1.log",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/vmware-2.log",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/vmware.log",
-				"/E/Downloads/Mac OS X Lion/Mac OS X 10.7.vmx",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/E/Downloads/Mac OS X Lion/Mac OSX 10.7.vmx",
-				"/C/Documents and Settings/Administrator/My Documents/My Virtual Machines/Mac10.7/Mac10.7.vmx",
-				"/C/Documents and Settings/Administrator/My Documents/My Virtual Machines/FreeBSD/FreeBSD.vmx",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ChangeQuotes/Default.sublime-commands",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ChangeQuotes/Example.sublime-keymap",
-				"/E/Downloads/unlock-all-v110/unlock-all-v110/readme.txt",
-				"/C/Documents and Settings/Administrator/My Documents/My Virtual Machines/Mac OS X_Lion/Mac OS X_Lion.vmx",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-				"/D/test/index.thml",
-				"/C/Documents and Settings/Administrator/桌面/index.html",
-				"/D/wamp/www/CodeIgniter/index.php",
-				"/C/WINDOWS/Resources/Themes/X/Cursor/Pinwheel.ani",
-				"/D/test/index.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Prefixr/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/桌面/style.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/Default.sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/begin.sublime-snippet",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/yhreset.sublime-snippet",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/ggjq.sublime-snippet",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/BracketHighlighter.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Tag/Tag Package.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/TrailingSpaces/MIT-LICENSE",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/TrailingSpaces/Default.sublime-commands",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/TrailingSpaces/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/TrailingSpaces/package-metadata.json",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/TrailingSpaces/trailing_spaces.pyc",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/TrailingSpaces/trailing_spaces.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/TrailingSpaces/trailing_spaces.py",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zen-coding.sublime-settings",
-				"/C/Documents and Settings/Administrator/桌面/fdsa.txt",
-				"/C/Documents and Settings/Administrator/桌面/fdsa"
-			],
-			"find":
-			{
-				"height": 35.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-					"./Home page_files",
-					"extension",
-					"doc_root",
-					"#loadmodule",
-					"loadmodule",
-					"documentroot",
-					"Runtime Path Manipulation",
-					":Vedit",
-					".com",
-					"com",
-					"^\\n",
-					"8/22/2013",
-					"Edit Zone | Advanced Settings\n14/100\n0%",
-					"back",
-					"http://www.wholesalenfljerseyse.com/\nhttp://www.wholesalenfljerseyse.com/\nwholesalenfljerseyse",
-					"http://www.wholesalenfljerseyse.com/\nhttp://www.wholesalenfljerseyse.com/\nwholesalenfljerseyse.com",
-					"wholesalenfljerseysk.com",
-					"www.2012nbajerseysstore.com\n",
-					"一",
-					"www.cheapusanhljerseysonline.com",
-					"The CPU has been disabled by the guest operating system. Power off or reset the virtual machine.",
-					"cpu has",
-					"paevm",
-					"keyboard.vusb",
-					"keyboard.vusb.enable",
-					"gue",
-					"quotes",
-					"ctrl+shift+",
-					"ctrl+shift+'",
-					"close all",
-					"ctrl+shift+space",
-					"trailing",
-					"trailing_space",
-					"space",
-					"trailing",
-					"space",
-					"theme"
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-					"images",
-					"js",
-					"css",
-					""
-				],
-				"reverse": false,
-				"show_context": true,
-				"use_buffer2": true,
-				"whole_word": false,
-				"wrap": false
-			},
-			"incremental_find":
-			{
-				"height": 0.0
-			},
-			"input":
-			{
-				"height": 37.0
-			},
-			"layout":
-			{
-				"cells":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					]
-				],
-				"cols":
-				[
-					0.0,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
-			},
-			"menu_visible": true,
-			"output.exec":
-			{
-				"height": 126.0
-			},
-			"replace":
-			{
-				"height": 66.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-					[
-						"",
-						"/E/Downloads/Mac OS X Snow Leopard 10.6.8 VMware Image [Ultimate Build]/Mac OS X Snow Leopard/Mac OS X Snow Leopard.vmx"
-					]
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 500.0,
-				"selected_items":
-				[
-				],
-				"width": 380.0
-			},
-			"show_minimap": false,
-			"show_open_files": true,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 150.0,
-			"status_bar_visible": true
-		},
-		"new_window_width": 1095.0
-	},
-	"windows":
-	[
 		{
 			"auto_complete":
 			{
@@ -322,47 +37,6 @@
 					]
 				]
 			},
-			"buffers":
-			[
-				{
-					"contents": "192.168.1.212 www.domainweb.com\n127.0.0.1 localhost\n\n127.0.0.1       activate.adobe.com\n127.0.0.1       practivate.adobe.com\n127.0.0.1       ereg.adobe.com\n127.0.0.1       activate.wip3.adobe.com\n127.0.0.1       wip3.adobe.com\n127.0.0.1       3dns-3.adobe.com\n127.0.0.1       3dns-2.adobe.com\n127.0.0.1       adobe-dns.adobe.com\n127.0.0.1       adobe-dns-2.adobe.com\n127.0.0.1       adobe-dns-3.adobe.com\n127.0.0.1       ereg.wip3.adobe.com\n127.0.0.1       activate-sea.adobe.com\n127.0.0.1       wwis-dubc1-vip60.adobe.com\n127.0.0.1       activate-sjc0.adobe.com\n127.0.0.1       localhost\n\n127.0.0.1 www.phpadmin127.com\n127.0.0.1 www.2012nfljerseyschinacity.com\n\n\n208.98.29.130 www.trxsuspensiontrainingshop.com\n208.98.29.130 www.trxsuspensiontrainingstore.com\n208.98.29.130 www.cheapnflnow.com\n\n208.98.29.130 www.cheapusajerseyshome.com\n208.98.29.130 www.authenticnfljerseyonline.com\n208.98.29.130 www.chinausajerseysview.com\n208.98.29.130 www.cheapmlbjerseyscity.com\n208.98.29.130 www.cheapnhlcity.com\n208.98.29.130 www.cheapusajerseysnow.com\n208.98.22.194 www.chinanbaview.com\n208.98.29.130 www.chinausajerseysmall.com\n208.98.29.130 www.chinasuperbowlringssale.com\n208.98.29.130 www.authenticnflteamusastore.com\n\n208.98.29.130 www.wholesaleusanhljerseysoutlet.com\n208.98.29.130 www.cheapusajerseystoday.com\n208.98.29.130 www.cheapusajerseysgo.com\n208.98.29.130 www.authenticusanflnow.com\n\n208.98.22.194 www.authenticusanhljerseys2012.com\n208.98.22.194 www.chinanbasale.com\n208.98.22.194 www.cheapnhlsupply.com",
-					"file": "/C/WINDOWS/system32/drivers/etc/hosts",
-					"file_size": 1555,
-					"file_write_time": 129912161810000000,
-					"settings":
-					{
-						"buffer_size": 1512,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <title><?{$Title}?>-<?{$HTTP_HOST}?></title>\n    <meta name=\"description\" content=\"<?{$Description}?>\" />\n    <meta name=\"keywords\" content=\"<?{$Keywords}?>\" />\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/templates/<?{$arrGWeb.templates_id}?>/css/style.css\"  />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/templates/<?{$arrGWeb.templates_id}?>/css/header.css\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/templates/<?{$arrGWeb.templates_id}?>/css/content.css\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/templates/<?{$arrGWeb.templates_id}?>/css/footer.css\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/templates/<?{$arrGWeb.templates_id}?>/css/pagepro.css\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/templates/<?{$arrGWeb.templates_id}?>/css/list.css\" />\n\n    <script type=\"text/javascript\" src=\"/templates/<?{$arrGWeb.templates_id}?>/scripts/jquery-1.6.min.js\"></script>\n    <script type=\"text/javascript\" src=\"/templates/<?{$arrGWeb.templates_id}?>/scripts/tree.js\"></script>\n    <script type=\"text/javascript\" src=\"/templates/<?{$arrGWeb.templates_id}?>/scripts/custom.js\"></script>\n\n</head>\n<body>\n\n<div class=\"pag\">\n\n    <?{include file=\"$DOCUMENT_ROOT_file/theme/header.html\"}?>\n\n    <div id=\"content\">\n        <div class=\"con\">\n            <!-- list right -->\n            <div class=\"list_left\">\n                <div class=\"cate\">\n                    <h2>Categories</h2>\n                    <ul class=\"m-treeview\">\n                    <?{foreach from=$arrParentType item=arrParentType}?>\n                        <li <?{if $typeid_da == $arrParentType.type_id}?>\n                            class=\"m-expanded\"\n                        <?{else}?>\n                            class=\"m-collapsed\"\n                        <?{/if}?>>\n                            <span>&nbsp;</span><a href=\"<?{$WEBURL}?>/<?{$arrParentType.url}?>/\"><?{$arrParentType.type_title}?></a>\n                            <ul>\n                                <?{foreach from=$arrParentType.childtype item=ChildType}?>\n                                    <li>\n                                        <a href=\"<?{$WEBURL_WEB}?>/<?{$ChildType.url}?>/\" <?{if $smarty.get.id ==$ChildType.type_id}?> style=\"color:#F00;\"<?{/if}?>><?{$ChildType.type_title}?></a>\n                                    </li>\n                                <?{/foreach}?>\n                            </ul>\n                        </li>\n                    <?{/foreach}?>\n                    </ul>\n                </div>\n\n                <!--0803 new ajax list-->\n                <div id=\"basketWrap\">\n                    <div id=\"basketTitleWrap\">\n                    Your Basket <span id=\"notificationsLoader\"></span>\n                    </div>\n                    <div id=\"basketItemsWrap\">\n                    <ul>\n                       <li></li>\n                        <?{php}?>getBasket();<?{/php}?>\n                    </ul>\n                    </div>\n                </div>\n            </div>\n            <!-- list right -->\n            <div class=\"list_right\">\n\n                <ul class=\"list_guide\">\n                    <li><a href=\"<?{$WEBURL}?>\">Home</a></li>\n                    <?{foreach from=$type_roue_arr item=type_roue_arr}?>\n                        <li>>>&nbsp;&nbsp;<a  title=\"Warehouse\" href=\"<?{$WEBURL}?>/<?{$type_roue_arr.url}?>/\"><?{$type_roue_arr.type_title}?></a></li>\n                    <?{/foreach}?>\n                </ul>\n                <!-- page link begin -->\n\n                <?{$page_link}?>\n\n                <!-- page link end -->\n\n                <ul class=\"list_product\">\n                    <?{foreach from=$arrInfoList item=arrInfoList}?>\n                        <li>\n                            <div class=\"im\">\n                                <a href=\"<?{$arrInfoList.url}?>\">\n                                  <img src=\"<?{$arrInfoList.bigpic}?>\" width=\"<?{$arrInfoList.width}?>px\" height=\"<?{$arrInfoList.height}?>px\" alt=\"<?{$arrInfoList.title}?>\" title=\"<?{$arrInfoList.title}?>\" />\n                                </a>\n                            </div>\n                            <p class=\"pro_text\"><a href=\"<?{$arrInfoList.url}?>\" title=\"<?{$arrInfoList.title}?>\"><?{$arrInfoList.title}?></a></p>\n                            <p>ID:<?{$arrInfoList.id}?><span class=\"pro_money\">$<?{$arrInfoList.my_price}?></span><p>\n                            <p class=\"productSize\">\n                                <?{foreach from=$arrInfoList.model item=arrInfoListmodel}?>\n                                    <b><?{$arrInfoListmodel}?></b>\n                                <?{/foreach}?>\n                            </p>\n                            <p class=\"productPriceWrapRight\">\n                                <a href=\"/inc/functions.php?action=addToBasket&productID=<?{$arrInfoList.id}?>\" onClick=\"return false;\">\n                                    <img src=\"/templates/<?{$arrGWeb.templates_id}?>/images/add-to-basket.gif\" alt=\"Add To Basket\"\n                                width=\"111\" height=\"32\" id=\"featuredProduct_<?{$arrInfoList.id}?>_1\" />\n                                </a>\n                            </p>\n                        </li>\n                    <?{/foreach}?>\n                </ul>\n\n            </div>\n        </div>\n    </div>\n\n    <?{include file=\"$DOCUMENT_ROOT_file/theme/footer.html\"}?>\n\n</div>\n\n</body>\n</html>\n",
-					"file": "/D/Webroot/websys/templates/2012nfljerseyschinacity/product/list.html",
-					"file_size": 5749,
-					"file_write_time": 129909580618750000,
-					"settings":
-					{
-						"buffer_size": 5633,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/D/Webroot/websys/templates/2012nfljerseyschinacity/scripts/custom.js",
-					"settings":
-					{
-						"buffer_size": 2059,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-					"settings":
-					{
-						"buffer_size": 272,
-						"line_ending": "Unix"
-					}
-				}
-			],
 			"build_system": "",
 			"command_palette":
 			{
@@ -370,12 +44,16 @@
 				"selected_items":
 				[
 					[
-						"tag",
-						"Tag: Close Tag"
+						":w",
+						":w - Save"
 					],
 					[
 						"tidy",
 						"Tidy HTML"
+					],
+					[
+						"tag",
+						"Tag: Close Tag"
 					],
 					[
 						"pip",
@@ -427,7 +105,76 @@
 			},
 			"file_history":
 			[
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/My Account-dashboard.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/My Wishlist.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/New Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Account Information.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Add New Address.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/Account Information.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/Add New Address.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/details.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/list.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/My Account-dashboard.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/My Wishlist.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/New Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/register.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/Shopping Cart.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/details.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/register.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Shopping Cart.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/calendar-win2k-1.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/jquery.lightbox-0.5.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/menu1.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/panel.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/print.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/orange.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/slider.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/styles.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/styles-ie.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/widget092.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/widgets.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/counter002C.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/blue.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/details.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/style.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/widget092.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/css.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/calendar.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/forIe.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/global.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/header.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Account Information.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Add New Address.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Checkout.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Create New Customer Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Customer Login.htm",
 				"/C/Documents and Settings/Administrator/Desktop/newSite1/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/list.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/My Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/de0b33b2e07a6d5e5fadbcb8798c7924.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/Prototype1.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Create New Customer Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Customer Login.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/list.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/f81be7b651315f22ed3005ff02295853.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Account Information.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Add New Address.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Checkout.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/My Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/24133b6bcf5d4badba1dd2be2fd48a5b.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/details.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/Prototype.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/7e1308a8cf554347740433b7a9229c64.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/d554f6118eb8a914b63dafff5c468fcf.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/cbda1278eb820640ae216ed2cc017a87.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/658d32f7eab83e53b4cef05a6b0b4a0d.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/c38f0b66e8842ce3f4fad1b14318aa29.css",
+				"/D/Webroot/websys/templates/2012nfljerseyschinacity/scripts/custom.js",
+				"/D/Webroot/websys/templates/2012nfljerseyschinacity/product/list.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/.ssh/id_rsa.pub",
 				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/step1.html",
 				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/css/spstep.css",
 				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/step2.html",
@@ -464,10 +211,8 @@
 				"/C/Documents and Settings/Administrator/Desktop/ElectroStore_files/css",
 				"/C/Documents and Settings/Administrator/Desktop/prestashop_40562.htm",
 				"/E/Downloads/goagent-goagent-v1.10.0-1-g175951d/goagent/local/proxy.ini",
-				"/D/Webroot/websys/templates/2012nfljerseyschinacity/scripts/custom.js",
 				"/D/Program Files/goagent2.0.5/local/proxy.ini",
 				"/C/Documents and Settings/Administrator/My Documents/Downloads/goagent-goagent-v1.10.0-1-g175951d/goagent/local/proxy.ini",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 				"/D/Webroot/websys/product/include/list.inc.php",
 				"/D/Webroot/websys/product/list.php",
@@ -480,7 +225,6 @@
 				"/D/Webroot/index.php",
 				"/C/Documents and Settings/Administrator/Desktop/newSite2/js/form.js",
 				"/C/Documents and Settings/Administrator/Desktop/newSite2/js/functions.js",
-				"/C/Documents and Settings/Administrator/Desktop/newSite2/index.html",
 				"/E/Downloads/ci_series_day12/ci_series/application/controllers/shop.php",
 				"/E/Downloads/ci_series_day12/ci_series/application/controllers/cart_test.php",
 				"/E/Downloads/ci_series_day12/ci_series/application/views/products.php",
@@ -488,73 +232,7 @@
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/Default.sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/goagent-goagent-v2.0.5-3-gdcb39d4/goagent2.0.5/local/proxy.ini",
-				"/C/Documents and Settings/Administrator/Desktop/专题/miaov_style.css",
-				"/C/Documents and Settings/Administrator/Desktop/专题/2367i.html",
-				"/C/Documents and Settings/Administrator/Desktop/Add New Address.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/Account Information.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/My Account.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/Create New Customer Account.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/Customer Login.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/details.htm",
-				"/C/Documents and Settings/Administrator/Desktop/Customer Login.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/js/f81be7b651315f22ed3005ff02295853.js",
-				"/C/Documents and Settings/Administrator/Desktop/site/css/cbda1278eb820640ae216ed2cc017a87.css",
-				"/C/Documents and Settings/Administrator/Desktop/site/css/css.css",
-				"/C/Documents and Settings/Administrator/Desktop/site/js/slider.js",
-				"/C/Documents and Settings/Administrator/Desktop/site/Checkout.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/addCart.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/list.htm",
-				"/C/Documents and Settings/Administrator/桌面/Your Store.htm",
-				"/C/Documents and Settings/Administrator/Desktop/site/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/site/css/style.css",
-				"/D/wamp/www/js/ajax.js",
-				"/D/wamp/www/index.php",
-				"/D/Program Files/Vim/README.md",
-				"/E/Downloads/imsky-holder-v1.3-0-g18c9e38/imsky-holder-18c9e38/README.md",
-				"/E/Downloads/tpope-vim-pathogen-v2.0-21-g5e3fdd3/tpope-vim-pathogen-5e3fdd3/README.markdown",
-				"/D/Program Files/Vim/.gitignore",
-				"/D/Program Files/Vim/zencoding-vim/README.mkd",
-				"/C/Documents and Settings/Administrator/.ssh/id_rsa.pub",
-				"/E/Downloads/easymotion-1.3-0/.gitignore",
-				"/D/Program Files/Vim/_vimrc",
-				"/C/Documents and Settings/Administrator/desktop/_vimrc",
-				"/C/Documents and Settings/Administrator/desktop/awsomeProject/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/awsomeProject1/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/caonimei/index.html",
-				"/D/wamp/www/testmysql.php",
-				"/C/Documents and Settings/Administrator/Desktop/gittest/css/reset.css",
-				"/c/Documents and Settings/Administrator/desktop/testsite/index.html",
-				"/C/Documents and Settings/Administrator/desktop/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/gittest/.git/description",
-				"/C/Documents and Settings/Administrator/Desktop/gittest/.git/config",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
-				"/C/Documents and Settings/Administrator/Local Settings/Application Data/Google/Chrome/Application/21.0.1180.75/Extensions/external_extensions.json",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/resources.py",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/html_matcher.py",
-				"/C/Documents and Settings/Administrator/desktop/44/css/list.css",
-				"/C/Documents and Settings/Administrator/desktop/44/list.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/ZenCoding.tmLanguage",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/sublimezenplugin.py",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/sublimezenplugin.pyc",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/sublimezen.py",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/dynamicsnippets.py",
-				"/E/Mac/Mac OS X Lion/FreeBSD.vmx",
-				"/D/Program Files/goagent/local/proxy.ini",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-				"/C/WINDOWS/system32/drivers/etc/hosts",
-				"/E/Downloads/Mac OS X Snow Leopard 10.6.8 VMware Image [Ultimate Build]/Mac OS X Snow Leopard/Mac OS X Snow Leopard.vmx",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/Mac OS X Lion.vmx",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/vmware-0.log",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/vmware-1.log",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/vmware-2.log",
-				"/E/Downloads/Mac OS X Lion/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion 10.7.3 VMware Image/Mac OS X Lion/vmware.log",
-				"/E/Downloads/Mac OS X Lion/Mac OS X 10.7.vmx",
-				"/E/Downloads/Mac OS X Lion/Mac OSX 10.7.vmx",
-				"/C/Documents and Settings/Administrator/My Documents/My Virtual Machines/Mac10.7/Mac10.7.vmx",
-				"/C/Documents and Settings/Administrator/My Documents/My Virtual Machines/FreeBSD/FreeBSD.vmx"
+				"/C/Documents and Settings/Administrator/My Documents/Downloads/goagent-goagent-v2.0.5-3-gdcb39d4/goagent2.0.5/local/proxy.ini"
 			],
 			"find":
 			{
@@ -562,9 +240,11 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 95.0,
 				"where_history":
 				[
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1"
 				]
 			},
 			"find_state":
@@ -572,6 +252,38 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"logo.jpg",
+					"logo.png",
+					"pager",
+					"javascript",
+					"jquery.fancybox-1.3.4.js",
+					"jquery.fancybox-1.3.4.css",
+					"jquery.fancybox-1.3.4.css  ",
+					"<a href=\".*?\"",
+					"js/.*\\.htm",
+					"<a href=\".*?\"",
+					"../magentothem",
+					"<a href=\".*?\"",
+					"level-top",
+					"<a href=\".*?\"",
+					"menu_down",
+					"585",
+					"http://plazathemes.com/demo/ma_hightechstore/skin/frontend/default/ma_hightechstore",
+					"menu_down.gif",
+					"http://plazathemes.com/demo/ma_hightechstore/skin/frontend/default/ma_hightechstore",
+					"24133b6bcf5d4badba1dd2be2fd48a5b.js",
+					"f81be7b651315f22ed3005ff02295853.js",
+					"24133b6bcf5d4badba1dd2be2fd48a5b.js",
+					"7e1308a8cf554347740433b7a9229c64.js",
+					"ba39f2168d4184133e34193d2912bc8d.css",
+					"d554f6118eb8a914b63dafff5c468fcf.css",
+					"cbda1278eb820640ae216ed2cc017a87.css",
+					"d554f6118eb8a914b63dafff5c468fcf.css",
+					"cbda1278eb820640ae216ed2cc017a87.css",
+					"c38f0b66e8842ce3f4fad1b14318aa29.css",
+					"ba39f2168d4184133e34193d2912bc8d.css",
+					"658d32f7eab83e53b4cef05a6b0b4a0d.css",
+					"overlay",
 					"action=\".*?\"",
 					"action=",
 					"<a href=\".*?\"",
@@ -667,39 +379,642 @@
 					"Photo%20Store_files/(.*)\\.css",
 					"./Photo Store_files/(.*)\\.(jpg|gif|png)",
 					"<a href=\".*?\">",
-					"./Photo Store_files/(.*).js",
-					"./Photo Store_files/jquery-ui-1.8.16.custom.min.js",
-					"./Photo Store_files/(.*)\\.js",
-					"./Photo Store_files/(.*)\\.css",
-					"\"http://livedemo00.template-help.com/prestashop_40562/category.php?id_category=5\"",
-					"\"http:\\//livedemo00.template-help.com\\/prestashop_40562\\/category\\.php\\?id_category=.\"",
-					"http:\\//livedemo00.template-help.com\\/prestashop_40562\\/category\\.php\\?id_category=.+ >",
-					"\\(http://livedemo00.template-help.com/prestashop_40562/category.php?id_category)",
-					"http://livedemo00.template-help.com/prestashop_40562/category.php?id_category=.",
-					"<a href=\".*?\">",
-					"/prestashop_40562/js/jquery/(.*)\\.js",
-					"/prestashop_40562/js/jquery/.*?.js",
-					"^/prestashop_40562/js",
-					"/img",
-					"background",
-					"./ElectroStore_files",
-					"<a href=\".*?>",
-					"productSize",
-					"<!--.*?[-]{2,5}$",
-					"list_product",
-					"output_buffering",
-					"extension",
-					"extension=pdo.so",
-					"LoadModule",
-					"PdoDB",
-					"phpadmin127",
-					".jqTransform();",
-					"./Add New Address_files",
-					"./Add New Address_files/",
-					"./Account Information_files",
-					"./My Account_files",
-					"./Create New Customer Account_files",
-					"./Customer Login_files"
+					"./Photo Store_files/(.*).js"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"logo.jpg",
+					"<a href=\"#\"",
+					"..",
+					"<a href=\"#\"",
+					"..",
+					"Prototype1.js",
+					"Prototype.js",
+					"global.css",
+					"header.css",
+					"global.css",
+					"calendar.css",
+					"action=\"\"",
+					"<a href=\"#\"",
+					"<a href=\"#\"><img src=\"\\1\" alt=\"\"></a>",
+					"images",
+					"images/timthumb (1).jpg",
+					"images/timthumb.jpg",
+					"<a href=\"#\"",
+					"images/timthumb (2).jpg",
+					"images/\\1.\\2",
+					"js/\\1.\\2",
+					"js/\\1.js",
+					"css/\\1.css",
+					"../images",
+					"images",
+					"images/\\1.\\2",
+					"js/\\1.js",
+					"css/\\1.css",
+					"\\n",
+					"",
+					"images/\\1.\\2",
+					"js/\\1.js",
+					"\"css/\\1.css\" ",
+					"../images",
+					"images/\\1.\\2",
+					"js/\\1.js",
+					"css/\\1.css",
+					"(../images/\\1.\\2",
+					"../images/\\1.\\2",
+					"images/\\1.\\2",
+					"js/\\1.js",
+					"css/\\1.css",
+					"images/",
+					"<a href=\"#\"",
+					"<a href=\"#\" class=\\1>",
+					"<a href=\"#\">",
+					"js\\1.js",
+					"js/\\1.js",
+					"../images",
+					"('../images/\\1.\\2')",
+					"'../images\\1.\\2'",
+					"'../images/\\1.\\2'",
+					"../images/\\1.\\2",
+					"../images/fancybox.png",
+					"../images",
+					"(../images",
+					"../images",
+					"images/\\1.\\2",
+					"js/\\1.js",
+					"css/\\1.css",
+					"images/\\1.\\2",
+					"<a href=\"#\">",
+					"js/\\1.js",
+					"css/\\1.js",
+					"css/\\1.css",
+					"\"#\"",
+					"#",
+					"<a href=\"#\">",
+					"js/\\1.js",
+					"js/\\\\1.js",
+					"js/.*?.js",
+					"/images",
+					"js",
+					"images",
+					"js",
+					"images",
+					"js",
+					"css",
+					"js",
+					"images",
+					"js",
+					"css",
+					"images",
+					"js",
+					"css",
+					"images",
+					"js",
+					"css",
+					"images",
+					"js",
+					"css",
+					"images",
+					"js",
+					"css",
+					"images",
+					"js",
+					"images",
+					"js",
+					"css",
+					"js",
+					"images",
+					"js",
+					"css",
+					"images",
+					"js",
+					"css",
+					"images",
+					"js",
+					"css",
+					"images",
+					"js",
+					"css",
+					""
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": false
+			},
+			"incremental_find":
+			{
+				"height": 37.0
+			},
+			"input":
+			{
+				"height": 37.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 126.0
+			},
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"",
+						"/E/Downloads/Mac OS X Snow Leopard 10.6.8 VMware Image [Ultimate Build]/Mac OS X Snow Leopard/Mac OS X Snow Leopard.vmx"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1095.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"padding",
+						"padding-left"
+					],
+					[
+						"tex",
+						"text-align"
+					],
+					[
+						"margin",
+						"margin-left"
+					],
+					[
+						"ab",
+						"absolute"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/C/WINDOWS/system32/drivers/etc/hosts",
+					"settings":
+					{
+						"buffer_size": 1573,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/D/Program Files/Vim/README.md",
+					"settings":
+					{
+						"buffer_size": 316,
+						"line_ending": "Windows",
+						"name": "# This is my favorite vim set, to use it ,just cop"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Desktop/0905-2-nfl/index.html",
+					"settings":
+					{
+						"buffer_size": 8388,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Z/xue/nfl0906.com/templates/090601/index.bak.html",
+					"settings":
+					{
+						"buffer_size": 3665,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Z/xue/nfl0906.com/templates/090601/index.html",
+					"settings":
+					{
+						"buffer_size": 6662,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Z/xue/nfl0906.com/include/pronews.php",
+					"settings":
+					{
+						"buffer_size": 5232,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Z/xue/nfl0906.com/product/include/list.inc.php",
+					"settings":
+					{
+						"buffer_size": 4324,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Z/xue/nfl0906.com/product/block/index_type.php",
+					"settings":
+					{
+						"buffer_size": 4327,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"tidy",
+						"Tidy HTML"
+					],
+					[
+						"tag",
+						"Tag: Close Tag"
+					],
+					[
+						"pip",
+						"Package Control: Install Package"
+					],
+					[
+						"html",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						":s",
+						":w - Save"
+					],
+					[
+						"syntax",
+						"Set Syntax: C++"
+					],
+					[
+						"lis",
+						"Package Control: List Packages"
+					],
+					[
+						"pi",
+						"Package Control: Install Package"
+					],
+					[
+						"listp",
+						"Package Control: List Packages"
+					],
+					[
+						"tra",
+						"Trailing Spaces: Delete Trailing Spaces"
+					]
+				],
+				"width": 514.0
+			},
+			"console":
+			{
+				"height": 153.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/D/Program Files/Vim/README.md",
+				"/C/Documents and Settings/Administrator/Desktop/hosts.lnk",
+				"/Z/xue/nfl0906.com/archives/config/type.inc.php",
+				"/Z/xue/nfl0906.com/templates/090601/theme/header.html",
+				"/Z/xue/nfl0906.com/templates/090601/theme/footer.html",
+				"/Z/xue/nfl0906.com/templates/090601/theme/footer.html.bak.html",
+				"/Z/xue/nfl0906.com/templates/090601/theme/header.html.bak.html",
+				"/Z/xue/nfl0906.com/download/config/type.inc.php",
+				"/C/WINDOWS/system32/drivers/etc/hosts",
+				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/index.html",
+				"//192.168.1.211/06web/xue/nfl0906.com/data/webconfig.inc.php",
+				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
+				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/content.css",
+				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/detail.css",
+				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/footer.css",
+				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/header.css",
+				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/list.css",
+				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/style.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/slider.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Add New Address.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/details.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/My Account-dashboard.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/My Wishlist.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/New Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/register.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Shopping Cart.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/styles.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Account Information.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/Account Information.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/Add New Address.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/details.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/My Account-dashboard.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/My Wishlist.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/New Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/register.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/Shopping Cart.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/list.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/Backup/list.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/calendar-win2k-1.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/jquery.lightbox-0.5.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/menu1.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/panel.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/print.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/orange.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/styles-ie.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/widget092.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/widgets.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/counter002C.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite2/css/blue.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/details.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/style.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/widget092.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/css.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/calendar.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/forIe.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/global.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/header.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Account Information.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Add New Address.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Checkout.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Create New Customer Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/Customer Login.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/list.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/My Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/de0b33b2e07a6d5e5fadbcb8798c7924.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/Prototype1.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Create New Customer Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Customer Login.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/list.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/f81be7b651315f22ed3005ff02295853.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Account Information.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Add New Address.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/Checkout.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/My Account.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/24133b6bcf5d4badba1dd2be2fd48a5b.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/backup/details.htm",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/Prototype.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/7e1308a8cf554347740433b7a9229c64.js",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/d554f6118eb8a914b63dafff5c468fcf.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/cbda1278eb820640ae216ed2cc017a87.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/658d32f7eab83e53b4cef05a6b0b4a0d.css",
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/c38f0b66e8842ce3f4fad1b14318aa29.css",
+				"/D/Webroot/websys/templates/2012nfljerseyschinacity/scripts/custom.js",
+				"/D/Webroot/websys/templates/2012nfljerseyschinacity/product/list.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/.ssh/id_rsa.pub",
+				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/step1.html",
+				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/css/spstep.css",
+				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/step2.html",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new6/index.htm",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new6/css/stylesheet.css",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new5/index.htm",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new5/css/ui-min.css",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new5/css/skin.css",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new5/css/global.css",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new5/css/blocksearch.css",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new5/css/blockuserinfo.css",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new5/css/responsiveslides.css",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new4/index.htm",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new3/index.htm",
+				"/C/Documents and Settings/Administrator/Desktop/temp/new3/css/stylesheet.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/Photo Store.htm",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/stylesheet.css",
+				"/C/Documents and Settings/Administrator/Desktop/new1/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/new1/css/global.css",
+				"/C/Documents and Settings/Administrator/Desktop/Speedster.htm",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/colorbox.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/css.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/jquery.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/jquery_002.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/jquery-ui-1.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/livesearch.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/newcarousel.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/slideshow.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/superfish.css",
+				"/C/Documents and Settings/Administrator/Desktop/new2/css/cloud-zoom.css",
+				"/C/Documents and Settings/Administrator/Desktop/new1/css/jquery.autocomplete.css",
+				"/D/Program Files/goagent/.gitignore",
+				"/C/Documents and Settings/Administrator/Desktop/new2/index.htm",
+				"/C/Documents and Settings/Administrator/Desktop/ElectroStore_files/css",
+				"/C/Documents and Settings/Administrator/Desktop/prestashop_40562.htm",
+				"/E/Downloads/goagent-goagent-v1.10.0-1-g175951d/goagent/local/proxy.ini",
+				"/D/Program Files/goagent2.0.5/local/proxy.ini",
+				"/C/Documents and Settings/Administrator/My Documents/Downloads/goagent-goagent-v1.10.0-1-g175951d/goagent/local/proxy.ini",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 95.0,
+				"where_history":
+				[
+					"E:\\Downloads\\06d1b7f18784ecad5f47962c9724a9e1\\0905-2-nfl\\css",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"\\b(\\w+)\\b\\s+\\1",
+					"arrParentType",
+					"<!--\\s?-*(\\w*)-*\\s?-->",
+					"<!---*(\\w*)-*-->",
+					"footer",
+					"<!---*(\\w*)-*-->",
+					"<!--(-*\\w*-*)-->",
+					"Keywords",
+					"login",
+					"src=\"images",
+					"img",
+					"src=\"images",
+					"bestsnapbackhatssupply",
+					"090502",
+					"htc",
+					"(<a.*href=\")[^\"]*\"",
+					"^\\s+\\w\\b",
+					"^\\s+\\w*",
+					"^\\s+\\w",
+					"\\t+\\w",
+					"^\\t+\\w",
+					"^\\t*\\w",
+					"^\\t\\w",
+					"^\\s\\w",
+					"^\\w",
+					"(?:(<a.*href=\"))([^\"]*)\"",
+					"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
+					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
+					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]\"",
+					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
+					" style=\"float: left; width: 120px; \"",
+					"images/(.*)\\.gif",
+					"style=\"width: 600px; left: 0px;\"",
+					"style=\"float: left; width: 960px; \"",
+					"float: left; width: 960px;",
+					"slider",
+					"sliderThumbs",
+					"discount",
+					"css/validation.css",
+					"file:///C:/Documents%20and%20Settings/Administrator/Desktop/newSite2/images/nav_hover_last.png",
+					"body",
+					"<a href=\".*?\"",
+					"etheme_cp_inner",
+					"etheme_cp",
+					"action=\".*?\"",
+					"<a href=\".*?\"",
+					"etheme_cp_inner",
+					"etheme_cp",
+					"css/validation.css",
+					"chrome-extension://cgndfbhngibokieehnjhbjkkhbfmhojo/css/validation.css",
+					"chrome-extension://cgndfbhngibokieehnjhbjkkhbfmhojo/images/loading.gif",
+					"addthis_toolbox addthis_default_style",
+					"at16nc at300bs at15nc at15t_facebook at16t_facebook",
+					"js/sh098.htm",
+					"logo.jpg",
+					"logo.png",
+					"pager",
+					"javascript",
+					"jquery.fancybox-1.3.4.js",
+					"jquery.fancybox-1.3.4.css",
+					"jquery.fancybox-1.3.4.css  ",
+					"<a href=\".*?\"",
+					"js/.*\\.htm",
+					"<a href=\".*?\"",
+					"../magentothem",
+					"<a href=\".*?\"",
+					"level-top",
+					"<a href=\".*?\"",
+					"menu_down",
+					"585",
+					"http://plazathemes.com/demo/ma_hightechstore/skin/frontend/default/ma_hightechstore",
+					"menu_down.gif",
+					"http://plazathemes.com/demo/ma_hightechstore/skin/frontend/default/ma_hightechstore",
+					"24133b6bcf5d4badba1dd2be2fd48a5b.js",
+					"f81be7b651315f22ed3005ff02295853.js",
+					"24133b6bcf5d4badba1dd2be2fd48a5b.js",
+					"7e1308a8cf554347740433b7a9229c64.js",
+					"ba39f2168d4184133e34193d2912bc8d.css",
+					"d554f6118eb8a914b63dafff5c468fcf.css",
+					"cbda1278eb820640ae216ed2cc017a87.css",
+					"d554f6118eb8a914b63dafff5c468fcf.css",
+					"cbda1278eb820640ae216ed2cc017a87.css",
+					"c38f0b66e8842ce3f4fad1b14318aa29.css",
+					"ba39f2168d4184133e34193d2912bc8d.css",
+					"658d32f7eab83e53b4cef05a6b0b4a0d.css",
+					"overlay",
+					"action=\".*?\"",
+					"action=",
+					"<a href=\".*?\"",
+					"<img src=\"(.*)\" alt=\"\">",
+					"images",
+					"style=\"width: 120.5px; float: left; list-style: none; \"",
+					"class=\"item first jcarousel-item jcarousel-item-horizontal jcarousel-item-9 jcarousel-item-9-horizontal\"",
+					"style=",
+					"style=\"width:723px; height:318px; \"",
+					"width=\"723\" height=\"318\" ",
+					"slide1",
+					"9/4",
+					"\n",
+					"9/4",
+					"delete-pro",
+					"leftco",
+					"pro-info",
+					"image",
+					"ico_phone.png",
+					"light-background",
+					"./Linear_files/timthumb(2).php",
+					"./Linear_files/timthumb(1).php",
+					"<a href=\".*?\"",
+					"./Linear_files/timthumb(2).php",
+					"./Linear_files/timthumb(3).php",
+					"./Linear_files/(.*)\\.(jpg|png|gif)",
+					"(./Linear_files/(.*)\\.(jpg|png|gif))?",
+					"./Linear_files/(.*)\\.(jpg|png|gif)\"",
+					"./Linear_files/(.*)\\.(jpg|png|gif)",
+					"./Linear_files/(.*)\\.js",
+					"./Linear_files/(.*)\\.css",
+					"../img",
+					"../../../img",
+					"../img",
+					"img",
+					"./Shopaholic_files/(.*)\\.(jpg|png|gif)",
+					"./Shopaholic_files/(.*)\\.js",
+					"./Shopaholic_files/(.*)\\.css",
+					"\\n\\n",
+					"\\n",
+					"/n",
+					"./Home_files/(.*).(png|jpg|gif)"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -707,6 +1022,31 @@
 				"regex": true,
 				"replace_history":
 				[
+					"\n<!-- **********\\1********** -->",
+					"\n<!-- **********\\1**********-->",
+					"\nsrc=\"<?{$arrGWeb.templates_root}?>images",
+					"\\1#\"",
+					"\\1#",
+					"\\1#\"",
+					"\\0a",
+					"images/NFLicon/\\1.gif",
+					"images/NFLicon\\1.gif",
+					"<a href=\"#\"",
+					"action=\"\"",
+					"<a href=\"#\"",
+					"css/validation.css",
+					"images/loading.gif",
+					"logo.jpg",
+					"<a href=\"#\"",
+					"..",
+					"<a href=\"#\"",
+					"..",
+					"Prototype1.js",
+					"Prototype.js",
+					"global.css",
+					"header.css",
+					"global.css",
+					"calendar.css",
 					"action=\"\"",
 					"<a href=\"#\"",
 					"<a href=\"#\"><img src=\"\\1\" alt=\"\"></a>",
@@ -819,13 +1159,16 @@
 			"folders":
 			[
 				{
-					"path": "/C/Documents and Settings/Administrator/Desktop"
+					"path": "/C/Documents and Settings/Administrator/Desktop/0905-2-nfl"
+				},
+				{
+					"path": "/Z/xue/nfl0906.com"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -833,15 +1176,15 @@
 							"file": "/C/WINDOWS/system32/drivers/etc/hosts",
 							"settings":
 							{
-								"buffer_size": 1512,
+								"buffer_size": 1573,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1490,
-										1512
+										327,
+										327
 									]
 								],
 								"settings":
@@ -937,25 +1280,53 @@
 									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 342.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/D/Webroot/websys/templates/2012nfljerseyschinacity/product/list.html",
+							"file": "/D/Program Files/Vim/README.md",
 							"settings":
 							{
-								"buffer_size": 5633,
+								"buffer_size": 316,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2706,
-										2706
+										144,
+										144
+									]
+								],
+								"settings":
+								{
+									"auto_name": "# This is my favorite vim set, to use it ,just cop",
+									"is_xml": false,
+									"syntax": "Packages/Markdown/Markdown.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Documents and Settings/Administrator/Desktop/0905-2-nfl/index.html",
+							"settings":
+							{
+								"buffer_size": 8388,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										697,
+										697
 									]
 								],
 								"settings":
@@ -1054,140 +1425,25 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 556.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/D/Webroot/websys/templates/2012nfljerseyschinacity/scripts/custom.js",
-							"settings":
-							{
-								"buffer_size": 2059,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2037,
-										2037
-									]
-								],
-								"settings":
-								{
-									"annotations":
-									[
-										"TODO",
-										"README",
-										"FIXME"
-									],
-									"csslint_options":
-									{
-										"adjoining-classes": "warning",
-										"box-model": true,
-										"box-sizing": "warning",
-										"compatible-vendor-prefixes": "warning",
-										"display-property-grouping": true,
-										"duplicate-background-images": "warning",
-										"duplicate-properties": true,
-										"empty-rules": true,
-										"errors": true,
-										"fallback-colors": "warning",
-										"floats": "warning",
-										"font-faces": "warning",
-										"font-sizes": "warning",
-										"gradients": "warning",
-										"ids": "warning",
-										"import": "warning",
-										"important": "warning",
-										"known-properties": true,
-										"outline-none": "warning",
-										"overqualified-elements": "warning",
-										"qualified-headings": "warning",
-										"regex-selectors": "warning",
-										"rules-count": "warning",
-										"shorthand": "warning",
-										"star-property-hack": "warning",
-										"text-indent": "warning",
-										"underscore-property-hack": "warning",
-										"unique-headings": "warning",
-										"universal-selector": "warning",
-										"vendor-prefix": true,
-										"zero-units": "warning"
-									},
-									"gjslint_ignore":
-									[
-										110.0
-									],
-									"gjslint_options":
-									[
-									],
-									"javascript_linter": "jshint",
-									"jshint_options":
-									{
-										"browser": true,
-										"evil": true,
-										"indent": 1.0,
-										"regexdash": true,
-										"sub": true,
-										"trailing": true,
-										"wsh": true
-									},
-									"pep8": true,
-									"pep8_ignore":
-									[
-										"E501"
-									],
-									"perl_linter": "perlcritic",
-									"pyflakes_ignore":
-									[
-									],
-									"pyflakes_ignore_import_*": true,
-									"sublimelinter": true,
-									"sublimelinter_delay": 0.0,
-									"sublimelinter_disable":
-									[
-									],
-									"sublimelinter_executable_map":
-									{
-									},
-									"sublimelinter_fill_outlines": false,
-									"sublimelinter_gutter_marks": false,
-									"sublimelinter_mark_style": "outline",
-									"sublimelinter_notes": false,
-									"sublimelinter_objj_check_ascii": false,
-									"sublimelinter_popup_errors_on_save": false,
-									"sublimelinter_syntax_map":
-									{
-										"Python Django": "python",
-										"Ruby on Rails": "ruby"
-									},
-									"sublimelinter_wrap_find": true,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 969.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 3,
-							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+							"file": "/Z/xue/nfl0906.com/templates/090601/index.bak.html",
 							"settings":
 							{
-								"buffer_size": 272,
+								"buffer_size": 3665,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										118,
-										118
+										1406,
+										1406
 									]
 								],
 								"settings":
@@ -1239,6 +1495,7 @@
 									"gjslint_options":
 									[
 									],
+									"is_xml": false,
 									"javascript_linter": "jshint",
 									"jshint_options":
 									{
@@ -1280,11 +1537,477 @@
 										"Ruby on Rails": "ruby"
 									},
 									"sublimelinter_wrap_find": true,
-									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 320.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/Z/xue/nfl0906.com/templates/090601/index.html",
+							"settings":
+							{
+								"buffer_size": 6662,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2000,
+										2000
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"is_xml": false,
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"indent": 1.0,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 0.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1200.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/Z/xue/nfl0906.com/include/pronews.php",
+							"settings":
+							{
+								"buffer_size": 5232,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1080,
+										1080
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"is_xml": false,
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"indent": 1.0,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 0.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/PHP/PHP.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/Z/xue/nfl0906.com/product/include/list.inc.php",
+							"settings":
+							{
+								"buffer_size": 4324,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3808,
+										3821
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"is_xml": false,
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"indent": 1.0,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 0.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 1675.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/Z/xue/nfl0906.com/product/block/index_type.php",
+							"settings":
+							{
+								"buffer_size": 4327,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1972,
+										1972
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"is_xml": false,
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"indent": 1.0,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 0.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 456.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1322,12 +2045,12 @@
 					1.0
 				]
 			},
-			"menu_visible": true,
+			"menu_visible": false,
 			"output.exec":
 			{
 				"height": 126.0
 			},
-			"position": "0,2,3,-1,-1,-1,-1,818,129,181,1232",
+			"position": "0,2,3,-32000,-32000,-1,-1,900,0,0,1440",
 			"replace":
 			{
 				"height": 64.0
@@ -1356,8 +2079,8 @@
 			"show_minimap": false,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": false,
-			"side_bar_width": 150.0,
+			"side_bar_visible": true,
+			"side_bar_width": 230.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": ""
