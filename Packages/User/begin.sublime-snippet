@@ -4,11 +4,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<title></title>
+
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.6.0/build/cssreset/cssreset-min.css" />
 	<link rel="stylesheet" type="text/css" href="css/${1:style}.css" />
 </head>
 <body>
-
+	<!-- header begin -->
 	<div class="header">
 		<h1 class="logo">
 		 	<a href="#">
@@ -17,18 +18,24 @@
 		 </h1>
 		 <ul>
 		 	<li><a href="#">Home</a></li>
-		 	<li><a href="#">About</a></li>
-		 	<li><a href="#"></a></li>
-		 	<li><a href="#"></a></li>
-		 	<li><a href="#"></a></li>
-		 	<li><a href="#"></a></li>
-
+		 	<li><a href="#">NavItem1</a></li>
+		 	<li><a href="#">NavItem1</a></li>
+		 	<li><a href="#">NavItem1</a></li>
+		 	<li><a href="#">NavItem1</a></li>
+		 	<li><a href="#">NavItem1</a></li>
 		 </ul>
 	</div>
+	<!-- header end -->
+
+	<!-- container begin -->
 	<div class="container">$3</div>
+	<!-- container end -->
+
+	<!-- footer begin -->
 	<div class="footer">$4</div>
+	<!-- footer end -->
 </body>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript">
 
 	</script>

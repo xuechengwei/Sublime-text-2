@@ -6,5 +6,5 @@
 	{ "keys": ["ctrl+shift+'"], "command": "change_quotes" },
 	{ "keys": ["ctrl+q"], "command": "close_window" },
 	{ "keys": ["ctrl+shift+w"], "command": "close_all" },
-	{ "keys": ["ctrl+alt+x"], "command": "prefixr" }
+	{ "keys": ["ctrl+super+x"], "command": "auto_complete" }
 ]
