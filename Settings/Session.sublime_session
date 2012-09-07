@@ -1,6 +1,8 @@
 {
 	"folder_history":
 	[
+		"/D/Webroot/webapp",
+		"/C/Documents and Settings/Administrator/Desktop/webapp",
 		"/Z/xue/nfl0906.com",
 		"/C/Documents and Settings/Administrator/Desktop/0905-2-nfl",
 		"/C/Documents and Settings/Administrator/Desktop/newSite2",
@@ -609,12 +611,36 @@
 				"selected_items":
 				[
 					[
-						"m-",
-						"m-expanded"
+						"url",
+						"url(image-url.gif)"
 					],
 					[
 						"margin",
-						"margin-bottom"
+						"margin-top"
+					],
+					[
+						"font",
+						"font-size"
+					],
+					[
+						"helvetica",
+						"Arial, Helvetica, sans-serif"
+					],
+					[
+						"text",
+						"text-decoration"
+					],
+					[
+						"repeat",
+						"repeat-x"
+					],
+					[
+						"back",
+						"background"
+					],
+					[
+						"m-",
+						"m-expanded"
 					],
 					[
 						"hot_ca",
@@ -637,18 +663,37 @@
 			"buffers":
 			[
 				{
-					"file": "/Z/xue/nfl0906.com/templates/090601/product/detail.html",
+					"contents": "body{\n	background: url(../images/body_bg.jpg) repeat-x 0 -80px;\n	font: 12px/1.5em arial,Arial, Helvetica, sans-serif;\n}\na{\n	text-decoration: none;\n}\na:hover{\n	text-decoration: underline;\n}\n\n.clear{\n	clear: both;\n	height: 0;\n	width: 0;\n	display: block;\n	visibility: hidden;\n}\n\n\n\n.header,.container,.footer{\n	width: 1003px;\n	margin: 0 auto;\n}\n.header{\n	height: 127px;\n	padding-top: 13px;\n}\n.logo{\n	float: left;\n}\n.topnav,.nav{\n	overflow: hidden;\n}\n.topnav{\n	float: right;\n	margin-top: 20px;\n}\n.topnav li{\n	float: left;\n	line-height: 30px;\n	margin-right: 10px;\n}\n.search-form{\n	display: block;\n	background: url(../images/)\n	background: ;\n}\n\n.nav{\n	height: 43px;\n	background: url(../images/nav_bg.jpg) no-repeat 0 center;\n	line-height: 43px;\n	font-size: 14px;\n	padding-left: 20px;\n}\n.nav li a{\n	color: #fff;\n}\n.nav li{\n	float: left;\n	margin-right: 20px;\n}\n.nav li:last-child{\n	margin-right: 0;\n}\n.subtitle{\n	height: 38px;\n	background: url(../images/subtitle_bg.jpg) no-repeat 0 center;\n	line-height: 38px;\n	font-size: 16px;\n	font-weight: bold;\n	color: white;\n	padding-left: 20px;\n}",
+					"file": "/D/Webroot/webapp/css/style.css",
+					"file_size": 1136,
+					"file_write_time": 129914802833970711,
 					"settings":
 					{
-						"buffer_size": 8598,
+						"buffer_size": 1077,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/Z/xue/nfl0906.com/templates/090601/css/detail.css",
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.pyc",
 					"settings":
 					{
-						"buffer_size": 2465,
+						"buffer_size": 76472,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
+					"settings":
+					{
+						"buffer_size": 27354,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/D/Webroot/webapp/index.html",
+					"settings":
+					{
+						"buffer_size": 4317,
 						"line_ending": "Windows"
 					}
 				}
@@ -660,12 +705,32 @@
 				"selected_items":
 				[
 					[
-						"Zen Coding: ",
-						"Zen Coding: Select next item"
+						"dis",
+						"Package Control: Disable Package"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"list",
+						"Package Control: List Packages"
+					],
+					[
+						"pip",
+						"Package Control: Install Package"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
 					],
 					[
 						":w",
 						":w - Save"
+					],
+					[
+						"Zen Coding: ",
+						"Zen Coding: Select next item"
 					],
 					[
 						"tidy",
@@ -674,10 +739,6 @@
 					[
 						"tag",
 						"Tag: Close Tag"
-					],
-					[
-						"pip",
-						"Package Control: Install Package"
 					],
 					[
 						"html",
@@ -725,25 +786,37 @@
 			},
 			"file_history":
 			[
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zen-coding.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/LiveReload/README.md",
+				"/D/Apache2.2/conf/httpd.conf",
+				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
+				"/C/Documents and Settings/Administrator/Desktop/webapp/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/webapp/css/style.css",
+				"/Z/xue/nfl0906.com/templates/090601/css/detail.css",
+				"/Z/xue/nfl0906.com/templates/090601/product/detail.html",
+				"/C/Documents and Settings/Administrator/Desktop/ooo.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/yhreset.sublime-snippet",
+				"/D/Program Files/Vim/_vimrc",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/latestjq.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/begin.sublime-snippet",
 				"/Z/xue/nfl0906.com/templates/090601/index.html",
 				"/Z/xue/nfl0906.com/templates/090601/css/pagepro.css",
 				"/Z/xue/nfl0906.com/templates/090601/theme/footer.html",
 				"/Z/xue/nfl0906.com/templates/090601/product/list.html",
 				"/Z/xue/nfl0906.com/templates/090601/theme/header.html",
 				"/Z/xue/nfl0906.com/templates/090601/css/content.css",
-				"/Z/xue/nfl0906.com/templates/090601/css/detail.css",
 				"/Z/xue/nfl0906.com/templates/090601/css/style.css",
 				"/Z/xue/nfl0906.com/templates/090601/css/user.css",
 				"/Z/xue/nfl0906.com/templates/090601/scripts/tree.js",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 				"/C/WINDOWS/system32/drivers/etc/hosts",
 				"/Z/xue/nfl0906.com/templates/090601/scripts/tree1.js",
 				"/Z/xue/nfl0906.com/product/index.php",
 				"/Z/xue/nfl0906.com/templates/090601/product/detail.html.bak.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/latestjq.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Desktop/example.md",
 				"/Z/xue/nfl0906.com/product/include/list.inc.php",
 				"/Z/xue/nfl0906.com/product/include/list.pic.php",
@@ -753,7 +826,6 @@
 				"/Z/xue/nfl0906.com/templates/090601/product/list_pic.html",
 				"/Z/xue/nfl0906.com/templates/090601/product/search.html",
 				"/Z/xue/nfl0906.com/templates/090601/download/detail.html",
-				"/Z/xue/nfl0906.com/templates/090601/product/detail.html",
 				"/Z/xue/nfl0906.com/templates/090601/css/general.css",
 				"/Z/xue/nfl0906.com/templates/090601/css/list.css",
 				"/Z/xue/nfl0906.com/include/pronews.php",
@@ -771,7 +843,6 @@
 				"/Z/xue/nfl0906.com/download/config/type.inc.php",
 				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/index.html",
 				"//192.168.1.211/06web/xue/nfl0906.com/data/webconfig.inc.php",
-				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
 				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/content.css",
 				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/detail.css",
 				"/E/Downloads/06d1b7f18784ecad5f47962c9724a9e1/0905-2-nfl/css/footer.css",
@@ -842,17 +913,7 @@
 				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/Prototype.js",
 				"/C/Documents and Settings/Administrator/Desktop/newSite1/js/7e1308a8cf554347740433b7a9229c64.js",
 				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/d554f6118eb8a914b63dafff5c468fcf.css",
-				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/cbda1278eb820640ae216ed2cc017a87.css",
-				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/658d32f7eab83e53b4cef05a6b0b4a0d.css",
-				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/c38f0b66e8842ce3f4fad1b14318aa29.css",
-				"/D/Webroot/websys/templates/2012nfljerseyschinacity/scripts/custom.js",
-				"/D/Webroot/websys/templates/2012nfljerseyschinacity/product/list.html",
-				"/C/Documents and Settings/Administrator/.ssh/id_rsa.pub",
-				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/step1.html",
-				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/css/spstep.css",
-				"/E/Downloads/d699b2a65dfc21d11b1b55c19144ae68/shopping-steps/step2.html",
-				"/C/Documents and Settings/Administrator/Desktop/temp/new6/index.htm",
-				"/C/Documents and Settings/Administrator/Desktop/temp/new6/css/stylesheet.css"
+				"/C/Documents and Settings/Administrator/Desktop/newSite1/css/cbda1278eb820640ae216ed2cc017a87.css"
 			],
 			"find":
 			{
@@ -875,6 +936,17 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"bg",
+					"sideba",
+					"directory",
+					"document ",
+					"ctrl",
+					"zen",
+					"ctrl",
+					"\n		 		",
+					"\n		 	",
+					"\n		 		",
+					"		 			",
 					"bc171628",
 					"completion",
 					"ctrl+space",
@@ -991,18 +1063,7 @@
 					"delete-pro",
 					"leftco",
 					"pro-info",
-					"image",
-					"ico_phone.png",
-					"light-background",
-					"./Linear_files/timthumb(2).php",
-					"./Linear_files/timthumb(1).php",
-					"<a href=\".*?\"",
-					"./Linear_files/timthumb(2).php",
-					"./Linear_files/timthumb(3).php",
-					"./Linear_files/(.*)\\.(jpg|png|gif)",
-					"(./Linear_files/(.*)\\.(jpg|png|gif))?",
-					"./Linear_files/(.*)\\.(jpg|png|gif)\"",
-					"./Linear_files/(.*)\\.(jpg|png|gif)"
+					"image"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1148,32 +1209,379 @@
 			"folders":
 			[
 				{
-					"path": "/C/Documents and Settings/Administrator/Desktop/0905-2-nfl"
-				},
-				{
-					"path": "/Z/xue/nfl0906.com"
+					"path": "/D/Webroot/webapp"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/Z/xue/nfl0906.com/templates/090601/product/detail.html",
+							"file": "/D/Webroot/webapp/css/style.css",
 							"settings":
 							{
-								"buffer_size": 8598,
+								"buffer_size": 1077,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3508,
-										3508
+										633,
+										633
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"indent": 1.0,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": false,
+									"sublimelinter_delay": 0.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 540.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.pyc",
+							"settings":
+							{
+								"buffer_size": 76472,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"indent": 1.0,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 0.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
+							"settings":
+							{
+								"buffer_size": 27354,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										8478,
+										8478
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"indent": 1.0,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 0.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Python/Python.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 74.0,
+								"translation.y": 4831.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 3,
+							"file": "/D/Webroot/webapp/index.html",
+							"settings":
+							{
+								"buffer_size": 4317,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1243,
+										1243
 									]
 								],
 								"settings":
@@ -1272,121 +1680,7 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1423.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/Z/xue/nfl0906.com/templates/090601/css/detail.css",
-							"settings":
-							{
-								"buffer_size": 2465,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1318,
-										1318
-									]
-								],
-								"settings":
-								{
-									"annotations":
-									[
-										"TODO",
-										"README",
-										"FIXME"
-									],
-									"csslint_options":
-									{
-										"adjoining-classes": "warning",
-										"box-model": true,
-										"box-sizing": "warning",
-										"compatible-vendor-prefixes": "warning",
-										"display-property-grouping": true,
-										"duplicate-background-images": "warning",
-										"duplicate-properties": true,
-										"empty-rules": true,
-										"errors": true,
-										"fallback-colors": "warning",
-										"floats": "warning",
-										"font-faces": "warning",
-										"font-sizes": "warning",
-										"gradients": "warning",
-										"ids": "warning",
-										"import": "warning",
-										"important": "warning",
-										"known-properties": true,
-										"outline-none": "warning",
-										"overqualified-elements": "warning",
-										"qualified-headings": "warning",
-										"regex-selectors": "warning",
-										"rules-count": "warning",
-										"shorthand": "warning",
-										"star-property-hack": "warning",
-										"text-indent": "warning",
-										"underscore-property-hack": "warning",
-										"unique-headings": "warning",
-										"universal-selector": "warning",
-										"vendor-prefix": true,
-										"zero-units": "warning"
-									},
-									"gjslint_ignore":
-									[
-										110.0
-									],
-									"gjslint_options":
-									[
-									],
-									"javascript_linter": "jshint",
-									"jshint_options":
-									{
-										"browser": true,
-										"evil": true,
-										"indent": 1.0,
-										"regexdash": true,
-										"sub": true,
-										"trailing": true,
-										"wsh": true
-									},
-									"pep8": true,
-									"pep8_ignore":
-									[
-										"E501"
-									],
-									"perl_linter": "perlcritic",
-									"pyflakes_ignore":
-									[
-									],
-									"pyflakes_ignore_import_*": true,
-									"sublimelinter": true,
-									"sublimelinter_delay": 0.0,
-									"sublimelinter_disable":
-									[
-									],
-									"sublimelinter_executable_map":
-									{
-									},
-									"sublimelinter_fill_outlines": false,
-									"sublimelinter_gutter_marks": false,
-									"sublimelinter_mark_style": "outline",
-									"sublimelinter_notes": false,
-									"sublimelinter_objj_check_ascii": false,
-									"sublimelinter_popup_errors_on_save": false,
-									"sublimelinter_syntax_map":
-									{
-										"Python Django": "python",
-										"Ruby on Rails": "ruby"
-									},
-									"sublimelinter_wrap_find": true,
-									"syntax": "Packages/CSS/CSS.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 240.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1411,11 +1705,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.515662304867,
 					1.0
 				],
 				"rows":
@@ -1429,7 +1730,7 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,2,3,-32000,-32000,-1,-1,955,-33,85,1407",
+			"position": "0,2,3,-1,-1,-1,-1,827,-15,204,1425",
 			"replace":
 			{
 				"height": 64.0
@@ -1458,7 +1759,7 @@
 			"show_minimap": false,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": true,
+			"side_bar_visible": false,
 			"side_bar_width": 230.0,
 			"status_bar_visible": true,
 			"window_id": 6,
