@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1347075030,
+	"auto_upgrade_last_run": 1347095625,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -7,9 +7,12 @@
 		"BracketHighlighter",
 		"Case Conversion",
 		"ChangeQuotes",
+		"Clipboard History",
 		"CodeIgniter Snippets",
 		"CSSTidy",
 		"DetectSyntax",
+		"Gist",
+		"Git",
 		"Goto-CSS-Declaration",
 		"HTML Compressor",
 		"HTML5",
@@ -22,7 +25,9 @@
 		"Prefixr",
 		"SideBarEnhancements",
 		"Sublime-HTMLPrettify",
+		"SublimeCodeIntel",
 		"SublimeLinter",
+		"SyncedSideBar",
 		"Theme - Soda",
 		"TrailingSpaces",
 		"YUI Compressor",
