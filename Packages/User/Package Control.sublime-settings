@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1347095625,
+	"auto_upgrade_last_run": 1347417061,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -14,6 +14,7 @@
 		"Gist",
 		"Git",
 		"Goto-CSS-Declaration",
+		"GotoRecent",
 		"HTML Compressor",
 		"HTML5",
 		"IndentGuides",
