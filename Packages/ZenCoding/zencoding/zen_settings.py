@@ -590,7 +590,7 @@ zen_settings = {
 			'style': '<style type="text/css"></style>',
 			'script': '<script type="text/javascript"></script>',
 			'script:src': '<script type="text/javascript" src=""></script>',
-			'img': '<img src="" alt="" />',
+			'img': '<img src="images/" alt="" title="" />',
 			'iframe': '<iframe src="" frameborder="0"></iframe>',
 			'embed': '<embed src="" type="" />',
 			'object': '<object data="" type=""></object>',

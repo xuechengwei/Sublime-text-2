@@ -1,6 +1,9 @@
 {
 	"folder_history":
 	[
+		"/D/Webroot/shoppinstep",
+		"/C/Documents and Settings/Administrator/Desktop/shoppinstep",
+		"/D/Webroot/new1",
 		"/C/Documents and Settings/Administrator/Desktop/newSite1",
 		"/Z/xue/cheapusajerseysstore.com",
 		"/C/Documents and Settings/Administrator/Desktop/0910-2-nfl",
@@ -869,8 +872,52 @@
 				"selected_items":
 				[
 					[
+						"pa",
+						"padding"
+					],
+					[
+						"back",
+						"background-color"
+					],
+					[
+						"wid",
+						"width"
+					],
+					[
+						"text",
+						"text-transform"
+					],
+					[
+						"ari",
+						"Arial, Helvetica, sans-serif"
+					],
+					[
+						"no",
+						"no-repeat  (value)"
+					],
+					[
+						"mar",
+						"margin-bottom"
+					],
+					[
+						"add",
+						"add-to-cart"
+					],
+					[
+						"class",
+						"class	@class"
+					],
+					[
+						"pad",
+						"padding-left"
+					],
+					[
 						"margin",
-						"margin-left"
+						"margin-bottom"
+					],
+					[
+						"table",
+						"table-cell"
 					],
 					[
 						"lin",
@@ -885,16 +932,8 @@
 						"max-height"
 					],
 					[
-						"text",
-						"text-decoration"
-					],
-					[
 						"padding",
 						"padding"
-					],
-					[
-						"class",
-						"class=  (attribute)"
 					],
 					[
 						"a",
@@ -925,10 +964,6 @@
 						"arrGWeb"
 					],
 					[
-						"pad",
-						"padding-left"
-					],
-					[
 						"fo",
 						"footer"
 					],
@@ -943,10 +978,6 @@
 					[
 						"pro",
 						"prorow2"
-					],
-					[
-						"mar",
-						"margin"
 					],
 					[
 						"searh",
@@ -965,10 +996,6 @@
 						"repeat-x"
 					],
 					[
-						"back",
-						"background"
-					],
-					[
 						"m-",
 						"m-expanded"
 					],
@@ -985,21 +1012,29 @@
 			"buffers":
 			[
 				{
-					"file": "/D/Webroot/new1/index.html",
+					"file": "/D/Webroot/shoppinstep/index.html",
 					"settings":
 					{
-						"buffer_size": 7874,
+						"buffer_size": 1828,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"contents": "/*global setting*/\nbody{background: #fff url(../images/bg-body.png) repeat 0 0; font:12px/1.5em arial,helvetica,sans-serif}\n.header,.container,.footer{width: 1000px; margin: 0 auto;}\na{color: #888; text-decoration: none;}\na:hover{text-decoration: underline;}\n.clear{clear: both; display: block; height: 0; visibility: hidden;}\n\n/*header style*/\n.header-wrapper{height: 138px; margin-bottom: 20px; background: url(../images/bg-header.png) 0 0 repeat-x;}\n.header{padding-top: 15px; margin-bottom: 20px; height: 123px;}\n.logo{width: 191px; height: 61px; float: left;}\n.rightnav{float: right; text-align: right;}\n.topnav{overflow: hidden; margin: 5px 0;}\n.topnav li{float: left; margin-left: 20px;}\n.nav{overflow: hidden;}\n.nav li{ text-transform: capitalize; float: left; font-size: 16px; line-height: 40px; height: 40px;}\n.nav li a{border-top: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7; border-bottom: 0;  height: 39px; display: block; padding: 0 20px; line-height: 39px;}\n.nav li a:hover{color: white; background: #D90A14; text-decoration: none; border-top: 1px solid #D90A14; border-right: 1px solid #D90A14; }\n.current a{ background-color: #D90A14; color: white;}\n.first a{ border-left: 1px solid #e7e7e7;}\n.search{overflow: hidden; margin-top: 15px; }\n#txt-input{border: 1px solid #eee; line-height: 20px; width: 224px; height: 20px; padding:	2px 0 2px 5px; float: right;}\n#submit-btn{background: url(../images/bg-button-search.png) no-repeat center center; border: 0 none; width: 27px; height: 26px; text-indent: -999px; float: right; cursor: pointer;}\n\n/* left content */\n.ct-right{ width: 740px; float: right;}\n.ct-left{float: left; width: 220px; background-color: #FFF; border: 1px solid #e7e7e7; padding: 10px;  }\n.sidebarblock{margin-bottom: 20px;}\n.sidebarblock h4{margin-bottom: 10px; height: 34px; line-height: 34px; border-left: 5px solid #D90A14; padding-left: 10px; background: url(../images/bg-title-block.png) repeat 0 0; font-size: 14px; font-weight: 700; color: #555;}\n.categories{overflow: hidden; line-height: 25px; font-size: 14px; }\n.categories li{background: #FFF url(../images/bg-li.png) left center no-repeat; padding-left: 20px;}\n.bestslider li{border-bottom: 1px solid #e7e7e7; overflow: hidden; padding: 10px 0;}\n.imgdiv{float: left; width: 70px; height: 70px; text-align: center; border: 1px solid #e9e9e9; margin-right: 10px;}\n.txtdiv{float: left; height: 70px; width: 130px;}\n.left-title{height: 50px; overflow: hidden; text-overflow: ellipsis;}\n.small-price{color: #E33939; font-weight: bold;}\n\n/*  right cotent  */\n.slider{width: 740px; overflow: hidden; margin-bottom: 10px;}\n.slider ul{width: 10000px; height: auto;}\n.slider ul li{float: left;}\n\n\n.nfliconslide{border: 1px solid #dedede; margin-bottom: 10px; padding: 10px 0; background-color: #FFF;}\n.nfliconslide ul{overflow: hidden; }\n.nfliconslide ul li{float: left; margin: 0 10px; }\n\n.featured-pro,.new-pro{border: 1px solid #dedede; padding: 10px; background-color: #FFF; margin-bottom: 10px;}\n.featured-pro h4,.new-pro h4{ height: 40px; line-height: 40px; padding-left: 10px; border-left: 5px solid #d90a14; margin-bottom: 10px; font-size: 14px; font-weight: bold;}\n.featured-pro ul{overflow: hidden;}\n.featured-pro ul li {float: left; width: 200px; margin-left: 10px;}\n.img-wrap{text-align: center;}\n.pro-title{ height: 40px; line-height: 20px; margin: 10px 0; overflow: hidden;}\n.price{color: #E83842;}\n\n.new-pro ul li{ float: left; fl}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*footer content*/\n.footer{margin-top: 20px;}\n.footer-link{overflow: hidden;}\n.footer-link li{float: left; margin-right: 20px; width: 230px;}\n.footernav li{float: left; margin-right: 20px; margin-top: 20px;}\n.copyright{margin-top: 20px;}",
-					"file": "/D/Webroot/new1/css/style.css",
-					"file_size": 3768,
-					"file_write_time": 129918905918593750,
+					"file": "/D/Webroot/shoppinstep/css/style.css",
 					"settings":
 					{
-						"buffer_size": 3694,
+						"buffer_size": 1160,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "",
+					"file": "/C/Documents and Settings/Administrator/Desktop/New Text Document.txt",
+					"file_size": -1,
+					"file_write_time": -1,
+					"settings":
+					{
+						"buffer_size": 0,
 						"line_ending": "Windows"
 					}
 				}
@@ -1007,16 +1042,28 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 185.0,
 				"selected_items":
 				[
+					[
+						"tidy",
+						"Tidy CSS (Low Compression)"
+					],
 					[
 						"dis",
 						"Package Control: Disable Package"
 					],
 					[
+						"lis",
+						"Package Control: List Packages"
+					],
+					[
 						"pip",
 						"Package Control: Install Package"
+					],
+					[
+						"css",
+						"Tidy CSS (Low Compression)"
 					],
 					[
 						"enab",
@@ -1043,10 +1090,6 @@
 						"Zen Coding: Select next item"
 					],
 					[
-						"tidy",
-						"Tidy HTML"
-					],
-					[
 						"tag",
 						"Tag: Close Tag"
 					],
@@ -1061,10 +1104,6 @@
 					[
 						"syntax",
 						"Set Syntax: C++"
-					],
-					[
-						"lis",
-						"Package Control: List Packages"
 					],
 					[
 						"listp",
@@ -1092,7 +1131,29 @@
 			},
 			"file_history":
 			[
+				"/C/Documents and Settings/Administrator/Desktop/shoppinstep/css/style.css",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
+				"/C/WINDOWS/system32/drivers/etc/hosts",
+				"/C/Documents and Settings/Administrator/Desktop/shoppinstep/index.html",
+				"/D/Webroot/new1/css/style.css",
+				"/D/Webroot/new1/login.html",
+				"/D/Webroot/new1/index.html",
+				"/D/Webroot/new1/New Folder/test.html",
+				"/D/Webroot/new1/css/login.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/Default.sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/AdvancedNewFile/Default (Windows).sublime-keymap",
+				"/D/Webroot/new1/detail.html",
+				"/D/Webroot/new1/css/detail.css",
+				"/D/Webroot/new1/css/userinfo.css",
+				"/D/Webroot/new1/userdashboard.html",
+				"/D/Webroot/new1/New Folder/1.html",
+				"/D/Webroot/new1/css/index.css",
+				"/D/Webroot/new1/css/list.css",
+				"/D/Webroot/new1/list.html",
+				"/D/Webroot/new1/css/reset.css",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
 				"/E/new1/index.html",
 				"/E/new1/css/style.css",
@@ -1114,7 +1175,6 @@
 				"/Z/xue/cheapusajerseysstore.com/templates/0911/theme/header.html",
 				"/Z/xue/cheapusajerseysstore.com/templates/0911/css/header.css",
 				"/Z/xue/cheapusajerseysstore.com/data/webconfig.inc.php",
-				"/C/WINDOWS/system32/drivers/etc/hosts",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/list.css",
 				"/C/Documents and Settings/Administrator/.ssh/id_rsa.pub",
 				"/C/Documents and Settings/Administrator/Desktop/0910-2-nfl/css/style.css",
@@ -1124,7 +1184,6 @@
 				"/Z/xue/nfl0906.com/templates/090601/download/detail.html",
 				"/Z/xue/cheapusajerseys2012.com/admin/login.php",
 				"/Z/xue/cheapusajerseys2012.com/admin/templats/admin.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/header.css",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/pagepro.css",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/style.css",
@@ -1136,7 +1195,6 @@
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/content.css",
 				"/Z/xue/cheapusajerseys2012.com/download/include/detail.inc.php",
 				"/Z/xue/cheapusajerseys2012.com/product/include/detail.inc.php",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/GotoRecent/goto_recent.py",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/product/list_pic.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/GotoRecent/Default (Windows).sublime-keymap",
@@ -1197,29 +1255,10 @@
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/begin.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.pyc",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/LiveReload/README.md",
 				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
 				"/C/Documents and Settings/Administrator/Desktop/webapp/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/webapp/css/style.css",
-				"/Z/xue/nfl0906.com/templates/090601/css/detail.css",
-				"/Z/xue/nfl0906.com/templates/090601/product/detail.html",
-				"/C/Documents and Settings/Administrator/Desktop/ooo.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/yhreset.sublime-snippet",
-				"/D/Program Files/Vim/_vimrc",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/latestjq.sublime-snippet",
-				"/Z/xue/nfl0906.com/templates/090601/index.html",
-				"/Z/xue/nfl0906.com/templates/090601/css/pagepro.css",
-				"/Z/xue/nfl0906.com/templates/090601/theme/footer.html",
-				"/Z/xue/nfl0906.com/templates/090601/product/list.html",
-				"/Z/xue/nfl0906.com/templates/090601/theme/header.html",
-				"/Z/xue/nfl0906.com/templates/090601/css/content.css",
-				"/Z/xue/nfl0906.com/templates/090601/css/style.css",
-				"/Z/xue/nfl0906.com/templates/090601/css/user.css",
-				"/Z/xue/nfl0906.com/templates/090601/scripts/tree.js",
-				"/Z/xue/nfl0906.com/templates/090601/scripts/tree1.js",
-				"/Z/xue/nfl0906.com/templates/090601/product/detail.html.bak.html",
-				"/C/Documents and Settings/Administrator/Desktop/example.md"
+				"/C/Documents and Settings/Administrator/Desktop/webapp/css/style.css"
 			],
 			"find":
 			{
@@ -1227,7 +1266,7 @@
 			},
 			"find_in_files":
 			{
-				"height": 98.0,
+				"height": 0.0,
 				"where_history":
 				[
 					"C:\\Documents and Settings\\Administrator\\Desktop\\0910-2-nfl",
@@ -1243,6 +1282,35 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"tr",
+					"</tr>",
+					"tr",
+					"th",
+					"img",
+					"title-bg",
+					"cartContentsDisplay",
+					"th",
+					"input",
+					"img",
+					"includes/templates/theme660/",
+					"title=\".*?\"",
+					"alt=\".*?\"",
+					"alt=\".*\"",
+					"alt=\".*?\"",
+					"onmouseover=\"this.className='cssButtonHover button_checkout button_checkoutHover'\" onmouseout=\"this.className='cssButton button_checkout'\" ",
+					"(<a.*href=\")[^\"]*\"",
+					"col2-set",
+					"dashboard",
+					"o",
+					"50",
+					"add-to-cart",
+					"pagenav",
+					"href=\"$\"",
+					"Cart Subtotal: ",
+					"100",
+					" href=\"$\"",
+					"style",
+					"pro",
 					"94333_68291.jpg",
 					"slider",
 					"price",
@@ -1341,43 +1409,20 @@
 					"src=\"images",
 					"bestsnapbackhatssupply",
 					"090502",
-					"htc",
-					"(<a.*href=\")[^\"]*\"",
-					"^\\s+\\w\\b",
-					"^\\s+\\w*",
-					"^\\s+\\w",
-					"\\t+\\w",
-					"^\\t+\\w",
-					"^\\t*\\w",
-					"^\\t\\w",
-					"^\\s\\w",
-					"^\\w",
-					"(?:(<a.*href=\"))([^\"]*)\"",
-					"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
-					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
-					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]\"",
-					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
-					" style=\"float: left; width: 120px; \"",
-					"images/(.*)\\.gif",
-					"style=\"width: 600px; left: 0px;\"",
-					"style=\"float: left; width: 960px; \"",
-					"float: left; width: 960px;",
-					"slider",
-					"sliderThumbs",
-					"discount",
-					"css/validation.css",
-					"file:///C:/Documents%20and%20Settings/Administrator/Desktop/newSite2/images/nav_hover_last.png",
-					"body",
-					"<a href=\".*?\"",
-					"etheme_cp_inner",
-					"etheme_cp"
+					"htc"
 				],
-				"highlight": true,
+				"highlight": false,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": false,
+				"regex": true,
 				"replace_history":
 				[
+					"",
+					"\\1#\"",
+					"\\1#",
+					"href=\"#\"",
+					" href=\"#\"",
+					"href=\"#\"",
 					"samsung_galaxy_gio_s56601(1).jpg",
 					"small-price",
 					"price",
@@ -1499,12 +1544,6 @@
 					"images",
 					"js",
 					"css",
-					"images",
-					"js",
-					"css",
-					"images",
-					"js",
-					"css",
 					"images"
 				],
 				"reverse": false,
@@ -1513,6 +1552,12 @@
 				"whole_word": false,
 				"wrap": false
 			},
+			"folders":
+			[
+				{
+					"path": "/D/Webroot/shoppinstep"
+				}
+			],
 			"groups":
 			[
 				{
@@ -1521,18 +1566,18 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/D/Webroot/new1/index.html",
+							"file": "/D/Webroot/shoppinstep/index.html",
 							"settings":
 							{
-								"buffer_size": 7874,
+								"buffer_size": 1828,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3564,
-										3564
+										1511,
+										1511
 									]
 								],
 								"settings":
@@ -1542,7 +1587,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 1824.0,
+								"translation.y": 883.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1550,32 +1595,59 @@
 					]
 				},
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 1,
-							"file": "/D/Webroot/new1/css/style.css",
+							"file": "/D/Webroot/shoppinstep/css/style.css",
 							"settings":
 							{
-								"buffer_size": 3694,
+								"buffer_size": 1160,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3441,
-										3441
+										1126,
+										1126
 									]
 								],
 								"settings":
 								{
 									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"word_wrap": true
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 1140.0,
+								"translation.y": 1143.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Documents and Settings/Administrator/Desktop/New Text Document.txt",
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"is_xml": false,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1602,21 +1674,21 @@
 						1
 					],
 					[
+						1,
 						0,
-						1,
-						1,
-						2
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.5,
 					1.0
 				],
 				"rows":
 				[
 					0.0,
-					0.5,
 					1.0
 				]
 			},
@@ -1625,7 +1697,7 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,0,1,-32000,-32000,-1,-1,851,535,229,1442",
+			"position": "0,0,2,-32000,-32000,-1,-1,785,19,99,1459",
 			"replace":
 			{
 				"height": 64.0
@@ -1636,6 +1708,10 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"rese",
+						"css/reset.css"
+					],
 					[
 						"detail.css",
 						"cheapusajerseysstore.com/templates/0911/css/detail.css"
@@ -1816,10 +1892,10 @@
 				"width": 380.0
 			},
 			"show_minimap": false,
-			"show_open_files": true,
+			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": false,
-			"side_bar_width": 206.0,
+			"side_bar_visible": true,
+			"side_bar_width": 148.0,
 			"status_bar_visible": false,
 			"window_id": 6,
 			"workspace_name": ""
