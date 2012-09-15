@@ -511,6 +511,7 @@ zen_settings = {
 		'filters': 'html',
 		'snippets': {
 			'cc:ie6': '<!--[if lte IE 6]>\n\t${child}|\n<![endif]-->',
+			'cc:ie7': '<!--[if lte IE 7]>\n\t${child}|\n<![endif]-->',
 			'cc:ie': '<!--[if IE]>\n\t${child}|\n<![endif]-->',
 			'cc:noie': '<!--[if !IE]><!-->\n\t${child}|\n<!--<![endif]-->',
 			'html:4t': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n' +
@@ -569,7 +570,7 @@ zen_settings = {
 		},
 
 		'abbreviations': {
-			'a': '<a href=""></a>',
+			'a': '<a href="#"></a>',
 			'a:link': '<a href="http://|"></a>',
 			'a:mail': '<a href="mailto:|"></a>',
 			'abbr': '<abbr title=""></abbr>',
@@ -578,7 +579,7 @@ zen_settings = {
 			'bdo': '<bdo dir=""></bdo>',
 			'bdo:r': '<bdo dir="rtl"></bdo>',
 			'bdo:l': '<bdo dir="ltr"></bdo>',
-			'link:css': '<link rel="stylesheet" type="text/css" href="${1:style}.css" media="all" />',
+			'link:css': '<link rel="stylesheet" type="text/css" href="css/${1:style}.css" media="all" />',
 			'link:print': '<link rel="stylesheet" type="text/css" href="|print.css" media="print" />',
 			'link:favicon': '<link rel="shortcut icon" type="image/x-icon" href="|favicon.ico" />',
 			'link:touch': '<link rel="apple-touch-icon" href="|favicon.png" />',
@@ -605,8 +606,8 @@ zen_settings = {
 			'form': '<form action="" method="post"></form>',
 			'form:get': '<form action="" method="get"></form>',
 			'form:post': '<form action="" method="post"></form>',
-			'label': '<label for=""></label>',
-			'input': '<input type="" />',
+			'label': '<label for="#"></label>',
+			'input': '<input type="text" />',
 			'input:hidden': '<input type="hidden" name="" />',
 			'input:h': '<input type="hidden" name="" />',
 			'input:text': '<input type="text" name="" id="" />',

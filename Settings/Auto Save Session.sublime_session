@@ -1,6 +1,8 @@
 {
 	"folder_history":
 	[
+		"/D/Webroot/shoppinstep",
+		"/C/Documents and Settings/Administrator/Desktop/shoppinstep",
 		"/D/Webroot/new1",
 		"/C/Documents and Settings/Administrator/Desktop/newSite1",
 		"/Z/xue/cheapusajerseysstore.com",
@@ -870,6 +872,26 @@
 				"selected_items":
 				[
 					[
+						"back",
+						"background"
+					],
+					[
+						"pa",
+						"padding"
+					],
+					[
+						"wid",
+						"width"
+					],
+					[
+						"text",
+						"text-transform"
+					],
+					[
+						"ari",
+						"Arial, Helvetica, sans-serif"
+					],
+					[
 						"no",
 						"no-repeat  (value)"
 					],
@@ -896,10 +918,6 @@
 					[
 						"table",
 						"table-cell"
-					],
-					[
-						"text",
-						"text-indent"
 					],
 					[
 						"lin",
@@ -978,10 +996,6 @@
 						"repeat-x"
 					],
 					[
-						"back",
-						"background"
-					],
-					[
 						"m-",
 						"m-expanded"
 					],
@@ -998,26 +1012,34 @@
 			"buffers":
 			[
 				{
-					"file": "/D/Webroot/new1/index.html",
+					"file": "/C/WINDOWS/system32/drivers/etc/hosts",
 					"settings":
 					{
-						"buffer_size": 9442,
+						"buffer_size": 793,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/D/Webroot/new1/login.html",
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
 					"settings":
 					{
-						"buffer_size": 5325,
+						"buffer_size": 27452,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/D/Webroot/new1/New Folder/test.html",
+					"file": "/C/Documents and Settings/Administrator/Desktop/myaccount/index.html",
 					"settings":
 					{
-						"buffer_size": 3119,
+						"buffer_size": 3401,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Desktop/myaccount/css/userinfo.css",
+					"settings":
+					{
+						"buffer_size": 1293,
 						"line_ending": "Windows"
 					}
 				}
@@ -1030,10 +1052,6 @@
 				[
 					[
 						"tidy",
-						"Tidy CSS (Highest Compression)"
-					],
-					[
-						"css",
 						"Tidy CSS (Low Compression)"
 					],
 					[
@@ -1041,8 +1059,16 @@
 						"Package Control: Disable Package"
 					],
 					[
+						"lis",
+						"Package Control: List Packages"
+					],
+					[
 						"pip",
 						"Package Control: Install Package"
+					],
+					[
+						"css",
+						"Tidy CSS (Low Compression)"
 					],
 					[
 						"enab",
@@ -1085,10 +1111,6 @@
 						"Set Syntax: C++"
 					],
 					[
-						"lis",
-						"Package Control: List Packages"
-					],
-					[
 						"listp",
 						"Package Control: List Packages"
 					],
@@ -1097,7 +1119,7 @@
 						"Trailing Spaces: Delete Trailing Spaces"
 					]
 				],
-				"width": 494.0
+				"width": 522.0
 			},
 			"console":
 			{
@@ -1114,10 +1136,37 @@
 			},
 			"file_history":
 			[
+				"/C/Documents and Settings/Administrator/Desktop/myaccount/css/order.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
+				"/C/Documents and Settings/Administrator/Desktop/detail.html",
+				"/C/Documents and Settings/Administrator/Desktop/forminfo.css",
+				"/C/Documents and Settings/Administrator/Desktop/sexy lingerie4/4/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/list.html",
+				"/C/Documents and Settings/Administrator/Desktop/main.css",
+				"/C/Documents and Settings/Administrator/Desktop/style.css",
+				"/C/Documents and Settings/Administrator/Desktop/test.css",
+				"/C/Documents and Settings/Administrator/Desktop/register/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/register/css/reg.css",
+				"/D/Program Files/Sublime Text 2/sublime_text.exe",
+				"/C/Documents and Settings/Administrator/Desktop/youjia.txt",
+				"/D/Webroot/shoppinstep/index.html",
+				"/D/Webroot/shoppinstep/css/style.css",
+				"/C/Documents and Settings/Administrator/Desktop/New Text Document.txt",
+				"/C/Documents and Settings/Administrator/Desktop/shoppinstep/css/style.css",
+				"/C/WINDOWS/system32/drivers/etc/hosts",
+				"/C/Documents and Settings/Administrator/Desktop/shoppinstep/index.html",
+				"/D/Webroot/new1/css/style.css",
 				"/D/Webroot/new1/login.html",
+				"/D/Webroot/new1/index.html",
+				"/D/Webroot/new1/New Folder/test.html",
+				"/D/Webroot/new1/css/login.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/Default.sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/AdvancedNewFile/Default (Windows).sublime-keymap",
 				"/D/Webroot/new1/detail.html",
 				"/D/Webroot/new1/css/detail.css",
-				"/D/Webroot/new1/css/style.css",
 				"/D/Webroot/new1/css/userinfo.css",
 				"/D/Webroot/new1/userdashboard.html",
 				"/D/Webroot/new1/New Folder/1.html",
@@ -1125,7 +1174,6 @@
 				"/D/Webroot/new1/css/list.css",
 				"/D/Webroot/new1/list.html",
 				"/D/Webroot/new1/css/reset.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
 				"/E/new1/index.html",
 				"/E/new1/css/style.css",
@@ -1147,7 +1195,6 @@
 				"/Z/xue/cheapusajerseysstore.com/templates/0911/theme/header.html",
 				"/Z/xue/cheapusajerseysstore.com/templates/0911/css/header.css",
 				"/Z/xue/cheapusajerseysstore.com/data/webconfig.inc.php",
-				"/C/WINDOWS/system32/drivers/etc/hosts",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/list.css",
 				"/C/Documents and Settings/Administrator/.ssh/id_rsa.pub",
 				"/C/Documents and Settings/Administrator/Desktop/0910-2-nfl/css/style.css",
@@ -1157,7 +1204,6 @@
 				"/Z/xue/nfl0906.com/templates/090601/download/detail.html",
 				"/Z/xue/cheapusajerseys2012.com/admin/login.php",
 				"/Z/xue/cheapusajerseys2012.com/admin/templats/admin.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/header.css",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/pagepro.css",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/style.css",
@@ -1169,7 +1215,6 @@
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/css/content.css",
 				"/Z/xue/cheapusajerseys2012.com/download/include/detail.inc.php",
 				"/Z/xue/cheapusajerseys2012.com/product/include/detail.inc.php",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/GotoRecent/goto_recent.py",
 				"/Z/xue/cheapusajerseys2012.com/templates/090801/product/list_pic.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/GotoRecent/Default (Windows).sublime-keymap",
@@ -1218,30 +1263,7 @@
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/smartycomment.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/smartytag.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/Preferences.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-				"/Z/xue/nfl0906.com/data/webconfig.inc.php",
-				"/D/Apache2.2/conf/httpd.conf",
-				"/Z/xue/cheapusajerseys20121test.com/data/webconfig.inc.php",
-				"/D/Webroot/webapp/rings/index.html",
-				"/D/Webroot/webapp/rings/css/style.css",
-				"/D/Webroot/webapp/css/style.css",
-				"/C/Documents and Settings/Administrator/Desktop/begin.html",
-				"/D/Webroot/webapp/index.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/begin.sublime-snippet",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.pyc",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/LiveReload/README.md",
-				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
-				"/C/Documents and Settings/Administrator/Desktop/webapp/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/webapp/css/style.css",
-				"/Z/xue/nfl0906.com/templates/090601/css/detail.css",
-				"/Z/xue/nfl0906.com/templates/090601/product/detail.html",
-				"/C/Documents and Settings/Administrator/Desktop/ooo.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/yhreset.sublime-snippet",
-				"/D/Program Files/Vim/_vimrc",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/latestjq.sublime-snippet",
-				"/Z/xue/nfl0906.com/templates/090601/index.html"
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
 			],
 			"find":
 			{
@@ -1265,6 +1287,39 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"link",
+					"http://plazathemes.com/demo/ma_hightechstore/sales/order/history/?limit=",
+					"http://plazathemes.com/demo/ma_hightechstore/sales/order/history/?limit=.{2}",
+					"http://plazathemes.com/demo/ma_hightechstore/sales/order/history/?limit=.{2}\"",
+					"http://plazathemes.com/demo/ma_hightechstore/sales/order/history/?limit=\\d{2}\"",
+					"http://plazathemes.com/demo/ma_hightechstore/sales/order/history/?limit=\\d[2]\"",
+					"http://plazathemes.com/demo/ma_hightechstore/sales/order/history/?limit=\\d{2}\"",
+					"http://plazathemes.com/demo/ma_hightechstore/sales/order/history/?limit=.*\"",
+					"quantity",
+					"frominfo_pzn",
+					"'a'",
+					"\"a",
+					"a",
+					"nflteamusamall.com",
+					"nflteamusamall.com ",
+					"tr",
+					"</tr>",
+					"tr",
+					"th",
+					"img",
+					"title-bg",
+					"cartContentsDisplay",
+					"th",
+					"input",
+					"img",
+					"includes/templates/theme660/",
+					"title=\".*?\"",
+					"alt=\".*?\"",
+					"alt=\".*\"",
+					"alt=\".*?\"",
+					"onmouseover=\"this.className='cssButtonHover button_checkout button_checkoutHover'\" onmouseout=\"this.className='cssButton button_checkout'\" ",
+					"(<a.*href=\")[^\"]*\"",
+					"col2-set",
 					"dashboard",
 					"o",
 					"50",
@@ -1359,47 +1414,17 @@
 					"qty_text",
 					"<?{",
 					"src=\"images",
-					"hot_arr",
-					"\\b(\\w+)\\b\\s+\\1",
-					"arrParentType",
-					"<!--\\s?-*(\\w*)-*\\s?-->",
-					"<!---*(\\w*)-*-->",
-					"footer",
-					"<!---*(\\w*)-*-->",
-					"<!--(-*\\w*-*)-->",
-					"Keywords",
-					"login",
-					"src=\"images",
-					"img",
-					"src=\"images",
-					"bestsnapbackhatssupply",
-					"090502",
-					"htc",
-					"(<a.*href=\")[^\"]*\"",
-					"^\\s+\\w\\b",
-					"^\\s+\\w*",
-					"^\\s+\\w",
-					"\\t+\\w",
-					"^\\t+\\w",
-					"^\\t*\\w",
-					"^\\t\\w",
-					"^\\s\\w",
-					"^\\w",
-					"(?:(<a.*href=\"))([^\"]*)\"",
-					"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
-					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
-					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]\"",
-					"(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"\n(?:(<a.*href=\"))([^\"]*)\"",
-					" style=\"float: left; width: 120px; \"",
-					"images/(.*)\\.gif",
-					"style=\"width: 600px; left: 0px;\""
+					"hot_arr"
 				],
-				"highlight": true,
+				"highlight": false,
 				"in_selection": false,
 				"preserve_case": false,
 				"regex": false,
 				"replace_history":
 				[
+					"",
+					"\\1#\"",
+					"\\1#",
 					"href=\"#\"",
 					" href=\"#\"",
 					"href=\"#\"",
@@ -1524,9 +1549,6 @@
 					"images",
 					"js",
 					"css",
-					"images",
-					"js",
-					"css",
 					"images"
 				],
 				"reverse": false,
@@ -1538,63 +1560,60 @@
 			"folders":
 			[
 				{
-					"path": "/D/Webroot/new1"
+					"path": "/D/Webroot/shoppinstep"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 2,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/D/Webroot/new1/index.html",
+							"file": "/C/WINDOWS/system32/drivers/etc/hosts",
 							"settings":
 							{
-								"buffer_size": 9442,
+								"buffer_size": 793,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										6794,
-										6531
+										781,
+										793
 									]
 								],
 								"settings":
 								{
-									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 4416.0,
+								"translation.y": 300.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/D/Webroot/new1/login.html",
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
 							"settings":
 							{
-								"buffer_size": 5325,
+								"buffer_size": 27452,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										469,
-										469
+										0,
+										0
 									]
 								],
 								"settings":
 								{
-									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"syntax": "Packages/Python/Python.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
@@ -1605,18 +1624,18 @@
 						},
 						{
 							"buffer": 2,
-							"file": "/D/Webroot/new1/New Folder/test.html",
+							"file": "/C/Documents and Settings/Administrator/Desktop/myaccount/index.html",
 							"settings":
 							{
-								"buffer_size": 3119,
+								"buffer_size": 3401,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										3119
+										497,
+										497
 									]
 								],
 								"settings":
@@ -1625,6 +1644,32 @@
 									"syntax": "Packages/HTML/HTML.tmLanguage",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/Documents and Settings/Administrator/Desktop/myaccount/css/userinfo.css",
+							"settings":
+							{
+								"buffer_size": 1293,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/CSS/CSS.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -1670,7 +1715,7 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,2,3,-32000,-32000,-1,-1,789,3,103,1443",
+			"position": "0,2,3,-1,-1,-1,-1,817,-68,134,1372",
 			"replace":
 			{
 				"height": 64.0
@@ -1869,7 +1914,7 @@
 			"show_tabs": true,
 			"side_bar_visible": true,
 			"side_bar_width": 148.0,
-			"status_bar_visible": false,
+			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": ""
 		}
