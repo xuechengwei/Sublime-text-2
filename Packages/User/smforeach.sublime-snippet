@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<?{foreach from=\$$1 item=$1}?>
+	$2
+<?{/foreach}?>
+]]>
+</content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>smforeach</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>
