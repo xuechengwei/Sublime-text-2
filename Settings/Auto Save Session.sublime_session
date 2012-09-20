@@ -1041,19 +1041,19 @@
 					}
 				},
 				{
-					"file": "/D/Webroot/nfl/index.html",
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
 					"settings":
 					{
-						"buffer_size": 1746,
+						"buffer_size": 8395,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+					"file": "/D/Webroot/nfl/index.html",
 					"settings":
 					{
-						"buffer_size": 336,
-						"line_ending": "Unix"
+						"buffer_size": 1753,
+						"line_ending": "Windows"
 					}
 				},
 				{
@@ -1068,7 +1068,7 @@
 					"file": "/D/Webroot/nfl/css/style.css",
 					"settings":
 					{
-						"buffer_size": 929,
+						"buffer_size": 1447,
 						"line_ending": "Windows"
 					}
 				}
@@ -1177,6 +1177,8 @@
 			},
 			"file_history":
 			[
+				"/E/Downloads/getafe.vssettings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Desktop/nfl/index.html",
 				"/Z/yuanliang/stylesunglass.com/head.php",
 				"/Z/yuanliang/stylesunglass.com/css/stylelist.css",
@@ -1302,9 +1304,7 @@
 				"/D/Webroot/shoppinstep/index.html",
 				"/D/Webroot/shoppinstep/css/style.css",
 				"/C/Documents and Settings/Administrator/Desktop/New Text Document.txt",
-				"/C/Documents and Settings/Administrator/Desktop/shoppinstep/css/style.css",
-				"/C/Documents and Settings/Administrator/Desktop/shoppinstep/index.html",
-				"/D/Webroot/new1/css/style.css"
+				"/C/Documents and Settings/Administrator/Desktop/shoppinstep/css/style.css"
 			],
 			"find":
 			{
@@ -1330,6 +1330,15 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"e6c969",
+					"ad7f5e",
+					"e6b865",
+					"E6DB74",
+					"e6db74",
+					"f92672",
+					"html",
+					"d6d6cd",
+					"css",
 					"left",
 					"media=\"all\" ",
 					"18",
@@ -1448,16 +1457,7 @@
 					"p price",
 					"hot-ipad-7-inch-androi-1-6-os-wifi-cuc-manh-gia-tot_24717_(1).jpg",
 					"<img src=\"(.*)\" alt=\"\" />",
-					"item jcarousel-item jcarousel-item-horizontal jcarousel-item-\\d? jcarousel-item-\\d?-horizontal\"  jcarouselindex=\"\\d?\"",
-					"item jcarousel-item jcarousel-item-horizontal jcarousel-item-\\d? jcarousel-item-2-horizontal\"  jcarouselindex=\"\\d?\"",
-					"item jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal\"  jcarouselindex=\"\\d?\"",
-					"class=\"item first jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal\"  jcarouselindex=\"\\d?\"",
-					" class=\"item first jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal\"  jcarouselindex=\"1\"",
-					"onmouseout=\"toggleMenu(this,0)\" onmouseover=\"toggleMenu(this,1)\" id=\"\"",
-					"width=\"723\" height=\"318\" ",
-					"alt=\".*?\"",
-					"title=\".*?\"",
-					"logout"
+					"item jcarousel-item jcarousel-item-horizontal jcarousel-item-\\d? jcarousel-item-\\d?-horizontal\"  jcarouselindex=\"\\d?\""
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1609,7 +1609,7 @@
 			"groups":
 			[
 				{
-					"selected": 2,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -1624,8 +1624,8 @@
 								"selection":
 								[
 									[
-										893,
-										908
+										426,
+										426
 									]
 								],
 								"settings":
@@ -1633,62 +1633,35 @@
 									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 60.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/D/Webroot/nfl/index.html",
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
 							"settings":
 							{
-								"buffer_size": 1746,
+								"buffer_size": 8395,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1518,
-										1518
+										1618,
+										1618
 									]
 								],
 								"settings":
 								{
-									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"is_xml": true,
+									"syntax": "Packages/XML/XML.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-							"settings":
-							{
-								"buffer_size": 336,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										218,
-										218
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/JavaScript/JSON.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 1017.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1699,6 +1672,34 @@
 					"selected": 0,
 					"sheets":
 					[
+						{
+							"buffer": 2,
+							"file": "/D/Webroot/nfl/index.html",
+							"settings":
+							{
+								"buffer_size": 1753,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										769,
+										769
+									]
+								],
+								"settings":
+								{
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 380.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
 						{
 							"buffer": 3,
 							"file": "/D/Webroot/nfl/css/reset.css",
@@ -1719,26 +1720,32 @@
 								{
 									"syntax": "Packages/CSS/CSS.tmLanguage"
 								},
-								"translation.x": 4890.0,
+								"translation.x": 4166.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
-						},
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
 						{
 							"buffer": 4,
 							"file": "/D/Webroot/nfl/css/style.css",
 							"settings":
 							{
-								"buffer_size": 929,
+								"buffer_size": 1447,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										881,
-										881
+										788,
+										788
 									]
 								],
 								"settings":
@@ -1778,12 +1785,19 @@
 						0,
 						2,
 						1
+					],
+					[
+						2,
+						0,
+						3,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.520897832817,
+					0.33,
+					0.733987538941,
 					1.0
 				],
 				"rows":
@@ -1797,7 +1811,7 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,2,3,-32000,-32000,-1,-1,813,106,71,1546",
+			"position": "0,0,1,-32000,-32000,-1,-1,772,25,30,1465",
 			"replace":
 			{
 				"height": 64.0
