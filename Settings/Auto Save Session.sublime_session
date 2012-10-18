@@ -1674,13 +1674,13 @@
 					}
 				},
 				{
-					"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n	<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />\n	<title></title>\n	script\n	<script type=\"text/javascript\">\n	//<![CDATA[\n	\n	//]]>\n	</script>\n</head>\n<body>\n\n</body>\n</html>",
+					"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n	<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />\n	<title></title>\n	<script type=\"text/javascript\">\n	//<![CDATA[\n		function(){\n			\n		}\n	//]]>\n	</script>\n</head>\n<body>\n\n</body>\n</html>",
 					"file": "/C/Documents and Settings/Administrator/Desktop/lazyload/index.html",
 					"file_size": 353,
 					"file_write_time": 129950236343125000,
 					"settings":
 					{
-						"buffer_size": 379,
+						"buffer_size": 391,
 						"line_ending": "Windows"
 					}
 				},
@@ -2314,7 +2314,7 @@
 			"groups":
 			[
 				{
-					"selected": 5,
+					"selected": 2,
 					"sheets":
 					[
 						{
@@ -2377,15 +2377,15 @@
 							"file": "/C/Documents and Settings/Administrator/Desktop/lazyload/index.html",
 							"settings":
 							{
-								"buffer_size": 379,
+								"buffer_size": 391,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										329,
-										329
+										337,
+										337
 									]
 								],
 								"settings":
@@ -2438,8 +2438,8 @@
 								"selection":
 								[
 									[
-										248,
-										248
+										247,
+										247
 									]
 								],
 								"settings":
@@ -2465,8 +2465,8 @@
 								"selection":
 								[
 									[
-										17724,
-										17724
+										17723,
+										17723
 									]
 								],
 								"settings":
@@ -2475,7 +2475,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 10041.0,
+								"translation.y": 10161.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -2521,8 +2521,8 @@
 								"selection":
 								[
 									[
-										5,
-										5
+										4,
+										4
 									]
 								],
 								"settings":

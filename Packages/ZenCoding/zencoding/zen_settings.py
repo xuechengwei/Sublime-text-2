@@ -510,11 +510,14 @@ zen_settings = {
 		'extends': 'common',
 		'filters': 'html',
 		'snippets': {
-			'cscript': '<script type="text/javascript">\n' +
+			'script': '<script type="text/javascript">\n' +
 			'//<![CDATA[\n' +
-			'$1' +
+			'	$1' +
 			'\n//]]>' +
 			'\n</script>',
+			'style': '<style type="text/css">\n'+
+			'	$1'+
+			'\n</style>',
 			'cc:ie6': '<!--[if lte IE 6]>\n\t${child}|\n<![endif]-->',
 			'cc:ie': '<!--[if IE]>\n\t${child}|\n<![endif]-->',
 			'cc:noie': '<!--[if !IE]><!-->\n\t${child}|\n<!--<![endif]-->',
