@@ -329,7 +329,8 @@
 	// 	- General labels
 	{
 		"class": "label_control",
-		"color": [70, 70, 70]
+		"color": [70, 70, 70],
+		"font-size":20.0
 	},
 	//	- Text field labels
 	{

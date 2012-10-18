@@ -1,15 +1,21 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"font_face": "monaco",
-	"font_size": 9.0,
+	"font_size": 10.0,
 	"ignored_packages":
 	[
 		"SublimeLinter",
 		"Git",
-		"Gist"
+		"Gist",
+		"Theme - Soda",
+		"PHPUnit",
+		"FileDiffs",
+		"PlainTasks",
+		"Clipboard History"
 	],
 	"soda_classic_tabs": true,
 	"theme": "Nil.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": true
+	"vintage_start_in_command_mode": true,
+	"word_wrap": "true"
 }

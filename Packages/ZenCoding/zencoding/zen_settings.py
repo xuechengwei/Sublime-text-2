@@ -51,9 +51,9 @@ zen_settings = {
 			"l:a": "left:auto;",
 			"z": "z-index:|;",
 			"z:a": "z-index:auto;",
-			"fl": "float:|;",
-			"fl:n": "float:none;",
 			"fl": "float:left;",
+			"fl:n": "float:none;",
+			"fl:l": "float:left;",
 			"fr": "float:right;",
 			"cl": "clear:|;",
 			"cl:n": "clear:none;",
@@ -254,8 +254,8 @@ zen_settings = {
 			"bdtlrs": "border-top-left-radius:|;",
 			"bdbrrs": "border-bottom-right-radius:|;",
 			"bdblrs": "border-bottom-left-radius:|;",
-			"bg": "background:url(../images/|) no-repeat 0 0;",
-			"bg+": "background:#FFF url(../images/|) 0 0 no-repeat;",
+			"bg": "background:|;",
+			"bg+": "background:#FFF url(|) 0 0 no-repeat;",
 			"bg:n": "background:none;",
 			"bg:ie": "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1:x}.png',sizingMethod='${2:crop}');",
 			"bgc": "background-color:#FFF;",
@@ -510,8 +510,12 @@ zen_settings = {
 		'extends': 'common',
 		'filters': 'html',
 		'snippets': {
+			'cscript': '<script type="text/javascript">\n' +
+			'//<![CDATA[\n' +
+			'$1' +
+			'\n//]]>' +
+			'\n</script>',
 			'cc:ie6': '<!--[if lte IE 6]>\n\t${child}|\n<![endif]-->',
-			'cc:ie7': '<!--[if lte IE 7]>\n\t${child}|\n<![endif]-->',
 			'cc:ie': '<!--[if IE]>\n\t${child}|\n<![endif]-->',
 			'cc:noie': '<!--[if !IE]><!-->\n\t${child}|\n<!--<![endif]-->',
 			'html:4t': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n' +
@@ -570,7 +574,7 @@ zen_settings = {
 		},
 
 		'abbreviations': {
-			'a': '<a href="#"></a>',
+			'a': '<a href=""></a>',
 			'a:link': '<a href="http://|"></a>',
 			'a:mail': '<a href="mailto:|"></a>',
 			'abbr': '<abbr title=""></abbr>',
@@ -579,7 +583,7 @@ zen_settings = {
 			'bdo': '<bdo dir=""></bdo>',
 			'bdo:r': '<bdo dir="rtl"></bdo>',
 			'bdo:l': '<bdo dir="ltr"></bdo>',
-			'link:css': '<link rel="stylesheet" type="text/css" href="css/${1:style}.css" media="all" />',
+			'link:css': '<link rel="stylesheet" type="text/css" href="${1:style}.css" media="all" />',
 			'link:print': '<link rel="stylesheet" type="text/css" href="|print.css" media="print" />',
 			'link:favicon': '<link rel="shortcut icon" type="image/x-icon" href="|favicon.ico" />',
 			'link:touch': '<link rel="apple-touch-icon" href="|favicon.png" />',
@@ -591,7 +595,7 @@ zen_settings = {
 			'style': '<style type="text/css"></style>',
 			'script': '<script type="text/javascript"></script>',
 			'script:src': '<script type="text/javascript" src=""></script>',
-			'img': '<img src="images/" alt="" title="" />',
+			'img': '<img src="images/$1" alt="" />',
 			'iframe': '<iframe src="" frameborder="0"></iframe>',
 			'embed': '<embed src="" type="" />',
 			'object': '<object data="" type=""></object>',
@@ -603,11 +607,11 @@ zen_settings = {
 			'area:r': '<area shape="rect" coords="" href="" alt="" />',
 			'area:p': '<area shape="poly" coords="" href="" alt="" />',
 			'link': '<link rel="stylesheet" href="" />',
-			'form': '<form action="" method="post"></form>',
+			'form': '<form action=""></form>',
 			'form:get': '<form action="" method="get"></form>',
 			'form:post': '<form action="" method="post"></form>',
-			'label': '<label for="#"></label>',
-			'input': '<input type="text" />',
+			'label': '<label for=""></label>',
+			'input': '<input type="" />',
 			'input:hidden': '<input type="hidden" name="" />',
 			'input:h': '<input type="hidden" name="" />',
 			'input:text': '<input type="text" name="" id="" />',
