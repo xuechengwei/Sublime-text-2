@@ -254,7 +254,7 @@ zen_settings = {
 			"bdtlrs": "border-top-left-radius:|;",
 			"bdbrrs": "border-bottom-right-radius:|;",
 			"bdblrs": "border-bottom-left-radius:|;",
-			"bg": "background:|;",
+			"bg": "background: url(../images/|) 0 0 no-repeat;",
 			"bg+": "background:#FFF url(|) 0 0 no-repeat;",
 			"bg:n": "background:none;",
 			"bg:ie": "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1:x}.png',sizingMethod='${2:crop}');",
@@ -510,15 +510,11 @@ zen_settings = {
 		'extends': 'common',
 		'filters': 'html',
 		'snippets': {
-			'script': '<script type="text/javascript">\n' +
-			'//<![CDATA[\n' +
-			'	$1' +
-			'\n//]]>' +
-			'\n</script>',
-			'style': '<style type="text/css">\n'+
-			'	$1'+
-			'\n</style>',
-			'cc:ie6': '<!--[if lte IE 6]>\n\t${child}|\n<![endif]-->',
+			'script': '<script type="text/javascript">\n//<![CDATA[\n\t${child}|\n//]]>\n</script>',
+			'style': '<style type="text/css">\n\t${child}|\n</style>',
+			'cc:ie7': '<!--[if lt IE 7]>\n\t${child}|\n<![endif]-->',
+			'cc:ie8': '<!--[if lt IE 8]>\n\t${child}|\n<![endif]-->',
+			'cc:ie9': '<!--[if lt IE 9]>\n\t${child}|\n<![endif]-->',
 			'cc:ie': '<!--[if IE]>\n\t${child}|\n<![endif]-->',
 			'cc:noie': '<!--[if !IE]><!-->\n\t${child}|\n<!--<![endif]-->',
 			'html:4t': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\n' +
@@ -577,7 +573,7 @@ zen_settings = {
 		},
 
 		'abbreviations': {
-			'a': '<a href=""></a>',
+			'a': '<a href="#"></a>',
 			'a:link': '<a href="http://|"></a>',
 			'a:mail': '<a href="mailto:|"></a>',
 			'abbr': '<abbr title=""></abbr>',
@@ -610,7 +606,7 @@ zen_settings = {
 			'area:r': '<area shape="rect" coords="" href="" alt="" />',
 			'area:p': '<area shape="poly" coords="" href="" alt="" />',
 			'link': '<link rel="stylesheet" href="" />',
-			'form': '<form action=""></form>',
+			'form': '<form action="" method="post"></form>',
 			'form:get': '<form action="" method="get"></form>',
 			'form:post': '<form action="" method="post"></form>',
 			'label': '<label for=""></label>',

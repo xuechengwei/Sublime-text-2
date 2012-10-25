@@ -4,13 +4,13 @@
 	"font_size": 10.0,
 	"ignored_packages":
 	[
-		"SublimeLinter",
 		"Git",
 		"Gist",
 		"Theme - Soda",
 		"PHPUnit",
-		"FileDiffs",
 		"PlainTasks",
+		"FileDiffs",
+		"SublimeLinter",
 		"Clipboard History"
 	],
 	"soda_classic_tabs": true,

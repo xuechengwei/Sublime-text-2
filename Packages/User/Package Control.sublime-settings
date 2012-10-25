@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1350550133,
+	"auto_upgrade_last_run": 1351132413,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -33,8 +33,10 @@
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SyncedSideBar",
+		"Terminal",
 		"Theme - Nil",
 		"Theme - Soda",
+		"Tomorrow Color Schemes",
 		"TrailingSpaces",
 		"YUI Compressor",
 		"ZenCoding"

@@ -37,11 +37,11 @@
 
     // Scope? (Defined in theme files.)
     // Examples: (keyword|string|number)
-    "quote_scope" : "entity.name.class",
-    "curly_scope" : "entity.name.class",
-    "round_scope" : "entity.name.class",
-    "square_scope": "entity.name.class",
-    "angle_scope" : "entity.name.class",
+    "quote_scope" : "bracket.tag",
+    "curly_scope" : "bracket.tag",
+    "round_scope" : "bracket.tag",
+    "square_scope": "bracket.tag",
+    "angle_scope" : "bracket.tag",
     "tag_scope"   : "entity.name.class",
 
     // Outline? (solid|outline|underline|none)

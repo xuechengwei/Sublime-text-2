@@ -56,6 +56,17 @@
 			</dict>
 		</dict>
 		<dict>
+		    <key>name</key>
+		    <string>Bracket Tag</string>
+		    <key>scope</key>
+		    <string>bracket.tag</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>foreground</key>
+		        <string>#6443c3</string>
+		    </dict>
+		</dict>
+		<dict>
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
