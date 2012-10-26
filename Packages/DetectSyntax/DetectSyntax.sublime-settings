@@ -120,6 +120,18 @@
 				{"binary": "ruby"}
 			]
 		},
+		// {
+		// 	// This is an example of having to match all rules. In this example, the file needs to have a ruby
+		// 	// shebang *and* end in .ruby. If "match" == "all", DetectSyntax will set the named syntax only if all
+		// 	// rules match. If "match" is anything other than "all", the syntax will be set if any rule matches
+		// 	// (the normal behavior)
+		// 	"name": "Ruby",
+		// 	"match": "all",
+		// 	"rules": [
+		// 		{"binary": "ruby"},
+		// 		{"file_name": ".*\\.ruby$"}
+		// 	]
+		// },
 		{
 			"name": "PHP",
 			"rules": [

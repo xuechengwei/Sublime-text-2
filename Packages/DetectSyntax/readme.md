@@ -60,6 +60,10 @@ Contributing
 
 History
 -------
+2012-10-25
+
+* Added ability to match all rules. [Thanks for the idea Kirk Strauser]
+
 2012-10-20
 
 * Added jbuilder to the Ruby rule. [Thanks Aaron Crespo]

@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1351132413,
+	"auto_upgrade_last_run": 1351233212,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -9,6 +9,7 @@
 		"ChangeQuotes",
 		"Clipboard History",
 		"CodeIgniter Snippets",
+		"ConvertToUTF8",
 		"CSSTidy",
 		"DetectSyntax",
 		"DocBlockr",

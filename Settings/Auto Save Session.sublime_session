@@ -1,6 +1,7 @@
 {
 	"folder_history":
 	[
+		"/C/Documents and Settings/Administrator/Desktop/templates",
 		"/C/Documents and Settings/Administrator/Desktop/demo",
 		"/Z/xue/2012nikejerseys4you.com/templates/1006",
 		"/Z/xue/2012nikejerseysstore.com/templates/1005",
@@ -1500,6 +1501,14 @@
 				"selected_items":
 				[
 					[
+						"no",
+						"nowrap"
+					],
+					[
+						"marg",
+						"margin"
+					],
+					[
 						"border",
 						"border"
 					],
@@ -1652,10 +1661,6 @@
 						"width"
 					],
 					[
-						"no",
-						"no-repeat  (value)"
-					],
-					[
 						"add",
 						"add-to-cart"
 					],
@@ -1744,30 +1749,39 @@
 			"buffers":
 			[
 				{
-					"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n	<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />\n	<title></title>\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/reset-min.css\" />\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/common.css\" />\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/detailpage.css\" media=\"all\" />\n	<script type=\"text/javascript\" src=\"js/jquery-1.8.2.js\"></script>\n	<script type=\"text/javascript\" src=\"js/jquery.dcjqaccordion.js\"></script>\n	<script type=\"text/javascript\" src=\"js/jquery.hoverIntent.min.js\"></script>\n	<script type=\"text/javascript\" src=\"js/jquery.cookie.js\"></script>\n</head>\n<body>\n	<div class=\"header\">\n		<div class=\"topbar\">\n			<span class=\"welcomemsg\">Welcome to our online jerseys shop</span>\n			<ul>\n				<li><a href=\"#\">Login</a></li>\n				<li><a href=\"#\">Register</a></li>\n				<li><a href=\"#\">Login</a></li>\n				<li><a href=\"#\">Login</a></li>\n			</ul>\n		</div>\n\n		<div class=\"clear\"></div>\n		<h1 class=\"logo\"><a href=\"#\"><img src=\"images/logo.jpg\" alt=\"\" /></a></h1>\n		<div class=\"rightitem\">\n			<p class=\"tel\"><span class=\"cred\">023</span>-526543215</p>\n			<form action=\"\" method=\"post\" class=\"search-form\">\n				<input type=\"text\" name=\"\" id=\"input-text\" />\n				<input type=\"submit\" value=\"\" id=\"submit-btn\" />\n			</form>\n		</div>\n		<div class=\"clear\"></div>\n		<ul class=\"nav\" >\n			<li><a href=\"#\">item1</a></li>\n			<li><a href=\"#\">item2</a></li>\n			<li><a href=\"#\">item3</a></li>\n			<li><a href=\"#\">item4</a></li>\n			<li><a href=\"#\">item5</a></li>\n			<li><a href=\"#\">item6</a></li>\n			<li><a href=\"#\">item7</a></li>\n		</ul>\n	</div>\n\n	<div class=\"container\">\n		<!-- `````````````````````right main content`````````````````````````````` -->\n		<div class=\"main-content\">\n			<div class=\"left-img-wrapper\">\n				<div class=\"big-img\"><img src=\"images/detail_pro.jpg\" alt=\"\" /></div>\n				<div class=\"thumb-wrapper\">\n					<ul>\n						<li><img src=\"images/detail_pro_thumb.jpg\" alt=\"\" /></li>\n					</ul>\n				</div>\n			</div>\n			\n			<div class=\"rightdetail\">\n				\n			</div>\n		</div>\n		<!-- `````````````````````right main content`````````````````````````````` -->\n		<div class=\"leftside\">\n			<ul class=\"categories\" id=\"accordion-menu\">\n				<li>\n					<a href=\"#\">categories list 1</a>\n					<ul>\n						<li><a href=\"#\">sub list item1</a></li>\n						<li><a href=\"#\">sub list item2</a></li>\n						<li><a href=\"#\">sub list item3</a></li>\n						<li><a href=\"#\">sub list item4</a></li>\n						<li><a href=\"#\">sub list item5</a></li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"#\">categories list 2</a>\n					<ul>\n						<li><a href=\"#\">sub list item1</a></li>\n						<li><a href=\"#\">sub list item2</a></li>\n						<li><a href=\"#\">sub list item3</a></li>\n						<li><a href=\"#\">sub list item4</a></li>\n						<li><a href=\"#\">sub list item5</a></li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"#\">categories list 3</a>\n					<ul>\n						<li><a href=\"#\">sub list item1</a></li>\n						<li><a href=\"#\">sub list item2</a></li>\n						<li><a href=\"#\">sub list item3</a></li>\n						<li><a href=\"#\">sub list item4</a></li>\n						<li><a href=\"#\">sub list item5</a></li>\n					</ul>\n				</li>\n				<li><a href=\"#\">categories list 4</a></li>\n				<li><a href=\"#\">categories list 5</a></li>\n				<li><a href=\"#\">categories list 6</a></li>\n				<li><a href=\"#\">categories list 7</a></li>\n				<li><a href=\"#\">categories list 8</a></li>\n			</ul>\n			<script type=\"text/javascript\">\n			//<![CDATA[\n				$('#accordion-menu').dcAccordion({\n					eventType: 'click',\n					autoClose: true\n				});\n			//]]>\n			</script>\n			<div class=\"mycart\">\n				<p class=\"mycart-title title-italic\">My Cart</p>\n				<p class=\"mycart-txt-wrapper\">\n					There is ( <a class=\"cart-quantity\" href=\"#\">1</a> ) item in your cart!\n				</p>\n			</div>\n			<div class=\"sidediv2\">\n				<p class=\"left-hot-title\"><span>Hot Teams</span></p>\n				<ol>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n					<li><a href=\"#\">team1</a></li>\n				</ol>\n			</div>\n			<div class=\"sidediv1\">\n				<p class=\"left-hot-title\"><span>Products you visited</span></p>\n				<ul>\n					<li>\n						<div class=\"thumb-img\">\n							<img src=\"images/pro_left_thumb_.jpg\" alt=\"\" />\n						</div>\n						<div class=\"right-txt\">\n							<p class=\"list-pro-name\">Lorem ipsum dolor sit amet, consectetur adipisicing</p>\n							<p class=\"list-id\">ID:2354</p>\n							<p class=\"list-price\">\n								<span class=\"old-price\">$350</span>\n								<span class=\"new-price\">$230</span>\n							</p>\n						</div>\n					</li>\n					<li>\n						<div class=\"thumb-img\">\n							<img src=\"images/pro_left_thumb_.jpg\" alt=\"\" />\n						</div>\n						<div class=\"right-txt\">\n							<p class=\"list-pro-name\">Lorem ipsum dolor sit amet, consectetur adipisicing</p>\n							<p class=\"list-id\">ID:2354</p>\n							<p class=\"list-price\">\n								<span class=\"old-price\">$350</span>\n								<span class=\"new-price\">$230</span>\n							</p>\n						</div>\n					</li>\n					<li>\n						<div class=\"thumb-img\">\n							<img src=\"images/pro_left_thumb_.jpg\" alt=\"\" />\n						</div>\n						<div class=\"right-txt\">\n							<p class=\"list-pro-name\">Lorem ipsum dolor sit amet, consectetur adipisicing</p>\n							<p class=\"list-id\">ID:2354</p>\n							<p class=\"list-price\">\n								<span class=\"old-price\">$350</span>\n								<span class=\"new-price\">$230</span>\n							</p>\n						</div>\n					</li>\n				</ul>\n			</div>\n		</div>\n		<div class=\"clear\"></div>\n	</div>\n\n	<div class=\"footer\">\n		<ul class=\"footer-link\">\n			<li>\n				<dl>\n					<dt><a href=\"#\">INFORMATION</a></dt>\n					<dd><a href=\"#\">Sitemap</a></dd>\n					<dd><a href=\"#\">Legal Notice</a></dd>\n					<dd><a href=\"#\">Terms and conditions</a></dd>\n					<dd><a href=\"#\">About us</a></dd>\n					<dd><a href=\"#\">Contact</a></dd>\n				</dl>\n			</li>\n			<li>\n				<dl>\n					<dt><a href=\"#\">INFORMATION</a></dt>\n					<dd><a href=\"#\">Sitemap</a></dd>\n					<dd><a href=\"#\">Legal Notice</a></dd>\n					<dd><a href=\"#\">Terms and conditions</a></dd>\n					<dd><a href=\"#\">About us</a></dd>\n					<dd><a href=\"#\">Contact</a></dd>\n				</dl>\n			</li>\n			<li>\n				<dl>\n					<dt><a href=\"#\">INFORMATION</a></dt>\n					<dd><a href=\"#\">Sitemap</a></dd>\n					<dd><a href=\"#\">Legal Notice</a></dd>\n					<dd><a href=\"#\">Terms and conditions</a></dd>\n					<dd><a href=\"#\">About us</a></dd>\n					<dd><a href=\"#\">Contact</a></dd>\n				</dl>\n			</li>\n			<li>\n				<dl>\n					<dt><a href=\"#\">INFORMATION</a></dt>\n					<dd><a href=\"#\">Sitemap</a></dd>\n					<dd><a href=\"#\">Legal Notice</a></dd>\n					<dd><a href=\"#\">Terms and conditions</a></dd>\n					<dd><a href=\"#\">About us</a></dd>\n					<dd><a href=\"#\">Contact</a></dd>\n				</dl>\n			</li>\n\n		</ul>\n		<p class=\"copyright\">© 2012 Powered by PrestaShop™. All rights reserved</p>\n\n	</div>\n</body>\n</html>",
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/detailpage.html",
-					"file_size": 7314,
-					"file_write_time": 129956104398906250,
+					"file": "/C/Documents and Settings/Administrator/Desktop/Folders/demo1/index.html",
 					"settings":
 					{
-						"buffer_size": 7086,
+						"buffer_size": 8013,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/common.css",
+					"file": "/C/Documents and Settings/Administrator/Desktop/templates/index.html",
 					"settings":
 					{
-						"buffer_size": 3691,
+						"buffer_size": 1290,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/detailpage.css",
+					"file": "/C/Documents and Settings/Administrator/Desktop/templates/css/common.css",
 					"settings":
 					{
-						"buffer_size": 2360,
+						"buffer_size": 3695,
 						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "[\n	{\"id\": \"side-bar-files-open-with\",\n		\"children\":\n		[\n\n			//application 1\n			{\n				\"caption\": \"Photoshop\",\n				\"id\": \"side-bar-files-open-with-photoshop\",\n\n				\"command\": \"side_bar_files_open_with\",\n				\"args\": {\n									\"paths\": [],\n									\"application\": \"Adobe Photoshop CS5.app\", // OSX\n									\"extensions\":\"psd|png|jpg|jpeg\"  //any file with these extensions\n								}\n			},\n\n			//separator\n			{\"caption\":\"-\"},\n\n			//application 2\n			//application n\n			{\n				\"caption\": \"Chrome\",\n				\"id\": \"side-bar-files-open-with-chrome\",\n\n				\"command\": \"side_bar_files_open_with\",\n				\"args\": {\n									\"paths\": [],\n									\"application\": \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\",\n									\"extensions\":\".*\" //any file with extension\n								}\n			},\n\n			{\"caption\":\"-\"}\n		]\n	}\n]",
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+					"file_size": 837,
+					"file_write_time": 129957091702968750,
+					"settings":
+					{
+						"buffer_size": 799,
+						"line_ending": "Windows",
+						"scratch": true
 					}
 				}
 			],
@@ -1777,6 +1791,14 @@
 				"height": 375.0,
 				"selected_items":
 				[
+					[
+						"pip",
+						"Package Control: Install Package"
+					],
+					[
+						"htmlp",
+						"HTMLPrettify: Prettify"
+					],
 					[
 						"html",
 						"HTMLPrettify: Prettify"
@@ -1844,10 +1866,6 @@
 					[
 						"htmlpre",
 						"HTMLPrettify: Prettify"
-					],
-					[
-						"pip",
-						"Package Control: Install Package"
 					],
 					[
 						"packis",
@@ -1967,16 +1985,38 @@
 			},
 			"file_history":
 			[
-				"/C/Documents and Settings/Administrator/Desktop/demo/fda.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-menu",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/product/search.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/listpage.css",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/jquery.treeview.css",
+				"/C/Documents and Settings/Administrator/Desktop/Nail Art/js/pro.js",
+				"/C/Documents and Settings/Administrator/Desktop/Nail Art/js/jquery.slide.js",
+				"/C/Documents and Settings/Administrator/Desktop/Nail Art/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/test/index.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/download/search.html",
+				"/C/Documents and Settings/Administrator/Desktop/jquery.treeview/demo/demo.js",
+				"/C/Documents and Settings/Administrator/Desktop/jquery.treeview/demo/index.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
+				"/C/Documents and Settings/Administrator/Desktop/test/css/jquery.treeview.css",
+				"/C/Documents and Settings/Administrator/Desktop/jquery.treeview/demo/screen.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/detailpage.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/product/detail.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/common.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/test.html",
+				"/C/Documents and Settings/Administrator/Desktop/demo/js/magiczoom.js",
+				"/C/Documents and Settings/Administrator/Desktop/demo/css/magiczoom.css",
 				"/C/Documents and Settings/Administrator/Desktop/demo/css/common.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/css/detailpage.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/news.html",
+				"/C/Documents and Settings/Administrator/Desktop/magiczoom-trial/magiczoom-trial/magiczoom/magiczoom.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/fda.html",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/index.html",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/theme/footer.html",
 				"/C/Documents and Settings/Administrator/Desktop/demo/css/index.css",
 				"/C/Documents and Settings/Administrator/Desktop/demo/css/listpage.css",
-				"/C/Documents and Settings/Administrator/Desktop/demo/css/detailpage.css",
 				"/C/Documents and Settings/Administrator/Desktop/demo/index.html",
-				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/common.css",
-				"/C/Documents and Settings/Administrator/Desktop/demo/detailpage.html",
 				"/C/Documents and Settings/Administrator/Desktop/demo/listpage.html",
 				"/C/Documents and Settings/Administrator/Desktop/demo/css/reset-min.css",
 				"/C/Documents and Settings/Administrator/Desktop/demo.html",
@@ -1986,7 +2026,6 @@
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/JsFormat/README.md",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/HtmlTidy/README.md",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/index.css",
-				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/listpage.css",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/include/page.php",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/product/list.html",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/product/include/list.inc.php",
@@ -1997,7 +2036,6 @@
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
 				"/C/Documents and Settings/Administrator/Desktop/pagination_style/pagination_style.html",
 				"/C/Documents and Settings/Administrator/Desktop/demo/detail.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
 				"/C/Documents and Settings/Administrator/Desktop/demo/js/jquery.dcjqaccordion.js",
 				"/C/Documents and Settings/Administrator/Desktop/demo/css/style.css",
 				"/E/360云盘/前端/常用JS特效/段落文本超出隐藏.html",
@@ -2074,27 +2112,7 @@
 				"/C/Documents and Settings/Administrator/My Documents/container.css",
 				"/C/Documents and Settings/Administrator/My Documents/index.html",
 				"/C/Documents and Settings/Administrator/Desktop/JamieLottering-DropKick-v1.0.0-2-g5b230fb/JamieLottering-DropKick-5b230fb/jquery.dropkick-1.0.0.js",
-				"/C/Documents and Settings/Administrator/Desktop/JamieLottering-DropKick-v1.0.0-2-g5b230fb/JamieLottering-DropKick-5b230fb/dropkick.css",
-				"/C/Documents and Settings/Administrator/Desktop/JamieLottering-DropKick-v1.0.0-2-g5b230fb/JamieLottering-DropKick-5b230fb/blank_theme.css",
-				"/D/Webroot/clickcopy/index.html",
-				"//192.168.1.212/domain/ads/admin/templats/web_edit.htm",
-				"/C/Documents and Settings/Administrator/Desktop/webhosts.conf",
-				"//192.168.1.212/domain/user/admin/templats/web_cay.htm",
-				"//192.168.1.212/domain/admin/templats/top_frame.htm",
-				"//192.168.1.212/domain/user/admin/web_cay.php",
-				"/D/Webroot/wordpress/index.php",
-				"/D/Webroot/wordpress/wp-blog-header.php",
-				"/D/Webroot/wordpress/wp-content/themes/Bonchip/index.php",
-				"/D/Webroot/wordpress/wp-content/themes/Bonchip/404.php",
-				"/D/Webroot/wordpress/wp-content/themes/Bonchip/category-team.php",
-				"/D/Webroot/wordpress/wp-content/themes/Bonchip/portfolio-jqueryfilter.php",
-				"//192.168.1.212/domain/user/admin/templats/olineno.htm",
-				"//192.168.1.212/domain/user/admin/templats/Olineno_edit.htm",
-				"/C/Documents and Settings/Administrator/Desktop/商品详细页缩略图/1.html",
-				"//192.168.1.212/domain/user/admin/Olineno.edit.php",
-				"//192.168.1.212/domain/user/admin/olineno.php",
-				"//192.168.1.212/domain/ads/admin/webexit.php",
-				"/C/Documents and Settings/Administrator/Desktop/jonrohan-ZeroClipboard-0399439/docs/instructions.md"
+				"/C/Documents and Settings/Administrator/Desktop/JamieLottering-DropKick-v1.0.0-2-g5b230fb/JamieLottering-DropKick-5b230fb/dropkick.css"
 			],
 			"find":
 			{
@@ -2120,6 +2138,41 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"side_bar_open_in_browser",
+					"firefox",
+					"\\",
+					"header",
+					"list-pro-name",
+					"left-hot-title",
+					"images/",
+					"\n					",
+					"wholesalejerseysusc.com",
+					"http://www.",
+					"/ 编辑好了",
+					".com",
+					" ",
+					"^(.*)$",
+					".com",
+					"http://www.",
+					" http://www.",
+					"big-img",
+					"^bko}k.{~i|ojk.za.h{bb.xk|}ga`.ah.Coigm.Taac(-6:6<5",
+					"v",
+					"Please upgrade to full version of Magic Zoom",
+					"please",
+					"plaese",
+					"hint.gif",
+					"please",
+					"blac",
+					"zoom",
+					"INFORMATION",
+					"&gt;",
+					"80",
+					"^(.*)$",
+					"^\\s+\\n",
+					"^\\n+",
+					"com",
+					"http://www.",
 					"(<a.*href=\")[^\"]*\"",
 					"</h3>",
 					"<h3>",
@@ -2212,42 +2265,7 @@
 					"cdata",
 					"data",
 					"cdata",
-					"base",
-					"checkForm",
-					"\n	",
-					"msn",
-					"tnav2",
-					"script",
-					"pro-text",
-					"footer",
-					"#footerSubAddr",
-					"path",
-					"header_box",
-					"select",
-					"31",
-					"dk_options_inner",
-					"font",
-					"135",
-					"header_login",
-					"settings",
-					"width",
-					"110",
-					"select",
-					"home",
-					"hom",
-					">>",
-					"header_box",
-					"header-box",
-					"select",
-					"topn",
-					"tnav2",
-					"header_login",
-					"nav",
-					"logo",
-					"right",
-					"header_box",
-					"ServerName",
-					"www."
+					"base"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -2255,6 +2273,10 @@
 				"regex": true,
 				"replace_history":
 				[
+					"../images/",
+					"\"\\1\",",
+					"\"\\1\"",
+					"",
 					"\\1#\"",
 					"\"\\1\",",
 					"\\1#\"",
@@ -2378,11 +2400,7 @@
 					"'../images\\1.\\2'",
 					"'../images/\\1.\\2'",
 					"../images/\\1.\\2",
-					"../images/fancybox.png",
-					"../images",
-					"(../images",
-					"../images",
-					"images/\\1.\\2"
+					"../images/fancybox.png"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -2393,7 +2411,7 @@
 			"folders":
 			[
 				{
-					"path": "/C/Documents and Settings/Administrator/Desktop/demo"
+					"path": "/C/Documents and Settings/Administrator/Desktop/templates"
 				}
 			],
 			"groups":
@@ -2404,84 +2422,112 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/detailpage.html",
+							"file": "/C/Documents and Settings/Administrator/Desktop/Folders/demo1/index.html",
 							"settings":
 							{
-								"buffer_size": 7086,
+								"buffer_size": 8013,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1898,
-										1914
+										275,
+										781
 									]
 								],
 								"settings":
 								{
 									"is_xml": false,
+									"origin_encoding": "UTF-8",
 									"syntax": "Packages/HTML/HTML.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 720.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/common.css",
+							"file": "/C/Documents and Settings/Administrator/Desktop/templates/index.html",
 							"settings":
 							{
-								"buffer_size": 3691,
+								"buffer_size": 1290,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										767,
-										767
+										678,
+										678
 									]
 								],
 								"settings":
 								{
+									"is_xml": false,
+									"origin_encoding": "Undefined",
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 60.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Documents and Settings/Administrator/Desktop/templates/css/common.css",
+							"settings":
+							{
+								"buffer_size": 3695,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										191,
+										191
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
 									"syntax": "Packages/CSS/CSS.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 400.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 0,
-					"sheets":
-					[
+						},
 						{
-							"buffer": 2,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/detailpage.css",
+							"buffer": 3,
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
 							"settings":
 							{
-								"buffer_size": 2360,
+								"buffer_size": 799,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										379,
-										379
+										614,
+										614
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"in_converting": true,
+									"origin_encoding": "GBK",
+									"revert_to_scratch": true,
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
@@ -2510,18 +2556,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.5,
 					1.0
 				],
 				"rows":
@@ -2535,7 +2574,7 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,0,1,-32000,-32000,-1,-1,767,0,99,1233",
+			"position": "0,2,1,-32000,-32000,-1,-1,831,198,163,1431",
 			"replace":
 			{
 				"height": 64.0
@@ -3073,7 +3112,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 152.0,
+			"side_bar_width": 155.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": ""

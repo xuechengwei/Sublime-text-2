@@ -1,6 +1,7 @@
 {
 	"folder_history":
 	[
+		"/C/Documents and Settings/Administrator/Desktop/templates",
 		"/C/Documents and Settings/Administrator/Desktop/demo",
 		"/Z/xue/2012nikejerseys4you.com/templates/1006",
 		"/Z/xue/2012nikejerseysstore.com/templates/1005",
@@ -1500,6 +1501,14 @@
 				"selected_items":
 				[
 					[
+						"no",
+						"nowrap"
+					],
+					[
+						"marg",
+						"margin"
+					],
+					[
 						"border",
 						"border"
 					],
@@ -1652,10 +1661,6 @@
 						"width"
 					],
 					[
-						"no",
-						"no-repeat  (value)"
-					],
-					[
 						"add",
 						"add-to-cart"
 					],
@@ -1744,77 +1749,52 @@
 			"buffers":
 			[
 				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/index.html",
+					"file": "/C/Documents and Settings/Administrator/Desktop/Folders/demo1/index.html",
 					"settings":
 					{
-						"buffer_size": 8012,
+						"buffer_size": 8013,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/detailpage.html",
+					"file": "/C/Documents and Settings/Administrator/Desktop/templates/index.html",
 					"settings":
 					{
-						"buffer_size": 7162,
+						"buffer_size": 1283,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/listpage.html",
+					"contents": "[\n	{\"id\": \"side-bar-files-open-with\",\n		\"children\":\n		[\n\n			//application 1\n			{\n				\"caption\": \"Photoshop\",\n				\"id\": \"side-bar-files-open-with-photoshop\",\n\n				\"command\": \"side_bar_files_open_with\",\n				\"args\": {\n									\"paths\": [],\n									\"application\": \"Adobe Photoshop CS5.app\", // OSX\n									\"extensions\":\"psd|png|jpg|jpeg\"  //any file with these extensions\n								}\n			},\n\n			//separator\n			{\"caption\":\"-\"},\n\n			//application 2\n			//application n\n			{\n				\"caption\": \"Chrome\",\n				\"id\": \"side-bar-files-open-with-chrome\",\n\n				\"command\": \"side_bar_files_open_with\",\n				\"args\": {\n									\"paths\": [],\n									\"application\": \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\",\n									\"extensions\":\".*\" //any file with extension\n								}\n			},\n\n			{\"caption\":\"-\"}\n		]\n	}\n]",
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+					"file_size": 837,
+					"file_write_time": 129957091702968750,
 					"settings":
 					{
-						"buffer_size": 12102,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/common.css",
-					"settings":
-					{
-						"buffer_size": 3626,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/index.css",
-					"settings":
-					{
-						"buffer_size": 1383,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/listpage.css",
-					"settings":
-					{
-						"buffer_size": 3692,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/detailpage.css",
-					"settings":
-					{
-						"buffer_size": 2259,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "usajerseysforyou.com\n2012usajerseysa.com\ndiscountnfljerseysok.com\nnhljerseysso.com\nbestnfljerseyssale.com\nauthenticjerseyssale.com\n2012authenticjerseyss.com\n",
-					"settings":
-					{
-						"buffer_size": 157,
+						"buffer_size": 799,
 						"line_ending": "Windows",
-						"name": "usajerseysforyou.com"
+						"scratch": true
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 93.0,
+				"height": 375.0,
 				"selected_items":
 				[
+					[
+						"pip",
+						"Package Control: Install Package"
+					],
+					[
+						"htmlp",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"html",
+						"HTMLPrettify: Prettify"
+					],
 					[
 						"format",
 						"Format: Javascript"
@@ -1826,10 +1806,6 @@
 					[
 						"for",
 						"Format: Javascript"
-					],
-					[
-						"html",
-						"HTMLPrettify: Prettify"
 					],
 					[
 						"enable",
@@ -1882,10 +1858,6 @@
 					[
 						"htmlpre",
 						"HTMLPrettify: Prettify"
-					],
-					[
-						"pip",
-						"Package Control: Install Package"
 					],
 					[
 						"packis",
@@ -2005,6 +1977,37 @@
 			},
 			"file_history":
 			[
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/product/search.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/listpage.css",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/jquery.treeview.css",
+				"/C/Documents and Settings/Administrator/Desktop/Nail Art/js/pro.js",
+				"/C/Documents and Settings/Administrator/Desktop/Nail Art/js/jquery.slide.js",
+				"/C/Documents and Settings/Administrator/Desktop/Nail Art/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/test/index.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/download/search.html",
+				"/C/Documents and Settings/Administrator/Desktop/jquery.treeview/demo/demo.js",
+				"/C/Documents and Settings/Administrator/Desktop/jquery.treeview/demo/index.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
+				"/C/Documents and Settings/Administrator/Desktop/test/css/jquery.treeview.css",
+				"/C/Documents and Settings/Administrator/Desktop/jquery.treeview/demo/screen.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/detailpage.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/product/detail.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/common.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/test.html",
+				"/C/Documents and Settings/Administrator/Desktop/demo/js/magiczoom.js",
+				"/C/Documents and Settings/Administrator/Desktop/demo/css/magiczoom.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/css/common.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/css/detailpage.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/news.html",
+				"/C/Documents and Settings/Administrator/Desktop/magiczoom-trial/magiczoom-trial/magiczoom/magiczoom.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/fda.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/index.html",
+				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/theme/footer.html",
+				"/C/Documents and Settings/Administrator/Desktop/demo/css/index.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/css/listpage.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/index.html",
+				"/C/Documents and Settings/Administrator/Desktop/demo/listpage.html",
 				"/C/Documents and Settings/Administrator/Desktop/demo/css/reset-min.css",
 				"/C/Documents and Settings/Administrator/Desktop/demo.html",
 				"/C/Documents and Settings/Administrator/Desktop/baidu/manifest.json",
@@ -2013,7 +2016,6 @@
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/JsFormat/README.md",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/HtmlTidy/README.md",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/index.css",
-				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/listpage.css",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/include/page.php",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/product/list.html",
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/product/include/list.inc.php",
@@ -2021,17 +2023,9 @@
 				"//192.168.1.211/06web/xiaofeng/webokfeng.com/templates/20121024_1feng/css/pagepro.css",
 				"/C/Documents and Settings/Administrator/Desktop/baidu/h.json",
 				"/C/Documents and Settings/Administrator/Local Settings/Application Data/Google/Chrome/User Data/Default/Preferences",
-				"/C/Documents and Settings/Administrator/Desktop/demo/listpage.html",
-				"/C/Documents and Settings/Administrator/Desktop/demo/detailpage.html",
-				"/C/Documents and Settings/Administrator/Desktop/demo/css/detailpage.css",
-				"/C/Documents and Settings/Administrator/Desktop/demo/css/listpage.css",
-				"/C/Documents and Settings/Administrator/Desktop/demo/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/demo/css/index.css",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-				"/C/Documents and Settings/Administrator/Desktop/demo/css/common.css",
 				"/C/Documents and Settings/Administrator/Desktop/pagination_style/pagination_style.html",
 				"/C/Documents and Settings/Administrator/Desktop/demo/detail.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
 				"/C/Documents and Settings/Administrator/Desktop/demo/js/jquery.dcjqaccordion.js",
 				"/C/Documents and Settings/Administrator/Desktop/demo/css/style.css",
 				"/E/360云盘/前端/常用JS特效/段落文本超出隐藏.html",
@@ -2110,29 +2104,7 @@
 				"/C/Documents and Settings/Administrator/Desktop/JamieLottering-DropKick-v1.0.0-2-g5b230fb/JamieLottering-DropKick-5b230fb/jquery.dropkick-1.0.0.js",
 				"/C/Documents and Settings/Administrator/Desktop/JamieLottering-DropKick-v1.0.0-2-g5b230fb/JamieLottering-DropKick-5b230fb/dropkick.css",
 				"/C/Documents and Settings/Administrator/Desktop/JamieLottering-DropKick-v1.0.0-2-g5b230fb/JamieLottering-DropKick-5b230fb/blank_theme.css",
-				"/D/Webroot/clickcopy/index.html",
-				"//192.168.1.212/domain/ads/admin/templats/web_edit.htm",
-				"/C/Documents and Settings/Administrator/Desktop/webhosts.conf",
-				"//192.168.1.212/domain/user/admin/templats/web_cay.htm",
-				"//192.168.1.212/domain/admin/templats/top_frame.htm",
-				"//192.168.1.212/domain/user/admin/web_cay.php",
-				"/D/Webroot/wordpress/index.php",
-				"/D/Webroot/wordpress/wp-blog-header.php",
-				"/D/Webroot/wordpress/wp-content/themes/Bonchip/index.php",
-				"/D/Webroot/wordpress/wp-content/themes/Bonchip/404.php",
-				"/D/Webroot/wordpress/wp-content/themes/Bonchip/category-team.php",
-				"/D/Webroot/wordpress/wp-content/themes/Bonchip/portfolio-jqueryfilter.php",
-				"//192.168.1.212/domain/user/admin/templats/olineno.htm",
-				"//192.168.1.212/domain/user/admin/templats/Olineno_edit.htm",
-				"/C/Documents and Settings/Administrator/Desktop/商品详细页缩略图/1.html",
-				"//192.168.1.212/domain/user/admin/Olineno.edit.php",
-				"//192.168.1.212/domain/user/admin/olineno.php",
-				"//192.168.1.212/domain/ads/admin/webexit.php",
-				"/C/Documents and Settings/Administrator/Desktop/jonrohan-ZeroClipboard-0399439/docs/instructions.md",
-				"/C/Documents and Settings/Administrator/Desktop/test/1.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Theme - Nil/Ayin.sublime-theme",
-				"/D/Webroot/textslider/index.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Theme - Nil/Tubnil.tmTheme"
+				"/D/Webroot/clickcopy/index.html"
 			],
 			"find":
 			{
@@ -2158,6 +2130,41 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"header",
+					"list-pro-name",
+					"left-hot-title",
+					"images/",
+					"\n					",
+					"wholesalejerseysusc.com",
+					"http://www.",
+					"/ 编辑好了",
+					".com",
+					" ",
+					"^(.*)$",
+					".com",
+					"http://www.",
+					" http://www.",
+					"big-img",
+					"^bko}k.{~i|ojk.za.h{bb.xk|}ga`.ah.Coigm.Taac(-6:6<5",
+					"v",
+					"Please upgrade to full version of Magic Zoom",
+					"please",
+					"plaese",
+					"hint.gif",
+					"please",
+					"blac",
+					"zoom",
+					"INFORMATION",
+					"&gt;",
+					"80",
+					"^(.*)$",
+					"^\\s+\\n",
+					"^\\n+",
+					"com",
+					"http://www.",
+					"(<a.*href=\")[^\"]*\"",
+					"</h3>",
+					"<h3>",
 					"com",
 					"http://www.",
 					"true",
@@ -2250,49 +2257,19 @@
 					"base",
 					"checkForm",
 					"\n	",
-					"msn",
-					"tnav2",
-					"script",
-					"pro-text",
-					"footer",
-					"#footerSubAddr",
-					"path",
-					"header_box",
-					"select",
-					"31",
-					"dk_options_inner",
-					"font",
-					"135",
-					"header_login",
-					"settings",
-					"width",
-					"110",
-					"select",
-					"home",
-					"hom",
-					">>",
-					"header_box",
-					"header-box",
-					"select",
-					"topn",
-					"tnav2",
-					"header_login",
-					"nav",
-					"logo",
-					"right",
-					"header_box",
-					"ServerName",
-					"www.",
-					"<VirtualHost *:80>",
-					"DocumentRoot",
-					"</VirtualHost>\n"
+					"msn"
 				],
 				"highlight": true,
-				"in_selection": false,
+				"in_selection": true,
 				"preserve_case": false,
-				"regex": false,
+				"regex": true,
 				"replace_history":
 				[
+					"../images/",
+					"\"\\1\",",
+					"\"\\1\"",
+					"",
+					"\\1#\"",
 					"\"\\1\",",
 					"\\1#\"",
 					"",
@@ -2415,12 +2392,7 @@
 					"'../images\\1.\\2'",
 					"'../images/\\1.\\2'",
 					"../images/\\1.\\2",
-					"../images/fancybox.png",
-					"../images",
-					"(../images",
-					"../images",
-					"images/\\1.\\2",
-					"js/\\1.js"
+					"../images/fancybox.png"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -2431,236 +2403,98 @@
 			"folders":
 			[
 				{
-					"path": "/C/Documents and Settings/Administrator/Desktop/demo"
+					"path": "/C/Documents and Settings/Administrator/Desktop/templates"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 2,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/index.html",
+							"file": "/C/Documents and Settings/Administrator/Desktop/Folders/demo1/index.html",
 							"settings":
 							{
-								"buffer_size": 8012,
+								"buffer_size": 8013,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										581,
-										581
+										275,
+										781
 									]
 								],
 								"settings":
 								{
 									"is_xml": false,
+									"origin_encoding": "UTF-8",
 									"syntax": "Packages/HTML/HTML.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 10780.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/detailpage.html",
+							"file": "/C/Documents and Settings/Administrator/Desktop/templates/index.html",
 							"settings":
 							{
-								"buffer_size": 7162,
+								"buffer_size": 1283,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										42,
-										0
+										1080,
+										1080
 									]
 								],
 								"settings":
 								{
 									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
+									"origin_encoding": "Undefined",
+									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 240.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 2,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/listpage.html",
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
 							"settings":
 							{
-								"buffer_size": 12102,
+								"buffer_size": 799,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1931,
-										1943
+										699,
+										699
 									]
 								],
 								"settings":
 								{
-									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"in_converting": true,
+									"origin_encoding": "GBK",
+									"revert_to_scratch": true,
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 889.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 4,
-					"sheets":
-					[
-						{
-							"buffer": 3,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/common.css",
-							"settings":
-							{
-								"buffer_size": 3626,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										269,
-										269
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/index.css",
-							"settings":
-							{
-								"buffer_size": 1383,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1115,
-										1115
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 300.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/listpage.css",
-							"settings":
-							{
-								"buffer_size": 3692,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										3,
-										3
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/C/Documents and Settings/Administrator/Desktop/demo/css/detailpage.css",
-							"settings":
-							{
-								"buffer_size": 2259,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"settings":
-							{
-								"buffer_size": 157,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										82,
-										82
-									]
-								],
-								"settings":
-								{
-									"auto_name": "usajerseysforyou.com",
-									"is_xml": false,
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 240.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -2685,18 +2519,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.281592403214,
 					1.0
 				],
 				"rows":
@@ -2710,7 +2537,7 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,2,3,-32000,-32000,-1,-1,767,0,99,1233",
+			"position": "0,0,1,-32000,-32000,-1,-1,727,22,59,1255",
 			"replace":
 			{
 				"height": 64.0
@@ -2721,6 +2548,10 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"com",
+						"css/common.css"
+					],
 					[
 						"detail",
 						"css/detailpage.css"
@@ -2752,10 +2583,6 @@
 					[
 						"listpa",
 						"css/listpage.css"
-					],
-					[
-						"com",
-						"css/common.css"
 					],
 					[
 						"inde",
@@ -3248,7 +3075,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 71.0,
+			"side_bar_width": 155.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": ""
