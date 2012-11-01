@@ -1,0 +1,6 @@
+{
+	"D:/Webroot/templates":{
+		"url_testing":"http://localhost/templates/",
+		"url_production":"file:///D:/Webroot/templates/"
+	}
+}

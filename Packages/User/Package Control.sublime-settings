@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1351233212,
+	"auto_upgrade_last_run": 1351738940,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -29,16 +29,19 @@
 		"PHPUnit",
 		"PlainTasks",
 		"Prefixr",
+		"Sass",
 		"SideBarEnhancements",
 		"Sublime-HTMLPrettify",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SyncedSideBar",
+		"Tag",
 		"Terminal",
 		"Theme - Nil",
 		"Theme - Soda",
 		"Tomorrow Color Schemes",
 		"TrailingSpaces",
+		"WheelChanger",
 		"YUI Compressor",
 		"ZenCoding"
 	]
