@@ -1,6 +1,6 @@
 {
-	"D:/Webroot/templates":{
-		"url_testing":"http://localhost/templates/",
-		"url_production":"file:///D:/Webroot/templates/"
+	"D:/Webroot/ajaxtest":{
+		"url_testing":"http://localhost/ajaxtest",
+		"url_production":"file:///D:/Webroot/ajaxtest/"
 	}
 }

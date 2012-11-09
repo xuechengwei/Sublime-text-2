@@ -7,6 +7,17 @@
 	<key>settings</key>
 	<array>
 		<dict>
+		    <key>name</key>
+		    <string>Bracket Tag</string>
+		    <key>scope</key>
+		    <string>bracket.tag</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>foreground</key>
+		        <string>#17A790</string>
+		    </dict>
+		</dict>
+		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
