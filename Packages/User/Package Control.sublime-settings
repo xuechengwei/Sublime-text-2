@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1352446768,
+	"auto_upgrade_last_run": 1352940221,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -11,6 +11,7 @@
 		"CodeIgniter Snippets",
 		"ConvertToUTF8",
 		"CSSTidy",
+		"CTags",
 		"DetectSyntax",
 		"DocBlockr",
 		"FileDiffs",
@@ -25,6 +26,7 @@
 		"JsFormat",
 		"JsMinifier",
 		"LiveReload",
+		"Nettuts+ Fetch",
 		"Package Control",
 		"PHPUnit",
 		"PlainTasks",
@@ -42,6 +44,7 @@
 		"Theme - Soda",
 		"Tomorrow Color Schemes",
 		"TrailingSpaces",
+		"VintageEx",
 		"WheelChanger",
 		"YUI Compressor",
 		"ZenCoding"

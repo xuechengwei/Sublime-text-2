@@ -1,7 +1,7 @@
 [
 	{"args": {"doctype": "5"},"command": "set_html_syntax_and_insert_skel", "keys": ["ctrl+alt+shift+h"]},
 	{ "keys": ["ctrl+super+t"], "command": "delete_trailing_spaces" },
-	{ "keys": ["ctrl+alt+a"], "command": "alignment" },
+	{ "keys": ["ctrl+alt+shift+a"], "command": "alignment" },
 	{ "keys": ["ctrl+alt+x"], "command": "prefixr" },
 	{ "keys": ["ctrl+shift+'"], "command": "change_quotes" },
 	{ "keys": ["ctrl+q"], "command": "close_window" },
