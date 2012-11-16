@@ -1,9 +1,8 @@
 {
 	"files":
 	{
-		"jquery": "http://code.jquery.com/jquery-latest.min.js",
-		"CssReset": "http://meyerweb.com/eric/tools/css/reset/reset.css"
-
+		"CssReset": "http://meyerweb.com/eric/tools/css/reset/reset.css",
+		"jquery": "http://code.jquery.com/jquery-latest.min.js"
 	},
 	"packages":
 	{

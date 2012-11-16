@@ -6,12 +6,14 @@
 	[
 		"Git",
 		"Gist",
+		"SublimeTmpl",
 		"Theme - Soda",
 		"PHPUnit",
 		"PlainTasks",
 		"FileDiffs",
 		"SublimeLinter",
-		"Clipboard History"
+		"Clipboard History",
+		"ZenCoding"
 	],
 	"soda_classic_tabs": true,
 	"theme": "Nil.sublime-theme",

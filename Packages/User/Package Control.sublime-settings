@@ -1,9 +1,10 @@
 {
-	"auto_upgrade_last_run": 1352940221,
+	"auto_upgrade_last_run": 1353049279,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
 		"Alignment",
+		"AutoFileName",
 		"BracketHighlighter",
 		"Case Conversion",
 		"ChangeQuotes",
