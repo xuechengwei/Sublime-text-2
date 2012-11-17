@@ -1639,6 +1639,10 @@
 				"selected_items":
 				[
 					[
+						"cl",
+						"clear"
+					],
+					[
 						"no",
 						"nowrap"
 					],
@@ -1930,7 +1934,7 @@
 					"file": "/D/Webroot/2012-11-15/index.html",
 					"settings":
 					{
-						"buffer_size": 1762,
+						"buffer_size": 1761,
 						"line_ending": "Windows"
 					}
 				},
@@ -1946,7 +1950,23 @@
 					"file": "/D/Webroot/2012-11-15/css/global.css",
 					"settings":
 					{
-						"buffer_size": 2360,
+						"buffer_size": 2456,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "<!doctype html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Document</title>\n</head>\n<body>\n	\n</body>\n</html>",
+					"settings":
+					{
+						"buffer_size": 121,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "<!doctype html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Document</title>\n</head>\n<body>\n	\n</body>\n</html>",
+					"settings":
+					{
+						"buffer_size": 121,
 						"line_ending": "Windows"
 					}
 				}
@@ -1954,9 +1974,25 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 228.0,
 				"selected_items":
 				[
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"syntax:html",
+						"Set Syntax: HTML"
+					],
+					[
+						"dis",
+						"Package Control: Disable Package"
+					],
+					[
+						"listpa",
+						"Package Control: List Packages"
+					],
 					[
 						"disa",
 						"Package Control: Disable Package"
@@ -1966,19 +2002,11 @@
 						"Package Control: Enable Package"
 					],
 					[
-						"dis",
-						"Package Control: Disable Package"
-					],
-					[
 						"enal",
 						"Package Control: Enable Package"
 					],
 					[
 						"list",
-						"Package Control: List Packages"
-					],
-					[
-						"listpa",
 						"Package Control: List Packages"
 					],
 					[
@@ -2048,10 +2076,6 @@
 					[
 						"inst",
 						"Package Control: Install Package"
-					],
-					[
-						"enable",
-						"Package Control: Enable Package"
 					],
 					[
 						"disab",
@@ -2218,7 +2242,7 @@
 						"Trailing Spaces: Delete Trailing Spaces"
 					]
 				],
-				"width": 478.0
+				"width": 514.0
 			},
 			"console":
 			{
@@ -2235,7 +2259,20 @@
 			},
 			"file_history":
 			[
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/clearfix.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Desktop/1.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/csscomment.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/cssbegin.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Desktop/emmet-sublime-master/emmet-sublime-master/emmet/snippets.json",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/iife.sublime-snippet",
+				"/C/Documents and Settings/Administrator/My Documents/sitemap.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/README.md",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Add DocBlockr Line Before.sublime-macro",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Default.sublime-commands",
 				"/C/Documents and Settings/Administrator/My Documents/header.css",
 				"/C/Documents and Settings/Administrator/My Documents/jsddmopen.js",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
@@ -2255,7 +2292,6 @@
 				"/C/Documents and Settings/Administrator/My Documents/change/style.css",
 				"/C/Documents and Settings/Administrator/My Documents/change/index.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/README.md",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
@@ -2350,19 +2386,7 @@
 				"/D/Webroot/slider/css/flexslider.css",
 				"/C/Documents and Settings/Administrator/Desktop/jquery-list-grid-switcher-source/styles.css",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/templates/html.tmpl",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/Sublime-text-2-master/Sublime-text-2-master/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/readme.md",
-				"/C/Documents and Settings/Administrator/Desktop/Sublime.Text.2.Keygen.and.Patch-Lz0/Sublime.Text.2.Keygen.and.Patch-Lz0/lzgpthr1.zip",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
-				"/D/Webroot/cutout/index.html",
-				"/Z/ec/nhljerseys1106.com/themes/110602/css/header.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeBlockCursor/README.md",
-				"/D/Webroot/ajaxtest/test.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Settings/SideBarEnhancements.json"
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
 			],
 			"find":
 			{
@@ -2388,6 +2412,21 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"alt",
+					"^\\s*<span",
+					"	        	<a",
+					"More",
+					"</li>",
+					"<span><",
+					"<span>",
+					"<li>",
+					"<span>",
+					"class=\"more\"",
+					"More",
+					"more",
+					"More",
+					"f6",
+					"macro",
 					"visibility",
 					".com",
 					"script",
@@ -2500,27 +2539,12 @@
 					"collapsed",
 					"module-category",
 					"wrapper",
-					"dropdown",
-					"#select-form",
-					"back-top",
-					"YOUR CART IS EMPTY",
-					"bullets.png",
-					"loading.gif",
-					"loading.gif  ",
-					"/vmgeneral",
-					"css/loading.gif",
-					"css/loading.gif ",
-					"css/loading.gif",
-					"css/loading.gif ",
-					"arrow_down.png ",
-					"images/images/",
-					"search-button.png  ",
-					"nav-divider.gif  "
+					"dropdown"
 				],
 				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": false,
+				"regex": true,
 				"replace_history":
 				[
 					"",
@@ -2661,7 +2685,7 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 4,
 					"sheets":
 					[
 						{
@@ -2669,15 +2693,15 @@
 							"file": "/D/Webroot/2012-11-15/index.html",
 							"settings":
 							{
-								"buffer_size": 1762,
+								"buffer_size": 1761,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										687,
-										687
+										525,
+										525
 									]
 								],
 								"settings":
@@ -2704,8 +2728,8 @@
 								"selection":
 								[
 									[
-										465,
-										465
+										1354,
+										1354
 									]
 								],
 								"settings":
@@ -2719,27 +2743,21 @@
 								"zoom_level": 1.0
 							},
 							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 0,
-					"sheets":
-					[
+						},
 						{
 							"buffer": 2,
 							"file": "/D/Webroot/2012-11-15/css/global.css",
 							"settings":
 							{
-								"buffer_size": 2360,
+								"buffer_size": 2456,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										706,
-										706
+										347,
+										347
 									]
 								],
 								"settings":
@@ -2749,7 +2767,61 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 42.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"settings":
+							{
+								"buffer_size": 121,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										103,
+										103
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"settings":
+							{
+								"buffer_size": 121,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										121,
+										121
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -2774,18 +2846,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.619417108251,
 					1.0
 				],
 				"rows":
@@ -3337,7 +3402,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 119.0,
+			"side_bar_width": 240.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": "/D/Webroot/ajaxtest/new.sublime-project"

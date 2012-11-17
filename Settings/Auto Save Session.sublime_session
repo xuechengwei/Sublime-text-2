@@ -1639,6 +1639,10 @@
 				"selected_items":
 				[
 					[
+						"cl",
+						"clear"
+					],
+					[
 						"no",
 						"nowrap"
 					],
@@ -1930,7 +1934,7 @@
 					"file": "/D/Webroot/2012-11-15/index.html",
 					"settings":
 					{
-						"buffer_size": 1762,
+						"buffer_size": 1761,
 						"line_ending": "Windows"
 					}
 				},
@@ -1943,40 +1947,68 @@
 					}
 				},
 				{
-					"contents": "DocBlockr is a [Sublime Text 2][sublime] package which makes writing documentation a breeze. DocBlockr supports **Javascript**, **PHP**, **ActionScript**, **CoffeeScript**, **Java**, **Objective C**, **C** and **C++**.\n\n## Installation ##\n\n### With Package Control ###\n\n**Recommended install**. If you have the [Package Control][package_control] package installed, you can install DocBlockr from inside Sublime Text itself. Open the Command Palette and select \"Package Control: Install Package\", then search for DocBlockr and you're done!\n\n### Without Package Control ###\n\nGo to your Sublime Text 2 Packages directory and clone the repository using the command below:\n\n    git clone https://github.com/spadgos/sublime-jsdocs.git DocBlockr\n\nDon't forget to keep updating it, though!\n\n### Without Git ###\n\nDownload the latest version from the [tags page][tags]. Unzip to your Sublime Text Packages folder (you can find this by opening ST2 and selecting `Preferences -> Browse Packages...`). You will need to rename the folder from the default (which will be something like `spadgos-sublime-jsdocs-a4bc2a`) to `DocBlockr`. That's it -- you shouldn't even need to restart ST2.\n\n## Feature requests & bug reports ##\n\nYou can leave either of these things [here][issues]. Pull requests are welcomed heartily! In this repo, the main development branch is `develop` and the stable 'production' branch is `master`. Please remember to base your branch from `develop` and issue the pull request back to that branch.\n\n## Changelog ##\n- **v2.9.1**, *31 October 2012*\n  - Thanks to [wronex](https://github.com/wronex), <kbd>Alt+Q</kbd> will reformat the entire DocBlock, with customisable indentation.\n  - Thanks to [Pavel Voronin](https://github.com/pavel-voronin), spaces around arguments are handled properly.\n  - **C/C++**: Array arguments are accepted\n  - **C/C++**: An argument list containing only `void` doesn't output any `@param` tags\n  - **PHP**: Arguments with an array as a default value inside multi-line arguments are handled properly\n  - <kbd>Ctrl/Cmd + Enter</kbd> and <kbd>Ctrl/Cmd + Shift + Enter</kbd> work inside DocBlocks.\n- **v2.9.0**, *1 October 2012*\n  - Adds ObjectiveC and ObjectiveC++ support, thanks to some help from [Robb Bรถhnke](https://github.com/robb)\n    - Very buggy code, support isn't great but it's better than nothing (hopefully).\n  - Single-line comments inside function definitions are handled\n  - Notation rules are applied to functions, which means they can define a return type by their name, eg: `strFoo`\n  - Notation rules can define arbitrary tags, for example: functions with a prefix of \"_\" should get the `@private` tag.\n  - Given the above addition, JS functions starting with an underscore are no longer marked as `@private` by default.\n- **v2.8.2**, *28 September 2012*\n  - When a function is defined across many lines, the parser will find the arguments on extra lines.\n- **v2.8.1**, *13 September 2012*\n  - Pressing <kbd>tab</kbd> on an empty line will perform a deep indentation instead of moving to the next field\n  - Functions starting with `_` will get a `@private` tag in Javascript (thanks to [Andrew Hanna](https://github.com/percyhanna))\n\nOlder history can be found in [the history file](https://github.com/spadgos/sublime-jsdocs/blob/master/HISTORY.md).\n\n## Usage ##\n\n> Below are some examples of what the package does. The pipe (`|`) indicates where the cursor will be after the action has run. Note that there are no keyboard shortcuts required to trigger these completions - just type as normal and it happens for you!\n\n### Docblock completion ###\n\nPressing **enter** or **tab** after `/**` (or `###*` for Coffee-Script) will yield a new line and will close the comment.\n\n    /**<<enter>>\n\n    -- becomes --\n\n    /**\n     * |\n     */\n\nSingle-asterisk comment blocks behave similarly:\n\n    /*<<enter>\n\n    -- becomes --\n\n    /*\n    |\n     */\n\nIf you press asterisk on the first line, it becomes indented with the line above:\n\n    /*\n    |<<*>>\n     */\n    \n    /*\n     *|\n     */\n\n### Function documentation ###\n\nHowever, if the line directly afterwards contains a function definition, then its name and parameters are parsed and some documentation is automatically added.\n\n    /**<<enter>>\n    function foobar (baz, quux) { }\n\n    -- becomes --\n\n    /**\n     * [foobar description]\n     * @param  {[type]} baz [description]\n     * @param  {[type]} quux [description]\n     * @return {[type]}\n     */\n    function foobar (baz, quux) { }\n\nYou can then press `tab` to move between the different fields.\n\nIf you have many arguments, or long variable names, it might be useful to spread your arguments across multiple lines. DocBlockr will handle this situation too:\n\n    /**<<enter>>\n    function someLongFunctionName(\n            withArguments, across,\n            many, lines\n        ) {\n\n    -- becomes --\n\n    /**\n     * [someLongFunctionName description]\n     * @param  {[type]} withArguments [description]\n     * @param  {[type]} across        [description]\n     * @param  {[type]} many          [description]\n     * @param  {[type]} lines         [description]\n     * @return {[type]}               [description]\n     */\n    function someLongFunctionName(\n            withArguments, across,\n            many, lines\n        ) {\n\n\nIn PHP, if [type hinting][typehinting] or default values are used, then those types are prefilled as the datatypes.\n\n    /**|<<enter>>\n    function foo(Array $arr, MyClass $cls, $str = \"abc\", $i = 0, $b = false) {}\n\n    /**\n     * [foo description]\n     * @param  Array $arr [description]\n     * @param  MyClass $cls [description]\n     * @param  string $str [description]\n     * @param  int $i [description]\n     * @param  bool $b [description]\n     * @return [type]\n     */\n    function foo(Array $arr, MyClass $cls, $str = \"abc\", $i = 0) {}\n\nDocBlockr will try to make an intelligent guess about the return value of the function.\n\n- If the function name is or begins with \"set\" or \"add\", then no `@return` is inserted.\n- If the function name is or begins with \"is\" or \"has\", then it is assumed to return a `Boolean`.\n- In Javascript, if the function begins with an uppercase letter then it is assumed that the function is a class definition. No `@return` tag is added.\n- In Javascript, functions beginning with an underscore are assumed to be private: `@private` is added to these.\n- In PHP, some of the [magic methods][magicmethods] have their values prefilled:\n  - `__construct`, `__destruct`, `__set`, `__unset`, `__wakeup` have no `@return` tag.\n  - `__sleep` returns an `Array`.\n  - `__toString` returns a `string`.\n  - `__isset` returns a `bool`.\n\nIn Javascript, functions beginning with an underscore are given a `@private` tag by default.\n\n### Variable documentation ###\n\nIf the line following your docblock contains a variable declaration, DocBlockr will try to determine the data type of the variable and insert that into the comment.\n\n    /**<<enter>>\n    foo = 1\n\n    -- becomes --\n\n    /**\n     * [foo description]\n     * @type {Number}\n     */\n    foo = 1\n\nIf you press `shift+enter` after the opening `/**` then the docblock will be inserted inline.\n\n    /**<<shift+enter>>\n    bar = new Module();\n\n    -- becomes --\n    /** @type {Module} [bar description] */\n    bar = new Module();\n\nDocBlockr will also try to determine the type of the variable from its name. Variables starting with `is` or `has` are assumed to be booleans, and `callback`, `cb`, `done`, `fn`, and `next` are assumed to be functions. If you use your own variable naming system (eg: hungarian notation: booleans all start with `b`, arrays start with `arr`), you can define these rules yourself. Modify the `jsdocs_notation_map` setting *(in `Base File.sublime-settings`)* like so:\n\n```javascript\n{\n    \"jsdocs_notation_map\": [\n        {\n            \"prefix\": \"b\", // a prefix, matches only if followed by an underscore or A-Z\n            \"type\": \"bool\" // translates to \"Boolean\" in javascript, \"bool\" in PHP\n        },\n        {\n            \"regex\": \"tbl_?[Rr]ow\", // any arbitrary regex to test against the variable name\n            \"type\": \"TableRow\"      // you can add your own types\n        }\n    ]\n}\n```\n\nThe notation map can also be used to add arbitrary tags, according to your own code conventions. For example, if your conventions state that functions beginning with an underscore are private, you could add this to the `jsdocs_notation_map`:\n\n```javascript\n{\n    \"prefix\": \"_\",\n    \"tags\": [\"@private\"]\n}\n```\n\n### Comment extension ###\n\nPressing enter inside a docblock will automatically insert a leading asterisk and maintain your indentation.\n\n    /**\n     *  Foo bar<<enter>>\n     */\n\n    -- becomes --\n\n    /**\n     *  Foo bar\n     *  |\n     */\n    \n    -- and --\n\n    /**\n     *  @param foo Lorem ipsum dolor sit amet, consectetur\n     *             adipisicing elit, sed do eiusmod tempor<<enter>>\n     */\n    \n    -- becomes --\n\n    /**\n     *  @param foo Lorem ipsum dolor sit amet, consectetur\n     *             adipisicing elit, sed do eiusmod tempor\n     *             |\n     */\n\nThis applies to docblock comments `/** like this */` as well as inline double-slash comments `// like this`\n\n    //   foo<<enter>>\n\n    -- becomes\n\n    //   foo\n    //   |\n\nIn either case, you can press `shift+enter` to stop the automatic extension.\n\nOftentimes, when documenting a parameter, or adding a description to a tag, your description will cover multiple lines. If the line you are on is directly following a tag line, pressing `tab` will move the indentation to the correct position.\n\n    /**\n     * @param {String} foo Lorem ipsum dolor sit amet\n     * |<<tab>>\n     */\n\n     -- becomes\n\n    /**\n     * @param {String} foo Lorem ipsum dolor sit amet\n     *                     |\n     */\n\n### Comment decoration ###\n\nIf you write a double-slash comment and then press `Ctrl+Enter`, DocBlockr will 'decorate' that line for you.\n\n    // Foo bar baz<<Ctrl+Enter>>\n\n    -- becomes\n\n    /////////////////\n    // Foo bar baz //\n    /////////////////\n\n### Reparsing a DocBlock ###\n\nSometimes, you'll perform some action which clears the fields (sections of text which you can navigate through using `tab`). This leaves you with a number of placeholders in the DocBlock with no easy way to jump to them.\n\nWith DocBlockr, you can reparse a comment and reactivate the fields by pressing the hotkey `Ctrl+Alt+Tab` (`Alt+Shift+Tab` on Linux).\n\n### Reformatting paragraphs ###\n\nInside a comment block, hit `Alt+Q` to wrap the lines to make them fit within your rulers. If you would like subsequent lines in a paragraph to be indented, you can adjust the `jsdocs_indentation_spaces_same_para` setting. For example, a value of `3` might look like this:\n    \n    /**\n     * Duis sed arcu non tellus eleifend ullamcorper quis non erat. Curabitur\n     *   metus elit, ultrices et tristique a, blandit at justo.\n     * @param  {String} foo Lorem ipsum dolor sit amet.\n     * @param  {Number} bar Nullam fringilla feugiat pretium. Quisque\n     *   consectetur, risus eu pellentesque tincidunt, nulla ipsum imperdiet\n     *   massa, sit amet adipiscing dolor.\n     * @return {[Type]}\n     */\n\n### Adding extra tags ###\n\nFinally, typing `@` inside a docblock will show a completion list for all tags supported by [JSDoc][jsdoc], the [Google Closure Compiler][closure], [YUIDoc][yui] or [PHPDoc][phpdoc]. Extra help is provided for each of these tags by prefilling the arguments each expects. Pressing `tab` will move the cursor to the next argument.\n\n## Configuration ##\n\nYou can access the configuration settings by selecting `Preferences -> Package Settings -> DocBlockr`.\n\n*The `jsdocs_*` prefix is a legacy from days gone by...*\n\n- `jsdocs_indentation_spaces` *(Number)* The number of spaces to indent after the leading asterisk.\n\n        // jsdocs_indentation_spaces = 1\n        /**\n         * foo\n         */\n\n        // jsdocs_indentation_spaces = 5\n        /**\n         *     foo\n         */\n\n- `jsdocs_align_tags` *(String)* Whether the words following the tags should align. Possible values are `'no'`, `'shallow'` and `'deep'`\n   \n    > For backwards compatibility, `false` is equivalent to `'no'`, `true` is equivalent to `'shallow'`\n  \n    `'shallow'` will align only the first words after the tag. eg:\n\n        @param    {MyCustomClass} myVariable desc1\n        @return   {String} foo desc2\n        @property {Number} blahblah desc3\n  \n    `'deep'` will align each component of the tags, eg:\n\n        @param    {MyCustomClass} myVariable desc1\n        @return   {String}        foo        desc2\n        @property {Number}        blahblah   desc3\n  \n\n- `jsdocs_extra_tags` *(Array.String)* An array of strings, each representing extra boilerplate comments to add to *functions*. These can also include arbitrary text (not just tags).\n\n        // jsdocs_extra_tags = ['This is a cool function', '@author nickf', '@version ${1:version}']\n        /**<<enter>>\n        function foo (x) {}\n\n        /**\n         * [foo description]\n         * This is a cool function\n         * @author nickf\n         * @version [version]\n         * @param  {[type]} x [description]\n         * @return {[type]}\n         */\n        function foo (x) {}\n\n- `jsdocs_extend_double_slash` *(Boolean)* Whether double-slash comments should be extended. An example of this feature is described above.\n\n- `jsdocs_deep_indent` *(Boolean)* Whether pressing tab at the start of a line in docblock should indent to match the previous line's description field. An example of this feature is described above.\n\n- `jsdocs_notation_map` *(Array)* An array of notation objects. Each notation object must define either a `prefix` OR a `regex` property, and a `type` property.\n\n- `jsdocs_return_tag` *(String)* The text which should be used for a `@return` tag. By default, `@return` is used, however this can be changed to `@returns` if you use that style.\n\n- `jsdocs_spacer_between_sections` *(Boolean)* If true, then extra blank lines are inserted between the sections of the docblock. Default: `false`.\n\n- `jsdocs_indentation_spaces_same_para` *(Number)* Described above in the *Reformatting paragraphs* section. Default: `1`\n\nThis is my first package for Sublime Text, and the first time I've written any Python, so I heartily welcome feedback and [feature requests or bug reports][issues].\n\n## Show your love ##\n\n[![Click here to lend your support to: DocBlockr and make a donation at www.pledgie.com !](https://www.pledgie.com/campaigns/16316.png?skin_name=chrome)](http://www.pledgie.com/campaigns/16316)\n\n[closure]: http://code.google.com/closure/compiler/docs/js-for-compiler.html\n[issues]: https://github.com/spadgos/sublime-jsdocs/issues\n[jsdoc]: http://code.google.com/p/jsdoc-toolkit/wiki/TagReference\n[magicmethods]: http://www.php.net/manual/en/language.oop5.magic.php\n[package_control]: http://wbond.net/sublime_packages/package_control\n[phpdoc]: http://phpdoc.org/\n[sublime]: http://www.sublimetext.com/\n[tags]: https://github.com/spadgos/sublime-jsdocs/tags\n[typehinting]: http://php.net/manual/en/language.oop5.typehinting.php\n[yui]: http://yui.github.com/yuidoc/syntax/index.html\n",
-					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/README.md",
-					"file_size": 15135,
-					"file_write_time": 129966382549375000,
-					"settings":
-					{
-						"buffer_size": 15135,
-						"line_ending": "Unix",
-						"scratch": true
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-					"settings":
-					{
-						"buffer_size": 13148,
-						"line_ending": "Windows"
-					}
-				},
-				{
 					"file": "/D/Webroot/2012-11-15/css/global.css",
 					"settings":
 					{
-						"buffer_size": 2360,
+						"buffer_size": 2456,
 						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 1020,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "<!DOCTYPE html>\n<html>\n<head>\n	<meta charset=\"utf-8\">\n	<title>Examples</title>\n	<meta name=\"description\" content=\"\">\n	<meta name=\"keywords\" content=\"\">\n	<link href=\"\" rel=\"stylesheet\">\n</head>\n<body>\n    \n</body>\n</html>",
+					"settings":
+					{
+						"buffer_size": 220,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "/*\n \n @authors leon <kairyou@qq.com>\n          you\n*/\n\n",
+					"settings":
+					{
+						"buffer_size": 55,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 670,
+						"line_ending": "Unix"
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 228.0,
 				"selected_items":
 				[
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"syntax:html",
+						"Set Syntax: HTML"
+					],
+					[
+						"dis",
+						"Package Control: Disable Package"
+					],
+					[
+						"listpa",
+						"Package Control: List Packages"
+					],
 					[
 						"disa",
 						"Package Control: Disable Package"
@@ -1986,19 +2018,11 @@
 						"Package Control: Enable Package"
 					],
 					[
-						"dis",
-						"Package Control: Disable Package"
-					],
-					[
 						"enal",
 						"Package Control: Enable Package"
 					],
 					[
 						"list",
-						"Package Control: List Packages"
-					],
-					[
-						"listpa",
 						"Package Control: List Packages"
 					],
 					[
@@ -2068,10 +2092,6 @@
 					[
 						"inst",
 						"Package Control: Install Package"
-					],
-					[
-						"enable",
-						"Package Control: Enable Package"
 					],
 					[
 						"disab",
@@ -2238,7 +2258,7 @@
 						"Trailing Spaces: Delete Trailing Spaces"
 					]
 				],
-				"width": 478.0
+				"width": 514.0
 			},
 			"console":
 			{
@@ -2255,9 +2275,26 @@
 			},
 			"file_history":
 			[
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/CTags/Default.sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/AdvancedNewFile/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/clearfix.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Desktop/1.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/csscomment.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/cssbegin.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Desktop/emmet-sublime-master/emmet-sublime-master/emmet/snippets.json",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/iife.sublime-snippet",
+				"/C/Documents and Settings/Administrator/My Documents/sitemap.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/README.md",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Add DocBlockr Line Before.sublime-macro",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Default.sublime-commands",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
 				"/C/Documents and Settings/Administrator/My Documents/header.css",
 				"/C/Documents and Settings/Administrator/My Documents/jsddmopen.js",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
@@ -2277,7 +2314,6 @@
 				"/C/Documents and Settings/Administrator/My Documents/change/style.css",
 				"/C/Documents and Settings/Administrator/My Documents/change/index.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/README.md",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
@@ -2366,23 +2402,7 @@
 				"/D/Webroot/imagsSlider/slider.html",
 				"/D/Webroot/categories/css/style.css",
 				"/D/Webroot/slider/css/style.css",
-				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-8133de7/woothemes-FlexSlider-8133de7/demo/index.html",
-				"/D/Webroot/slider/slider.html",
-				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-8133de7/woothemes-FlexSlider-8133de7/flexslider.css",
-				"/D/Webroot/slider/css/flexslider.css",
-				"/C/Documents and Settings/Administrator/Desktop/jquery-list-grid-switcher-source/styles.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/templates/html.tmpl",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/Sublime-text-2-master/Sublime-text-2-master/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/readme.md",
-				"/C/Documents and Settings/Administrator/Desktop/Sublime.Text.2.Keygen.and.Patch-Lz0/Sublime.Text.2.Keygen.and.Patch-Lz0/lzgpthr1.zip",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
-				"/D/Webroot/cutout/index.html",
-				"/Z/ec/nhljerseys1106.com/themes/110602/css/header.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeBlockCursor/README.md"
+				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-8133de7/woothemes-FlexSlider-8133de7/demo/index.html"
 			],
 			"find":
 			{
@@ -2408,6 +2428,30 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"ctrl+alt+shift",
+					"ctrl+alt+sfhit",
+					"ctrl+shift+alt",
+					"ctrl+alt+shift+h",
+					"ctrl+shift+h",
+					"ctrl+shift",
+					"ctrl+alt",
+					"ctrl+shift",
+					"ctrl+shfit+h",
+					"ctrl+shift+alt",
+					"alt",
+					"^\\s*<span",
+					"	        	<a",
+					"More",
+					"</li>",
+					"<span><",
+					"<span>",
+					"<li>",
+					"<span>",
+					"class=\"more\"",
+					"More",
+					"more",
+					"More",
+					"f6",
 					"macro",
 					"visibility",
 					".com",
@@ -2511,31 +2555,7 @@
 					"^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$",
 					"slow_plugin",
 					"detect_slow_plugin",
-					"detect_slow_plugins",
-					"rounded",
-					"cursor",
-					"round",
-					"virtuemart/",
-					" ",
-					"www.",
-					"collapsed",
-					"module-category",
-					"wrapper",
-					"dropdown",
-					"#select-form",
-					"back-top",
-					"YOUR CART IS EMPTY",
-					"bullets.png",
-					"loading.gif",
-					"loading.gif  ",
-					"/vmgeneral",
-					"css/loading.gif",
-					"css/loading.gif ",
-					"css/loading.gif",
-					"css/loading.gif ",
-					"arrow_down.png ",
-					"images/images/",
-					"search-button.png  "
+					"detect_slow_plugins"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -2681,7 +2701,7 @@
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 5,
 					"sheets":
 					[
 						{
@@ -2689,15 +2709,15 @@
 							"file": "/D/Webroot/2012-11-15/index.html",
 							"settings":
 							{
-								"buffer_size": 1762,
+								"buffer_size": 1761,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										686,
-										686
+										524,
+										524
 									]
 								],
 								"settings":
@@ -2724,8 +2744,8 @@
 								"selection":
 								[
 									[
-										1371,
-										1371
+										1353,
+										1353
 									]
 								],
 								"settings":
@@ -2742,28 +2762,25 @@
 						},
 						{
 							"buffer": 2,
-							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/README.md",
+							"file": "/D/Webroot/2012-11-15/css/global.css",
 							"settings":
 							{
-								"buffer_size": 15135,
+								"buffer_size": 2456,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1320,
-										1322
+										346,
+										346
 									]
 								],
 								"settings":
 								{
-									"in_converting": true,
-									"is_xml": false,
-									"origin_encoding": "TIS-620",
-									"syntax": "Packages/Markdown/Markdown.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
+									"origin_encoding": "Undefined",
+									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -2773,18 +2790,98 @@
 						},
 						{
 							"buffer": 3,
-							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 							"settings":
 							{
-								"buffer_size": 13148,
+								"buffer_size": 1020,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1268,
-										1270
+										629,
+										629
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"settings":
+							{
+								"buffer_size": 220,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										204,
+										204
+									]
+								],
+								"settings":
+								{
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"settings":
+							{
+								"buffer_size": 55,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										55,
+										55
+									]
+								],
+								"settings":
+								{
+									"is_xml": false,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
+							"settings":
+							{
+								"buffer_size": 670,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										108,
+										3
 									]
 								],
 								"settings":
@@ -2796,40 +2893,6 @@
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 0,
-					"sheets":
-					[
-						{
-							"buffer": 4,
-							"file": "/D/Webroot/2012-11-15/css/global.css",
-							"settings":
-							{
-								"buffer_size": 2360,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										706,
-										706
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "Undefined",
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 42.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -2854,18 +2917,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.619417108251,
 					1.0
 				],
 				"rows":
@@ -2879,7 +2935,7 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,2,3,-32000,-32000,-1,-1,726,28,208,1435",
+			"position": "0,2,3,-1,-1,-1,-1,726,28,208,1435",
 			"replace":
 			{
 				"height": 64.0
@@ -3417,7 +3473,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 119.0,
+			"side_bar_width": 240.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": "/D/Webroot/ajaxtest/new.sublime-project"

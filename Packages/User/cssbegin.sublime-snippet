@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+body{
+	background:${2:#${1:FFF}} url(../images/${3:body_bg}.jpg) 0 0 ${4:repeat-x};
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #${5:000};
+}
+input,a,textarea{
+	outline: 0 none;
+}
+a:hover{
+	text-decoration: none;
+}
+.clearfix:after{
+	content: " ";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cssbegin</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css</scope>
+</snippet>

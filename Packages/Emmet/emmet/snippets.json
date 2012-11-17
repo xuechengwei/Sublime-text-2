@@ -11,17 +11,11 @@
 		"filters": "html",
 		"snippets": {
 			"@i": "@import url(|);",
+			"clearfix": ".clearfix:after{\n\tcontent: \" \";\n\tclear: both;\n\tdisplay: block;\n\theight: 0;\n\tvisibility: hidden;\n}",
 			"@m": "@media print {\n\t|\n}",
 			"@f": "@font-face {\n\tfont-family:|;\n\tsrc:url(|);\n}",
 			"@f+": "@font-face {\n\tfont-family: '${1:FontName}';\n\tsrc: url('${2:FileName}.eot');\n\tsrc: url('${2:FileName}.eot?#iefix') format('embedded-opentype'),\n\t\t url('${2:FileName}.woff') format('woff'),\n\t\t url('${2:FileName}.ttf') format('truetype'),\n\t\t url('${2:FileName}.svg#${1:FontName}') format('svg');\n\tfont-style: ${3:normal};\n\tfont-weight: ${4:normal};\n}",
 			"!": "!important",
-			"clearfix": ".clearfix:after{\n
-				\tcontent: \" \";\n
-				\tclear: both;\n
-				\tdisplay: block;\n
-				\theight: 0;\n
-				\tvisibility: hidden;\n
-			}",
 			"pos": "position:|;",
 			"pos:s": "position:static;",
 			"posa": "position:absolute;",
