@@ -1939,10 +1939,26 @@
 					}
 				},
 				{
-					"contents": "function ajax(options) {\n	// Load the options object with defaults, if no\n	// values were provided by the user\n	options = {\n		// The type of HTTP Request\n		type: options.type || \"POST\",\n		// The URL the request will be made to\n		url: options.url || \"\",\n		// How long to wait before considering the request to be a timeout\n		timeout: options.timeout || 5000,\n		// Functions to call when the request fails, succeeds,\n		// or completes (either fail or succeed)\n		onComplete: options.onComplete || function() {},\n		onError: options.onError || function() {},\n		onSuccess: options.onSuccess || function() {},\n		// The data type that'll be returned from the server\n		// the default is simply to determine what data was returned from the\n		// and act accordingly.\n		data: options.data || \"\"\n	};\n\n	// Create the request object\n	var xml = new XMLHttpRequest();\n	// Open the asynchronous request\n	xml.open(options.type, options.url, true);\n	// We're going to wait for a request for 5 seconds, before giving up\n	var timeoutLength = options.timeout;\n	// Keep track of when the request has been succesfully completed\n	var requestDone = false;\n	// Initalize a callback which will fire 5 seconds from now, cancelling\n	// the request (if it has not already occurred).\n	setTimeout(function() {\n		requestDone = true;\n	}, timeoutLength);\n	// Watch for when the state of the document gets updated\n	xml.onreadystatechange = function() {\n		// Wait until the data is fully loaded,\n		// and make sure that the request hasn't already timed out\n		if(xml.readyState == 4 && !requestDone) {\n			// Check to see if the request was successful\n			if(httpSuccess(xml)) {\n				// Execute the success callback with the\n				// data returned from the server\n				options.onSuccess(httpData(xml, options.type));\n				// Otherwise, an error occurred, so execute the error callback\n			} else {\n				options.onError();\n			}\n			// Call the completion callback\n			options.onComplete();\n			// Clean up after ourselves, to avoid memory leaks\n			xml = null;\n		}\n	};\n	// Establish the connection to the server\n	xml.send();\n	// Determine the success of the HTTP response\n\n\n	function httpSuccess(r) {\n		try {\n			// If no server status is provided, and we're actually\n			// requesting a local file, then it was successful\n			return !r.status && location.protocol == \"file:\" ||\n			// Any status in the 200 range is good\n			(r.status >= 200 && r.status < 300) ||\n			// Successful if the document has not been modified\n			r.status == 304 ||\n			// Safari returns an empty status if the file has not been modified\n			navigator.userAgent.indexOf(\"Safari\") >= 0 && typeof r.status == \"undefined\";\n		} catch(e) {}\n		// If checking the status failed, then assume that the request failed too\n		return false;\n	}\n	// Extract the correct data from the HTTP response\n\n\n	function httpData(r, type) {\n		// Get the content-type header\n		var ct = r.getResponseHeader(\"content-type\");\n		// If no default type was provided, determine if some\n		// form of XML was returned from the server\n		var data = !type && ct && ct.indexOf(\"xml\") >= 0;\n		// Get the XML Document object if XML was returned from\n		// the server, otherwise return the text contents returned by the server\n		data = type == \"xml\" || data ? r.responseXML : r.responseText;\n		// If the specified type is \"script\", execute the returned text\n		// response as if it was JavaScript\n		if(type == \"script\") eval.call(window, data);\n		// Return the response data (either an XML Document or a text string)\n		return data;\n	}\n}",
+					"file": "/C/Documents and Settings/Administrator/My Documents/header.css",
 					"settings":
 					{
-						"buffer_size": 3506,
+						"buffer_size": 1603,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/WINDOWS/system32/drivers/etc/hosts",
+					"settings":
+					{
+						"buffer_size": 706,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/My Documents/sitemap1.html",
+					"settings":
+					{
+						"buffer_size": 11431,
 						"line_ending": "Windows"
 					}
 				},
@@ -1950,23 +1966,15 @@
 					"file": "/D/Webroot/2012-11-15/css/global.css",
 					"settings":
 					{
-						"buffer_size": 2456,
+						"buffer_size": 2358,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"contents": "<!doctype html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Document</title>\n</head>\n<body>\n	\n</body>\n</html>",
+					"contents": "function ajax(options) {\n	// Load the options object with defaults, if no\n	// values were provided by the user\n	options = {\n		// The type of HTTP Request\n		type: options.type || \"POST\",\n		// The URL the request will be made to\n		url: options.url || \"\",\n		// How long to wait before considering the request to be a timeout\n		timeout: options.timeout || 5000,\n		// Functions to call when the request fails, succeeds,\n		// or completes (either fail or succeed)\n		onComplete: options.onComplete || function() {},\n		onError: options.onError || function() {},\n		onSuccess: options.onSuccess || function() {},\n		// The data type that'll be returned from the server\n		// the default is simply to determine what data was returned from the\n		// and act accordingly.\n		data: options.data || \"\"\n	};\n\n	// Create the request object\n	var xml = new XMLHttpRequest();\n	// Open the asynchronous request\n	xml.open(options.type, options.url, true);\n	// We're going to wait for a request for 5 seconds, before giving up\n	var timeoutLength = options.timeout;\n	// Keep track of when the request has been succesfully completed\n	var requestDone = false;\n	// Initalize a callback which will fire 5 seconds from now, cancelling\n	// the request (if it has not already occurred).\n	setTimeout(function() {\n		requestDone = true;\n	}, timeoutLength);\n	// Watch for when the state of the document gets updated\n	xml.onreadystatechange = function() {\n		// Wait until the data is fully loaded,\n		// and make sure that the request hasn't already timed out\n		if(xml.readyState == 4 && !requestDone) {\n			// Check to see if the request was successful\n			if(httpSuccess(xml)) {\n				// Execute the success callback with the\n				// data returned from the server\n				options.onSuccess(httpData(xml, options.type));\n				// Otherwise, an error occurred, so execute the error callback\n			} else {\n				options.onError();\n			}\n			// Call the completion callback\n			options.onComplete();\n			// Clean up after ourselves, to avoid memory leaks\n			xml = null;\n		}\n	};\n	// Establish the connection to the server\n	xml.send();\n	// Determine the success of the HTTP response\n\n\n	function httpSuccess(r) {\n		try {\n			// If no server status is provided, and we're actually\n			// requesting a local file, then it was successful\n			return !r.status && location.protocol == \"file:\" ||\n			// Any status in the 200 range is good\n			(r.status >= 200 && r.status < 300) ||\n			// Successful if the document has not been modified\n			r.status == 304 ||\n			// Safari returns an empty status if the file has not been modified\n			navigator.userAgent.indexOf(\"Safari\") >= 0 && typeof r.status == \"undefined\";\n		} catch(e) {}\n		// If checking the status failed, then assume that the request failed too\n		return false;\n	}\n	// Extract the correct data from the HTTP response\n\n\n	function httpData(r, type) {\n		// Get the content-type header\n		var ct = r.getResponseHeader(\"content-type\");\n		// If no default type was provided, determine if some\n		// form of XML was returned from the server\n		var data = !type && ct && ct.indexOf(\"xml\") >= 0;\n		// Get the XML Document object if XML was returned from\n		// the server, otherwise return the text contents returned by the server\n		data = type == \"xml\" || data ? r.responseXML : r.responseText;\n		// If the specified type is \"script\", execute the returned text\n		// response as if it was JavaScript\n		if(type == \"script\") eval.call(window, data);\n		// Return the response data (either an XML Document or a text string)\n		return data;\n	}\n}",
 					"settings":
 					{
-						"buffer_size": 121,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "<!doctype html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Document</title>\n</head>\n<body>\n	\n</body>\n</html>",
-					"settings":
-					{
-						"buffer_size": 121,
+						"buffer_size": 3506,
 						"line_ending": "Windows"
 					}
 				}
@@ -2259,7 +2267,16 @@
 			},
 			"file_history":
 			[
+				"/C/Documents and Settings/Administrator/My Documents/sitemap_html.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/CTags/Default.sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/AdvancedNewFile/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/clearfix.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Desktop/1.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
@@ -2270,7 +2287,6 @@
 				"/C/Documents and Settings/Administrator/My Documents/sitemap.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/README.md",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Add DocBlockr Line Before.sublime-macro",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Default.sublime-commands",
 				"/C/Documents and Settings/Administrator/My Documents/header.css",
@@ -2291,7 +2307,6 @@
 				"/C/Documents and Settings/Administrator/Desktop/jquery-list-grid-switcher-source/script.js",
 				"/C/Documents and Settings/Administrator/My Documents/change/style.css",
 				"/C/Documents and Settings/Administrator/My Documents/change/index.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/README.md",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
@@ -2379,14 +2394,7 @@
 				"/C/Documents and Settings/Administrator/Desktop/slider.html",
 				"/D/Webroot/imagsSlider/slider.html",
 				"/D/Webroot/categories/css/style.css",
-				"/D/Webroot/slider/css/style.css",
-				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-8133de7/woothemes-FlexSlider-8133de7/demo/index.html",
-				"/D/Webroot/slider/slider.html",
-				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-8133de7/woothemes-FlexSlider-8133de7/flexslider.css",
-				"/D/Webroot/slider/css/flexslider.css",
-				"/C/Documents and Settings/Administrator/Desktop/jquery-list-grid-switcher-source/styles.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
+				"/D/Webroot/slider/css/style.css"
 			],
 			"find":
 			{
@@ -2412,6 +2420,18 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"20",
+					"　　",
+					"ctrl+alt+shift",
+					"ctrl+alt+sfhit",
+					"ctrl+shift+alt",
+					"ctrl+alt+shift+h",
+					"ctrl+shift+h",
+					"ctrl+shift",
+					"ctrl+alt",
+					"ctrl+shift",
+					"ctrl+shfit+h",
+					"ctrl+shift+alt",
 					"alt",
 					"^\\s*<span",
 					"	        	<a",
@@ -2527,24 +2547,12 @@
 					"git_binary",
 					"git",
 					"^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$",
-					"slow_plugin",
-					"detect_slow_plugin",
-					"detect_slow_plugins",
-					"rounded",
-					"cursor",
-					"round",
-					"virtuemart/",
-					" ",
-					"www.",
-					"collapsed",
-					"module-category",
-					"wrapper",
-					"dropdown"
+					"slow_plugin"
 				],
 				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": true,
+				"regex": false,
 				"replace_history":
 				[
 					"",
@@ -2700,8 +2708,8 @@
 								"selection":
 								[
 									[
-										525,
-										525
+										567,
+										567
 									]
 								],
 								"settings":
@@ -2719,6 +2727,127 @@
 						},
 						{
 							"buffer": 1,
+							"file": "/C/Documents and Settings/Administrator/My Documents/header.css",
+							"settings":
+							{
+								"buffer_size": 1603,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1000,
+										1000
+									],
+									[
+										1019,
+										1019
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/CSS/CSS.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/WINDOWS/system32/drivers/etc/hosts",
+							"settings":
+							{
+								"buffer_size": 706,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										506,
+										506
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "ASCII",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/Documents and Settings/Administrator/My Documents/sitemap1.html",
+							"settings":
+							{
+								"buffer_size": 11431,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										279,
+										279
+									]
+								],
+								"settings":
+								{
+									"is_xml": false,
+									"origin_encoding": "UTF-8",
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/D/Webroot/2012-11-15/css/global.css",
+							"settings":
+							{
+								"buffer_size": 2358,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1878,
+										1878
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "Undefined",
+									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 41.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 5,
 							"settings":
 							{
 								"buffer_size": 3506,
@@ -2728,8 +2857,8 @@
 								"selection":
 								[
 									[
-										1354,
-										1354
+										1352,
+										1352
 									]
 								],
 								"settings":
@@ -2740,88 +2869,6 @@
 								},
 								"translation.x": 0.0,
 								"translation.y": 440.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/D/Webroot/2012-11-15/css/global.css",
-							"settings":
-							{
-								"buffer_size": 2456,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										347,
-										347
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "Undefined",
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"settings":
-							{
-								"buffer_size": 121,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										103,
-										103
-									]
-								],
-								"settings":
-								{
-									"auto_name": "",
-									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"settings":
-							{
-								"buffer_size": 121,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										121,
-										121
-									]
-								],
-								"settings":
-								{
-									"auto_name": "",
-									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -2846,11 +2893,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.4643933685,
 					1.0
 				],
 				"rows":
@@ -3402,7 +3456,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 240.0,
+			"side_bar_width": 113.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": "/D/Webroot/ajaxtest/new.sublime-project"

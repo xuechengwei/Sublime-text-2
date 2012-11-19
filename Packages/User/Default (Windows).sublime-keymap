@@ -1,5 +1,5 @@
 [
-	{"args": {"doctype": "5"},"command": "set_html_syntax_and_insert_skel", "keys": ["ctrl+alt+shift+h"]},
+	// {"args": {"doctype": "5"},"command": "set_html_syntax_and_insert_skel", "keys": ["ctrl+alt+shift+h"]},
 	{ "keys": ["ctrl+super+t"], "command": "delete_trailing_spaces" },
 	{ "keys": ["ctrl+alt+shift+a"], "command": "alignment" },
 	{ "keys": ["ctrl+alt+x"], "command": "prefixr" },
@@ -31,5 +31,16 @@
 	{
         "keys": ["ctrl+shift+alt+h"], "command": "sublime_tmpl",
         "args": {"type": "html"}
+    },
+    {
+        "keys": [
+            "shift+ctrl+a"
+        ],
+        "command": "rename_tag",
+        "context": [
+            {
+                "key": "emmet_action_enabled.rename_tag"
+            }
+        ]
     }
 ]

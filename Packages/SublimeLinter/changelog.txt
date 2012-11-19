@@ -396,6 +396,7 @@ CHANGES/FIXES
   branch will act as a more formal method for testing new features and
   fixes before a release.
 
+
 SublimeLinter 1.6.10 changelog
 ==============================
 
@@ -408,3 +409,11 @@ CHANGES/FIXES
 - Lua syntax check no longer creates luac.out file clutter.
 
 - Clarified documentation for styling sublimelinter.annotations.
+
+
+SublimeLinter 1.6.11 changelog
+==============================
+
+CHANGES/FIXES
+
+- Github (nodeload) zip url scheme changed.
