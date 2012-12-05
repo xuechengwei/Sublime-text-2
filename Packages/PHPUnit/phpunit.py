@@ -219,15 +219,9 @@ class AvailableFiles:
                 del AvailableFiles.search_results_cache[cached_file]
 
     @staticmethod
-    def reachedTopLevelFolders(folders, oldpath, path):
+    def reachedTopLevelFolders(oldpath, path):
         if oldpath == path:
             return True
-        for folder in folders:
-            parent = os.path.dirname(folder)
-            if parent[:len(path)] == path:
-                return True
-            if path == os.path.dirname(folder):
-                return True
         hints = Prefs.folder_search_hints
         for hint in hints:
             if os.path.exists(os.path.join(path, hint)):
@@ -532,9 +526,16 @@ class ActiveView(ActiveFile):
         folders = self.view.window().folders()
         path = os.path.dirname(self.file_name())
         oldpath = ''
-        while not AvailableFiles.reachedTopLevelFolders(folders, oldpath, path):
+        while not path in folders and path != oldpath:
             oldpath = path
             path = os.path.dirname(path)
+        if path == oldpath:
+            # problem - we didn't find ourselves in the list of open folders
+            # fallback to using heuristics instead
+            path = os.path.dirname(self.file_name())
+            while not AvailableFiles.reachedTopLevelFolders(oldpath, path):
+                oldpath = path
+                path = os.path.dirname(path)
         debug_msg("Top folder for this project is: " + path)
         return path
 
@@ -597,7 +598,7 @@ class ActiveView(ActiveFile):
         return path
 
     def extract_namespace(self):
-        namespaces = self.view.find_all("^namespace ([A-Za-z0-9_\\\]+);")
+        namespaces = self.view.find_all("namespace ([A-Za-z0-9_\\\]+);")
         if namespaces is None or len(namespaces) == 0:
             return ''
         for namespace in namespaces:
@@ -605,7 +606,7 @@ class ActiveView(ActiveFile):
             return line[10:-1]
 
     def extract_classname(self):
-        classes = self.view.find_all("^class [A-Za-z0-9_]+")
+        classes = self.view.find_all("class [A-Za-z0-9_]+")
         if classes is None or len(classes) == 0:
             return None
         for classname in classes:

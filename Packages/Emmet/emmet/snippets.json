@@ -141,7 +141,7 @@
 			"bdi:n": "border-image:none;",
 			"bdti": "border-top-image:url(|);",
 			"bdti:n": "border-top-image:none;",
-			"bdri": "border-right-image:url(|);",
+			"bdri":"border-right-image:url(|);",
 			"bdri:n": "border-right-image:none;",
 			"bdbi": "border-bottom-image:url(|);",
 			"bdbi:n": "border-bottom-image:none;",

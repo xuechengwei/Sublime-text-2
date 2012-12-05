@@ -12,8 +12,7 @@
 
     // An array of language names which are disabled.
     "codeintel_disabled_languages":
-    [
-    ],
+    ["Python, RHTML, Smarty, Mason, Node.js, XBL, Tcl, TemplateToolkit, XUL, Django, Perl, Ruby, Python3."],
 
     /*
         Sets the mode in which SublimeCodeIntel's live autocomplete runs:

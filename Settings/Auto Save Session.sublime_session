@@ -2,6 +2,7 @@
 	"folder_history":
 	[
 		"/D/Webroot/2012-11-15",
+		"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com",
 		"/D/Webroot/categories",
 		"/D/Webroot/ajaxtest",
 		"/D/Webroot",
@@ -44,10 +45,10 @@
 		"/C/Documents and Settings/Administrator/desktop/44",
 		"/D/wamp/www"
 	],
-	"last_window_id": 16,
+	"last_window_id": 17,
 	"settings":
 	{
-		"new_window_height": 464.0,
+		"new_window_height": 450.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -55,1589 +56,17 @@
 				"selected_items":
 				[
 					[
-						"no",
-						"nowrap"
-					],
-					[
-						"padding",
-						"padding"
-					],
-					[
-						"fl",
-						"float"
-					],
-					[
-						"font",
-						"font-size"
-					],
-					[
-						"inline",
-						"inline-block"
-					],
-					[
-						"cont",
-						"container"
-					],
-					[
-						"list",
-						"list-style"
-					],
-					[
-						"te",
-						"text-align"
-					],
-					[
-						"disp",
-						"displayErrors"
-					],
-					[
-						"size",
-						"sizechart"
-					],
-					[
-						"select",
-						"selected"
-					],
-					[
-						"borderc",
-						"border-color"
-					],
-					[
-						"bdc",
-						"border-color"
-					],
-					[
-						"bdr",
-						"border-radius"
-					],
-					[
-						"font-st",
-						"font-style	zen:css_properties"
-					],
-					[
-						"marg",
-						"margin"
-					],
-					[
-						"border",
-						"border"
-					],
-					[
-						"text",
-						"text-decoration"
-					],
-					[
-						"back",
-						"background"
-					],
-					[
-						"bd",
-						"border"
-					],
-					[
-						"mar",
-						"margin-left"
-					],
-					[
-						"font-",
-						"font-style"
-					],
-					[
-						"ari",
-						"\"Arial Black\""
-					],
-					[
-						"arial",
-						"Arial, Helvetica, sans-serif"
-					],
-					[
-						"re",
-						"repeat"
-					],
-					[
-						"script",
-						"SCRIPT"
-					],
-					[
-						"search",
-						"search_text"
-					],
-					[
-						"nlet",
-						"nletter_text"
-					],
-					[
-						"nletter_",
-						"nletter_text"
-					],
-					[
-						"sear",
-						"search_text"
-					],
-					[
-						"sea",
-						"search_text"
-					],
-					[
-						"copy-domain",
-						"copy-domainaccount"
-					],
-					[
-						"texta",
-						"textareaContent"
-					],
-					[
-						"textar",
-						"textarea-content"
-					],
-					[
-						"get",
-						"getElementById"
-					],
-					[
-						"clipb",
-						"clipboardContent"
-					],
-					[
-						"top",
-						"topflag_arr"
-					],
-					[
-						"margin",
-						"margin-left"
-					],
-					[
-						"bor",
-						"border-radius"
-					],
-					[
-						"pad",
-						"padding"
-					],
-					[
-						"recommendflag",
-						"recommendflag_arr"
-					],
-					[
-						"inli",
-						"inline-block"
-					],
-					[
-						"col",
-						"color"
-					],
-					[
-						"child",
-						"ChildType"
-					],
-					[
-						"a",
-						"a	<a>"
-					],
-					[
-						"arr",
-						"arrGWeb"
-					],
-					[
-						"biweb",
-						"biweb_news_top"
-					],
-					[
-						"php",
-						"phpinfo"
-					],
-					[
-						"w",
-						"WEBURL"
-					],
-					[
-						"pa",
-						"padding"
-					],
-					[
-						"wid",
-						"width"
-					],
-					[
-						"add",
-						"add-to-cart"
-					],
-					[
-						"class",
-						"class	@class"
-					],
-					[
-						"table",
-						"table-cell"
-					],
-					[
-						"lin",
-						"line-height"
-					],
-					[
-						"max",
-						"max-height"
-					],
-					[
-						"chil",
-						"ChildType"
-					],
-					[
-						"tex",
-						"text-align"
-					],
-					[
-						"temp",
-						"templates_root"
-					],
-					[
-						"page",
-						"page_link"
-					],
-					[
-						"tem",
-						"templates_root"
-					],
-					[
-						"fo",
-						"footer"
-					],
-					[
-						"ta",
-						"text-align"
-					],
-					[
 						"pro",
-						"prorow2"
+						"product_ul_bg.jpg	w:1 h:92"
 					],
 					[
-						"searh",
-						"search-form"
+						"decimal",
+						"decimal-leading-zero"
 					],
 					[
-						"url",
-						"url(image-url.gif)"
+						"list-style",
+						"list-style-type"
 					],
-					[
-						"helvetica",
-						"Arial, Helvetica, sans-serif"
-					],
-					[
-						"repeat",
-						"repeat-x"
-					],
-					[
-						"m-",
-						"m-expanded"
-					],
-					[
-						"hot_ca",
-						"http_negotiate_charset"
-					],
-					[
-						"ab",
-						"absolute"
-					]
-				]
-			},
-			"build_system": "",
-			"command_palette":
-			{
-				"height": 375.0,
-				"selected_items":
-				[
-					[
-						"list",
-						"Package Control: List Packages"
-					],
-					[
-						"disa",
-						"Package Control: Disable Package"
-					],
-					[
-						"listpa",
-						"Package Control: List Packages"
-					],
-					[
-						"pinsp",
-						"Package Control: Install Package"
-					],
-					[
-						"pip",
-						"Package Control: Disable Package"
-					],
-					[
-						"Package Control: ",
-						"Package Control: Discover Packages"
-					],
-					[
-						"listpage",
-						"Package Control: List Packages"
-					],
-					[
-						"insp",
-						"Package Control: Install Package"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
-						"dis",
-						"Package Control: Disable Package"
-					],
-					[
-						"disco",
-						"Package Control: Discover Packages"
-					],
-					[
-						"fetch",
-						"Fetch: Manage"
-					],
-					[
-						"fet",
-						"Fetch: File"
-					],
-					[
-						"format",
-						"Format: Javascript"
-					],
-					[
-						"instap",
-						"Package Control: Install Package"
-					],
-					[
-						"htmlpre",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"pre",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"enal",
-						"Package Control: Enable Package"
-					],
-					[
-						"instpa",
-						"Package Control: Install Package"
-					],
-					[
-						"remove",
-						"Package Control: Remove Package"
-					],
-					[
-						"ins",
-						"Package Control: Install Package"
-					],
-					[
-						"inst",
-						"Package Control: Install Package"
-					],
-					[
-						"enable",
-						"Package Control: Enable Package"
-					],
-					[
-						"disab",
-						"Package Control: Disable Package"
-					],
-					[
-						"instal",
-						"Package Control: Install Package"
-					],
-					[
-						"move",
-						"File: Move"
-					],
-					[
-						"filemove",
-						"File: Move"
-					],
-					[
-						"insta",
-						"Package Control: Install Package"
-					],
-					[
-						"syntaxjava",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"html",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"htmlpr",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"htmlp",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"prettify",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"listp",
-						"Package Control: List Packages"
-					],
-					[
-						"upgrade",
-						"Package Control: Upgrade Package"
-					],
-					[
-						"upda",
-						"Package Control: Upgrade Package"
-					],
-					[
-						"forma",
-						"Format: Javascript"
-					],
-					[
-						"for",
-						"Format: Javascript"
-					],
-					[
-						"disabl",
-						"Package Control: Disable Package"
-					],
-					[
-						"syntax java",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"tidy",
-						"Tidy CSS (Low Compression)"
-					],
-					[
-						"terminal",
-						"Preferences: Terminal Key Bindings – Default"
-					],
-					[
-						"ter",
-						"Preferences: Terminal Key Bindings – User"
-					],
-					[
-						"packis",
-						"Package Control: Install Package"
-					],
-					[
-						"clipb",
-						"Clipboard History"
-					],
-					[
-						"copy",
-						"File: Copy Path"
-					],
-					[
-						"diff",
-						"FileDiffs: Menu"
-					],
-					[
-						"filedi",
-						"FileDiffs: Menu"
-					],
-					[
-						"add",
-						"Project: Add Folder"
-					],
-					[
-						"snippet sm",
-						"Snippet: smartytag"
-					],
-					[
-						"task",
-						"Tasks: New document"
-					],
-					[
-						"doc",
-						"DocBlockr: Decorate line comment"
-					],
-					[
-						"docb",
-						"DocBlockr: Decorate line comment"
-					],
-					[
-						"rename",
-						"File: Rename"
-					],
-					[
-						"lis",
-						"Package Control: List Packages"
-					],
-					[
-						"css",
-						"Tidy CSS (Low Compression)"
-					],
-					[
-						"enab",
-						"Package Control: Enable Package"
-					],
-					[
-						"pi",
-						"Package Control: Install Package"
-					],
-					[
-						":w",
-						":w - Save"
-					],
-					[
-						"ena",
-						"Package Control: Enable Package"
-					],
-					[
-						"Zen Coding: ",
-						"Zen Coding: Select next item"
-					],
-					[
-						"tag",
-						"Tag: Close Tag"
-					],
-					[
-						":s",
-						":w - Save"
-					],
-					[
-						"syntax",
-						"Set Syntax: C++"
-					],
-					[
-						"tra",
-						"Trailing Spaces: Delete Trailing Spaces"
-					]
-				],
-				"width": 514.0
-			},
-			"console":
-			{
-				"height": 153.0
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"file_history":
-			[
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
-				"/Z/ec/11121f.com/themes/2012111201/css/style.css",
-				"/Z/ec/11121f.com/themes/2012111201/css/content.css",
-				"/C/Documents and Settings/Administrator/My Documents/list_pic.html",
-				"/C/Documents and Settings/Administrator/My Documents/list.css",
-				"/C/Documents and Settings/Administrator/My Documents/content.css",
-				"/C/Documents and Settings/Administrator/My Documents/style.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/README.md",
-				"/C/Documents and Settings/Administrator/My Documents/detail.html",
-				"/Z/ec/11121f.com/themes/2012111201/css/list.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Emmet.sublime-settings",
-				"/C/WINDOWS/system32/drivers/etc/hosts",
-				"/D/Webroot/test/jstest.html",
-				"/Z/xiaofeng/2012wholesalejerseyssale.com/templates/102401/css/style.css",
-				"/D/Webroot/test/array.html",
-				"/C/Documents and Settings/Administrator/Desktop/jstest/js/slider.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/li-slider-1.1.demo.min.js",
-				"/C/Documents and Settings/Administrator/My Documents/common.css",
-				"/C/Documents and Settings/Administrator/Desktop/templates/css/global.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Fetch.sublime-settings",
-				"/D/Webroot/2012-11-15/css/reset.css",
-				"/D/Webroot/2012-11-15/jquery-1.8.3.min.js",
-				"/D/Webroot/2012-11-15/jquery-1.8.2.min.js",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Nettuts+ Fetch/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Nettuts+ Fetch/Default.sublime-commands",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Nettuts+ Fetch/package-metadata.json",
-				"/Z/ec/11121f.com/themes/2012111201/styles/globa_l1109_1.css",
-				"/C/Documents and Settings/Administrator/Desktop/18/styles/containermostad13_1.css",
-				"/Z/ec/2012wholesalenfljerseysoutlet.com/themes/111401/styles/sysos1_11_13.css",
-				"/Z/xiaofeng/nikejerseyso.com/templates/102404/css/header.css",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/web_design_source_templates/web_design_source_templates/25.TF.source.website.templates/studioclickhtml/index.html",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/web_design_source_templates/web_design_source_templates/25.TF.source.website.templates/studioclickhtml/portfolio.html",
-				"/Z/xiaofeng/2012wholesalejerseyssale.com/templates/102401/css/detail.css",
-				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/product/list.html",
-				"/Z/yuanliang/newbiwe/2012discountnfljerseyssupply.com/templates/20121024_1feng/css/pagepro.css",
-				"/Z/yuanliang/newbiwe/2012authenticnfljerseysstore.com/templates/20121024_1feng/css/style.css",
-				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/css/list.css",
-				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/css/header.css",
-				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/css/listpage.css",
-				"/C/Documents and Settings/Administrator/Desktop/jquery-1.8.2.js",
-				"/C/Documents and Settings/Administrator/Desktop/menu/demo.html",
-				"/C/Documents and Settings/Administrator/Desktop/dropdown.html",
-				"/Z/xiaofeng/2012wholesalejerseyssale.com/templates/102401/css/listpage.css",
-				"/Z/xiaofeng/nikejerseysb.com/templates/102405/product/search.html",
-				"/Z/xiaofeng/nikejerseyso.com/templates/102404/product/search.html",
-				"/Z/xiaofeng/nikejerseysb.com/templates/102405/theme/header.html",
-				"/Z/yuanliang/mlbnfljerseyso.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012authenticnfljerseysstore.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012authenticnfljerseysoutlet.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012discountnfljerseyssupply.com/templates/20121024_1feng/product/search.html",
-				"/C/Documents and Settings/Administrator/Desktop/New Folder/common.css",
-				"/Z/yuanliang/newbiwe/2012discountnfljerseyssupply.com/templates/20121024_1feng/theme/header.html",
-				"/Z/yuanliang/newbiwe/2012discountnfljerseyssupply.com/templates/20121024_1feng/css/common.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/css/common.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseyssupply.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseyssupply.com/templates/20121024_1feng/css/common.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/css/pagepro.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/css/header.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/js/jquery-1.8.2.js",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/css/style.css",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/jquery.lightbox-0.5.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/jquery.prettyPhoto.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/jquery-ui.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/home.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/li-slider-animations-1.1.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/jquery.easing.1.3.js",
-				"/C/Documents and Settings/Administrator/Desktop/slider2/css/skin.css",
-				"/C/Documents and Settings/Administrator/Desktop/slider2/css/stylesheet_light.css",
-				"/C/Documents and Settings/Administrator/Desktop/slider2/demo.html",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider.htm",
-				"/C/Documents and Settings/Administrator/Desktop/jquery.easing.1.3.js",
-				"/C/Documents and Settings/Administrator/Desktop/li-slider-1.1.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/demo.html",
-				"/Z/yuanliang/mlbnfljerseyso.com/templates/20121024_1feng/css/listpage.css",
-				"/Z/yuanliang/mlbnfljerseyso.com/templates/20121024_1feng/css/common.css",
-				"/Z/yuanliang/mlbnfljerseyso.com/templates/20121024_1feng/css/pagepro.css",
-				"/C/Documents and Settings/Administrator/Desktop/jquery-1.8.2.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/forin.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
-				"/C/Documents and Settings/Administrator/Desktop/cloudzoom/index.htm",
-				"/C/Documents and Settings/Administrator/Desktop/New Folder/zoomer.html",
-				"/C/Documents and Settings/Administrator/Desktop/zoomer.html",
-				"/D/Webroot/test/test.html",
-				"/C/Documents and Settings/Administrator/Desktop/source.html",
-				"/C/Documents and Settings/Administrator/Desktop/clearfloat.html",
-				"/D/Webroot/categories/categories.html",
-				"/C/Documents and Settings/Administrator/Desktop/slider.html",
-				"/D/Webroot/imagsSlider/slider.html",
-				"/D/Webroot/categories/css/style.css",
-				"/D/Webroot/slider/css/style.css",
-				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-8133de7/woothemes-FlexSlider-8133de7/demo/index.html",
-				"/D/Webroot/slider/slider.html",
-				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-8133de7/woothemes-FlexSlider-8133de7/flexslider.css",
-				"/D/Webroot/slider/css/flexslider.css",
-				"/C/Documents and Settings/Administrator/Desktop/jquery-list-grid-switcher-source/styles.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/templates/html.tmpl",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/Sublime-text-2-master/Sublime-text-2-master/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/readme.md",
-				"/C/Documents and Settings/Administrator/Desktop/Sublime.Text.2.Keygen.and.Patch-Lz0/Sublime.Text.2.Keygen.and.Patch-Lz0/lzgpthr1.zip",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
-				"/D/Webroot/cutout/index.html",
-				"/Z/ec/nhljerseys1106.com/themes/110602/css/header.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeBlockCursor/README.md",
-				"/D/Webroot/ajaxtest/test.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Settings/SideBarEnhancements.json",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/JSON.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Theme - Nil/Ayin.sublime-theme",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Theme - Nil/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeBlockCursor/package-metadata.json",
-				"/D/Webroot/cutout/css/nivo-slider-enhanced.css",
-				"/D/Webroot/cutout/css/virtuemart.css",
-				"/D/Webroot/cutout/css/vmsite-ltr.css",
-				"/D/Webroot/cutout/js/jquery.min.js",
-				"/D/Webroot/ajaxtest/resources/dbconnect.php",
-				"/D/Webroot/demo/page.html",
-				"/C/Documents and Settings/Administrator/Desktop/Home_files/custom.css",
-				"/C/Documents and Settings/Administrator/Desktop/Home_files/layout.css"
-			],
-			"find":
-			{
-				"height": 38.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-					"Z:\\xue\\nfl0919.com\\templates\\0919\\css",
-					"Z:\\xue\\nfl0917.com\\templates\\0917\\css",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\0910-2-nfl",
-					"E:\\Downloads\\06d1b7f18784ecad5f47962c9724a9e1\\0905-2-nfl\\css",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1"
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-					"style",
-					"script",
-					"style",
-					"html",
-					"script",
-					"style",
-					"\\n",
-					"bg",
-					"type=\"text/css\" ",
-					"images",
-					"$1",
-					"${",
-					"images",
-					"shift",
-					"ctrl+,",
-					"products_show",
-					".list_guide ul",
-					"conleft",
-					"con",
-					"auto",
-					"2012wholesalejerseyssale.com",
-					".main-nav",
-					".main-nav{",
-					"ul",
-					"p",
-					".",
-					"list_pro_1",
-					"dorplist",
-					"40",
-					"4",
-					"whiteSmoke",
-					"50",
-					">js",
-					"footer",
-					"script",
-					"next-arrow.png  ",
-					"	<link rel=\"stylesheet\" type=\"text/css\" href=\"skin.css\" media=\"all\">\n328",
-					"http://spicy.althemist.com/image/cache/data/",
-					"sp_Li_Slider",
-					"leftside",
-					"sidediv1",
-					".com",
-					"page",
-					"mycart",
-					"'",
-					"CHAPTER 10",
-					"requestDone",
-					"XMLHttpRequest",
-					"tabs",
-					"/sites/starplugins/images/jetzoom/small",
-					"/sites/starplugins/images/jetzoom/large",
-					"^\\n",
-					"^\\n$",
-					"^\\s",
-					"^\\s*$",
-					"(^.{1})",
-					"^.",
-					"<script.*$",
-					"div",
-					"float: left;",
-					"<span class='dropdown'>+</span>",
-					"image",
-					"<a href=\".*?\"",
-					"bg_direction_nav.png",
-					"\n		    ",
-					"slider",
-					"<a href=\".*?\"",
-					"style=\".*?\"",
-					"style=\"width: 186.75px;\"",
-					"</a>",
-					"<a href=\".*?\"",
-					"Bracket",
-					"brackethighlighter",
-					"Bracket Quote",
-					"brackethighlighter",
-					"git_binary",
-					"git",
-					"^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$",
-					"slow_plugin",
-					"detect_slow_plugin",
-					"detect_slow_plugins",
-					"rounded",
-					"cursor",
-					"round",
-					"virtuemart/",
-					" ",
-					"www.",
-					"collapsed",
-					"module-category",
-					"wrapper",
-					"dropdown",
-					"#select-form",
-					"back-top",
-					"YOUR CART IS EMPTY",
-					"bullets.png",
-					"loading.gif",
-					"loading.gif  ",
-					"/vmgeneral",
-					"css/loading.gif",
-					"css/loading.gif ",
-					"css/loading.gif",
-					"css/loading.gif ",
-					"arrow_down.png ",
-					"images/images/",
-					"search-button.png  ",
-					"nav-divider.gif  ",
-					"loading.gif",
-					"loading.gif  ",
-					"head-row-bg.gif  ",
-					"images/images",
-					"../images",
-					"images/",
-					"http://livedemo00.template-help.com/virtuemart_40730/images/stories/gallery/",
-					"<img src='.*/(.*\\.)(jpg|png|gif)'",
-					"img",
-					"<!",
-					"<img src=\".*/(.*\\.)(jpg|png|gif)\"",
-					"(<a.*href=\")[^\"]*\"",
-					"src=\".*/(.*?\\.js)\"",
-					"href=\".*/(.*?\\.css)\"",
-					"goodsInfo",
-					"goodsInfo_xh",
-					".lm_price",
-					"pageRight",
-					"conright",
-					"content",
-					"www.",
-					"widget"
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-					"",
-					"fdlsakjflasj\\1",
-					"<a href=\"#\"",
-					"",
-					"<a href=\"#\"",
-					"images/",
-					"<img src=\"images/\\1\\2\"",
-					"\\1#\"",
-					"src=\"js/\\1\"",
-					"href=\"css/\\1\"",
-					"href=\"\\1\"",
-					"src=\"js\\1\"",
-					"href=\"css\\1\"",
-					"href=\"css/\\1\"",
-					"css/\\1",
-					"\\1",
-					"",
-					"css/\\1",
-					"1000",
-					"",
-					"../images/",
-					"\"\\1\",",
-					"\"\\1\"",
-					"",
-					"\\1#\"",
-					"\"\\1\",",
-					"\\1#\"",
-					"",
-					"\"\\1\",",
-					"img src='http://livedemo00.template-help.com\\1'",
-					"\\1#\"",
-					"src=\"http://livedemo00.template-help.com/prestashop_41145",
-					"http://livedemo00.template-help.com/prestashop_41145",
-					"\"\\1\",",
-					"\\1,",
-					"http://frique.me/demos/etalage/demo_files",
-					"\"\\1\",",
-					"\"\\1\"",
-					",",
-					"",
-					"detail-1-img",
-					"images",
-					"<a href=\"#\"",
-					"",
-					"two",
-					"",
-					"\\1/>",
-					"",
-					"two",
-					"../htc/",
-					"../htc",
-					"right",
-					"",
-					"\\1#\"",
-					"\\1#",
-					"href=\"#\"",
-					" href=\"#\"",
-					"href=\"#\"",
-					"samsung_galaxy_gio_s56601(1).jpg",
-					"small-price",
-					"price",
-					"images/hot-ipad-7-inch-androi-1-6-os-wifi-cuc-manh-gia-tot_24717_(1).jpg",
-					"<a href=\"#\"><img src=\"\\1\" alt=\"\" /></a>",
-					"<a href=\"#\"><img src=\"(.*)\" alt=\"\" /></a>",
-					"",
-					"38",
-					"2013||09||10",
-					"../htc/",
-					"#FA29A0",
-					"#C2026F",
-					"#ccc",
-					"22",
-					"<!-- \\1 -->",
-					"<!--\\1-->",
-					"help-title",
-					"biweb_product_hot_cakes",
-					"hot_cakes",
-					"src=\"<?{$arrGWeb.templates_root}?>images",
-					"recommendflag_arr",
-					"\nrecommendflag_arr",
-					"\n<!-- **********\\1********** -->",
-					"\n<!-- **********\\1**********-->",
-					"\nsrc=\"<?{$arrGWeb.templates_root}?>images",
-					"\\1#\"",
-					"\\1#",
-					"\\1#\"",
-					"\\0a",
-					"images/NFLicon/\\1.gif",
-					"images/NFLicon\\1.gif",
-					"<a href=\"#\"",
-					"action=\"\"",
-					"<a href=\"#\"",
-					"css/validation.css",
-					"images/loading.gif",
-					"logo.jpg",
-					"<a href=\"#\"",
-					"..",
-					"<a href=\"#\"",
-					"..",
-					"Prototype1.js",
-					"Prototype.js",
-					"global.css",
-					"header.css",
-					"global.css",
-					"calendar.css",
-					"action=\"\"",
-					"<a href=\"#\"",
-					"<a href=\"#\"><img src=\"\\1\" alt=\"\"></a>",
-					"images",
-					"images/timthumb (1).jpg",
-					"images/timthumb.jpg",
-					"<a href=\"#\"",
-					"images/timthumb (2).jpg",
-					"images/\\1.\\2",
-					"js/\\1.\\2",
-					"js/\\1.js",
-					"css/\\1.css",
-					"../images",
-					"images",
-					"images/\\1.\\2",
-					"js/\\1.js",
-					"css/\\1.css",
-					"\\n",
-					"",
-					"images/\\1.\\2",
-					"js/\\1.js",
-					"\"css/\\1.css\" ",
-					"../images"
-				],
-				"reverse": false,
-				"show_context": true,
-				"use_buffer2": true,
-				"whole_word": false,
-				"wrap": false
-			},
-			"incremental_find":
-			{
-				"height": 37.0
-			},
-			"input":
-			{
-				"height": 37.0
-			},
-			"layout":
-			{
-				"cells":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
-					]
-				],
-				"cols":
-				[
-					0.0,
-					0.459121877366,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
-			},
-			"menu_visible": true,
-			"output.exec":
-			{
-				"height": 126.0
-			},
-			"replace":
-			{
-				"height": 64.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-					[
-						"2012",
-						"2012-11-15/index.html"
-					],
-					[
-						"host",
-						"/C/WINDOWS/system32/drivers/etc/hosts"
-					],
-					[
-						".css",
-						"public_html/css/style.css"
-					],
-					[
-						"reset",
-						"new1/css/reset.css"
-					],
-					[
-						"magic",
-						"css/magiczoom.css"
-					],
-					[
-						"list.css",
-						"css/listpage.css"
-					],
-					[
-						"list",
-						"listpage.html"
-					],
-					[
-						"de",
-						"css/detailpage.css"
-					],
-					[
-						"detail",
-						"detailpage.html"
-					],
-					[
-						"global",
-						"css/global.css"
-					],
-					[
-						"com",
-						"css/common.css"
-					],
-					[
-						"indx",
-						"css/index.css"
-					],
-					[
-						"index",
-						"index.html"
-					],
-					[
-						"index.html",
-						"index.html"
-					],
-					[
-						"deta",
-						"css/detailpage.css"
-					],
-					[
-						"js/",
-						"js/jquery.dcjqaccordion.js"
-					],
-					[
-						"listpa",
-						"css/listpage.css"
-					],
-					[
-						"inde",
-						"index.html"
-					],
-					[
-						"style",
-						"css/style.css"
-					],
-					[
-						"header.css",
-						"css/header.css"
-					],
-					[
-						"detail.css",
-						"css/detail.css"
-					],
-					[
-						"search.html",
-						"product/search.html"
-					],
-					[
-						"header.html",
-						"theme/header.html"
-					],
-					[
-						"style.css",
-						"css/style.css"
-					],
-					[
-						"prodetai.",
-						"product/detail.html"
-					],
-					[
-						"contentc",
-						"css/content.css"
-					],
-					[
-						"prolist.html",
-						"product/list.html"
-					],
-					[
-						"head.html",
-						"theme/header.html"
-					],
-					[
-						"footer.html",
-						"theme/footer.html"
-					],
-					[
-						"list_pic",
-						"product/list_pic.html"
-					],
-					[
-						"download",
-						"download/detail.html"
-					],
-					[
-						"cotent.css",
-						"css/content.css"
-					],
-					[
-						"user.css",
-						"css/user.css"
-					],
-					[
-						"sty",
-						"css/style.css"
-					],
-					[
-						"style.cs",
-						"css/style.css"
-					],
-					[
-						"prodetai.ht",
-						"product/detail.html"
-					],
-					[
-						"prolist",
-						"product/list.html"
-					],
-					[
-						"list.html",
-						"comments/list.html"
-					],
-					[
-						"index.",
-						"index.html"
-					],
-					[
-						"copyfoot",
-						"theme/Copy of footer.html"
-					],
-					[
-						"footer.ht",
-						"theme/footer.html"
-					],
-					[
-						"header",
-						"theme/Copy of header.html"
-					],
-					[
-						"header.",
-						"0929/theme/header.html"
-					],
-					[
-						"footer.css",
-						"0929/css/footer.css"
-					],
-					[
-						"content.css",
-						"0929/css/content.css"
-					],
-					[
-						"downdetail",
-						"0929/download/detail.html"
-					],
-					[
-						"prosearch",
-						"0929/product/search.html"
-					],
-					[
-						"prodetail.ht",
-						"0929/product/detail.html"
-					],
-					[
-						"prodetail.html",
-						"0929/product/detail.html"
-					],
-					[
-						"head",
-						"0929/theme/header.html"
-					],
-					[
-						"content",
-						"css/content.css"
-					],
-					[
-						"downdetai",
-						"download/detail.html"
-					],
-					[
-						"cotent",
-						"css/content.css"
-					],
-					[
-						"pro/de",
-						"product/detail.html"
-					],
-					[
-						"detail.html",
-						"archives/detail.html"
-					],
-					[
-						"pagepro",
-						"css/pagepro.css"
-					],
-					[
-						"conte",
-						"css/content.css"
-					],
-					[
-						"login.html",
-						"user/adminu/login.html"
-					],
-					[
-						"footer",
-						"css/footer.css"
-					],
-					[
-						"search",
-						"product/search.html"
-					],
-					[
-						"down/de",
-						"download/detail.html"
-					],
-					[
-						"detai",
-						"product/detail.html"
-					],
-					[
-						"prodetail",
-						"product/detail.html"
-					],
-					[
-						"foot",
-						"css/footer.css"
-					],
-					[
-						"footer.c",
-						"0926/css/footer.css"
-					],
-					[
-						"downl/deta",
-						"0926/download/detail.html"
-					],
-					[
-						"detail.c",
-						"0926/css/detail.css"
-					],
-					[
-						"list.cs",
-						"0926/css/list.css"
-					],
-					[
-						"prosearch.",
-						"0926/product/search.html"
-					],
-					[
-						"my",
-						"deal/adminu/my_deal.html"
-					],
-					[
-						"mod",
-						"user/adminu/modify_user.html"
-					],
-					[
-						"modi",
-						"user/adminu/modify_userpwd.html"
-					],
-					[
-						"styl",
-						"css/style.css"
-					],
-					[
-						"modify",
-						"user/adminu/modify_userpwd.html"
-					],
-					[
-						"left.html",
-						"user/left.html"
-					],
-					[
-						"footer.",
-						"theme/footer.html"
-					],
-					[
-						"detai.c",
-						"css/detail.css"
-					],
-					[
-						"user.cs",
-						"css/user.css"
-					],
-					[
-						"",
-						"theme/header.html"
-					],
-					[
-						"content.c",
-						"css/content.css"
-					],
-					[
-						"down/detai",
-						"download/detail.html"
-					],
-					[
-						"down",
-						"download/detail.html"
-					],
-					[
-						"contet.c",
-						"css/content.css"
-					],
-					[
-						"copyo",
-						"Copy of index.html"
-					],
-					[
-						"style.c",
-						"css/style.css"
-					],
-					[
-						"sty.css",
-						"css/style.css"
-					],
-					[
-						"reset.css",
-						"css/reset.css"
-					],
-					[
-						"conten",
-						"css/content.css"
-					],
-					[
-						"header.ht",
-						"theme/header.html"
-					],
-					[
-						"copy",
-						"Copy of index.html"
-					],
-					[
-						"header.cs",
-						"css/header.css"
-					],
-					[
-						"headernv",
-						"scripts/headernav.js"
-					],
-					[
-						"regis",
-						"user/register.html"
-					],
-					[
-						"st",
-						"css/style.css"
-					],
-					[
-						"list.",
-						"product/list.html"
-					],
-					[
-						"pro/search.html",
-						"product/search.html"
-					],
-					[
-						"downla/detai",
-						"download/detail.html"
-					],
-					[
-						"detail.cs",
-						"css/detail.css"
-					],
-					[
-						"sear",
-						"product/search.html"
-					],
-					[
-						"deal/ind",
-						"deal/index.html"
-					],
-					[
-						"footerhtml",
-						"theme/footer.html"
-					],
-					[
-						"proserch",
-						"product/search.html"
-					],
-					[
-						"login",
-						"user/adminu/login.html"
-					],
-					[
-						"login.htm",
-						"user/login.html"
-					],
-					[
-						"head.css",
-						"css/header.css"
-					],
-					[
-						"user",
-						"css/user.css"
-					],
-					[
-						"copyhea",
-						"theme/Copy of header.html"
-					],
-					[
-						"pro/search.ht",
-						"product/search.html"
-					],
-					[
-						"s",
-						"grace/searchresult.html"
-					],
-					[
-						"pro/detail.html",
-						"product/detail.html"
-					],
-					[
-						"my_deal.",
-						"deal/adminu/my_deal.php"
-					],
-					[
-						"ad/modify_user.php",
-						"user/adminu/modify_user.php"
-					],
-					[
-						"modify_user.php",
-						"user/adminu/modify_user.php"
-					],
-					[
-						"detai.html",
-						"templates/0911/product/detail.html"
-					],
-					[
-						"tem/detail.html",
-						"templates/0911/news/detail.html"
-					],
-					[
-						"tem/list_pic",
-						"templates/0911/product/list_pic.html"
-					],
-					[
-						"tem/list.html",
-						"templates/0911/product/list.html"
-					],
-					[
-						"rese",
-						"css/reset.css"
-					],
-					[
-						"tem/index.htm",
-						"cheapusajerseysstore.com/templates/0911/index.html"
-					],
-					[
-						"admin",
-						"admin/templats/admin.html"
-					],
-					[
-						"login.php",
-						"admin/login.php"
-					],
-					[
-						"dowdetail.html",
-						"templates/090801/download/detail.html"
-					],
-					[
-						"down/detail.html",
-						"templates/090801/download/detail.html"
-					],
-					[
-						"pagepro.",
-						"templates/090801/css/pagepro.css"
-					],
-					[
-						"footer.htm",
-						"templates/090801/theme/footer.html"
-					],
-					[
-						"chekout",
-						"templates/090801/css/checkout-1.css"
-					],
-					[
-						"detail.inc.php",
-						"product/include/detail.inc.php"
-					],
-					[
-						"detail.inc.",
-						"download/include/detail.inc.php"
-					]
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 500.0,
-				"selected_items":
-				[
-				],
-				"width": 380.0
-			},
-			"show_minimap": false,
-			"show_open_files": true,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 119.0,
-			"status_bar_visible": true
-		},
-		"new_window_width": 1399.0
-	},
-	"windows":
-	[
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
 					[
 						"cl",
 						"clear"
@@ -1895,10 +324,6 @@
 						"text-align"
 					],
 					[
-						"pro",
-						"prorow2"
-					],
-					[
 						"searh",
 						"search-form"
 					],
@@ -1928,82 +353,67 @@
 					]
 				]
 			},
-			"buffers":
-			[
-				{
-					"file": "/D/Webroot/2012-11-15/index.html",
-					"settings":
-					{
-						"buffer_size": 1771,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Default (Windows).sublime-keymap",
-					"settings":
-					{
-						"buffer_size": 11997,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-					"settings":
-					{
-						"buffer_size": 1241,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/Desktop/over.html",
-					"settings":
-					{
-						"buffer_size": 496,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Documents and Settings/Administrator/My Documents/header.css",
-					"settings":
-					{
-						"buffer_size": 1603,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/WINDOWS/system32/drivers/etc/hosts",
-					"settings":
-					{
-						"buffer_size": 706,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/D/Webroot/2012-11-15/css/global.css",
-					"settings":
-					{
-						"buffer_size": 2418,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "function ajax(options) {\n	// Load the options object with defaults, if no\n	// values were provided by the user\n	options = {\n		// The type of HTTP Request\n		type: options.type || \"POST\",\n		// The URL the request will be made to\n		url: options.url || \"\",\n		// How long to wait before considering the request to be a timeout\n		timeout: options.timeout || 5000,\n		// Functions to call when the request fails, succeeds,\n		// or completes (either fail or succeed)\n		onComplete: options.onComplete || function() {},\n		onError: options.onError || function() {},\n		onSuccess: options.onSuccess || function() {},\n		// The data type that'll be returned from the server\n		// the default is simply to determine what data was returned from the\n		// and act accordingly.\n		data: options.data || \"\"\n	};\n\n	// Create the request object\n	var xml = new XMLHttpRequest();\n	// Open the asynchronous request\n	xml.open(options.type, options.url, true);\n	// We're going to wait for a request for 5 seconds, before giving up\n	var timeoutLength = options.timeout;\n	// Keep track of when the request has been succesfully completed\n	var requestDone = false;\n	// Initalize a callback which will fire 5 seconds from now, cancelling\n	// the request (if it has not already occurred).\n	setTimeout(function() {\n		requestDone = true;\n	}, timeoutLength);\n	// Watch for when the state of tme document gets updated\n	xml.onreadystatechange = function() {\n		// Wait until the data is fully loaded,\n		// and make sure that the request hasn't already timed out\n		if(xml.readyState == 4 && !requestDone) {\n			// Check to see if the request was successful\n			if(httpSuccess(xml)) {\n				// Execute the success callback with the\n				// data returned from the server\n				options.onSuccess(httpData(xml, options.type));\n				// Otherwise, an error occurred, so execute the error callback\n			} else {\n				options.onError();\n			}\n			// Call the completion callback\n			options.onComplete();\n			// Clean up after ourselves, to avoid memory leaks\n			xml = null;\n		}\n	};\n	// Establish the connection to the server\n	xml.send();\n	// Determine the success of the HTTP response\n\n\n	function httpSuccess(r) {\n		try {\n			// If no server status is provided, and we're actually\n			// requesting a local file, then it was successful\n			return !r.status && location.protocol == \"file:\" ||\n			// Any status in the 200 range is good\n			(r.status >= 200 && r.status < 300) ||\n			// Successful if the document has not been modified\n			r.status == 304 ||\n			// Safari returns an empty status if the file has not been modified\n			navigator.userAgent.indexOf(\"Safari\") >= 0 && typeof r.status == \"undefined\";\n		} catch(e) {}\n		// If checking the status failed, then assume that the request failed too\n		return false;\n	}\n	// Extract the correct data from the HTTP response\n\n\n	function httpData(r, type) {\n		// Get the content-type header\n		var ct = r.getResponseHeader(\"content-type\");\n		// If no default type was provided, determine if some\n		// form of XML was returned from the server\n		var data = !type && ct && ct.indexOf(\"xml\") >= 0;\n		// Get the XML Document object if XML was returned from\n		// the server, otherwise return the text contents returned by the server\n		data = type == \"xml\" || data ? r.responseXML : r.responseText;\n		// If the specified type is \"script\", execute the returned text\n		// response as if it was JavaScript\n		if(type == \"script\") eval.call(window, data);\n		// Return the response data (either an XML Document or a text string)\n		return data;\n	}\n}",
-					"settings":
-					{
-						"buffer_size": 3506,
-						"line_ending": "Windows"
-					}
-				}
-			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 39.0,
+				"height": 375.0,
 				"selected_items":
 				[
 					[
+						"format",
+						"Format: Javascript"
+					],
+					[
+						"syntaxjava",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"list",
+						"Package Control: List Packages"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"upgrad",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"pre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"prettify",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"listp",
+						"Package Control: List Packages"
+					],
+					[
+						"preti",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"instp",
+						"Package Control: Install Package"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
 						"listpa",
 						"Package Control: List Packages"
+					],
+					[
+						"syntaxjavs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"inslp",
+						"Package Control: Install Package"
 					],
 					[
 						"enable",
@@ -2028,10 +438,6 @@
 					[
 						"enal",
 						"Package Control: Enable Package"
-					],
-					[
-						"list",
-						"Package Control: List Packages"
 					],
 					[
 						"pinsp",
@@ -2070,10 +476,6 @@
 						"Fetch: File"
 					],
 					[
-						"format",
-						"Format: Javascript"
-					],
-					[
 						"instap",
 						"Package Control: Install Package"
 					],
@@ -2082,16 +484,8 @@
 						"HTMLPrettify: Prettify"
 					],
 					[
-						"pre",
-						"HTMLPrettify: Prettify"
-					],
-					[
 						"instpa",
 						"Package Control: Install Package"
-					],
-					[
-						"remove",
-						"Package Control: Remove Package"
 					],
 					[
 						"ins",
@@ -2106,10 +500,6 @@
 						"Package Control: Disable Package"
 					],
 					[
-						"instal",
-						"Package Control: Install Package"
-					],
-					[
 						"move",
 						"File: Move"
 					],
@@ -2122,10 +512,6 @@
 						"Package Control: Install Package"
 					],
 					[
-						"syntaxjava",
-						"Set Syntax: JavaScript"
-					],
-					[
 						"html",
 						"HTMLPrettify: Prettify"
 					],
@@ -2136,14 +522,6 @@
 					[
 						"htmlp",
 						"HTMLPrettify: Prettify"
-					],
-					[
-						"prettify",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"listp",
-						"Package Control: List Packages"
 					],
 					[
 						"upgrade",
@@ -2266,7 +644,7 @@
 						"Trailing Spaces: Delete Trailing Spaces"
 					]
 				],
-				"width": 514.0
+				"width": 522.0
 			},
 			"console":
 			{
@@ -2283,12 +661,66 @@
 			},
 			"file_history":
 			[
-				"/C/Documents and Settings/Administrator/My Documents/sitemap1.html",
-				"/C/Documents and Settings/Administrator/My Documents/sitemap_html.html",
+				"/D/New Folder/sprite.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/login_panel/js/slide.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/AdvancedNewFile/README.md",
+				"/C/Documents and Settings/Administrator/Desktop/common1.js",
+				"/C/Documents and Settings/Administrator/My Documents/category.dwt",
+				"/C/Documents and Settings/Administrator/Local Settings/Temporary Internet Files/Content.IE5/IWEZA9C5/c3[1].css",
+				"/C/Documents and Settings/Administrator/Desktop/common.js",
+				"//192.168.1.11/bestcheapjerseyssale.com/themes/bestcheapjerseyssale/goods.dwt",
+				"/C/Documents and Settings/Administrator/Desktop/jquery-1.8.3.min.js",
+				"//192.168.1.11/2012discountjerseyschina.com/themes/2012discountjerseyschina/js/jquery.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Emmet.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Settings/SideBarEnhancements.json",
+				"/C/Documents and Settings/Administrator/Desktop/html.html",
+				"/D/Webroot/2012-11-15/index.html",
+				"/D/Webroot/2012-11-15/css/global.css",
+				"/C/Documents and Settings/Administrator/Desktop/test.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Desktop/jquery-1.8.2.js",
+				"/C/Documents and Settings/Administrator/Desktop/adidas_unity/Adidas_Unity/stylesheet.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/SublimeCodeIntel/Base File.sublime-settings",
+				"/D/Webroot/2012-11-15/js/script.js",
+				"/C/Documents and Settings/Administrator/Desktop/css/stylesheet.css",
+				"/C/Documents and Settings/Administrator/Desktop/stylesheet.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/D/Webroot/2012-11-15/css/jquery.bxslider.css",
+				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-54e6d31/woothemes-FlexSlider-54e6d31/demo/index.html",
+				"/D/Webroot/2012-11-15/js/jquery.flexslider-min.js",
+				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-54e6d31/woothemes-FlexSlider-54e6d31/jquery.flexslider.js",
+				"/D/Webroot/2012-11-15/css/flexslider.css",
+				"/D/Webroot/2012-11-15/index.min.html",
+				"/C/Documents and Settings/Administrator/Desktop/感恩信.docx",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/csscomment.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Default (Windows).sublime-keymap",
+				"/D/Webroot/2012-11-15/css/reset.css",
+				"/C/Documents and Settings/Administrator/Desktop/loopedslider.js",
+				"/C/Documents and Settings/Administrator/Desktop/test.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeLinter/README.md",
+				"/C/Documents and Settings/Administrator/Desktop/html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Main.sublime-menu",
+				"/C/Documents and Settings/Administrator/Desktop/Punchcut_Device_Design_Toolset_v1-1/Punchcut_Device_Design_Toolset_v1.1/02 Photoshop Marquee Preset/PCT_Device_Resolutions_v1.tpl",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/admin/checklogin.php",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/admin/backup/class/backup.class.php",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/include/mysql_db.php",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/CTags/Default.sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/web_common5.8/nusoap/lib/nusoap.php",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/.tags",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/index.php",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/p.php",
+				"/C/Documents and Settings/Administrator/My Documents/header.css",
+				"/C/WINDOWS/system32/drivers/etc/hosts",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Desktop/over.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+				"/C/Documents and Settings/Administrator/My Documents/sitemap1.html",
+				"/C/Documents and Settings/Administrator/My Documents/sitemap_html.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/Default (Windows).sublime-keymap",
@@ -2296,27 +728,21 @@
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/AdvancedNewFile/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/clearfix.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Desktop/1.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/csscomment.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/cssbegin.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Desktop/emmet-sublime-master/emmet-sublime-master/emmet/snippets.json",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/iife.sublime-snippet",
 				"/C/Documents and Settings/Administrator/My Documents/sitemap.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Add DocBlockr Line Before.sublime-macro",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Default.sublime-commands",
-				"/C/Documents and Settings/Administrator/My Documents/header.css",
 				"/C/Documents and Settings/Administrator/My Documents/jsddmopen.js",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/Default.sublime-keymap",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Preferences.sublime-settings",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Emmet.sublime-settings",
 				"/C/Documents and Settings/Administrator/My Documents/register.html",
 				"/C/Documents and Settings/Administrator/My Documents/style.css",
 				"/C/Documents and Settings/Administrator/My Documents/detail.html",
-				"/C/WINDOWS/system32/drivers/etc/hosts",
 				"/C/Documents and Settings/Administrator/My Documents/change/list.html",
 				"/C/Documents and Settings/Administrator/My Documents/change/search.html",
 				"/C/Documents and Settings/Administrator/My Documents/change/detail.html",
@@ -2325,7 +751,6 @@
 				"/C/Documents and Settings/Administrator/My Documents/change/style.css",
 				"/C/Documents and Settings/Administrator/My Documents/change/index.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
 				"/Z/ec/11121f.com/themes/2012111201/css/style.css",
 				"/Z/ec/11121f.com/themes/2012111201/css/content.css",
@@ -2343,7 +768,6 @@
 				"/C/Documents and Settings/Administrator/My Documents/common.css",
 				"/C/Documents and Settings/Administrator/Desktop/templates/css/global.css",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Fetch.sublime-settings",
-				"/D/Webroot/2012-11-15/css/reset.css",
 				"/D/Webroot/2012-11-15/jquery-1.8.3.min.js",
 				"/D/Webroot/2012-11-15/jquery-1.8.2.min.js",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Nettuts+ Fetch/README.md",
@@ -2362,55 +786,9 @@
 				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/css/list.css",
 				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/css/header.css",
 				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/css/listpage.css",
-				"/C/Documents and Settings/Administrator/Desktop/jquery-1.8.2.js",
 				"/C/Documents and Settings/Administrator/Desktop/menu/demo.html",
 				"/C/Documents and Settings/Administrator/Desktop/dropdown.html",
-				"/Z/xiaofeng/2012wholesalejerseyssale.com/templates/102401/css/listpage.css",
-				"/Z/xiaofeng/nikejerseysb.com/templates/102405/product/search.html",
-				"/Z/xiaofeng/nikejerseyso.com/templates/102404/product/search.html",
-				"/Z/xiaofeng/nikejerseysb.com/templates/102405/theme/header.html",
-				"/Z/yuanliang/mlbnfljerseyso.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012authenticnfljerseysstore.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012authenticnfljerseysoutlet.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012discountnfljerseyssupply.com/templates/20121024_1feng/product/search.html",
-				"/C/Documents and Settings/Administrator/Desktop/New Folder/common.css",
-				"/Z/yuanliang/newbiwe/2012discountnfljerseyssupply.com/templates/20121024_1feng/theme/header.html",
-				"/Z/yuanliang/newbiwe/2012discountnfljerseyssupply.com/templates/20121024_1feng/css/common.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/css/common.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseyssupply.com/templates/20121024_1feng/product/search.html",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseyssupply.com/templates/20121024_1feng/css/common.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/css/pagepro.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/css/header.css",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/js/jquery-1.8.2.js",
-				"/Z/yuanliang/newbiwe/2012wholesalenfljerseystop.com/templates/20121024_1feng/css/style.css",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/jquery.lightbox-0.5.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/jquery.prettyPhoto.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/jquery-ui.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/home.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/li-slider-animations-1.1.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/jquery.easing.1.3.js",
-				"/C/Documents and Settings/Administrator/Desktop/slider2/css/skin.css",
-				"/C/Documents and Settings/Administrator/Desktop/slider2/css/stylesheet_light.css",
-				"/C/Documents and Settings/Administrator/Desktop/slider2/demo.html",
-				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider.htm",
-				"/C/Documents and Settings/Administrator/Desktop/jquery.easing.1.3.js",
-				"/C/Documents and Settings/Administrator/Desktop/li-slider-1.1.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/demo.html",
-				"/Z/yuanliang/mlbnfljerseyso.com/templates/20121024_1feng/css/listpage.css",
-				"/Z/yuanliang/mlbnfljerseyso.com/templates/20121024_1feng/css/common.css",
-				"/Z/yuanliang/mlbnfljerseyso.com/templates/20121024_1feng/css/pagepro.css",
-				"/C/Documents and Settings/Administrator/Desktop/jquery-1.8.2.min.js",
-				"/C/Documents and Settings/Administrator/Desktop/forin.html",
-				"/C/Documents and Settings/Administrator/Desktop/cloudzoom/index.htm",
-				"/C/Documents and Settings/Administrator/Desktop/New Folder/zoomer.html",
-				"/C/Documents and Settings/Administrator/Desktop/zoomer.html",
-				"/C/Documents and Settings/Administrator/Desktop/source.html",
-				"/C/Documents and Settings/Administrator/Desktop/clearfloat.html",
-				"/D/Webroot/categories/categories.html",
-				"/C/Documents and Settings/Administrator/Desktop/slider.html",
-				"/D/Webroot/imagsSlider/slider.html",
-				"/D/Webroot/categories/css/style.css"
+				"/Z/xiaofeng/2012wholesalejerseyssale.com/templates/102401/css/listpage.css"
 			],
 			"find":
 			{
@@ -2421,6 +799,7 @@
 				"height": 0.0,
 				"where_history":
 				[
+					"Z:\\xue\\nfl0919.com\\templates\\0919\\css,C:\\Documents and Settings\\Administrator\\Desktop\\jerseysfromchinaonline.com",
 					"Z:\\xue\\nfl0919.com\\templates\\0919\\css",
 					"Z:\\xue\\nfl0917.com\\templates\\0917\\css",
 					"C:\\Documents and Settings\\Administrator\\Desktop\\0910-2-nfl",
@@ -2436,6 +815,71 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"  ",
+					".com",
+					"height",
+					"(^.*$)",
+					".com",
+					"do_my_cart",
+					"Ajax",
+					"addToCartResponse",
+					"obj2str",
+					"get:",
+					".com",
+					"core_slice",
+					"rquickExpr",
+					"window",
+					"jQuery",
+					"rootjQuery",
+					"default",
+					"这里是一个序列",
+					".loading",
+					"withAjax",
+					"==",
+					"minus",
+					"images",
+					"<li class=\"cat-header\">",
+					"</li>",
+					"minus",
+					"images",
+					"\n                    </li>",
+					"\n                    ",
+					"^\\s*</li>\\s*\\r?$\n            ",
+					"^\\s*</li>\\r$\n            ",
+					"\n            ",
+					"\n                        ",
+					"\n                ",
+					"<a href=\".*?\"",
+					"clearfixb",
+					"feature",
+					"326",
+					"width=\"89\"",
+					" height=\"92\"",
+					"images",
+					"feature",
+					"featrue",
+					"feature",
+					"#slider",
+					"option",
+					"flex-prev",
+					"font-size",
+					"\n		  	    		",
+					"slider",
+					".box",
+					"header",
+					"deal",
+					"em",
+					"goodsslider",
+					" height=\"92\" width=\"89\" ",
+					"height=\"92\" width=\"89\" ",
+					".goodsslider h6",
+					"ctrl+t",
+					"varDump",
+					"function",
+					"ctrl+t",
+					"dd",
+					"cate",
+					"doctype",
 					"input",
 					"ctrl+'+shift",
 					"ctrl+shift+'",
@@ -2498,79 +942,19 @@
 					"style",
 					"\\n",
 					"bg",
-					"type=\"text/css\" ",
-					"images",
-					"$1",
-					"${",
-					"images",
-					"shift",
-					"ctrl+,",
-					"products_show",
-					".list_guide ul",
-					"conleft",
-					"con",
-					"auto",
-					"2012wholesalejerseyssale.com",
-					".main-nav",
-					".main-nav{",
-					"ul",
-					"p",
-					".",
-					"list_pro_1",
-					"dorplist",
-					"40",
-					"4",
-					"whiteSmoke",
-					"50",
-					">js",
-					"footer",
-					"script",
-					"next-arrow.png  ",
-					"	<link rel=\"stylesheet\" type=\"text/css\" href=\"skin.css\" media=\"all\">\n328",
-					"http://spicy.althemist.com/image/cache/data/",
-					"sp_Li_Slider",
-					"leftside",
-					"sidediv1",
-					".com",
-					"page",
-					"mycart",
-					"'",
-					"CHAPTER 10",
-					"requestDone",
-					"XMLHttpRequest",
-					"tabs",
-					"/sites/starplugins/images/jetzoom/small",
-					"/sites/starplugins/images/jetzoom/large",
-					"^\\n",
-					"^\\n$",
-					"^\\s",
-					"^\\s*$",
-					"(^.{1})",
-					"^.",
-					"<script.*$",
-					"div",
-					"float: left;",
-					"<span class='dropdown'>+</span>",
-					"image",
-					"<a href=\".*?\"",
-					"bg_direction_nav.png",
-					"\n		    ",
-					"slider",
-					"<a href=\".*?\"",
-					"style=\".*?\"",
-					"style=\"width: 186.75px;\"",
-					"</a>",
-					"<a href=\".*?\"",
-					"Bracket",
-					"brackethighlighter",
-					"Bracket Quote"
+					"type=\"text/css\" "
 				],
 				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": false,
+				"regex": true,
 				"replace_history":
 				[
+					"'\\1',",
+					"===",
+					"</li>",
+					"",
+					"<a href=\"#\"",
 					"",
 					"fdlsakjflasj\\1",
 					"<a href=\"#\"",
@@ -2693,12 +1077,7 @@
 					"images/\\1.\\2",
 					"js/\\1.js",
 					"css/\\1.css",
-					"\\n",
-					"",
-					"images/\\1.\\2",
-					"js/\\1.js",
-					"\"css/\\1.css\" ",
-					"../images"
+					"\\n"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -2706,251 +1085,6 @@
 				"whole_word": false,
 				"wrap": false
 			},
-			"groups":
-			[
-				{
-					"selected": 0,
-					"sheets":
-					[
-						{
-							"buffer": 0,
-							"file": "/D/Webroot/2012-11-15/index.html",
-							"settings":
-							{
-								"buffer_size": 1771,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1195,
-										1195
-									],
-									[
-										1252,
-										1252
-									]
-								],
-								"settings":
-								{
-									"is_xml": false,
-									"origin_encoding": "Undefined",
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 480.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Default (Windows).sublime-keymap",
-							"settings":
-							{
-								"buffer_size": 11997,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										6602,
-										6389
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/JavaScript/JSON.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 5360.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-							"settings":
-							{
-								"buffer_size": 1241,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1232,
-										1232
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/JavaScript/JSON.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 300.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/C/Documents and Settings/Administrator/Desktop/over.html",
-							"settings":
-							{
-								"buffer_size": 496,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										418,
-										418
-									]
-								],
-								"settings":
-								{
-									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/C/Documents and Settings/Administrator/My Documents/header.css",
-							"settings":
-							{
-								"buffer_size": 1603,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										999,
-										999
-									],
-									[
-										1018,
-										1018
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/CSS/CSS.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/C/WINDOWS/system32/drivers/etc/hosts",
-							"settings":
-							{
-								"buffer_size": 706,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										505,
-										505
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "ASCII",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 0,
-					"sheets":
-					[
-						{
-							"buffer": 6,
-							"file": "/D/Webroot/2012-11-15/css/global.css",
-							"settings":
-							{
-								"buffer_size": 2418,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1939,
-										1939
-									]
-								],
-								"settings":
-								{
-									"origin_encoding": "Undefined",
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 1880.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"settings":
-							{
-								"buffer_size": 3506,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										774,
-										774
-									]
-								],
-								"settings":
-								{
-									"is_xml": false,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						}
-					]
-				}
-			],
 			"incremental_find":
 			{
 				"height": 37.0
@@ -2968,18 +1102,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.617558402411,
 					1.0
 				],
 				"rows":
@@ -2993,7 +1120,6 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,2,3,-32000,-32000,-1,-1,726,28,208,1435",
 			"replace":
 			{
 				"height": 64.0
@@ -3005,6 +1131,22 @@
 				"selected_items":
 				[
 					[
+						"script",
+						"js/script.js"
+					],
+					[
+						"flex",
+						"/D/Webroot/2012-11-15/css/flexslider.css"
+					],
+					[
+						"reset",
+						"css/reset.css"
+					],
+					[
+						"global",
+						"css/global.css"
+					],
+					[
 						"2012",
 						"2012-11-15/index.html"
 					],
@@ -3015,10 +1157,6 @@
 					[
 						".css",
 						"public_html/css/style.css"
-					],
-					[
-						"reset",
-						"new1/css/reset.css"
 					],
 					[
 						"magic",
@@ -3039,10 +1177,6 @@
 					[
 						"detail",
 						"detailpage.html"
-					],
-					[
-						"global",
-						"css/global.css"
 					],
 					[
 						"com",
@@ -3507,14 +1641,6 @@
 					[
 						"chekout",
 						"templates/090801/css/checkout-1.css"
-					],
-					[
-						"detail.inc.php",
-						"product/include/detail.inc.php"
-					],
-					[
-						"detail.inc.",
-						"download/include/detail.inc.php"
 					]
 				],
 				"width": 0.0
@@ -3524,6 +1650,10 @@
 				"height": 500.0,
 				"selected_items":
 				[
+					[
+						"",
+						"/D/Webroot/ajaxtest/new.sublime-project"
+					]
 				],
 				"width": 380.0
 			},
@@ -3531,7 +1661,3016 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 113.0,
+			"side_bar_width": 96.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1399.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"get",
+						"getElementsByTagName"
+					],
+					[
+						"every",
+						"everywhere"
+					],
+					[
+						"for",
+						"for	for (…) {…} (Improved Native For-Loop)"
+					],
+					[
+						"proto",
+						"prototype"
+					],
+					[
+						"pro",
+						"product_ul_bg.jpg	w:1 h:92"
+					],
+					[
+						"decimal",
+						"decimal-leading-zero"
+					],
+					[
+						"list-style",
+						"list-style-type"
+					],
+					[
+						"cl",
+						"clear"
+					],
+					[
+						"no",
+						"nowrap"
+					],
+					[
+						"padding",
+						"padding"
+					],
+					[
+						"fl",
+						"float"
+					],
+					[
+						"font",
+						"font-size"
+					],
+					[
+						"inline",
+						"inline-block"
+					],
+					[
+						"cont",
+						"container"
+					],
+					[
+						"list",
+						"list-style"
+					],
+					[
+						"te",
+						"text-align"
+					],
+					[
+						"disp",
+						"displayErrors"
+					],
+					[
+						"size",
+						"sizechart"
+					],
+					[
+						"select",
+						"selected"
+					],
+					[
+						"borderc",
+						"border-color"
+					],
+					[
+						"bdc",
+						"border-color"
+					],
+					[
+						"bdr",
+						"border-radius"
+					],
+					[
+						"font-st",
+						"font-style	zen:css_properties"
+					],
+					[
+						"marg",
+						"margin"
+					],
+					[
+						"border",
+						"border"
+					],
+					[
+						"text",
+						"text-decoration"
+					],
+					[
+						"back",
+						"background"
+					],
+					[
+						"bd",
+						"border"
+					],
+					[
+						"mar",
+						"margin-left"
+					],
+					[
+						"font-",
+						"font-style"
+					],
+					[
+						"ari",
+						"\"Arial Black\""
+					],
+					[
+						"arial",
+						"Arial, Helvetica, sans-serif"
+					],
+					[
+						"re",
+						"repeat"
+					],
+					[
+						"script",
+						"SCRIPT"
+					],
+					[
+						"search",
+						"search_text"
+					],
+					[
+						"nlet",
+						"nletter_text"
+					],
+					[
+						"nletter_",
+						"nletter_text"
+					],
+					[
+						"sear",
+						"search_text"
+					],
+					[
+						"sea",
+						"search_text"
+					],
+					[
+						"copy-domain",
+						"copy-domainaccount"
+					],
+					[
+						"texta",
+						"textareaContent"
+					],
+					[
+						"textar",
+						"textarea-content"
+					],
+					[
+						"clipb",
+						"clipboardContent"
+					],
+					[
+						"top",
+						"topflag_arr"
+					],
+					[
+						"margin",
+						"margin-left"
+					],
+					[
+						"bor",
+						"border-radius"
+					],
+					[
+						"pad",
+						"padding"
+					],
+					[
+						"recommendflag",
+						"recommendflag_arr"
+					],
+					[
+						"inli",
+						"inline-block"
+					],
+					[
+						"col",
+						"color"
+					],
+					[
+						"child",
+						"ChildType"
+					],
+					[
+						"a",
+						"a	<a>"
+					],
+					[
+						"arr",
+						"arrGWeb"
+					],
+					[
+						"biweb",
+						"biweb_news_top"
+					],
+					[
+						"php",
+						"phpinfo"
+					],
+					[
+						"w",
+						"WEBURL"
+					],
+					[
+						"pa",
+						"padding"
+					],
+					[
+						"wid",
+						"width"
+					],
+					[
+						"add",
+						"add-to-cart"
+					],
+					[
+						"class",
+						"class	@class"
+					],
+					[
+						"table",
+						"table-cell"
+					],
+					[
+						"lin",
+						"line-height"
+					],
+					[
+						"max",
+						"max-height"
+					],
+					[
+						"chil",
+						"ChildType"
+					],
+					[
+						"tex",
+						"text-align"
+					],
+					[
+						"temp",
+						"templates_root"
+					],
+					[
+						"page",
+						"page_link"
+					],
+					[
+						"tem",
+						"templates_root"
+					],
+					[
+						"fo",
+						"footer"
+					],
+					[
+						"ta",
+						"text-align"
+					],
+					[
+						"searh",
+						"search-form"
+					],
+					[
+						"url",
+						"url(image-url.gif)"
+					],
+					[
+						"helvetica",
+						"Arial, Helvetica, sans-serif"
+					],
+					[
+						"repeat",
+						"repeat-x"
+					],
+					[
+						"m-",
+						"m-expanded"
+					],
+					[
+						"hot_ca",
+						"http_negotiate_charset"
+					],
+					[
+						"ab",
+						"absolute"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/C/Documents and Settings/Administrator/Desktop/CODE.C/CODE.C/CODECANYON COLLECTION_vol.1/AJAX TEXT EDITOR/Files/index.html",
+					"settings":
+					{
+						"buffer_size": 5826,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Desktop/CODE.C/CODE.C/CODECANYON COLLECTION_vol.1/AJAX TEXT EDITOR/Files/sp/js/ajaxeditor2.js",
+					"settings":
+					{
+						"buffer_size": 4137,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
+					"settings":
+					{
+						"buffer_size": 27905,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/My Documents/goods.dwt",
+					"settings":
+					{
+						"buffer_size": 6656,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Desktop/jquery-1.8.2.js",
+					"settings":
+					{
+						"buffer_size": 265216,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Desktop/test.html",
+					"settings":
+					{
+						"buffer_size": 583,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n<head>\n	<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />\n	<title>Document</title>\n</head>\n<body>\n	\n</body>\n</html>",
+					"settings":
+					{
+						"buffer_size": 302,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/WINDOWS/system32/drivers/etc/hosts",
+					"settings":
+					{
+						"buffer_size": 929,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Desktop/test.html",
+					"settings":
+					{
+						"buffer_size": 583,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeCodeIntel/README.rst",
+					"settings":
+					{
+						"buffer_size": 5888,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Desktop/transport.js",
+					"settings":
+					{
+						"buffer_size": 4020,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"selected_items":
+				[
+					[
+						"format",
+						"Format: Javascript"
+					],
+					[
+						"syntaxjava",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"list",
+						"Package Control: List Packages"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"upgrad",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"pre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"prettify",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"listp",
+						"Package Control: List Packages"
+					],
+					[
+						"preti",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"instp",
+						"Package Control: Install Package"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"listpa",
+						"Package Control: List Packages"
+					],
+					[
+						"syntaxjavs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"inslp",
+						"Package Control: Install Package"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"syntax:html",
+						"Set Syntax: HTML"
+					],
+					[
+						"dis",
+						"Package Control: Disable Package"
+					],
+					[
+						"disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"enal",
+						"Package Control: Enable Package"
+					],
+					[
+						"pinsp",
+						"Package Control: Install Package"
+					],
+					[
+						"pip",
+						"Package Control: Disable Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Discover Packages"
+					],
+					[
+						"listpage",
+						"Package Control: List Packages"
+					],
+					[
+						"insp",
+						"Package Control: Install Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"disco",
+						"Package Control: Discover Packages"
+					],
+					[
+						"fetch",
+						"Fetch: Manage"
+					],
+					[
+						"fet",
+						"Fetch: File"
+					],
+					[
+						"instap",
+						"Package Control: Install Package"
+					],
+					[
+						"htmlpre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"instpa",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"disab",
+						"Package Control: Disable Package"
+					],
+					[
+						"move",
+						"File: Move"
+					],
+					[
+						"filemove",
+						"File: Move"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"html",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"htmlpr",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"htmlp",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"upgrade",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"upda",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"forma",
+						"Format: Javascript"
+					],
+					[
+						"for",
+						"Format: Javascript"
+					],
+					[
+						"disabl",
+						"Package Control: Disable Package"
+					],
+					[
+						"syntax java",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"tidy",
+						"Tidy CSS (Low Compression)"
+					],
+					[
+						"terminal",
+						"Preferences: Terminal Key Bindings – Default"
+					],
+					[
+						"ter",
+						"Preferences: Terminal Key Bindings – User"
+					],
+					[
+						"packis",
+						"Package Control: Install Package"
+					],
+					[
+						"clipb",
+						"Clipboard History"
+					],
+					[
+						"copy",
+						"File: Copy Path"
+					],
+					[
+						"diff",
+						"FileDiffs: Menu"
+					],
+					[
+						"filedi",
+						"FileDiffs: Menu"
+					],
+					[
+						"add",
+						"Project: Add Folder"
+					],
+					[
+						"snippet sm",
+						"Snippet: smartytag"
+					],
+					[
+						"task",
+						"Tasks: New document"
+					],
+					[
+						"doc",
+						"DocBlockr: Decorate line comment"
+					],
+					[
+						"docb",
+						"DocBlockr: Decorate line comment"
+					],
+					[
+						"rename",
+						"File: Rename"
+					],
+					[
+						"lis",
+						"Package Control: List Packages"
+					],
+					[
+						"css",
+						"Tidy CSS (Low Compression)"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
+					],
+					[
+						"pi",
+						"Package Control: Install Package"
+					],
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"Zen Coding: ",
+						"Zen Coding: Select next item"
+					],
+					[
+						"tag",
+						"Tag: Close Tag"
+					],
+					[
+						":s",
+						":w - Save"
+					],
+					[
+						"syntax",
+						"Set Syntax: C++"
+					],
+					[
+						"tra",
+						"Trailing Spaces: Delete Trailing Spaces"
+					]
+				],
+				"width": 522.0
+			},
+			"console":
+			{
+				"height": 153.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Documents and Settings/Administrator/Desktop/test.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeCodeIntel/Default (Windows).sublime-mousemap",
+				"/C/Documents and Settings/Administrator/Desktop/js.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeCodeIntel/LICENSE.txt",
+				"/D/New Folder/sprite.css",
+				"/C/Documents and Settings/Administrator/Desktop/demo/login_panel/js/slide.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/AdvancedNewFile/README.md",
+				"/C/Documents and Settings/Administrator/Desktop/common1.js",
+				"/C/Documents and Settings/Administrator/My Documents/category.dwt",
+				"/C/Documents and Settings/Administrator/Local Settings/Temporary Internet Files/Content.IE5/IWEZA9C5/c3[1].css",
+				"/C/Documents and Settings/Administrator/Desktop/common.js",
+				"//192.168.1.11/bestcheapjerseyssale.com/themes/bestcheapjerseyssale/goods.dwt",
+				"/C/Documents and Settings/Administrator/Desktop/jquery-1.8.3.min.js",
+				"//192.168.1.11/2012discountjerseyschina.com/themes/2012discountjerseyschina/js/jquery.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Emmet.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Settings/SideBarEnhancements.json",
+				"/C/Documents and Settings/Administrator/Desktop/html.html",
+				"/D/Webroot/2012-11-15/index.html",
+				"/D/Webroot/2012-11-15/css/global.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Desktop/jquery-1.8.2.js",
+				"/C/Documents and Settings/Administrator/Desktop/adidas_unity/Adidas_Unity/stylesheet.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/SublimeCodeIntel/Base File.sublime-settings",
+				"/D/Webroot/2012-11-15/js/script.js",
+				"/C/Documents and Settings/Administrator/Desktop/css/stylesheet.css",
+				"/C/Documents and Settings/Administrator/Desktop/stylesheet.css",
+				"/D/Webroot/2012-11-15/css/jquery.bxslider.css",
+				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-54e6d31/woothemes-FlexSlider-54e6d31/demo/index.html",
+				"/D/Webroot/2012-11-15/js/jquery.flexslider-min.js",
+				"/C/Documents and Settings/Administrator/Desktop/woothemes-FlexSlider-54e6d31/woothemes-FlexSlider-54e6d31/jquery.flexslider.js",
+				"/D/Webroot/2012-11-15/css/flexslider.css",
+				"/D/Webroot/2012-11-15/index.min.html",
+				"/C/Documents and Settings/Administrator/Desktop/感恩信.docx",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/csscomment.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Default (Windows).sublime-keymap",
+				"/D/Webroot/2012-11-15/css/reset.css",
+				"/C/Documents and Settings/Administrator/Desktop/loopedslider.js",
+				"/C/Documents and Settings/Administrator/Desktop/test.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeLinter/README.md",
+				"/C/Documents and Settings/Administrator/Desktop/html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Main.sublime-menu",
+				"/C/Documents and Settings/Administrator/Desktop/Punchcut_Device_Design_Toolset_v1-1/Punchcut_Device_Design_Toolset_v1.1/02 Photoshop Marquee Preset/PCT_Device_Resolutions_v1.tpl",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/admin/checklogin.php",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/admin/backup/class/backup.class.php",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/include/mysql_db.php",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/CTags/Default.sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/web_common5.8/nusoap/lib/nusoap.php",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/.tags",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/index.php",
+				"/C/Documents and Settings/Administrator/Desktop/jerseysfromchinaonline.com/p.php",
+				"/C/Documents and Settings/Administrator/My Documents/header.css",
+				"/C/WINDOWS/system32/drivers/etc/hosts",
+				"/C/Documents and Settings/Administrator/Desktop/over.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+				"/C/Documents and Settings/Administrator/My Documents/sitemap1.html",
+				"/C/Documents and Settings/Administrator/My Documents/sitemap_html.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/BracketHighlighter/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/AdvancedNewFile/Default (Windows).sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/clearfix.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Desktop/1.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/csscomment.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/cssbegin.sublime-snippet",
+				"/C/Documents and Settings/Administrator/Desktop/emmet-sublime-master/emmet-sublime-master/emmet/snippets.json",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime text 2/Packages/User/iife.sublime-snippet",
+				"/C/Documents and Settings/Administrator/My Documents/sitemap.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/README.md",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Add DocBlockr Line Before.sublime-macro",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/DocBlockr/Default.sublime-commands",
+				"/C/Documents and Settings/Administrator/My Documents/jsddmopen.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/zencoding/zen_settings.py",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/Default.sublime-keymap",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/My Documents/register.html",
+				"/C/Documents and Settings/Administrator/My Documents/style.css",
+				"/C/Documents and Settings/Administrator/My Documents/detail.html",
+				"/C/Documents and Settings/Administrator/My Documents/change/list.html",
+				"/C/Documents and Settings/Administrator/My Documents/change/search.html",
+				"/C/Documents and Settings/Administrator/My Documents/change/detail.html",
+				"/D/Webroot/test/test.html",
+				"/C/Documents and Settings/Administrator/Desktop/jquery-list-grid-switcher-source/script.js",
+				"/C/Documents and Settings/Administrator/My Documents/change/style.css",
+				"/C/Documents and Settings/Administrator/My Documents/change/index.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/README.md",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
+				"/Z/ec/11121f.com/themes/2012111201/css/style.css",
+				"/Z/ec/11121f.com/themes/2012111201/css/content.css",
+				"/C/Documents and Settings/Administrator/My Documents/list_pic.html",
+				"/C/Documents and Settings/Administrator/My Documents/list.css",
+				"/C/Documents and Settings/Administrator/My Documents/content.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/ZenCoding/README.md",
+				"/Z/ec/11121f.com/themes/2012111201/css/list.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Emmet.sublime-settings",
+				"/D/Webroot/test/jstest.html",
+				"/Z/xiaofeng/2012wholesalejerseyssale.com/templates/102401/css/style.css",
+				"/D/Webroot/test/array.html",
+				"/C/Documents and Settings/Administrator/Desktop/jstest/js/slider.js",
+				"/C/Documents and Settings/Administrator/Desktop/li JQuery Image Slider_files/li-slider-1.1.demo.min.js",
+				"/C/Documents and Settings/Administrator/My Documents/common.css",
+				"/C/Documents and Settings/Administrator/Desktop/templates/css/global.css",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+				"/D/Webroot/2012-11-15/jquery-1.8.3.min.js",
+				"/D/Webroot/2012-11-15/jquery-1.8.2.min.js",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Nettuts+ Fetch/README.md",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Nettuts+ Fetch/Default.sublime-commands",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Nettuts+ Fetch/package-metadata.json",
+				"/Z/ec/11121f.com/themes/2012111201/styles/globa_l1109_1.css",
+				"/C/Documents and Settings/Administrator/Desktop/18/styles/containermostad13_1.css",
+				"/Z/ec/2012wholesalenfljerseysoutlet.com/themes/111401/styles/sysos1_11_13.css",
+				"/Z/xiaofeng/nikejerseyso.com/templates/102404/css/header.css",
+				"/C/Documents and Settings/Administrator/My Documents/Downloads/web_design_source_templates/web_design_source_templates/25.TF.source.website.templates/studioclickhtml/index.html",
+				"/C/Documents and Settings/Administrator/My Documents/Downloads/web_design_source_templates/web_design_source_templates/25.TF.source.website.templates/studioclickhtml/portfolio.html",
+				"/Z/xiaofeng/2012wholesalejerseyssale.com/templates/102401/css/detail.css",
+				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/product/list.html",
+				"/Z/yuanliang/newbiwe/2012discountnfljerseyssupply.com/templates/20121024_1feng/css/pagepro.css",
+				"/Z/yuanliang/newbiwe/2012authenticnfljerseysstore.com/templates/20121024_1feng/css/style.css",
+				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/css/list.css",
+				"/Z/xiaofeng/authenticjerseysforyou.com/templates/102402/css/header.css"
+			],
+			"find":
+			{
+				"height": 38.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					"Z:\\xue\\nfl0919.com\\templates\\0919\\css,C:\\Documents and Settings\\Administrator\\Desktop\\jerseysfromchinaonline.com",
+					"Z:\\xue\\nfl0919.com\\templates\\0919\\css",
+					"Z:\\xue\\nfl0917.com\\templates\\0917\\css",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\0910-2-nfl",
+					"E:\\Downloads\\06d1b7f18784ecad5f47962c9724a9e1\\0905-2-nfl\\css",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"detect",
+					"detect_slow",
+					"detect_sl",
+					"re",
+					"[0]",
+					"html",
+					"  ",
+					".com",
+					"height",
+					"(^.*$)",
+					".com",
+					"do_my_cart",
+					"Ajax",
+					"addToCartResponse",
+					"obj2str",
+					"get:",
+					".com",
+					"core_slice",
+					"rquickExpr",
+					"window",
+					"jQuery",
+					"rootjQuery",
+					"default",
+					"这里是一个序列",
+					".loading",
+					"withAjax",
+					"==",
+					"minus",
+					"images",
+					"<li class=\"cat-header\">",
+					"</li>",
+					"minus",
+					"images",
+					"\n                    </li>",
+					"\n                    ",
+					"^\\s*</li>\\s*\\r?$\n            ",
+					"^\\s*</li>\\r$\n            ",
+					"\n            ",
+					"\n                        ",
+					"\n                ",
+					"<a href=\".*?\"",
+					"clearfixb",
+					"feature",
+					"326",
+					"width=\"89\"",
+					" height=\"92\"",
+					"images",
+					"feature",
+					"featrue",
+					"feature",
+					"#slider",
+					"option",
+					"flex-prev",
+					"font-size",
+					"\n		  	    		",
+					"slider",
+					".box",
+					"header",
+					"deal",
+					"em",
+					"goodsslider",
+					" height=\"92\" width=\"89\" ",
+					"height=\"92\" width=\"89\" ",
+					".goodsslider h6",
+					"ctrl+t",
+					"varDump",
+					"function",
+					"ctrl+t",
+					"dd",
+					"cate",
+					"doctype",
+					"input",
+					"ctrl+'+shift",
+					"ctrl+shift+'",
+					"”",
+					"text-indent",
+					"20",
+					"　　",
+					"ctrl+alt+shift",
+					"ctrl+alt+sfhit",
+					"ctrl+shift+alt",
+					"ctrl+alt+shift+h",
+					"ctrl+shift+h",
+					"ctrl+shift",
+					"ctrl+alt",
+					"ctrl+shift",
+					"ctrl+shfit+h",
+					"ctrl+shift+alt",
+					"alt",
+					"^\\s*<span",
+					"	        	<a",
+					"More",
+					"</li>",
+					"<span><",
+					"<span>",
+					"<li>",
+					"<span>",
+					"class=\"more\"",
+					"More",
+					"more",
+					"More",
+					"f6",
+					"macro",
+					"visibility",
+					".com",
+					"script",
+					"script4",
+					"=====",
+					"=======",
+					"=========",
+					"===============",
+					"==============",
+					"=============",
+					"============",
+					"===========",
+					"==========",
+					"=========",
+					"==========",
+					"=========",
+					"*****************************",
+					"shift+ctrl",
+					"55px;",
+					"padding-top: 55px;",
+					" padding-top: 55px;",
+					"script",
+					"style",
+					"script",
+					"style"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"'\\1',",
+					"===",
+					"</li>",
+					"",
+					"<a href=\"#\"",
+					"",
+					"fdlsakjflasj\\1",
+					"<a href=\"#\"",
+					"",
+					"<a href=\"#\"",
+					"images/",
+					"<img src=\"images/\\1\\2\"",
+					"\\1#\"",
+					"src=\"js/\\1\"",
+					"href=\"css/\\1\"",
+					"href=\"\\1\"",
+					"src=\"js\\1\"",
+					"href=\"css\\1\"",
+					"href=\"css/\\1\"",
+					"css/\\1",
+					"\\1",
+					"",
+					"css/\\1",
+					"1000",
+					"",
+					"../images/",
+					"\"\\1\",",
+					"\"\\1\"",
+					"",
+					"\\1#\"",
+					"\"\\1\",",
+					"\\1#\"",
+					"",
+					"\"\\1\",",
+					"img src='http://livedemo00.template-help.com\\1'",
+					"\\1#\"",
+					"src=\"http://livedemo00.template-help.com/prestashop_41145",
+					"http://livedemo00.template-help.com/prestashop_41145",
+					"\"\\1\",",
+					"\\1,",
+					"http://frique.me/demos/etalage/demo_files",
+					"\"\\1\",",
+					"\"\\1\"",
+					",",
+					"",
+					"detail-1-img",
+					"images",
+					"<a href=\"#\"",
+					"",
+					"two",
+					"",
+					"\\1/>",
+					"",
+					"two",
+					"../htc/",
+					"../htc",
+					"right",
+					"",
+					"\\1#\"",
+					"\\1#",
+					"href=\"#\"",
+					" href=\"#\"",
+					"href=\"#\"",
+					"samsung_galaxy_gio_s56601(1).jpg",
+					"small-price",
+					"price",
+					"images/hot-ipad-7-inch-androi-1-6-os-wifi-cuc-manh-gia-tot_24717_(1).jpg",
+					"<a href=\"#\"><img src=\"\\1\" alt=\"\" /></a>",
+					"<a href=\"#\"><img src=\"(.*)\" alt=\"\" /></a>",
+					"",
+					"38",
+					"2013||09||10",
+					"../htc/",
+					"#FA29A0",
+					"#C2026F",
+					"#ccc",
+					"22",
+					"<!-- \\1 -->",
+					"<!--\\1-->",
+					"help-title",
+					"biweb_product_hot_cakes",
+					"hot_cakes",
+					"src=\"<?{$arrGWeb.templates_root}?>images",
+					"recommendflag_arr",
+					"\nrecommendflag_arr",
+					"\n<!-- **********\\1********** -->",
+					"\n<!-- **********\\1**********-->",
+					"\nsrc=\"<?{$arrGWeb.templates_root}?>images",
+					"\\1#\"",
+					"\\1#",
+					"\\1#\"",
+					"\\0a",
+					"images/NFLicon/\\1.gif",
+					"images/NFLicon\\1.gif",
+					"<a href=\"#\"",
+					"action=\"\"",
+					"<a href=\"#\"",
+					"css/validation.css",
+					"images/loading.gif",
+					"logo.jpg",
+					"<a href=\"#\"",
+					"..",
+					"<a href=\"#\"",
+					"..",
+					"Prototype1.js",
+					"Prototype.js",
+					"global.css",
+					"header.css",
+					"global.css",
+					"calendar.css",
+					"action=\"\"",
+					"<a href=\"#\"",
+					"<a href=\"#\"><img src=\"\\1\" alt=\"\"></a>",
+					"images",
+					"images/timthumb (1).jpg",
+					"images/timthumb.jpg",
+					"<a href=\"#\"",
+					"images/timthumb (2).jpg",
+					"images/\\1.\\2",
+					"js/\\1.\\2",
+					"js/\\1.js",
+					"css/\\1.css",
+					"../images",
+					"images",
+					"images/\\1.\\2",
+					"js/\\1.js",
+					"css/\\1.css",
+					"\\n"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": false
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/C/Documents and Settings/Administrator/Desktop/CODE.C/CODE.C/CODECANYON COLLECTION_vol.1/AJAX TEXT EDITOR/Files/index.html",
+							"settings":
+							{
+								"buffer_size": 5826,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5170,
+										5170
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"is_xml": false,
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1740.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/C/Documents and Settings/Administrator/Desktop/CODE.C/CODE.C/CODECANYON COLLECTION_vol.1/AJAX TEXT EDITOR/Files/sp/js/ajaxeditor2.js",
+							"settings":
+							{
+								"buffer_size": 4137,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3840,
+										3840
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 360.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
+							"settings":
+							{
+								"buffer_size": 27905,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										20856,
+										20856
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 10640.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/Documents and Settings/Administrator/My Documents/goods.dwt",
+							"settings":
+							{
+								"buffer_size": 6656,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										6023,
+										6023
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "UTF-8",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 2240.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/Documents and Settings/Administrator/Desktop/jquery-1.8.2.js",
+							"settings":
+							{
+								"buffer_size": 265216,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1747,
+										1747
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 680.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/C/Documents and Settings/Administrator/Desktop/test.html",
+							"settings":
+							{
+								"buffer_size": 583,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"is_xml": false,
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 662.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"settings":
+							{
+								"buffer_size": 302,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										253,
+										261
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"is_xml": false,
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/C/WINDOWS/system32/drivers/etc/hosts",
+							"settings":
+							{
+								"buffer_size": 929,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										522,
+										522
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 120.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/C/Documents and Settings/Administrator/Desktop/test.html",
+							"settings":
+							{
+								"buffer_size": 583,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"is_xml": false,
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 240.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/SublimeCodeIntel/README.rst",
+							"settings":
+							{
+								"buffer_size": 5888,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4345,
+										4345
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1080.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 10,
+							"file": "/C/Documents and Settings/Administrator/Desktop/transport.js",
+							"settings":
+							{
+								"buffer_size": 4020,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1352,
+										1352
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "UTF-8",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 780.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 37.0
+			},
+			"input":
+			{
+				"height": 37.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 126.0
+			},
+			"position": "0,0,1,-32000,-32000,-1,-1,969,34,253,1441",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"script",
+						"js/script.js"
+					],
+					[
+						"flex",
+						"/D/Webroot/2012-11-15/css/flexslider.css"
+					],
+					[
+						"reset",
+						"css/reset.css"
+					],
+					[
+						"global",
+						"css/global.css"
+					],
+					[
+						"2012",
+						"2012-11-15/index.html"
+					],
+					[
+						"host",
+						"/C/WINDOWS/system32/drivers/etc/hosts"
+					],
+					[
+						".css",
+						"public_html/css/style.css"
+					],
+					[
+						"magic",
+						"css/magiczoom.css"
+					],
+					[
+						"list.css",
+						"css/listpage.css"
+					],
+					[
+						"list",
+						"listpage.html"
+					],
+					[
+						"de",
+						"css/detailpage.css"
+					],
+					[
+						"detail",
+						"detailpage.html"
+					],
+					[
+						"com",
+						"css/common.css"
+					],
+					[
+						"indx",
+						"css/index.css"
+					],
+					[
+						"index",
+						"index.html"
+					],
+					[
+						"index.html",
+						"index.html"
+					],
+					[
+						"deta",
+						"css/detailpage.css"
+					],
+					[
+						"js/",
+						"js/jquery.dcjqaccordion.js"
+					],
+					[
+						"listpa",
+						"css/listpage.css"
+					],
+					[
+						"inde",
+						"index.html"
+					],
+					[
+						"style",
+						"css/style.css"
+					],
+					[
+						"header.css",
+						"css/header.css"
+					],
+					[
+						"detail.css",
+						"css/detail.css"
+					],
+					[
+						"search.html",
+						"product/search.html"
+					],
+					[
+						"header.html",
+						"theme/header.html"
+					],
+					[
+						"style.css",
+						"css/style.css"
+					],
+					[
+						"prodetai.",
+						"product/detail.html"
+					],
+					[
+						"contentc",
+						"css/content.css"
+					],
+					[
+						"prolist.html",
+						"product/list.html"
+					],
+					[
+						"head.html",
+						"theme/header.html"
+					],
+					[
+						"footer.html",
+						"theme/footer.html"
+					],
+					[
+						"list_pic",
+						"product/list_pic.html"
+					],
+					[
+						"download",
+						"download/detail.html"
+					],
+					[
+						"cotent.css",
+						"css/content.css"
+					],
+					[
+						"user.css",
+						"css/user.css"
+					],
+					[
+						"sty",
+						"css/style.css"
+					],
+					[
+						"style.cs",
+						"css/style.css"
+					],
+					[
+						"prodetai.ht",
+						"product/detail.html"
+					],
+					[
+						"prolist",
+						"product/list.html"
+					],
+					[
+						"list.html",
+						"comments/list.html"
+					],
+					[
+						"index.",
+						"index.html"
+					],
+					[
+						"copyfoot",
+						"theme/Copy of footer.html"
+					],
+					[
+						"footer.ht",
+						"theme/footer.html"
+					],
+					[
+						"header",
+						"theme/Copy of header.html"
+					],
+					[
+						"header.",
+						"0929/theme/header.html"
+					],
+					[
+						"footer.css",
+						"0929/css/footer.css"
+					],
+					[
+						"content.css",
+						"0929/css/content.css"
+					],
+					[
+						"downdetail",
+						"0929/download/detail.html"
+					],
+					[
+						"prosearch",
+						"0929/product/search.html"
+					],
+					[
+						"prodetail.ht",
+						"0929/product/detail.html"
+					],
+					[
+						"prodetail.html",
+						"0929/product/detail.html"
+					],
+					[
+						"head",
+						"0929/theme/header.html"
+					],
+					[
+						"content",
+						"css/content.css"
+					],
+					[
+						"downdetai",
+						"download/detail.html"
+					],
+					[
+						"cotent",
+						"css/content.css"
+					],
+					[
+						"pro/de",
+						"product/detail.html"
+					],
+					[
+						"detail.html",
+						"archives/detail.html"
+					],
+					[
+						"pagepro",
+						"css/pagepro.css"
+					],
+					[
+						"conte",
+						"css/content.css"
+					],
+					[
+						"login.html",
+						"user/adminu/login.html"
+					],
+					[
+						"footer",
+						"css/footer.css"
+					],
+					[
+						"search",
+						"product/search.html"
+					],
+					[
+						"down/de",
+						"download/detail.html"
+					],
+					[
+						"detai",
+						"product/detail.html"
+					],
+					[
+						"prodetail",
+						"product/detail.html"
+					],
+					[
+						"foot",
+						"css/footer.css"
+					],
+					[
+						"footer.c",
+						"0926/css/footer.css"
+					],
+					[
+						"downl/deta",
+						"0926/download/detail.html"
+					],
+					[
+						"detail.c",
+						"0926/css/detail.css"
+					],
+					[
+						"list.cs",
+						"0926/css/list.css"
+					],
+					[
+						"prosearch.",
+						"0926/product/search.html"
+					],
+					[
+						"my",
+						"deal/adminu/my_deal.html"
+					],
+					[
+						"mod",
+						"user/adminu/modify_user.html"
+					],
+					[
+						"modi",
+						"user/adminu/modify_userpwd.html"
+					],
+					[
+						"styl",
+						"css/style.css"
+					],
+					[
+						"modify",
+						"user/adminu/modify_userpwd.html"
+					],
+					[
+						"left.html",
+						"user/left.html"
+					],
+					[
+						"footer.",
+						"theme/footer.html"
+					],
+					[
+						"detai.c",
+						"css/detail.css"
+					],
+					[
+						"user.cs",
+						"css/user.css"
+					],
+					[
+						"",
+						"theme/header.html"
+					],
+					[
+						"content.c",
+						"css/content.css"
+					],
+					[
+						"down/detai",
+						"download/detail.html"
+					],
+					[
+						"down",
+						"download/detail.html"
+					],
+					[
+						"contet.c",
+						"css/content.css"
+					],
+					[
+						"copyo",
+						"Copy of index.html"
+					],
+					[
+						"style.c",
+						"css/style.css"
+					],
+					[
+						"sty.css",
+						"css/style.css"
+					],
+					[
+						"reset.css",
+						"css/reset.css"
+					],
+					[
+						"conten",
+						"css/content.css"
+					],
+					[
+						"header.ht",
+						"theme/header.html"
+					],
+					[
+						"copy",
+						"Copy of index.html"
+					],
+					[
+						"header.cs",
+						"css/header.css"
+					],
+					[
+						"headernv",
+						"scripts/headernav.js"
+					],
+					[
+						"regis",
+						"user/register.html"
+					],
+					[
+						"st",
+						"css/style.css"
+					],
+					[
+						"list.",
+						"product/list.html"
+					],
+					[
+						"pro/search.html",
+						"product/search.html"
+					],
+					[
+						"downla/detai",
+						"download/detail.html"
+					],
+					[
+						"detail.cs",
+						"css/detail.css"
+					],
+					[
+						"sear",
+						"product/search.html"
+					],
+					[
+						"deal/ind",
+						"deal/index.html"
+					],
+					[
+						"footerhtml",
+						"theme/footer.html"
+					],
+					[
+						"proserch",
+						"product/search.html"
+					],
+					[
+						"login",
+						"user/adminu/login.html"
+					],
+					[
+						"login.htm",
+						"user/login.html"
+					],
+					[
+						"head.css",
+						"css/header.css"
+					],
+					[
+						"user",
+						"css/user.css"
+					],
+					[
+						"copyhea",
+						"theme/Copy of header.html"
+					],
+					[
+						"pro/search.ht",
+						"product/search.html"
+					],
+					[
+						"s",
+						"grace/searchresult.html"
+					],
+					[
+						"pro/detail.html",
+						"product/detail.html"
+					],
+					[
+						"my_deal.",
+						"deal/adminu/my_deal.php"
+					],
+					[
+						"ad/modify_user.php",
+						"user/adminu/modify_user.php"
+					],
+					[
+						"modify_user.php",
+						"user/adminu/modify_user.php"
+					],
+					[
+						"detai.html",
+						"templates/0911/product/detail.html"
+					],
+					[
+						"tem/detail.html",
+						"templates/0911/news/detail.html"
+					],
+					[
+						"tem/list_pic",
+						"templates/0911/product/list_pic.html"
+					],
+					[
+						"tem/list.html",
+						"templates/0911/product/list.html"
+					],
+					[
+						"rese",
+						"css/reset.css"
+					],
+					[
+						"tem/index.htm",
+						"cheapusajerseysstore.com/templates/0911/index.html"
+					],
+					[
+						"admin",
+						"admin/templats/admin.html"
+					],
+					[
+						"login.php",
+						"admin/login.php"
+					],
+					[
+						"dowdetail.html",
+						"templates/090801/download/detail.html"
+					],
+					[
+						"down/detail.html",
+						"templates/090801/download/detail.html"
+					],
+					[
+						"pagepro.",
+						"templates/090801/css/pagepro.css"
+					],
+					[
+						"footer.htm",
+						"templates/090801/theme/footer.html"
+					],
+					[
+						"chekout",
+						"templates/090801/css/checkout-1.css"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+					[
+						"",
+						"/D/Webroot/ajaxtest/new.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 96.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": "/D/Webroot/ajaxtest/new.sublime-project"
