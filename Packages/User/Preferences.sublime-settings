@@ -14,7 +14,7 @@
 		"Clipboard History"
 	],
 	"soda_classic_tabs": true,
-	"theme": "Nil.sublime-theme",
+	"theme": "Nexus.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
 	"word_wrap": "true"

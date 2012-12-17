@@ -493,7 +493,7 @@
 	"html": {
 		"filters": "html",
 		"snippets": {
-			"c": "\n<!-- ================= ${1:comment} begin ================= -->\n\t$2\n<!-- ===== ${1:comment} end ===== -->",
+			"c": "<!-- ================= ${1:comment} begin ================= -->\n$2\n<!-- ===== ${1:comment} end ===== -->",
 			"cc:ie6": "<!--[if lte IE 6]>\n\t${child}|\n<![endif]-->",
 			"cc:ie": "<!--[if IE]>\n\t${child}|\n<![endif]-->",
 			"cc:noie": "<!--[if !IE]><!-->\n\t${child}|\n<!--<![endif]-->",

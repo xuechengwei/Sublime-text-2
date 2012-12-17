@@ -105,5 +105,8 @@
       { "key": "num_selections", "operator": "not_equal", "operand": 1 }
     ],
     "keys": ["ctrl+t"]
-  }
+  },
+  { "keys": ["ctrl+shift+c"], "command": "color_pick" },
+  { "keys": ["ctrl+left"], "command": "previous_edit" },
+  { "keys": ["ctrl+right"], "command": "next_edit" }
 ]
