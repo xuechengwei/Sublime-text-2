@@ -98,7 +98,7 @@
     },
     {
         "keys": [
-            "alt+down"
+            ""
         ],
         "args": {
             "action": "decrement_number_by_01"
@@ -295,7 +295,7 @@
     },
     {
         "keys": [
-            "alt+up"
+            ""
         ],
         "args": {
             "action": "increment_number_by_01"

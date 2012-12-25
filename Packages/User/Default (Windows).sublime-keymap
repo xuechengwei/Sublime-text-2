@@ -1,5 +1,5 @@
 [
-	// {"args": {"doctype": "5"},"command": "set_html_syntax_and_insert_skel", "keys": ["ctrl+alt+shift+h"]},
+	{"args": {"doctype": "5"},"command": "set_html_syntax_and_insert_skel", "keys": ["ctrl+alt+shift+h"]},
 	{ "keys": ["ctrl+super+t"], "command": "delete_trailing_spaces" },
 	{ "keys": ["ctrl+alt+shift+a"], "command": "alignment" },
 	{ "keys": ["ctrl+alt+x"], "command": "prefixr" },
@@ -108,5 +108,11 @@
   },
   { "keys": ["ctrl+shift+c"], "command": "color_pick" },
   { "keys": ["ctrl+left"], "command": "previous_edit" },
-  { "keys": ["ctrl+right"], "command": "next_edit" }
+  { "keys": ["ctrl+right"], "command": "next_edit" },
+  { "keys": ["f2"], "command": "side_bar_rename" },
+  { "keys": ["alt+r"], "command": "toggle_regex", "context":
+    [
+      { "key": "setting.is_widget", "operator": "equal", "operand": true }
+    ]
+  }
 ]
