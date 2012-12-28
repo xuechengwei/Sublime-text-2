@@ -1,5 +1,5 @@
 [
     {
-        "keys": ["f5"], "command": "restart"
+        "keys": ["f6"], "command": "restart"
     }
 ]

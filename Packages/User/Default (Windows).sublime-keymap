@@ -5,7 +5,8 @@
 	{ "keys": ["ctrl+alt+x"], "command": "prefixr" },
 	{ "keys": ["ctrl+shift+'"], "command": "change_quotes" },
 	{ "keys": ["ctrl+q"], "command": "close_window" },
-	{ "keys": ["ctrl+shift+w"], "command": "close_all" },
+  { "keys": ["ctrl+shift+w"], "command": "close_all" },
+	{ "keys": ["ctrl+alt+s"], "command": "save_all" },
 	{ "keys": ["ctrl+super+x"], "command": "auto_complete" },
 	{ "keys": ["f4"], "command": "toggle_side_bar" },
 	{
@@ -107,8 +108,8 @@
     "keys": ["ctrl+t"]
   },
   { "keys": ["ctrl+shift+c"], "command": "color_pick" },
-  { "keys": ["ctrl+left"], "command": "previous_edit" },
-  { "keys": ["ctrl+right"], "command": "next_edit" },
+  { "keys": ["alt+left"], "command": "previous_edit" },
+  { "keys": ["alt+right"], "command": "next_edit" },
   { "keys": ["f2"], "command": "side_bar_rename" },
   { "keys": ["alt+r"], "command": "toggle_regex", "context":
     [

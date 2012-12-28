@@ -2215,18 +2215,34 @@
 			"buffers":
 			[
 				{
-					"file": "/D/template/12-28/nfl jerseys4/index.html",
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 9904,
+						"buffer_size": 13148,
 						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 2949,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Edit History/Context.sublime-menu",
+					"settings":
+					{
+						"buffer_size": 152,
+						"line_ending": "Unix"
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 255.0,
+				"height": 93.0,
 				"selected_items":
 				[
 					[
@@ -2618,7 +2634,7 @@
 						"Trailing Spaces: Delete Trailing Spaces"
 					]
 				],
-				"width": 522.0
+				"width": 502.0
 			},
 			"console":
 			{
@@ -2635,13 +2651,16 @@
 			},
 			"file_history":
 			[
+				"/D/template/12-28/nfl jerseys4/css/global.css",
+				"/D/template/12-28/nfl jerseys4/index.html",
+				"/D/template/12-28/nfl jerseys4/listpage.html",
+				"/D/template/12-28/nfl jerseys4/detailpage.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 				"/D/template/12-28/test/index.html",
 				"/D/template/12-28/test/listpage.html",
 				"/D/template/12-28/test/detailpage.html",
 				"/D/template/12-28/test/css/superfish-navbar.css",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-				"/D/template/12-28/nfl jerseys4/detailpage.html",
-				"/D/template/12-28/nfl jerseys4/index.html",
 				"/C/WINDOWS/system32/drivers/etc/hosts",
 				"/D/template/12-28/test/Copy of index.html",
 				"/D/template/12-28/test/css/superfish.css",
@@ -2653,7 +2672,6 @@
 				"/D/template/12-28/nfl jerseys4/fda.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/HTML/HTML.sublime-completions",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/JavaScript/Object-Method.sublime-snippet",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/HTML5/Internet Explorer Conditional Comments/IE Conditional Comment - Internet Explorer 8 and below.sublime-snippet",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/HTML/encode_html_entities.pyc",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/CSS/Default (Windows).sublime-keymap",
@@ -2760,9 +2778,7 @@
 				"/D/template/custom/index.html",
 				"/D/template/custom1/index.html",
 				"/D/template/nfl jerseys7/css/reset.css",
-				"/D/template/mascot1/css/detailpage.css",
-				"/D/template/mascot1/css/skin.css",
-				"/D/template/mascot1/listpage.html"
+				"/D/template/mascot1/css/detailpage.css"
 			],
 			"find":
 			{
@@ -2797,6 +2813,11 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"previous_edit",
+					"header",
+					">\n",
+					"mininav",
+					"search",
 					"mininav",
 					"fancybox",
 					"sf-sub-indicator",
@@ -2919,12 +2940,7 @@
 					"border-ra",
 					"box-shadow",
 					"box",
-					"nav",
-					"do_my_cart",
-					"goods_number",
-					"$goods",
-					"Delete",
-					"Shop price"
+					"nav"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -3067,32 +3083,26 @@
 				"whole_word": false,
 				"wrap": false
 			},
-			"folders":
-			[
-				{
-					"path": "/D/template/12-28/nfl jerseys4"
-				}
-			],
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/D/template/12-28/nfl jerseys4/index.html",
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 							"settings":
 							{
-								"buffer_size": 9904,
+								"buffer_size": 13148,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1144,
-										1144
+										902,
+										902
 									]
 								],
 								"settings":
@@ -3103,7 +3113,7 @@
 										"README",
 										"FIXME"
 									],
-									"buffer_scroll_name": "b68681e1",
+									"buffer_scroll_name": "dd5cd3cc",
 									"csslint_options":
 									{
 										"adjoining-classes": "warning",
@@ -3145,7 +3155,6 @@
 									"gjslint_options":
 									[
 									],
-									"is_xml": false,
 									"javascript_linter": "jshint",
 									"jshint_options":
 									{
@@ -3188,15 +3197,255 @@
 										"Ruby on Rails": "ruby"
 									},
 									"sublimelinter_wrap_find": true,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 121.0,
+								"translation.y": 300.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+							"settings":
+							{
+								"buffer_size": 2949,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2468,
+										2468
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"buffer_scroll_name": "2320ef33",
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1861.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Edit History/Context.sublime-menu",
+							"settings":
+							{
+								"buffer_size": 152,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										41,
+										54
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"buffer_scroll_name": "cdf3848b",
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						}
+					]
+				},
+				{
+					"sheets":
+					[
 					]
 				}
 			],
@@ -3217,11 +3466,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.5,
 					1.0
 				],
 				"rows":
@@ -3235,7 +3491,7 @@
 			{
 				"height": 126.0
 			},
-			"position": "0,2,3,-1,-1,-1,-1,870,0,192,1440",
+			"position": "0,2,3,-32000,-32000,-1,-1,870,0,192,1440",
 			"replace":
 			{
 				"height": 72.0
@@ -3246,6 +3502,18 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"detal",
+						"detailpage.html"
+					],
+					[
+						"list",
+						"listpage.html"
+					],
+					[
+						"globa",
+						"css/global.css"
+					],
 					[
 						"index",
 						"index.html"
@@ -3261,10 +3529,6 @@
 					[
 						"detail",
 						"detailpage.html"
-					],
-					[
-						"list",
-						"listpage.html"
 					],
 					[
 						"gl",
@@ -3285,10 +3549,6 @@
 					[
 						"listp",
 						"listpage.html"
-					],
-					[
-						"globa",
-						"css/global.css"
 					],
 					[
 						"decss",
@@ -3753,10 +4013,6 @@
 					[
 						"pro/search.ht",
 						"product/search.html"
-					],
-					[
-						"s",
-						"grace/searchresult.html"
 					]
 				],
 				"width": 0.0
