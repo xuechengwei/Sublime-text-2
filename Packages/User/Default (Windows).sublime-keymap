@@ -108,12 +108,40 @@
     "keys": ["ctrl+t"]
   },
   { "keys": ["ctrl+shift+c"], "command": "color_pick" },
-  { "keys": ["alt+left"], "command": "previous_edit" },
-  { "keys": ["alt+right"], "command": "next_edit" },
+  { "keys": ["ctrl+alt+["], "command": "previous_edit" },
+  { "keys": ["ctrl+alt+]"], "command": "next_edit" },
   { "keys": ["f2"], "command": "side_bar_rename" },
   { "keys": ["alt+r"], "command": "toggle_regex", "context":
     [
       { "key": "setting.is_widget", "operator": "equal", "operand": true }
     ]
-  }
+  },
+  {
+        "keys": [
+            "shift+ctrl+,"
+        ],
+        "args": {
+            "action": "select_previous_item"
+        },
+        "command": "run_emmet_action",
+        "context": [
+            {
+                "key": "emmet_action_enabled.select_previous_item"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+ctrl+."
+        ],
+        "args": {
+            "action": "select_next_item"
+        },
+        "command": "run_emmet_action",
+        "context": [
+            {
+                "key": "emmet_action_enabled.select_next_item"
+            }
+        ]
+    }
 ]

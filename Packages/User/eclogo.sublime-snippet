@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-{\$$1}
+<a href="{\$my_http_host}" alt="{\$my_logo_alt}" title="{\$my_logo_alt}"><img src="images/$1" /></a>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>sm</tabTrigger>
+	<tabTrigger>eclogo</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>text.html</scope>
 </snippet>

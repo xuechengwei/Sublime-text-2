@@ -1,7 +1,8 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-	"font_face": "monaco",
-	"font_size": 10.0,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"font_face": "Inconsolata",
+	"font_size": 13.0,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Git",
@@ -10,12 +11,15 @@
 		"Theme - Soda",
 		"PHPUnit",
 		"PlainTasks",
+		"CTags",
 		"FileDiffs",
-		"Clipboard History"
+		"Clipboard History",
+		"SublimeCodeIntel"
 	],
 	"soda_classic_tabs": true,
 	"theme": "Nexus.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
+	"word_separators": "./\\()\"'-:_,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "true"
 }

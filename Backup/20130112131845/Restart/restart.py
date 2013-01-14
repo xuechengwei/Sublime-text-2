@@ -5,7 +5,4 @@ __email__ = 'hassenbenyedder@gmail.com'
 
 class RestartCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        if sys.platform == 'win32':
-            os.execl(sys.executable,' ')
-        else:
-            os.execl(sys.executable,sys.executable, ' ')
+        os.execl(sys.executable,' ') # magic :)
