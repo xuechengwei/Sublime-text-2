@@ -8,18 +8,35 @@
 		"Git",
 		"Gist",
 		"ZenCoding",
-		"Theme - Soda",
 		"PHPUnit",
 		"PlainTasks",
 		"CTags",
 		"FileDiffs",
-		"Clipboard History",
-		"SublimeCodeIntel"
+		"Clipboard History"
 	],
-	"soda_classic_tabs": true,
 	"theme": "Nexus.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
 	"word_separators": "./\\()\"'-:_,.;<>~!@#$%^&*|+=[]{}`~?",
-	"word_wrap": "true"
+	"word_wrap": "true",
+
+	// Set to false to turn off the indentation guides.
+    // The color and width of the indent guides may be customized by editing
+    // the corresponding .tmTheme file, and specifying the colors "guide",
+    // "activeGuide" and "stackGuide"
+    "draw_indent_guides": true,
+
+	// Valid values are "smooth", "phase", "blink", "wide" and "solid".
+    "caret_style": "phase",
+
+    // Controls how the indent guides are drawn, valid options are
+    // "draw_normal" and "draw_active". draw_active will draw the indent
+    // guides containing the caret in a different color.
+    "indent_guide_options": ["draw_active"],
+
+    // Columns in which to display vertical rulers
+    "rulers": [],
+
+	// Show folders in the side bar in bold
+    "bold_folder_labels": true
 }
