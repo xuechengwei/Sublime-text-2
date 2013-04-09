@@ -1,6 +1,14 @@
 {
 	"folder_history":
 	[
+		"/D/www/1000m",
+		"/D/www/about",
+		"/D/www/about-new",
+		"/D/www/activity-new",
+		"/D/www/sidebar",
+		"/D/www/app",
+		"/D/www/activity",
+		"/C/Documents and Settings/Administrator/Desktop/FirePHPCore-0.3.2",
 		"/D/Webroot/program/themes/2012cheapjerseysusa",
 		"/D/Webroot/cutout/1",
 		"/D/cutout/1",
@@ -1940,8 +1948,28 @@
 				"selected_items":
 				[
 					[
+						"rep",
+						"repeat-x  (value)"
+					],
+					[
+						"f",
+						"footer_bg.jpg	w:1920 h:248"
+					],
+					[
+						"scro",
+						"scrollTop"
+					],
+					[
+						"scr",
+						"scrollTo"
+					],
+					[
 						"text",
-						"text-align"
+						"text-decoration"
+					],
+					[
+						"list-",
+						"list-style"
 					],
 					[
 						"chil",
@@ -1976,10 +2004,6 @@
 						"nth-last-child(  (pseudo-class)"
 					],
 					[
-						"f",
-						"fun	Function"
-					],
-					[
 						"ajax",
 						"ajax	Google AJAX Libraries: Scriptaculous"
 					],
@@ -2002,10 +2026,6 @@
 					[
 						"sc",
 						"scrollTop"
-					],
-					[
-						"scr",
-						"scrollTop  (function)"
 					],
 					[
 						"ba",
@@ -2320,36 +2340,68 @@
 			"buffers":
 			[
 				{
-					"file": "/C/WINDOWS/system32/drivers/etc/hosts",
+					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/emmet/snippets.json",
 					"settings":
 					{
-						"buffer_size": 963,
+						"buffer_size": 28184,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/D/www/1000m/index.html",
+					"settings":
+					{
+						"buffer_size": 6950,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"contents": "<div class=\"new-carousel\">\n	<div class=\"page-title category-title\">\n		<h1 class=\"subtitle\">New Products</h1>\n	</div>\n	<script type=\"text/javascript\">\n    jQuery(document).ready(function() {\n        if (jQuery('.container_24').width() < 450) {\n            jQuery('.new-carousel').jcarousel({\n                vertical: false,\n                visible:2,\n                scroll: 1\n            });\n        }\n        else {\n            jQuery('.new-carousel').jcarousel({\n                vertical: false,\n                visible:5,\n                scroll: 1\n            });\n        }\n    });\n    </script>\n	<ul class=\"products-grid\">\n		<li class=\"item first\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/b/r/brown_girls_plaid_winter_jacket_2.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Brown Girls Plaid Winter Jacket</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-7-new\">\n						<span class=\"price\">$27.20</span>\n					</span>\n				</div>\n				<div class=\"ratings\">\n					<div class=\"rating-box\">\n						<div class=\"rating\" style=\"width:100%\"></div>\n					</div>\n					<span class=\"amount\">\n						<a href=\"#\" >1 Review(s)</a>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/e/n/enchanted_-_scarlet_floral_1.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Enchanted - Scarlet Floral</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-44-new\">\n						<span class=\"price\">$27.33</span>\n					</span>\n				</div>\n				<div class=\"ratings\">\n					<div class=\"rating-box\">\n						<div class=\"rating\" style=\"width:87%\"></div>\n					</div>\n					<span class=\"amount\">\n						<a href=\"#\" >1 Review(s)</a>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/l/i/little_brother_-_lichen_classic_blue_1.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Roley Poley - Moroccan Orange &amp; Crimson</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-38-new\">\n						<span class=\"price\">$36.30</span>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/t/r/tribute_-_chambray_1.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Little Brother SS - Classic Blue &amp; Lichen</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-34-new\">\n						<span class=\"price\">$27.55</span>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/b/u/bunnywunny_-_indigo_2.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Bobby Dazzler - Classic Red &amp; Classic Blue</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-31-new\">\n						<span class=\"price\">$15.30</span>\n					</span>\n				</div>\n				<div class=\"ratings\">\n					<div class=\"rating-box\">\n						<div class=\"rating\" style=\"width:100%\"></div>\n					</div>\n					<span class=\"amount\">\n						<a href=\"#\" >1 Review(s)</a>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/s/m/smiler_-_red_vanilla_stripe_1.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Tribute - Tablecloth Check</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-42-new\">\n						<span class=\"price\">$40.30</span>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/t/r/tribute_-_parma_violet_print_1.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Menace SS - Classic Red &amp; Black</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-35-new\">\n						<span class=\"price\">$22.33</span>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/r/o/roley_poley_-_moroccan_orange_crimson_1.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Boom Boom - Cornflower</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-32-new\">\n						<span class=\"price\">$37.22</span>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/e/m/emmeliene_-_pinch_cheek_moroccan_orange_1.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Emmeliene - Pinch Cheek &amp; Moroccan Orange</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-15-new\">\n						<span class=\"price\">$47.33</span>\n					</span>\n				</div>\n				<div class=\"ratings\">\n					<div class=\"rating-box\">\n						<div class=\"rating\" style=\"width:80%\"></div>\n					</div>\n					<span class=\"amount\">\n						<a href=\"#\" >1 Review(s)</a>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n		<li class=\"item\">\n			<a href=\"#\" title=\"\" class=\"product-image\">\n				<img src=\"http://livedemo00.template-help.com/magento_42643/media/catalog/product/cache/1/small_image/162x/9df78eab33525d08d6e5fb8d27136e95/e/d/eden_-_parma_violet_print_3.png\" alt=\"\"/>\n			</a>\n			<div class=\"product-shop2\">\n				<h3 class=\"product-name\">\n					<a href=\"#\" title=\"\">Eden - Parma Violet Print</a>\n				</h3>\n				<div class=\"price-box\">\n					<span class=\"regular-price\" id=\"product-price-13-new\">\n						<span class=\"price\">$47.30</span>\n					</span>\n				</div>\n				<div class=\"ratings\">\n					<div class=\"rating-box\">\n						<div class=\"rating\" style=\"width:93%\"></div>\n					</div>\n					<span class=\"amount\">\n						<a href=\"#\" >1 Review(s)</a>\n					</span>\n				</div>\n				<div class=\"actions\">\n					<button type=\"button\" title=\"\" class=\"button btn-cart\" >\n						<span>\n							<span>Details</span>\n						</span>\n					</button>\n					<ul class=\"add-to-links\">\n						<li>\n							<a href=\"#\" title=\"\" class=\"link-wishlist tooltips\">Add to Wishlist</a>\n						</li>\n						<li>\n							<span class=\"separator\">|</span>\n							<a href=\"#\" title=\"\" class=\"link-compare tooltips\">Add to Compare</a>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</li>\n	</ul>\n</div>",
+					"contents": "<!doctype html>\n<html lang=\"en\">\n<head>\n	<meta name=\"keywords\" content=\"\">\n	<meta charset=\"UTF-8\">\n	<title>Document</title>\n</head>\n<body>\n	\n</body>\n</html>",
 					"settings":
 					{
-						"buffer_size": 11953,
+						"buffer_size": 156,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/D/Webroot/index.php",
+					"file": "/D/www/1000m/css/km.css",
 					"settings":
 					{
-						"buffer_size": 261,
-						"line_ending": "Windows"
+						"buffer_size": 5617,
+						"line_ending": "Unix"
 					}
 				}
 			],
 			"build_system": "Packages/User/php-lint.sublime-build",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 201.0,
 				"selected_items":
 				[
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"format",
+						"Format: Javascript"
+					],
+					[
+						"ssjavs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"remove",
+						"Emmet: Remove Tag"
+					],
+					[
+						"remotag",
+						"Emmet: Remove Tag"
+					],
+					[
+						"css",
+						"Tidy CSS (Low Compression)"
+					],
 					[
 						"pip",
 						"Package Control: Install Package"
@@ -2389,10 +2441,6 @@
 					[
 						"install",
 						"Package Control: Install Package"
-					],
-					[
-						"remove",
-						"Package Control: Remove Package"
 					],
 					[
 						"disable",
@@ -2437,10 +2485,6 @@
 					[
 						"syntaxcss",
 						"Set Syntax: CSS"
-					],
-					[
-						"format",
-						"Format: Javascript"
 					],
 					[
 						"syntaxjs",
@@ -2803,10 +2847,6 @@
 						"Package Control: List Packages"
 					],
 					[
-						"css",
-						"Tidy CSS (Low Compression)"
-					],
-					[
 						"enab",
 						"Package Control: Enable Package"
 					],
@@ -2835,7 +2875,7 @@
 						"Trailing Spaces: Delete Trailing Spaces"
 					]
 				],
-				"width": 522.0
+				"width": 514.0
 			},
 			"console":
 			{
@@ -2852,6 +2892,66 @@
 			},
 			"file_history":
 			[
+				"/C/Users/John the whisler/Desktop/fuck/fuck.html",
+				"/C/Users/John the whisler/Desktop/nav/index.html",
+				"/C/Users/John the whisler/Desktop/fuck/js/menu.js",
+				"/D/Program Files (x86)/Sublime Text 2/PackageSetup.py",
+				"/D/www/about/map.html",
+				"/C/Users/John the whisler/Desktop/modify.txt",
+				"/D/www/1000m/index.html",
+				"/D/www/nav/index.html",
+				"/D/www/about-new/index.html",
+				"/D/www/about/index.html",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Settings/SideBarEnhancements.json",
+				"/D/www/1000m/css/km.css",
+				"/D/Program Files (x86)/Sublime Text 2/pyexpat.pyd",
+				"/D/Apache2.2/conf/httpd.conf",
+				"/D/www/about/js/about.js",
+				"/D/php5/php.ini",
+				"/D/www/about-new/js/wheel.js",
+				"/D/www/about-new/test.html",
+				"/D/www/index.php",
+				"/C/Users/John the whisler/Desktop/scroll.html",
+				"/D/www/about-new/js/jquery.mousewheel.min.js",
+				"/D/www/about-new/index.htmld",
+				"/D/www/activity-new/test.html",
+				"/D/www/activity-new/js/wheel.js",
+				"/D/www/app/index.html",
+				"/D/www/activity/index.html",
+				"/D/www/activity/css/sass/activity-module.scss",
+				"/D/www/app/css/index.css",
+				"/D/www/app/d.php",
+				"/D/www/wwwlvyecn/config/config_global.php",
+				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
+				"/D/www/wwwlvyecn/uc_server/data/config.inc.php",
+				"/D/www/wwwlvyecn/admin.php",
+				"/D/www/wwwlvyecn/config/config_ucenter.php",
+				"/C/Users/John the whisler/Desktop/爱应用 - 专注限时免费、应用评测、移动资讯_files/swipe.js",
+				"/C/Users/John the whisler/Desktop/爱应用 - 专注限时免费、应用评测、移动资讯_files/main.js",
+				"/C/Users/John the whisler/Desktop/爱应用 - 专注限时免费、应用评测、移动资讯_files/login.js",
+				"/C/Windows/php.ini",
+				"/D/Program Files (x86)/Apache2.2/conf/httpd.conf",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/D/www/app/lvye_ski/index.html",
+				"/D/www/app/lvye_app/index.html",
+				"/D/www/sidebar/js/quicknav.js",
+				"/D/www/sidebar/index.html",
+				"/D/www/sidebar/css/quicknav.css",
+				"/D/www/sidebar/css/sidebar.css",
+				"/C/Windows/System32/drivers/etc/hosts",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
+				"/C/WINDOWS/system32/drivers/etc/hosts",
+				"/D/Webroot/index.php",
+				"/D/Webroot/html5Test/index.html",
+				"/D/Webroot/tab/index.html",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/IndentGuides/Indent Guides.sublime-settings",
+				"/D/Webroot/tab/css/style.css",
+				"/D/Webroot/tab/css/jquery-ui-1.9.2.custom.min.css",
+				"/D/Webroot/tab/js/jquery-ui-1.9.2.custom.min.js",
+				"/C/Documents and Settings/Administrator/Desktop/jquery-ui-1.9.2/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/sublime-cross/cross.py",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/sublime-cross/cross.sublime-commands",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/sublime-cross/Cross.sublime-settings",
@@ -2864,7 +2964,6 @@
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/sublime-cross/.gitignore",
 				"/C/Documents and Settings/Administrator/Local Settings/Application Data/Google/Chrome/User Data/Default/User StyleSheets/Custom.css",
 				"/C/Documents and Settings/Administrator/Desktop/Custom.css",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Desktop/custom.css",
 				"/C/Documents and Settings/Administrator/Desktop/devTools.css",
 				"/C/Documents and Settings/Administrator/Desktop/New Folder/index.htm",
@@ -2882,11 +2981,9 @@
 				"/C/Documents and Settings/Administrator/Desktop/ace.html",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/User/HTML.sublime-settings",
 				"/C/Documents and Settings/Administrator/Desktop/h5bp-html5-boilerplate-v4.0.3-0-g2931501/h5bp-html5-boilerplate-1f24bf6/index.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
 				"/C/Documents and Settings/Administrator/Desktop/New Folder1/index.htm",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Theme - Nexus/README.md",
 				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Theme - Soda/README.md",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 				"/C/Documents and Settings/Administrator/Desktop/sublime-hosts-support-master/sublime-hosts-support-master/README",
 				"/C/Documents and Settings/Administrator/Desktop/712nfl/index.html",
 				"/C/Documents and Settings/Administrator/Desktop/712nfl/css/global.css",
@@ -2922,64 +3019,7 @@
 				"/C/Documents and Settings/Administrator/Desktop/New Folde1/list.htm",
 				"/C/Documents and Settings/Administrator/Desktop/New Folde1/detail.htm",
 				"/C/Documents and Settings/Administrator/My Documents/superfish.js",
-				"/C/Documents and Settings/Administrator/Desktop/superfish.js",
-				"/D/Webroot/New Folder/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/New Folder/index.html",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/combined (2).css",
-				"/C/Documents and Settings/Administrator/Desktop/widget.css",
-				"/C/Documents and Settings/Administrator/Desktop/Portable Offline Browser/Download/psd.tutsplus.com/default.htm",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/combined (1).css",
-				"/C/Documents and Settings/Administrator/My Documents/Downloads/combined.css",
-				"/C/Documents and Settings/Administrator/My Documents/index.dwt",
-				"/C/Documents and Settings/Administrator/My Documents/stylesheet.css",
-				"/C/Documents and Settings/Administrator/My Documents/page_header.lbi",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/emmet/snippets.json",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/emmet/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/Desktop/chain js/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/chain js/css/style.css",
-				"/D/Webroot/cutout/1/index.html",
-				"/D/Webroot/cutout/1/css/stylesheet.css",
-				"/C/WINDOWS/system32/drivers/etc/hosts",
-				"/C/Documents and Settings/Administrator/Desktop/index.html",
-				"/C/Documents and Settings/Administrator/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Documents and Settings/Administrator/My Documents/category.dwt",
-				"/C/Documents and Settings/Administrator/My Documents/goods.dwt",
-				"/C/Documents and Settings/Administrator/My Documents/script.js",
-				"/C/Documents and Settings/Administrator/My Documents/scripts.js",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/category.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/index.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/library/page_header.lbi",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/article_cat.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/goods.dwt",
-				"/D/Webroot/cutout/1/detailpage.html",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/message.dwt",
-				"//192.168.1.6/1207.com/themes/2012usajerseysus/goods.dwt",
-				"//192.168.1.6/1207.com/themes/2012usajerseysus/category.dwt",
-				"//192.168.1.6/1207.com/themes/2012nikejerseyso/index.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/library/sy_cat_best.lbi",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/user_clips.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/user_transaction.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/user_passport.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/search.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/article.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/flow.dwt",
-				"/D/Webroot/program/themes/2012cheapjerseysusa/library/cat_property.lbi",
-				"/D/Webroot/cutout/1/listpage.html",
-				"/D/Webroot/program/.htaccess",
-				"//192.168.1.6/1207.com/themes/bestnfljerseysso/library/consignee.lbi",
-				"//192.168.1.6/1207.com/themes/bestnfljerseysso/js/region.js",
-				"/C/Documents and Settings/Administrator/Desktop/CHAIN JS/new.html",
-				"//192.168.1.6/1207.com/themes/bestnfljerseysso/js/top.js",
-				"//192.168.1.6/1207.com/themes/bestnfljerseysso/flow.dwt",
-				"/C/Documents and Settings/Administrator/Desktop/新建 文本文档 (4).txt",
-				"/C/Documents and Settings/Administrator/Desktop/chain js/js/new.js",
-				"/C/Documents and Settings/Administrator/Desktop/New Folder (2)/index.html",
-				"//192.168.1.6/1207.com/themes/nhlnfljerseyss1111111111111/flow.dwt",
-				"/C/Documents and Settings/Administrator/Desktop/CHAIN JS/index.html",
-				"/C/Documents and Settings/Administrator/Desktop/CHAIN JS/js/city_state.js",
-				"/C/Documents and Settings/Administrator/Desktop/chainedmenu/chainedmenu.html",
-				"/C/Documents and Settings/Administrator/Desktop/chainedmenu/config.js",
-				"/C/Documents and Settings/Administrator/Desktop/1111.txt"
+				"/C/Documents and Settings/Administrator/Desktop/superfish.js"
 			],
 			"find":
 			{
@@ -3017,6 +3057,67 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"move",
+					"html",
+					"${charset}",
+					"html:5",
+					"micros",
+					"分享",
+					"2356903032",
+					"behavior",
+					"15",
+					"登大别山脉最高峰—白马尖 ，观龙井峡瀑布",
+					"|",
+					" | ",
+					"      ",
+					"about-new",
+					"mysql",
+					"fromTop",
+					"4",
+					"culture",
+					"joinUs",
+					"documentroot",
+					"extension_dir",
+					"phpinidir",
+					"<directory",
+					"console.log",
+					"activity",
+					"app",
+					"<meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />",
+					"width=\"60\"",
+					"phpmysql",
+					"extension_dir",
+					"DirectoryIndex index.html",
+					"libmysql.dl",
+					"PHPIniDir",
+					";extension=php_mysql.dll",
+					"domain",
+					"virtualhost",
+					"error_reporting",
+					"display_errors",
+					"reporting",
+					"reporting_",
+					"report_",
+					"report_error",
+					"track_errors",
+					"display",
+					"www",
+					"header",
+					"header#",
+					"header",
+					".png",
+					"viewport",
+					"grayColor",
+					"grey",
+					"sidebar",
+					"Directory",
+					"ruler",
+					"stackGuide",
+					"guide",
+					"draw_white_space\": \"all\"",
+					"indent_normal",
+					"indent",
+					"images/",
 					"56, 121, 217",
 					"3879D9",
 					"255",
@@ -3083,68 +3184,7 @@
 					".com ",
 					"http://",
 					".com",
-					"SNSÒ»²¿:  10",
-					"autocomplete",
-					"^([01]?\\\\d\\\\d?|2[0-4]\\\\d|25[0-5])\\\\.([01]?\\\\d\\\\d?|2[0-4]\\\\d|25[0-5])\\\\.([01]?\\\\d\\\\d?|2[0-4]\\\\d|25[0-5])\\\\.([01]?\\\\d\\\\d?|2[0-4]\\\\d|25[0-5])$",
-					"(?<=\\w)email",
-					"email(?<=\\w+)",
-					"(\\w|_)+email",
-					"name=\".*?password.*?\"",
-					"name=\".*?password\"",
-					"name=\"(.*?)password\\1\"",
-					"baseDir",
-					"type=\"text/css\"",
-					"<a href=\"#\"",
-					"(alt=\").*?\"",
-					"(onclick=\").*?\"",
-					"(title=\").*?\"",
-					"(<a.*?href=\").*?\"\\n?\\s*",
-					"\n(<a.*?href=\").*?\"\\n?\\s*",
-					"side",
-					"data",
-					"names",
-					"self",
-					"add_colon",
-					"selection",
-					".jcarousel-next",
-					"4c3457",
-					"ruler",
-					"4c3457",
-					"ruler",
-					"line",
-					"(script.*?src=\").*/(.*\\.js\")",
-					"(<link.*?href=\").*/(.*\\.css\")",
-					"line",
-					"$str",
-					".navigation > li",
-					"product-options",
-					"<!-- AddThis Button BEGIN -->",
-					"zoom1",
-					"cloud",
-					"cloudzoom",
-					"CloudZoom",
-					" CloudZoom",
-					"img-box",
-					"addArrow",
-					"$path",
-					"over",
-					"anchorClass",
-					"addArrow",
-					"hideSuperfishUl",
-					"addArrow",
-					"getMenu",
-					"hoverClass",
-					"sfhover",
-					"hoverClass",
-					"addArrow",
-					"cheapmascotcostumess.\naddArrow",
-					"autoArrows",
-					"cheapmascotcostumess.\naddArrow",
-					"$arrow",
-					"cheapmascotcostumess.\narrowClass",
-					"$arrow",
-					"span",
-					"104"
+					"SNSÒ»²¿:  10"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -3152,6 +3192,8 @@
 				"regex": false,
 				"replace_history":
 				[
+					"width=\"70\"",
+					"..images/",
 					"",
 					"email",
 					"password",
@@ -3277,9 +3319,7 @@
 					"<a href=\"#\"",
 					"../images/",
 					"",
-					"<a href=\"#\"",
-					"",
-					"<img src=\"\""
+					"<a href=\"#\""
 				],
 				"reverse": false,
 				"show_context": true,
@@ -3287,26 +3327,32 @@
 				"whole_word": false,
 				"wrap": false
 			},
+			"folders":
+			[
+				{
+					"path": "/D/www/1000m"
+				}
+			],
 			"groups":
 			[
 				{
-					"selected": 2,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/C/WINDOWS/system32/drivers/etc/hosts",
+							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/emmet/snippets.json",
 							"settings":
 							{
-								"buffer_size": 963,
+								"buffer_size": 28184,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										492,
-										492
+										20210,
+										20210
 									]
 								],
 								"settings":
@@ -3317,7 +3363,7 @@
 										"README",
 										"FIXME"
 									],
-									"buffer_scroll_name": "3ea673b1",
+									"buffer_scroll_name": "860c0f26",
 									"csslint_options":
 									{
 										"adjoining-classes": "warning",
@@ -3401,27 +3447,29 @@
 										"Ruby on Rails": "ruby"
 									},
 									"sublimelinter_wrap_find": true,
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 11172.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
+							"file": "/D/www/1000m/index.html",
 							"settings":
 							{
-								"buffer_size": 11953,
+								"buffer_size": 6950,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										10064,
-										10064
+										1601,
+										1601
 									]
 								],
 								"settings":
@@ -3432,6 +3480,7 @@
 										"README",
 										"FIXME"
 									],
+									"buffer_scroll_name": "fef2d151",
 									"csslint_options":
 									{
 										"adjoining-classes": "warning",
@@ -3484,6 +3533,7 @@
 										"trailing": true,
 										"wsh": true
 									},
+									"origin_encoding": "UTF-8",
 									"pep8": true,
 									"pep8_ignore":
 									[
@@ -3519,25 +3569,24 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 390.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 2,
-							"file": "/D/Webroot/index.php",
 							"settings":
 							{
-								"buffer_size": 261,
+								"buffer_size": 156,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										237,
-										237
+										107,
+										115
 									]
 								],
 								"settings":
@@ -3548,7 +3597,6 @@
 										"README",
 										"FIXME"
 									],
-									"buffer_scroll_name": "c5f77438",
 									"csslint_options":
 									{
 										"adjoining-classes": "warning",
@@ -3601,7 +3649,6 @@
 										"trailing": true,
 										"wsh": true
 									},
-									"origin_encoding": "Undefined",
 									"pep8": true,
 									"pep8_ignore":
 									[
@@ -3633,14 +3680,137 @@
 										"Ruby on Rails": "ruby"
 									},
 									"sublimelinter_wrap_find": true,
-									"syntax": "Packages/PHP/PHP.tmLanguage"
+									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/D/www/1000m/css/km.css",
+							"settings":
+							{
+								"buffer_size": 5617,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1923,
+										1923
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"buffer_scroll_name": "18b85cb8",
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110.0
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"origin_encoding": "ASCII",
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2.0,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 924.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
 						}
+					]
+				},
+				{
+					"sheets":
+					[
 					]
 				}
 			],
@@ -3661,11 +3831,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.874945175351,
 					1.0
 				],
 				"rows":
@@ -3679,7 +3856,7 @@
 			{
 				"height": 142.0
 			},
-			"position": "0,0,1,-32000,-32000,-1,-1,750,-197,45,1240",
+			"position": "0,0,1,-1,-1,-1,-1,862,148,129,1585",
 			"replace":
 			{
 				"height": 70.0
@@ -3690,6 +3867,22 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"ind",
+						"css/index.css"
+					],
+					[
+						"index.css",
+						"css/index.css"
+					],
+					[
+						"index",
+						"index.html"
+					],
+					[
+						".scss",
+						"css/sass/activity-module.scss"
+					],
 					[
 						"goods",
 						"2012cheapjerseysusa/goods.dwt"
@@ -3741,10 +3934,6 @@
 					[
 						"list",
 						"listpage.html"
-					],
-					[
-						"index",
-						"index.html"
 					],
 					[
 						"index.ht",
@@ -4189,18 +4378,6 @@
 					[
 						"proserch",
 						"product/search.html"
-					],
-					[
-						"login",
-						"user/adminu/login.html"
-					],
-					[
-						"login.htm",
-						"user/login.html"
-					],
-					[
-						"head.css",
-						"css/header.css"
 					]
 				],
 				"width": 0.0
@@ -4220,8 +4397,8 @@
 			"show_minimap": false,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": false,
-			"side_bar_width": 50.0,
+			"side_bar_visible": true,
+			"side_bar_width": 143.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": ""

@@ -1,6 +1,6 @@
 {
-	"D:/Webroot/ajaxtest":{
-		"url_testing":"http://localhost/ajaxtest",
-		"url_production":"file:///D:/Webroot/ajaxtest/"
+	"D:/www":{
+		"url_testing":"http://localhost/1000m",
+		"url_production":"file:///D:/www/1000m"
 	}
 }
