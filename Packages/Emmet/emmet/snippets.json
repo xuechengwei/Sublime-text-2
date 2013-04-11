@@ -493,7 +493,7 @@
 	"html": {
 		"filters": "html",
 		"snippets": {
-			"c": "<!-- ================= ${1:comment} begin ================= -->\n$2\n<!-- ===== ${1:comment} end ===== -->",
+			"c": "<!-- ${1:comment} begin -->\n$2\n<!-- ${1:comment} end -->",
 			"cc:ie6": "<!--[if lte IE 6]>\n\t${child}|\n<![endif]-->",
 			"cc:ie": "<!--[if IE]>\n\t${child}|\n<![endif]-->",
 			"cc:noie": "<!--[if !IE]><!-->\n\t${child}|\n<!--<![endif]-->",
@@ -502,7 +502,7 @@
 			"html:xt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"${lang}\">\n<head>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html;charset=${charset}\" />\n\t<title></title>\n</head>\n<body>\n\t${child}${2}\n</body>\n</html>",
 			"html:xs": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"${lang}\">\n<head>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html;charset=${charset}\" />\n\t<title>${1:Document}</title>\n</head>\n<body>\n\t${child}${2}\n</body>\n</html>",
 			"html:xxs": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"${lang}\">\n<head>\n\t<meta http-equiv=\"Content-Type\" content=\"text/html;charset=${charset}\" />\n\t<title>${1:Document}</title>\n</head>\n<body>\n\t${child}${2}\n</body>\n</html>",
-			"html:5": "<!doctype html>\n<html lang=\"${lang}\">\n<head>\n\t<meta charset=\"${charset}\">\n\t<meta name=\"keywords\" content=\"\">\n\t<meta name=\"description\" content=\"\">\n\t<title>${1:Document}</title>\n</head>\n<body>\n\t${child}${2}\n</body>\n</html>",
+			"html:5": "<!doctype html>\n<html lang=\"${lang}\">\n<head>\n\t<meta charset=\"${charset}\">\n\t<meta name=\"keywords\" content=\"\">\n\t<meta name=\"description\" content=\"\">\n\t<!--[if lt IE 9]>\n\t\t<script src=\"http://html5shim.googlecode.com/svn/trunk/html5.js\"></script>\n\t<![endif]-->\n\t<title></title>\n</head>\n<body>\n\t${child}${1}\n</body>\n</html>",
 			"style": "<style>\n\t$1\n</style>",
 			"style4": "<style type=\"text/css\">\n\t$1\n</style>",
 			"script": "<script>\n\t$1\n</script>",
