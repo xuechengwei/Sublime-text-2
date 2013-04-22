@@ -32,6 +32,7 @@
 		"INI",
 		"jQuery",
 		"JsFormat",
+		"JSLint",
 		"JsMinifier",
 		"KeymapManager",
 		"Live CSS",

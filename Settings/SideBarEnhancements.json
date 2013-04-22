@@ -1,6 +1,6 @@
 {
 	"D:/www":{
-		"url_testing":"http://localhost/1000m",
-		"url_production":"file:///D:/www/1000m"
+		"url_testing":"http://localhost/midi/",
+		"url_production":"file:///D:/www/midi/"
 	}
 }

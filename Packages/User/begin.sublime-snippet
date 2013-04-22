@@ -1,44 +1,30 @@
 <snippet>
-	<content><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<content><![CDATA[<!doctype html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 	<title></title>
-
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.6.0/build/cssreset/cssreset-min.css" />
-	<link rel="stylesheet" type="text/css" href="css/${1:style}.css" />
+	<link rel="stylesheet" href="css/global.css" media="all">
+	<link rel="stylesheet" href="css/${1:styles}.css" media="all">
 </head>
 <body>
-	<!-- header begin -->
-	<div class="header">
-		<h1 class="logo">
-		 	<a href="#">
-		 		<img src="images/logo.${2:jpg}" alt=""/>
-		 	</a>
-		 </h1>
-		 <ul>
-		 	<li><a href="#">Home</a></li>
-		 	<li><a href="#">NavItem1</a></li>
-		 	<li><a href="#">NavItem1</a></li>
-		 	<li><a href="#">NavItem1</a></li>
-		 	<li><a href="#">NavItem1</a></li>
-		 	<li><a href="#">NavItem1</a></li>
-		 </ul>
+	<header class="header">
+		<div class="inner-header">
+			$2
+		</div>
+	</header>
+	<div class="container">
+
 	</div>
-	<!-- header end -->
-
-	<!-- container begin -->
-	<div class="container">$3</div>
-	<!-- container end -->
-
-	<!-- footer begin -->
-	<div class="footer">$4</div>
-	<!-- footer end -->
+	<footer class="footer">
+		<div class="inner-footer"></div>
+	</footer>
 </body>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript">
-
-	</script>
 </html>]]>
 	</content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
