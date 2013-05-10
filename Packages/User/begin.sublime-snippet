@@ -1,29 +1,49 @@
 <snippet>
 	<content><![CDATA[<!doctype html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <meta name="viewport" content="width=device-width">
 	<title></title>
 	<link rel="stylesheet" href="css/global.css" media="all">
 	<link rel="stylesheet" href="css/${1:styles}.css" media="all">
+	<!--[if lte IE 6]>
+		<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+		<script>
+			DD_belatedPNG.fix('.');
+		</script>
+	<![endif]-->
 </head>
 <body>
+	<!--[if lt IE 7]>
+	    <div class="chromeframe">您正在使用 <strong>过时的</strong> 浏览器. 请 <a href="http://browsehappy.com/">更新您的浏览器</a> or <a href="http://www.google.com/chromeframe/?redirect=true">激活 Google Chrome 框架</a> 来提高用户体验！</div>
+	<![endif]-->
+	<!-- header begin -->
 	<header class="header">
 		<div class="inner-header">
 			$2
 		</div>
 	</header>
+	<!-- header end -->
+	<!-- container begin -->
 	<div class="container">
 
 	</div>
+	<!-- container end -->
 	<footer class="footer">
-		<div class="inner-footer"></div>
+		<div class="inner-footer">
+
+		</div>
 	</footer>
+	<!-- footer end -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
 </body>
 </html>]]>
 	</content>

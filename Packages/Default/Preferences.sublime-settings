@@ -188,7 +188,7 @@
     // Determines what character(s) are used to terminate each line in new files.
     // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and
     // 'unix' (LF only).
-    "default_line_ending": "system",
+    "default_line_ending": "unix",
 
     // When enabled, pressing tab will insert the best matching completion.
     // When disabled, tab will only trigger snippets or insert a tab.

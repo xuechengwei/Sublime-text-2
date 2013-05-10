@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<ul class="footerlink">
+	<li><a href="http://www.lvye.cn/about/#aboutUs">关于绿野</a><span class="spacer">|</span></li>
+	<li><a href="http://www.lvye.cn/about/#connectUs">联系我们</a><span class="spacer">|</span></li>
+	<li><a href="http://www.lvye.cn/link/">友情链接</a><span class="spacer">|</span></li>
+	<li><a href="http://www.lvye.cn/article-9644-1.html">帮助中心</a><span class="spacer">|</span></li>
+	<li><a href="mailto:hi@lvye.cn">广告与合作</a><span class="spacer">|</span></li>
+	<li><a href="http://www.lvye.cn/">绿野户外网</a></li>
+</ul>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lvyefooter</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

@@ -14,7 +14,6 @@
 			"java",
 			"-jar", "${packages}\\HTML Compressor\\bin\\htmlcompressor-1.5.3.jar",
 			"--type", "html",
-			"--remove-quotes",
 			"--compress-js",
 			"--compress-css",
 			"-o", "${file_base_name}.min.${file_extension}",
@@ -35,7 +34,7 @@
     },
     "linux": {
         "cmd": [
-        	"java -jar '${packages}/HTML Compressor/bin/htmlcompressor-1.5.3.jar' --compress-js --compress-css $file -o ${file_base_name}.min.${file_extension}"	
+        	"java -jar '${packages}/HTML Compressor/bin/htmlcompressor-1.5.3.jar' --compress-js --compress-css $file -o ${file_base_name}.min.${file_extension}"
 		],
 		"shell": true
     },

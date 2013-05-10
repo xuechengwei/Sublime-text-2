@@ -16,7 +16,9 @@
 		"CTags",
 		"FileDiffs",
 		"Clipboard History",
-		"JSLint"
+		"JSLint",
+		"LiveReload",
+		"SublimeLinter"
 	],
 	"indent_guide_options":
 	[
@@ -27,7 +29,6 @@
 	],
 	"theme": "Nexus.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": true,
 	"word_separators": "./\\()\"'-:_,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "true"
 }
