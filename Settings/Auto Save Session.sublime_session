@@ -2537,7 +2537,15 @@
 					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet",
 					"settings":
 					{
-						"buffer_size": 1600,
+						"buffer_size": 1805,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "<!doctype html>\n<html>\n<head>\n	<meta charset=\"UTF-8\">\n	<meta name=\"keywords\" content=\"\">\n	<meta name=\"description\" content=\"\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n	<title></title>\n	<link rel=\"stylesheet\" href=\"css/global.css\" media=\"all\">\n	<link rel=\"stylesheet\" href=\"css/styles.css\" media=\"all\">\n	<!--[if lte IE 6]>\n		<script src=\"js/DD_belatedPNG_0.0.8a-min.js\"></script>\n		<script>\n			DD_belatedPNG.fix('.');\n		</script>\n	<![endif]-->\n	<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>\n	<script>window.jQuery || document.write('<script src=\"js/jquery.min.js\"><\\/script>')</script>\n	<!--[if lt IE 9]>\n		<script src=\"js/html5.js\"></script>\n		<script src=\"js/selectivizr-min.js\"></script>\n	<![endif]-->\n</head>\n<body>\n	<!--[if lt IE 7]>\n	    <div class=\"chromeframe\">\n			<div id=\"closex\">X</div>\n			<div class=\"chromeframetxt\">\n				您正在使用 <strong>过时的</strong> 浏览器. 请 <a href=\"http://browsehappy.com/\">更新您的浏览器</a> or <a href=\"http://www.google.com/chromeframe/?redirect=true\">激活 Google Chrome 框架</a> 来提高用户体验!\n			</div>\n		</div>\n		<script>\n			document.getElementById('closex').onclick=function(){\n				this.parentNode.style.display=\"none\";\n			}\n		</script>\n	<![endif]-->\n	<!-- header begin -->\n	<header class=\"header\">\n		<div class=\"inner-header\">\n			\n		</div>\n	</header>\n	<!-- header end -->\n	<!-- container begin -->\n	<div class=\"container\">\n\n	</div>\n	<!-- container end -->\n	<footer class=\"footer\">\n		<div class=\"inner-footer\">\n\n		</div>\n	</footer>\n	<!-- footer end -->\n</body>\n</html>",
+					"settings":
+					{
+						"buffer_size": 1538,
 						"line_ending": "Unix"
 					}
 				},
@@ -3538,7 +3546,7 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 3,
 					"sheets":
 					[
 						{
@@ -3553,8 +3561,8 @@
 								"selection":
 								[
 									[
-										1862,
-										1862
+										1025,
+										615
 									]
 								],
 								"settings":
@@ -3566,7 +3574,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 594.0,
+								"translation.y": 330.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -3602,7 +3610,7 @@
 							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet",
 							"settings":
 							{
-								"buffer_size": 1600,
+								"buffer_size": 1805,
 								"regions":
 								{
 									"TagLint":
@@ -3622,12 +3630,8 @@
 								"selection":
 								[
 									[
-										536,
-										536
-									],
-									[
-										736,
-										736
+										1558,
+										1558
 									]
 								],
 								"settings":
@@ -3639,13 +3643,40 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 396.0,
+								"translation.y": 12.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 3,
+							"settings":
+							{
+								"buffer_size": 1538,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										293,
+										299
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 198.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
 							"file": "/D/www/salon/css/styles.css",
 							"settings":
 							{
@@ -3673,7 +3704,7 @@
 							"type": "text"
 						},
 						{
-							"buffer": 4,
+							"buffer": 5,
 							"file": "/D/www/salon/css/global.css",
 							"settings":
 							{
