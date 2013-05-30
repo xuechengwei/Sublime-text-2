@@ -1,8 +1,10 @@
 <snippet>
 	<content><![CDATA[
-/* ${1:header} styles --------------------------------------- */
+
+/* ------>| ${1:comment} |<------ */
+/* -------------------------------------------------------------------------- */
+
 $2
-/* ${1:header} styles end --------------------------------------- */
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>cssc</tabTrigger>

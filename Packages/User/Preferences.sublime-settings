@@ -10,15 +10,15 @@
 	[
 		"Git",
 		"Gist",
+		"LiveReload",
 		"ZenCoding",
+		"JSLint",
 		"PHPUnit",
 		"PlainTasks",
 		"CTags",
 		"FileDiffs",
-		"Clipboard History",
-		"JSLint",
-		"LiveReload",
-		"SublimeLinter"
+		"SublimeLinter",
+		"Clipboard History"
 	],
 	"indent_guide_options":
 	[
@@ -29,6 +29,6 @@
 	],
 	"theme": "Nexus.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
-	"word_separators": "./\\()\"'-:_,.;<>~!@#$%^&*|+=[]{}`~?",
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "true"
 }
