@@ -1,6 +1,11 @@
 {
 	"folder_history":
 	[
+		"/D/www/over/simpleheaderfooter",
+		"/D/workspace/library",
+		"/D/www/show",
+		"/D/www/newhd",
+		"/D/www/july",
 		"/C/Users/John the whisler/Desktop/lvye",
 		"/D/www/salon",
 		"/D/www/newdetail",
@@ -100,16 +105,52 @@
 		"/C/Documents and Settings/Administrator/desktop/44",
 		"/D/wamp/www"
 	],
-	"last_window_id": 28,
+	"last_window_id": 29,
 	"settings":
 	{
-		"new_window_height": 1022.0,
+		"new_window_height": 870.0,
 		"new_window_settings":
 		{
 			"auto_complete":
 			{
 				"selected_items":
 				[
+					[
+						"scroll",
+						"scrollTop"
+					],
+					[
+						"scr",
+						"scrollTop  (function)"
+					],
+					[
+						"scrip",
+						"script.js"
+					],
+					[
+						"img",
+						"imagePreview"
+					],
+					[
+						"no",
+						"no-repeat  (value)"
+					],
+					[
+						"pare",
+						"parseInt"
+					],
+					[
+						"show",
+						"showtarget"
+					],
+					[
+						"li",
+						"line-height"
+					],
+					[
+						"ba",
+						"background-image"
+					],
 					[
 						"get",
 						"get	Get Elements"
@@ -135,10 +176,6 @@
 						"list-style"
 					],
 					[
-						"no",
-						"no-repeat"
-					],
-					[
 						"h",
 						"header_bg.jpg	w:6 h:66"
 					],
@@ -153,10 +190,6 @@
 					[
 						"bg",
 						"nav_bg.png	w:6 h:69"
-					],
-					[
-						"ba",
-						"background-image"
 					],
 					[
 						"cl",
@@ -189,10 +222,6 @@
 					[
 						"scro",
 						"scrollTop"
-					],
-					[
-						"scr",
-						"scrollTo"
 					],
 					[
 						"text",
@@ -547,9 +576,69 @@
 			"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
 			"command_palette":
 			{
-				"height": 174.0,
+				"height": 93.0,
 				"selected_items":
 				[
+					[
+						"pretty",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"tidyc",
+						"Tidy CSS"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"sspy",
+						"Set Syntax: Python"
+					],
+					[
+						"format",
+						"Format: Javascript"
+					],
+					[
+						"pre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"html pre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"htmlpre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"ssjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"fomat",
+						"Format: Javascript"
+					],
+					[
+						"installp",
+						"Package Control: Install Package"
+					],
+					[
+						"removp",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"snippetget",
+						"Snippet: Get Elements"
+					],
+					[
+						"sscss",
+						"Set Syntax: CSS"
+					],
 					[
 						"remove p",
 						"Package Control: Remove Package"
@@ -563,24 +652,12 @@
 						"Package Control: List Packages"
 					],
 					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
-						"ssjs",
-						"Set Syntax: JavaScript"
-					],
-					[
 						"disco",
 						"Package Control: Discover Packages"
 					],
 					[
 						"upgrad",
 						"Package Control: Upgrade Package"
-					],
-					[
-						"sshtml",
-						"Set Syntax: HTML"
 					],
 					[
 						"comb",
@@ -597,10 +674,6 @@
 					[
 						"google",
 						"Snippet: Google AJAX Libraries: jQuery"
-					],
-					[
-						"format",
-						"Format: Javascript"
 					],
 					[
 						"disable pa",
@@ -635,28 +708,12 @@
 						"Tidy HTML"
 					],
 					[
-						"fomat",
-						"Format: Javascript"
-					],
-					[
-						"pretty",
-						"HTMLPrettify: Prettify"
-					],
-					[
 						"emmet",
 						"Emmet: Encode\\Decode Image to data:URL"
 					],
 					[
-						"pre",
-						"HTMLPrettify: Prettify"
-					],
-					[
 						"css",
 						"Tidy CSS (Low Compression)"
-					],
-					[
-						"sscss",
-						"Set Syntax: CSS"
 					],
 					[
 						"ssjavs",
@@ -681,10 +738,6 @@
 					[
 						"ssh",
 						"Set Syntax: HTML"
-					],
-					[
-						"htmlpre",
-						"HTMLPrettify: Prettify"
 					],
 					[
 						"ssht",
@@ -1037,30 +1090,6 @@
 					[
 						"snippet sm",
 						"Snippet: smartytag"
-					],
-					[
-						"task",
-						"Tasks: New document"
-					],
-					[
-						"doc",
-						"DocBlockr: Decorate line comment"
-					],
-					[
-						"docb",
-						"DocBlockr: Decorate line comment"
-					],
-					[
-						"rename",
-						"File: Rename"
-					],
-					[
-						"lis",
-						"Package Control: List Packages"
-					],
-					[
-						"enab",
-						"Package Control: Enable Package"
 					]
 				],
 				"width": 522.0
@@ -1080,22 +1109,101 @@
 			},
 			"file_history":
 			[
+				"/C/Users/John the whisler/Desktop/index.html",
+				"/D/www/over/sitemap/css/sitemap.css",
+				"/D/www/structure/css/page.css",
+				"/D/www/newhd/css/page.css",
+				"/D/www/structure/css/common.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Settings/SideBarEnhancements.json",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/AutoFileName/autofilename.py",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/AutoFileName/.gitignore",
+				"/C/Users/John the whisler/Desktop/网站地图_绿野网.htm",
+				"/D/www/over/sitemap/sitemap.html",
+				"/D/www/july/js/script.js",
+				"/D/www/july/css/common.css",
+				"/C/Users/John the whisler/Desktop/table.html",
+				"/D/www/newhd/list.html",
+				"/D/www/newhd/list-search.html",
+				"/D/www/newhd/index.php",
+				"/D/www/july/index.html",
+				"/D/www/july/css/index.css",
+				"/D/www/newhd/inc/rightads.html",
+				"/D/www/newhd/inc/actlist.html",
+				"/D/www/newhd/inc/filterbar.html",
+				"/D/www/newhd/inc/actscreen.html",
+				"/D/www/newhd/inc/meganav.html",
+				"/D/www/newhd/inc/breadcrumbs.html",
+				"/D/www/newhd/inc/headerbottom.html",
+				"/D/www/newhd/inc/headertop.html",
+				"/C/Users/John the whisler/Downloads/gotop (1).html",
+				"/D/www/newhd/css/common.css",
+				"/D/www/july/css/page.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyefooter.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/My97DatePickerBeta/demo.htm",
+				"/C/Users/John the whisler/Desktop/category.css",
+				"/D/www/newhd/pic.html",
+				"/D/www/newhd/txt.html",
+				"/D/www/newhd/js/huodong.js",
+				"/D/www/newhd/js/My97DatePicker/WdatePicker.js",
+				"/D/www/newhd/test.html",
+				"/D/www/newhd/js/viewswitcher.js",
+				"/D/www/newhd/js/index.js",
+				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
+				"/D/www/newhd/index.html",
+				"/D/www/over/duanwu/index.html",
+				"/C/Users/John the whisler/Desktop/register.html",
+				"/C/Users/John the whisler/Desktop/register.min.html",
+				"/C/Users/John the whisler/Desktop/lvye/activity.css",
+				"/C/Users/John the whisler/Desktop/jQuery.countdown-master/jQuery.countdown-master/examples/groupon.html",
+				"/C/Users/John the whisler/Desktop/jQuery.countdown-master/jQuery.countdown-master/src/jquery.countdown.js",
+				"/C/Users/John the whisler/Desktop/lvye/eventshow.htm",
+				"/D/www/over/newdetail/index.html",
+				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown-zh-CN.js",
+				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/countdownBasic.html",
+				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown.js",
+				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown.min.js",
+				"/C/Users/John the whisler/Desktop/lvye/discuz_plugin_event.xml",
+				"/D/www/newhd/css/index.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/csscomment.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/search.css",
+				"/D/www/structure/index.html",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/John the whisler/Desktop/art157dreamw/styles.css",
+				"/C/Users/John the whisler/Desktop/joddit-global-css.0.8.0/joddit-global-css/css/jgcss-admin.css",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet",
-				"/C/Users/John the whisler/Desktop/lvye/sftp-config.json",
+				"/D/www/structure/css/base.css",
+				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/css/normalize.css",
+				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/index.html",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/cssbegin.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/bootstrap-master/README.md",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Clickable URLs/README.md",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Clickable URLs/Default (Windows).sublime-keymap",
+				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/css/main.css",
+				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/404.html",
+				"/D/www/structure/css/global.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML/Symbol List - ID.tmPreferences",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/C/Users/John the whisler/.ssh/id_rsa.pub",
+				"/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/js/kkcountdown.js",
+				"/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/index.html",
+				"/C/Users/John the whisler/Desktop/lvye/timeCountDown.js",
+				"/D/www/newdetail/js/timeCountDown.js",
+				"/D/Apache2.2/conf/httpd.conf",
+				"/D/www/newdetail/index.html",
+				"/D/www/pay.lvye.cn/application/config/config.php",
+				"/C/Windows/System32/drivers/etc/hosts",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/FTPSync/README.md",
+				"/C/Users/John the whisler/Desktop/lvye/sftp-config.json",
 				"/D/www/salon/css/global.css",
 				"/D/www/salon/css/styles.css",
 				"/D/www/salon/index.html",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyenav.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyefooter.sublime-snippet",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyelogo.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Settings/SideBarEnhancements.json",
 				"/D/www/over/newact/js/imgpreview.js",
 				"/D/www/over/newact/css/index.css",
 				"/D/www/over/newact/js/script.js",
 				"/D/www/over/newact/index.html",
-				"/D/www/newdetail/index.html",
-				"/D/www/structure/index.html",
 				"/D/www/structure/html5-boilerplate/index.html",
 				"/C/Users/John the whisler/Desktop/demo/demo2.html",
 				"/D/www/structure/html5-boilerplate/doc/css.md",
@@ -1123,95 +1231,16 @@
 				"/C/Users/John the whisler/Desktop/sitemap.html",
 				"/D/www/over/act/index.html",
 				"/D/www/over/allcat/css/allcat.css",
-				"/D/www/newdetail/js/timeCountDown.js",
 				"/D/www/newdetail/css/xwb_2.css",
 				"/D/www/olympus/index.html",
 				"/C/Users/John the whisler/Desktop/timeCountDown.js",
 				"/C/Users/John the whisler/Desktop/countdown/countdown_v2.0.0/examples 1.html",
 				"/D/www/olympus/js/sample01.js",
-				"/D/www/olympus/css/styles.css",
-				"/D/www/olympus/css/carousel.css",
-				"/D/www/over/newact/outsite.html",
-				"/D/www/over/act/js/scripts.js",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/css/normalize.css",
-				"/C/Users/John the whisler/Desktop/huodong.html",
-				"/C/Users/John the whisler/Desktop/自助装机、模拟攒机、在线装机 – 京东商城.html",
-				"/D/www/allcat/index.html",
-				"/D/www/allcat/css/index (2).css",
-				"/D/www/allcat/css/index.css",
-				"/C/Users/John the whisler/Desktop/索引.css",
-				"/D/www/lvyehuodong/huodong/views.php",
-				"/D/Apache2.2/conf/httpd.conf",
-				"/D/www/olympus/page2.html",
-				"/D/www/over/nav/index.html",
-				"/C/Users/John the whisler/Desktop/carouFredSel-6.2.1/carouFredSel-6.2.1/index.html",
-				"/D/www/olympus/page1.html",
-				"/C/Users/John the whisler/Desktop/carouFredSel-6.2.1/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js",
-				"/C/Users/John the whisler/Desktop/ryrych-rcarousel-1.1.3-0-g24cb0ca/ryrych-rcarousel-3b32a0b/examples/auto_reverse.html",
-				"/C/Users/John the whisler/Desktop/demo/demo1.html",
-				"/D/www/olympus/js/jquery.carousel-1.1.min.js",
-				"/D/www/olympus/css/sass/global.scss",
-				"/D/www/olympus/css/sass/styles.scss",
-				"/C/Users/John the whisler/Desktop/demo/css/carousel.css",
-				"/C/Users/John the whisler/Desktop/demo/demo.html",
-				"/C/Users/John the whisler/Desktop/demo/js/sample01.js",
-				"/C/Users/John the whisler/Desktop/demo/css/content.css",
-				"/C/Users/John the whisler/Desktop/jQuery Carousel Evolution.htm",
-				"/D/www/olympus/css/global.css",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-				"/C/Users/John the whisler/Desktop/活动二级频道/目的地分类.txt",
-				"/C/Users/John the whisler/Desktop/活动二级频道/全部活动分类.txt",
-				"/D/www/lvyehuodong/static/huodong/js/huodong.js",
-				"/D/www/lvyehuodong/static/huodong/index.js",
-				"/D/php5/php.ini",
-				"/D/www/act/index.html",
-				"/D/www/lvyehuodong/huodong/index.php",
-				"/C/Windows/System32/drivers/etc/hosts",
-				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
-				"/D/www/act/css/styles.css",
-				"/D/www/huodong/config.php",
-				"/D/www/sdk/php/app/as.ini",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/emmet/snippets.json",
-				"/D/www/sdk/php/lib/XS.php",
-				"/D/www/sdk/php/app/lvyenew.ini",
-				"/D/www/act/js/scripts.js",
-				"/D/www/act/js/js.js",
-				"/D/www/act/css/global.css",
-				"/D/www/over/midi/index.html",
-				"/C/Users/John the whisler/Desktop/act/css/extra.css",
-				"/C/Users/John the whisler/Desktop/act/index.html",
-				"/D/www/over/edm/lvye1.min.html",
-				"/D/www/over/edm/lvye2.min.html",
-				"/D/www/over/edm/lvye1.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML Compressor/Html Compressor.sublime-build",
-				"/D/www/act/index.min.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/YUI Compressor.sublime-build",
-				"/D/www/act/css/styles-min.css",
-				"/C/Users/John the whisler/Desktop/lvye2.html",
-				"/D/www/midi/index.html",
-				"/C/Users/John the whisler/Desktop/lvye.html",
-				"/D/www/midi/css/global.css",
-				"/D/www/midi/css/styles.css",
-				"/C/Users/John the whisler/Desktop/专题/迷笛/节目单.txt",
-				"/D/www/midi/index - 副本.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/John the whisler/Desktop/acac1.js",
-				"/D/www/midi/map/bjmap.html",
-				"/D/www/midi/map/szmap.html",
-				"/D/www/midi/map/shmap.html",
-				"/D/www/midi/shmap.html",
-				"/D/www/midi/szmap.html",
-				"/D/www/midi/bjmap.html",
-				"/D/www/over/edm/index.html",
-				"/C/Users/John the whisler/Desktop/jQueryElegantAccordion/jQuery+CSS3手风琴图片切换特效/index.html",
-				"/D/www/midi/css/accordion.css",
-				"/D/TDDOWNLOAD/jiaoben762/jiaoben762/index.html",
-				"/D/www/midi/js/aaAccordion.class.js"
+				"/D/www/olympus/css/styles.css"
 			],
 			"find":
 			{
-				"height": 41.0
+				"height": 40.0
 			},
 			"find_in_files":
 			{
@@ -1245,134 +1274,134 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"活动特色",
-					"eventphtots",
-					"imgobj",
-					"300",
-					"max-width: 300px",
-					"1px solid #CCC",
-					"报名",
-					"报名结束",
-					"script",
-					"更多活",
-					"截止",
-					"expiration",
-					"pub_expiration",
-					"截止日期",
-					"保险",
-					"count-down",
-					"距离",
-					"date",
-					"$",
-					"onload",
-					"expiredate",
-					"onload",
-					"threadpic",
-					"$activity[expiration]",
-					"spvimg",
-					"spamv",
-					"spvm",
-					"sec",
-					"form",
-					"script",
-					"spvimg",
-					"pub_expiration",
-					"截止日期",
-					"spvimg",
-					"emphred",
-					"该活动支持",
-					"emphor",
-					"该活动支持",
-					"emphor",
-					"活动特色",
-					"activity_leadergrade",
-					"green",
-					"pub_strengthtips",
-					"强度提示",
-					"strong",
-					"style=\"color:green;\"",
-					"style=\"color:red;\"",
-					"预付费",
-					"集合时间",
-					"pub_totalfee",
-					"活动经费",
-					"napplied",
-					"activity_insurance",
-					"保险",
-					"活动经费",
-					"总里程",
-					"activity_traffic",
-					"activity_strengtip",
-					"activity_gathertime",
-					"领",
-					"领队名称",
-					"领队",
-					"名称",
-					"rowsample",
-					"rowcontent",
-					"|",
-					" | ",
-					"</a>",
-					" ｜ ",
-					"newdetail",
-					"fds",
-					"actfeature",
-					"马上报名",
-					"tooltip",
-					"/over",
-					"北京北站门口",
-					"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
-					"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
-					"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
-					"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
-					"&nbsp;&nbsp;&nbsp;&nbsp;",
-					"&nbsp;&nbsp;&nbsp;",
-					"&nbsp;&nbsp;",
-					"副",
-					"领队姓名</a>",
-					"领队姓名",
-					"出发：5月11日(六)返回：5月12日(日)",
-					"出发：5月11日（六）返回：5月12日（日",
-					"出发：5月11日（六）",
-					"left-img",
-					"初级领队培训",
-					"意见反馈",
-					"classNames",
-					"100",
-					"localstorage",
-					"activity-list",
-					".end().find('.about-act')",
-					".find('.about-act')",
-					"script",
-					"activity-list",
-					".grid-view .icons",
-					"imaes",
-					"领<span",
-					"领队",
-					"(.)-small",
-					"details",
-					"view",
-					"openlvye",
+					"haidao",
+					"户外兴趣",
+					"港澳",
+					"com",
+					"haidaO",
+					"地方版",
+					"index.html",
+					"柳沟",
+					"huairou",
+					"huarou",
 					"怀柔",
-					"{{CATEGORY_URL}}",
-					"<<<<<<<",
-					"gadget-title",
-					"copy_btn",
-					"$('.framehere').html($('#outputfr').val())",
-					"绿野救援队",
-					" 绿野救援队",
-					"ul",
-					"displayyes",
-					"tttxt",
-					"self-adaption",
-					"grayhint",
-					"绿野活动",
-					"self-adaption",
-					"displayyes",
-					"textarea",
-					"displayyes",
-					"tttxt",
-					"actqt"
+					"<dd>",
+					"<dt>",
+					"dt",
+					"活动频道",
+					"actblock",
+					"<dd>",
+					"溯溪",
+					"huairou",
+					"huarou",
+					"活动",
+					"公益",
+					"滑雪场最新动态",
+					"线路大全",
+					"活动频道",
+					"<li>",
+					"活动频道",
+					"<li>",
+					"<div class=\"tablerow clearfix\">",
+					"<li>",
+					"li",
+					"户外知识",
+					".tablerow",
+					"li",
+					"专题",
+					"select",
+					"<i href=\"\" class=\"closex\"></i>",
+					"selecteditem",
+					"listwrap",
+					"<span>&rarr;</span>",
+					"&rarr;",
+					"sinawe",
+					"contentblock clearfix",
+					"专题",
+					"placeintro",
+					"摄影",
+					"topbar",
+					"png",
+					";\n",
+					".txttitle",
+					"recom",
+					"element.style {\n}\nrecomact",
+					"element.style {\n}\n.recomact",
+					"element.style {\n}\n.recomact ul li a",
+					"recomacttitle",
+					"button",
+					"clearfix",
+					"<ul class=\"clearfix",
+					"<ul class=\"cl",
+					"leftinfo",
+					"<ul class=\"clearfix\">",
+					"contentblock",
+					"sina",
+					"hiddenattr",
+					"北京长度测试长度测试长度测试",
+					" 北京长度测试长度测试长度测试",
+					" 北京长度测试长度测试长度测试 ",
+					"text",
+					"txtwrap",
+					"joinandprice",
+					"【钢七连】端午随我到西藏体验藏传佛教！最美西藏—布达拉宫，林芝，纳木措，雅鲁藏布江，南迦巴瓦，珠峰！",
+					"cblue",
+					"table",
+					"txtviewrow",
+					"actwrap",
+					"txtview",
+					"joinandprice",
+					"centerinfo",
+					"特色",
+					"preview",
+					"current",
+					"图片",
+					"tb",
+					"燕小六",
+					"table",
+					"06月10日(一)",
+					"opacitybg",
+					"opacity",
+					"preview",
+					"src",
+					"preview",
+					"图片",
+					"99.3% 1465条评价",
+					"dl class=\"clearfix\"",
+					"clear\"",
+					"clearfix",
+					"dl class=\"clearfix\"",
+					"colspan=\"3\"",
+					"#",
+					"colspan=\"3\"",
+					"colspan",
+					"centerinfo",
+					"toggle",
+					"clear",
+					"filter",
+					"activity-list",
+					"/huodong/search\\?property=all&amp;search_leader=&amp;q=端午&amp;p=.+&amp;",
+					"/huodong/search\\?property=all&amp;search_leader=&amp;q=端午&amp;p=.&amp;",
+					"大壮壮",
+					"我要报名",
+					"1465",
+					"99.3%",
+					"tj25",
+					"tj20",
+					"tj19",
+					"tj18",
+					"京郊最美“小黄山”云蒙山国家森林公园快乐之旅、登山、踏青、赏花观瀑摄影一日游活动！",
+					"萤火虫之旅",
+					"荼靡77",
+					"强",
+					".joinandprice",
+					"joinandprice",
+					"act-title",
+					"center",
+					":gt",
+					"gt(",
+					"toggleshow",
+					"count"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1380,6 +1409,10 @@
 				"regex": false,
 				"replace_history":
 				[
+					"imglistul",
+					"contentblock clearfix",
+					"",
+					"<span class=\"corange\">99.3%</span>",
 					"领队姓名</a> &nbsp;&nbsp;好评率：<a href=\"\">80%</a>",
 					"出发：5月11日(六) &nbsp;返回：5月12日(日)",
 					"出发：5月11日(六)返回：5月12日(日)",
@@ -1503,11 +1536,7 @@
 					"\\1/images/\\2",
 					"\\1/\\2",
 					"\\1.\\2",
-					"\\1.\\3",
-					"\\1.\\2",
-					"\\1\"",
-					"alt=\"\"",
-					"\\1#\" "
+					"\\1.\\3"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -1565,6 +1594,30 @@
 				"selected_items":
 				[
 					[
+						"page.css",
+						"css/page.css"
+					],
+					[
+						"scrip",
+						"js/script.js"
+					],
+					[
+						"page",
+						"css/page.css"
+					],
+					[
+						"swit",
+						"js/viewswitcher.js"
+					],
+					[
+						"index.js",
+						"js/index.js"
+					],
+					[
+						"comm",
+						"css/common.css"
+					],
+					[
 						"event",
 						"eventshow.htm"
 					],
@@ -1619,10 +1672,6 @@
 					[
 						"ski",
 						"css/skin.css"
-					],
-					[
-						"scrip",
-						"js/scripts.js"
 					],
 					[
 						"prev",
@@ -2055,26 +2104,6 @@
 					[
 						"copyo",
 						"Copy of index.html"
-					],
-					[
-						"style.c",
-						"css/style.css"
-					],
-					[
-						"sty.css",
-						"css/style.css"
-					],
-					[
-						"reset.css",
-						"css/reset.css"
-					],
-					[
-						"conten",
-						"css/content.css"
-					],
-					[
-						"header.ht",
-						"theme/header.html"
 					]
 				],
 				"width": 0.0
@@ -2092,10 +2121,10 @@
 				"width": 380.0
 			},
 			"show_minimap": false,
-			"show_open_files": true,
+			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 105.0,
+			"side_bar_width": 144.0,
 			"status_bar_visible": true
 		},
 		"new_window_width": 1842.0
@@ -2107,6 +2136,42 @@
 			{
 				"selected_items":
 				[
+					[
+						"max",
+						"max-width"
+					],
+					[
+						"scroll",
+						"scrollTop"
+					],
+					[
+						"scr",
+						"scrollTop  (function)"
+					],
+					[
+						"scrip",
+						"script.js"
+					],
+					[
+						"img",
+						"imagePreview"
+					],
+					[
+						"no",
+						"no-repeat  (value)"
+					],
+					[
+						"pare",
+						"parseInt"
+					],
+					[
+						"show",
+						"showtarget"
+					],
+					[
+						"li",
+						"line-height"
+					],
 					[
 						"ba",
 						"background-image"
@@ -2134,10 +2199,6 @@
 					[
 						"lis",
 						"list-style"
-					],
-					[
-						"no",
-						"no-repeat"
 					],
 					[
 						"h",
@@ -2186,10 +2247,6 @@
 					[
 						"scro",
 						"scrollTop"
-					],
-					[
-						"scr",
-						"scrollTo"
 					],
 					[
 						"text",
@@ -2482,10 +2539,6 @@
 					[
 						"lin",
 						"line-height"
-					],
-					[
-						"max",
-						"max-height"
 					],
 					[
 						"tex",
@@ -2543,46 +2596,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/C/Users/John the whisler/Desktop/lvye/discuz_plugin_event.xml",
-					"settings":
-					{
-						"buffer_size": 6673,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/John the whisler/Desktop/lvye/eventshow.htm",
-					"settings":
-					{
-						"buffer_size": 32625,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/index.html",
-					"settings":
-					{
-						"buffer_size": 3236,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/js/kkcountdown.js",
-					"settings":
-					{
-						"buffer_size": 6415,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/John the whisler/Desktop/lvye/activity.css",
-					"settings":
-					{
-						"buffer_size": 5760,
-						"line_ending": "Unix"
-					}
-				}
 			],
 			"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
 			"command_palette":
@@ -2591,7 +2604,15 @@
 				"selected_items":
 				[
 					[
-						"remove p",
+						"emmet",
+						"Emmet: Match Pair (outward)"
+					],
+					[
+						"listpa",
+						"Package Control: List Packages"
+					],
+					[
+						"remove",
 						"Package Control: Remove Package"
 					],
 					[
@@ -2599,16 +2620,76 @@
 						"Package Control: Install Package"
 					],
 					[
-						"listp",
-						"Package Control: List Packages"
-					],
-					[
 						"install",
 						"Package Control: Install Package"
 					],
 					[
+						"format",
+						"Format: Javascript"
+					],
+					[
 						"ssjs",
 						"Set Syntax: JavaScript"
+					],
+					[
+						"listpac",
+						"Package Control: List Packages"
+					],
+					[
+						"pretty",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"tidyc",
+						"Tidy CSS"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"sspy",
+						"Set Syntax: Python"
+					],
+					[
+						"pre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"html pre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"htmlpre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"fomat",
+						"Format: Javascript"
+					],
+					[
+						"installp",
+						"Package Control: Install Package"
+					],
+					[
+						"removp",
+						"Package Control: Remove Package"
+					],
+					[
+						"snippetget",
+						"Snippet: Get Elements"
+					],
+					[
+						"sscss",
+						"Set Syntax: CSS"
+					],
+					[
+						"remove p",
+						"Package Control: Remove Package"
+					],
+					[
+						"listp",
+						"Package Control: List Packages"
 					],
 					[
 						"disco",
@@ -2617,10 +2698,6 @@
 					[
 						"upgrad",
 						"Package Control: Upgrade Package"
-					],
-					[
-						"sshtml",
-						"Set Syntax: HTML"
 					],
 					[
 						"comb",
@@ -2639,10 +2716,6 @@
 						"Snippet: Google AJAX Libraries: jQuery"
 					],
 					[
-						"format",
-						"Format: Javascript"
-					],
-					[
 						"disable pa",
 						"Package Control: Disable Package"
 					],
@@ -2652,10 +2725,6 @@
 					],
 					[
 						"list",
-						"Package Control: List Packages"
-					],
-					[
-						"listpa",
 						"Package Control: List Packages"
 					],
 					[
@@ -2675,36 +2744,12 @@
 						"Tidy HTML"
 					],
 					[
-						"fomat",
-						"Format: Javascript"
-					],
-					[
-						"pretty",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"emmet",
-						"Emmet: Encode\\Decode Image to data:URL"
-					],
-					[
-						"pre",
-						"HTMLPrettify: Prettify"
-					],
-					[
 						"css",
 						"Tidy CSS (Low Compression)"
 					],
 					[
-						"sscss",
-						"Set Syntax: CSS"
-					],
-					[
 						"ssjavs",
 						"Set Syntax: JavaScript"
-					],
-					[
-						"remove",
-						"Emmet: Remove Tag"
 					],
 					[
 						"remotag",
@@ -2721,10 +2766,6 @@
 					[
 						"ssh",
 						"Set Syntax: HTML"
-					],
-					[
-						"htmlpre",
-						"HTMLPrettify: Prettify"
 					],
 					[
 						"ssht",
@@ -3073,34 +3114,6 @@
 					[
 						"filedi",
 						"FileDiffs: Menu"
-					],
-					[
-						"snippet sm",
-						"Snippet: smartytag"
-					],
-					[
-						"task",
-						"Tasks: New document"
-					],
-					[
-						"doc",
-						"DocBlockr: Decorate line comment"
-					],
-					[
-						"docb",
-						"DocBlockr: Decorate line comment"
-					],
-					[
-						"rename",
-						"File: Rename"
-					],
-					[
-						"lis",
-						"Package Control: List Packages"
-					],
-					[
-						"enab",
-						"Package Control: Enable Package"
 					]
 				],
 				"width": 522.0
@@ -3120,144 +3133,148 @@
 			},
 			"file_history":
 			[
-				"/C/Users/John the whisler/Desktop/lvye/timeCountDown.js",
-				"/D/www/newdetail/js/timeCountDown.js",
-				"/C/Users/John the whisler/Desktop/lvye/eventshow.htm",
-				"/C/Users/John the whisler/Desktop/lvye/discuz_plugin_event.xml",
-				"/C/Users/John the whisler/Desktop/lvye/activity.css",
-				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
-				"/D/Apache2.2/conf/httpd.conf",
-				"/D/www/newdetail/index.html",
-				"/D/www/pay.lvye.cn/application/config/config.php",
-				"/C/Windows/System32/drivers/etc/hosts",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/FTPSync/README.md",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet",
-				"/C/Users/John the whisler/Desktop/lvye/sftp-config.json",
+				"/D/www/over/simpleheaderfooter/css/index2.css",
+				"/D/www/over/simpleheaderfooter/css/page.css",
+				"/D/www/over/simpleheaderfooter/index.html",
+				"/D/www/over/simpleheaderfooter/css/common.css",
+				"/D/www/over/simpleheaderfooter/portal_topic_content_huodongapp.htm",
+				"/D/www/newhd/list.html",
+				"/D/www/over/newhd/css/page.css",
+				"/D/workspace/library/huodong/templates/huodong/common/event_list_mode.html",
+				"/D/workspace/library/huodong/templates/huodong/common/filter_bar.html",
+				"/D/workspace/library/library/settings.py",
+				"/E/testsite/mysite/mysite/urls.py",
+				"/E/testsite/mysite/mysite/views.py",
+				"/D/workspace/library/huodong/templates/huodong/common/event_pic_mode.html",
+				"/D/workspace/library/huodong/templates/huodong/common/event_text_mode.html",
+				"/D/workspace/library/huodong/static/huodong/css/catalog.css",
+				"/D/workspace/library/huodong/static/huodong/css/search.css",
+				"/D/workspace/library/huodong/templates/huodong/search.html",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-				"/D/www/salon/css/global.css",
-				"/D/www/salon/css/styles.css",
-				"/D/www/salon/index.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyenav.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyefooter.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyelogo.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Settings/SideBarEnhancements.json",
-				"/D/www/over/newact/js/imgpreview.js",
-				"/D/www/over/newact/css/index.css",
-				"/D/www/over/newact/js/script.js",
-				"/D/www/over/newact/index.html",
-				"/D/www/structure/index.html",
-				"/D/www/structure/html5-boilerplate/index.html",
-				"/C/Users/John the whisler/Desktop/demo/demo2.html",
-				"/D/www/structure/html5-boilerplate/doc/css.md",
-				"/D/www/structure/html5-boilerplate/css/normalize.css",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/index.html",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/js/plugins.js",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/js/vendor/modernizr-2.6.2.min.js",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/js/main.js",
-				"/C/Users/John the whisler/Desktop/bootstrap/bootstrap/js/bootstrap.js",
-				"/D/www/lvyehuodong/huodong/templates/index.tpl",
-				"/D/www/lvyehuodong/config.php",
-				"/D/www/lvyehuodong/static/huodong/css/index.css",
-				"/D/www/openlvye/index.html",
-				"/D/www/openlvye/frame.html",
-				"/D/www/openlvye/css/lvyeframe.css",
-				"/D/www/openlvye/css/styles.css",
-				"/D/www/openlvye/css/global.css",
-				"/D/www/sitemap/sitemap.html",
-				"/C/Users/John the whisler/Desktop/demo1.html",
-				"/D/www/over/act/css/styles.css",
-				"/D/www/over/act/css/global.css",
-				"/D/www/wwwlvyecn/uc_server/images/default/style.css",
-				"/D/www/sitemap/css/allcat.css",
-				"/D/www/over/allcat/index.html",
-				"/C/Users/John the whisler/Desktop/sitemap.html",
-				"/D/www/over/act/index.html",
-				"/D/www/over/allcat/css/allcat.css",
-				"/D/www/newdetail/css/xwb_2.css",
-				"/D/www/olympus/index.html",
-				"/C/Users/John the whisler/Desktop/timeCountDown.js",
-				"/C/Users/John the whisler/Desktop/countdown/countdown_v2.0.0/examples 1.html",
-				"/D/www/olympus/js/sample01.js",
-				"/D/www/olympus/css/styles.css",
-				"/D/www/olympus/css/carousel.css",
-				"/D/www/over/newact/outsite.html",
-				"/D/www/over/act/js/scripts.js",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/css/normalize.css",
-				"/C/Users/John the whisler/Desktop/huodong.html",
-				"/C/Users/John the whisler/Desktop/自助装机、模拟攒机、在线装机 – 京东商城.html",
-				"/D/www/allcat/index.html",
-				"/D/www/allcat/css/index (2).css",
-				"/D/www/allcat/css/index.css",
-				"/C/Users/John the whisler/Desktop/索引.css",
-				"/D/www/lvyehuodong/huodong/views.php",
-				"/D/www/olympus/page2.html",
-				"/D/www/over/nav/index.html",
-				"/C/Users/John the whisler/Desktop/carouFredSel-6.2.1/carouFredSel-6.2.1/index.html",
-				"/D/www/olympus/page1.html",
-				"/C/Users/John the whisler/Desktop/carouFredSel-6.2.1/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js",
-				"/C/Users/John the whisler/Desktop/ryrych-rcarousel-1.1.3-0-g24cb0ca/ryrych-rcarousel-3b32a0b/examples/auto_reverse.html",
-				"/C/Users/John the whisler/Desktop/demo/demo1.html",
-				"/D/www/olympus/js/jquery.carousel-1.1.min.js",
-				"/D/www/olympus/css/sass/global.scss",
-				"/D/www/olympus/css/sass/styles.scss",
-				"/C/Users/John the whisler/Desktop/demo/css/carousel.css",
-				"/C/Users/John the whisler/Desktop/demo/demo.html",
-				"/C/Users/John the whisler/Desktop/demo/js/sample01.js",
-				"/C/Users/John the whisler/Desktop/demo/css/content.css",
-				"/C/Users/John the whisler/Desktop/jQuery Carousel Evolution.htm",
-				"/D/www/olympus/css/global.css",
+				"/D/workspace/library/huodong/templates/huodong/catalog.html",
+				"/D/workspace/library/huodong/templates/huodong/common/footer.html",
+				"/D/workspace/library/huodong/static/huodong/js/huodong.js",
+				"/D/workspace/library/huodong/templates/huodong/common/condition.html",
+				"/C/Users/John the whisler/Downloads/goagent-goagent-v3.0.1-47-g9acb296/goagent/local/proxy.ini",
+				"/D/Program Files (x86)/goagent/local/proxy.ini",
+				"/D/Program Files (x86)/goagent/README",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-				"/C/Users/John the whisler/Desktop/活动二级频道/目的地分类.txt",
-				"/C/Users/John the whisler/Desktop/活动二级频道/全部活动分类.txt",
-				"/D/www/lvyehuodong/static/huodong/js/huodong.js",
-				"/D/www/lvyehuodong/static/huodong/index.js",
-				"/D/php5/php.ini",
-				"/D/www/act/index.html",
-				"/D/www/lvyehuodong/huodong/index.php",
-				"/D/www/act/css/styles.css",
-				"/D/www/huodong/config.php",
-				"/D/www/sdk/php/app/as.ini",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/emmet/snippets.json",
-				"/D/www/sdk/php/lib/XS.php",
-				"/D/www/sdk/php/app/lvyenew.ini",
-				"/D/www/act/js/scripts.js",
-				"/D/www/act/js/js.js",
-				"/D/www/act/css/global.css",
-				"/D/www/over/midi/index.html",
-				"/C/Users/John the whisler/Desktop/act/css/extra.css",
-				"/C/Users/John the whisler/Desktop/act/index.html",
-				"/D/www/over/edm/lvye1.min.html",
-				"/D/www/over/edm/lvye2.min.html",
-				"/D/www/over/edm/lvye1.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML Compressor/Html Compressor.sublime-build",
-				"/D/www/act/index.min.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/YUI Compressor.sublime-build",
-				"/D/www/act/css/styles-min.css",
-				"/C/Users/John the whisler/Desktop/lvye2.html",
-				"/D/www/midi/index.html",
-				"/C/Users/John the whisler/Desktop/lvye.html",
-				"/D/www/midi/css/global.css",
-				"/D/www/midi/css/styles.css",
-				"/C/Users/John the whisler/Desktop/专题/迷笛/节目单.txt",
-				"/D/www/midi/index - 副本.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/D/www/show/index.html",
+				"/D/www/show/css/page.css",
+				"/D/www/show/js/script.js",
+				"/E/testsite/mysite/mysite/settings.py",
+				"/E/testsite/mysite/mysite/wsgi.py",
+				"/E/testsite/mysite/mysite/__init__.py",
+				"/D/Python27/Lib/site-packages/django/bin/django-admin.py",
+				"/D/Python27/Scripts/django-admin.py",
+				"/D/workspace/library/huodong/static/huodong/css/index.css",
+				"/D/workspace/library/huodong/templates/huodong/base.html",
+				"/D/workspace/library/chatroom/views.py",
+				"/D/workspace/library/huodong/views.py",
+				"/D/workspace/library/catalog/static/catalog/css/search.css",
+				"/D/workspace/library/manage.py",
+				"/D/workspace/library/huodong/templates/huodong/common/event_category.html",
+				"/D/workspace/library/catalog/templates/catalog/category.html",
+				"/D/workspace/library/huodong/templates/huodong/generate/rightbar_ads.html",
+				"/D/workspace/library/catalog/views.py",
+				"/D/www/show/js/jqFancyTransitions.1.8.min.js",
+				"/D/workspace/library/pyxapian/PyIndex.py",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Clickable URLs/README.md",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime text 2/Packages/Package Control/Package Control.py",
+				"/C/Users/John the whisler/Desktop/easyslider1.7/easyslider1.7/css/screen.css",
+				"/D/www/show/js/easySlider1.7.js",
+				"/C/Users/John the whisler/Desktop/484/index.html",
+				"/C/Users/John the whisler/Desktop/484/js/loopedslider.min.js",
+				"/D/www/structure/css/page.css",
+				"/C/Users/John the whisler/Desktop/index.html",
+				"/D/www/over/sitemap/css/sitemap.css",
+				"/D/www/newhd/css/page.css",
+				"/D/www/structure/css/common.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Settings/SideBarEnhancements.json",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/AutoFileName/autofilename.py",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/AutoFileName/.gitignore",
+				"/C/Users/John the whisler/Desktop/网站地图_绿野网.htm",
+				"/D/www/over/sitemap/sitemap.html",
+				"/D/www/july/js/script.js",
+				"/D/www/july/css/common.css",
+				"/C/Users/John the whisler/Desktop/table.html",
+				"/D/www/newhd/list-search.html",
+				"/D/www/newhd/index.php",
+				"/D/www/july/index.html",
+				"/D/www/july/css/index.css",
+				"/D/www/newhd/inc/rightads.html",
+				"/D/www/newhd/inc/actlist.html",
+				"/D/www/newhd/inc/filterbar.html",
+				"/D/www/newhd/inc/actscreen.html",
+				"/D/www/newhd/inc/meganav.html",
+				"/D/www/newhd/inc/breadcrumbs.html",
+				"/D/www/newhd/inc/headerbottom.html",
+				"/D/www/newhd/inc/headertop.html",
+				"/C/Users/John the whisler/Downloads/gotop (1).html",
+				"/D/www/newhd/css/common.css",
+				"/D/www/july/css/page.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyefooter.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/My97DatePickerBeta/demo.htm",
+				"/C/Users/John the whisler/Desktop/category.css",
+				"/D/www/newhd/pic.html",
+				"/D/www/newhd/txt.html",
+				"/D/www/newhd/js/huodong.js",
+				"/D/www/newhd/js/My97DatePicker/WdatePicker.js",
+				"/D/www/newhd/test.html",
+				"/D/www/newhd/js/viewswitcher.js",
+				"/D/www/newhd/js/index.js",
+				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
+				"/D/www/newhd/index.html",
+				"/D/www/over/duanwu/index.html",
+				"/C/Users/John the whisler/Desktop/register.html",
+				"/C/Users/John the whisler/Desktop/register.min.html",
+				"/C/Users/John the whisler/Desktop/lvye/activity.css",
+				"/C/Users/John the whisler/Desktop/jQuery.countdown-master/jQuery.countdown-master/examples/groupon.html",
+				"/C/Users/John the whisler/Desktop/jQuery.countdown-master/jQuery.countdown-master/src/jquery.countdown.js",
+				"/C/Users/John the whisler/Desktop/lvye/eventshow.htm",
+				"/D/www/over/newdetail/index.html",
+				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown-zh-CN.js",
+				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/countdownBasic.html",
+				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown.js",
+				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown.min.js",
+				"/C/Users/John the whisler/Desktop/lvye/discuz_plugin_event.xml",
+				"/D/www/newhd/css/index.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/csscomment.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/search.css",
+				"/D/www/structure/index.html",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/John the whisler/Desktop/acac1.js",
-				"/D/www/midi/map/bjmap.html",
-				"/D/www/midi/map/szmap.html",
-				"/D/www/midi/map/shmap.html",
-				"/D/www/midi/shmap.html",
-				"/D/www/midi/szmap.html"
+				"/C/Users/John the whisler/Desktop/art157dreamw/styles.css",
+				"/C/Users/John the whisler/Desktop/joddit-global-css.0.8.0/joddit-global-css/css/jgcss-admin.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet",
+				"/D/www/structure/css/base.css",
+				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/css/normalize.css",
+				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/index.html",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/cssbegin.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/bootstrap-master/README.md",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Clickable URLs/Default (Windows).sublime-keymap",
+				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/css/main.css",
+				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/404.html",
+				"/D/www/structure/css/global.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML/Symbol List - ID.tmPreferences",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
+				"/C/Users/John the whisler/.ssh/id_rsa.pub",
+				"/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/js/kkcountdown.js",
+				"/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/index.html",
+				"/C/Users/John the whisler/Desktop/lvye/timeCountDown.js"
 			],
 			"find":
 			{
-				"height": 171.0
+				"height": 40.0
 			},
 			"find_in_files":
 			{
 				"height": 0.0,
 				"where_history":
 				[
+					"D:\\Program Files (x86)\\Sublime Text 2",
+					"C:\\Users\\John the whisler\\AppData\\Roaming\\Sublime text 2",
+					"C:\\Users\\John the whisler\\AppData\\Roaming\\Sublime text 2\\Packages",
+					"D:\\Program Files (x86)\\Sublime Text 2",
 					"C:\\Documents and Settings\\Administrator\\Application Data\\Sublime Text 2",
 					"D:\\Webroot\\program",
 					"D:\\cutout",
@@ -3285,141 +3302,150 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"activity_traffic",
-					"包车公示",
-					"包车公示:",
-					"nodisplay",
-					"tooltips",
-					"该",
-					"tooltips-left",
-					".bmbtn",
-					".pn",
-					"天",
-					"剩    余",
-					"bmbtn",
-					"包车公示",
-					"活动特色",
-					"预付费",
-					"pub_totalmileage",
-					"总里程",
-					"需要人数",
-					"activity_to",
-					"活动地点",
-					"eventplace",
-					"活动地点",
-					"activity_gathertime",
-					"集合时间",
-					"集合时",
-					"集合时间",
-					"需要人数",
-					"\n人数",
-					"\n\n需要人数",
-					"集合地点",
-					"pub_gatherplace",
-					"pub_gathertime",
-					"集合地点",
-					"集合时间",
-					"pub_gathertime",
-					"集合时间",
-					"活动特色",
-					"出",
-					"pub_fromplace",
-					"pub_otherleader",
-					"出",
-					"pub_fromplace",
-					"出",
-					"\n\n发",
-					"\n\n出",
-					"\n\n出发地",
-					"insert",
-					"simple",
-					"ifsimple",
-					"邀请",
-					"更多",
-					"pn",
-					"我要报名",
-					"root",
-					"document",
-					"talbe",
-					"报名已",
-					"activity_insurance",
-					"tooltips",
-					"activity_traffic",
-					"包车公示:",
-					"领*队",
-					"领.队",
-					"-color",
-					"#999",
-					"地点",
-					"活动",
-					"活动地点",
-					"eventplace",
-					"活动地点",
-					"pub_fromplace",
-					"出发地",
-					"pub_otherleader",
-					"副领队",
-					"activity_leader",
-					"领队",
-					"副领队",
-					"activity_moreactivity",
-					"更多",
-					"padding: 0 5px;",
-					"#999",
-					"pn",
-					"结束",
-					"../../static/image/common/search_b.gif",
-					"more",
-					"count",
-					"报名已结束",
-					"tooltips",
-					"activity_traffic",
-					"活动特色",
-					"eventphtots",
-					"imgobj",
-					"300",
-					"max-width: 300px",
-					"1px solid #CCC",
-					"报名",
-					"报名结束",
+					"</li>",
+					"\n                ",
+					"clearfix",
+					"style=\".*?\"",
+					"style=\"font-size: 30px;\"",
+					"style=\"font-size: 30px\"",
+					"font-size",
+					" 更多安装方式",
+					" 更多安装方式 ",
+					"/app/lvye_app",
+					"qrcode",
+					"/app/lvye_app/",
+					"http://www.lvye.cn/app/lvye_app/",
+					"type=\"text/javascript\"",
+					"                    ",
+					"                   ",
+					"                  ",
+					"                 ",
+					"                ",
+					"               ",
+					"              ",
+					"             ",
+					"            ",
+					"           ",
+					"          ",
+					"         ",
+					"        ",
+					"       ",
+					"      ",
+					"     ",
+					"    ",
+					"\\n",
+					"110",
+					"729",
+					"preview_on_click",
 					"script",
-					"更多活",
-					"截止",
-					"expiration",
-					"pub_expiration",
-					"截止日期",
-					"保险",
-					"count-down",
-					"距离",
-					"date",
-					"$",
-					"onload",
-					"expiredate",
-					"onload",
-					"threadpic",
-					"$activity[expiration]",
-					"spvimg",
-					"spamv",
-					"spvm",
-					"sec",
-					"form",
+					"（图）",
+					"绿野",
+					"[全文]",
+					".joinandprice",
+					"picviewul",
+					"picviewbigimg",
+					"showme",
+					"limitw150",
+					"limit",
+					"picviewul",
+					".placesinfo",
+					".son-menu",
+					"togglesbtn",
+					"120",
+					".actscreen dl dd a",
+					"filterbar",
+					"#activity-list",
+					".rightbar-ads",
+					".txtviewblock .act-title",
+					"limit",
+					"litmit",
+					"limit",
+					".txtviewblock",
+					"pic",
+					".pagination",
+					".hiddenattr",
+					".act-title",
+					".txtviewblock",
+					"activity-list",
+					"picwrap",
+					"0",
+					"544",
+					"breadcrumbs",
+					"()\n",
+					"footer",
+					"actfeatures",
+					"show_panel",
+					"find_in_files",
+					"Show_Panel",
+					"Panel",
+					"Show_Panel",
+					"Show Results Panel",
+					"result",
+					"find",
+					"finder",
+					"ft-button-imgsslider-active",
+					"images/slider.jpg",
+					"outline",
+					"to summit销售经理",
+					"rgb(221, 221, 221)",
+					"visited",
+					"mainnav",
+					"<img src=\"images/slider.jpg\" alt=\"\" />",
+					"href",
+					"5px",
+					"5px;",
+					"Css Template Preview",
+					"ft-title",
+					"Template",
+					"Css Template Previe",
+					"title",
+					"params",
+					"ft-buttons-ft",
+					"ft-title",
+					"slider",
+					"imgsslider",
+					"height",
+					"imgsslider",
+					"http://templatica.com/preview/.+?\"",
+					"http://templatica.com/preview/.+\"",
+					"http://templatica.com/preview/30",
 					"script",
-					"spvimg",
-					"pub_expiration",
-					"截止日期",
-					"spvimg",
-					"emphred",
-					"该活动支持",
-					"emphor",
-					"该活动支持",
-					"emphor"
+					"h1title",
+					"[全文]",
+					"ccc",
+					"rgb(0, 0, 0)",
+					"2px 2px",
+					"brandtitle",
+					"dt",
+					"micro",
+					"<sub>.</sub>",
+					"<sub>.</sub> ",
+					"sup",
+					"展会动态",
+					"rowrap",
+					"rowwrap",
+					"inner-topbar",
+					"rowwrap",
+					"haidao",
+					"户外兴趣",
+					"港澳",
+					"com"
 				],
 				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": false,
+				"regex": true,
 				"replace_history":
 				[
+					"",
+					" ",
+					"\"",
+					"",
+					"rowwrap clearfix",
+					"imglistul",
+					"contentblock clearfix",
+					"",
+					"<span class=\"corange\">99.3%</span>",
 					"领队姓名</a> &nbsp;&nbsp;好评率：<a href=\"\">80%</a>",
 					"出发：5月11日(六) &nbsp;返回：5月12日(日)",
 					"出发：5月11日(六)返回：5月12日(日)",
@@ -3538,16 +3564,7 @@
 					"\\1js/\\2",
 					"\\1css/\\2",
 					"../images",
-					"\\1images/\\2\"",
-					"\\1images/\\2",
-					"\\1/images/\\2",
-					"\\1/\\2",
-					"\\1.\\2",
-					"\\1.\\3",
-					"\\1.\\2",
-					"\\1\"",
-					"alt=\"\"",
-					"\\1#\" "
+					"\\1images/\\2\""
 				],
 				"reverse": false,
 				"show_context": true,
@@ -3555,196 +3572,16 @@
 				"whole_word": false,
 				"wrap": false
 			},
-			"folders":
-			[
-				{
-					"path": "/C/Users/John the whisler/Desktop/lvye"
-				}
-			],
 			"groups":
 			[
 				{
-					"selected": 3,
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/C/Users/John the whisler/Desktop/lvye/discuz_plugin_event.xml",
-							"settings":
-							{
-								"buffer_size": 6673,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										6031,
-										6015
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "712191ff",
-									"incomplete_sync": null,
-									"is_xml": true,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/XML/XML.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 2279.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/C/Users/John the whisler/Desktop/lvye/eventshow.htm",
-							"settings":
-							{
-								"buffer_size": 32625,
-								"regions":
-								{
-									"TagLint":
-									{
-										"flags": 52,
-										"icon": "dot",
-										"regions":
-										[
-											[
-												22547,
-												22554
-											]
-										],
-										"scope": "variable.parameter"
-									}
-								},
-								"selection":
-								[
-									[
-										5096,
-										5096
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "e0717328",
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 2288.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/index.html",
-							"settings":
-							{
-								"buffer_size": 3236,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										777,
-										777
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "bdaf8b11",
-									"is_xml": false,
-									"origin_encoding": "ASCII",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 132.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/js/kkcountdown.js",
-							"settings":
-							{
-								"buffer_size": 6415,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										4352,
-										4352
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "d286989a",
-									"incomplete_sync": null,
-									"origin_encoding": "ASCII",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 2376.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/C/Users/John the whisler/Desktop/lvye/activity.css",
-							"settings":
-							{
-								"buffer_size": 5760,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										5482,
-										5482
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "f5c83eb2",
-									"incomplete_sync": null,
-									"origin_encoding": "ASCII",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 4928.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						}
+					]
+				},
+				{
+					"sheets":
+					[
 					]
 				}
 			],
@@ -3765,11 +3602,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.892016742324,
 					1.0
 				],
 				"rows":
@@ -3783,11 +3627,15 @@
 			{
 				"height": 200.0
 			},
+			"output.find_results":
+			{
+				"height": 140.0
+			},
 			"output.sftp":
 			{
 				"height": 0.0
 			},
-			"position": "0,0,1,-32000,-32000,-1,-1,1040,62,0,1920",
+			"position": "0,2,3,-32000,-32000,-1,-1,1075,1924,86,3828",
 			"replace":
 			{
 				"height": 70.0
@@ -3798,6 +3646,102 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"idex2",
+						"css/index2.css"
+					],
+					[
+						"filterba",
+						"huodong/templates/huodong/common/filter_bar.html"
+					],
+					[
+						"condition",
+						"huodong/templates/huodong/common/condition.html"
+					],
+					[
+						"filterbar",
+						"huodong/templates/huodong/common/filter_bar.html"
+					],
+					[
+						"base",
+						"huodong/templates/huodong/base.html"
+					],
+					[
+						"huodong/common/condition.html",
+						"huodong/templates/huodong/common/condition.html"
+					],
+					[
+						"huodong.js",
+						"huodong/static/huodong/js/huodong.js"
+					],
+					[
+						"sear.css",
+						"catalog/static/catalog/css/search.css"
+					],
+					[
+						"base.html",
+						"huodong/templates/huodong/base.html"
+					],
+					[
+						"catel",
+						"catalog/templates/catalog/category.html"
+					],
+					[
+						"footer",
+						"huodong/templates/huodong/common/footer.html"
+					],
+					[
+						"hdvs",
+						"huodong/views.py"
+					],
+					[
+						"views.py",
+						"chatroom/views.py"
+					],
+					[
+						"views",
+						"catalog/views.py"
+					],
+					[
+						"rightad",
+						"huodong/templates/huodong/generate/rightbar_ads.html"
+					],
+					[
+						"cat",
+						"huodong/static/huodong/css/catalog.css"
+					],
+					[
+						"search.css",
+						"huodong/static/huodong/css/search.css"
+					],
+					[
+						"page",
+						"css/page.css"
+					],
+					[
+						".js",
+						"js/jqFancyTransitions.1.8.min.js"
+					],
+					[
+						"page.css",
+						"css/page.css"
+					],
+					[
+						"scrip",
+						"js/script.js"
+					],
+					[
+						"swit",
+						"js/viewswitcher.js"
+					],
+					[
+						"index.js",
+						"js/index.js"
+					],
+					[
+						"comm",
+						"css/common.css"
+					],
 					[
 						"event",
 						"eventshow.htm"
@@ -3853,10 +3797,6 @@
 					[
 						"ski",
 						"css/skin.css"
-					],
-					[
-						"scrip",
-						"js/scripts.js"
 					],
 					[
 						"prev",
@@ -4191,10 +4131,6 @@
 						"user/adminu/login.html"
 					],
 					[
-						"footer",
-						"css/footer.css"
-					],
-					[
 						"search",
 						"product/search.html"
 					],
@@ -4221,94 +4157,6 @@
 					[
 						"downl/deta",
 						"0926/download/detail.html"
-					],
-					[
-						"detail.c",
-						"0926/css/detail.css"
-					],
-					[
-						"list.cs",
-						"0926/css/list.css"
-					],
-					[
-						"prosearch.",
-						"0926/product/search.html"
-					],
-					[
-						"my",
-						"deal/adminu/my_deal.html"
-					],
-					[
-						"mod",
-						"user/adminu/modify_user.html"
-					],
-					[
-						"modi",
-						"user/adminu/modify_userpwd.html"
-					],
-					[
-						"styl",
-						"css/style.css"
-					],
-					[
-						"modify",
-						"user/adminu/modify_userpwd.html"
-					],
-					[
-						"left.html",
-						"user/left.html"
-					],
-					[
-						"footer.",
-						"theme/footer.html"
-					],
-					[
-						"detai.c",
-						"css/detail.css"
-					],
-					[
-						"user.cs",
-						"css/user.css"
-					],
-					[
-						"content.c",
-						"css/content.css"
-					],
-					[
-						"down/detai",
-						"download/detail.html"
-					],
-					[
-						"down",
-						"download/detail.html"
-					],
-					[
-						"contet.c",
-						"css/content.css"
-					],
-					[
-						"copyo",
-						"Copy of index.html"
-					],
-					[
-						"style.c",
-						"css/style.css"
-					],
-					[
-						"sty.css",
-						"css/style.css"
-					],
-					[
-						"reset.css",
-						"css/reset.css"
-					],
-					[
-						"conten",
-						"css/content.css"
-					],
-					[
-						"header.ht",
-						"theme/header.html"
 					]
 				],
 				"width": 0.0
@@ -4329,7 +4177,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 144.0,
+			"side_bar_width": 219.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": ""

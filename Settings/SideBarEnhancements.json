@@ -1,6 +1,6 @@
 {
 	"D:/www":{
-		"url_testing":"http://localhost/salon",
-		"url_production":"file:///D:/www/salon"
+		"url_testing":"http://localhost/over",
+		"url_production":"file:///D:/www/over"
 	}
 }
