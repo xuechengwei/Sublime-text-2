@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+/*
+ * @description: ${1:desc}
+ * @author: ${2:xuechengwei}
+ * @email: xuechengweiyx@163.com
+ * @update: ${3:YYYY}/${4:MM}/${5:DD}
+ */
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>doc</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

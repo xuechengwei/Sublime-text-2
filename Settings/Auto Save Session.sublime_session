@@ -1,6 +1,9 @@
 {
 	"folder_history":
 	[
+		"/D/www/pay.lvye.cn",
+		"/D/www/structure",
+		"/D/www/actApply",
 		"/D/workspace/library",
 		"/D/myproj/myproj",
 		"/D/www/over/SkiAppDownload",
@@ -108,10 +111,10 @@
 		"/C/Documents and Settings/Administrator/desktop/44",
 		"/D/wamp/www"
 	],
-	"last_window_id": 29,
+	"last_window_id": 30,
 	"settings":
 	{
-		"new_window_height": 870.0,
+		"new_window_height": 612.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -119,2026 +122,29 @@
 				"selected_items":
 				[
 					[
-						"scroll",
-						"scrollTop"
+						"totalf",
+						"totalfee"
 					],
 					[
-						"scr",
-						"scrollTop  (function)"
+						"calu",
+						"calculateMustPayFee"
 					],
 					[
-						"scrip",
-						"script.js"
+						"refer",
+						"refercheckbox"
 					],
 					[
-						"img",
-						"imagePreview"
+						"obj",
+						"objismustpay"
 					],
 					[
-						"no",
-						"no-repeat  (value)"
+						"total",
+						"totalfeeObj"
 					],
 					[
-						"pare",
-						"parseInt"
+						"id",
+						"id=  (attribute)"
 					],
-					[
-						"show",
-						"showtarget"
-					],
-					[
-						"li",
-						"line-height"
-					],
-					[
-						"ba",
-						"background-image"
-					],
-					[
-						"get",
-						"get	Get Elements"
-					],
-					[
-						"p",
-						"padding"
-					],
-					[
-						"getE",
-						"getEle"
-					],
-					[
-						"update",
-						"updateFrame"
-					],
-					[
-						"getEle",
-						"getElementById"
-					],
-					[
-						"lis",
-						"list-style"
-					],
-					[
-						"h",
-						"header_bg.jpg	w:6 h:66"
-					],
-					[
-						"back",
-						"background-attachment:   (property)"
-					],
-					[
-						"are",
-						"area_big.jpg	w:1000 h:1235"
-					],
-					[
-						"bg",
-						"nav_bg.png	w:6 h:69"
-					],
-					[
-						"cl",
-						"cl	consolelog"
-					],
-					[
-						"y",
-						"yDistance"
-					],
-					[
-						"1",
-						"1-big.jpg	w:600 h:690"
-					],
-					[
-						"2",
-						"2-big.jpg	w:600 h:690"
-					],
-					[
-						"for",
-						"for	for (…) {…}"
-					],
-					[
-						"rep",
-						"repeat-x  (value)"
-					],
-					[
-						"f",
-						"footer_bg.jpg	w:1920 h:248"
-					],
-					[
-						"scro",
-						"scrollTop"
-					],
-					[
-						"text",
-						"text-decoration"
-					],
-					[
-						"list-",
-						"list-style"
-					],
-					[
-						"chil",
-						"children  (function)"
-					],
-					[
-						"addEve",
-						"addEventListener"
-					],
-					[
-						"addEv",
-						"addEventListener"
-					],
-					[
-						"sele",
-						"selected"
-					],
-					[
-						"sel",
-						"select	<select>"
-					],
-					[
-						"s",
-						"states"
-					],
-					[
-						"pro",
-						"phproot3"
-					],
-					[
-						"nth",
-						"nth-last-child(  (pseudo-class)"
-					],
-					[
-						"ajax",
-						"ajax	Google AJAX Libraries: Scriptaculous"
-					],
-					[
-						"ready",
-						"ready	document ready - jQuery"
-					],
-					[
-						"table-c",
-						"table-cell"
-					],
-					[
-						"script",
-						"scripts.js"
-					],
-					[
-						"sc",
-						"scrollTop"
-					],
-					[
-						"pa",
-						"padding-left"
-					],
-					[
-						"foot",
-						"footer_ul_bg.jpg	w:195 h:3"
-					],
-					[
-						"top",
-						"topbar_bg.jpg	w:1000 h:50"
-					],
-					[
-						"text-",
-						"text-transform"
-					],
-					[
-						"j",
-						"jquery-1.8.3.min.js"
-					],
-					[
-						"margin",
-						"margin"
-					],
-					[
-						"mar",
-						"margin"
-					],
-					[
-						"list",
-						"list-style-type"
-					],
-					[
-						"nav",
-						"nav_hover_bg.jpg	w:10 h:45"
-					],
-					[
-						"every",
-						"everywhere"
-					],
-					[
-						"proto",
-						"prototype"
-					],
-					[
-						"decimal",
-						"decimal-leading-zero"
-					],
-					[
-						"list-style",
-						"list-style-type"
-					],
-					[
-						"padding",
-						"padding"
-					],
-					[
-						"fl",
-						"float"
-					],
-					[
-						"font",
-						"font-size"
-					],
-					[
-						"inline",
-						"inline-block"
-					],
-					[
-						"cont",
-						"container"
-					],
-					[
-						"te",
-						"text-align"
-					],
-					[
-						"disp",
-						"displayErrors"
-					],
-					[
-						"size",
-						"sizechart"
-					],
-					[
-						"select",
-						"selected"
-					],
-					[
-						"borderc",
-						"border-color"
-					],
-					[
-						"bdc",
-						"border-color"
-					],
-					[
-						"bdr",
-						"border-radius"
-					],
-					[
-						"font-st",
-						"font-style	zen:css_properties"
-					],
-					[
-						"marg",
-						"margin"
-					],
-					[
-						"border",
-						"border"
-					],
-					[
-						"bd",
-						"border"
-					],
-					[
-						"font-",
-						"font-style"
-					],
-					[
-						"ari",
-						"\"Arial Black\""
-					],
-					[
-						"arial",
-						"Arial, Helvetica, sans-serif"
-					],
-					[
-						"re",
-						"repeat"
-					],
-					[
-						"search",
-						"search_text"
-					],
-					[
-						"nlet",
-						"nletter_text"
-					],
-					[
-						"nletter_",
-						"nletter_text"
-					],
-					[
-						"sear",
-						"search_text"
-					],
-					[
-						"sea",
-						"search_text"
-					],
-					[
-						"copy-domain",
-						"copy-domainaccount"
-					],
-					[
-						"texta",
-						"textareaContent"
-					],
-					[
-						"textar",
-						"textarea-content"
-					],
-					[
-						"clipb",
-						"clipboardContent"
-					],
-					[
-						"bor",
-						"border-radius"
-					],
-					[
-						"pad",
-						"padding"
-					],
-					[
-						"recommendflag",
-						"recommendflag_arr"
-					],
-					[
-						"inli",
-						"inline-block"
-					],
-					[
-						"col",
-						"color"
-					],
-					[
-						"child",
-						"ChildType"
-					],
-					[
-						"a",
-						"a	<a>"
-					],
-					[
-						"arr",
-						"arrGWeb"
-					],
-					[
-						"biweb",
-						"biweb_news_top"
-					],
-					[
-						"php",
-						"phpinfo"
-					],
-					[
-						"w",
-						"WEBURL"
-					],
-					[
-						"wid",
-						"width"
-					],
-					[
-						"add",
-						"add-to-cart"
-					],
-					[
-						"class",
-						"class	@class"
-					],
-					[
-						"table",
-						"table-cell"
-					],
-					[
-						"lin",
-						"line-height"
-					],
-					[
-						"max",
-						"max-height"
-					],
-					[
-						"tex",
-						"text-align"
-					],
-					[
-						"temp",
-						"templates_root"
-					],
-					[
-						"page",
-						"page_link"
-					],
-					[
-						"tem",
-						"templates_root"
-					],
-					[
-						"fo",
-						"footer"
-					],
-					[
-						"ta",
-						"text-align"
-					],
-					[
-						"searh",
-						"search-form"
-					],
-					[
-						"url",
-						"url(image-url.gif)"
-					],
-					[
-						"helvetica",
-						"Arial, Helvetica, sans-serif"
-					],
-					[
-						"repeat",
-						"repeat-x"
-					],
-					[
-						"m-",
-						"m-expanded"
-					],
-					[
-						"hot_ca",
-						"http_negotiate_charset"
-					],
-					[
-						"ab",
-						"absolute"
-					]
-				]
-			},
-			"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
-			"command_palette":
-			{
-				"height": 93.0,
-				"selected_items":
-				[
-					[
-						"pretty",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"tidyc",
-						"Tidy CSS"
-					],
-					[
-						"sshtml",
-						"Set Syntax: HTML"
-					],
-					[
-						"sspy",
-						"Set Syntax: Python"
-					],
-					[
-						"format",
-						"Format: Javascript"
-					],
-					[
-						"pre",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"html pre",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"htmlpre",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"ssjs",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"fomat",
-						"Format: Javascript"
-					],
-					[
-						"installp",
-						"Package Control: Install Package"
-					],
-					[
-						"removp",
-						"Package Control: Remove Package"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
-						"snippetget",
-						"Snippet: Get Elements"
-					],
-					[
-						"sscss",
-						"Set Syntax: CSS"
-					],
-					[
-						"remove p",
-						"Package Control: Remove Package"
-					],
-					[
-						"pip",
-						"Package Control: Install Package"
-					],
-					[
-						"listp",
-						"Package Control: List Packages"
-					],
-					[
-						"disco",
-						"Package Control: Discover Packages"
-					],
-					[
-						"upgrad",
-						"Package Control: Upgrade Package"
-					],
-					[
-						"comb",
-						"Sort via CSScomb"
-					],
-					[
-						"csscom",
-						"Sort via CSScomb"
-					],
-					[
-						"disable",
-						"Package Control: Disable Package"
-					],
-					[
-						"google",
-						"Snippet: Google AJAX Libraries: jQuery"
-					],
-					[
-						"disable pa",
-						"Package Control: Disable Package"
-					],
-					[
-						"snippet:b",
-						"Snippet: begin"
-					],
-					[
-						"list",
-						"Package Control: List Packages"
-					],
-					[
-						"listpa",
-						"Package Control: List Packages"
-					],
-					[
-						"dele",
-						"File: Delete"
-					],
-					[
-						"listpag",
-						"Package Control: List Packages"
-					],
-					[
-						"insp",
-						"Package Control: Install Package"
-					],
-					[
-						"html",
-						"Tidy HTML"
-					],
-					[
-						"emmet",
-						"Emmet: Encode\\Decode Image to data:URL"
-					],
-					[
-						"css",
-						"Tidy CSS (Low Compression)"
-					],
-					[
-						"ssjavs",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"remove",
-						"Emmet: Remove Tag"
-					],
-					[
-						"remotag",
-						"Emmet: Remove Tag"
-					],
-					[
-						"sdl",
-						"SublimeLinter: Disable Linting"
-					],
-					[
-						"linting",
-						"SublimeLinter: Disable Linting"
-					],
-					[
-						"ssh",
-						"Set Syntax: HTML"
-					],
-					[
-						"ssht",
-						"Set Syntax: HTML"
-					],
-					[
-						"syntaxhtml",
-						"Set Syntax: HTML"
-					],
-					[
-						"tidy",
-						"Tidy CSS (Low Compression)"
-					],
-					[
-						"emetmerge",
-						"Emmet: Merge Lines"
-					],
-					[
-						"removetag",
-						"Emmet: Remove Tag"
-					],
-					[
-						"emmet ",
-						"Emmet: Select Next Item"
-					],
-					[
-						"disabl",
-						"Package Control: Disable Package"
-					],
-					[
-						"keyconf",
-						"FindKeyConflicts: All Conflicts"
-					],
-					[
-						"syntaxcss",
-						"Set Syntax: CSS"
-					],
-					[
-						"syntaxjs",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"mini",
-						"Minify Javascript"
-					],
-					[
-						"disableli",
-						"SublimeLinter: Disable Linting"
-					],
-					[
-						"copy",
-						"File: Copy Name"
-					],
-					[
-						"pretti",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"tidycss",
-						"Tidy CSS"
-					],
-					[
-						"copyna",
-						"File: Copy Name"
-					],
-					[
-						"copynam",
-						"File: Copy Name"
-					],
-					[
-						"convert",
-						"Indentation: Convert to Tabs"
-					],
-					[
-						"synhtml",
-						"Set Syntax: HTML"
-					],
-					[
-						"jq",
-						"Set Syntax: jQuery (JavaScript)"
-					],
-					[
-						"sytaxcss",
-						"Set Syntax: CSS"
-					],
-					[
-						"syntaxphp",
-						"Set Syntax: PHP"
-					],
-					[
-						"add",
-						"Project: Add Folder"
-					],
-					[
-						"bracket",
-						"Bracket Highlighter: Fold by Brackets"
-					],
-					[
-						"brack",
-						"Bracket Highlighter: Select Tag"
-					],
-					[
-						"copya",
-						"File: Copy as Tag a"
-					],
-					[
-						"markd",
-						"Markdown Preview: preview in Browser"
-					],
-					[
-						"mark",
-						"Markdown Preview: preview in Sublime Text"
-					],
-					[
-						"bro",
-						"Preferences: Browse Packages"
-					],
-					[
-						"enable",
-						"Package Control: Enable Package"
-					],
-					[
-						"disab",
-						"Package Control: Disable Package"
-					],
-					[
-						"synjas",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"disal",
-						"Package Control: Disable Package"
-					],
-					[
-						"listpage",
-						"Package Control: List Packages"
-					],
-					[
-						"prefi",
-						"Preferences: Prefixr Key Bindings – Default"
-					],
-					[
-						"js",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"htm",
-						"Set Syntax: HTML (Erlang)"
-					],
-					[
-						"syntaxhtml5",
-						"Set Syntax: HTML5"
-					],
-					[
-						"csscomb",
-						"Sort via CSScomb"
-					],
-					[
-						"conflict",
-						"FindKeyConflicts: All Conflicts"
-					],
-					[
-						"key",
-						"FindKeyConflicts: All Key Maps"
-					],
-					[
-						"upgrade",
-						"Package Control: Upgrade Package"
-					],
-					[
-						"keyma",
-						"FindKeyConflicts: All Key Maps"
-					],
-					[
-						"disablelint",
-						"SublimeLinter: Disable Linting"
-					],
-					[
-						"linter",
-						"SublimeLinter: Disable Linting"
-					],
-					[
-						"htmlpr",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"syntax",
-						"Set Syntax: C++"
-					],
-					[
-						"syntacss",
-						"Set Syntax: CSS"
-					],
-					[
-						"find",
-						"FindKeyConflicts: All Conflicts"
-					],
-					[
-						"color",
-						"Color picker"
-					],
-					[
-						"col",
-						"Color picker"
-					],
-					[
-						"instal",
-						"Package Control: Install Package"
-					],
-					[
-						"for",
-						"Format: Javascript"
-					],
-					[
-						"insta",
-						"Package Control: Install Package"
-					],
-					[
-						"project",
-						"Project: Close"
-					],
-					[
-						"syntahtml",
-						"Set Syntax: HTML"
-					],
-					[
-						"syntaxjava",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"prettify",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"preti",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"instp",
-						"Package Control: Install Package"
-					],
-					[
-						"syntaxjavs",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"inslp",
-						"Package Control: Install Package"
-					],
-					[
-						"syntax:html",
-						"Set Syntax: HTML"
-					],
-					[
-						"dis",
-						"Package Control: Disable Package"
-					],
-					[
-						"disa",
-						"Package Control: Disable Package"
-					],
-					[
-						"ena",
-						"Package Control: Enable Package"
-					],
-					[
-						"enal",
-						"Package Control: Enable Package"
-					],
-					[
-						"pinsp",
-						"Package Control: Install Package"
-					],
-					[
-						"Package Control: ",
-						"Package Control: Discover Packages"
-					],
-					[
-						"fetch",
-						"Fetch: Manage"
-					],
-					[
-						"fet",
-						"Fetch: File"
-					],
-					[
-						"instap",
-						"Package Control: Install Package"
-					],
-					[
-						"instpa",
-						"Package Control: Install Package"
-					],
-					[
-						"ins",
-						"Package Control: Install Package"
-					],
-					[
-						"inst",
-						"Package Control: Install Package"
-					],
-					[
-						"move",
-						"File: Move"
-					],
-					[
-						"filemove",
-						"File: Move"
-					],
-					[
-						"htmlp",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"upda",
-						"Package Control: Upgrade Package"
-					],
-					[
-						"forma",
-						"Format: Javascript"
-					],
-					[
-						"syntax java",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"terminal",
-						"Preferences: Terminal Key Bindings – Default"
-					],
-					[
-						"ter",
-						"Preferences: Terminal Key Bindings – User"
-					],
-					[
-						"packis",
-						"Package Control: Install Package"
-					],
-					[
-						"clipb",
-						"Clipboard History"
-					],
-					[
-						"diff",
-						"FileDiffs: Menu"
-					],
-					[
-						"filedi",
-						"FileDiffs: Menu"
-					],
-					[
-						"snippet sm",
-						"Snippet: smartytag"
-					]
-				],
-				"width": 522.0
-			},
-			"console":
-			{
-				"height": 153.0
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"file_history":
-			[
-				"/C/Users/John the whisler/Desktop/index.html",
-				"/D/www/over/sitemap/css/sitemap.css",
-				"/D/www/structure/css/page.css",
-				"/D/www/newhd/css/page.css",
-				"/D/www/structure/css/common.css",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Settings/SideBarEnhancements.json",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/AutoFileName/autofilename.py",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/AutoFileName/.gitignore",
-				"/C/Users/John the whisler/Desktop/网站地图_绿野网.htm",
-				"/D/www/over/sitemap/sitemap.html",
-				"/D/www/july/js/script.js",
-				"/D/www/july/css/common.css",
-				"/C/Users/John the whisler/Desktop/table.html",
-				"/D/www/newhd/list.html",
-				"/D/www/newhd/list-search.html",
-				"/D/www/newhd/index.php",
-				"/D/www/july/index.html",
-				"/D/www/july/css/index.css",
-				"/D/www/newhd/inc/rightads.html",
-				"/D/www/newhd/inc/actlist.html",
-				"/D/www/newhd/inc/filterbar.html",
-				"/D/www/newhd/inc/actscreen.html",
-				"/D/www/newhd/inc/meganav.html",
-				"/D/www/newhd/inc/breadcrumbs.html",
-				"/D/www/newhd/inc/headerbottom.html",
-				"/D/www/newhd/inc/headertop.html",
-				"/C/Users/John the whisler/Downloads/gotop (1).html",
-				"/D/www/newhd/css/common.css",
-				"/D/www/july/css/page.css",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyefooter.sublime-snippet",
-				"/C/Users/John the whisler/Desktop/My97DatePickerBeta/demo.htm",
-				"/C/Users/John the whisler/Desktop/category.css",
-				"/D/www/newhd/pic.html",
-				"/D/www/newhd/txt.html",
-				"/D/www/newhd/js/huodong.js",
-				"/D/www/newhd/js/My97DatePicker/WdatePicker.js",
-				"/D/www/newhd/test.html",
-				"/D/www/newhd/js/viewswitcher.js",
-				"/D/www/newhd/js/index.js",
-				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
-				"/D/www/newhd/index.html",
-				"/D/www/over/duanwu/index.html",
-				"/C/Users/John the whisler/Desktop/register.html",
-				"/C/Users/John the whisler/Desktop/register.min.html",
-				"/C/Users/John the whisler/Desktop/lvye/activity.css",
-				"/C/Users/John the whisler/Desktop/jQuery.countdown-master/jQuery.countdown-master/examples/groupon.html",
-				"/C/Users/John the whisler/Desktop/jQuery.countdown-master/jQuery.countdown-master/src/jquery.countdown.js",
-				"/C/Users/John the whisler/Desktop/lvye/eventshow.htm",
-				"/D/www/over/newdetail/index.html",
-				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown-zh-CN.js",
-				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/countdownBasic.html",
-				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown.js",
-				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown.min.js",
-				"/C/Users/John the whisler/Desktop/lvye/discuz_plugin_event.xml",
-				"/D/www/newhd/css/index.css",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/csscomment.sublime-snippet",
-				"/C/Users/John the whisler/Desktop/search.css",
-				"/D/www/structure/index.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/John the whisler/Desktop/art157dreamw/styles.css",
-				"/C/Users/John the whisler/Desktop/joddit-global-css.0.8.0/joddit-global-css/css/jgcss-admin.css",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet",
-				"/D/www/structure/css/base.css",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/css/normalize.css",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/index.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/cssbegin.sublime-snippet",
-				"/C/Users/John the whisler/Desktop/bootstrap-master/README.md",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Clickable URLs/README.md",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Clickable URLs/Default (Windows).sublime-keymap",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/css/main.css",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79 (1)/h5bp-html5-boilerplate-defe483/404.html",
-				"/D/www/structure/css/global.css",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML/Symbol List - ID.tmPreferences",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-				"/C/Users/John the whisler/.ssh/id_rsa.pub",
-				"/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/js/kkcountdown.js",
-				"/C/Users/John the whisler/Desktop/kkcountdown-master/kkcountdown-master/index.html",
-				"/C/Users/John the whisler/Desktop/lvye/timeCountDown.js",
-				"/D/www/newdetail/js/timeCountDown.js",
-				"/D/Apache2.2/conf/httpd.conf",
-				"/D/www/newdetail/index.html",
-				"/D/www/pay.lvye.cn/application/config/config.php",
-				"/C/Windows/System32/drivers/etc/hosts",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/FTPSync/README.md",
-				"/C/Users/John the whisler/Desktop/lvye/sftp-config.json",
-				"/D/www/salon/css/global.css",
-				"/D/www/salon/css/styles.css",
-				"/D/www/salon/index.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyenav.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/lvyelogo.sublime-snippet",
-				"/D/www/over/newact/js/imgpreview.js",
-				"/D/www/over/newact/css/index.css",
-				"/D/www/over/newact/js/script.js",
-				"/D/www/over/newact/index.html",
-				"/D/www/structure/html5-boilerplate/index.html",
-				"/C/Users/John the whisler/Desktop/demo/demo2.html",
-				"/D/www/structure/html5-boilerplate/doc/css.md",
-				"/D/www/structure/html5-boilerplate/css/normalize.css",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/index.html",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/js/plugins.js",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/js/vendor/modernizr-2.6.2.min.js",
-				"/C/Users/John the whisler/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/js/main.js",
-				"/C/Users/John the whisler/Desktop/bootstrap/bootstrap/js/bootstrap.js",
-				"/D/www/lvyehuodong/huodong/templates/index.tpl",
-				"/D/www/lvyehuodong/config.php",
-				"/D/www/lvyehuodong/static/huodong/css/index.css",
-				"/D/www/openlvye/index.html",
-				"/D/www/openlvye/frame.html",
-				"/D/www/openlvye/css/lvyeframe.css",
-				"/D/www/openlvye/css/styles.css",
-				"/D/www/openlvye/css/global.css",
-				"/D/www/sitemap/sitemap.html",
-				"/C/Users/John the whisler/Desktop/demo1.html",
-				"/D/www/over/act/css/styles.css",
-				"/D/www/over/act/css/global.css",
-				"/D/www/wwwlvyecn/uc_server/images/default/style.css",
-				"/D/www/sitemap/css/allcat.css",
-				"/D/www/over/allcat/index.html",
-				"/C/Users/John the whisler/Desktop/sitemap.html",
-				"/D/www/over/act/index.html",
-				"/D/www/over/allcat/css/allcat.css",
-				"/D/www/newdetail/css/xwb_2.css",
-				"/D/www/olympus/index.html",
-				"/C/Users/John the whisler/Desktop/timeCountDown.js",
-				"/C/Users/John the whisler/Desktop/countdown/countdown_v2.0.0/examples 1.html",
-				"/D/www/olympus/js/sample01.js",
-				"/D/www/olympus/css/styles.css"
-			],
-			"find":
-			{
-				"height": 40.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-					"C:\\Documents and Settings\\Administrator\\Application Data\\Sublime Text 2",
-					"D:\\Webroot\\program",
-					"D:\\cutout",
-					"\\\\192.168.1.11\\2012customjerseysshop.com",
-					"E:\\域名解析",
-					"C:\\Documents and Settings\\Administrator\\Application Data\\Sublime text 2\\Packages",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\custom1\\css",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\templates\\css",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\jstest,E:\\域名解析\\服务器",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\jstest",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\jewerlry",
-					"Z:\\xue\\nfl0919.com\\templates\\0919\\css,C:\\Documents and Settings\\Administrator\\Desktop\\jerseysfromchinaonline.com",
-					"Z:\\xue\\nfl0919.com\\templates\\0919\\css",
-					"Z:\\xue\\nfl0917.com\\templates\\0917\\css",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\0910-2-nfl",
-					"E:\\Downloads\\06d1b7f18784ecad5f47962c9724a9e1\\0905-2-nfl\\css",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
-					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1"
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-					"haidao",
-					"户外兴趣",
-					"港澳",
-					"com",
-					"haidaO",
-					"地方版",
-					"index.html",
-					"柳沟",
-					"huairou",
-					"huarou",
-					"怀柔",
-					"<dd>",
-					"<dt>",
-					"dt",
-					"活动频道",
-					"actblock",
-					"<dd>",
-					"溯溪",
-					"huairou",
-					"huarou",
-					"活动",
-					"公益",
-					"滑雪场最新动态",
-					"线路大全",
-					"活动频道",
-					"<li>",
-					"活动频道",
-					"<li>",
-					"<div class=\"tablerow clearfix\">",
-					"<li>",
-					"li",
-					"户外知识",
-					".tablerow",
-					"li",
-					"专题",
-					"select",
-					"<i href=\"\" class=\"closex\"></i>",
-					"selecteditem",
-					"listwrap",
-					"<span>&rarr;</span>",
-					"&rarr;",
-					"sinawe",
-					"contentblock clearfix",
-					"专题",
-					"placeintro",
-					"摄影",
-					"topbar",
-					"png",
-					";\n",
-					".txttitle",
-					"recom",
-					"element.style {\n}\nrecomact",
-					"element.style {\n}\n.recomact",
-					"element.style {\n}\n.recomact ul li a",
-					"recomacttitle",
-					"button",
-					"clearfix",
-					"<ul class=\"clearfix",
-					"<ul class=\"cl",
-					"leftinfo",
-					"<ul class=\"clearfix\">",
-					"contentblock",
-					"sina",
-					"hiddenattr",
-					"北京长度测试长度测试长度测试",
-					" 北京长度测试长度测试长度测试",
-					" 北京长度测试长度测试长度测试 ",
-					"text",
-					"txtwrap",
-					"joinandprice",
-					"【钢七连】端午随我到西藏体验藏传佛教！最美西藏—布达拉宫，林芝，纳木措，雅鲁藏布江，南迦巴瓦，珠峰！",
-					"cblue",
-					"table",
-					"txtviewrow",
-					"actwrap",
-					"txtview",
-					"joinandprice",
-					"centerinfo",
-					"特色",
-					"preview",
-					"current",
-					"图片",
-					"tb",
-					"燕小六",
-					"table",
-					"06月10日(一)",
-					"opacitybg",
-					"opacity",
-					"preview",
-					"src",
-					"preview",
-					"图片",
-					"99.3% 1465条评价",
-					"dl class=\"clearfix\"",
-					"clear\"",
-					"clearfix",
-					"dl class=\"clearfix\"",
-					"colspan=\"3\"",
-					"#",
-					"colspan=\"3\"",
-					"colspan",
-					"centerinfo",
-					"toggle",
-					"clear",
-					"filter",
-					"activity-list",
-					"/huodong/search\\?property=all&amp;search_leader=&amp;q=端午&amp;p=.+&amp;",
-					"/huodong/search\\?property=all&amp;search_leader=&amp;q=端午&amp;p=.&amp;",
-					"大壮壮",
-					"我要报名",
-					"1465",
-					"99.3%",
-					"tj25",
-					"tj20",
-					"tj19",
-					"tj18",
-					"京郊最美“小黄山”云蒙山国家森林公园快乐之旅、登山、踏青、赏花观瀑摄影一日游活动！",
-					"萤火虫之旅",
-					"荼靡77",
-					"强",
-					".joinandprice",
-					"joinandprice",
-					"act-title",
-					"center",
-					":gt",
-					"gt(",
-					"toggleshow",
-					"count"
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-					"imglistul",
-					"contentblock clearfix",
-					"",
-					"<span class=\"corange\">99.3%</span>",
-					"领队姓名</a> &nbsp;&nbsp;好评率：<a href=\"\">80%</a>",
-					"出发：5月11日(六) &nbsp;返回：5月12日(日)",
-					"出发：5月11日(六)返回：5月12日(日)",
-					"出发：5月11日（六）返回：5月12日（日",
-					"90",
-					"\\1-big",
-					"</span>\\n",
-					"</span>/n",
-					"",
-					"emph",
-					"cp8",
-					"cp7",
-					"cp6",
-					"cp5",
-					"cp4",
-					"cp3",
-					"cp2",
-					"cp1",
-					"剩余(12)",
-					"确认(99)",
-					"驴妈妈",
-					"欣欣旅游网",
-					"途牛",
-					"特色活动",
-					"当季热门",
-					"结伴远行",
-					"本周出游",
-					"绿野中国",
-					"",
-					"'Microsoft yahei'",
-					"12",
-					"txt-hd",
-					"second",
-					"620",
-					"#f2f2f2",
-					" ",
-					"",
-					"dedede",
-					"209",
-					"margin-bottom: 10px;height: 18px;overflow: hidden; font-size:12px;line-height:18px;",
-					"",
-					"line-height:30px",
-					"",
-					"border:none;vertical-align: middle; margin-right:10px;",
-					"\\1",
-					" ",
-					"\\s",
-					"",
-					" ",
-					"190",
-					"",
-					"title=\"\"",
-					"width=\"70\"",
-					"..images/",
-					"",
-					"email",
-					"password",
-					"<a href=\"#\" ",
-					"\\1\"",
-					"",
-					"\\1\"",
-					"\\1#\"",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"\\1images/\\2\"",
-					"\\1\"",
-					"\\1#\"",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"\\1images/\\2\"",
-					"\\1\"",
-					"\\1#\" ",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"\\1#\" ",
-					"\\1#\"",
-					"\\1images/\\2\"",
-					"\\}\\n",
-					"",
-					"\\1#\"",
-					"",
-					"\\1css/\\2",
-					"Burkina Faso",
-					"",
-					"\\1images/\\2\"",
-					"\\1\"",
-					"\\1#\" ",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"(",
-					"../images/select2.png",
-					"iconimage",
-					"images",
-					"images/",
-					"\\1images/\\2\"",
-					"\\1\"",
-					"\\1#\" ",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"class=\"images\"",
-					"\\1images/\\2\"",
-					"\\1\"",
-					"\\1#\"",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"\\1images/\\2\"",
-					"\\1\"",
-					"\\1#\" ",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"images",
-					"\\1images/\\2\"",
-					"\\1\"",
-					"\\1\" ",
-					"\\1#\" ",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"../images",
-					"\\1images/\\2\"",
-					"\\1images/\\2",
-					"\\1/images/\\2",
-					"\\1/\\2",
-					"\\1.\\2",
-					"\\1.\\3"
-				],
-				"reverse": false,
-				"show_context": true,
-				"use_buffer2": true,
-				"whole_word": false,
-				"wrap": false
-			},
-			"incremental_find":
-			{
-				"height": 37.0
-			},
-			"input":
-			{
-				"height": 37.0
-			},
-			"layout":
-			{
-				"cells":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					]
-				],
-				"cols":
-				[
-					0.0,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
-			},
-			"menu_visible": true,
-			"output.exec":
-			{
-				"height": 200.0
-			},
-			"output.sftp":
-			{
-				"height": 0.0
-			},
-			"replace":
-			{
-				"height": 70.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-					[
-						"page.css",
-						"css/page.css"
-					],
-					[
-						"scrip",
-						"js/script.js"
-					],
-					[
-						"page",
-						"css/page.css"
-					],
-					[
-						"swit",
-						"js/viewswitcher.js"
-					],
-					[
-						"index.js",
-						"js/index.js"
-					],
-					[
-						"comm",
-						"css/common.css"
-					],
-					[
-						"event",
-						"eventshow.htm"
-					],
-					[
-						"img",
-						"js/imgpreview.js"
-					],
-					[
-						"global",
-						"css/global.css"
-					],
-					[
-						"lvye",
-						"css/lvyeframe.css"
-					],
-					[
-						"allca",
-						"css/allcat.css"
-					],
-					[
-						"c",
-						"css/carousel.css"
-					],
-					[
-						"styles",
-						"css/styles.css"
-					],
-					[
-						"sm",
-						"js/sample01.js"
-					],
-					[
-						"globa",
-						"css/global.css"
-					],
-					[
-						"glbal",
-						"act/css/global.css"
-					],
-					[
-						"style",
-						"act/css/styles.css"
-					],
-					[
-						"script",
-						"js/scripts.js"
-					],
-					[
-						"css.cs",
-						"css/css.css"
-					],
-					[
-						"ski",
-						"css/skin.css"
-					],
-					[
-						"prev",
-						"js/imgpreview.js"
-					],
-					[
-						"indexs",
-						"css/index.css"
-					],
-					[
-						"ind",
-						"css/index.css"
-					],
-					[
-						"index.css",
-						"css/index.css"
-					],
-					[
-						"index",
-						"index.html"
-					],
-					[
-						".scss",
-						"css/sass/activity-module.scss"
-					],
-					[
-						"goods",
-						"2012cheapjerseysusa/goods.dwt"
-					],
-					[
-						"article",
-						"2012cheapjerseysusa/article_cat.dwt"
-					],
-					[
-						"de",
-						"detailpage.html"
-					],
-					[
-						"listp",
-						"listpage.html"
-					],
-					[
-						"scripts",
-						"js/scripts.js"
-					],
-					[
-						"glo",
-						"css/global.css"
-					],
-					[
-						"detail",
-						"detailpage.html"
-					],
-					[
-						"listpa",
-						"listpage.html"
-					],
-					[
-						"detal",
-						"detailpage.html"
-					],
-					[
-						"list",
-						"listpage.html"
-					],
-					[
-						"index.ht",
-						"index.html"
-					],
-					[
-						"skin",
-						"css/skin.css"
-					],
-					[
-						"gl",
-						"css/global.css"
-					],
-					[
-						"inde",
-						"nfl jerseys3/index.html"
-					],
-					[
-						"decss",
-						"css/detailpage.css"
-					],
-					[
-						"",
-						"/D/template/mascot1/detailpage.html"
-					],
-					[
-						"rese",
-						"css/reset-min.css"
-					],
-					[
-						"deta",
-						"css/detailpage.css"
-					],
-					[
-						"lispcss",
-						"css/listpage.css"
-					],
-					[
-						"detaicss",
-						"css/detailpage.css"
-					],
-					[
-						"listpa.c",
-						"css/listpage.css"
-					],
-					[
-						"st",
-						"css/styles.css"
-					],
-					[
-						"handl",
-						"js/handlepro.js"
-					],
-					[
-						"super",
-						"css/superfish.css"
-					],
-					[
-						"globl",
-						"css/global.css"
-					],
-					[
-						"lista",
-						"listpage.html"
-					],
-					[
-						"glba",
-						"css/global.css"
-					],
-					[
-						"flex",
-						"/D/Webroot/2012-11-15/css/flexslider.css"
-					],
-					[
-						"reset",
-						"css/reset.css"
-					],
-					[
-						"2012",
-						"2012-11-15/index.html"
-					],
-					[
-						"host",
-						"/C/WINDOWS/system32/drivers/etc/hosts"
-					],
-					[
-						".css",
-						"public_html/css/style.css"
-					],
-					[
-						"magic",
-						"css/magiczoom.css"
-					],
-					[
-						"list.css",
-						"css/listpage.css"
-					],
-					[
-						"com",
-						"css/common.css"
-					],
-					[
-						"indx",
-						"css/index.css"
-					],
-					[
-						"index.html",
-						"index.html"
-					],
-					[
-						"js/",
-						"js/jquery.dcjqaccordion.js"
-					],
-					[
-						"header.css",
-						"css/header.css"
-					],
-					[
-						"detail.css",
-						"css/detail.css"
-					],
-					[
-						"search.html",
-						"product/search.html"
-					],
-					[
-						"header.html",
-						"theme/header.html"
-					],
-					[
-						"style.css",
-						"css/style.css"
-					],
-					[
-						"prodetai.",
-						"product/detail.html"
-					],
-					[
-						"contentc",
-						"css/content.css"
-					],
-					[
-						"prolist.html",
-						"product/list.html"
-					],
-					[
-						"head.html",
-						"theme/header.html"
-					],
-					[
-						"footer.html",
-						"theme/footer.html"
-					],
-					[
-						"list_pic",
-						"product/list_pic.html"
-					],
-					[
-						"download",
-						"download/detail.html"
-					],
-					[
-						"cotent.css",
-						"css/content.css"
-					],
-					[
-						"user.css",
-						"css/user.css"
-					],
-					[
-						"sty",
-						"css/style.css"
-					],
-					[
-						"style.cs",
-						"css/style.css"
-					],
-					[
-						"prodetai.ht",
-						"product/detail.html"
-					],
-					[
-						"prolist",
-						"product/list.html"
-					],
-					[
-						"list.html",
-						"comments/list.html"
-					],
-					[
-						"index.",
-						"index.html"
-					],
-					[
-						"copyfoot",
-						"theme/Copy of footer.html"
-					],
-					[
-						"footer.ht",
-						"theme/footer.html"
-					],
-					[
-						"header",
-						"theme/Copy of header.html"
-					],
-					[
-						"header.",
-						"0929/theme/header.html"
-					],
-					[
-						"footer.css",
-						"0929/css/footer.css"
-					],
-					[
-						"content.css",
-						"0929/css/content.css"
-					],
-					[
-						"downdetail",
-						"0929/download/detail.html"
-					],
-					[
-						"prosearch",
-						"0929/product/search.html"
-					],
-					[
-						"prodetail.ht",
-						"0929/product/detail.html"
-					],
-					[
-						"prodetail.html",
-						"0929/product/detail.html"
-					],
-					[
-						"head",
-						"0929/theme/header.html"
-					],
-					[
-						"content",
-						"css/content.css"
-					],
-					[
-						"downdetai",
-						"download/detail.html"
-					],
-					[
-						"cotent",
-						"css/content.css"
-					],
-					[
-						"pro/de",
-						"product/detail.html"
-					],
-					[
-						"detail.html",
-						"archives/detail.html"
-					],
-					[
-						"pagepro",
-						"css/pagepro.css"
-					],
-					[
-						"conte",
-						"css/content.css"
-					],
-					[
-						"login.html",
-						"user/adminu/login.html"
-					],
-					[
-						"footer",
-						"css/footer.css"
-					],
-					[
-						"search",
-						"product/search.html"
-					],
-					[
-						"down/de",
-						"download/detail.html"
-					],
-					[
-						"detai",
-						"product/detail.html"
-					],
-					[
-						"prodetail",
-						"product/detail.html"
-					],
-					[
-						"foot",
-						"css/footer.css"
-					],
-					[
-						"footer.c",
-						"0926/css/footer.css"
-					],
-					[
-						"downl/deta",
-						"0926/download/detail.html"
-					],
-					[
-						"detail.c",
-						"0926/css/detail.css"
-					],
-					[
-						"list.cs",
-						"0926/css/list.css"
-					],
-					[
-						"prosearch.",
-						"0926/product/search.html"
-					],
-					[
-						"my",
-						"deal/adminu/my_deal.html"
-					],
-					[
-						"mod",
-						"user/adminu/modify_user.html"
-					],
-					[
-						"modi",
-						"user/adminu/modify_userpwd.html"
-					],
-					[
-						"styl",
-						"css/style.css"
-					],
-					[
-						"modify",
-						"user/adminu/modify_userpwd.html"
-					],
-					[
-						"left.html",
-						"user/left.html"
-					],
-					[
-						"footer.",
-						"theme/footer.html"
-					],
-					[
-						"detai.c",
-						"css/detail.css"
-					],
-					[
-						"user.cs",
-						"css/user.css"
-					],
-					[
-						"content.c",
-						"css/content.css"
-					],
-					[
-						"down/detai",
-						"download/detail.html"
-					],
-					[
-						"down",
-						"download/detail.html"
-					],
-					[
-						"contet.c",
-						"css/content.css"
-					],
-					[
-						"copyo",
-						"Copy of index.html"
-					]
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 500.0,
-				"selected_items":
-				[
-					[
-						"",
-						"/D/Webroot/ajaxtest/new.sublime-project"
-					]
-				],
-				"width": 380.0
-			},
-			"show_minimap": false,
-			"show_open_files": false,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 144.0,
-			"status_bar_visible": true
-		},
-		"new_window_width": 1842.0
-	},
-	"windows":
-	[
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
 					[
 						"Http",
 						"HttpResponse"
@@ -2601,31 +607,28 @@
 					]
 				]
 			},
-			"buffers":
-			[
-				{
-					"file": "/D/myproj/myproj/urls.py",
-					"settings":
-					{
-						"buffer_size": 713,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/D/myproj/myproj/views.py",
-					"settings":
-					{
-						"buffer_size": 544,
-						"line_ending": "Unix"
-					}
-				}
-			],
 			"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
 			"command_palette":
 			{
-				"height": 174.0,
+				"height": 147.0,
 				"selected_items":
 				[
+					[
+						"format",
+						"Format: Javascript"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"disablep",
+						"Package Control: Disable Package"
+					],
+					[
+						"prettify",
+						"HTMLPrettify: Prettify"
+					],
 					[
 						"sscss",
 						"Set Syntax: CSS"
@@ -2661,10 +664,6 @@
 					[
 						"install",
 						"Package Control: Install Package"
-					],
-					[
-						"format",
-						"Format: Javascript"
 					],
 					[
 						"ssjs",
@@ -2911,10 +910,6 @@
 						"Preferences: Browse Packages"
 					],
 					[
-						"enable",
-						"Package Control: Enable Package"
-					],
-					[
 						"disab",
 						"Package Control: Disable Package"
 					],
@@ -3023,10 +1018,6 @@
 						"Set Syntax: JavaScript"
 					],
 					[
-						"prettify",
-						"HTMLPrettify: Prettify"
-					],
-					[
 						"preti",
 						"HTMLPrettify: Prettify"
 					],
@@ -3133,13 +1124,9 @@
 					[
 						"clipb",
 						"Clipboard History"
-					],
-					[
-						"diff",
-						"FileDiffs: Menu"
 					]
 				],
-				"width": 514.0
+				"width": 522.0
 			},
 			"console":
 			{
@@ -3156,21 +1143,50 @@
 			},
 			"file_history":
 			[
+				"/D/workspace/lvyetopic/nanjing2013/static/nanjing2013/css/page.css",
+				"/C/Users/John the whisler/Desktop/act/feeoperate.bak.js",
+				"/D/workspace/lvyetopic/lvyetopic/settings.py",
+				"/C/Users/John the whisler/Desktop/act/feeoperate1.js",
+				"/C/Users/John the whisler/Desktop/act/feeoperate.js",
+				"/C/Users/John the whisler/Desktop/act/index.htm",
+				"/C/Users/John the whisler/Desktop/act/eventpostvalidate.js",
+				"/C/Users/John the whisler/Desktop/activity.css",
+				"/C/Users/John the whisler/Desktop/pubevent.htm",
+				"/C/Users/John the whisler/Desktop/thickbox.css",
+				"/C/Users/John the whisler/Desktop/demo.htm",
+				"/D/www/actApply/js/My97DatePicker/WdatePicker.js",
+				"/D/www/actApply/js/My97DatePicker/skin/blueFresh/datepicker.css",
+				"/D/www/actApply/js/My97DatePicker/skin/WdatePicker.css",
+				"/C/Users/Public/Desktop/Google Chrome.lnk",
+				"/D/www/over/app/index.html",
+				"/D/www/actApply/css/page.css",
+				"/D/www/actApply/css/common.css",
+				"/D/www/structure/css/page.css",
+				"/D/www/structure/index.html",
+				"/D/workspace/library/huodong/static/huodong/js/huodong.js",
+				"/D/workspace/library/huodong/templates/huodong/extra.html",
+				"/D/workspace/library/huodong/static/huodong/css/search.css",
+				"/D/workspace/library/huodong/static/huodong/css/catalog.css",
+				"/D/workspace/library/huodong/templates/huodong/common/event_text_mode.html",
+				"/D/www/over/edm/3/index.html",
+				"/D/www/over/edm/3/edm3.min_site.html",
+				"/D/www/over/edm/3/edm3.min_mail.html",
+				"/D/www/over/edm/3/edm3_mail.min.html",
+				"/D/www/over/edm/3/edm3_site.min.html",
+				"/D/www/over/show/index.html",
+				"/D/workspace/library/huodong/static/huodong/css/index.css",
+				"/D/workspace/library/library/settings.py",
+				"/D/workspace/library/pyxapian/PyIndex.py",
+				"/D/workspace/library/catalog/static/catalog/js/huodong.js",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime text 2/Packages/User/cssdoc.sublime-snippet",
 				"/D/workspace/library/huodong/templates/huodong/search.html",
 				"/D/workspace/library/huodong/templates/huodong/common/search_condition.html",
-				"/D/workspace/library/huodong/static/huodong/js/huodong.js",
 				"/D/workspace/library/huodong/templates/huodong/common/event_pic_mode.html",
-				"/D/workspace/library/huodong/static/huodong/css/catalog.css",
-				"/D/workspace/library/huodong/static/huodong/css/search.css",
 				"/D/workspace/library/README",
-				"/D/workspace/library/library/settings.py",
 				"/D/workspace/library/rebuild_xapian.bat",
 				"/D/workspace/library/pyxapian/PyXapian.py",
-				"/D/workspace/library/pyxapian/PyIndex.py",
 				"/D/workspace/library/huodong/templates/huodong/catalog.html",
 				"/D/workspace/library/huodong/templates/huodong/common/footer.html",
-				"/D/workspace/library/huodong/templates/huodong/common/event_text_mode.html",
 				"/D/workspace/library/huodong/templates/huodong/common/event_list_mode.html",
 				"/C/Users/John the whisler/Desktop/portal_topic_skiapp.htm",
 				"/D/myproj/myproj/views.py",
@@ -3209,7 +1225,6 @@
 				"/E/testsite/mysite/mysite/__init__.py",
 				"/D/Python27/Lib/site-packages/django/bin/django-admin.py",
 				"/D/Python27/Scripts/django-admin.py",
-				"/D/workspace/library/huodong/static/huodong/css/index.css",
 				"/D/workspace/library/chatroom/views.py",
 				"/D/workspace/library/catalog/static/catalog/css/search.css",
 				"/D/workspace/library/manage.py",
@@ -3224,7 +1239,6 @@
 				"/D/www/show/js/easySlider1.7.js",
 				"/C/Users/John the whisler/Desktop/484/index.html",
 				"/C/Users/John the whisler/Desktop/484/js/loopedslider.min.js",
-				"/D/www/structure/css/page.css",
 				"/C/Users/John the whisler/Desktop/index.html",
 				"/D/www/over/sitemap/css/sitemap.css",
 				"/D/www/newhd/css/page.css",
@@ -3256,42 +1270,15 @@
 				"/C/Users/John the whisler/Desktop/category.css",
 				"/D/www/newhd/pic.html",
 				"/D/www/newhd/txt.html",
-				"/D/www/newhd/js/huodong.js",
-				"/D/www/newhd/js/My97DatePicker/WdatePicker.js",
-				"/D/www/newhd/test.html",
-				"/D/www/newhd/js/viewswitcher.js",
-				"/D/www/newhd/js/index.js",
-				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
-				"/D/www/newhd/index.html",
-				"/D/www/over/duanwu/index.html",
-				"/C/Users/John the whisler/Desktop/register.html",
-				"/C/Users/John the whisler/Desktop/register.min.html",
-				"/C/Users/John the whisler/Desktop/lvye/activity.css",
-				"/C/Users/John the whisler/Desktop/jQuery.countdown-master/jQuery.countdown-master/examples/groupon.html",
-				"/C/Users/John the whisler/Desktop/jQuery.countdown-master/jQuery.countdown-master/src/jquery.countdown.js",
-				"/C/Users/John the whisler/Desktop/lvye/eventshow.htm",
-				"/D/www/over/newdetail/index.html",
-				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown-zh-CN.js",
-				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/countdownBasic.html",
-				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown.js",
-				"/C/Users/John the whisler/Desktop/jquery.countdown.package-1.6.2/jquery.countdown.min.js",
-				"/C/Users/John the whisler/Desktop/lvye/discuz_plugin_event.xml",
-				"/D/www/newhd/css/index.css",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/csscomment.sublime-snippet",
-				"/C/Users/John the whisler/Desktop/search.css",
-				"/D/www/structure/index.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/John the whisler/Desktop/art157dreamw/styles.css",
-				"/C/Users/John the whisler/Desktop/joddit-global-css.0.8.0/joddit-global-css/css/jgcss-admin.css",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet"
+				"/D/www/newhd/js/huodong.js"
 			],
 			"find":
 			{
-				"height": 40.0
+				"height": 119.0
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 112.0,
 				"where_history":
 				[
 					"D:\\Program Files (x86)\\Sublime Text 2",
@@ -3325,141 +1312,151 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"hours_ahead",
-					"thirdcolumn",
-					"262",
-					"#activity-list",
-					"60",
-					"limit",
-					"no-event",
-					".actscreen dl dd a",
-					"90",
-					".thirdcolumn",
-					"90",
-					".limitw110",
-					"7",
-					"hotkeywords",
-					"filterbar",
-					"navigation",
-					"60",
-					"insite",
-					"深圳",
-					"www.0755hz.cn",
-					"深圳会展指南，http://www.0755hz.cn/",
-					"&nbsp;",
-					"64",
-					"ios",
-					"ois",
-					"section",
-					"imgsection",
-					"WdatePicker",
-					"520",
-					"footer-adsrow",
-					"footer",
-					"txtviewtb",
-					"200",
-					".mega-list li span h3",
-					"200",
-					".placesinfo",
-					".txtviewrow",
-					"limith20",
-					"placesinfo",
-					"limith20",
-					"filterbar",
-					".picactprice",
-					"joinandprice",
-					"joinadnprice",
-					"joinbtn",
-					"114",
-					".joinbtn",
-					"<li class=\"nomb\">",
-					"hide",
-					"更多安装方式",
-					"/app/lvye_ski/",
-					"show",
-					"</li>",
-					"\n                ",
-					"clearfix",
-					"style=\".*?\"",
-					"style=\"font-size: 30px;\"",
-					"style=\"font-size: 30px\"",
-					"font-size",
-					" 更多安装方式",
-					" 更多安装方式 ",
-					"/app/lvye_app",
-					"qrcode",
-					"/app/lvye_app/",
-					"http://www.lvye.cn/app/lvye_app/",
-					"type=\"text/javascript\"",
-					"                    ",
-					"                   ",
-					"                  ",
-					"                 ",
-					"                ",
-					"               ",
-					"              ",
-					"             ",
-					"            ",
-					"           ",
-					"          ",
-					"         ",
-					"        ",
-					"       ",
-					"      ",
-					"     ",
-					"    ",
-					"\\n",
-					"110",
-					"729",
-					"preview_on_click",
-					"script",
-					"（图）",
-					"绿野",
-					"[全文]",
-					".joinandprice",
-					"picviewul",
-					"picviewbigimg",
-					"showme",
-					"limitw150",
-					"limit",
-					"picviewul",
-					".placesinfo",
-					".son-menu",
-					"togglesbtn",
-					"120",
-					".actscreen dl dd a",
-					"filterbar",
-					"#activity-list",
-					".rightbar-ads",
-					".txtviewblock .act-title",
-					"limit",
-					"litmit",
-					"limit",
-					".txtviewblock",
-					"pic",
-					".pagination",
-					".hiddenattr",
-					".act-title",
-					".txtviewblock",
-					"activity-list",
-					"picwrap",
+					"center",
+					"color:red;",
+					"tbwindow",
+					"width:500px;",
+					"编辑",
+					"console.",
+					"console.log",
+					"validateMustPay",
+					"comfirm",
+					"confirm",
+					";",
+					"calculateTotalFee",
+					"moneyinput",
+					"class=\"feifieldw40 moneyinput\"",
+					"calculateMustPayFee",
+					"validateMustPay",
+					"==tt",
+					"prepaidfee",
+					"pub_prepaid",
+					"预付费(元)",
+					"预付费(￥)",
+					"活动经费",
+					"class=\"feifieldw40 moneyinput\"",
+					"				// jQuery('#mustpayfee').text(calculateMustPayFee(mustpayarr));\n",
+					"!",
+					"console",
+					"value=\"0\" ",
+					"value=\"0\"",
+					"金钱(元)",
+					"validateNumber",
+					"calculateTotalFee",
+					"rowwrap",
+					"rowwrap sliderwrap clearfix",
+					"CRISPI与AKU品牌意大利主题派对热力四射",
+					"imageslid",
+					"title=\"输入纯数字\"",
+					"class=\"ismustpay\"",
+					"class=\"feifieldw40 moneyinput\"",
+					"console",
+					"$",
+					"class=\"feifieldw40 moneyinput\"",
+					"$j",
+					"$",
+					"$j",
+					"id=\"check_.*?\"",
 					"0",
-					"544",
-					"breadcrumbs",
-					"()\n",
-					"footer",
-					"actfeatures",
-					"show_panel",
-					"find_in_files",
-					"Show_Panel",
-					"Panel"
+					"value=\"0\"",
+					"disabled=\"disabled\"",
+					"选择",
+					"obj",
+					"Obj",
+					"obj",
+					"name=\"\" id=\"\"",
+					"mustpayfee",
+					"<input type=\"checkbox\" class=\"ismustpay\" disabled=\"disabled\"",
+					"<input type=\"checkbox\" class=\"ismustpay\"",
+					"<input type=\"checkbox\" class=\"ismustpay\" data-refer=\"fee_guide\" name=\"\" id=\"\">",
+					"ismustpay",
+					"<input type=\"checkbox\" name=\"\" id=\"\">",
+					"disabled=\"disabled\"",
+					").val()+",
+					"$j(",
+					"disabled=\"disabled\"",
+					"disabled=\"true\"",
+					"script",
+					"/\"></",
+					"input type=\"checkbox\" name=\"\" id=\"\" class=\"chooseselect\"",
+					"input type=\"checkbox\" name=\"\" id=\"\"",
+					"class=\"feifieldw40\"",
+					"<input type=\"text\" name=\"\" id=\"\">",
+					"<textarea name=\"\" id=\"\"></textarea>",
+					"feedetail",
+					"rows=\"2",
+					"rows=",
+					"rows",
+					"fei",
+					"cols=\"30\" rows=\"10\"",
+					"交通费",
+					"点击编辑费用名细",
+					"datefield",
+					"whyGreen",
+					"blueFres",
+					"{skin:'blueFresh'}",
+					"click",
+					"WdayTable",
+					"选择图片",
+					"jquery",
+					"tabs",
+					"mustfill",
+					"发布活动",
+					"活动分类",
+					"活动强度",
+					"<span class=\"mustfill\"></span>",
+					"mustfill",
+					".datefield",
+					"登山",
+					"预付费(元):",
+					"4th",
+					"3rd",
+					"2nd",
+					"1st",
+					"feiinfo",
+					"titleinput",
+					"fielddesc",
+					"YYYY-MM-DD",
+					"actinfo begin",
+					"150个字以内",
+					"选择市",
+					"fiedsdesc",
+					"活动性质:",
+					"text fields",
+					"td",
+					"banner",
+					"异游",
+					"width: 610px;margin: 0 auto;",
+					"banner",
+					"http://bbs.lvye.cn/thread-785866-1-1.html",
+					"西藏绝美十日珠峰行",
+					"4.27-5.1 西藏绝美十日珠峰行",
+					"2",
+					"http://bbs.lvye.cn/thread-779146-1-1.html",
+					"端午节6月10-16日太白-鳌山（7天）强势穿越",
+					"http://bbs.lvye.cn/thread-782835-1-1.html",
+					"感苗乡情，寻静谧梦，贵州苗乡5日游",
+					"http://bbs.lvye.cn/thread-782113-1-1.html",
+					"【天行队】★端午节★西藏全景游行摄活动",
+					"【钢七连】8.3-11青海油菜花敦煌丝绸之路！",
+					"11青海油菜花敦煌丝绸之路！”"
 				],
 				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": true,
+				"regex": false,
 				"replace_history":
 				[
+					"",
+					"disabled=\"disabled\"",
+					"其他",
+					"导游费",
+					"娱乐项目",
+					"公摊费用",
+					"爱心捐助",
+					"餐费",
+					"门票",
+					"住宿费",
 					"",
 					" ",
 					"\"",
@@ -3577,17 +1574,7 @@
 					"\\1images/\\2\"",
 					"\\1\"",
 					"\\1#\" ",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"images",
-					"\\1images/\\2\"",
-					"\\1\"",
-					"\\1\" ",
-					"\\1#\" ",
-					"\\1js/\\2",
-					"\\1css/\\2",
-					"../images",
-					"\\1images/\\2\""
+					"\\1js/\\2"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -3595,92 +1582,6 @@
 				"whole_word": false,
 				"wrap": false
 			},
-			"folders":
-			[
-				{
-					"path": "/D/myproj/myproj"
-				},
-				{
-					"path": "/D/workspace/library"
-				}
-			],
-			"groups":
-			[
-				{
-					"selected": 1,
-					"sheets":
-					[
-						{
-							"buffer": 0,
-							"file": "/D/myproj/myproj/urls.py",
-							"settings":
-							{
-								"buffer_size": 713,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										334,
-										334
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "bcd65731",
-									"incomplete_sync": null,
-									"origin_encoding": "ASCII",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/Python/Python.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/D/myproj/myproj/views.py",
-							"settings":
-							{
-								"buffer_size": 544,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										82,
-										82
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "e61699d0",
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "ASCII",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/Python/Python.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						}
-					]
-				},
-				{
-					"sheets":
-					[
-					]
-				}
-			],
 			"incremental_find":
 			{
 				"height": 37.0
@@ -3709,7 +1610,7 @@
 				"cols":
 				[
 					0.0,
-					0.964327147968,
+					0.283656509696,
 					1.0
 				],
 				"rows":
@@ -3731,7 +1632,6 @@
 			{
 				"height": 0.0
 			},
-			"position": "0,2,3,-32000,-32000,-1,-1,1079,1965,90,3869",
 			"replace":
 			{
 				"height": 70.0
@@ -3742,6 +1642,38 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"wdatepi",
+						"actApply/js/My97DatePicker/WdatePicker.js"
+					],
+					[
+						"index.css",
+						"library/huodong/static/huodong/css/index.css"
+					],
+					[
+						"catalog.css",
+						"library/huodong/static/huodong/css/catalog.css"
+					],
+					[
+						"search.css",
+						"library/huodong/static/huodong/css/search.css"
+					],
+					[
+						"huodong.js",
+						"library/huodong/static/huodong/js/huodong.js"
+					],
+					[
+						"extra",
+						"library/huodong/templates/huodong/extra.html"
+					],
+					[
+						"eventtext",
+						"library/huodong/templates/huodong/common/event_text_mode.html"
+					],
+					[
+						"extr",
+						"library/huodong/templates/huodong/extra.html"
+					],
 					[
 						"search.",
 						"library/huodong/templates/huodong/search.html"
@@ -3779,10 +1711,6 @@
 						"huodong/templates/huodong/common/condition.html"
 					],
 					[
-						"huodong.js",
-						"huodong/static/huodong/js/huodong.js"
-					],
-					[
 						"sear.css",
 						"catalog/static/catalog/css/search.css"
 					],
@@ -3813,10 +1741,6 @@
 					[
 						"cat",
 						"huodong/static/huodong/css/catalog.css"
-					],
-					[
-						"search.css",
-						"huodong/static/huodong/css/search.css"
 					],
 					[
 						"page",
@@ -3912,10 +1836,6 @@
 					],
 					[
 						"ind",
-						"css/index.css"
-					],
-					[
-						"index.css",
 						"css/index.css"
 					],
 					[
@@ -4233,26 +2153,6 @@
 					[
 						"login.html",
 						"user/adminu/login.html"
-					],
-					[
-						"search",
-						"product/search.html"
-					],
-					[
-						"down/de",
-						"download/detail.html"
-					],
-					[
-						"detai",
-						"product/detail.html"
-					],
-					[
-						"prodetail",
-						"product/detail.html"
-					],
-					[
-						"foot",
-						"css/footer.css"
 					]
 				],
 				"width": 0.0
@@ -4273,7 +2173,2471 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 219.0,
+			"side_bar_width": 115.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1901.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"jquery",
+						"jquery-1.7.2.min.js"
+					],
+					[
+						"pre",
+						"preventDefault"
+					],
+					[
+						"get",
+						"getEle"
+					],
+					[
+						"getE",
+						"getElementById"
+					],
+					[
+						"back",
+						"background-color:   (property)"
+					],
+					[
+						"totalf",
+						"totalfee"
+					],
+					[
+						"calu",
+						"calculateMustPayFee"
+					],
+					[
+						"refer",
+						"refercheckbox"
+					],
+					[
+						"obj",
+						"objismustpay"
+					],
+					[
+						"total",
+						"totalfeeObj"
+					],
+					[
+						"id",
+						"id=  (attribute)"
+					],
+					[
+						"Http",
+						"HttpResponse"
+					],
+					[
+						"max",
+						"max-width"
+					],
+					[
+						"scroll",
+						"scrollTop"
+					],
+					[
+						"scr",
+						"scrollTop  (function)"
+					],
+					[
+						"scrip",
+						"script.js"
+					],
+					[
+						"img",
+						"imagePreview"
+					],
+					[
+						"no",
+						"no-repeat  (value)"
+					],
+					[
+						"pare",
+						"parseInt"
+					],
+					[
+						"show",
+						"showtarget"
+					],
+					[
+						"li",
+						"line-height"
+					],
+					[
+						"ba",
+						"background-image"
+					],
+					[
+						"p",
+						"padding"
+					],
+					[
+						"update",
+						"updateFrame"
+					],
+					[
+						"getEle",
+						"getElementById"
+					],
+					[
+						"lis",
+						"list-style"
+					],
+					[
+						"h",
+						"header_bg.jpg	w:6 h:66"
+					],
+					[
+						"are",
+						"area_big.jpg	w:1000 h:1235"
+					],
+					[
+						"bg",
+						"nav_bg.png	w:6 h:69"
+					],
+					[
+						"cl",
+						"cl	consolelog"
+					],
+					[
+						"y",
+						"yDistance"
+					],
+					[
+						"1",
+						"1-big.jpg	w:600 h:690"
+					],
+					[
+						"2",
+						"2-big.jpg	w:600 h:690"
+					],
+					[
+						"for",
+						"for	for (…) {…}"
+					],
+					[
+						"rep",
+						"repeat-x  (value)"
+					],
+					[
+						"f",
+						"footer_bg.jpg	w:1920 h:248"
+					],
+					[
+						"scro",
+						"scrollTop"
+					],
+					[
+						"text",
+						"text-decoration"
+					],
+					[
+						"list-",
+						"list-style"
+					],
+					[
+						"chil",
+						"children  (function)"
+					],
+					[
+						"addEve",
+						"addEventListener"
+					],
+					[
+						"addEv",
+						"addEventListener"
+					],
+					[
+						"sele",
+						"selected"
+					],
+					[
+						"sel",
+						"select	<select>"
+					],
+					[
+						"s",
+						"states"
+					],
+					[
+						"pro",
+						"phproot3"
+					],
+					[
+						"nth",
+						"nth-last-child(  (pseudo-class)"
+					],
+					[
+						"ajax",
+						"ajax	Google AJAX Libraries: Scriptaculous"
+					],
+					[
+						"ready",
+						"ready	document ready - jQuery"
+					],
+					[
+						"table-c",
+						"table-cell"
+					],
+					[
+						"script",
+						"scripts.js"
+					],
+					[
+						"sc",
+						"scrollTop"
+					],
+					[
+						"pa",
+						"padding-left"
+					],
+					[
+						"foot",
+						"footer_ul_bg.jpg	w:195 h:3"
+					],
+					[
+						"top",
+						"topbar_bg.jpg	w:1000 h:50"
+					],
+					[
+						"text-",
+						"text-transform"
+					],
+					[
+						"j",
+						"jquery-1.8.3.min.js"
+					],
+					[
+						"margin",
+						"margin"
+					],
+					[
+						"mar",
+						"margin"
+					],
+					[
+						"list",
+						"list-style-type"
+					],
+					[
+						"nav",
+						"nav_hover_bg.jpg	w:10 h:45"
+					],
+					[
+						"every",
+						"everywhere"
+					],
+					[
+						"proto",
+						"prototype"
+					],
+					[
+						"decimal",
+						"decimal-leading-zero"
+					],
+					[
+						"list-style",
+						"list-style-type"
+					],
+					[
+						"padding",
+						"padding"
+					],
+					[
+						"fl",
+						"float"
+					],
+					[
+						"font",
+						"font-size"
+					],
+					[
+						"inline",
+						"inline-block"
+					],
+					[
+						"cont",
+						"container"
+					],
+					[
+						"te",
+						"text-align"
+					],
+					[
+						"disp",
+						"displayErrors"
+					],
+					[
+						"size",
+						"sizechart"
+					],
+					[
+						"select",
+						"selected"
+					],
+					[
+						"borderc",
+						"border-color"
+					],
+					[
+						"bdc",
+						"border-color"
+					],
+					[
+						"bdr",
+						"border-radius"
+					],
+					[
+						"font-st",
+						"font-style	zen:css_properties"
+					],
+					[
+						"marg",
+						"margin"
+					],
+					[
+						"border",
+						"border"
+					],
+					[
+						"bd",
+						"border"
+					],
+					[
+						"font-",
+						"font-style"
+					],
+					[
+						"ari",
+						"\"Arial Black\""
+					],
+					[
+						"arial",
+						"Arial, Helvetica, sans-serif"
+					],
+					[
+						"re",
+						"repeat"
+					],
+					[
+						"search",
+						"search_text"
+					],
+					[
+						"nlet",
+						"nletter_text"
+					],
+					[
+						"nletter_",
+						"nletter_text"
+					],
+					[
+						"sear",
+						"search_text"
+					],
+					[
+						"sea",
+						"search_text"
+					],
+					[
+						"copy-domain",
+						"copy-domainaccount"
+					],
+					[
+						"texta",
+						"textareaContent"
+					],
+					[
+						"textar",
+						"textarea-content"
+					],
+					[
+						"clipb",
+						"clipboardContent"
+					],
+					[
+						"bor",
+						"border-radius"
+					],
+					[
+						"pad",
+						"padding"
+					],
+					[
+						"recommendflag",
+						"recommendflag_arr"
+					],
+					[
+						"inli",
+						"inline-block"
+					],
+					[
+						"col",
+						"color"
+					],
+					[
+						"child",
+						"ChildType"
+					],
+					[
+						"a",
+						"a	<a>"
+					],
+					[
+						"arr",
+						"arrGWeb"
+					],
+					[
+						"biweb",
+						"biweb_news_top"
+					],
+					[
+						"php",
+						"phpinfo"
+					],
+					[
+						"w",
+						"WEBURL"
+					],
+					[
+						"wid",
+						"width"
+					],
+					[
+						"add",
+						"add-to-cart"
+					],
+					[
+						"class",
+						"class	@class"
+					],
+					[
+						"table",
+						"table-cell"
+					],
+					[
+						"lin",
+						"line-height"
+					],
+					[
+						"tex",
+						"text-align"
+					],
+					[
+						"temp",
+						"templates_root"
+					],
+					[
+						"page",
+						"page_link"
+					],
+					[
+						"tem",
+						"templates_root"
+					],
+					[
+						"fo",
+						"footer"
+					],
+					[
+						"ta",
+						"text-align"
+					],
+					[
+						"searh",
+						"search-form"
+					],
+					[
+						"url",
+						"url(image-url.gif)"
+					],
+					[
+						"helvetica",
+						"Arial, Helvetica, sans-serif"
+					],
+					[
+						"repeat",
+						"repeat-x"
+					],
+					[
+						"m-",
+						"m-expanded"
+					],
+					[
+						"hot_ca",
+						"http_negotiate_charset"
+					],
+					[
+						"ab",
+						"absolute"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "昨天:\n	1. 奥林巴斯专题banner修改\n	2. 自由通样式修改:(按日期区间查询时增加 \"最近一个月\" \"3个月\" \"1年\", 退款说明),JS数据验证:(订单按时间查询时表单不能为空及起始时间不能大于截止时间)\n今天:\n	1. 新版活动发布页面省市级联select, 日期校验,包车和不包车时显示不同字段",
+					"settings":
+					{
+						"buffer_size": 156,
+						"line_ending": "Unix",
+						"name": "昨天:"
+					}
+				},
+				{
+					"file": "/D/www/actApply/index.html",
+					"settings":
+					{
+						"buffer_size": 12855,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/cssdoc.sublime-snippet",
+					"settings":
+					{
+						"buffer_size": 392,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "/* Parsley dist/parsley-standalone.min.js build version 1.1.17-dev http://parsleyjs.org */\n(function(b) {\n	String.prototype.trim === b && (String.prototype.trim = function() {\n		return this.replace(/^\\s+/, \"\").replace(/\\s+$/, \"\")\n	});\n	Array.prototype.reduce === b && (Array.prototype.reduce = function(l) {\n		if(void 0 === this || null === this) throw new TypeError;\n		var q = Object(this),\n			p = q.length >>> 0,\n			m = 0,\n			a;\n		if(\"function\" != typeof l) throw new TypeError;\n		if(0 == p && 1 == arguments.length) throw new TypeError;\n		if(2 <= arguments.length) a = arguments[1];\n		else {\n			do {\n				if(m in q) {\n					a = q[m++];\n					break\n				}\n				if(++m >= p) throw new TypeError;\n			} while (1)\n		}\n		for(; m < p;) m in q && (a = l.call(b, a, q[m], m, q)), m++;\n		return a\n	})\n})();\nvar Zepto = function() {\n		function b(f) {\n			return \"[object Function]\" == M.call(f)\n		}\n		function l(f) {\n			return f instanceof Object\n		}\n		function q(f) {\n			return l(f) && f.__proto__ == Object.prototype\n		}\n		function p(f) {\n			return f instanceof Array\n		}\n		function m(f) {\n			return \"number\" == typeof f.length\n		}\n		function a(f) {\n			return f.replace(/::/g, \"/\").replace(/([A-Z]+)([A-Z][a-z])/g, \"$1_$2\").replace(/([a-z\\d])([A-Z])/g, \"$1_$2\").replace(/_/g, \"-\").toLowerCase()\n		}\n		function c(f) {\n			return f in B ? B[f] : B[f] = RegExp(\"(^|\\\\s)\" + f + \"(\\\\s|$)\")\n		}\n		function e(f) {\n			return \"children\" in f ? u.call(f.children) : d.map(f.childNodes, function(f) {\n				if(1 == f.nodeType) return f\n			})\n		}\n		function g(f, a, d) {\n			for(s in a) d && q(a[s]) ? (q(f[s]) || (f[s] = {}), g(f[s], a[s], d)) : a[s] !== n && (f[s] = a[s])\n		}\n		function j(f, a) {\n			return a === n ? d(f) : d(f).filter(a)\n		}\n		function k(f, a, d, c) {\n			return b(a) ? a.call(f, d, c) : a\n		}\n		function w(f, a) {\n			var d = f.className,\n				b = d && d.baseVal !== n;\n			if(a === n) return b ? d.baseVal : d;\n			b ? d.baseVal = a : f.className = a\n		}\n		function x(f) {\n			var a;\n			try {\n				return f ? \"true\" == f || (\"false\" == f ? !1 : \"null\" == f ? null : !isNaN(a = Number(f)) ? a : /^[\\[\\{]/.test(f) ? d.parseJSON(f) : f) : f\n			} catch(b) {\n				return f\n			}\n		}\n		function A(f, a) {\n			a(f);\n			for(var d in f.childNodes) A(f.childNodes[d], a)\n		}\n		var n, s, d, y, z = [],\n			u = z.slice,\n			v = z.filter,\n			r = window.document,\n			h = {},\n			B = {},\n			C = r.defaultView.getComputedStyle,\n			D = {\n				\"column-count\": 1,\n				columns: 1,\n				\"font-weight\": 1,\n				\"line-height\": 1,\n				opacity: 1,\n				\"z-index\": 1,\n				zoom: 1\n			},\n			H = /^\\s*<(\\w+|!)[^>]*>/,\n			N = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\\w:]+)[^>]*)\\/>/ig,\n			I = /^(?:body|html)$/i,\n			O = \"val css html text data width height offset\".split(\" \"),\n			F = r.createElement(\"table\"),\n			J = r.createElement(\"tr\"),\n			K = {\n				tr: r.createElement(\"tbody\"),\n				tbody: F,\n				thead: F,\n				tfoot: F,\n				td: J,\n				th: J,\n				\"*\": r.createElement(\"div\")\n			},\n			P = /complete|loaded|interactive/,\n			Q = /^\\.([\\w-]+)$/,\n			R = /^#([\\w-]*)$/,\n			S = /^[\\w-]+$/,\n			M = {}.toString,\n			t = {},\n			G, E, L = r.createElement(\"div\");\n		t.matches = function(f, a) {\n			if(!f || 1 !== f.nodeType) return !1;\n			var d = f.webkitMatchesSelector || f.mozMatchesSelector || f.oMatchesSelector || f.matchesSelector;\n			if(d) return d.call(f, a);\n			var b;\n			b = f.parentNode;\n			(d = !b) && (b = L).appendChild(f);\n			b = ~t.qsa(b, a).indexOf(f);\n			d && L.removeChild(f);\n			return b\n		};\n		G = function(f) {\n			return f.replace(/-+(.)?/g, function(f, a) {\n				return a ? a.toUpperCase() : \"\"\n			})\n		};\n		E = function(f) {\n			return v.call(f, function(a, d) {\n				return f.indexOf(a) == d\n			})\n		};\n		t.fragment = function(f, a, b) {\n			f.replace && (f = f.replace(N, \"<$1></$2>\"));\n			a === n && (a = H.test(f) && RegExp.$1);\n			a in K || (a = \"*\");\n			var c, e = K[a];\n			e.innerHTML = \"\" + f;\n			f = d.each(u.call(e.childNodes), function() {\n				e.removeChild(this)\n			});\n			q(b) && (c = d(f), d.each(b, function(f, a) {\n				if(-1 < O.indexOf(f)) c[f](a);\n				else c.attr(f, a)\n			}));\n			return f\n		};\n		t.Z = function(f, a) {\n			f = f || [];\n			f.__proto__ = arguments.callee.prototype;\n			f.selector = a || \"\";\n			return f\n		};\n		t.isZ = function(f) {\n			return f instanceof t.Z\n		};\n		t.init = function(f, a) {\n			if(f) {\n				if(b(f)) return d(r).ready(f);\n				if(t.isZ(f)) return f;\n				var c;\n				if(p(f)) c = v.call(f, function(f) {\n					return f !== n && null !== f\n				});\n				else if(l(f)) c = [q(f) ? d.extend({}, f) : f], f = null;\n				else if(H.test(f)) c = t.fragment(f.trim(), RegExp.$1, a), f = null;\n				else {\n					if(a !== n) return d(a).find(f);\n					c = t.qsa(r, f)\n				}\n				return t.Z(c, f)\n			}\n			return t.Z()\n		};\n		d = function(f, a) {\n			return t.init(f, a)\n		};\n		d.extend = function(f) {\n			var a, d = u.call(arguments, 1);\n			\"boolean\" == typeof f && (a = f, f = d.shift());\n			d.forEach(function(d) {\n				g(f, d, a)\n			});\n			return f\n		};\n		t.qsa = function(f, a) {\n			var d;\n			return f === r && R.test(a) ? (d = f.getElementById(RegExp.$1)) ? [d] : [] : 1 !== f.nodeType && 9 !== f.nodeType ? [] : u.call(Q.test(a) ? f.getElementsByClassName(RegExp.$1) : S.test(a) ? f.getElementsByTagName(a) : f.querySelectorAll(a))\n		};\n		d.contains = function(f, a) {\n			return f !== a && f.contains(a)\n		};\n		d.isFunction = b;\n		d.isObject = l;\n		d.isArray = p;\n		d.isPlainObject = q;\n		d.inArray = function(f, a, d) {\n			return z.indexOf.call(a, f, d)\n		};\n		d.camelCase = G;\n		d.trim = function(f) {\n			return f.trim()\n		};\n		d.uuid = 0;\n		d.support = {};\n		d.expr = {};\n		d.map = function(f, a) {\n			var b, c = [],\n				e;\n			if(m(f)) for(e = 0; e < f.length; e++) b = a(f[e], e), null != b && c.push(b);\n			else for(e in f) b = a(f[e], e), null != b && c.push(b);\n			return 0 < c.length ? d.fn.concat.apply([], c) : c\n		};\n		d.each = function(f, a) {\n			var d;\n			if(m(f)) for(d = 0; d < f.length && !1 !== a.call(f[d], d, f[d]); d++);\n			else for(d in f) if(!1 === a.call(f[d], d, f[d])) break;\n			return f\n		};\n		d.grep = function(f, a) {\n			return v.call(f, a)\n		};\n		window.JSON && (d.parseJSON = JSON.parse);\n		d.fn = {\n			forEach: z.forEach,\n			reduce: z.reduce,\n			push: z.push,\n			sort: z.sort,\n			indexOf: z.indexOf,\n			concat: z.concat,\n			map: function(a) {\n				return d(d.map(this, function(d, b) {\n					return a.call(d, b, d)\n				}))\n			},\n			slice: function() {\n				return d(u.apply(this, arguments))\n			},\n			ready: function(a) {\n				P.test(r.readyState) ? a(d) : r.addEventListener(\"DOMContentLoaded\", function() {\n					a(d)\n				}, !1);\n				return this\n			},\n			get: function(a) {\n				return a === n ? u.call(this) : this[a]\n			},\n			toArray: function() {\n				return this.get()\n			},\n			size: function() {\n				return this.length\n			},\n			remove: function() {\n				return this.each(function() {\n					null != this.parentNode && this.parentNode.removeChild(this)\n				})\n			},\n			each: function(a) {\n				this.forEach(function(d, b) {\n					a.call(d, b, d)\n				});\n				return this\n			},\n			filter: function(a) {\n				return b(a) ? this.not(this.not(a)) : d(v.call(this, function(d) {\n					return t.matches(d, a)\n				}))\n			},\n			add: function(a, b) {\n				return d(E(this.concat(d(a, b))))\n			},\n			is: function(a) {\n				return 0 < this.length && t.matches(this[0], a)\n			},\n			not: function(a) {\n				var c = [];\n				if(b(a) && a.call !== n) this.each(function(d) {\n					a.call(this, d) || c.push(this)\n				});\n				else {\n					var e = \"string\" == typeof a ? this.filter(a) : m(a) && b(a.item) ? u.call(a) : d(a);\n					this.forEach(function(a) {\n						0 > e.indexOf(a) && c.push(a)\n					})\n				}\n				return d(c)\n			},\n			has: function(a) {\n				return this.filter(function() {\n					return l(a) ? d.contains(this, a) : d(this).find(a).size()\n				})\n			},\n			eq: function(a) {\n				return -1 === a ? this.slice(a) : this.slice(a, +a + 1)\n			},\n			first: function() {\n				var a = this[0];\n				return a && !l(a) ? a : d(a)\n			},\n			last: function() {\n				var a = this[this.length - 1];\n				return a && !l(a) ? a : d(a)\n			},\n			find: function(a) {\n				return 1 == this.length ? d(t.qsa(this[0], a)) : this.map(function() {\n					return t.qsa(this, a)\n				})\n			},\n			closest: function(a, b) {\n				for(var c = this[0]; c && !t.matches(c, a);) c = c !== b && c !== r && c.parentNode;\n				return d(c)\n			},\n			parents: function(a) {\n				for(var b = [], c = this; 0 < c.length;) c = d.map(c, function(a) {\n					if((a = a.parentNode) && a !== r && 0 > b.indexOf(a)) return b.push(a), a\n				});\n				return j(b, a)\n			},\n			parent: function(a) {\n				return j(E(this.pluck(\"parentNode\")), a)\n			},\n			children: function(a) {\n				return j(this.map(function() {\n					return e(this)\n				}), a)\n			},\n			contents: function() {\n				return this.map(function() {\n					return u.call(this.childNodes)\n				})\n			},\n			siblings: function(a) {\n				return j(this.map(function(a, f) {\n					return v.call(e(f.parentNode), function(a) {\n						return a !== f\n					})\n				}), a)\n			},\n			empty: function() {\n				return this.each(function() {\n					this.innerHTML = \"\"\n				})\n			},\n			pluck: function(a) {\n				return d.map(this, function(d) {\n					return d[a]\n				})\n			},\n			show: function() {\n				return this.each(function() {\n					\"none\" == this.style.display && (this.style.display = null);\n					if(\"none\" == C(this, \"\").getPropertyValue(\"display\")) {\n						var a = this.style,\n							d = this.nodeName,\n							b, c;\n						h[d] || (b = r.createElement(d), r.body.appendChild(b), c = C(b, \"\").getPropertyValue(\"display\"), b.parentNode.removeChild(b), \"none\" == c && (c = \"block\"), h[d] = c);\n						a.display = h[d]\n					}\n				})\n			},\n			replaceWith: function(a) {\n				return this.before(a).remove()\n			},\n			wrap: function(a) {\n				var c = b(a);\n				if(this[0] && !c) var e = d(a).get(0),\n					r = e.parentNode || 1 < this.length;\n				return this.each(function(b) {\n					d(this).wrapAll(c ? a.call(this, b) : r ? e.cloneNode(!0) : e)\n				})\n			},\n			wrapAll: function(a) {\n				if(this[0]) {\n					d(this[0]).before(a = d(a));\n					for(var b;\n					(b = a.children()).length;) a = b.first();\n					d(a).append(this)\n				}\n				return this\n			},\n			wrapInner: function(a) {\n				var c = b(a);\n				return this.each(function(b) {\n					var e = d(this),\n						r = e.contents();\n					b = c ? a.call(this, b) : a;\n					r.length ? r.wrapAll(b) : e.append(b)\n				})\n			},\n			unwrap: function() {\n				this.parent().each(function() {\n					d(this).replaceWith(d(this).children())\n				});\n				return this\n			},\n			clone: function() {\n				return this.map(function() {\n					return this.cloneNode(!0)\n				})\n			},\n			hide: function() {\n				return this.css(\"display\", \"none\")\n			},\n			toggle: function(a) {\n				return this.each(function() {\n					var b = d(this);\n					(a === n ? \"none\" == b.css(\"display\") : a) ? b.show() : b.hide()\n				})\n			},\n			prev: function(a) {\n				return d(this.pluck(\"previousElementSibling\")).filter(a || \"*\")\n			},\n			next: function(a) {\n				return d(this.pluck(\"nextElementSibling\")).filter(a || \"*\")\n			},\n			html: function(a) {\n				return a === n ? 0 < this.length ? this[0].innerHTML : null : this.each(function(b) {\n					var c = this.innerHTML;\n					d(this).empty().append(k(this, a, b, c))\n				})\n			},\n			text: function(a) {\n				return a === n ? 0 < this.length ? this[0].textContent : null : this.each(function() {\n					this.textContent = a\n				})\n			},\n			attr: function(a, d) {\n				var b;\n				return \"string\" == typeof a && d === n ? 0 == this.length || 1 !== this[0].nodeType ? n : \"value\" == a && \"INPUT\" == this[0].nodeName ? this.val() : !(b = this[0].getAttribute(a)) && a in this[0] ? this[0][a] : b : this.each(function(b) {\n					if(1 === this.nodeType) if(l(a)) for(s in a) {\n						b = s;\n						var c = a[s];\n						null == c ? this.removeAttribute(b) : this.setAttribute(b, c)\n					} else b = k(this, d, b, this.getAttribute(a)), null == b ? this.removeAttribute(a) : this.setAttribute(a, b)\n				})\n			},\n			removeAttr: function(a) {\n				return this.each(function() {\n					1 === this.nodeType && this.removeAttribute(a)\n				})\n			},\n			prop: function(a, d) {\n				return d === n ? this[0] ? this[0][a] : n : this.each(function(b) {\n					this[a] = k(this, d, b, this[a])\n				})\n			},\n			data: function(d, b) {\n				var c = this.attr(\"data-\" + a(d), b);\n				return null !== c ? x(c) : n\n			},\n			val: function(a) {\n				return a === n ? 0 < this.length ? this[0].multiple ? d(this[0]).find(\"option\").filter(function() {\n					return this.selected\n				}).pluck(\"value\") : this[0].value : n : this.each(function(d) {\n					this.value = k(this, a, d, this.value)\n				})\n			},\n			offset: function() {\n				if(0 == this.length) return null;\n				var a = this[0].getBoundingClientRect();\n				return {\n					left: a.left + window.pageXOffset,\n					top: a.top + window.pageYOffset,\n					width: a.width,\n					height: a.height\n				}\n			},\n			css: function(d, b) {\n				if(2 > arguments.length && \"string\" == typeof d) return 0 == this.length ? n : this[0].style[G(d)] || C(this[0], \"\").getPropertyValue(d);\n				var c = \"\";\n				for(s in d)!d[s] && 0 !== d[s] ? this.each(function() {\n					this.style.removeProperty(a(s))\n				}) : c += a(s) + \":\" + (\"number\" == typeof d[s] && !D[a(s)] ? d[s] + \"px\" : d[s]) + \";\";\n				\"string\" == typeof d && (!b && 0 !== b ? this.each(function() {\n					this.style.removeProperty(a(d))\n				}) : c = a(d) + \":\" + (\"number\" == typeof b && !D[a(d)] ? b + \"px\" : b));\n				return this.each(function() {\n					this.style.cssText += \";\" + c\n				})\n			},\n			index: function(a) {\n				return a ? this.indexOf(d(a)[0]) : this.parent().children().indexOf(this[0])\n			},\n			hasClass: function(a) {\n				return 1 > this.length ? !1 : c(a).test(w(this[0]))\n			},\n			addClass: function(a) {\n				return this.each(function(b) {\n					y = [];\n					var c = w(this);\n					k(this, a, b, c).split(/\\s+/g).forEach(function(a) {\n						d(this).hasClass(a) || y.push(a)\n					}, this);\n					y.length && w(this, c + (c ? \" \" : \"\") + y.join(\" \"))\n				})\n			},\n			removeClass: function(a) {\n				return this.each(function(d) {\n					if(a === n) return w(this, \"\");\n					y = w(this);\n					k(this, a, d, y).split(/\\s+/g).forEach(function(a) {\n						y = y.replace(c(a), \" \")\n					});\n					w(this, y.trim())\n				})\n			},\n			toggleClass: function(a, b) {\n				return this.each(function(c) {\n					c = k(this, a, c, w(this));\n					(b === n ? !d(this).hasClass(c) : b) ? d(this).addClass(c) : d(this).removeClass(c)\n				})\n			},\n			scrollTop: function() {\n				if(this.length) return \"scrollTop\" in this[0] ? this[0].scrollTop : this[0].scrollY\n			},\n			position: function() {\n				if(this.length) {\n					var a = this[0],\n						b = this.offsetParent(),\n						c = this.offset(),\n						e = I.test(b[0].nodeName) ? {\n							top: 0,\n							left: 0\n						} : b.offset();\n					c.top -= parseFloat(d(a).css(\"margin-top\")) || 0;\n					c.left -= parseFloat(d(a).css(\"margin-left\")) || 0;\n					e.top += parseFloat(d(b[0]).css(\"border-top-width\")) || 0;\n					e.left += parseFloat(d(b[0]).css(\"border-left-width\")) || 0;\n					return {\n						top: c.top - e.top,\n						left: c.left - e.left\n					}\n				}\n			},\n			offsetParent: function() {\n				return this.map(function() {\n					for(var a = this.offsetParent || r.body; a && !I.test(a.nodeName) && \"static\" == d(a).css(\"position\");) a = a.offsetParent;\n					return a\n				})\n			}\n		};\n		[\"width\", \"height\"].forEach(function(a) {\n			d.fn[a] = function(b) {\n				var c, e = a.replace(/./, function(a) {\n					return a[0].toUpperCase()\n				});\n				return b === n ? this[0] == window ? window[\"inner\" + e] : this[0] == r ? r.documentElement[\"offset\" + e] : (c = this.offset()) && c[a] : this.each(function(c) {\n					var e = d(this);\n					e.css(a, k(this, b, c, e[a]()))\n				})\n			}\n		});\n		[\"after\", \"prepend\", \"before\", \"append\"].forEach(function(a, b) {\n			var c = b % 2;\n			d.fn[a] = function() {\n				var a = d.map(arguments, function(a) {\n					return l(a) ? a : t.fragment(a)\n				}),\n					e, f = 1 < this.length;\n				return 1 > a.length ? this : this.each(function(r, h) {\n					e = c ? h : h.parentNode;\n					h = 0 == b ? h.nextSibling : 1 == b ? h.firstChild : 2 == b ? h : null;\n					a.forEach(function(a) {\n						if(f) a = a.cloneNode(!0);\n						else if(!e) return d(a).remove();\n						A(e.insertBefore(a, h), function(a) {\n							null != a.nodeName && (\"SCRIPT\" === a.nodeName.toUpperCase() && (!a.type || \"text/javascript\" === a.type) && !a.src) && window.eval.call(window, a.innerHTML)\n						})\n					})\n				})\n			};\n			d.fn[c ? a + \"To\" : \"insert\" + (b ? \"Before\" : \"After\")] = function(b) {\n				d(b)[a](this);\n				return this\n			}\n		});\n		t.Z.prototype = d.fn;\n		t.uniq = E;\n		t.deserializeValue = x;\n		d.zepto = t;\n		return d\n	}();\nwindow.Zepto = Zepto;\n\"$\" in window || (window.$ = Zepto);\n(function(b) {\n	function l(a) {\n		return a._zid || (a._zid = j++)\n	}\n	function q(a, b, c, e) {\n		b = p(b);\n		if(b.ns) var j = RegExp(\"(?:^| )\" + b.ns.replace(\" \", \" .* ?\") + \"(?: |$)\");\n		return(g[l(a)] || []).filter(function(a) {\n			return a && (!b.e || a.e == b.e) && (!b.ns || j.test(a.ns)) && (!c || l(a.fn) === l(c)) && (!e || a.sel == e)\n		})\n	}\n	function p(a) {\n		a = (\"\" + a).split(\".\");\n		return {\n			e: a[0],\n			ns: a.slice(1).sort().join(\" \")\n		}\n	}\n	function m(a, c, e) {\n		b.isObject(a) ? b.each(a, e) : a.split(/\\s/).forEach(function(a) {\n			e(a, c)\n		})\n	}\n	function a(a, c, e, j, n, r) {\n		var h = l(a),\n			B = g[h] || (g[h] = []);\n		m(c, e, function(c, e) {\n			var h = p(c);\n			h.fn = e;\n			h.sel = j;\n			h.e in w && (e = function(a) {\n				var d = a.relatedTarget;\n				if(!d || d !== this && !b.contains(this, d)) return h.fn.apply(this, arguments)\n			});\n			h.del = n && n(e, c);\n			var g = h.del || e;\n			h.proxy = function(b) {\n				var c = g.apply(a, [b].concat(b.data));\n				!1 === c && (b.preventDefault(), b.stopPropagation());\n				return c\n			};\n			h.i = B.length;\n			B.push(h);\n			a.addEventListener(w[h.e] || h.e, h.proxy, h.del && (\"focus\" == h.e || \"blur\" == h.e) || !! r)\n		})\n	}\n	function c(a, b, c, e, j) {\n		var r = l(a);\n		m(b || \"\", c, function(b, c) {\n			q(a, b, c, e).forEach(function(b) {\n				delete g[r][b.i];\n				a.removeEventListener(w[b.e] || b.e, b.proxy, b.del && (\"focus\" == b.e || \"blur\" == b.e) || !! j)\n			})\n		})\n	}\n	function e(a) {\n		var c, e = {\n			originalEvent: a\n		};\n		for(c in a)!n.test(c) && void 0 !== a[c] && (e[c] = a[c]);\n		b.each(s, function(b, c) {\n			e[b] = function() {\n				this[c] = x;\n				return a[b].apply(a, arguments)\n			};\n			e[c] = A\n		});\n		return e\n	}\n	var g = {},\n		j = 1,\n		k = {},\n		w = {\n			mouseenter: \"mouseover\",\n			mouseleave: \"mouseout\"\n		};\n	k.click = k.mousedown = k.mouseup = k.mousemove = \"MouseEvents\";\n	b.event = {\n		add: a,\n		remove: c\n	};\n	b.proxy = function(a, c) {\n		if(b.isFunction(a)) {\n			var e = function() {\n					return a.apply(c, arguments)\n				};\n			e._zid = l(a);\n			return e\n		}\n		if(\"string\" == typeof c) return b.proxy(a[c], a);\n		throw new TypeError(\"expected function\");\n	};\n	b.fn.bind = function(b, c) {\n		return this.each(function() {\n			a(this, b, c)\n		})\n	};\n	b.fn.unbind = function(a, b) {\n		return this.each(function() {\n			c(this, a, b)\n		})\n	};\n	b.fn.one = function(b, e) {\n		return this.each(function(g, j) {\n			a(this, b, e, null, function(a, b) {\n				return function() {\n					var d = a.apply(j, arguments);\n					c(j, b, a);\n					return d\n				}\n			})\n		})\n	};\n	var x = function() {\n			return !0\n		},\n		A = function() {\n			return !1\n		},\n		n = /^([A-Z]|layer[XY]$)/,\n		s = {\n			preventDefault: \"isDefaultPrevented\",\n			stopImmediatePropagation: \"isImmediatePropagationStopped\",\n			stopPropagation: \"isPropagationStopped\"\n		};\n	b.fn.delegate = function(c, g, j) {\n		return this.each(function(n, k) {\n			a(k, g, j, c, function(a) {\n				return function(h) {\n					var g, j = b(h.target).closest(c, k).get(0);\n					if(j) return g = b.extend(e(h), {\n						currentTarget: j,\n						liveFired: k\n					}), a.apply(j, [g].concat([].slice.call(arguments, 1)))\n				}\n			})\n		})\n	};\n	b.fn.undelegate = function(a, b, e) {\n		return this.each(function() {\n			c(this, b, e, a)\n		})\n	};\n	b.fn.live = function(a, c) {\n		b(document.body).delegate(this.selector, a, c);\n		return this\n	};\n	b.fn.die = function(a, c) {\n		b(document.body).undelegate(this.selector, a, c);\n		return this\n	};\n	b.fn.on = function(a, c, e) {\n		return !c || b.isFunction(c) ? this.bind(a, c || e) : this.delegate(c, a, e)\n	};\n	b.fn.off = function(a, c, e) {\n		return !c || b.isFunction(c) ? this.unbind(a, c || e) : this.undelegate(c, a, e)\n	};\n	b.fn.trigger = function(a, c) {\n		if(\"string\" == typeof a || b.isPlainObject(a)) a = b.Event(a);\n		var e = a;\n		if(!(\"defaultPrevented\" in e)) {\n			e.defaultPrevented = !1;\n			var g = e.preventDefault;\n			e.preventDefault = function() {\n				this.defaultPrevented = !0;\n				g.call(this)\n			}\n		}\n		a.data = c;\n		return this.each(function() {\n			\"dispatchEvent\" in this && this.dispatchEvent(a)\n		})\n	};\n	b.fn.triggerHandler = function(a, c) {\n		var g, j;\n		this.each(function(n, r) {\n			g = e(\"string\" == typeof a ? b.Event(a) : a);\n			g.data = c;\n			g.target = r;\n			b.each(q(r, a.type || a), function(a, b) {\n				j = b.proxy(g);\n				if(g.isImmediatePropagationStopped()) return !1\n			})\n		});\n		return j\n	};\n	\"focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select keydown keypress keyup error\".split(\" \").forEach(function(a) {\n		b.fn[a] = function(b) {\n			return b ? this.bind(a, b) : this.trigger(a)\n		}\n	});\n	[\"focus\", \"blur\"].forEach(function(a) {\n		b.fn[a] = function(b) {\n			b ? this.bind(a, b) : this.each(function() {\n				try {\n					this[a]()\n				} catch(b) {}\n			});\n			return this\n		}\n	});\n	b.Event = function(a, b) {\n		\"string\" != typeof a && (b = a, a = b.type);\n		var c = document.createEvent(k[a] || \"Events\"),\n			e = !0;\n		if(b) for(var g in b) \"bubbles\" == g ? e = !! b[g] : c[g] = b[g];\n		c.initEvent(a, e, !0, null, null, null, null, null, null, null, null, null, null, null, null);\n		c.isDefaultPrevented = function() {\n			return this.defaultPrevented\n		};\n		return c\n	}\n})(Zepto);\n(function(b, l) {\n	function q(a) {\n		return a.toLowerCase()\n	}\n	var p = \"\",\n		m, a = window.document.createElement(\"div\"),\n		c = /^((translate|rotate|scale)(X|Y|Z|3d)?|matrix(3d)?|perspective|skew(X|Y)?)$/i,\n		e, g, j, k, w, x, A, n = {};\n	b.each({\n		Webkit: \"webkit\",\n		Moz: \"\",\n		O: \"o\",\n		ms: \"MS\"\n	}, function(b, c) {\n		if(a.style[b + \"TransitionProperty\"] !== l) return p = \"-\" + q(b) + \"-\", m = c, !1\n	});\n	e = p + \"transform\";\n	n[g = p + \"transition-property\"] = n[j = p + \"transition-duration\"] = n[k = p + \"transition-timing-function\"] = n[w = p + \"animation-name\"] = n[x = p + \"animation-duration\"] = n[A = p + \"animation-timing-function\"] = \"\";\n	b.fx = {\n		off: m === l && a.style.transitionProperty === l,\n		speeds: {\n			_default: 400,\n			fast: 200,\n			slow: 600\n		},\n		cssPrefix: p,\n		transitionEnd: m ? m + \"TransitionEnd\" : q(\"TransitionEnd\"),\n		animationEnd: m ? m + \"AnimationEnd\" : q(\"AnimationEnd\")\n	};\n	b.fn.animate = function(a, c, e, g) {\n		b.isObject(c) && (e = c.easing, g = c.complete, c = c.duration);\n		c && (c = (\"number\" == typeof c ? c : b.fx.speeds[c] || b.fx.speeds._default) / 1E3);\n		return this.anim(a, c, e, g)\n	};\n	b.fn.anim = function(a, d, m, p) {\n		var u, v = {},\n			r, h = \"\",\n			B = this,\n			C, D = b.fx.transitionEnd;\n		d === l && (d = 0.4);\n		b.fx.off && (d = 0);\n		if(\"string\" == typeof a) v[w] = a, v[x] = d + \"s\", v[A] = m || \"linear\", D = b.fx.animationEnd;\n		else {\n			r = [];\n			for(u in a) c.test(u) ? h += u + \"(\" + a[u] + \") \" : (v[u] = a[u], r.push(q(u.replace(/([a-z])([A-Z])/, \"$1-$2\"))));\n			h && (v[e] = h, r.push(e));\n			0 < d && \"object\" === typeof a && (v[g] = r.join(\", \"), v[j] = d + \"s\", v[k] = m || \"linear\")\n		}\n		C = function(a) {\n			if(\"undefined\" !== typeof a) {\n				if(a.target !== a.currentTarget) return;\n				b(a.target).unbind(D, arguments.callee)\n			}\n			b(this).css(n);\n			p && p.call(this)\n		};\n		0 < d && this.bind(D, C);\n		this.size() && this.get(0).clientLeft;\n		this.css(v);\n		0 >= d && setTimeout(function() {\n			B.each(function() {\n				C.call(this)\n			})\n		}, 0);\n		return this\n	};\n	a = null\n})(Zepto);\n(function(b) {\n	function l(a, c, e, d) {\n		if(a.global) return a = c || w, e = b.Event(e), b(a).trigger(e, d), !e.defaultPrevented\n	}\n	function q(a, b, c) {\n		var e = c.context;\n		c.success.call(e, a, \"success\", b);\n		l(c, e, \"ajaxSuccess\", [b, c, a]);\n		m(\"success\", b, c)\n	}\n	function p(a, b, c, e) {\n		var d = e.context;\n		e.error.call(d, c, b, a);\n		l(e, d, \"ajaxError\", [c, e, a]);\n		m(b, c, e)\n	}\n	function m(a, c, e) {\n		var d = e.context;\n		e.complete.call(d, c, a);\n		l(e, d, \"ajaxComplete\", [c, e]);\n		e.global && !--b.active && l(e, null, \"ajaxStop\")\n	}\n	function a() {}\n	function c(a) {\n		return a && (a == z ? \"html\" : a == y ? \"json\" : s.test(a) ? \"script\" : d.test(a) && \"xml\") || \"text\"\n	}\n	function e(a) {\n		a.processData && k(a.data) && (a.data = b.param(a.data, a.traditional));\n		if(a.data && (!a.type || \"GET\" == a.type.toUpperCase())) a.url = (a.url + \"&\" + a.data).replace(/[&?]{1,2}/, \"?\")\n	}\n	function g(a, c, e, d) {\n		var j = b.isArray(c);\n		b.each(c, function(c, h) {\n			d && (c = e ? d : d + \"[\" + (j ? \"\" : c) + \"]\");\n			!d && j ? a.add(h.name, h.value) : (e ? b.isArray(h) : k(h)) ? g(a, h, e, c) : a.add(c, h)\n		})\n	}\n	var j = 0,\n		k = b.isObject,\n		w = window.document,\n		x, A, n = /<script\\b[^<]*(?:(?!<\\/script>)<[^<]*)*<\\/script>/gi,\n		s = /^(?:text|application)\\/javascript/i,\n		d = /^(?:text|application)\\/xml/i,\n		y = \"application/json\",\n		z = \"text/html\",\n		u = /^\\s*$/;\n	b.active = 0;\n	b.ajaxJSONP = function(c) {\n		if(!(\"type\" in c)) return b.ajax(c);\n		var d = \"jsonp\" + ++j,\n			g = w.createElement(\"script\"),\n			n = {\n				abort: function() {\n					b(g).remove();\n					d in window && (window[d] = a);\n					m(\"abort\", n, c)\n				}\n			},\n			k;\n		c.error && (g.onerror = function() {\n			n.abort();\n			c.error()\n		});\n		window[d] = function(a) {\n			clearTimeout(k);\n			b(g).remove();\n			delete window[d];\n			q(a, n, c)\n		};\n		e(c);\n		g.src = c.url.replace(/=\\?/, \"=\" + d);\n		b(\"head\").append(g);\n		0 < c.timeout && (k = setTimeout(function() {\n			n.abort();\n			m(\"timeout\", n, c)\n		}, c.timeout));\n		return n\n	};\n	b.ajaxSettings = {\n		type: \"GET\",\n		beforeSend: a,\n		success: a,\n		error: a,\n		complete: a,\n		context: null,\n		global: !0,\n		xhr: function() {\n			return new window.XMLHttpRequest\n		},\n		accepts: {\n			script: \"text/javascript, application/javascript\",\n			json: y,\n			xml: \"application/xml, text/xml\",\n			html: z,\n			text: \"text/plain\"\n		},\n		crossDomain: !1,\n		timeout: 0,\n		processData: !0\n	};\n	b.ajax = function(d) {\n		var h = b.extend({}, d || {});\n		for(x in b.ajaxSettings) void 0 === h[x] && (h[x] = b.ajaxSettings[x]);\n		h.global && 0 === b.active++ && l(h, null, \"ajaxStart\");\n		h.crossDomain || (h.crossDomain = /^([\\w-]+:)?\\/\\/([^\\/]+)/.test(h.url) && RegExp.$2 != window.location.host);\n		var g = h.dataType;\n		d = /=\\?/.test(h.url);\n		if(\"jsonp\" == g || d) return d || (h.url = (h.url + \"&callback=?\").replace(/[&?]{1,2}/, \"?\")), b.ajaxJSONP(h);\n		h.url || (h.url = window.location.toString());\n		e(h);\n		d = h.accepts[g];\n		var j = {},\n			n = /^([\\w-]+:)\\/\\//.test(h.url) ? RegExp.$1 : window.location.protocol,\n			k = b.ajaxSettings.xhr(),\n			m;\n		h.crossDomain || (j[\"X-Requested-With\"] = \"XMLHttpRequest\");\n		d && (j.Accept = d, -1 < d.indexOf(\",\") && (d = d.split(\",\", 2)[0]), k.overrideMimeType && k.overrideMimeType(d));\n		if(h.contentType || !1 !== h.contentType && h.data && \"GET\" != h.type.toUpperCase()) j[\"Content-Type\"] = h.contentType || \"application/x-www-form-urlencoded\";\n		h.headers = b.extend(j, h.headers || {});\n		k.onreadystatechange = function() {\n			if(4 == k.readyState) {\n				clearTimeout(m);\n				var a, e = !1;\n				if(200 <= k.status && 300 > k.status || 304 == k.status || 0 == k.status && \"file:\" == n) {\n					g = g || c(k.getResponseHeader(\"content-type\"));\n					a = k.responseText;\n					try {\n						\"script\" == g ? (0, eval)(a) : \"xml\" == g ? a = k.responseXML : \"json\" == g && (a = u.test(a) ? null : b.parseJSON(a))\n					} catch(d) {\n						e = d\n					}\n					e ? p(e, \"parsererror\", k, h) : q(a, k, h)\n				} else p(null, \"error\", k, h)\n			}\n		};\n		k.open(h.type, h.url, \"async\" in h ? h.async : !0);\n		for(A in h.headers) k.setRequestHeader(A, h.headers[A]);\n		d = h.context;\n		!1 === h.beforeSend.call(d, k, h) || !1 === l(h, d, \"ajaxBeforeSend\", [k, h]) ? d = !1 : (l(h, d, \"ajaxSend\", [k, h]), d = void 0);\n		if(!1 === d) return k.abort(), !1;\n		0 < h.timeout && (m = setTimeout(function() {\n			k.onreadystatechange = a;\n			k.abort();\n			p(null, \"timeout\", k, h)\n		}, h.timeout));\n		k.send(h.data ? h.data : null);\n		return k\n	};\n	b.get = function(a, c) {\n		return b.ajax({\n			url: a,\n			success: c\n		})\n	};\n	b.post = function(a, c, e, d) {\n		b.isFunction(c) && (d = d || e, e = c, c = null);\n		return b.ajax({\n			type: \"POST\",\n			url: a,\n			data: c,\n			success: e,\n			dataType: d\n		})\n	};\n	b.getJSON = function(a, c) {\n		return b.ajax({\n			url: a,\n			success: c,\n			dataType: \"json\"\n		})\n	};\n	b.fn.load = function(a, c) {\n		if(!this.length) return this;\n		var e = this,\n			d = a.split(/\\s/),\n			g;\n		1 < d.length && (a = d[0], g = d[1]);\n		b.get(a, function(a) {\n			e.html(g ? b(\"<div>\").html(a.replace(n, \"\")).find(g) : a);\n			c && c.apply(e, arguments)\n		});\n		return this\n	};\n	var v = encodeURIComponent;\n	b.param = function(a, c) {\n		var b = [];\n		b.add = function(a, c) {\n			this.push(v(a) + \"=\" + v(c))\n		};\n		g(b, a, c);\n		return b.join(\"&\").replace(/%20/g, \"+\")\n	}\n})(Zepto);\n(function(b) {\n	function l(e, g) {\n		var j = e[c],\n			j = j && p[j];\n		if(void 0 === g) return j || q(e);\n		if(j) {\n			if(g in j) return j[g];\n			var k = a(g);\n			if(k in j) return j[k]\n		}\n		return m.call(b(e), g)\n	}\n	function q(e, g, j) {\n		var k = e[c] || (e[c] = ++b.uuid),\n			l;\n		if(!(l = p[k])) {\n			l = p;\n			var m = {};\n			b.each(e.attributes, function(c, e) {\n				0 == e.name.indexOf(\"data-\") && (m[a(e.name.replace(\"data-\", \"\"))] = b.zepto.deserializeValue(e.value))\n			});\n			l = l[k] = m\n		}\n		e = l;\n		void 0 !== g && (e[a(g)] = j);\n		return e\n	}\n	var p = {},\n		m = b.fn.data,\n		a = b.camelCase,\n		c = b.expando = \"Zepto\" + +new Date;\n	b.fn.data = function(a, c) {\n		return void 0 === c ? b.isPlainObject(a) ? this.each(function(c, g) {\n			b.each(a, function(a, c) {\n				q(g, a, c)\n			})\n		}) : 0 == this.length ? void 0 : l(this[0], a) : this.each(function() {\n			q(this, a, c)\n		})\n	};\n	b.fn.removeData = function(e) {\n		\"string\" == typeof e && (e = e.split(/\\s+/));\n		return this.each(function() {\n			var g = this[c],\n				j = g && p[g];\n			j && b.each(e, function() {\n				delete j[a(this)]\n			})\n		})\n	}\n})(Zepto);\n(function(b, l) {\n	function q(a, c, j, k, m) {\n		\"function\" == typeof c && !m && (m = c, c = l);\n		j = {\n			opacity: j\n		};\n		k && (j.scale = k, a.css(b.fx.cssPrefix + \"transform-origin\", \"0 0\"));\n		return a.animate(j, c, null, m)\n	}\n	function p(c, g, j, k) {\n		return q(c, g, 0, j, function() {\n			a.call(b(this));\n			k && k.call(this)\n		})\n	}\n	var m = b.fn.show,\n		a = b.fn.hide,\n		c = b.fn.toggle;\n	b.fn.show = function(a, c) {\n		m.call(this);\n		a === l ? a = 0 : this.css(\"opacity\", 0);\n		return q(this, a, 1, \"1,1\", c)\n	};\n	b.fn.hide = function(c, b) {\n		return c === l ? a.call(this) : p(this, c, \"0,0\", b)\n	};\n	b.fn.toggle = function(a, g) {\n		return a === l || \"boolean\" == typeof a ? c.call(this, a) : this.each(function() {\n			var c = b(this);\n			c[\"none\" == c.css(\"display\") ? \"show\" : \"hide\"](a, g)\n		})\n	};\n	b.fn.fadeTo = function(a, c, b) {\n		return q(this, a, c, null, b)\n	};\n	b.fn.fadeIn = function(a, c) {\n		var b = this.css(\"opacity\");\n		0 < b ? this.css(\"opacity\", 0) : b = 1;\n		return m.call(this).fadeTo(a, b, c)\n	};\n	b.fn.fadeOut = function(a, c) {\n		return p(this, a, null, c)\n	};\n	b.fn.fadeToggle = function(a, c) {\n		return this.each(function() {\n			var j = b(this);\n			j[0 == j.css(\"opacity\") || \"none\" == j.css(\"display\") ? \"fadeIn\" : \"fadeOut\"](a, c)\n		})\n	}\n})(Zepto);\n!\nfunction(b) {\n	var l = function(a) {\n			this.messages = {\n				defaultMessage: \"This value seems to be invalid.\",\n				type: {\n					email: \"This value should be a valid email.\",\n					url: \"This value should be a valid url.\",\n					urlstrict: \"This value should be a valid url.\",\n					number: \"This value should be a valid number.\",\n					digits: \"This value should be digits.\",\n					dateIso: \"This value should be a valid date (YYYY-MM-DD).\",\n					alphanum: \"This value should be alphanumeric.\",\n					phone: \"This value should be a valid phone number.\"\n				},\n				notnull: \"This value should not be null.\",\n				notblank: \"This value should not be blank.\",\n				required: \"This value is required.\",\n				regexp: \"This value seems to be invalid.\",\n				min: \"This value should be greater than or equal to %s.\",\n				max: \"This value should be lower than or equal to %s.\",\n				range: \"This value should be between %s and %s.\",\n				minlength: \"This value is too short. It should have %s characters or more.\",\n				maxlength: \"This value is too long. It should have %s characters or less.\",\n				rangelength: \"This value length is invalid. It should be between %s and %s characters long.\",\n				mincheck: \"You must select at least %s choices.\",\n				maxcheck: \"You must select %s choices or less.\",\n				rangecheck: \"You must select between %s and %s choices.\",\n				equalto: \"This value should be the same.\"\n			};\n			this.init(a)\n		};\n	l.prototype = {\n		constructor: l,\n		validators: {\n			notnull: function(a) {\n				return 0 < a.length\n			},\n			notblank: function(a) {\n				return \"string\" === typeof a && \"\" !== a.replace(/^\\s+/g, \"\").replace(/\\s+$/g, \"\")\n			},\n			required: function(a) {\n				if(\"object\" === typeof a) {\n					for(var c in a) if(this.required(a[c])) return !0;\n					return !1\n				}\n				return this.notnull(a) && this.notblank(a)\n			},\n			type: function(a, c) {\n				var b;\n				switch(c) {\n				case \"number\":\n					b = /^-?(?:\\d+|\\d{1,3}(?:,\\d{3})+)?(?:\\.\\d+)?$/;\n					break;\n				case \"digits\":\n					b = /^\\d+$/;\n					break;\n				case \"alphanum\":\n					b = /^\\w+$/;\n					break;\n				case \"email\":\n					b = /^((([a-z]|\\d|[!#\\$%&'\\*\\+\\-\\/=\\?\\^_`{\\|}~]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])+(\\.([a-z]|\\d|[!#\\$%&'\\*\\+\\-\\/=\\?\\^_`{\\|}~]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])+)*)|((\")(((( |	)*(\n))?( |	)+)?(([\\x01-\\x08\\x0e-\\x1f\\x7f]|!|[#-[]|[]-~]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(\\\\([\\x01-	-\\x7f]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF]))))*((( |	)*(\n))?( |	)+)?(\")))@((([a-z]|\\d|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(([a-z]|\\d|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])*([a-z]|\\d|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])))\\.)+(([a-z]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(([a-z]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])*([a-z]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])))$/i;\n					break;\n				case \"url\":\n					a = /(https?|s?ftp|git)/i.test(a) ? a : \"http://\" + a;\n				case \"urlstrict\":\n					b = /^(https?|s?ftp|git):\\/\\/(((([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(%[\\da-f]{2})|[!\\$&'\\(\\)\\*\\+,;=]|:)*@)?(((\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.(\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.(\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.(\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5]))|((([a-z]|\\d|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(([a-z]|\\d|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])*([a-z]|\\d|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])))\\.)+(([a-z]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(([a-z]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])*([a-z]|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])))\\.?)(:\\d*)?)(\\/((([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(%[\\da-f]{2})|[!\\$&'\\(\\)\\*\\+,;=]|:|@)+(\\/(([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(%[\\da-f]{2})|[!\\$&'\\(\\)\\*\\+,;=]|:|@)*)*)?)?(\\?((([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(%[\\da-f]{2})|[!\\$&'\\(\\)\\*\\+,;=]|:|@)|[\\uE000-\\uF8FF]|\\/|\\?)*)?(#((([a-z]|\\d|-|\\.|_|~|[\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF])|(%[\\da-f]{2})|[!\\$&'\\(\\)\\*\\+,;=]|:|@)|\\/|\\?)*)?$/i;\n					break;\n				case \"dateIso\":\n					b = /^(\\d{4})\\D?(0[1-9]|1[0-2])\\D?([12]\\d|0[1-9]|3[01])$/;\n					break;\n				case \"phone\":\n					b = /^((\\+\\d{1,3}(-| )?\\(?\\d\\)?(-| )?\\d{1,5})|(\\(?\\d{2,6}\\)?))(-| )?(\\d{3,4})(-| )?(\\d{4})(( x| ext)\\d{1,5}){0,1}$/;\n					break;\n				default:\n					return !1\n				}\n				return \"\" !== a ? b.test(a) : !1\n			},\n			regexp: function(a, c, b) {\n				return RegExp(c, b.options.regexpFlag || \"\").test(a)\n			},\n			minlength: function(a, c) {\n				return a.length >= c\n			},\n			maxlength: function(a, c) {\n				return a.length <= c\n			},\n			rangelength: function(a, c) {\n				return this.minlength(a, c[0]) && this.maxlength(a, c[1])\n			},\n			min: function(a, c) {\n				return Number(a) >= c\n			},\n			max: function(a, c) {\n				return Number(a) <= c\n			},\n			range: function(a, c) {\n				return a >= c[0] && a <= c[1]\n			},\n			equalto: function(a, c, e) {\n				e.options.validateIfUnchanged = !0;\n				return a === b(c).val()\n			},\n			remote: function(a, c, e) {\n				var g = {},\n					j = {};\n				g[e.$element.attr(\"name\")] = a;\n				\"undefined\" !== typeof e.options.remoteDatatype && (j = {\n					dataType: e.options.remoteDatatype\n				});\n				var k = function(a, c) {\n						\"undefined\" !== typeof c && (\"undefined\" !== typeof e.Validator.messages.remote && c !== e.Validator.messages.remote) && b(e.ulError + \" .remote\").remove();\n						e.updtConstraint({\n							name: \"remote\",\n							valid: a\n						}, c);\n						e.manageValidationResult()\n					},\n					m = function(a) {\n						if(\"object\" === typeof a) return a;\n						try {\n							a = b.parseJSON(a)\n						} catch(c) {}\n						return a\n					},\n					l = function(a) {\n						return \"object\" === typeof a && null !== a ? \"undefined\" !== typeof a.error ? a.error : \"undefined\" !== typeof a.message ? a.message : null : null\n					};\n				b.ajax(b.extend({}, {\n					url: c,\n					data: g,\n					type: e.options.remoteMethod || \"GET\",\n					success: function(a) {\n						a = m(a);\n						k(1 === a || !0 === a || \"object\" === typeof a && null !== a && \"undefined\" !== typeof a.success, l(a))\n					},\n					error: function(a) {\n						a = m(a);\n						k(!1, l(a))\n					}\n				}, j));\n				return null\n			},\n			mincheck: function(a, c) {\n				return this.minlength(a, c)\n			},\n			maxcheck: function(a, c) {\n				return this.maxlength(a, c)\n			},\n			rangecheck: function(a, c) {\n				return this.rangelength(a, c)\n			}\n		},\n		init: function(a) {\n			var c = a.validators;\n			a = a.messages;\n			for(var b in c) this.addValidator(b, c[b]);\n			for(b in a) this.addMessage(b, a[b])\n		},\n		formatMesssage: function(a, c) {\n			if(\"object\" === typeof c) {\n				for(var b in c) a = this.formatMesssage(a, c[b]);\n				return a\n			}\n			return \"string\" === typeof a ? a.replace(/%s/i, c) : \"\"\n		},\n		addValidator: function(a, c) {\n			this.validators[a] = c\n		},\n		addMessage: function(a, c, b) {\n			if(\"undefined\" !== typeof b && !0 === b) this.messages.type[a] = c;\n			else if(\"type\" === a) for(var g in c) this.messages.type[g] = c[g];\n			else this.messages[a] = c\n		}\n	};\n	var q = function(a, c, b) {\n			this.options = c;\n			this.Validator = new l(c);\n			if(\"ParsleyFieldMultiple\" === b) return this;\n			this.init(a, b || \"ParsleyField\")\n		};\n	q.prototype = {\n		constructor: q,\n		init: function(a, c) {\n			this.type = c;\n			this.valid = !0;\n			this.element = a;\n			this.validatedOnce = !1;\n			this.$element = b(a);\n			this.val = this.$element.val();\n			this.isRequired = !1;\n			this.constraints = {};\n			\"undefined\" === typeof this.isRadioOrCheckbox && (this.isRadioOrCheckbox = !1, this.hash = this.generateHash(), this.errorClassHandler = this.options.errors.classHandler(a, this.isRadioOrCheckbox) || this.$element);\n			this.ulErrorManagement();\n			this.bindHtml5Constraints();\n			this.addConstraints();\n			this.hasConstraints() && this.bindValidationEvents()\n		},\n		setParent: function(a) {\n			this.$parent = b(a)\n		},\n		getParent: function() {\n			return this.$parent\n		},\n		bindHtml5Constraints: function() {\n			if(this.$element.hasClass(\"required\") || this.$element.prop(\"required\")) this.options.required = !0;\n			\"undefined\" !== typeof this.$element.attr(\"type\") && RegExp(this.$element.attr(\"type\"), \"i\").test(\"email url number range\") && (this.options.type = this.$element.attr(\"type\"), RegExp(this.options.type, \"i\").test(\"number range\") && (this.options.type = \"number\", \"undefined\" !== typeof this.$element.attr(\"min\") && this.$element.attr(\"min\").length && (this.options.min = this.$element.attr(\"min\")), \"undefined\" !== typeof this.$element.attr(\"max\") && this.$element.attr(\"max\").length && (this.options.max = this.$element.attr(\"max\"))));\n			\"string\" === typeof this.$element.attr(\"pattern\") && this.$element.attr(\"pattern\").length && (this.options.regexp = this.$element.attr(\"pattern\"))\n		},\n		addConstraints: function() {\n			for(var a in this.options) {\n				var c = {};\n				c[a] = this.options[a];\n				this.addConstraint(c, !0)\n			}\n		},\n		addConstraint: function(a, c) {\n			for(var b in a) b = b.toLowerCase(), \"function\" === typeof this.Validator.validators[b] && (this.constraints[b] = {\n				name: b,\n				requirements: a[b],\n				valid: null\n			}, \"required\" === b && (this.isRequired = !0), this.addCustomConstraintMessage(b));\n			\"undefined\" === typeof c && this.bindValidationEvents()\n		},\n		updateConstraint: function(a, c) {\n			for(var b in a) this.updtConstraint({\n				name: b,\n				requirements: a[b],\n				valid: null\n			}, c)\n		},\n		updtConstraint: function(a, c) {\n			this.constraints[a.name] = b.extend(!0, this.constraints[a.name], a);\n			\"string\" === typeof c && (this.Validator.messages[a.name] = c);\n			this.bindValidationEvents()\n		},\n		removeConstraint: function(a) {\n			a = a.toLowerCase();\n			delete this.constraints[a];\n			\"required\" === a && (this.isRequired = !1);\n			this.hasConstraints() ? this.bindValidationEvents() : \"ParsleyForm\" === typeof this.getParent() ? this.getParent().removeItem(this.$element) : this.destroy()\n		},\n		addCustomConstraintMessage: function(a) {\n			var c = a + (\"type\" === a && \"undefined\" !== typeof this.options[a] ? this.options[a].charAt(0).toUpperCase() + this.options[a].substr(1) : \"\") + \"Message\";\n			\"undefined\" !== typeof this.options[c] && this.Validator.addMessage(\"type\" === a ? this.options[a] : a, this.options[c], \"type\" === a)\n		},\n		bindValidationEvents: function() {\n			this.valid = null;\n			this.$element.addClass(\"parsley-validated\");\n			this.$element.off(\".\" + this.type);\n			this.options.remote && !/change/i.test(this.options.trigger) && (this.options.trigger = !this.options.trigger ? \"change\" : \" change\");\n			var a = (!this.options.trigger ? \"\" : this.options.trigger) + (/key/i.test(this.options.trigger) ? \"\" : \" keyup\");\n			this.$element.is(\"select\") && (a += /change/i.test(a) ? \"\" : \" change\");\n			a = a.replace(/^\\s+/g, \"\").replace(/\\s+$/g, \"\");\n			this.$element.on((a + \" \").split(\" \").join(\".\" + this.type + \" \"), !1, b.proxy(this.eventValidation, this))\n		},\n		generateHash: function() {\n			return \"parsley-\" + (Math.random() + \"\").substring(2)\n		},\n		getHash: function() {\n			return this.hash\n		},\n		getVal: function() {\n			return this.$element.data(\"value\") || this.$element.val()\n		},\n		eventValidation: function(a) {\n			var c = this.getVal();\n			if(\"keyup\" === a.type && !/keyup/i.test(this.options.trigger) && !this.validatedOnce || \"change\" === a.type && !/change/i.test(this.options.trigger) && !this.validatedOnce || !this.isRadioOrCheckbox && c.length < this.options.validationMinlength && !this.validatedOnce) return !0;\n			this.validate()\n		},\n		isValid: function() {\n			return this.validate(!1)\n		},\n		hasConstraints: function() {\n			for(var a in this.constraints) return !0;\n			return !1\n		},\n		validate: function(a) {\n			var c = this.getVal(),\n				b = null;\n			if(!this.hasConstraints()) return null;\n			if(this.options.listeners.onFieldValidate(this.element, this) || \"\" === c && !this.isRequired) return this.reset(), null;\n			if(!this.needsValidation(c)) return this.valid;\n			b = this.applyValidators();\n			(\"undefined\" !== typeof a ? a : this.options.showErrors) && this.manageValidationResult();\n			return b\n		},\n		needsValidation: function(a) {\n			if(!this.options.validateIfUnchanged && null !== this.valid && this.val === a && this.validatedOnce) return !1;\n			this.val = a;\n			return this.validatedOnce = !0\n		},\n		applyValidators: function() {\n			var a = null,\n				c;\n			for(c in this.constraints) {\n				var b = this.Validator.validators[this.constraints[c].name](this.val, this.constraints[c].requirements, this);\n				!1 === b ? (a = !1, this.constraints[c].valid = a, this.options.listeners.onFieldError(this.element, this.constraints, this)) : !0 === b && (this.constraints[c].valid = !0, a = !1 !== a, this.options.listeners.onFieldSuccess(this.element, this.constraints, this))\n			}\n			return a\n		},\n		manageValidationResult: function() {\n			var a = null,\n				c;\n			for(c in this.constraints)!1 === this.constraints[c].valid ? (this.manageError(this.constraints[c]), a = !1) : !0 === this.constraints[c].valid && (this.removeError(this.constraints[c].name), a = !1 !== a);\n			this.valid = a;\n			return !0 === this.valid ? (this.removeErrors(), this.errorClassHandler.removeClass(this.options.errorClass).addClass(this.options.successClass), !0) : !1 === this.valid ? (this.errorClassHandler.removeClass(this.options.successClass).addClass(this.options.errorClass), !1) : a\n		},\n		ulErrorManagement: function() {\n			this.ulError = \"#\" + this.hash;\n			this.ulTemplate = b(this.options.errors.errorsWrapper).attr(\"id\", this.hash).addClass(\"parsley-error-list\")\n		},\n		removeError: function(a) {\n			a = this.ulError + \" .\" + a;\n			var c = this;\n			this.options.animate ? b(a).fadeOut(this.options.animateDuration, function() {\n				b(this).remove();\n				c.ulError && 0 === b(c.ulError).children().length && c.removeErrors()\n			}) : b(a).remove();\n			this.ulError && 0 === b(this.ulError).children().length && this.removeErrors()\n		},\n		addError: function(a) {\n			for(var c in a) {\n				var e = b(this.options.errors.errorElem).addClass(c);\n				b(this.ulError).append(this.options.animate ? b(e).html(a[c]).hide().fadeIn(this.options.animateDuration) : b(e).html(a[c]))\n			}\n		},\n		removeErrors: function() {\n			this.options.animate ? b(this.ulError).fadeOut(this.options.animateDuration, function() {\n				b(this).remove()\n			}) : b(this.ulError).remove()\n		},\n		reset: function() {\n			this.valid = null;\n			this.removeErrors();\n			this.validatedOnce = !1;\n			this.errorClassHandler.removeClass(this.options.successClass).removeClass(this.options.errorClass);\n			for(var a in this.constraints) this.constraints[a].valid = null;\n			return this\n		},\n		manageError: function(a) {\n			b(this.ulError).length || this.manageErrorContainer();\n			if(!(\"required\" === a.name && null !== this.getVal() && 0 < this.getVal().length) && (!this.isRequired || !(\"required\" !== a.name && (null === this.getVal() || 0 === this.getVal().length)))) {\n				var c = a.name,\n					e = !1 !== this.options.errorMessage ? \"custom-error-message\" : c,\n					g = {};\n				a = !1 !== this.options.errorMessage ? this.options.errorMessage : \"type\" === a.name ? this.Validator.messages[c][a.requirements] : \"undefined\" === typeof this.Validator.messages[c] ? this.Validator.messages.defaultMessage : this.Validator.formatMesssage(this.Validator.messages[c], a.requirements);\n				b(this.ulError + \" .\" + e).length || (g[e] = a, this.addError(g))\n			}\n		},\n		manageErrorContainer: function() {\n			var a = this.options.errorContainer || this.options.errors.container(this.element, this.isRadioOrCheckbox),\n				c = this.options.animate ? this.ulTemplate.show() : this.ulTemplate;\n			\"undefined\" !== typeof a ? b(a).append(c) : !this.isRadioOrCheckbox ? this.$element.after(c) : this.$element.parent().after(c)\n		},\n		addListener: function(a) {\n			for(var c in a) this.options.listeners[c] = a[c]\n		},\n		destroy: function() {\n			this.$element.removeClass(\"parsley-validated\");\n			this.reset().$element.off(\".\" + this.type).removeData(this.type)\n		}\n	};\n	var p = function(a, c, b) {\n			this.initMultiple(a, c);\n			this.inherit(a, c);\n			this.Validator = new l(c);\n			this.init(a, b || \"ParsleyFieldMultiple\")\n		};\n	p.prototype = {\n		constructor: p,\n		initMultiple: function(a, c) {\n			this.element = a;\n			this.$element = b(a);\n			this.group = c.group || !1;\n			this.hash = this.getName();\n			this.siblings = this.group ? '[data-group=\"' + this.group + '\"]' : 'input[name=\"' + this.$element.attr(\"name\") + '\"]';\n			this.isRadioOrCheckbox = !0;\n			this.isRadio = this.$element.is(\"input[type=radio]\");\n			this.isCheckbox = this.$element.is(\"input[type=checkbox]\");\n			this.errorClassHandler = c.errors.classHandler(a, this.isRadioOrCheckbox) || this.$element.parent()\n		},\n		inherit: function(a, b) {\n			var e = new q(a, b, \"ParsleyFieldMultiple\"),\n				g;\n			for(g in e) \"undefined\" === typeof this[g] && (this[g] = e[g])\n		},\n		getName: function() {\n			if(this.group) return \"parsley-\" + this.group;\n			if(\"undefined\" === typeof this.$element.attr(\"name\")) throw \"A radio / checkbox input must have a data-group attribute or a name to be Parsley validated !\";\n			return \"parsley-\" + this.$element.attr(\"name\").replace(/(:|\\.|\\[|\\])/g, \"\")\n		},\n		getVal: function() {\n			if(this.isRadio) return b(this.siblings + \":checked\").val() || \"\";\n			if(this.isCheckbox) {\n				var a = [];\n				b(this.siblings + \":checked\").each(function() {\n					a.push(b(this).val())\n				});\n				return a\n			}\n		},\n		bindValidationEvents: function() {\n			this.valid = null;\n			this.$element.addClass(\"parsley-validated\");\n			this.$element.off(\".\" + this.type);\n			var a = this,\n				c = (!this.options.trigger ? \"\" : this.options.trigger) + (/change/i.test(this.options.trigger) ? \"\" : \" change\"),\n				c = c.replace(/^\\s+/g, \"\").replace(/\\s+$/g, \"\");\n			b(this.siblings).each(function() {\n				b(this).on(c.split(\" \").join(\".\" + a.type + \" \"), !1, b.proxy(a.eventValidation, a))\n			})\n		}\n	};\n	var m = function(a, b, e) {\n			this.init(a, b, e || \"parsleyForm\")\n		};\n	m.prototype = {\n		constructor: m,\n		init: function(a, c, e) {\n			this.type = e;\n			this.items = [];\n			this.$element = b(a);\n			this.options = c;\n			var g = this;\n			this.$element.find(c.inputs).each(function() {\n				g.addItem(this)\n			});\n			this.$element.on(\"submit.\" + this.type, !1, b.proxy(this.validate, this))\n		},\n		addListener: function(a) {\n			for(var b in a) if(/Field/.test(b)) for(var e = 0; e < this.items.length; e++) this.items[e].addListener(a);\n			else this.options.listeners[b] = a[b]\n		},\n		addItem: function(a) {\n			if(b(a).is(this.options.excluded)) return !1;\n			a = b(a).parsley(this.options);\n			a.setParent(this);\n			this.items.push(a)\n		},\n		removeItem: function(a) {\n			a = b(a).parsley();\n			for(var c = 0; c < this.items.length; c++) if(this.items[c].hash === a.hash) return this.items[c].destroy(), this.items.splice(c, 1), !0;\n			return !1\n		},\n		validate: function(a) {\n			var b = !0;\n			this.focusedField = !1;\n			for(var e = 0; e < this.items.length; e++) if(\"undefined\" !== typeof this.items[e] && !1 === this.items[e].validate() && (b = !1, !this.focusedField && \"first\" === this.options.focus || \"last\" === this.options.focus)) this.focusedField = this.items[e].$element;\n			this.focusedField && !b && this.focusedField.focus();\n			this.options.listeners.onFormSubmit(b, a, this);\n			return b\n		},\n		isValid: function() {\n			for(var a = 0; a < this.items.length; a++) if(!1 === this.items[a].isValid()) return !1;\n			return !0\n		},\n		removeErrors: function() {\n			for(var a = 0; a < this.items.length; a++) this.items[a].parsley(\"reset\")\n		},\n		destroy: function() {\n			for(var a = 0; a < this.items.length; a++) this.items[a].destroy();\n			this.$element.off(\".\" + this.type).removeData(this.type)\n		},\n		reset: function() {\n			for(var a = 0; a < this.items.length; a++) this.items[a].reset()\n		}\n	};\n	b.fn.parsley = function(a, c) {\n		function e(e, j) {\n			var l = b(e).data(j);\n			if(!l) {\n				switch(j) {\n				case \"parsleyForm\":\n					l = new m(e, g, \"parsleyForm\");\n					break;\n				case \"parsleyField\":\n					l = new q(e, g, \"parsleyField\");\n					break;\n				case \"parsleyFieldMultiple\":\n					l = new p(e, g, \"parsleyFieldMultiple\");\n					break;\n				default:\n					return\n				}\n				b(e).data(j, l)\n			}\n			return \"string\" === typeof a && \"function\" === typeof l[a] ? (l = l[a](c), \"undefined\" !== typeof l ? l : b(e)) : l\n		}\n		var g = b.extend(!0, {}, b.fn.parsley.defaults, \"undefined\" !== typeof window.ParsleyConfig ? window.ParsleyConfig : {}, a, this.data()),\n			j = null;\n		b(this).is(\"form\") || !0 === b(this).data(\"bind\") ? j = e(b(this), \"parsleyForm\") : b(this).is(g.inputs) && !b(this).is(g.excluded) && (j = e(b(this), !b(this).is(\"input[type=radio], input[type=checkbox]\") ? \"parsleyField\" : \"parsleyFieldMultiple\"));\n		return \"function\" === typeof c ? c() : j\n	};\n	b.fn.parsley.Constructor = m;\n	b.fn.parsley.defaults = {\n		inputs: \"input, textarea, select\",\n		excluded: \"input[type=hidden], input[type=file], :disabled\",\n		trigger: !1,\n		animate: !0,\n		animateDuration: 300,\n		focus: \"first\",\n		validationMinlength: 3,\n		successClass: \"parsley-success\",\n		errorClass: \"parsley-error\",\n		errorMessage: !1,\n		validators: {},\n		showErrors: !0,\n		messages: {},\n		validateIfUnchanged: !1,\n		errors: {\n			classHandler: function() {},\n			container: function() {},\n			errorsWrapper: \"<ul></ul>\",\n			errorElem: \"<li></li>\"\n		},\n		listeners: {\n			onFieldValidate: function() {\n				return !1\n			},\n			onFormSubmit: function() {},\n			onFieldError: function() {},\n			onFieldSuccess: function() {}\n		}\n	};\n	b(window).on(\"load\", function() {\n		b('[data-validate=\"parsley\"]').each(function() {\n			b(this).parsley()\n		})\n	})\n}(window.jQuery || window.Zepto);",
+					"file": "/C/Users/John the whisler/Desktop/Parsley.js-master/Parsley.js-master/dist/parsley-standalone.min.js",
+					"file_size": 42779,
+					"file_write_time": 130159939520000000,
+					"settings":
+					{
+						"buffer_size": 53798,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/C/Users/John the whisler/Desktop/Demo - Validform - 一行代码搞定整站的表单验证！ ©瑞金佬的前端路.htm",
+					"settings":
+					{
+						"buffer_size": 6183,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/D/myproj/myproj/urls.py",
+					"settings":
+					{
+						"buffer_size": 713,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/D/myproj/myproj/views.py",
+					"settings":
+					{
+						"buffer_size": 556,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/D/www/actApply/js/script.js",
+					"settings":
+					{
+						"buffer_size": 277,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/D/www/actApply/css/page.css",
+					"settings":
+					{
+						"buffer_size": 7044,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
+			"command_palette":
+			{
+				"height": 120.0,
+				"selected_items":
+				[
+					[
+						"format",
+						"Format: Javascript"
+					],
+					[
+						"list",
+						"Package Control: List Packages"
+					],
+					[
+						"prett",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"alignment",
+						"Preferences: Alignment File Settings – Default"
+					],
+					[
+						"sshtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"ssjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"sscss",
+						"Set Syntax: CSS"
+					],
+					[
+						"ssphp",
+						"Set Syntax: PHP"
+					],
+					[
+						"keyconf",
+						"FindKeyConflicts: All Conflicts"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"disablep",
+						"Package Control: Disable Package"
+					],
+					[
+						"prettify",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"listpac",
+						"Package Control: List Packages"
+					],
+					[
+						"listpa",
+						"Package Control: List Packages"
+					],
+					[
+						"remov",
+						"Emmet: Remove Tag"
+					],
+					[
+						"emmet",
+						"Emmet: Match Pair (outward)"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"pip",
+						"Package Control: Install Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"pretty",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"tidyc",
+						"Tidy CSS"
+					],
+					[
+						"sspy",
+						"Set Syntax: Python"
+					],
+					[
+						"pre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"html pre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"htmlpre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"fomat",
+						"Format: Javascript"
+					],
+					[
+						"installp",
+						"Package Control: Install Package"
+					],
+					[
+						"removp",
+						"Package Control: Remove Package"
+					],
+					[
+						"snippetget",
+						"Snippet: Get Elements"
+					],
+					[
+						"remove p",
+						"Package Control: Remove Package"
+					],
+					[
+						"listp",
+						"Package Control: List Packages"
+					],
+					[
+						"disco",
+						"Package Control: Discover Packages"
+					],
+					[
+						"upgrad",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"comb",
+						"Sort via CSScomb"
+					],
+					[
+						"csscom",
+						"Sort via CSScomb"
+					],
+					[
+						"disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"google",
+						"Snippet: Google AJAX Libraries: jQuery"
+					],
+					[
+						"disable pa",
+						"Package Control: Disable Package"
+					],
+					[
+						"snippet:b",
+						"Snippet: begin"
+					],
+					[
+						"dele",
+						"File: Delete"
+					],
+					[
+						"listpag",
+						"Package Control: List Packages"
+					],
+					[
+						"insp",
+						"Package Control: Install Package"
+					],
+					[
+						"html",
+						"Tidy HTML"
+					],
+					[
+						"css",
+						"Tidy CSS (Low Compression)"
+					],
+					[
+						"ssjavs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"remotag",
+						"Emmet: Remove Tag"
+					],
+					[
+						"sdl",
+						"SublimeLinter: Disable Linting"
+					],
+					[
+						"linting",
+						"SublimeLinter: Disable Linting"
+					],
+					[
+						"ssh",
+						"Set Syntax: HTML"
+					],
+					[
+						"ssht",
+						"Set Syntax: HTML"
+					],
+					[
+						"syntaxhtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"tidy",
+						"Tidy CSS (Low Compression)"
+					],
+					[
+						"emetmerge",
+						"Emmet: Merge Lines"
+					],
+					[
+						"removetag",
+						"Emmet: Remove Tag"
+					],
+					[
+						"emmet ",
+						"Emmet: Select Next Item"
+					],
+					[
+						"disabl",
+						"Package Control: Disable Package"
+					],
+					[
+						"syntaxcss",
+						"Set Syntax: CSS"
+					],
+					[
+						"syntaxjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"mini",
+						"Minify Javascript"
+					],
+					[
+						"disableli",
+						"SublimeLinter: Disable Linting"
+					],
+					[
+						"copy",
+						"File: Copy Name"
+					],
+					[
+						"pretti",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"tidycss",
+						"Tidy CSS"
+					],
+					[
+						"copyna",
+						"File: Copy Name"
+					],
+					[
+						"copynam",
+						"File: Copy Name"
+					],
+					[
+						"convert",
+						"Indentation: Convert to Tabs"
+					],
+					[
+						"synhtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"jq",
+						"Set Syntax: jQuery (JavaScript)"
+					],
+					[
+						"sytaxcss",
+						"Set Syntax: CSS"
+					],
+					[
+						"syntaxphp",
+						"Set Syntax: PHP"
+					],
+					[
+						"add",
+						"Project: Add Folder"
+					],
+					[
+						"bracket",
+						"Bracket Highlighter: Fold by Brackets"
+					],
+					[
+						"brack",
+						"Bracket Highlighter: Select Tag"
+					],
+					[
+						"copya",
+						"File: Copy as Tag a"
+					],
+					[
+						"markd",
+						"Markdown Preview: preview in Browser"
+					],
+					[
+						"mark",
+						"Markdown Preview: preview in Sublime Text"
+					],
+					[
+						"bro",
+						"Preferences: Browse Packages"
+					],
+					[
+						"disab",
+						"Package Control: Disable Package"
+					],
+					[
+						"synjas",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"disal",
+						"Package Control: Disable Package"
+					],
+					[
+						"listpage",
+						"Package Control: List Packages"
+					],
+					[
+						"prefi",
+						"Preferences: Prefixr Key Bindings – Default"
+					],
+					[
+						"js",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"htm",
+						"Set Syntax: HTML (Erlang)"
+					],
+					[
+						"syntaxhtml5",
+						"Set Syntax: HTML5"
+					],
+					[
+						"csscomb",
+						"Sort via CSScomb"
+					],
+					[
+						"conflict",
+						"FindKeyConflicts: All Conflicts"
+					],
+					[
+						"key",
+						"FindKeyConflicts: All Key Maps"
+					],
+					[
+						"upgrade",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"keyma",
+						"FindKeyConflicts: All Key Maps"
+					],
+					[
+						"disablelint",
+						"SublimeLinter: Disable Linting"
+					],
+					[
+						"linter",
+						"SublimeLinter: Disable Linting"
+					],
+					[
+						"htmlpr",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"syntax",
+						"Set Syntax: C++"
+					],
+					[
+						"syntacss",
+						"Set Syntax: CSS"
+					],
+					[
+						"find",
+						"FindKeyConflicts: All Conflicts"
+					],
+					[
+						"color",
+						"Color picker"
+					],
+					[
+						"col",
+						"Color picker"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"for",
+						"Format: Javascript"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"project",
+						"Project: Close"
+					],
+					[
+						"syntahtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"syntaxjava",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"preti",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"instp",
+						"Package Control: Install Package"
+					],
+					[
+						"syntaxjavs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"inslp",
+						"Package Control: Install Package"
+					],
+					[
+						"syntax:html",
+						"Set Syntax: HTML"
+					],
+					[
+						"dis",
+						"Package Control: Disable Package"
+					],
+					[
+						"disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"enal",
+						"Package Control: Enable Package"
+					],
+					[
+						"pinsp",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Discover Packages"
+					],
+					[
+						"fetch",
+						"Fetch: Manage"
+					],
+					[
+						"fet",
+						"Fetch: File"
+					],
+					[
+						"instap",
+						"Package Control: Install Package"
+					],
+					[
+						"instpa",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"move",
+						"File: Move"
+					],
+					[
+						"filemove",
+						"File: Move"
+					],
+					[
+						"htmlp",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"upda",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"forma",
+						"Format: Javascript"
+					],
+					[
+						"syntax java",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"terminal",
+						"Preferences: Terminal Key Bindings – Default"
+					]
+				],
+				"width": 522.0
+			},
+			"console":
+			{
+				"height": 153.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/jsdoc.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/lookup.js",
+				"/D/www/structure/index.html",
+				"/C/Users/John the whisler/Desktop/jQuery-Validation-Engine-master/jQuery-Validation-Engine-master/demos/demoAttr.html",
+				"/D/www/actApply/js/Validform_v5.3.2_min.js",
+				"/C/Users/John the whisler/Desktop/Validform_v5.3.2/Validform_v5.3.2/demo/css/style.css",
+				"/C/Users/John the whisler/Desktop/jQuery-Validation-Engine-master/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-zh_CN.js",
+				"/D/www/actApply/js/jquery.validationEngine.js",
+				"/C/Users/John the whisler/Desktop/jQuery-Validation-Engine-master/jQuery-Validation-Engine-master/css/releasenotes.plugin.css",
+				"/C/Users/John the whisler/Desktop/jQuery-Validation-Engine-master/jQuery-Validation-Engine-master/css/customMessages.css",
+				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
+				"/D/www/pay.lvye.cn/application/controllers/trade.php",
+				"/D/www/pay.lvye.cn/js/scripts.js",
+				"/D/www/pay.lvye.cn/css/layout.css",
+				"/D/www/pay.lvye.cn/application/views/trade_index.php",
+				"/D/www/pay.lvye.cn/css/ie.css",
+				"/D/www/actApply/js/script.js",
+				"/C/Users/John the whisler/Desktop/index.html",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+				"/C/Users/John the whisler/Desktop/Êé°üÍøTXTµç×ÓÊéÃâ·ÑÏÂÔØ,TXTºÏ¼¯´ò°üÏÂÔØ,È«¼¯Ð¡ËµÏÂÔØ,apkÐ¡ËµÏÂÔØ,Êé°üCC.htm",
+				"/D/www/pay.lvye.cn/css/common.css",
+				"/C/Users/John the whisler/Desktop/书包网TXT电子书免费下载,TXT合集打包下载,全集小说下载,apk小说下载,书包CC.htm",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+				"/C/Users/John the whisler/Desktop/ossync/ossync",
+				"/C/Users/John the whisler/Desktop/CodeIgniter_2.1.3/index.php",
+				"/D/workspace/lvyetopic/nanjing2013/static/nanjing2013/css/page.css",
+				"/D/www/over/show/css/page.css",
+				"/D/www/over/show/css/screen.css",
+				"/D/workspace/lvyetopic/nanjing2013/templates/nanjing2013/index.html",
+				"/D/www/over/show/index.html",
+				"/C/Windows/System32/drivers/etc/hosts",
+				"/D/Apache2.2/conf/httpd.conf",
+				"/D/www/pay.lvye.cn/application/.htaccess",
+				"/D/www/pay.lvye.cn/.htaccess",
+				"/D/www/pay.lvye.cn/application/core/MY_Controller.php",
+				"/D/www/pay.lvye.cn/application/controllers/myaccount.php",
+				"/D/www/pay.lvye.cn/application/config/config.php",
+				"/D/www/pay.lvye.cn/application/config/uc.php",
+				"/D/www/pay.lvye.cn/application/controllers/user.php",
+				"/D/www/pay.lvye.cn/application/config/database.php",
+				"/D/www/actApply/css/page.css",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime text 2/Packages/User/htmldoc",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/htmldoc.sublime-snippet",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/cssdoc.sublime-snippet",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/act/thickbox.css",
+				"/C/Users/John the whisler/Desktop/act/pubevent.js",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/InsertDate/Default.sublime-keymap",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime text 2/Packages/User/startc.sublime-snippet",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/csscomment.sublime-snippet",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/cssbegin.sublime-snippet",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/consolelog.sublime-snippet",
+				"/C/Users/John the whisler/Desktop/colorbox-master/jquery.colorbox.js",
+				"/C/Users/John the whisler/Desktop/act/pubevent.htm",
+				"/C/Users/John the whisler/Desktop/act/activity.css",
+				"/D/www/actApply/index.html",
+				"/C/Users/John the whisler/Desktop/act/feeoperate.bak.js",
+				"/D/workspace/lvyetopic/lvyetopic/settings.py",
+				"/C/Users/John the whisler/Desktop/act/feeoperate1.js",
+				"/C/Users/John the whisler/Desktop/act/feeoperate.js",
+				"/C/Users/John the whisler/Desktop/act/index.htm",
+				"/C/Users/John the whisler/Desktop/act/eventpostvalidate.js",
+				"/C/Users/John the whisler/Desktop/activity.css",
+				"/C/Users/John the whisler/Desktop/pubevent.htm",
+				"/C/Users/John the whisler/Desktop/thickbox.css",
+				"/C/Users/John the whisler/Desktop/demo.htm",
+				"/D/www/actApply/js/My97DatePicker/WdatePicker.js",
+				"/D/www/actApply/js/My97DatePicker/skin/blueFresh/datepicker.css",
+				"/D/www/actApply/js/My97DatePicker/skin/WdatePicker.css",
+				"/C/Users/Public/Desktop/Google Chrome.lnk",
+				"/D/www/over/app/index.html",
+				"/D/www/actApply/css/common.css",
+				"/D/www/structure/css/page.css",
+				"/D/workspace/library/huodong/static/huodong/js/huodong.js",
+				"/D/workspace/library/huodong/templates/huodong/extra.html",
+				"/D/workspace/library/huodong/static/huodong/css/search.css",
+				"/D/workspace/library/huodong/static/huodong/css/catalog.css",
+				"/D/workspace/library/huodong/templates/huodong/common/event_text_mode.html",
+				"/D/www/over/edm/3/index.html",
+				"/D/www/over/edm/3/edm3.min_site.html",
+				"/D/www/over/edm/3/edm3.min_mail.html",
+				"/D/www/over/edm/3/edm3_mail.min.html",
+				"/D/www/over/edm/3/edm3_site.min.html",
+				"/D/workspace/library/huodong/static/huodong/css/index.css",
+				"/D/workspace/library/library/settings.py",
+				"/D/workspace/library/pyxapian/PyIndex.py",
+				"/D/workspace/library/catalog/static/catalog/js/huodong.js",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime text 2/Packages/User/cssdoc.sublime-snippet",
+				"/D/workspace/library/huodong/templates/huodong/search.html",
+				"/D/workspace/library/huodong/templates/huodong/common/search_condition.html",
+				"/D/workspace/library/huodong/templates/huodong/common/event_pic_mode.html",
+				"/D/workspace/library/README",
+				"/D/workspace/library/rebuild_xapian.bat",
+				"/D/workspace/library/pyxapian/PyXapian.py",
+				"/D/workspace/library/huodong/templates/huodong/catalog.html",
+				"/D/workspace/library/huodong/templates/huodong/common/footer.html",
+				"/D/workspace/library/huodong/templates/huodong/common/event_list_mode.html",
+				"/C/Users/John the whisler/Desktop/portal_topic_skiapp.htm",
+				"/D/myproj/myproj/views.py",
+				"/D/myproj/myproj/settings.py",
+				"/D/workspace/library/huodong/views.py",
+				"/D/workspace/library/huodong/urls.py",
+				"/D/www/over/SkiAppDownload/css/index2.css",
+				"/D/www/over/SkiAppDownload/index.html",
+				"/C/Users/John the whisler/Desktop/资料.txt",
+				"/D/workspace/library/huodong/templates/huodong/generate/bottom_ads.html",
+				"/D/workspace/library/huodong/templates/huodong/base.html",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Settings/SideBarEnhancements.json",
+				"/D/www/over/ActAppDownload/index.html",
+				"/D/www/over/ActAppDownload/portal_topic_content_huodongapp.htm",
+				"/D/www/over/simpleheaderfooter/css/index2.css",
+				"/D/www/over/simpleheaderfooter/css/page.css",
+				"/D/www/over/simpleheaderfooter/index.html",
+				"/D/www/over/simpleheaderfooter/css/common.css",
+				"/D/www/over/simpleheaderfooter/portal_topic_content_huodongapp.htm",
+				"/D/www/newhd/list.html",
+				"/D/www/over/newhd/css/page.css",
+				"/D/workspace/library/huodong/templates/huodong/common/filter_bar.html",
+				"/E/testsite/mysite/mysite/urls.py",
+				"/E/testsite/mysite/mysite/views.py",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/D/workspace/library/huodong/templates/huodong/common/condition.html",
+				"/C/Users/John the whisler/Downloads/goagent-goagent-v3.0.1-47-g9acb296/goagent/local/proxy.ini",
+				"/D/Program Files (x86)/goagent/local/proxy.ini",
+				"/D/Program Files (x86)/goagent/README",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/D/www/show/index.html",
+				"/D/www/show/css/page.css"
+			],
+			"find":
+			{
+				"height": 119.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					"D:\\Program Files (x86)\\Sublime Text 2",
+					"C:\\Users\\John the whisler\\AppData\\Roaming\\Sublime text 2",
+					"C:\\Users\\John the whisler\\AppData\\Roaming\\Sublime text 2\\Packages",
+					"D:\\Program Files (x86)\\Sublime Text 2",
+					"C:\\Documents and Settings\\Administrator\\Application Data\\Sublime Text 2",
+					"D:\\Webroot\\program",
+					"D:\\cutout",
+					"\\\\192.168.1.11\\2012customjerseysshop.com",
+					"E:\\域名解析",
+					"C:\\Documents and Settings\\Administrator\\Application Data\\Sublime text 2\\Packages",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\custom1\\css",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\templates\\css",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\jstest,E:\\域名解析\\服务器",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\jstest",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\jewerlry",
+					"Z:\\xue\\nfl0919.com\\templates\\0919\\css,C:\\Documents and Settings\\Administrator\\Desktop\\jerseysfromchinaonline.com",
+					"Z:\\xue\\nfl0919.com\\templates\\0919\\css",
+					"Z:\\xue\\nfl0917.com\\templates\\0917\\css",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\0910-2-nfl",
+					"E:\\Downloads\\06d1b7f18784ecad5f47962c9724a9e1\\0905-2-nfl\\css",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite2",
+					"C:\\Documents and Settings\\Administrator\\Desktop\\newSite1"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"form",
+					"title",
+					"150个字以内",
+					"datatype",
+					"活动标题",
+					"Validform_error",
+					"$",
+					"releaseactform",
+					"标题",
+					" for=\"\"",
+					"fielddesc",
+					"dashtopbd",
+					"dcdcdc",
+					"refundtb",
+					"border-right-style: none;",
+					"活动标题:",
+					"titleinput",
+					"recordtable",
+					"even",
+					"odd",
+					"topinforow",
+					"tradeobj",
+					"if",
+					"document.getElementById",
+					"交易号",
+					"e.",
+					"> ",
+					"getElementById",
+					"index",
+					"pay",
+					"doc",
+					"doc_root",
+					"docroot",
+					"pay",
+					"doc",
+					"ft-buttons-imgsslider",
+					"ft-title",
+					"fttitle",
+					"*",
+					"slider",
+					"imgsslider",
+					"xu",
+					"630",
+					"rows=\"2\"",
+					"保险要求",
+					"active",
+					"930",
+					"费用详细情况",
+					":hover",
+					"feelistshow",
+					"id=\"desc_\\$val\" rows=\"1\" cols=\"15\"",
+					"id=\"desc_$val\" rows=\"1\" cols=\"15\"",
+					"<tr.*style=\"background:#E5EDF2;\">",
+					"<tr id=\"tr_i\" style=\"background:#E5EDF2;\">",
+					"background:#E5EDF2;",
+					"必付",
+					"金钱(元)",
+					"center",
+					"color:red;",
+					"tbwindow",
+					"width:500px;",
+					"编辑",
+					"console.",
+					"console.log",
+					"validateMustPay",
+					"comfirm",
+					"confirm",
+					";",
+					"calculateTotalFee",
+					"moneyinput",
+					"class=\"feifieldw40 moneyinput\"",
+					"calculateMustPayFee",
+					"validateMustPay",
+					"==tt",
+					"prepaidfee",
+					"pub_prepaid",
+					"预付费(元)",
+					"预付费(￥)",
+					"活动经费",
+					"class=\"feifieldw40 moneyinput\"",
+					"				// jQuery('#mustpayfee').text(calculateMustPayFee(mustpayarr));\n",
+					"!",
+					"console",
+					"value=\"0\" ",
+					"value=\"0\"",
+					"金钱(元)",
+					"validateNumber",
+					"calculateTotalFee",
+					"rowwrap",
+					"rowwrap sliderwrap clearfix",
+					"CRISPI与AKU品牌意大利主题派对热力四射",
+					"imageslid",
+					"title=\"输入纯数字\"",
+					"class=\"ismustpay\"",
+					"class=\"feifieldw40 moneyinput\"",
+					"console",
+					"$",
+					"class=\"feifieldw40 moneyinput\"",
+					"$j",
+					"$",
+					"$j",
+					"id=\"check_.*?\"",
+					"0",
+					"value=\"0\"",
+					"disabled=\"disabled\"",
+					"选择",
+					"obj",
+					"Obj",
+					"obj",
+					"name=\"\" id=\"\"",
+					"mustpayfee",
+					"<input type=\"checkbox\" class=\"ismustpay\" disabled=\"disabled\"",
+					"<input type=\"checkbox\" class=\"ismustpay\"",
+					"<input type=\"checkbox\" class=\"ismustpay\" data-refer=\"fee_guide\" name=\"\" id=\"\">",
+					"ismustpay",
+					"<input type=\"checkbox\" name=\"\" id=\"\">",
+					"disabled=\"disabled\"",
+					").val()+",
+					"$j(",
+					"disabled=\"disabled\"",
+					"disabled=\"true\"",
+					"script",
+					"/\"></",
+					"input type=\"checkbox\" name=\"\" id=\"\" class=\"chooseselect\"",
+					"input type=\"checkbox\" name=\"\" id=\"\"",
+					"class=\"feifieldw40\"",
+					"<input type=\"text\" name=\"\" id=\"\">",
+					"<textarea name=\"\" id=\"\"></textarea>"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"id=\"desc_$val\" rows=\"2\" cols=\"15\"",
+					"",
+					"disabled=\"disabled\"",
+					"其他",
+					"导游费",
+					"娱乐项目",
+					"公摊费用",
+					"爱心捐助",
+					"餐费",
+					"门票",
+					"住宿费",
+					"",
+					" ",
+					"\"",
+					"",
+					"rowwrap clearfix",
+					"imglistul",
+					"contentblock clearfix",
+					"",
+					"<span class=\"corange\">99.3%</span>",
+					"领队姓名</a> &nbsp;&nbsp;好评率：<a href=\"\">80%</a>",
+					"出发：5月11日(六) &nbsp;返回：5月12日(日)",
+					"出发：5月11日(六)返回：5月12日(日)",
+					"出发：5月11日（六）返回：5月12日（日",
+					"90",
+					"\\1-big",
+					"</span>\\n",
+					"</span>/n",
+					"",
+					"emph",
+					"cp8",
+					"cp7",
+					"cp6",
+					"cp5",
+					"cp4",
+					"cp3",
+					"cp2",
+					"cp1",
+					"剩余(12)",
+					"确认(99)",
+					"驴妈妈",
+					"欣欣旅游网",
+					"途牛",
+					"特色活动",
+					"当季热门",
+					"结伴远行",
+					"本周出游",
+					"绿野中国",
+					"",
+					"'Microsoft yahei'",
+					"12",
+					"txt-hd",
+					"second",
+					"620",
+					"#f2f2f2",
+					" ",
+					"",
+					"dedede",
+					"209",
+					"margin-bottom: 10px;height: 18px;overflow: hidden; font-size:12px;line-height:18px;",
+					"",
+					"line-height:30px",
+					"",
+					"border:none;vertical-align: middle; margin-right:10px;",
+					"\\1",
+					" ",
+					"\\s",
+					"",
+					" ",
+					"190",
+					"",
+					"title=\"\"",
+					"width=\"70\"",
+					"..images/",
+					"",
+					"email",
+					"password",
+					"<a href=\"#\" ",
+					"\\1\"",
+					"",
+					"\\1\"",
+					"\\1#\"",
+					"\\1js/\\2",
+					"\\1css/\\2",
+					"\\1images/\\2\"",
+					"\\1\"",
+					"\\1#\"",
+					"\\1js/\\2",
+					"\\1css/\\2",
+					"\\1images/\\2\"",
+					"\\1\"",
+					"\\1#\" ",
+					"\\1js/\\2",
+					"\\1css/\\2",
+					"\\1#\" ",
+					"\\1#\"",
+					"\\1images/\\2\"",
+					"\\}\\n",
+					"",
+					"\\1#\"",
+					"",
+					"\\1css/\\2",
+					"Burkina Faso",
+					"",
+					"\\1images/\\2\"",
+					"\\1\"",
+					"\\1#\" ",
+					"\\1js/\\2",
+					"\\1css/\\2",
+					"(",
+					"../images/select2.png",
+					"iconimage",
+					"images",
+					"images/",
+					"\\1images/\\2\"",
+					"\\1\"",
+					"\\1#\" ",
+					"\\1js/\\2",
+					"\\1css/\\2",
+					"class=\"images\"",
+					"\\1images/\\2\"",
+					"\\1\"",
+					"\\1#\"",
+					"\\1js/\\2",
+					"\\1css/\\2",
+					"\\1images/\\2\"",
+					"\\1\"",
+					"\\1#\" "
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": false
+			},
+			"folders":
+			[
+				{
+					"path": "/D/myproj/myproj"
+				},
+				{
+					"path": "/D/www/actApply"
+				},
+				{
+					"path": "/D/www/pay.lvye.cn"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 2,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"settings":
+							{
+								"buffer_size": 156,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										156,
+										156
+									]
+								],
+								"settings":
+								{
+									"auto_name": "昨天:",
+									"incomplete_sync": null,
+									"is_xml": false,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/D/www/actApply/index.html",
+							"settings":
+							{
+								"buffer_size": 12855,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										544,
+										544
+									]
+								],
+								"settings":
+								{
+									"buffer_scroll_name": "e7b1fddc",
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/cssdoc.sublime-snippet",
+							"settings":
+							{
+								"buffer_size": 392,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										392
+									]
+								],
+								"settings":
+								{
+									"buffer_scroll_name": "39360ee0",
+									"is_xml": true,
+									"origin_encoding": "ASCII",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/XML/XML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/Users/John the whisler/Desktop/Parsley.js-master/Parsley.js-master/dist/parsley-standalone.min.js",
+							"settings":
+							{
+								"buffer_size": 53798,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										456,
+										456
+									]
+								],
+								"settings":
+								{
+									"buffer_scroll_name": "22adb1ff",
+									"incomplete_sync": null,
+									"origin_encoding": "ASCII",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/Users/John the whisler/Desktop/Demo - Validform - 一行代码搞定整站的表单验证！ ©瑞金佬的前端路.htm",
+							"settings":
+							{
+								"buffer_size": 6183,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5792,
+										5792
+									]
+								],
+								"settings":
+								{
+									"buffer_scroll_name": "b0fc5079",
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 2772.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/D/myproj/myproj/urls.py",
+							"settings":
+							{
+								"buffer_size": 713,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										363,
+										363
+									]
+								],
+								"settings":
+								{
+									"buffer_scroll_name": "bcd65731",
+									"incomplete_sync": null,
+									"origin_encoding": "ASCII",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/Python/Python.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/D/myproj/myproj/views.py",
+							"settings":
+							{
+								"buffer_size": 556,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										403,
+										403
+									]
+								],
+								"settings":
+								{
+									"buffer_scroll_name": "e61699d0",
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origin_encoding": "ASCII",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/Python/Python.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 7,
+							"file": "/D/www/actApply/js/script.js",
+							"settings":
+							{
+								"buffer_size": 277,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										31,
+										31
+									]
+								],
+								"settings":
+								{
+									"buffer_scroll_name": "dd0d6569",
+									"incomplete_sync": null,
+									"origin_encoding": "Undefined",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/D/www/actApply/css/page.css",
+							"settings":
+							{
+								"buffer_size": 7044,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2129,
+										2139
+									]
+								],
+								"settings":
+								{
+									"buffer_scroll_name": "f7884e9a",
+									"incomplete_sync": null,
+									"origin_encoding": "ASCII",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/CSS/CSS.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1883.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 37.0
+			},
+			"input":
+			{
+				"height": 37.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.793219303604,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 200.0
+			},
+			"output.find_results":
+			{
+				"height": 140.0
+			},
+			"output.sftp":
+			{
+				"height": 0.0
+			},
+			"position": "0,2,3,-32000,-32000,-1,-1,721,-19,51,1898",
+			"replace":
+			{
+				"height": 70.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"script.js",
+						"pay.lvye.cn/js/scripts.js"
+					],
+					[
+						"layout.",
+						"pay.lvye.cn/css/layout.css"
+					],
+					[
+						"layout",
+						"pay.lvye.cn/css/layout.css"
+					],
+					[
+						"ie.css",
+						"pay.lvye.cn/css/ie.css"
+					],
+					[
+						"wdatepi",
+						"actApply/js/My97DatePicker/WdatePicker.js"
+					],
+					[
+						"index.css",
+						"library/huodong/static/huodong/css/index.css"
+					],
+					[
+						"catalog.css",
+						"library/huodong/static/huodong/css/catalog.css"
+					],
+					[
+						"search.css",
+						"library/huodong/static/huodong/css/search.css"
+					],
+					[
+						"huodong.js",
+						"library/huodong/static/huodong/js/huodong.js"
+					],
+					[
+						"extra",
+						"library/huodong/templates/huodong/extra.html"
+					],
+					[
+						"eventtext",
+						"library/huodong/templates/huodong/common/event_text_mode.html"
+					],
+					[
+						"extr",
+						"library/huodong/templates/huodong/extra.html"
+					],
+					[
+						"search.",
+						"library/huodong/templates/huodong/search.html"
+					],
+					[
+						"views",
+						"views.py"
+					],
+					[
+						"index2",
+						"css/index2.css"
+					],
+					[
+						"idex2",
+						"css/index2.css"
+					],
+					[
+						"filterba",
+						"huodong/templates/huodong/common/filter_bar.html"
+					],
+					[
+						"condition",
+						"huodong/templates/huodong/common/condition.html"
+					],
+					[
+						"filterbar",
+						"huodong/templates/huodong/common/filter_bar.html"
+					],
+					[
+						"base",
+						"huodong/templates/huodong/base.html"
+					],
+					[
+						"huodong/common/condition.html",
+						"huodong/templates/huodong/common/condition.html"
+					],
+					[
+						"sear.css",
+						"catalog/static/catalog/css/search.css"
+					],
+					[
+						"base.html",
+						"huodong/templates/huodong/base.html"
+					],
+					[
+						"catel",
+						"catalog/templates/catalog/category.html"
+					],
+					[
+						"footer",
+						"huodong/templates/huodong/common/footer.html"
+					],
+					[
+						"hdvs",
+						"huodong/views.py"
+					],
+					[
+						"views.py",
+						"chatroom/views.py"
+					],
+					[
+						"rightad",
+						"huodong/templates/huodong/generate/rightbar_ads.html"
+					],
+					[
+						"cat",
+						"huodong/static/huodong/css/catalog.css"
+					],
+					[
+						"page",
+						"css/page.css"
+					],
+					[
+						".js",
+						"js/jqFancyTransitions.1.8.min.js"
+					],
+					[
+						"page.css",
+						"css/page.css"
+					],
+					[
+						"scrip",
+						"js/script.js"
+					],
+					[
+						"swit",
+						"js/viewswitcher.js"
+					],
+					[
+						"index.js",
+						"js/index.js"
+					],
+					[
+						"comm",
+						"css/common.css"
+					],
+					[
+						"event",
+						"eventshow.htm"
+					],
+					[
+						"img",
+						"js/imgpreview.js"
+					],
+					[
+						"global",
+						"css/global.css"
+					],
+					[
+						"lvye",
+						"css/lvyeframe.css"
+					],
+					[
+						"allca",
+						"css/allcat.css"
+					],
+					[
+						"c",
+						"css/carousel.css"
+					],
+					[
+						"styles",
+						"css/styles.css"
+					],
+					[
+						"sm",
+						"js/sample01.js"
+					],
+					[
+						"globa",
+						"css/global.css"
+					],
+					[
+						"glbal",
+						"act/css/global.css"
+					],
+					[
+						"style",
+						"act/css/styles.css"
+					],
+					[
+						"script",
+						"js/scripts.js"
+					],
+					[
+						"css.cs",
+						"css/css.css"
+					],
+					[
+						"ski",
+						"css/skin.css"
+					],
+					[
+						"prev",
+						"js/imgpreview.js"
+					],
+					[
+						"indexs",
+						"css/index.css"
+					],
+					[
+						"ind",
+						"css/index.css"
+					],
+					[
+						"index",
+						"index.html"
+					],
+					[
+						".scss",
+						"css/sass/activity-module.scss"
+					],
+					[
+						"goods",
+						"2012cheapjerseysusa/goods.dwt"
+					],
+					[
+						"article",
+						"2012cheapjerseysusa/article_cat.dwt"
+					],
+					[
+						"de",
+						"detailpage.html"
+					],
+					[
+						"listp",
+						"listpage.html"
+					],
+					[
+						"scripts",
+						"js/scripts.js"
+					],
+					[
+						"glo",
+						"css/global.css"
+					],
+					[
+						"detail",
+						"detailpage.html"
+					],
+					[
+						"listpa",
+						"listpage.html"
+					],
+					[
+						"detal",
+						"detailpage.html"
+					],
+					[
+						"list",
+						"listpage.html"
+					],
+					[
+						"index.ht",
+						"index.html"
+					],
+					[
+						"skin",
+						"css/skin.css"
+					],
+					[
+						"gl",
+						"css/global.css"
+					],
+					[
+						"inde",
+						"nfl jerseys3/index.html"
+					],
+					[
+						"decss",
+						"css/detailpage.css"
+					],
+					[
+						"",
+						"/D/template/mascot1/detailpage.html"
+					],
+					[
+						"rese",
+						"css/reset-min.css"
+					],
+					[
+						"deta",
+						"css/detailpage.css"
+					],
+					[
+						"lispcss",
+						"css/listpage.css"
+					],
+					[
+						"detaicss",
+						"css/detailpage.css"
+					],
+					[
+						"listpa.c",
+						"css/listpage.css"
+					],
+					[
+						"st",
+						"css/styles.css"
+					],
+					[
+						"handl",
+						"js/handlepro.js"
+					],
+					[
+						"super",
+						"css/superfish.css"
+					],
+					[
+						"globl",
+						"css/global.css"
+					],
+					[
+						"lista",
+						"listpage.html"
+					],
+					[
+						"glba",
+						"css/global.css"
+					],
+					[
+						"flex",
+						"/D/Webroot/2012-11-15/css/flexslider.css"
+					],
+					[
+						"reset",
+						"css/reset.css"
+					],
+					[
+						"2012",
+						"2012-11-15/index.html"
+					],
+					[
+						"host",
+						"/C/WINDOWS/system32/drivers/etc/hosts"
+					],
+					[
+						".css",
+						"public_html/css/style.css"
+					],
+					[
+						"magic",
+						"css/magiczoom.css"
+					],
+					[
+						"list.css",
+						"css/listpage.css"
+					],
+					[
+						"com",
+						"css/common.css"
+					],
+					[
+						"indx",
+						"css/index.css"
+					],
+					[
+						"index.html",
+						"index.html"
+					],
+					[
+						"js/",
+						"js/jquery.dcjqaccordion.js"
+					],
+					[
+						"header.css",
+						"css/header.css"
+					],
+					[
+						"detail.css",
+						"css/detail.css"
+					],
+					[
+						"search.html",
+						"product/search.html"
+					],
+					[
+						"header.html",
+						"theme/header.html"
+					],
+					[
+						"style.css",
+						"css/style.css"
+					],
+					[
+						"prodetai.",
+						"product/detail.html"
+					],
+					[
+						"contentc",
+						"css/content.css"
+					],
+					[
+						"prolist.html",
+						"product/list.html"
+					],
+					[
+						"head.html",
+						"theme/header.html"
+					],
+					[
+						"footer.html",
+						"theme/footer.html"
+					],
+					[
+						"list_pic",
+						"product/list_pic.html"
+					],
+					[
+						"download",
+						"download/detail.html"
+					],
+					[
+						"cotent.css",
+						"css/content.css"
+					],
+					[
+						"user.css",
+						"css/user.css"
+					],
+					[
+						"sty",
+						"css/style.css"
+					],
+					[
+						"style.cs",
+						"css/style.css"
+					],
+					[
+						"prodetai.ht",
+						"product/detail.html"
+					],
+					[
+						"prolist",
+						"product/list.html"
+					],
+					[
+						"list.html",
+						"comments/list.html"
+					],
+					[
+						"index.",
+						"index.html"
+					],
+					[
+						"copyfoot",
+						"theme/Copy of footer.html"
+					],
+					[
+						"footer.ht",
+						"theme/footer.html"
+					],
+					[
+						"header",
+						"theme/Copy of header.html"
+					],
+					[
+						"header.",
+						"0929/theme/header.html"
+					],
+					[
+						"footer.css",
+						"0929/css/footer.css"
+					],
+					[
+						"content.css",
+						"0929/css/content.css"
+					],
+					[
+						"downdetail",
+						"0929/download/detail.html"
+					],
+					[
+						"prosearch",
+						"0929/product/search.html"
+					],
+					[
+						"prodetail.ht",
+						"0929/product/detail.html"
+					],
+					[
+						"prodetail.html",
+						"0929/product/detail.html"
+					],
+					[
+						"head",
+						"0929/theme/header.html"
+					],
+					[
+						"content",
+						"css/content.css"
+					],
+					[
+						"downdetai",
+						"download/detail.html"
+					],
+					[
+						"cotent",
+						"css/content.css"
+					],
+					[
+						"pro/de",
+						"product/detail.html"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"selected_items":
+				[
+					[
+						"",
+						"/D/Webroot/ajaxtest/new.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 283.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": ""
