@@ -1,11 +1,13 @@
 <snippet>
 	<content><![CDATA[
 /*
- * @description: ${1:desc}
- * @author: ${2:xuechengwei}
+ * @description: ${1:file description}
+ * @author: xuechengwei
  * @email: xuechengweiyx@163.com
- * @update: ${3:YYYY}/${4:MM}/${5:DD}
+ * @update: ${3:YYYY-MM-DD}
  */
+
+$5
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>doc</tabTrigger>
