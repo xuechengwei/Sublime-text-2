@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\$this->input->server('${1:name}');
+]]></content>
+	<tabTrigger>_server</tabTrigger>
+	<description>CI - $_SERVER</description>
+</snippet>

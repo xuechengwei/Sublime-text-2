@@ -29,7 +29,6 @@
 
 # Doc comment syntax inspired by http://stackoverflow.com/a/487203/387503
 
-
 # ==== Libraries ===========================================================================
 
 # Sublime API see http://www.sublimetext.com/docs/2/api_reference.html
@@ -48,61 +47,42 @@ import traceback
 import sys
 
 # FTPSync libraries
-from ftpsyncwrapper import CreateConnection, TargetAlreadyExists
-from ftpsyncprogress import Progress
-from ftpsyncfiles import getFolders, findFile, getFiles, formatTimestamp, gatherMetafiles, getChangedFiles, replace, addLinks
-from ftpsyncworker import Worker
-# exceptions
-from ftpsyncexceptions import FileNotFoundException
+try:
+	from FTPSync.ftpsyncwrapper import CreateConnection, TargetAlreadyExists
+	from FTPSync.ftpsyncprogress import Progress
+	from FTPSync.ftpsyncfiles import getFolders, findFile, getFiles, formatTimestamp, gatherMetafiles, getChangedFiles, replace, addLinks
+	from FTPSync.ftpsyncworker import Worker
+	# exceptions
+	from FTPSync.ftpsyncexceptions import FileNotFoundException
+except ImportError:
+	from ftpsyncwrapper import CreateConnection, TargetAlreadyExists
+	from ftpsyncprogress import Progress
+	from ftpsyncfiles import getFolders, findFile, getFiles, formatTimestamp, gatherMetafiles, getChangedFiles, replace, addLinks
+	from ftpsyncworker import Worker
+	# exceptions
+	from ftpsyncexceptions import FileNotFoundException
 
 # ==== Initialization and optimization =====================================================
+__dir__ = os.path.dirname(os.path.realpath(__file__))
 
-# global config
-settings = sublime.load_settings('FTPSync.sublime-settings')
+isLoaded = False
 
-# test settings
-if settings.get('project_defaults') is None:
-	print "="*86
-	print "FTPSync > Error loading settings ... please restart Sublime Text 2 after installation"
-	print "="*86
-
-# print debug messages to console?
-isDebug = settings.get('debug')
+isDebug = True
 # print overly informative messages?
-isDebugVerbose = settings.get('debug_verbose')
+isDebugVerbose = True
 # default config for a project
-projectDefaults = settings.get('project_defaults').items()
+projectDefaults = {}
 nested = []
 index = 0
-for item in projectDefaults:
-	if type(item[1]) is dict:
-		nested.append(index)
-	index += 1
 # global config key - for specifying global config in settings file
 globalConfigKey = '__global'
-
-# global ignore pattern
-ignore = settings.get('ignore')
+ignore = False
 # time format settings
-time_format = settings.get('time_format')
+time_format = ""
 # delay before check of right opened file is performed, cancelled if closed in the meantime
-download_on_open_delay = settings.get('download_on_open_delay')
-# system notifications
-systemNotifications = settings.get('system_notifications')
+download_on_open_delay = 0
 
-# loaded project's config will be merged with this global one
-coreConfig = {
-	'ignore': ignore,
-	'connection_timeout': settings.get('connection_timeout'),
-	'ascii_extensions': settings.get('ascii_extensions'),
-	'binary_extensions': settings.get('binary_extensions')
-}.items()
-
-# compiled global ignore pattern
-if type(ignore) is str or type(ignore) is unicode:
-	re_ignore = re.compile(ignore)
-else:
-	re_ignore = None
+coreConfig = {}
 
 
 # name of a file to be detected in the project
@@ -128,9 +108,9 @@ configs = {}
 # scheduled delayed uploads, file_path => action id
 scheduledUploads = {}
 # limit of workers
-workerLimit = settings.get('max_threads')
+workerLimit = 0
 # debug workers?
-debugWorkers = settings.get('debug_threads')
+debugWorkers = 0
 
 
 # overwrite cancelled
@@ -142,8 +122,8 @@ navigateLast = {
 	'connection_name': None,
 	'path': None
 }
-displayPermissions = settings.get('browse_display_permission')
-displayTimestampFormat = settings.get('browse_timestamp_format')
+displayPermissions = ''
+displayTimestampFormat = ''
 
 # last folder
 re_thisFolder = re.compile("/([^/]*?)/?$", re.I)
@@ -152,25 +132,111 @@ re_parentFolder = re.compile("/([^/]*?)/[^/]*?/?$", re.I)
 # watch pre-scan
 preScan = {}
 
+# temporarily remembered passwords
+#
+# { settings_filepath => { connection_name => password }, ... }
+passwords = {}
+
+def isString(var):
+	var_type = type(var)
+
+	if sys.version[0] == '3':
+		return var_type is str or var_type is bytes
+	else:
+		return var_type is str or var_type is unicode
+
+def plugin_loaded():
+	print ('FTPSync > plugin async loaded')
+	global isLoaded
+	global isDebug
+	global isDebugVerbose
+	global workerLimit
+	global coreConfig
+	global settings
+	global projectDefaults
+	global nested
+	global index
+	global ignore
+	global re_ignore
+	global time_format
+	global download_on_open_delay
+	global systemNotifications
+	global displayPermissions
+	global displayTimestampFormat
+
+	# global config
+	settings = sublime.load_settings('FTPSync.sublime-settings')
+
+	# test settings
+	if settings.get('project_defaults') is None:
+		print ("="*86)
+		print ("FTPSync > Error loading settings ... please restart Sublime Text after installation")
+		print ("="*86)
+
+	# print debug messages to console?
+	isDebug = settings.get('debug')
+	# print overly informative messages?
+	isDebugVerbose = settings.get('debug_verbose')
+	# default config for a project
+	projectDefaults = settings.get('project_defaults')
+
+	index = 0
+
+	for item in projectDefaults.items():
+		if type(item[1]) is dict:
+			nested.append(index)
+		index += 1
+
+	# global ignore pattern
+	ignore = settings.get('ignore')
+	# time format settings
+	time_format = settings.get('time_format')
+	# delay before check of right opened file is performed, cancelled if closed in the meantime
+	download_on_open_delay = settings.get('download_on_open_delay')
+	# system notifications
+	systemNotifications = settings.get('system_notifications')
+
+	# compiled global ignore pattern
+	if isString(ignore):
+		re_ignore = re.compile(ignore)
+	else:
+		re_ignore = None
+
+	# loaded project's config will be merged with this global one
+	coreConfig = {
+		'ignore': ignore,
+		'connection_timeout': settings.get('connection_timeout'),
+		'ascii_extensions': settings.get('ascii_extensions'),
+		'binary_extensions': settings.get('binary_extensions')
+	}
+
+	# limit of workers
+	workerLimit = settings.get('max_threads')
+	# debug workers?
+	debugWorkers = settings.get('debug_threads')
+
+	displayPermissions = settings.get('browse_display_permission')
+	displayTimestampFormat = settings.get('browse_timestamp_format')
+
+	isLoaded = True
+
+if int(sublime.version()) < 3000:
+	plugin_loaded()
+
 
 # ==== Generic =============================================================================
 
-# Returns whether the variable is some form os string
-def isString(var):
-	var_type = type(var)
-	return var_type is str or var_type is unicode
-
 # Dumps the exception to console
 def handleException(exception):
-	print "FTPSync > Exception in user code:"
-	print '-' * 60
+	print ("FTPSync > Exception in user code:")
+	print ('-' * 60)
 	traceback.print_exc(file=sys.stdout)
-	print '-' * 60
+	print ('-' * 60)
 
 
 # Safer print of exception message
 def stringifyException(exception):
-	return unicode(exception)
+	return str(exception)
 
 
 # Checks whether cerain package exists
@@ -183,6 +249,13 @@ def getGlobalConfig(key, config):
 		return config[globalConfigKey][key]
 	else:
 		return settings.get(key)
+
+
+def decode(string):
+	if hasattr('x', 'decode') and callable(getattr('x', 'decode')):
+		return string.decode('utf-8')
+	else:
+		return string
 
 
 # ==== Messaging ===========================================================================
@@ -222,13 +295,13 @@ def printMessage(text, name=None, onlyVerbose=False, status=False):
 	message = "FTPSync"
 
 	if name is not None:
-		message += " [" + unicode(name) + "]"
+		message += " [" + name + "]"
 
 	message += " > "
-	message += unicode(text)
+	message += text
 
 	if isDebug and (onlyVerbose is False or isDebugVerbose is True):
-		print message.encode('utf-8')
+		print (message.encode('utf-8'))
 
 	if status:
 		dumpMessage(message)
@@ -253,7 +326,7 @@ def systemNotify(text):
 		elif sys.platform == "win32":
 		    """ Find the notifaction platform for windows if there is one"""
 
-	except Exception, e:
+	except Exception as e:
 		printMessage("Notification failed")
 		handleExceptions(e)
 
@@ -294,12 +367,16 @@ def findConfigFile(folders):
 #
 # @global configs
 def getConfigFile(file_path):
+	cacheKey = file_path
+	if type(cacheKey) is not str:
+		cacheKey = cacheKey.decode('utf-8')
+
 	# try cached
 	try:
-		if configs[file_path]:
-			printMessage("Loading config: cache hit (key: " + file_path + ")")
+		if configs[cacheKey]:
+			printMessage("Loading config: cache hit (key: " + cacheKey + ")")
 
-		return configs[file_path]
+		return configs[cacheKey]
 
 	# cache miss
 	except KeyError:
@@ -312,11 +389,11 @@ def getConfigFile(file_path):
 			configFolder = findConfigFile(folders)
 
 			if configFolder is None:
-				printMessage("Found no config for {" + file_path + "}")
+				printMessage("Found no config for {" + cacheKey + "}", None, True)
 				return None
 
 			config = os.path.join(configFolder, configName)
-			configs[file_path] = config
+			configs[cacheKey] = config
 			return config
 
 		except AttributeError:
@@ -459,61 +536,61 @@ def verifyConfig(config):
 			return "Config is missing a {" + key + "} key"
 
 	if config['username'] is not None and isString(config['username']) is False:
-		return "Config entry 'username' must be null or string, " + unicode(type(config['username'])) + " given"
+		return "Config entry 'username' must be null or string, " + str(type(config['username'])) + " given"
 
 	if config['password'] is not None and isString(config['password']) is False:
-		return "Config entry 'password' must be null or string, " + unicode(type(config['password'])) + " given"
+		return "Config entry 'password' must be null or string, " + str(type(config['password'])) + " given"
 
 	if config['private_key'] is not None and isString(config['private_key']) is False:
-		return "Config entry 'private_key' must be null or string, " + unicode(type(config['private_key'])) + " given"
+		return "Config entry 'private_key' must be null or string, " + str(type(config['private_key'])) + " given"
 
 	if config['private_key_pass'] is not None and isString(config['private_key_pass']) is False:
-		return "Config entry 'private_key_pass' must be null or string, " + unicode(type(config['private_key_pass'])) + " given"
+		return "Config entry 'private_key_pass' must be null or string, " + str(type(config['private_key_pass'])) + " given"
 
 	if config['ignore'] is not None and isString(config['ignore']) is False:
-		return "Config entry 'ignore' must be null or string, " + unicode(type(config['ignore'])) + " given"
+		return "Config entry 'ignore' must be null or string, " + str(type(config['ignore'])) + " given"
 
 	if isString(config['path']) is False:
-		return "Config entry 'path' must be a string, " + unicode(type(config['path'])) + " given"
+		return "Config entry 'path' must be a string, " + str(type(config['path'])) + " given"
 
 	if config['encoding'] is not None and isString(config['encoding']) is False:
-		return "Config entry 'encoding' must be a string, " + unicode(type(config['encoding'])) + " given"
+		return "Config entry 'encoding' must be a string, " + str(type(config['encoding'])) + " given"
 
 	if type(config['tls']) is not bool:
-		return "Config entry 'tls' must be true or false, " + unicode(type(config['tls'])) + " given"
+		return "Config entry 'tls' must be true or false, " + str(type(config['tls'])) + " given"
 
 	if type(config['passive']) is not bool:
-		return "Config entry 'passive' must be true or false, " + unicode(type(config['passive'])) + " given"
+		return "Config entry 'passive' must be true or false, " + str(type(config['passive'])) + " given"
 
 	if type(config['use_tempfile']) is not bool:
-		return "Config entry 'use_tempfile' must be true or false, " + unicode(type(config['use_tempfile'])) + " given"
+		return "Config entry 'use_tempfile' must be true or false, " + str(type(config['use_tempfile'])) + " given"
 
 	if type(config['set_remote_lastmodified']) is not bool:
-		return "Config entry 'set_remote_lastmodified' must be true or false, " + unicode(type(config['set_remote_lastmodified'])) + " given"
+		return "Config entry 'set_remote_lastmodified' must be true or false, " + str(type(config['set_remote_lastmodified'])) + " given"
 
 	if type(config['upload_on_save']) is not bool:
-		return "Config entry 'upload_on_save' must be true or false, " + unicode(type(config['upload_on_save'])) + " given"
+		return "Config entry 'upload_on_save' must be true or false, " + str(type(config['upload_on_save'])) + " given"
 
 	if type(config['check_time']) is not bool:
-		return "Config entry 'check_time' must be true or false, " + unicode(type(config['check_time'])) + " given"
+		return "Config entry 'check_time' must be true or false, " + str(type(config['check_time'])) + " given"
 
 	if type(config['download_on_open']) is not bool:
-		return "Config entry 'download_on_open' must be true or false, " + unicode(type(config['download_on_open'])) + " given"
+		return "Config entry 'download_on_open' must be true or false, " + str(type(config['download_on_open'])) + " given"
 
 	if type(config['upload_delay']) is not int and type(config['upload_delay']) is not long:
-		return "Config entry 'upload_delay' must be integer or long, " + unicode(type(config['upload_delay'])) + " given"
+		return "Config entry 'upload_delay' must be integer or long, " + str(type(config['upload_delay'])) + " given"
 
 	if config['after_save_watch'] is not None and type(config['after_save_watch']) is not list:
-		return "Config entry 'after_save_watch' must be null or list, " + unicode(type(config['after_save_watch'])) + " given"
+		return "Config entry 'after_save_watch' must be null or list, " + str(type(config['after_save_watch'])) + " given"
 
 	if type(config['port']) is not int and type(config['port']) is not long:
-		return "Config entry 'port' must be an integer or long, " + unicode(type(config['port'])) + " given"
+		return "Config entry 'port' must be an integer or long, " + str(type(config['port'])) + " given"
 
 	if type(config['timeout']) is not int and type(config['timeout']) is not long:
-		return "Config entry 'timeout' must be an integer or long, " + unicode(type(config['timeout'])) + " given"
+		return "Config entry 'timeout' must be an integer or long, " + str(type(config['timeout'])) + " given"
 
 	if type(config['time_offset']) is not int and type(config['time_offset']) is not long:
-		return "Config entry 'time_offset' must be an integer or long, " + unicode(type(config['time_offset'])) + " given"
+		return "Config entry 'time_offset' must be an integer or long, " + str(type(config['time_offset'])) + " given"
 
 	return True
 
@@ -539,6 +616,78 @@ def parseJson(file_path):
 	return json.loads(contents)
 
 
+
+# Asks for passwords if missing in configuration
+#
+# @type config_file_path: string
+# @type config: dict
+# @param config: configuration object
+# @type callback: callback
+# @param callback: what should be done after config is filled
+# @type window: Window
+# @param window: SublimeText2 API Window object
+#
+# @global passwords
+def addPasswords(config_file_path, config, callback, window):
+	def setPassword(config, name, password):
+		config['connections'][name]['password'] = password
+
+		if config_file_path not in passwords:
+			passwords[config_file_path] = {}
+
+		passwords[config_file_path][name] = password
+
+		addPasswords(config_file_path, config, callback, window)
+
+	def ask(connectionName):
+		window.show_input_panel('Enter password for ' + str(connectionName), "", lambda password: setPassword(config, connectionName, password), None, None)
+
+	for name in config['connections']:
+		prop = config['connections'][name]
+
+		if prop['password'] is None:
+			if config_file_path in passwords and name in passwords[config_file_path] and passwords[config_file_path][name] is not None:
+				config['connections'][name]['password'] = passwords[config_file_path][name]
+			else:
+				ask(name)
+				return
+
+	return callback()
+
+
+
+# Fills passwords if missing in configuration
+#
+# @type fileList: [ [ filepath, config_file_path ], ... ]
+# @type callback: callback
+# @param callback: what should be done after config is filled
+# @type window: Window
+# @param window: SublimeText2 API Window object
+#
+# @global passwords
+def fillPasswords(fileList, callback, window, index = 0):
+	def ask():
+		fillPasswords(fileList, callback, window, index + 1)
+
+	i = 0
+	length = len(fileList)
+
+	if index >= length:
+		callback(fileList)
+		return
+
+	for filepath, config_file_path in fileList:
+		if i < index:
+			i = i + 1
+			continue
+
+		addPasswords(config_file_path, loadConfig(config_file_path), ask, window)
+		return
+
+	callback(fileList)
+
+
+
 # Parses given config and adds default values to each connection entry
 #
 # @type  file_path: string
@@ -546,16 +695,22 @@ def parseJson(file_path):
 #
 # @return config dict or None
 #
+# @global isLoaded
 # @global coreConfig
 # @global projectDefaults
 def loadConfig(file_path):
+
+	if isLoaded is False:
+		printMessage("Settings not loaded (just installed?), please restart Sublime Text")
+		return None
+
 	if os.path.exists(file_path) is False:
 		return None
 
 	# parse config
 	try:
 		config = parseJson(file_path)
-	except Exception, e:
+	except Exception as e:
 		printMessage("Failed parsing configuration file: {" + file_path + "} (commas problem?) [Exception: " + stringifyException(e) + "]", status=True)
 		handleException(e)
 		return None
@@ -571,27 +726,34 @@ def loadConfig(file_path):
 		if name == globalConfigKey:
 			continue
 
-		result[name] = dict(projectDefaults + config[name].items())
+		result[name] = dict(list(projectDefaults.items()) + list(config[name].items()))
 		result[name]['file_path'] = file_path
 
 		# merge nested
 		for index in nested:
-			result[name][projectDefaults[index][0]] = dict(projectDefaults[index][1].items() + result[name][projectDefaults[index][0]].items())
+			list1 = list(list(projectDefaults.items())[index][1].items())
+			list2 = list(result[name][list(projectDefaults.items())[index][0]].items())
+
+			result[name][list(projectDefaults.items())[index][0]] = dict(list1 + list2)
 		try:
 			if result[name]['debug_extras']['dump_config_load'] is True:
 				printMessage(result[name])
 		except KeyError:
 			pass
 
+		# add passwords
+		if file_path in passwords and name in passwords[file_path] and passwords[file_path][name] is not None:
+			result[name]['password'] = passwords[file_path][name]
+
 		result[name] = updateConfig(result[name])
 
 		verification_result = verifyConfig(result[name])
 
 		if verification_result is not True:
-			printMessage("Invalid configuration loaded: <" + unicode(verification_result) + ">", status=True)
+			printMessage("Invalid configuration loaded: <" + str(verification_result) + ">", status=True)
 
 	# merge with generics
-	final = dict(coreConfig + {"connections": result}.items())
+	final = dict(list(coreConfig.items()) + list({"connections": result}.items()))
 
 	# replace global config by
 
@@ -619,7 +781,7 @@ def makeConnection(config, hash=None, handleExceptions=True):
 		# 1. initialize
 		try:
 			connection = CreateConnection(config, name)
-		except Exception, e:
+		except Exception as e:
 			if handleExceptions is False:
 				raise
 
@@ -631,7 +793,7 @@ def makeConnection(config, hash=None, handleExceptions=True):
 		# 2. connect
 		try:
 			connection.connect()
-		except Exception, e:
+		except Exception as e:
 			if handleExceptions is False:
 				raise
 
@@ -641,13 +803,13 @@ def makeConnection(config, hash=None, handleExceptions=True):
 
 			return []
 
-		printMessage("Connected to: " + properties['host'] + ":" + unicode(properties['port']) + " (timeout: " + unicode(properties['timeout']) + ") (key: " + unicode(hash) + ")", name)
+		printMessage("Connected to: " + properties['host'] + ":" + str(properties['port']) + " (timeout: " + str(properties['timeout']) + ") (key: " + str(hash) + ")", name)
 
 		# 3. authenticate
 		try:
 			if connection.authenticate():
 				printMessage("Authentication processed", name)
-		except Exception, e:
+		except Exception as e:
 			if handleExceptions is False:
 				raise
 
@@ -657,15 +819,18 @@ def makeConnection(config, hash=None, handleExceptions=True):
 			return []
 
 		# 4. login
-		if properties['username'] is not None:
+		if properties['username'] is not None and properties['password'] is not None:
 			try:
 				connection.login()
-			except Exception, e:
-				if handleExceptions is False:
-					raise
-
+			except Exception as e:
 				printMessage("Login failed [Exception: " + stringifyException(e) + "]", name, status=True)
 				handleException(e)
+
+				if properties['file_path'] in passwords and name in passwords[properties['file_path']]:
+					passwords[properties['file_path']][name] = None
+
+				if handleExceptions is False:
+					raise
 
 				return []
 
@@ -680,7 +845,7 @@ def makeConnection(config, hash=None, handleExceptions=True):
 		# 5. set initial directory, set name, store connection
 		try:
 			connection.cwd(properties['path'])
-		except Exception, e:
+		except Exception as e:
 			if handleExceptions is False:
 				raise
 
@@ -772,7 +937,7 @@ def getConnection(hash, config, shared=True):
 # @global connections
 def closeConnection(hash):
 	if isString(hash) is False:
-		printMessage("Error closing connection: connection hash must be a string, " + unicode(type(hash)) + " given")
+		printMessage("Error closing connection: connection hash must be a string, " + str(type(hash)) + " given")
 		return
 
 	if hash not in connections:
@@ -786,7 +951,7 @@ def closeConnection(hash):
 		if len(connections[hash]) == 0:
 			connections.pop(hash)
 
-	except Exception, e:
+	except Exception as e:
 		printMessage("Error when closing connection (key: " + hash + ") [Exception: " + stringifyException(e) + "]")
 		handleException(e)
 
@@ -816,7 +981,7 @@ def getProgressMessage(stored, progress, action, basename = None):
 		for i in range(int(percent), 20):
 			base += "--"
 
-		base += " " + unicode(progress.current) + "/" + unicode(progress.getTotal()) + "] "
+		base += " " + str(progress.current) + "/" + str(progress.getTotal()) + "] "
 
 	base += action
 
@@ -870,12 +1035,12 @@ class SyncCommand(SyncObject):
 		self.config_file_path = config_file_path
 
 		if isString(config_file_path) is False:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": invalid config_file_path given (type: " + unicode(type(config_file_path)) + ")")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": invalid config_file_path given (type: " + str(type(config_file_path)) + ")")
 			self.close()
 			return
 
 		if os.path.exists(config_file_path) is False:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": config_file_path: No such file")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": config_file_path: No such file")
 			self.close()
 			return
 
@@ -903,7 +1068,7 @@ class SyncCommand(SyncObject):
 	def _localizePath(self, config, remote_path):
 		path = remote_path
 		if path.find(config['path']) == 0:
-			path = os.path.abspath(os.path.join(os.path.dirname(self.config_file_path), remote_path[len(config['path']):]))
+			path = os.path.realpath(os.path.join(os.path.dirname(self.config_file_path), remote_path[len(config['path']):]))
 
 		return path
 
@@ -954,6 +1119,9 @@ class SyncCommandTransfer(SyncCommand):
 
 		self.progress = progress
 
+		if sys.version[0] == '3' and type(file_path) is bytes:
+			file_path = file_path.decode('utf-8')
+
 		# global ignore
 		if disregardIgnore is False and ignore is not None and re_ignore.search(file_path) is not None:
 			printMessage("file globally ignored: {" + os.path.basename(file_path) + "}", onlyVerbose=True)
@@ -1003,7 +1171,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 		SyncCommandTransfer.__init__(self, file_path, config_file_path, progress, onSave, disregardIgnore, whitelistConnections, forcedSave)
 
 		if os.path.exists(file_path) is False:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": file_path: No such file")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": file_path: No such file")
 			self.close()
 			return
 
@@ -1034,17 +1202,17 @@ class SyncCommandUpload(SyncCommandTransfer):
 
 			if type(watch) is list and len(watch) > 0 and properties['upload_delay'] > 0:
 				for folder, filepattern in watch:
-					self.afterwatch[event][name] = dict(self.afterwatch[event][name].items() + gatherMetafiles(filepattern, os.path.join(root, folder)).items())
+					self.afterwatch[event][name].update(gatherMetafiles(filepattern, os.path.join(root, folder)).items())
 
 
 	def execute(self):
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			self.close()
 			return
 
 		if len(self.config['connections']) == 0:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": zero connections apply")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": zero connections apply")
 			self.close()
 			return
 
@@ -1061,8 +1229,8 @@ class SyncCommandUpload(SyncCommandTransfer):
 
 					if self.config['connections'][name]['debug_extras']['after_save_watch']:
 						printMessage("<debug> dumping pre-scan")
-						print self.afterwatch['before']
-			except Exception, e:
+						print (self.afterwatch['before'])
+			except Exception as e:
 				printMessage("watching failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", "", False, True)
 
 		usingConnections.append(self.config_hash)
@@ -1102,15 +1270,18 @@ class SyncCommandUpload(SyncCommandTransfer):
 							self.scanWatched('after', name, self.config['connections'][name])
 							if self.config['connections'][name]['debug_extras']['after_save_watch']:
 								printMessage("<debug> dumping post-scan")
-								print self.afterwatch['before']
+								print (self.afterwatch['before'])
 							changed = getChangedFiles(self.afterwatch['before'][name], self.afterwatch['after'][name])
 							if self.config['connections'][name]['debug_extras']['after_save_watch']:
 								printMessage("<debug> dumping changed files")
-								print "COUNT: " + str(len(changed))
+								print ("COUNT: " + str(len(changed)))
 								for change in changed:
-									print "Path: " + change.getPath() + " | Name: " + change.getName()
+									print ("Path: " + change.getPath() + " | Name: " + change.getName())
 
 							for change in changed:
+								if change.isSameFilepath(self.file_path):
+									continue
+
 								change = change.getPath()
 								command = SyncCommandUpload(change, getConfigFile(change), None, False, True, [name])
 
@@ -1126,7 +1297,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 						# no need to handle progress, delay action only happens with single uploads
 						self.triggerFinish(self.file_path)
 
-					except Exception, e:
+					except Exception as e:
 						printMessage("upload failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 						handleException(e)
 
@@ -1136,7 +1307,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 				# delayed
 				if self.onSave is True and self.config['connections'][name]['upload_delay'] > 0:
 					self.delayed = True
-					printMessage("delaying upload of " + self.basename + " by " + unicode(self.config['connections'][name]['upload_delay']) + " seconds", name, onlyVerbose=True)
+					printMessage("delaying upload of " + self.basename + " by " + str(self.config['connections'][name]['upload_delay']) + " seconds", name, onlyVerbose=True)
 					sublime.set_timeout(action, self.config['connections'][name]['upload_delay'] * 1000)
 				else:
 					action()
@@ -1148,7 +1319,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 				printMessage("Connection has been terminated, please retry your action", name, False, True)
 				self._closeConnection()
 
-			except Exception, e:
+			except Exception as e:
 				printMessage("upload failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 				handleException(e)
 
@@ -1172,7 +1343,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 				systemNotify(notify)
 
 	def __del__(self):
-		if self.delayed is False:
+		if hasattr(self, 'delayed') and self.delayed is False:
 			SyncCommand.__del__(self)
 		else:
 			self.closed = True
@@ -1208,12 +1379,12 @@ class SyncCommandDownload(SyncCommandTransfer):
 		self.forced = True
 
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			self.close()
 			return
 
 		if len(self.config['connections']) == 0:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": zero connections apply")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": zero connections apply")
 			self.close()
 			return
 
@@ -1279,7 +1450,7 @@ class SyncCommandDownload(SyncCommandTransfer):
 				printMessage("Connection has been terminated, please retry your action", name, False, True)
 				self._closeConnection()
 
-			except Exception, e:
+			except Exception as e:
 				printMessage("download of {" + self.basename + "} failed [Exception: " + stringifyException(e) + "]", name, False, True)
 				handleException(e)
 
@@ -1324,12 +1495,12 @@ class SyncCommandRename(SyncCommand):
 
 	def __init__(self, file_path, config_file_path, new_name):
 		if os.path.exists(file_path) is False:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": file_path: No such file")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": file_path: No such file")
 			self.close()
 			return
 
 		if isString(new_name) is False:
-			printMessage("Cancelling SyncCommandRename: invalid new_name given (type: " + unicode(type(new_name)) + ")")
+			printMessage("Cancelling SyncCommandRename: invalid new_name given (type: " + str(type(new_name)) + ")")
 			self.close()
 			return
 
@@ -1344,12 +1515,12 @@ class SyncCommandRename(SyncCommand):
 
 	def execute(self):
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			self.close()
 			return
 
 		if len(self.config['connections']) == 0:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": zero connections apply")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": zero connections apply")
 			self.close()
 			return
 
@@ -1383,14 +1554,14 @@ class SyncCommandRename(SyncCommand):
 				except IndexError:
 					continue
 
-				except TargetAlreadyExists, e:
+				except TargetAlreadyExists as e:
 					printMessage(stringifyException(e))
 
 				except EOFError:
 					printMessage("Connection has been terminated, please retry your action", name, False, True)
 					self._closeConnection()
 
-				except Exception, e:
+				except Exception as e:
 					if str(e).find("No such file or directory"):
 						printMessage("remote file not found", name, False, True)
 						renamed.append(name)
@@ -1425,6 +1596,8 @@ class SyncCommandRename(SyncCommand):
 
 			cancel = []
 			cancel.append("Cancel renaming")
+			for remote in exists:
+				cancel.append("")
 
 			sublime.set_timeout(lambda: sublime.active_window().show_quick_panel([ overwrite, cancel ], sync), 1)
 
@@ -1434,7 +1607,7 @@ class SyncCommandDelete(SyncCommandTransfer):
 
 	def __init__(self, file_path, config_file_path, progress=None, onSave=False, disregardIgnore=False, whitelistConnections=[]):
 		if os.path.exists(file_path) is False:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": file_path: No such file")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": file_path: No such file")
 			self.close()
 			return
 
@@ -1445,11 +1618,11 @@ class SyncCommandDelete(SyncCommandTransfer):
 			self.progress.progress()
 
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			return
 
 		if len(self.config['connections']) == 0:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": zero connections apply")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": zero connections apply")
 			return
 
 		self._createConnection()
@@ -1477,7 +1650,7 @@ class SyncCommandDelete(SyncCommandTransfer):
 					deleted.append(name)
 					printMessage("no remote version of {" + self.basename + "} found", name)
 
-				except Exception, e:
+				except Exception as e:
 					printMessage("delete failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 					handleException(e)
 
@@ -1493,7 +1666,7 @@ class SyncCommandDelete(SyncCommandTransfer):
 				printMessage("Connection has been terminated, please retry your action", name, False, True)
 				self._closeConnection()
 
-			except Exception, e:
+			except Exception as e:
 				if str(e).find("No such file or directory"):
 					printMessage("remote file not found", name, False, True)
 					deleted.append(name)
@@ -1517,11 +1690,11 @@ class SyncCommandGetMetadata(SyncCommand):
 
 	def execute(self):
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			return
 
 		if len(self.config['connections']) == 0:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": zero connections apply")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": zero connections apply")
 			return
 
 		self._createConnection()
@@ -1552,7 +1725,7 @@ class SyncCommandGetMetadata(SyncCommand):
 				printMessage("Connection has been terminated, please retry your action", name, False, True)
 				self._closeConnection()
 
-			except Exception, e:
+			except Exception as e:
 				printMessage("getting metadata failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 				handleException(e)
 
@@ -1560,7 +1733,7 @@ class SyncCommandGetMetadata(SyncCommand):
 
 
 def performRemoteCheck(file_path, window, forced = False):
-	if type(file_path) is not str and type(file_path) is not unicode:
+	if isString(file_path) is False:
 		return
 
 	if window is None:
@@ -1580,13 +1753,13 @@ def performRemoteCheck(file_path, window, forced = False):
 	except FileNotFoundException:
 		printMessage("Remote file not found", status=True)
 		return
-	except Exception, e:
+	except Exception as e:
 		printMessage("Error when getting metadata: " + stringifyException(e))
 		handleException(e)
 		metadata = []
 
 	if type(metadata) is not list:
-		return printMessage("Invalid metadata response, expected list, got " + unicode(type(metadata)))
+		return printMessage("Invalid metadata response, expected list, got " + str(type(metadata)))
 
 	if len(metadata) == 0:
 		return printMessage("No version of {" + basename + "} found on any server", status=True)
@@ -1623,10 +1796,10 @@ def performRemoteCheck(file_path, window, forced = False):
 				if isDebug:
 					i = 0
 					for entry in every:
-						printMessage("Listing connection " + unicode(i) + ": " + unicode(entry['connection']))
+						printMessage("Listing connection " + str(i) + ": " + str(entry['connection']))
 						i += 1
 
-					printMessage("Index selected: " + unicode(index - 1))
+					printMessage("Index selected: " + str(index - 1))
 
 				return RemoteSyncDownCall(file_path, getConfigFile(file_path), True, whitelistConnections=[every[index - 1]['connection']]).start()
 
@@ -1634,8 +1807,7 @@ def performRemoteCheck(file_path, window, forced = False):
 		allItems = []
 		items = []
 		items.append("Keep current " + os.path.basename(file_path))
-		items.append("Path: " + getRootPath(file_path))
-		items.append("Size: " + unicode(round(float(os.path.getsize(file_path)) / 1024, 3)) + " kB")
+		items.append("Size: " + str(round(float(os.path.getsize(file_path)) / 1024, 3)) + " kB")
 		items.append("Last modified: " + formatTimestamp(os.path.getmtime(file_path)))
 		allItems.append(items)
 		index = 1
@@ -1647,11 +1819,11 @@ def performRemoteCheck(file_path, window, forced = False):
 				item_filesize = "same size"
 			else:
 				if item_filesize > filesize:
-					item_filesize = unicode(round(item_filesize / 1024, 3)) + " kB ~ larger"
+					item_filesize = str(round(item_filesize / 1024, 3)) + " kB ~ larger"
 				else:
-					item_filesize = unicode(round(item_filesize / 1024, 3)) + " kB ~ smaller"
+					item_filesize = str(round(item_filesize / 1024, 3)) + " kB ~ smaller"
 
-			time = unicode(item['metadata'].getLastModifiedFormatted(time_format))
+			time = str(item['metadata'].getLastModifiedFormatted(time_format))
 
 			if item in newest:
 				time += " ~ newer"
@@ -1668,8 +1840,7 @@ def performRemoteCheck(file_path, window, forced = False):
 
 		upload = []
 		upload.append("Upload file " + os.path.basename(file_path))
-		upload.append("Path: " + getRootPath(file_path))
-		upload.append("Size: " + unicode(round(float(os.path.getsize(file_path)) / 1024, 3)) + " kB")
+		upload.append("Size: " + str(round(float(os.path.getsize(file_path)) / 1024, 3)) + " kB")
 		upload.append("Last modified: " + formatTimestamp(os.path.getmtime(file_path)))
 		allItems.append(upload)
 
@@ -1694,11 +1865,11 @@ class SyncNavigator(SyncCommand):
 
 	def execute(self):
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			return
 
 		if len(self.config['connections']) == 0:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": zero connections apply")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": zero connections apply")
 			return
 
 		usingConnections.append(self.config_hash)
@@ -1748,14 +1919,14 @@ class SyncNavigator(SyncCommand):
 
 	def listFiles(self,path=None):
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			return
 
 		self._createConnection()
 		connection = self.connections[0]
 
 		remote = True
-		if path is None or path == self.defaultPath:
+		if path is None or path == self.defaultPath or self.defaultPath is None:
 			remote = False
 		if path is None:
 			path = os.path.dirname(self.config_file_path)
@@ -1774,10 +1945,10 @@ class SyncNavigator(SyncCommand):
 				if meta.getName() == '..' and connection.getNormpath(path) == '/':
 					continue
 
-				entry.append("[ " + meta.getName().decode('utf-8') + " ]")
+				entry.append("[ " + decode(meta.getName()) + " ]")
 				entry.append("Directory")
 			else:
-				entry.append(meta.getName().decode('utf-8'))
+				entry.append(decode(meta.getName()))
 				entry.append("Size: " + str(meta.getFilesize()) + " kB")
 
 			entry.append("Last modified: " + meta.getLastModifiedFormatted(displayTimestampFormat))
@@ -1807,7 +1978,7 @@ class SyncNavigator(SyncCommand):
 
 	def listFolderActions(self, meta, action = None):
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			return
 
 		self._createConnection()
@@ -1829,7 +2000,7 @@ class SyncNavigator(SyncCommand):
 				name = '/'
 
 		actions = []
-		actions.append("Open " + name.decode('utf-8'))
+		actions.append("Open " + decode(name))
 		actions.append("Back")
 		actions.append("Download folder")
 
@@ -1871,7 +2042,7 @@ class SyncNavigator(SyncCommand):
 			if index == 4 + exists:
 				try:
 					sublime.active_window().run_command("ftp_sync_rename", { "paths": [ localFile ] })
-				except Exception, e:
+				except Exception as e:
 					handleException(e)
 				return
 
@@ -1890,7 +2061,7 @@ class SyncNavigator(SyncCommand):
 				info = []
 				info.append(meta.getName())
 				info.append("[Directory]")
-				info.append("Path: " + unicode(meta.getPath())[len(self.configConnection['path']):] + '/' + meta.getName().replace('/./', '/'))
+				info.append("Path: " + str(meta.getPath())[len(self.configConnection['path']):] + '/' + meta.getName().replace('/./', '/'))
 				info.append("Permissions: " + meta.getPermissions() + " (" + meta.getPermissionsNumeric() + ")")
 				if connection.hasTrueLastModified():
 					info.append("Last Modified: " + meta.getLastModifiedFormatted())
@@ -1917,7 +2088,7 @@ class SyncNavigator(SyncCommand):
 
 	def listFileActions(self, meta, action = None):
 		if self.closed is True:
-			printMessage("Cancelling " + unicode(self.__class__.__name__) + ": command is closed")
+			printMessage("Cancelling " + str(self.__class__.__name__) + ": command is closed")
 			return
 
 		path = meta.getPath() + '/' + meta.getName()
@@ -1945,8 +2116,6 @@ class SyncNavigator(SyncCommand):
 		actions.append("Change permissions")
 		actions.append("Show details")
 
-		print exists, hasSidebar
-
 		def handleAction(index):
 			if index == -1:
 				return
@@ -1959,7 +2128,7 @@ class SyncNavigator(SyncCommand):
 				def dopen(args):
 					try:
 						sublime.set_timeout(lambda: sublime.active_window().open_file(args), 1)
-					except Exception, e:
+					except Exception as e:
 						handleException(e)
 
 				call = RemoteSyncDownCall(localFile, getConfigFile(self.config_file_path), False, True)
@@ -1969,7 +2138,7 @@ class SyncNavigator(SyncCommand):
 				return
 
 			if exists and index == 2:
-				RemoteSyncCall(gatherFiles([localFile]), None, False, True).start()
+				RemoteSyncCall(gatherFiles([localFile]), None, True, True).start()
 				return
 
 			if index == 2 + exists:
@@ -1979,7 +2148,7 @@ class SyncNavigator(SyncCommand):
 			if index == 3 + exists:
 				try:
 					sublime.active_window().run_command("ftp_sync_rename", { "paths": [ localFile ] })
-				except Exception, e:
+				except Exception as e:
 					handleException(e)
 				return
 
@@ -2009,8 +2178,8 @@ class SyncNavigator(SyncCommand):
 				info = []
 				info.append(meta.getName())
 				info.append("[File]")
-				info.append("Path: " + unicode(meta.getPath())[len(self.configConnection['path']):] + '/' + meta.getName().replace('/./', '/'))
-				info.append("Size: " + unicode(round(meta.getFilesize()/1024,3)) + " kB")
+				info.append("Path: " + str(meta.getPath())[len(self.configConnection['path']):] + '/' + meta.getName().replace('/./', '/'))
+				info.append("Size: " + str(round(meta.getFilesize()/1024,3)) + " kB")
 				info.append("Permissions: " + meta.getPermissions() + " (" + meta.getPermissionsNumeric() + ")")
 				if connection.hasTrueLastModified():
 					info.append("Last Modified: " + meta.getLastModifiedFormatted())
@@ -2020,7 +2189,7 @@ class SyncNavigator(SyncCommand):
 				info.append("")
 				if os.path.exists(localFile):
 					info.append("[Has local version]")
-					info.append("Local size: " + unicode(round(float(os.path.getsize(localFile)) / 1024, 3)) + " kB")
+					info.append("Local size: " + str(round(float(os.path.getsize(localFile)) / 1024, 3)) + " kB")
 					info.append("Local last modified: " + formatTimestamp(os.path.getmtime(localFile), displayTimestampFormat))
 					if sublime.platform() == 'windows':
 						info.append("Local created: " + formatTimestamp(os.path.getctime(localFile), displayTimestampFormat))
@@ -2076,9 +2245,9 @@ class RemoteSync(sublime_plugin.EventListener):
 
 				if properties['debug_extras']['after_save_watch']:
 					printMessage("<debug> dumping pre-scan")
-					print "COUNT: " + str(len(preScan[config_file_path][connection]))
+					print ("COUNT: " + str(len(preScan[config_file_path][connection])))
 					for change in preScan[config_file_path][connection]:
-						print "Path: " + preScan[config_file_path][connection][change].getPath() + " | Name: " + preScan[config_file_path][connection][change].getName()
+						print ("Path: " + preScan[config_file_path][connection][change].getPath() + " | Name: " + preScan[config_file_path][connection][change].getName())
 
 		if len(blacklistConnections) == len(config['connections']):
 			return
@@ -2087,7 +2256,7 @@ class RemoteSync(sublime_plugin.EventListener):
 			metadata = SyncCommandGetMetadata(file_path, config_file_path).execute()
 		except FileNotFoundException:
 			return
-		except Exception, e:
+		except Exception as e:
 			if str(e).find('No such file'):
 				printMessage("No version of {" + os.path.basename(file_path) + "} found on any server", status=True)
 			else:
@@ -2174,7 +2343,7 @@ class RemoteSync(sublime_plugin.EventListener):
 	def on_load(self, view):
 		file_path = getFileName(view)
 
-		if ignore is not None and re_ignore.search(file_path) is not None:
+		if ignore is not None and re_ignore is not None and re_ignore.search(file_path) is not None:
 			return
 
 		if view not in checksScheduled:
@@ -2193,7 +2362,7 @@ def fillProgress(progress, entry):
 	if len(entry) == 0:
 		return
 
-	if type(entry[0]) is str or type(entry[0]) is unicode:
+	if isString(entry[0]):
 		entry = entry[0]
 
 	if type(entry) is list:
@@ -2251,10 +2420,10 @@ class RemoteSyncCall(RemoteThread):
 	def run(self):
 		target = self.file_path
 
-		if (type(target) is str or type(target) is unicode) and self.config is None:
+		if isString(target) and self.config is None:
 			return False
 
-		elif type(target) is str or type(target) is unicode:
+		elif isString(target):
 			command = SyncCommandUpload(target, self.config, onSave=self.onSave, disregardIgnore=self.disregardIgnore, whitelistConnections=self.whitelistConnections, forcedSave=self.forcedSave)
 			command.addOnFinish(self.getOnFinish())
 			self.addWhitelistConnections(command)
@@ -2295,10 +2464,10 @@ class RemoteSyncDownCall(RemoteThread):
 	def run(self):
 		target = self.file_path
 
-		if (type(target) is str or type(target) is unicode) and self.config is None:
+		if isString(target) and self.config is None:
 			return False
 
-		elif type(target) is str or type(target) is unicode:
+		elif isString(target):
 			queue = createWorker()
 
 			command = SyncCommandDownload(target, self.config, disregardIgnore=self.disregardIgnore, whitelistConnections=self.whitelistConnections)
@@ -2371,7 +2540,7 @@ class RemoteSyncDelete(RemoteThread):
 	def run(self):
 		target = self.file_path
 
-		if type(target) is str or type(target) is unicode:
+		if isString(target):
 			self.file_path = [ target ]
 
 		def sync(index):
@@ -2388,6 +2557,12 @@ class RemoteSyncDelete(RemoteThread):
 		no = []
 		no.append("No")
 		no.append("Cancel deletion")
+
+		for entry in self.file_path:
+			if entry == self.file_path[0]:
+				continue
+
+			no.append("")
 
 		sublime.set_timeout(lambda: sublime.active_window().show_quick_panel([yes, no], sync), 1)
 
@@ -2435,6 +2610,11 @@ class FtpSyncNewSettings(sublime_plugin.TextCommand):
 			dirs = [os.path.dirname(self.view.file_name())]
 
 		default = os.path.join(sublime.packages_path(), 'FTPSync', connectionDefaultsFilename)
+		if os.path.exists(default) is False:
+			printMessage("Could not find default settings file in {" + default + "}")
+
+			default = os.path.join(__dir__, connectionDefaultsFilename)
+			printMessage("Trying filepath {" + default + "}")
 
 		for directory in dirs:
 			config = os.path.join(directory, configName)
@@ -2575,7 +2755,10 @@ class FtpSyncBrowse(sublime_plugin.TextCommand):
 	def run(self, edit):
 		file_path = sublime.active_window().active_view().file_name()
 
-		RemoteNavigator(getConfigFile(file_path)).start()
+		command = SyncNavigator(None, getConfigFile(file_path), None, file_path)
+		call = RemoteNavigator(getConfigFile(file_path))
+		call.setCommand(command)
+		call.start()
 
 # Remote ftp navigation
 class FtpSyncBrowsePlace(sublime_plugin.TextCommand):
@@ -2606,7 +2789,10 @@ class FtpSyncBrowseLast(sublime_plugin.TextCommand):
 		if navigateLast['config_file'] is None:
 			file_path = sublime.active_window().active_view().file_name()
 
-			RemoteNavigator(getConfigFile(file_path)).start()
+			command = SyncNavigator(None, getConfigFile(file_path), None, file_path)
+			call = RemoteNavigator(getConfigFile(file_path))
+			call.setCommand(command)
+			call.start()
 		else:
 			RemoteNavigator(None, True).start()
 

@@ -35,6 +35,7 @@ import datetime
 import fnmatch
 import re
 import tempfile
+import sys
 
 
 # ==== Initialization and optimization =====================================================
@@ -84,6 +85,15 @@ triples = {
 
 # ==== Content =============================================================================
 
+# Returns whether the variable is some form os string
+def isString(var):
+	var_type = type(var)
+
+	if sys.version[0] == '3':
+		return var_type is str or var_type is bytes
+	else:
+		return var_type is str or var_type is unicode
+
 # A file representation with helper methods
 class Metafile:
 
@@ -132,11 +142,14 @@ class Metafile:
 	def getFilesize(self):
 		return self.filesize
 
+	def isSameFilepath(self, filepath):
+		return os.path.realpath(self.getPath()) == os.path.realpath(filepath)
+
 	def isNewerThan(self, compared_file):
 		if self.lastModified is None:
 			return False
 
-		if type(compared_file) is str or type(compared_file) is unicode:
+		if isString(compared_file):
 			if os.path.exists(compared_file) is False:
 				return False
 
@@ -152,7 +165,7 @@ class Metafile:
 		if self.filesize is None:
 			return False
 
-		if type(compared_file) is str or type(compared_file) is unicode:
+		if isString(compared_file):
 			if os.path.exists(compared_file) is False:
 				return False
 
@@ -184,7 +197,8 @@ def to_unicode_or_bust(obj, encoding='utf-8'):
 #
 # @return Metafile
 def fileToMetafile(file_path):
-	file_path = file_path.encode('utf-8')
+	if type(file_path) is str:
+		file_path = file_path.encode('utf-8')
 	name = os.path.basename(file_path)
 	path = file_path
 	isDir = os.path.isdir(file_path)
@@ -258,6 +272,9 @@ def findFile(folders, file_name):
 		return None
 
 	for folder in folders:
+		if type(folder) is not str:
+			folder = folder.decode('utf-8')
+
 		if os.path.exists(os.path.join(folder, file_name)) is True:
 			return folder
 
@@ -311,7 +328,7 @@ def gatherMetafiles(pattern, root):
 				result[target] = fileToMetafile(target)
 
 		for folder in dirnames:
-			result = dict(result.items() + gatherMetafiles(pattern, os.path.join(root, folder)).items())
+			result.update(gatherMetafiles(pattern, os.path.join(root, folder)).items())
 
 	return result
 
@@ -326,7 +343,8 @@ def gatherMetafiles(pattern, root):
 def getChangedFiles(metafilesBefore, metafilesAfter):
 	changed = []
 	for file_path in metafilesAfter:
-		file_path = file_path.encode('utf-8')
+		if hasattr(file_path, 'encode'):
+			file_path = file_path.encode('utf-8')
 
 		if file_path in metafilesBefore and metafilesAfter[file_path].isNewerThan(metafilesBefore[file_path]):
 			changed.append(metafilesAfter[file_path])
@@ -351,7 +369,7 @@ def replace(source, destination):
 		try:
 			os.rename(source, destination)
 			os.unlink(destinationTemp)
-		except OSError, e:
+		except OSError as e:
 			os.rename(destinationTemp, destination)
 			raise
 
@@ -361,9 +379,15 @@ def replace(source, destination):
 #
 # @type source: callback(file)
 # @param source: operation performed on temporary file
-def viaTempfile(file_path, operation, permissions = 0755):
+def viaTempfile(file_path, operation, permissions):
+	if permissions is None:
+		permissions = '0755'
 	exceptionOccured = None
-	directory = os.path.dirname(file_path.encode('utf-8'))
+
+	if sys.version[0] == '3':
+		directory = os.path.dirname(file_path)
+	else:
+		directory = os.path.dirname(file_path.encode('utf-8'))
 
 	if os.path.exists(directory) is False:
 		os.makedirs(directory, int(permissions, 8))
@@ -372,7 +396,7 @@ def viaTempfile(file_path, operation, permissions = 0755):
 
 	try:
 		operation(temp)
-	except Exception, exp:
+	except Exception as exp:
 		exceptionOccured = exp
 	finally:
 		temp.flush()
@@ -466,13 +490,13 @@ def addLinks(contents):
 		else:
 			single = entry
 
+	if single is not None:
+		if hasSelf == False:
+			entrySelf = Metafile('.', True, None, None, single.getPath(), None)
+			contents.append(entrySelf)
 
-	if hasSelf == False:
-		entrySelf = Metafile('.', True, None, None, single.getPath(), None)
-		contents.append(entrySelf)
-
-	if hasUp == False:
-		entryUp = Metafile('..', True, None, None, single.getPath(), None)
-		contents.append(entryUp)
+		if hasUp == False:
+			entryUp = Metafile('..', True, None, None, single.getPath(), None)
+			contents.append(entryUp)
 
 	return contents

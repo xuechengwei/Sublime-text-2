@@ -2713,6 +2713,14 @@
 					}
 				},
 				{
+					"file": "/D/www/actPublish/js/script.js",
+					"settings":
+					{
+						"buffer_size": 1862,
+						"line_ending": "Unix"
+					}
+				},
+				{
 					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 					"settings":
 					{
@@ -2727,14 +2735,6 @@
 						"buffer_size": 18129,
 						"line_ending": "Unix"
 					}
-				},
-				{
-					"file": "/D/www/actPublish/js/script.js",
-					"settings":
-					{
-						"buffer_size": 1862,
-						"line_ending": "Unix"
-					}
 				}
 			],
 			"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
@@ -2744,15 +2744,23 @@
 				"selected_items":
 				[
 					[
+						"upgrade",
+						"Package Control: Upgrade Package"
+					],
+					[
 						"upgrad",
 						"Package Control: Upgrade Package"
 					],
 					[
-						"upga",
+						"upg",
 						"Package Control: Upgrade Package"
 					],
 					[
 						"upgra",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"upga",
 						"Package Control: Upgrade Package"
 					],
 					[
@@ -3112,10 +3120,6 @@
 						"FindKeyConflicts: All Key Maps"
 					],
 					[
-						"upgrade",
-						"Package Control: Upgrade Package"
-					],
-					[
 						"keyma",
 						"FindKeyConflicts: All Key Maps"
 					],
@@ -3250,10 +3254,6 @@
 					[
 						"filemove",
 						"File: Move"
-					],
-					[
-						"htmlp",
-						"HTMLPrettify: Prettify"
 					]
 				],
 				"width": 522.0
@@ -3727,7 +3727,7 @@
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -3747,6 +3747,50 @@
 								],
 								"settings":
 								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
 									"incomplete_sync": null,
 									"is_xml": false,
 									"syntax": "Packages/HTML/HTML.tmLanguage",
@@ -3760,6 +3804,82 @@
 						},
 						{
 							"buffer": 1,
+							"file": "/D/www/actPublish/js/script.js",
+							"settings":
+							{
+								"buffer_size": 1862,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										196,
+										196
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"buffer_scroll_name": "b141ee9a",
+									"incomplete_sync": null,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
 							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 							"settings":
 							{
@@ -3770,8 +3890,8 @@
 								"selection":
 								[
 									[
-										303,
-										303
+										302,
+										302
 									]
 								],
 								"settings":
@@ -3791,7 +3911,7 @@
 							"type": "text"
 						},
 						{
-							"buffer": 2,
+							"buffer": 3,
 							"file": "/D/www/actPublish/index.html",
 							"settings":
 							{
@@ -3802,8 +3922,8 @@
 								"selection":
 								[
 									[
-										846,
-										846
+										845,
+										845
 									]
 								],
 								"settings":
@@ -3820,50 +3940,6 @@
 								},
 								"translation.x": 0.0,
 								"translation.y": 627.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/D/www/actPublish/js/script.js",
-							"settings":
-							{
-								"buffer_size": 1862,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										301,
-										301
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close"
-									],
-									"buffer_scroll_name": "b141ee9a",
-									"incomplete_sync": null,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -3926,7 +4002,7 @@
 			{
 				"height": 0.0
 			},
-			"position": "0,0,1,-32000,-32000,-1,-1,1114,1930,89,3850",
+			"position": "0,0,1,-1,-1,-1,-1,1112,1765,87,3685",
 			"replace":
 			{
 				"height": 336.0
