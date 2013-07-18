@@ -1,5 +1,31 @@
 # DocBlockr Extended Changelog
 
+- **v2.11.3**, *18 June 2013*
+  - Adds support for Groovy (thanks to [Tiago Santos](https://github.com/tmcsantos))
+  - README has gifs. So many gifs.
+- **v2.11.2**, *12 June 2013*
+  - Compatibility fixes for ST3, thanks to Marc Neuhaus (@mneuhaus) and Daniel Julius Lasiman (@danieljl).
+- **v2.11.1**, *11 May 2013*
+  - No changes, just removes some debugging code that wasn't cleaned up in the last release (oops).
+- **v2.11.0**, *11 May 2013*
+  - It isn't broken in ST3 any more. (yay)
+  - New options:
+    - `jsdocs_simple_mode` for when you don't want dynamic templates
+    - `jsdocs_lower_case_primitives` for YUIDoc which requires lower case for primitive data types
+    - `jsdocs_extra_tags_go_after` to put custom text at the end of the docblock
+  - Better handling of IIFEs
+  - Hotkey for reparsing a block changed to <kbd>alt+shift+tab</kbd> to avoid OS-level conflicts
+  - Adding a new line at the start of the docblock is handled properly
+  - C/C++: arguments containing square brackets are handled properly
+- **v2.10.1**, *19 April 2013*
+  - Adds variable substitution in `jsdocs_extra_tags`
+  - Fixes indentation bug in `jsdocs_extra_tags`
+  - Fixes bug when adding a new line after a docblock which contains text afterwards
+  - Fixes link to Pledgie (thanks @Krinkle)
+- **v2.10.0**, *21 February 2013*
+  - Adds Sublime Text 3 support (thanks to @lxe and @rmarscher)
+  - YUI-style `@method` tags can be automatically added with the `jsdocs_autoadd_method_tag` setting (thanks to @maheshjag)
+  - Variables starting with `$` are not wiped out when reparsing a doc block (thanks @ryrun)
 - **v2.9.3**, *12 December 2012*
   - Fixed bug which stopped regular comments from closing automatically
 - **v2.9.2**, *11 December 2012*

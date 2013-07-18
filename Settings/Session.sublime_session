@@ -1,10 +1,10 @@
 {
 	"folder_history":
 	[
+		"/D/www/pay.lvye.cn",
 		"/C/Users/John the whisler/Desktop/act",
 		"/D/www/actPublish",
 		"/D/www/grasslands",
-		"/D/www/pay.lvye.cn",
 		"/D/www/structure",
 		"/D/www/actApply",
 		"/D/workspace/library",
@@ -2705,59 +2705,27 @@
 			"buffers":
 			[
 				{
-					"contents": "昨天:\n	1. 首页添加可点击背景图功能浏览器兼容测试及上线\n	2. EDM MSN邮箱测试,解决foxmail下显示不正常的问题\n\n今天:\n	1. 旧版discuz活动发布页面样式调整\n	2. 自由通样式修改\n	3. 活动开始日期和结束日期联动\n	4. yahoo邮箱过期通知邮件制作",
+					"contents": "昨天:\n	1. 自由通样式修改\n	2. 新版活动发布页面数据校验\n	3. yahoo邮箱JS验证\n	\n今天:\n	1. discuz发布页bug修复\n	2. 新版活动发布页上传照片裁剪",
 					"settings":
 					{
-						"buffer_size": 143,
+						"buffer_size": 91,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"contents": "function trim(){}\nundefined\ntrim('  s  ')\nundefined\n$\nfunction (a,c){return new m(a,c)}\n$.trim = function(){}\nfunction (){}\n$.trim('   s   ')\nundefined\nString.prototype.trim = function(){}\nfunction (){}\n'    s   '.trim()\nundefined\nString.prototype.trim = function(){console.log('done')}\nfunction (){console.log('done')}\n'    s   '.trim()\ndone\nundefined\nString.prototype.trim = function(){return 123}\nfunction (){return 123}\na = '    s   '.trim()\n123\na\n123\nUncaught Error: SyntaxError: DOM Exception 12 jq.mobi.js:1\n\n",
+					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 516,
+						"buffer_size": 731,
 						"line_ending": "Unix"
-					}
-				},
-				{
-					"contents": "var CookieUtil = {\n\n    get: function (name) {\n        var cookieName = encodeURIComponent(name) + \"=\",\n            cookieStart = document.cookie.indexOf(cookieName),\n            cookieValue = null;\n        if (cookieStart > -1) {\n            var cookieEnd = document.cookie.indexOf(\";\", cookieStart);\n            if (cookieEnd == -1) {\n                cookieEnd = document.cookie.length;\n            }\n            cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));\n        }\n        return cookieValue;\n    },\n\n    set: function (name, value, expires, path, domain, secure) {\n        var cookieText = encodeURIComponent(name) + \"=\" + encodeURIComponent(value);\n        if (expires instanceof Date) {\n            cookieText += \"; expires=\" + expires.toGMTString();\n        }\n        if (path) {\n            cookieText += \"; data-path=\" + path;\n        }\n        if (domain) {\n            cookieText += \"; domain=\" + domain;\n        }\n        if (secure) {\n            cookieText += \"; secure\";\n        }\n        document.cookie = cookieText;\n    },\n\n    unset: function (name, path, domain, secure) {\n        this.set(name, \"\", new Date(0), path, domain, secure);\n    }\n\n};",
-					"settings":
-					{
-						"buffer_size": 1227,
-						"line_ending": "Windows"
 					}
 				},
 				{
 					"file": "/D/www/actPublish/index.html",
 					"settings":
 					{
-						"buffer_size": 18075,
+						"buffer_size": 18129,
 						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/D/www/sixfoot/index.html",
-					"settings":
-					{
-						"buffer_size": 2913,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/D/www/sixfoot/activated.html",
-					"settings":
-					{
-						"buffer_size": 2504,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/D/www/sixfoot/index.min.html",
-					"settings":
-					{
-						"buffer_size": 2713,
-						"line_ending": "Windows"
 					}
 				},
 				{
@@ -2767,32 +2735,40 @@
 						"buffer_size": 1862,
 						"line_ending": "Unix"
 					}
-				},
-				{
-					"file": "/D/www/over/edm/4/index.html",
-					"settings":
-					{
-						"buffer_size": 17272,
-						"line_ending": "Windows"
-					}
 				}
 			],
 			"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
 			"command_palette":
 			{
-				"height": 147.0,
+				"height": 93.0,
 				"selected_items":
 				[
+					[
+						"upgrad",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"upga",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"upgra",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"ssjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"format",
+						"Format: Javascript"
+					],
 					[
 						"listpac",
 						"Package Control: List Packages"
 					],
 					[
 						"fomat",
-						"Format: Javascript"
-					],
-					[
-						"format",
 						"Format: Javascript"
 					],
 					[
@@ -2804,16 +2780,8 @@
 						"Set Syntax: HTML"
 					],
 					[
-						"ssjs",
-						"Set Syntax: JavaScript"
-					],
-					[
 						"listpa",
 						"Package Control: List Packages"
-					],
-					[
-						"upgrad",
-						"Package Control: Upgrade Package"
 					],
 					[
 						"csscomb",
@@ -3286,14 +3254,6 @@
 					[
 						"htmlp",
 						"HTMLPrettify: Prettify"
-					],
-					[
-						"upda",
-						"Package Control: Upgrade Package"
-					],
-					[
-						"forma",
-						"Format: Javascript"
 					]
 				],
 				"width": 522.0
@@ -3313,15 +3273,42 @@
 			},
 			"file_history":
 			[
+				"/D/www/actPublish/js/script.js",
+				"/D/www/actPublish/js/jquery.validationEngine.js",
+				"/C/Users/John the whisler/Desktop/act/pubevent.js",
+				"/C/Users/John the whisler/Desktop/act/eventpreview.htm",
+				"/C/Users/John the whisler/Desktop/act/activity.css",
+				"/C/Users/John the whisler/Desktop/act/eventhelp.class.php",
+				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
+				"/D/www/pay.lvye.cn/application/config/database.php",
+				"/D/www/pay.lvye.cn/css/layout.css",
+				"/D/www/pay.lvye.cn/application/controllers/trade.php",
+				"/D/www/pay.lvye.cn/application/views/trade_index.php",
+				"/D/www/pay.lvye.cn/application/models/trade_meta_model.php",
+				"/C/Users/John the whisler/Desktop/act/eventshow.htm",
 				"/C/Users/John the whisler/Desktop/act/pubevent.htm",
+				"/D/www/pay.lvye.cn/application/controllers/myaccount.php",
+				"/D/www/pay.lvye.cn/application/views/my_index.php",
+				"/D/www/pay.lvye.cn/js/scripts.js",
+				"/D/www/pay.lvye.cn/application/views/layout/layout_simple.php",
+				"/D/www/pay.lvye.cn/application/views/layout/layout.php",
+				"/D/www/pay.lvye.cn/application/index.html",
+				"/D/www/pay.lvye.cn/index.php",
+				"/D/www/sixfoot/index.html",
+				"/D/www/sixfoot/activated.html",
+				"/D/www/actPublish/js/html5.js",
+				"/D/www/actPublish/js/DD_belatedPNG_0.0.8a-min.js",
+				"/D/Program Files (x86)/Vim/_vimrc",
+				"/C/Users/John the whisler/Desktop/dotfiles-master/dotfiles-master/vim/vimrc",
+				"/D/www/sixfoot/index.min.html",
+				"/D/www/over/edm/4/index.html",
+				"/D/Program Files (x86)/Vim/_vimrc - 副本",
 				"/D/www/structure/index.html",
 				"/C/Users/John the whisler/Desktop/act/discuz_plugin_event.xml",
-				"/C/Users/John the whisler/Desktop/act/activity.css",
 				"/C/Users/John the whisler/Desktop/calendar.js",
 				"/C/Users/John the whisler/Desktop/index_20130101.css",
 				"/C/Users/John the whisler/Desktop/calendar.min.js",
 				"/D/www/over/edm/4/index.min.html",
-				"/D/www/over/edm/4/index.html",
 				"/D/www/grasslands/index.html",
 				"/C/Users/John the whisler/Desktop/edm_new/index.min.html",
 				"/C/Users/John the whisler/Desktop/edm_new/index1.html",
@@ -3355,7 +3342,6 @@
 				"/D/www/actPublish/css/jquery.Jcrop.min.css",
 				"/C/Users/John the whisler/Desktop/poshytip-1.2/poshytip-1.2/demo/demo.html",
 				"/D/workspace/lvyetopic/prairie2013/templates/prairie2013/event_list.html",
-				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
 				"/D/www/actApply/index.html",
 				"/D/www/actApply/js/script.js",
 				"/D/www/actApply/css/page.css",
@@ -3392,10 +3378,6 @@
 				"/D/www/actApply/js/jquery.validationEngine.js",
 				"/C/Users/John the whisler/Desktop/jQuery-Validation-Engine-master/jQuery-Validation-Engine-master/css/releasenotes.plugin.css",
 				"/C/Users/John the whisler/Desktop/jQuery-Validation-Engine-master/jQuery-Validation-Engine-master/css/customMessages.css",
-				"/D/www/pay.lvye.cn/application/controllers/trade.php",
-				"/D/www/pay.lvye.cn/js/scripts.js",
-				"/D/www/pay.lvye.cn/css/layout.css",
-				"/D/www/pay.lvye.cn/application/views/trade_index.php",
 				"/D/www/pay.lvye.cn/css/ie.css",
 				"/C/Users/John the whisler/Desktop/index.html",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
@@ -3414,37 +3396,15 @@
 				"/D/www/pay.lvye.cn/application/.htaccess",
 				"/D/www/pay.lvye.cn/.htaccess",
 				"/D/www/pay.lvye.cn/application/core/MY_Controller.php",
-				"/D/www/pay.lvye.cn/application/controllers/myaccount.php",
 				"/D/www/pay.lvye.cn/application/config/config.php",
 				"/D/www/pay.lvye.cn/application/config/uc.php",
 				"/D/www/pay.lvye.cn/application/controllers/user.php",
-				"/D/www/pay.lvye.cn/application/config/database.php",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime text 2/Packages/User/htmldoc",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/htmldoc.sublime-snippet",
-				"/C/Users/John the whisler/Desktop/act/pubevent.js",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime text 2/Packages/User/startc.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/csscomment.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/cssbegin.sublime-snippet",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/consolelog.sublime-snippet",
-				"/C/Users/John the whisler/Desktop/colorbox-master/jquery.colorbox.js",
-				"/C/Users/John the whisler/Desktop/act/feeoperate.bak.js",
-				"/D/workspace/lvyetopic/lvyetopic/settings.py",
-				"/C/Users/John the whisler/Desktop/act/feeoperate1.js",
-				"/C/Users/John the whisler/Desktop/act/feeoperate.js",
-				"/C/Users/John the whisler/Desktop/act/index.htm",
-				"/C/Users/John the whisler/Desktop/act/eventpostvalidate.js",
-				"/C/Users/John the whisler/Desktop/activity.css",
-				"/C/Users/John the whisler/Desktop/pubevent.htm",
-				"/C/Users/John the whisler/Desktop/thickbox.css",
-				"/C/Users/John the whisler/Desktop/demo.htm",
-				"/D/www/actApply/js/My97DatePicker/WdatePicker.js",
-				"/D/www/actApply/js/My97DatePicker/skin/blueFresh/datepicker.css",
-				"/D/www/actApply/js/My97DatePicker/skin/WdatePicker.css",
-				"/C/Users/Public/Desktop/Google Chrome.lnk"
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/htmldoc.sublime-snippet"
 			],
 			"find":
 			{
-				"height": 80.0
+				"height": 40.0
 			},
 			"find_in_files":
 			{
@@ -3482,6 +3442,16 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"报名截止时间",
+					"截止时间",
+					"$(this)",
+					"require",
+					"header",
+					"删除",
+					"tradeobjdiv",
+					"index",
+					"#subject",
+					"encoding",
 					"#5A742D",
 					"padding-bottom:10px;",
 					"text-align:left;border-bottom:1px solid #eee;width:700px;/* margin-bottom:10px; */padding-bottom:10px;",
@@ -3599,17 +3569,7 @@
 					"<td>{lang event:pub_gatherplace}<span class=\"requireele\">*</span集合地点></td><td><input class=\"px\" type=\"text\" name=\"pub_gatherplace\" id=\"pub_gatherplace\" value=\"$activity[gatherplace]\" />\n<td>{lang event:pub_gatherplace}<span class=\"requireele\">*</span集合地点></td><td><input class=\"px\" type=\"text\" name=\"pub_gatherplace\" id=\"pub_gatherplace\" value=\"$activity[gatherplace]\" />\n<td>{lang event:pub_gatherplace}<span class=\"requireele\">*</span集合地点></td><td><input class=\"px\" type=\"text\" name=\"pub_gatherplace\" id=\"pub_gatherplace\" value=\"$activity[gatherplace]\" />\n集合地点",
 					"activity_gatherplace",
 					"nominal",
-					"nominal\\",
-					"nominal",
-					"活动全程",
-					"目的地",
-					"pub_destination",
-					"目的地",
-					"出 发 地",
-					"pub_eventnature",
-					"报名范围",
-					"nature",
-					"活动性质"
+					"nominal\\"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -3759,27 +3719,30 @@
 				},
 				{
 					"path": "/C/Users/John the whisler/Desktop/act"
+				},
+				{
+					"path": "/D/www/pay.lvye.cn"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 8,
+					"selected": 3,
 					"sheets":
 					[
 						{
 							"buffer": 0,
 							"settings":
 							{
-								"buffer_size": 143,
+								"buffer_size": 91,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										143,
-										143
+										91,
+										91
 									]
 								],
 								"settings":
@@ -3797,24 +3760,29 @@
 						},
 						{
 							"buffer": 1,
+							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 							"settings":
 							{
-								"buffer_size": 516,
+								"buffer_size": 731,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										286,
-										286
+										303,
+										303
 									]
 								],
 								"settings":
 								{
+									"buffer_scroll_name": "416be6f9",
 									"incomplete_sync": null,
-									"is_xml": false,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+									"origin_encoding": "ASCII",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -3824,51 +3792,23 @@
 						},
 						{
 							"buffer": 2,
-							"settings":
-							{
-								"buffer_size": 1227,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										565,
-										565
-									]
-								],
-								"settings":
-								{
-									"incomplete_sync": null,
-									"is_xml": false,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 3,
 							"file": "/D/www/actPublish/index.html",
 							"settings":
 							{
-								"buffer_size": 18075,
+								"buffer_size": 18129,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										698,
-										698
+										846,
+										846
 									]
 								],
 								"settings":
 								{
+									"BracketHighlighterBusy": false,
 									"buffer_scroll_name": "5d070c50",
 									"incomplete_sync": null,
 									"is_xml": false,
@@ -3879,111 +3819,13 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 198.0,
+								"translation.y": 627.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
-							"buffer": 4,
-							"file": "/D/www/sixfoot/index.html",
-							"settings":
-							{
-								"buffer_size": 2913,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										723,
-										723
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "0e7722b7",
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "ASCII",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/D/www/sixfoot/activated.html",
-							"settings":
-							{
-								"buffer_size": 2504,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										570,
-										570
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "3ffcdd80",
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/D/www/sixfoot/index.min.html",
-							"settings":
-							{
-								"buffer_size": 2713,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										2713
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "432eb4e3",
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
+							"buffer": 3,
 							"file": "/D/www/actPublish/js/script.js",
 							"settings":
 							{
@@ -3994,12 +3836,24 @@
 								"selection":
 								[
 									[
-										785,
-										785
+										301,
+										301
 									]
 								],
 								"settings":
 								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
 									"buffer_scroll_name": "b141ee9a",
 									"incomplete_sync": null,
 									"origin_encoding": "UTF-8",
@@ -4013,40 +3867,12 @@
 								"zoom_level": 1.0
 							},
 							"type": "text"
-						},
-						{
-							"buffer": 8,
-							"file": "/D/www/over/edm/4/index.html",
-							"settings":
-							{
-								"buffer_size": 17272,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										831,
-										831
-									]
-								],
-								"settings":
-								{
-									"buffer_scroll_name": "8b73186d",
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 264.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
 						}
+					]
+				},
+				{
+					"sheets":
+					[
 					]
 				}
 			],
@@ -4067,11 +3893,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.8552708212,
 					1.0
 				],
 				"rows":
@@ -4093,7 +3926,7 @@
 			{
 				"height": 0.0
 			},
-			"position": "0,0,1,-32000,-32000,-1,-1,1136,1909,111,3829",
+			"position": "0,0,1,-32000,-32000,-1,-1,1114,1930,89,3850",
 			"replace":
 			{
 				"height": 336.0
@@ -4104,6 +3937,18 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"mya",
+						"pay.lvye.cn/application/controllers/myaccount.php"
+					],
+					[
+						"script",
+						"pay.lvye.cn/js/scripts.js"
+					],
+					[
+						"my_index",
+						"pay.lvye.cn/application/views/my_index.php"
+					],
 					[
 						"ckedi",
 						"actPublish/js/ckeditor/ckeditor.js"
@@ -4299,10 +4144,6 @@
 					[
 						"style",
 						"act/css/styles.css"
-					],
-					[
-						"script",
-						"js/scripts.js"
 					],
 					[
 						"css.cs",
@@ -4607,14 +4448,6 @@
 					[
 						"head",
 						"0929/theme/header.html"
-					],
-					[
-						"content",
-						"css/content.css"
-					],
-					[
-						"downdetai",
-						"download/detail.html"
 					]
 				],
 				"width": 0.0
@@ -4635,7 +4468,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 187.0,
+			"side_bar_width": 293.0,
 			"status_bar_visible": true,
 			"window_id": 6,
 			"workspace_name": ""
