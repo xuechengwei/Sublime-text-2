@@ -20,6 +20,39 @@
     "parser": "default",
 
     /*
+       Enable or not mathjax support.
+    */
+    "enable_mathjax": false,
+
+    /*
+        Enable or not highlight.js support for syntax highlighting.
+    */
+    "enable_highlight": false,
+
+    /*
+        List of enabled extensions of markdown2. You can get the full list of
+        extensions at https://github.com/trentm/python-markdown2/wiki/Extras
+    */
+    "enabled_extensions":
+    [
+        "footnotes",
+        "toc",
+        "fenced-code-blocks",
+        "cuddled-lists"
+    ],
+
+    /*
+        Default mode for the github Markdon parser : markdown (documents) or gfm (comments)
+        see http://developer.github.com/v3/markdown/#render-an-arbitrary-markdown-document
+    */
+    "github_mode": "markdown",
+
+    /*
+        Uses an OAuth token to when parsing markdown with GitHub API. To create one for Markdown Preview, see https://help.github.com/articles/creating-an-oauth-token-for-command-line-use.
+    */
+    // "github_oauth_token": "secret"
+
+    /*
         Sets the default css file to embed in the HTML
 
         default - Use the builtin CSS or github CSS, depending on parser config (markdown.css or github.css)
@@ -28,14 +61,31 @@
     "css": "default",
 
     /*
-    If you want to use ftps on Linux you need the ssl module, which does
-    not come included with Sublime due to compatiblity issues. I've compiled
-    different ssl modules for both 32bit and 64bit and included them.
-    You can try enabling this, but if Sublime starts crashing, you know
-    what to disable. Sublime must be restarted after changing this setting.
-    */
-    "linux_enable_ssl": false
+        Allow CSS overrides
 
+        true - Any file with matching a .markdown_filetype extension with .css will be loaded as an override
+        false - Matching files ignored
+    */
+    "allow_css_overrides": true,
+
+    /*
+        Sets the supported filetypes for auto-reload on save
+    */
+    "markdown_filetypes": [".md", ".markdown", ".mdown"],
+
+    /*
+        Sets a custom temporary folder for MarkdownPreview-generated html files. Useful if you're
+        using LiveReload and don't want to use the OS default. The directory must already exist.
+
+        Examples: /tmp/custom_folder   (Linux/OSX)
+                  C:/TEMP/MYNOTES      (Windows - note it's forward slash, even on Windows)
+    */
+    // "path_tempfile": "/tmp/my_notes",
+
+    /*
+        Strips the YAML front matter header and converts title to a heading
+    */
+    "strip_yaml_front_matter": false
 }
 
 

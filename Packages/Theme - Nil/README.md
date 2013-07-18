@@ -7,6 +7,7 @@ _Nil UI theme for Sublime Text 2_
 Nil is the dark theme for the overall Nil theme package.  Yes, there's
 a light theme -- scroll down if that's what you want.  They're both in
 the same repository, though they have different names just to be fancy.
+The color scheme pictured above is Big Duo.
 
 This theme is based on [Raik Ilves's Pseudo OSX
 theme](https://github.com/raik/st2-pseudo-osx-theme), which is in turn
@@ -28,17 +29,55 @@ _Ayin UI theme for Sublime Text 2_
 
 Ayin is the light theme of the Nil theme package.  It features a lot of
 grey and arguably softer colors, though should still remain as pseudo-
-functional as its dark counterpart.
+functional as its dark counterpart. The color scheme pictured above is
+Tubnil Bright.
 
 
-Tab Highlights
+Color Schemes
 ------------------------------------------------------------------------
 
-In order to see modified tabs with an orange highlight, you'll need to
-enable the `highlight_modified_tabs` setting in your preferences. This
-is not enabled by default and the theme does not require it to function,
-as such it's an optional thing you can enable that the theme supports if
-you choose to make use of it.
+The Nil theme package comes with the two color schemes seen in the both
+the light and dark screenshots respectively:
+
+* `Tubnil.tmTheme` → My personal variation of the Tubster theme for
+  TextMate.  This is the original dark color scheme.
+
+* `Tubnil Bright.tmTheme` → A variation on the above Tubnil theme for
+  folks who like bright color schemes.
+
+* `Big Duo.tmTheme` → Another variation on Tubnil, this time with
+  a slightly lighter background color, arguably less intense colors,
+  and so on. Cast in the name of god and all that.
+
+Both can be found in the root directory of the package, so to use it
+either, simply point your `color_scheme` preference to
+`Theme - Nil/Tubnil.tmTheme` or one of the other color schemes.
+
+
+Options
+------------------------------------------------------------------------
+
+There are a handful of options you can use to customize the appearance
+of both the Nil and Ayin themes. All options are boolean values and
+disabled by default. Their keys and descriptions follow:
+
+* `highlight_modified_tabs` — If true, will display an orange bar under
+  tabs with modified buffers.
+* `sidebar_folders` — If true, will display a folder icon beside folders
+  in the sidebar instead of a disclosure triangle. Sidebar folders are
+  off by default.
+* `colored_folder_glyphs` — If true, will tint either folder icons or
+  disclosure triangles in the sidebar (only the sidebar) purple.
+* `disable_colored_group_labels` — If true, will disable the colored
+  group labels. Group labels are the things that say "Group 1" and 2 and
+  so on in the sidebar. They're only visible if you have open files
+  shown. Colored group labels are enabled by default.
+* `disable_colored_folder_labels` — If true, will disable the colored
+  folder labels in the sidebar. This is independent of group label
+  coloring. Colored folder labels are enabled by default.
+
+To set any of these properties, place them and their values in your user
+preferences file.
 
 
 HDPI Displays
@@ -62,23 +101,6 @@ thing is that you use what you like.
 
 [PragmataPro]: http://www.fsd.it/fonts/pragmatapro.htm
 [Envy Code R]: http://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released
-
-
-Color Schemes
-------------------------------------------------------------------------
-
-The Nil theme package comes with the two color schemes seen in the both
-the light and dark screenshots respectively:
-
-* `Tubnil.tmTheme` → My personal variation of the Tubster theme for
-  TextMate.  This is the dark color scheme.
-
-* `Tubnil Bright.tmTheme` → A variation on the above Tubnil theme for
-  folks who like bright color schemes.
-
-Both can be found in the root directory of the package, so to use it
-either, simply point your `color_scheme` preference to
-`Theme - Nil/Tubnil.tmTheme` or `Theme - Nil/Tubnil Bright.tmTheme`.
 
 
 Installation

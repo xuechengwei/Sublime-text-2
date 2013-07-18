@@ -151,6 +151,21 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Namespace (definition)</string>
+			<key>scope</key>
+			<string>entity.name.section.namespace</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#4A0A2F</string>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#F26FBC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Inherited Class</string>
 			<key>scope</key>
 			<string>entity.other.inherited-class</string>
@@ -346,15 +361,24 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Git-Diff Background</string>
+			<key>scope</key>
+			<string>meta.diff.git-commit</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#22172b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Diff Add</string>
 			<key>scope</key>
 			<string>markup.inserted</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#00480A</string>
-				<key>foreground</key>
-				<string>#E6E1DC</string>
+				<string>#11401b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -365,9 +389,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#60001B</string>
-				<key>foreground</key>
-				<string>#E6E1DC</string>
+				<string>#531c16</string>
 			</dict>
 		</dict>
 		<dict>
@@ -378,7 +400,20 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#270068</string>
+				<string>#0b437a</string>
+				<key>fontStyle</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Unchanged Line</string>
+			<key>scope</key>
+			<string>punctuation.definition.unchanged.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#4e1c6b</string>
 				<key>fontStyle</key>
 				<string></string>
 			</dict>

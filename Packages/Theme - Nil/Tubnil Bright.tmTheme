@@ -153,6 +153,21 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Namespace (definition)</string>
+			<key>scope</key>
+			<string>entity.name.section.namespace</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#003A9640</string>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#00215E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Inherited Class</string>
 			<key>scope</key>
 			<string>entity.other.inherited-class</string>
@@ -356,9 +371,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#00480A</string>
+				<string>#daf2cd</string>
 				<key>foreground</key>
-				<string>#E6E1DC</string>
+				<string>#260c47</string>
 			</dict>
 		</dict>
 		<dict>
@@ -369,9 +384,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#60001B</string>
+				<string>#f0cdd6</string>
 				<key>foreground</key>
-				<string>#E6E1DC</string>
+				<string>#260c47</string>
 			</dict>
 		</dict>
 		<dict>
@@ -382,7 +397,24 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#270068</string>
+				<string>#cdd3f1</string>
+				<key>foreground</key>
+				<string>#260c47</string>
+				<key>fontStyle</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Unchanged Line</string>
+			<key>scope</key>
+			<string>punctuation.definition.unchanged.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#c0a2ee</string>
+				<key>foreground</key>
+				<string>#260c47</string>
 				<key>fontStyle</key>
 				<string></string>
 			</dict>

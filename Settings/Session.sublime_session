@@ -2721,6 +2721,30 @@
 					}
 				},
 				{
+					"file": "/C/Users/John the whisler/Desktop/act/eventshow.htm",
+					"settings":
+					{
+						"buffer_size": 32997,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/C/Users/John the whisler/Desktop/act/eventpreview.htm",
+					"settings":
+					{
+						"buffer_size": 32955,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/D/www/actPublish/js/jquery.validationEngine.js",
+					"settings":
+					{
+						"buffer_size": 70694,
+						"line_ending": "Windows"
+					}
+				},
+				{
 					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 					"settings":
 					{
@@ -2740,11 +2764,15 @@
 			"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
 			"command_palette":
 			{
-				"height": 93.0,
+				"height": 375.0,
 				"selected_items":
 				[
 					[
-						"upgrade",
+						"up",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"upgra",
 						"Package Control: Upgrade Package"
 					],
 					[
@@ -2752,11 +2780,11 @@
 						"Package Control: Upgrade Package"
 					],
 					[
-						"upg",
+						"upgrade",
 						"Package Control: Upgrade Package"
 					],
 					[
-						"upgra",
+						"upg",
 						"Package Control: Upgrade Package"
 					],
 					[
@@ -3250,10 +3278,6 @@
 					[
 						"move",
 						"File: Move"
-					],
-					[
-						"filemove",
-						"File: Move"
 					]
 				],
 				"width": 522.0
@@ -3273,10 +3297,10 @@
 			},
 			"file_history":
 			[
-				"/D/www/actPublish/js/script.js",
 				"/D/www/actPublish/js/jquery.validationEngine.js",
-				"/C/Users/John the whisler/Desktop/act/pubevent.js",
 				"/C/Users/John the whisler/Desktop/act/eventpreview.htm",
+				"/C/Users/John the whisler/Desktop/act/pubevent.js",
+				"/D/www/actPublish/js/script.js",
 				"/C/Users/John the whisler/Desktop/act/activity.css",
 				"/C/Users/John the whisler/Desktop/act/eventhelp.class.php",
 				"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
@@ -3442,6 +3466,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"init",
 					"报名截止时间",
 					"截止时间",
 					"$(this)",
@@ -3568,8 +3593,7 @@
 					"activity_gatherplace",
 					"<td>{lang event:pub_gatherplace}<span class=\"requireele\">*</span集合地点></td><td><input class=\"px\" type=\"text\" name=\"pub_gatherplace\" id=\"pub_gatherplace\" value=\"$activity[gatherplace]\" />\n<td>{lang event:pub_gatherplace}<span class=\"requireele\">*</span集合地点></td><td><input class=\"px\" type=\"text\" name=\"pub_gatherplace\" id=\"pub_gatherplace\" value=\"$activity[gatherplace]\" />\n<td>{lang event:pub_gatherplace}<span class=\"requireele\">*</span集合地点></td><td><input class=\"px\" type=\"text\" name=\"pub_gatherplace\" id=\"pub_gatherplace\" value=\"$activity[gatherplace]\" />\n集合地点",
 					"activity_gatherplace",
-					"nominal",
-					"nominal\\"
+					"nominal"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -3727,7 +3751,7 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 4,
 					"sheets":
 					[
 						{
@@ -3814,8 +3838,8 @@
 								"selection":
 								[
 									[
-										196,
-										196
+										388,
+										388
 									]
 								],
 								"settings":
@@ -3880,6 +3904,264 @@
 						},
 						{
 							"buffer": 2,
+							"file": "/C/Users/John the whisler/Desktop/act/eventshow.htm",
+							"settings":
+							{
+								"buffer_size": 32997,
+								"regions":
+								{
+									"TagLint":
+									{
+										"flags": 52,
+										"icon": "dot",
+										"regions":
+										[
+											[
+												22919,
+												22926
+											]
+										],
+										"scope": "variable.parameter"
+									}
+								},
+								"selection":
+								[
+									[
+										3729,
+										3729
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"buffer_scroll_name": "39467487",
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1562.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/Users/John the whisler/Desktop/act/eventpreview.htm",
+							"settings":
+							{
+								"buffer_size": 32955,
+								"regions":
+								{
+									"TagLint":
+									{
+										"flags": 52,
+										"icon": "dot",
+										"regions":
+										[
+											[
+												22781,
+												22788
+											]
+										],
+										"scope": "variable.parameter"
+									}
+								},
+								"selection":
+								[
+									[
+										5213,
+										5213
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"buffer_scroll_name": "0bf110e0",
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 2037.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/D/www/actPublish/js/jquery.validationEngine.js",
+							"settings":
+							{
+								"buffer_size": 70694,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										67051,
+										67051
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"buffer_scroll_name": "85807a7e",
+									"incomplete_sync": null,
+									"origin_encoding": "ASCII",
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 396.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
 							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 							"settings":
 							{
@@ -3905,13 +4187,13 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 396.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
-							"buffer": 3,
+							"buffer": 6,
 							"file": "/D/www/actPublish/index.html",
 							"settings":
 							{
@@ -3939,7 +4221,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 627.0,
+								"translation.y": 198.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -4002,7 +4284,7 @@
 			{
 				"height": 0.0
 			},
-			"position": "0,0,1,-1,-1,-1,-1,1112,1765,87,3685",
+			"position": "0,0,1,-1,-1,-1,-1,1112,1920,87,3840",
 			"replace":
 			{
 				"height": 336.0

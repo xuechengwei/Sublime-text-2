@@ -10,6 +10,10 @@ this is *italic* and this is **bold** .  another _italic_ and another __bold__
 
 this is `important` text. and percentage signs : % and `%`
 
+This is a paragraph with a footnote (builtin parser only). [^note-id] 
+
+Insert `[ toc ]` without spaces to generate a table of contents (builtin parser only).
+
 ## Indentation
 > Here is some indented text
 >> even more indented
@@ -61,11 +65,25 @@ It's quite easy to show code in markdown files.
 
 Backticks can be used to `highlight` some words.
 
-Also, any indented block is considered a code block.
+Also, any indented block is considered a code block.  If `enable_highlight` is `true`, syntax highlighting will be included (for the builtin parser - the github parser does this automatically).
 
     <script>
         document.location = 'http://lmgtfy.com/?q=markdown+cheat+sheet';
     </script>
+
+## Math
+
+When `enable_mathjax` is `true`, inline math can be included \\(\frac{\pi}{2}\\) $\pi$
+
+Alternatively, math can be written on its own line:
+
+$$F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t) \, e^{ - i \omega t}dt$$
+
+\\[\int_0^1 f(t) \mathrm{d}t\\]
+
+\\[\sum_j \gamma_j^2/d_j\\]
+
+
 
 ## GitHub Flavored Markdown
 
@@ -107,6 +125,10 @@ async_call('/path/to/api', function(json) {
 })
 ```
 
+The Github Markdown also brings some [nice Emoji support][emoji] : :+1: :heart: :beer:
+
+[^note-id]: This is the text of the note. 
+
 ## About
 
 This plugin and this sample file is proudly brought to you by the [revolunet team][revolunet]
@@ -119,5 +141,6 @@ This plugin and this sample file is proudly brought to you by the [revolunet tea
  [revolunet]: http://revolunet.com
  [revolunet-logo]: http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg "revolunet logo"
  [gfm]: http://github.github.com/github-flavored-markdown/
+ [emoji]: http://www.emoji-cheat-sheet.com/
 
 
