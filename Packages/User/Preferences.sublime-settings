@@ -6,6 +6,7 @@
 	"font_face": "YaHei Consolas hybrid",
 	"font_size": 13.0,
 	"highlight_line": true,
+	"auto_complete_selector": "source, text",
 	"ignored_packages":
 	[
 		"Git",
@@ -30,5 +31,6 @@
 	"theme": "Nexus.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
-	"word_wrap": "true"
+	"word_wrap": "true",
+	"vintage_start_in_command_mode": true
 }
