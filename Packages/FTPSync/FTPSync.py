@@ -223,7 +223,6 @@ def plugin_loaded():
 if int(sublime.version()) < 3000:
 	plugin_loaded()
 
-
 # ==== Generic =============================================================================
 
 # Dumps the exception to console
@@ -2241,7 +2240,7 @@ class RemoteSync(sublime_plugin.EventListener):
 
 				for folder, filepattern in watch:
 					files = gatherMetafiles(filepattern, os.path.join(root, folder))
-					preScan[config_file_path][connection] = dict(preScan[config_file_path][connection].items() + files.items())
+					preScan[config_file_path][connection].update(files.items())
 
 				if properties['debug_extras']['after_save_watch']:
 					printMessage("<debug> dumping pre-scan")
@@ -2807,3 +2806,9 @@ class FtpSyncUrlReport(sublime_plugin.TextCommand):
 	def run(self, edit):
 		import webbrowser
 		webbrowser.open("https://github.com/NoxArt/SublimeText2-FTPSync/issues/new", 2, True)
+
+# Open FTPSync Donate page
+class FtpSyncUrlDonate(sublime_plugin.TextCommand):
+	def run(self, edit):
+		import webbrowser
+		webbrowser.open("http://ftpsync.noxart.cz/donate.html", 2, True)

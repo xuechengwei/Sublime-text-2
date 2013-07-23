@@ -9,14 +9,15 @@
 	"highlight_line": false,
 	"ignored_packages":
 	[
+		"JSLint",
 		"Git",
 		"Gist",
-		"LiveReload",
 		"ZenCoding",
-		"JSLint",
+		"SublimeBlockCursor",
 		"PHPUnit",
-		"PlainTasks",
 		"CTags",
+		"PlainTasks",
+		"CodeIgniter Snippets",
 		"FileDiffs",
 		"SublimeLinter",
 		"Clipboard History"
