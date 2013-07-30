@@ -28,21 +28,21 @@
 	<!-- header begin -->
 	<header class="header">
 		<div class="inner-header clearfix">
-
+			$1
 		</div>
 	</header>
 	<!-- header end -->
 
 	<!-- container begin -->
 	<div class="container clearfix">
-
+		$2
 	</div>
 	<!-- container end -->
 
 	<!-- footer begin -->
 	<footer class="footer">
 		<div class="inner-footer clearfix">
-
+			$3
 		</div>
 	</footer>
 	<!-- footer end -->

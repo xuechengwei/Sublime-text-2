@@ -638,8 +638,8 @@ def addPasswords(config_file_path, config, callback, window):
 
 		addPasswords(config_file_path, config, callback, window)
 
-	def ask(connectionName):
-		window.show_input_panel('Enter password for ' + str(connectionName), "", lambda password: setPassword(config, connectionName, password), None, None)
+	def ask(connectionName, host, username):
+		window.show_input_panel('FTPSync > please provide password for:  ' + str(host) + ' ~ ' + str(username), "", lambda password: setPassword(config, connectionName, password), None, None)
 
 	for name in config['connections']:
 		prop = config['connections'][name]
@@ -648,7 +648,7 @@ def addPasswords(config_file_path, config, callback, window):
 			if config_file_path in passwords and name in passwords[config_file_path] and passwords[config_file_path][name] is not None:
 				config['connections'][name]['password'] = passwords[config_file_path][name]
 			else:
-				ask(name)
+				ask(name, prop['host'], prop['username'])
 				return
 
 	return callback()
@@ -945,7 +945,7 @@ def closeConnection(hash):
 	try:
 		for connection in connections[hash]:
 			connection.close(connections, hash)
-			printMessage("closed", connection.name)
+			printMessage("Closed", connection.name)
 
 		if len(connections[hash]) == 0:
 			connections.pop(hash)
@@ -1121,17 +1121,18 @@ class SyncCommandTransfer(SyncCommand):
 		if sys.version[0] == '3' and type(file_path) is bytes:
 			file_path = file_path.decode('utf-8')
 
-		# global ignore
-		if disregardIgnore is False and ignore is not None and re_ignore.search(file_path) is not None:
-			printMessage("file globally ignored: {" + os.path.basename(file_path) + "}", onlyVerbose=True)
-			self.close()
-			return
-
 		SyncCommand.__init__(self, file_path, config_file_path)
 
 		self.onSave = onSave
 		self.disregardIgnore = False
 		self.local = True
+
+		# global ignore
+		if disregardIgnore is False and ignore is not None and re_ignore.search(file_path) is not None:
+			if self._handleIgnore():
+				printMessage("File globally ignored: {" + os.path.basename(file_path) + "}", onlyVerbose=True)
+				self.close()
+				return
 
 		toBeRemoved = []
 		for name in self.config['connections']:
@@ -1143,8 +1144,10 @@ class SyncCommandTransfer(SyncCommand):
 
 			# ignore
 			if disregardIgnore is False and self.config['connections'][name]['ignore'] is not None and re.search(self.config['connections'][name]['ignore'], file_path):
-				printMessage("file ignored by rule: {" + self.basename + "}", name, True)
-				toBeRemoved.append(name)
+				if self._handleIgnore():
+					toBeRemoved.append(name)
+				
+				printMessage("File ignored by rule: {" + self.basename + "}", name, True)
 				continue
 
 			# whitelist
@@ -1154,6 +1157,12 @@ class SyncCommandTransfer(SyncCommand):
 
 		for name in toBeRemoved:
 			self.config['connections'].pop(name)
+
+	def _handleIgnore(self):
+		if self.progress is not None:
+			self.progress.progress()
+
+		return True
 
 	def setRemote(self):
 		self.local = False
@@ -1167,6 +1176,8 @@ class SyncCommandTransfer(SyncCommand):
 class SyncCommandUpload(SyncCommandTransfer):
 
 	def __init__(self, file_path, config_file_path, progress=None, onSave=False, disregardIgnore=False, whitelistConnections=[], forcedSave=False):
+		self.skip = False
+
 		SyncCommandTransfer.__init__(self, file_path, config_file_path, progress, onSave, disregardIgnore, whitelistConnections, forcedSave)
 
 		if os.path.exists(file_path) is False:
@@ -1179,6 +1190,23 @@ class SyncCommandUpload(SyncCommandTransfer):
 			'before': {},
 			'after': {}
 		}
+
+	def _hasAfterWatch(self):
+		for name in self.config['connections']:
+			if self.config['connections'][name]['after_save_watch']:
+				return True
+
+		return False
+
+
+	def _handleIgnore(self):
+		SyncCommandTransfer._handleIgnore(self)
+
+		if self._hasAfterWatch() and self.onSave:
+			self.skip = True
+			return False
+
+		return True
 
 
 	def setScanned(self, event, name, data):
@@ -1219,18 +1247,16 @@ class SyncCommandUpload(SyncCommandTransfer):
 
 		# afterwatch
 		if self.onSave is True:
-			index = -1
-
 			try:
 				for name in self.config['connections']:
-					index += 1
-					self.scanWatched('before', name, self.config['connections'][name])
+					if self.config['connections'][name]['after_save_watch']:
+						self.scanWatched('before', name, self.config['connections'][name])
 
-					if self.config['connections'][name]['debug_extras']['after_save_watch']:
-						printMessage("<debug> dumping pre-scan")
-						print (self.afterwatch['before'])
+						if self.config['connections'][name]['debug_extras']['after_save_watch']:
+							printMessage("<debug> dumping pre-scan")
+							print (self.afterwatch['before'])
 			except Exception as e:
-				printMessage("watching failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", "", False, True)
+				printMessage("Watching failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", "", False, True)
 
 		usingConnections.append(self.config_hash)
 		stored = []
@@ -1256,9 +1282,15 @@ class SyncCommandUpload(SyncCommandTransfer):
 							return
 
 						# process
-						connection.put(self.file_path)
+						if self.skip is False:
+							connection.put(self.file_path)
+							
 						stored.append(name)
-						printMessage("uploaded {" + self.basename + "}", name)
+
+						if self.skip is False:
+							printMessage("Uploaded {" + self.basename + "}", name)
+						else:
+							printMessage("Ignored {" + self.basename + "}", name)
 
 						# cleanup
 						scheduledUploads.pop(self.file_path)
@@ -1297,7 +1329,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 						self.triggerFinish(self.file_path)
 
 					except Exception as e:
-						printMessage("upload failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
+						printMessage("Upload failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 						handleException(e)
 
 					finally:
@@ -1306,7 +1338,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 				# delayed
 				if self.onSave is True and self.config['connections'][name]['upload_delay'] > 0:
 					self.delayed = True
-					printMessage("delaying upload of " + self.basename + " by " + str(self.config['connections'][name]['upload_delay']) + " seconds", name, onlyVerbose=True)
+					printMessage("Delaying processing " + self.basename + " by " + str(self.config['connections'][name]['upload_delay']) + " seconds", name, onlyVerbose=True)
 					sublime.set_timeout(action, self.config['connections'][name]['upload_delay'] * 1000)
 				else:
 					action()
@@ -1319,7 +1351,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 				self._closeConnection()
 
 			except Exception as e:
-				printMessage("upload failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
+				printMessage("Upload failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 				handleException(e)
 
 		if self.progress is not None:
@@ -1336,7 +1368,7 @@ class SyncCommandUpload(SyncCommandTransfer):
 			if self.progress is not None and self.progress.isFinished():
 				dumpMessage(getProgressMessage(stored, self.progress, notify))
 			else:
-				dumpMessage(getProgressMessage(stored, self.progress, "uploaded ", self.basename))
+				dumpMessage(getProgressMessage(stored, self.progress, "Uploaded ", self.basename))
 
 			if systemNotifications and self.progress is None or self.progress.isFinished():
 				systemNotify(notify)
@@ -1430,11 +1462,11 @@ class SyncCommandDownload(SyncCommandTransfer):
 
 				else:
 					if not self.skip or self.forced:
-						self.connections[index].get(self.file_path, blockCallback = lambda: dumpMessage(getProgressMessage([name], self.progress, "downloading", self.basename)))
-						printMessage("downloaded {" + self.basename + "}", name)
+						self.connections[index].get(self.file_path, blockCallback = lambda: dumpMessage(getProgressMessage([name], self.progress, "Downloading", self.basename)))
+						printMessage("Downloaded {" + self.basename + "}", name)
 						self.triggerFinish(self.file_path)
 					else:
-						printMessage("skipping {" + self.basename + "}", name)
+						printMessage("Skipping {" + self.basename + "}", name)
 
 					stored.append(name)
 
@@ -1442,7 +1474,7 @@ class SyncCommandDownload(SyncCommandTransfer):
 				continue
 
 			except FileNotFoundException:
-				printMessage("remote file not found", name, False, True)
+				printMessage("Remote file not found", name, False, True)
 				handleException(e)
 
 			except EOFError:
@@ -1450,7 +1482,7 @@ class SyncCommandDownload(SyncCommandTransfer):
 				self._closeConnection()
 
 			except Exception as e:
-				printMessage("download of {" + self.basename + "} failed [Exception: " + stringifyException(e) + "]", name, False, True)
+				printMessage("Download of {" + self.basename + "} failed [Exception: " + stringifyException(e) + "]", name, False, True)
 				handleException(e)
 
 			finally:
@@ -1483,7 +1515,7 @@ class SyncCommandDownload(SyncCommandTransfer):
 			if self.progress is not None and self.progress.isFinished() and wasFinished is False:
 				dumpMessage(getProgressMessage(stored, self.progress, notify))
 			else:
-				dumpMessage(getProgressMessage(stored, self.progress, "downloaded ", self.basename))
+				dumpMessage(getProgressMessage(stored, self.progress, "Downloaded ", self.basename))
 
 			if systemNotifications and self.progress is None or (self.progress.isFinished() and wasFinished is False):
 				systemNotify(notify)
@@ -1547,7 +1579,7 @@ class SyncCommandRename(SyncCommand):
 
 				try:
 					self.connections[index].rename(self.file_path, self.new_name, forced)
-					printMessage("renamed {" + self.basename + "} -> {" + self.new_name + "}", name)
+					printMessage("Renamed {" + self.basename + "} -> {" + self.new_name + "}", name)
 					renamed.append(name)
 
 				except IndexError:
@@ -1562,10 +1594,10 @@ class SyncCommandRename(SyncCommand):
 
 				except Exception as e:
 					if str(e).find("No such file or directory"):
-						printMessage("remote file not found", name, False, True)
+						printMessage("Remote file not found", name, False, True)
 						renamed.append(name)
 					else:
-						printMessage("renaming failed: {" + self.basename + "} -> {" + self.new_name + "} [Exception: " + stringifyException(e) + "]", name, False, True)
+						printMessage("Renaming failed: {" + self.basename + "} -> {" + self.new_name + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 						handleException(e)
 
 			# message
@@ -1575,7 +1607,7 @@ class SyncCommandRename(SyncCommand):
 
 				self.triggerFinish(self.file_path)
 
-				printMessage("remotely renamed {" + self.basename + "} -> {" + self.new_name + "}", "remotes: " + ','.join(renamed), status=True)
+				printMessage("Remotely renamed {" + self.basename + "} -> {" + self.new_name + "}", "remotes: " + ','.join(renamed), status=True)
 
 
 		if len(exists) == 0:
@@ -1643,21 +1675,21 @@ class SyncCommandDelete(SyncCommandTransfer):
 					# process
 					connection.delete(self.file_path)
 					deleted.append(name)
-					printMessage("deleted {" + self.basename + "}", name)
+					printMessage("Deleted {" + self.basename + "}", name)
 
 				except FileNotFoundException:
 					deleted.append(name)
-					printMessage("no remote version of {" + self.basename + "} found", name)
+					printMessage("No remote version of {" + self.basename + "} found", name)
 
 				except Exception as e:
-					printMessage("delete failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
+					printMessage("Delete failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 					handleException(e)
 
 			except IndexError:
 				continue
 
 			except FileNotFoundException:
-				printMessage("remote file not found", name, False, True)
+				printMessage("Remote file not found", name, False, True)
 				deleted.append(name)
 				continue
 
@@ -1667,10 +1699,10 @@ class SyncCommandDelete(SyncCommandTransfer):
 
 			except Exception as e:
 				if str(e).find("No such file or directory"):
-					printMessage("remote file not found", name, False, True)
+					printMessage("Remote file not found", name, False, True)
 					deleted.append(name)
 				else:
-					printMessage("delete failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
+					printMessage("Delete failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 					handleException(e)
 
 		if len(deleted) > 0:
@@ -1681,7 +1713,7 @@ class SyncCommandDelete(SyncCommandTransfer):
 
 			self.triggerFinish(self.file_path)
 
-			dumpMessage(getProgressMessage(deleted, self.progress, "deleted", self.basename))
+			dumpMessage(getProgressMessage(deleted, self.progress, "Deleted", self.basename))
 
 
 # Rename command
@@ -1725,7 +1757,7 @@ class SyncCommandGetMetadata(SyncCommand):
 				self._closeConnection()
 
 			except Exception as e:
-				printMessage("getting metadata failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
+				printMessage("Getting metadata failed: {" + self.basename + "} [Exception: " + stringifyException(e) + "]", name, False, True)
 				handleException(e)
 
 		return results
@@ -2223,92 +2255,95 @@ class RemoteSync(sublime_plugin.EventListener):
 		if config_file_path is None:
 			return
 
-		preScan[config_file_path] = {}
-		root = os.path.dirname(config_file_path)
-		config = loadConfig(config_file_path)
-		blacklistConnections = []
+		def pre_save(_files):
+			preScan[config_file_path] = {}
+			root = os.path.dirname(config_file_path)
+			config = loadConfig(config_file_path)
+			blacklistConnections = []
 
-		for connection in config['connections']:
-			properties = config['connections'][connection]
+			for connection in config['connections']:
+				properties = config['connections'][connection]
 
-			if properties['upload_on_save'] is False:
-				blacklistConnections.append(connection)
+				if properties['upload_on_save'] is False:
+					blacklistConnections.append(connection)
 
-			watch = properties['after_save_watch']
-			if type(watch) is list and len(watch) > 0 and properties['upload_delay'] > 0:
-				preScan[config_file_path][connection] = {}
+				watch = properties['after_save_watch']
+				if type(watch) is list and len(watch) > 0 and properties['upload_delay'] > 0:
+					preScan[config_file_path][connection] = {}
 
-				for folder, filepattern in watch:
-					files = gatherMetafiles(filepattern, os.path.join(root, folder))
-					preScan[config_file_path][connection].update(files.items())
+					for folder, filepattern in watch:
+						files = gatherMetafiles(filepattern, os.path.join(root, folder))
+						preScan[config_file_path][connection].update(files.items())
 
-				if properties['debug_extras']['after_save_watch']:
-					printMessage("<debug> dumping pre-scan")
-					print ("COUNT: " + str(len(preScan[config_file_path][connection])))
-					for change in preScan[config_file_path][connection]:
-						print ("Path: " + preScan[config_file_path][connection][change].getPath() + " | Name: " + preScan[config_file_path][connection][change].getName())
+					if properties['debug_extras']['after_save_watch']:
+						printMessage("<debug> dumping pre-scan")
+						print ("COUNT: " + str(len(preScan[config_file_path][connection])))
+						for change in preScan[config_file_path][connection]:
+							print ("Path: " + preScan[config_file_path][connection][change].getPath() + " | Name: " + preScan[config_file_path][connection][change].getName())
 
-		if len(blacklistConnections) == len(config['connections']):
-			return
+			if len(blacklistConnections) == len(config['connections']):
+				return
 
-		try:
-			metadata = SyncCommandGetMetadata(file_path, config_file_path).execute()
-		except FileNotFoundException:
-			return
-		except Exception as e:
-			if str(e).find('No such file'):
-				printMessage("No version of {" + os.path.basename(file_path) + "} found on any server", status=True)
-			else:
-				printMessage("Error when getting metadata: " + stringifyException(e))
-				handleException(e)
-			metadata = []
-
-		newest = None
-		newer = []
-		index = 0
-
-		for entry in metadata:
-			if (entry['connection'] not in blacklistConnections and config['connections'][entry['connection']]['check_time'] is True and entry['metadata'].isNewerThan(file_path) and entry['metadata'].isDifferentSizeThan(file_path)) or file_path in overwriteCancelled:
-				newer.append(entry['connection'])
-
-				if newest is None or newest > entry['metadata'].getLastModified():
-					newest = index
-
-			index += 1
-
-		if len(newer) > 0:
-			preventUpload.append(file_path)
-
-			def sync(index):
-				if index is 0:
-					printMessage("Overwrite prevention: overwriting")
-
-					if file_path in overwriteCancelled:
-						overwriteCancelled.remove(file_path)
-
-					self.on_post_save(view)
+			try:
+				metadata = SyncCommandGetMetadata(file_path, config_file_path).execute()
+			except FileNotFoundException:
+				return
+			except Exception as e:
+				if str(e).find('No such file'):
+					printMessage("No version of {" + os.path.basename(file_path) + "} found on any server", status=True)
 				else:
-					printMessage("Overwrite prevention: cancelled upload")
+					printMessage("Error when getting metadata: " + stringifyException(e))
+					handleException(e)
+				metadata = []
 
-					if file_path not in overwriteCancelled:
-						overwriteCancelled.append(file_path)
+			newest = None
+			newer = []
+			index = 0
 
-			yes = []
-			yes.append("Yes, overwrite newer")
-			yes.append("Last modified: " + metadata[newest]['metadata'].getLastModifiedFormatted())
+			for entry in metadata:
+				if (entry['connection'] not in blacklistConnections and config['connections'][entry['connection']]['check_time'] is True and entry['metadata'].isNewerThan(file_path) and entry['metadata'].isDifferentSizeThan(file_path)) or file_path in overwriteCancelled:
+					newer.append(entry['connection'])
 
-			for entry in newer:
-				yes.append(entry + " [" + config['connections'][entry]['host'] + "]")
+					if newest is None or newest > entry['metadata'].getLastModified():
+						newest = index
 
-			no = []
-			no.append("No")
-			no.append("Cancel uploading")
+				index += 1
 
-			window = view.window()
-			if window is None:
-				window = sublime.active_window()  # only in main thread!
+			if len(newer) > 0:
+				preventUpload.append(file_path)
 
-			sublime.set_timeout(lambda: window.show_quick_panel([ yes, no ], sync), 1)
+				def sync(index):
+					if index is 0:
+						printMessage("Overwrite prevention: overwriting")
+
+						if file_path in overwriteCancelled:
+							overwriteCancelled.remove(file_path)
+
+						self.on_post_save(view)
+					else:
+						printMessage("Overwrite prevention: cancelled upload")
+
+						if file_path not in overwriteCancelled:
+							overwriteCancelled.append(file_path)
+
+				yes = []
+				yes.append("Yes, overwrite newer")
+				yes.append("Last modified: " + metadata[newest]['metadata'].getLastModifiedFormatted())
+
+				for entry in newer:
+					yes.append(entry + " [" + config['connections'][entry]['host'] + "]")
+
+				no = []
+				no.append("No")
+				no.append("Cancel uploading")
+
+				window = view.window()
+				if window is None:
+					window = sublime.active_window()  # only in main thread!
+
+				sublime.set_timeout(lambda: window.show_quick_panel([ yes, no ], sync), 1)
+
+		fillPasswords([[ None, config_file_path ]], pre_save, sublime.active_window())
 
 	def on_post_save(self, view):
 		file_path = getFileName(view)
@@ -2350,7 +2385,11 @@ class RemoteSync(sublime_plugin.EventListener):
 
 			def check():
 				if file_path in checksScheduled:
-					RemoteSyncCheck(file_path, view.window()).start()
+
+					def execute(files):
+						RemoteSyncCheck(file_path, view.window()).start()
+
+					fillPasswords([[ file_path, getConfigFile(file_path) ]], execute, sublime.active_window())
 
 			sublime.set_timeout(check, download_on_open_delay)
 
@@ -2608,34 +2647,52 @@ class FtpSyncNewSettings(sublime_plugin.TextCommand):
 		if len(dirs) == 0:
 			dirs = [os.path.dirname(self.view.file_name())]
 
-		default = os.path.join(sublime.packages_path(), 'FTPSync', connectionDefaultsFilename)
-		if os.path.exists(default) is False:
-			printMessage("Could not find default settings file in {" + default + "}")
+		if sublime.version()[0] >= '3':
+			content = sublime.load_resource('Packages/FTPSync/ftpsync.default-settings').replace('\r\n', '\n')
 
-			default = os.path.join(__dir__, connectionDefaultsFilename)
-			printMessage("Trying filepath {" + default + "}")
+			for directory in dirs:
+				config = os.path.join(directory, configName)
 
-		for directory in dirs:
-			config = os.path.join(directory, configName)
+				with open(config, 'w') as configFile:
+					configFile.write(content)
 
-			invalidateConfigCache(directory)
-
-			if os.path.exists(config) is True:
 				self.view.window().open_file(config)
-			else:
-				shutil.copyfile(default, config)
+		else:
+			default = os.path.join(sublime.packages_path(), 'FTPSync', connectionDefaultsFilename)
+			if os.path.exists(default) is False:
+				printMessage("Could not find default settings file in {" + default + "}")
+
+				default = os.path.join(__dir__, connectionDefaultsFilename)
+				printMessage("Trying filepath {" + default + "}")
+
+			for directory in dirs:
+				config = os.path.join(directory, configName)
+
+				invalidateConfigCache(directory)
+
+				if os.path.exists(config) is False:
+					shutil.copyfile(default, config)
+
 				self.view.window().open_file(config)
 
 
 # Synchronize up selected file/directory
 class FtpSyncTarget(sublime_plugin.TextCommand):
 	def run(self, edit, paths):
-		RemoteSyncCall(gatherFiles(paths), None, False).start()
+		def execute(files):
+			RemoteSyncCall(files, None, False).start()
+
+		files = gatherFiles(paths)
+		fillPasswords(files, execute, sublime.active_window())
 
 # Synchronize up selected file/directory with delay and watch
 class FtpSyncTargetDelayed(sublime_plugin.TextCommand):
 	def run(self, edit, paths):
-		RemoteSyncCall(gatherFiles(paths), None, True, forcedSave = True).start()
+		def execute(files):
+			RemoteSyncCall(files, None, True, forcedSave = True).start()
+
+		files = gatherFiles(paths)
+		fillPasswords(files, execute, sublime.active_window())
 
 
 # Synchronize up current file
@@ -2643,7 +2700,10 @@ class FtpSyncCurrent(sublime_plugin.TextCommand):
 	def run(self, edit):
 		file_path = sublime.active_window().active_view().file_name()
 
-		RemoteSyncCall(file_path, getConfigFile(file_path), False).start()
+		def execute(files):
+			RemoteSyncCall(files[0][0], files[0][1], False).start()
+
+		fillPasswords([[ file_path, getConfigFile(file_path) ]], execute, sublime.active_window())
 
 
 # Synchronize down current file
@@ -2651,7 +2711,10 @@ class FtpSyncDownCurrent(sublime_plugin.TextCommand):
 	def run(self, edit):
 		file_path = sublime.active_window().active_view().file_name()
 
-		RemoteSyncDownCall(file_path, getConfigFile(file_path), False, True).start()
+		def execute(files):
+			RemoteSyncDownCall(files[0][0], files[0][1], True, False).start()
+
+		fillPasswords([[ file_path, getConfigFile(file_path) ]], execute, sublime.active_window())
 
 
 # Checks whether there's a different version of the file on server
@@ -2660,7 +2723,10 @@ class FtpSyncCheckCurrent(sublime_plugin.TextCommand):
 		file_path = sublime.active_window().active_view().file_name()
 		view = sublime.active_window()
 
-		RemoteSyncCheck(file_path, view, True).start()
+		def execute(files):
+			RemoteSyncCheck(file_path, view, True).start()
+
+		fillPasswords([[ file_path, getConfigFile(file_path) ]], execute, sublime.active_window())
 
 # Checks whether there's a different version of the file on server
 class FtpSyncRenameCurrent(sublime_plugin.TextCommand):
@@ -2678,7 +2744,10 @@ class FtpSyncRenameCurrent(sublime_plugin.TextCommand):
 
 	def rename(self, new_name):
 		def action():
-			RemoteSyncRename(self.original_path, getConfigFile(self.original_path), new_name).start()
+			def execute(files):
+				RemoteSyncRename(self.original_path, getConfigFile(self.original_path), new_name).start()
+
+			fillPasswords([[ self.original_path, getConfigFile(self.original_path) ]], execute, sublime.active_window())
 
 		new_path = os.path.join(os.path.dirname(self.original_path), new_name)
 		if os.path.exists(new_path):
@@ -2704,7 +2773,14 @@ class FtpSyncRenameCurrent(sublime_plugin.TextCommand):
 # Synchronize down selected file/directory
 class FtpSyncDownTarget(sublime_plugin.TextCommand):
 	def run(self, edit, paths, forced=False):
-		RemoteSyncDownCall(getFiles(paths, getConfigFile), None, forced=forced).start()
+		filelist = []
+		for path in paths:
+			filelist.append( [ path, getConfigFile(path) ] )
+
+		def execute(files):
+			RemoteSyncDownCall(filelist, None, forced=forced).start()
+
+		fillPasswords(filelist, execute, sublime.active_window())
 
 
 # Renames a file on disk and in folder
@@ -2721,7 +2797,10 @@ class FtpSyncRename(sublime_plugin.TextCommand):
 
 	def rename(self, new_name):
 		def action():
-			RemoteSyncRename(self.original_path, getConfigFile(self.original_path), new_name).start()
+			def execute(files):
+				RemoteSyncRename(self.original_path, getConfigFile(self.original_path), new_name).start()
+
+			fillPasswords([[ self.original_path, getConfigFile(self.original_path) ]], execute, sublime.active_window())
 
 		new_path = os.path.join(os.path.dirname(self.original_path), new_name)
 		if os.path.exists(new_path):
@@ -2747,17 +2826,27 @@ class FtpSyncRename(sublime_plugin.TextCommand):
 # Removes given file(s) or folders
 class FtpSyncDelete(sublime_plugin.TextCommand):
 	def run(self, edit, paths):
-		RemoteSyncDelete(paths).start()
+		filelist = []
+		for path in paths:
+			filelist.append( [ path, getConfigFile(path) ] )
+
+		def execute(files):
+			RemoteSyncDelete(paths).start()
+
+		fillPasswords(filelist, execute, sublime.active_window())
 
 # Remote ftp navigation
 class FtpSyncBrowse(sublime_plugin.TextCommand):
 	def run(self, edit):
 		file_path = sublime.active_window().active_view().file_name()
 
-		command = SyncNavigator(None, getConfigFile(file_path), None, file_path)
-		call = RemoteNavigator(getConfigFile(file_path))
-		call.setCommand(command)
-		call.start()
+		def execute(files):
+			command = SyncNavigator(None, getConfigFile(file_path), None, file_path)
+			call = RemoteNavigator(getConfigFile(file_path))
+			call.setCommand(command)
+			call.start()
+
+		fillPasswords([[ file_path, getConfigFile(file_path) ]], execute, sublime.active_window())
 
 # Remote ftp navigation
 class FtpSyncBrowsePlace(sublime_plugin.TextCommand):
@@ -2767,20 +2856,26 @@ class FtpSyncBrowsePlace(sublime_plugin.TextCommand):
 		else:
 			file_path = os.path.dirname(paths[0])
 
-		command = SyncNavigator(None, getConfigFile(file_path), None, file_path)
-		call = RemoteNavigator(getConfigFile(file_path))
-		call.setCommand(command)
-		call.start()
+		def execute(files):
+			command = SyncNavigator(None, getConfigFile(file_path), None, file_path)
+			call = RemoteNavigator(getConfigFile(file_path))
+			call.setCommand(command)
+			call.start()
+
+		fillPasswords([[ file_path, getConfigFile(file_path) ]], execute, sublime.active_window())
 
 # Remote ftp navigation from current file
 class FtpSyncBrowseCurrent(sublime_plugin.TextCommand):
 	def run(self, edit):
 		file_path = sublime.active_window().active_view().file_name()
 
-		command = SyncNavigator(os.path.dirname(file_path), getConfigFile(file_path), None, os.path.dirname(file_path))
-		call = RemoteNavigator(getConfigFile(file_path))
-		call.setCommand(command)
-		call.start()
+		def execute(files):
+			command = SyncNavigator(os.path.dirname(file_path), getConfigFile(file_path), None, os.path.dirname(file_path))
+			call = RemoteNavigator(getConfigFile(file_path))
+			call.setCommand(command)
+			call.start()
+
+		fillPasswords([[ file_path, getConfigFile(file_path) ]], execute, sublime.active_window())
 
 # Remote ftp navigation from last point
 class FtpSyncBrowseLast(sublime_plugin.TextCommand):
@@ -2788,12 +2883,19 @@ class FtpSyncBrowseLast(sublime_plugin.TextCommand):
 		if navigateLast['config_file'] is None:
 			file_path = sublime.active_window().active_view().file_name()
 
-			command = SyncNavigator(None, getConfigFile(file_path), None, file_path)
-			call = RemoteNavigator(getConfigFile(file_path))
-			call.setCommand(command)
-			call.start()
+			def execute(files):
+				command = SyncNavigator(None, getConfigFile(file_path), None, file_path)
+				call = RemoteNavigator(getConfigFile(file_path))
+				call.setCommand(command)
+				call.start()
+				
+
+			fillPasswords([[ file_path, getConfigFile(file_path) ]], execute, sublime.active_window())
 		else:
-			RemoteNavigator(None, True).start()
+			def execute(files):
+				RemoteNavigator(None, True).start()
+
+			fillPasswords([[ None, getConfigFile(navigateLast['config_file']) ]], execute, sublime.active_window())
 
 # Open FTPSync Github page
 class FtpSyncUrlReadme(sublime_plugin.TextCommand):

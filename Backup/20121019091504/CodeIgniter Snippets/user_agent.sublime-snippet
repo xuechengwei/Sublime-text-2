@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\$this->input->user_agent()
-]]></content>
-	<tabTrigger>user_agent</tabTrigger>
-</snippet>
