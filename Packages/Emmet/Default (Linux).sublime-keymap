@@ -53,7 +53,7 @@
         "command": "run_emmet_action", 
         "context": [
             {
-                "operand": "source.css -source.css.less, text.xml, text.html - source", 
+                "operand": "source.css - source.css.less, text.xml, text.html - source", 
                 "operator": "equal", 
                 "match_all": true, 
                 "key": "selector"
@@ -126,7 +126,7 @@
     }, 
     {
         "keys": [
-            "ctrl+alt+,"
+            "ctrl+shift+0"
         ], 
         "args": {
             "action": "match_pair_inward"
@@ -356,8 +356,14 @@
         "command": "expand_abbreviation_by_tab", 
         "context": [
             {
-                "operand": "source.css, source.sass, source.less, source.scss, source.stylus, text.xml, text.html - source - keyword.control.php, text.haml, string", 
+                "operand": "source.css, source.sass, source.less, source.scss, source.stylus, text.xml, text.html, text.haml, text.scala.html, source string", 
                 "operator": "equal", 
+                "match_all": true, 
+                "key": "selector"
+            }, 
+            {
+                "operand": "text.html source.php, text.html source.js, storage.type.templatetag.django", 
+                "operator": "not_equal", 
                 "match_all": true, 
                 "key": "selector"
             }, 
@@ -396,8 +402,14 @@
         "command": "expand_abbreviation_by_tab", 
         "context": [
             {
-                "operand": "source.css, source.sass, source.less, source.scss, source.stylus, text.xml, text.html - source - keyword.control.php, text.haml, string", 
+                "operand": "source.css, source.sass, source.less, source.scss, source.stylus, text.xml, text.html, text.haml, text.scala.html, source string", 
                 "operator": "equal", 
+                "match_all": true, 
+                "key": "selector"
+            }, 
+            {
+                "operand": "text.html source.php, text.html source.js, storage.type.templatetag.django", 
+                "operator": "not_equal", 
                 "match_all": true, 
                 "key": "selector"
             }, 
@@ -433,18 +445,28 @@
         "keys": [
             "enter"
         ], 
-        "command": "handle_enter_key", 
+        "args": {
+            "contents": "\n\t${0}\n"
+        }, 
+        "command": "insert_snippet", 
         "context": [
             {
-                "operand": "text.html -source, text.xml", 
+                "operand": "meta.scope.between-tag-pair.html, meta.scope.between-tag-pair.xml", 
+                "match_all": true, 
                 "key": "selector"
             }, 
             {
                 "operand": false, 
+                "match_all": true, 
                 "key": "auto_complete_visible"
             }, 
             {
+                "match_all": true, 
+                "key": "clear_fields_on_enter_key"
+            }, 
+            {
                 "operand": false, 
+                "match_all": true, 
                 "key": "setting.disable_formatted_linebreak"
             }
         ]

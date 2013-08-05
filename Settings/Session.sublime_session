@@ -2740,10 +2740,10 @@
 			"buffers":
 			[
 				{
-					"contents": "昨天:\n	1. xheditor6只脚线路上传剩余工作\n	2. xheditor 过滤 script标签和行内javascript脚本\n	3. 南京展专题修改\n	4. 德龙离职交接内容\n	5. 新版活动发布页属性调整\n今天:\n	1. 新版发布页按照设计样式制作\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	1.新版发布页剩余任务(主要是和后端衔接)\n	2.活动搜索2.1剩一点点了  得等张狄出来后我才能加样式\n	3.用户中心系统\n	4.绿野整站头部变更\n	5.APP汇总页",
+					"contents": "上周五:\n	1. 新版发布页按照设计样式制作(40%)\n	2. 新招聘页面制作\n今天:\n	1. 剩余新版发布页按照设计样式制作\n	2. 修改discuz活动页面日历控件bug、活动展示页面副领队是否接受邀请图标bug\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	1.新版发布页剩余任务(主要是和后端衔接)\n	2.活动搜索2.1剩一点点了  得等张狄出来后我才能加样式\n	3.用户中心系统\n	4.绿野整站头部变更\n	5.APP汇总页",
 					"settings":
 					{
-						"buffer_size": 238,
+						"buffer_size": 216,
 						"line_ending": "Unix"
 					}
 				},
@@ -2759,39 +2759,15 @@
 					"file": "/D/www/actPublish/index.html",
 					"settings":
 					{
-						"buffer_size": 23003,
+						"buffer_size": 24440,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/C/Users/John the whisler/Desktop/act/footer.htm",
+					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
 					"settings":
 					{
-						"buffer_size": 8061,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/John the whisler/Desktop/act/footer_index.htm",
-					"settings":
-					{
-						"buffer_size": 10949,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/John the whisler/Desktop/act/index.html",
-					"settings":
-					{
-						"buffer_size": 35293,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/D/www/joinus/joinus.html",
-					"settings":
-					{
-						"buffer_size": 12340,
+						"buffer_size": 12989,
 						"line_ending": "Unix"
 					}
 				},
@@ -2799,23 +2775,23 @@
 					"file": "/D/www/actPublish/js/script.js",
 					"settings":
 					{
-						"buffer_size": 7008,
+						"buffer_size": 7157,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/D/www/joinus/css/page.css",
+					"contents": "function $F(func, args, script) {\n    var run = function() {\n        var argc = args.length,\n            s = '';\n        for (i = 0; i < argc; i++) {\n            s += ',args[' + i + ']';\n        }\n        eval('var check = typeof ' + func + ' == \\'function\\'');\n        if (check) {\n            eval(func + '(' + s.substr(1) + ')');\n        } else {\n            setTimeout(function() {\n                checkrun();\n            }, 50);\n        }\n    };\n    var checkrun = function() {\n        if (JSLOADED[src]) {\n            run();\n        } else {\n            setTimeout(function() {\n                checkrun();\n            }, 50);\n        }\n    };\n    script = script || 'common_extra';\n    src = JSPATH + script + '.js?' + VERHASH;\n    if (!JSLOADED[src]) {\n        appendscript(src);\n    }\n    checkrun();\n}\n\n\nfunction showTip(ctrlobj) {\n    $F('_showTip', arguments);\n}",
 					"settings":
 					{
-						"buffer_size": 3672,
-						"line_ending": "Unix"
+						"buffer_size": 873,
+						"line_ending": "Windows"
 					}
 				},
 				{
 					"file": "/D/www/actPublish/css/page.css",
 					"settings":
 					{
-						"buffer_size": 8302,
+						"buffer_size": 9620,
 						"line_ending": "Unix"
 					}
 				},
@@ -2831,9 +2807,37 @@
 			"build_system": "Packages/HTML Compressor/HTML Compressor.sublime-build",
 			"command_palette":
 			{
-				"height": 309.0,
+				"height": 255.0,
 				"selected_items":
 				[
+					[
+						"listpa",
+						"Package Control: List Packages"
+					],
+					[
+						"upg",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"bracket",
+						"BracketHighlighter: Jump to Right Bracket"
+					],
+					[
+						"key",
+						"FindKeyConflicts: All Conflicts"
+					],
+					[
+						"upgrad",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"ssjs",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"pip",
+						"Package Control: Install Package"
+					],
 					[
 						"tasks",
 						"Tasks: New document"
@@ -2871,14 +2875,6 @@
 						"Set Syntax: CSS"
 					],
 					[
-						"ssjs",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"listpa",
-						"Package Control: List Packages"
-					],
-					[
 						"sstxt",
 						"Set Syntax: Plain Text"
 					],
@@ -2895,10 +2891,6 @@
 						"Package Control: List Packages"
 					],
 					[
-						"pip",
-						"Package Control: Install Package"
-					],
-					[
 						"disable",
 						"Package Control: Disable Package"
 					],
@@ -2913,10 +2905,6 @@
 					[
 						"remove",
 						"Package Control: Remove Package"
-					],
-					[
-						"upgrad",
-						"Package Control: Upgrade Package"
 					],
 					[
 						"instalp",
@@ -2936,10 +2924,6 @@
 					],
 					[
 						"upgrade",
-						"Package Control: Upgrade Package"
-					],
-					[
-						"upg",
 						"Package Control: Upgrade Package"
 					],
 					[
@@ -3183,10 +3167,6 @@
 						"Project: Add Folder"
 					],
 					[
-						"bracket",
-						"Bracket Highlighter: Fold by Brackets"
-					],
-					[
 						"brack",
 						"Bracket Highlighter: Select Tag"
 					],
@@ -3241,10 +3221,6 @@
 					[
 						"conflict",
 						"FindKeyConflicts: All Conflicts"
-					],
-					[
-						"key",
-						"FindKeyConflicts: All Key Maps"
 					],
 					[
 						"keyma",
@@ -3364,8 +3340,25 @@
 			},
 			"file_history":
 			[
-				"/C/Users/John the whisler/Desktop/act/footer_link.htm",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Example.sublime-keymap",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Default.sublime-keymap",
+				"/C/Users/John the whisler/Desktop/act/eventshow.htm",
+				"/D/www/actPublish/css/jqtransform.css",
+				"/D/www/actPublish/js/jquery.jqtransform.js",
+				"/C/Users/John the whisler/Desktop/DropKick/example/jquery.dropkick-1.0.3.js",
+				"/C/Users/John the whisler/Desktop/act/simplepubevent.js",
+				"/C/Users/John the whisler/Desktop/act/eventpostvalidate.js",
+				"/D/www/actPublish/css/dropkick.css",
+				"/C/Users/John the whisler/Desktop/DropKick/example/examples.html",
+				"/C/Users/John the whisler/Desktop/DropKick/example/example.css",
+				"/C/Users/John the whisler/Desktop/act/footer.htm",
+				"/C/Users/John the whisler/Desktop/act/footer_index.htm",
+				"/C/Users/John the whisler/Desktop/act/index.html",
+				"/D/www/joinus/css/page.css",
+				"/D/www/joinus/joinus.html",
+				"/C/Users/John the whisler/Desktop/act/footer_link.htm",
 				"/C/Users/John the whisler/Desktop/act/pubevent.htm",
 				"/D/www/joinus/index.html",
 				"/C/Users/John the whisler/Desktop/jqtransform/demo.html",
@@ -3445,7 +3438,6 @@
 				"/D/www/structure/css/common.css",
 				"/D/www/actPublish/js/ckeditor/config.js",
 				"/D/www/actPublish/js/ckeditor/ckeditor.js",
-				"/C/Users/John the whisler/Desktop/act/index.html",
 				"/C/Users/John the whisler/Desktop/demo/index.html",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/begin.sublime-snippet",
 				"/D/www/actPublish/js/ckeditor/styles.js",
@@ -3475,23 +3467,7 @@
 				"/D/www/pay.lvye.cn/application/views/layout/layout.php",
 				"/D/www/actPublish/js/index.html",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML Compressor/HTML Compressor.sublime-build",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
-				"/C/Users/John the whisler/Desktop/activated.html",
-				"/C/Users/John the whisler/Desktop/act/activity.css",
-				"/C/Users/John the whisler/Desktop/act/pubevent.js",
-				"/C/Users/John the whisler/Desktop/thumb/thumb.php",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/VintageEx/ex_commands.py",
-				"/C/Users/John the whisler/Desktop/index.min.html",
-				"/D/www/pay.lvye.cn/application/views/index.html",
-				"/C/Users/John the whisler/Desktop/activated.min.html",
-				"/D/www/actPublish/js/jquery.validationEngine.js",
-				"/C/Users/John the whisler/Desktop/compressed/activated.html",
-				"/C/Users/John the whisler/Desktop/act/pubevent-min.js",
-				"/C/Users/John the whisler/Desktop/index.min - 副本.html",
-				"/C/Users/John the whisler/Desktop/act/eventshow.htm",
-				"/C/Users/John the whisler/Desktop/act/eventpreview.htm",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime text 2/Packages/User/jsdoc.sublime-snippet"
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme"
 			],
 			"find":
 			{
@@ -3543,6 +3519,44 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"disable",
+					"emmet_action_enabled.select_next_item",
+					"outward",
+					"match",
+					"alt+",
+					"up",
+					"down",
+					"alt+up",
+					"alt",
+					"breadcrumb",
+					"自由结伴",
+					"tipwrapper",
+					"10个",
+					"活动标签",
+					"短信通知",
+					"集合地点",
+					"报名截止时间",
+					"wrapper",
+					"pic",
+					"$",
+					"threadpic",
+					"select",
+					"jqTransformSelectWrapper",
+					"jqtransform",
+					"function jqtransform",
+					"jqtransform",
+					"包车",
+					"真实姓名",
+					"活动标签",
+					"img",
+					"select",
+					"comparedate",
+					"validate2",
+					"styledselect",
+					"<select",
+					"<![endif]-->",
+					"methods",
+					"selectpicker",
 					"请发送简历至：join_us#lvye.cn(替换#为@) ，邮件标题注明姓名+应聘职位",
 					"加入我们",
 					"设计",
@@ -3632,45 +3646,7 @@
 					".showmethod",
 					".ascent",
 					".orderblock",
-					"filterbar",
-					".actinfo td",
-					"#4f9616",
-					".arealist",
-					"#FC9732",
-					"#1fa0d8",
-					"width: 55px;",
-					"试试输入目的地等关键词",
-					"请输入目的地等关键词",
-					".actscreen dl dd .selected",
-					".actscreen dl dd a:hover",
-					".actinfo",
-					"景  点",
-					"actinfo",
-					"limitw90",
-					".leftimgblock",
-					"369",
-					"\"试试输入目的地等关键词...\")",
-					"typetab",
-					"hotkeywords",
-					"typetab",
-					"tabcr",
-					"#search-input",
-					".joinandprice li",
-					"110",
-					"font",
-					"#footer",
-					"提现审核",
-					"财务对账",
-					"财务总览",
-					"用户管理",
-					" ",
-					"select-box",
-					"5",
-					"select-box",
-					"from_date",
-					"<?php if (in_roles(array('admin'))): ?>",
-					"起始时间",
-					"contain"
+					"filterbar"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -3831,22 +3807,22 @@
 			"groups":
 			[
 				{
-					"selected": 6,
+					"selected": 4,
 					"sheets":
 					[
 						{
 							"buffer": 0,
 							"settings":
 							{
-								"buffer_size": 238,
+								"buffer_size": 216,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										92,
-										92
+										108,
+										108
 									]
 								],
 								"settings":
@@ -4021,8 +3997,8 @@
 								"selection":
 								[
 									[
-										585,
-										585
+										853,
+										853
 									]
 								],
 								"settings":
@@ -4192,15 +4168,15 @@
 							"file": "/D/www/actPublish/index.html",
 							"settings":
 							{
-								"buffer_size": 23003,
+								"buffer_size": 24440,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										4241,
-										4241
+										2531,
+										2531
 									]
 								],
 								"settings":
@@ -4362,25 +4338,25 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 3036.0,
+								"translation.y": 1250.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 3,
-							"file": "/C/Users/John the whisler/Desktop/act/footer.htm",
+							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
 							"settings":
 							{
-								"buffer_size": 8061,
+								"buffer_size": 12989,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3228,
-										3228
+										1878,
+										1878
 									]
 								],
 								"settings":
@@ -4429,7 +4405,7 @@
 										"bh_single_quote_open",
 										"bh_single_quote_close"
 									],
-									"buffer_scroll_name": "32eceb29",
+									"buffer_scroll_name": "9c3e3d39",
 									"codeintel": true,
 									"codeintel_config":
 									{
@@ -4533,574 +4509,34 @@
 										"Python Django": "Python"
 									},
 									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
+									"origin_encoding": "ASCII",
 									"remote_loading": false,
 									"sublime_auto_complete": true,
 									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1650.0,
+								"translation.y": 1228.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 4,
-							"file": "/C/Users/John the whisler/Desktop/act/footer_index.htm",
-							"settings":
-							{
-								"buffer_size": 10949,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										5829,
-										5829
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"buffer_scroll_name": "eda0e059",
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"sublime_auto_complete": true,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/C/Users/John the whisler/Desktop/act/index.html",
-							"settings":
-							{
-								"buffer_size": 35293,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										961,
-										961
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"buffer_scroll_name": "3b9c4a0c",
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"sublime_auto_complete": true,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 264.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/D/www/joinus/joinus.html",
-							"settings":
-							{
-								"buffer_size": 12340,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1793,
-										1793
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"buffer_scroll_name": "b916535a",
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"incomplete_sync": null,
-									"is_xml": false,
-									"origin_encoding": "UTF-8",
-									"remote_loading": false,
-									"sublime_auto_complete": true,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 1008.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
 							"file": "/D/www/actPublish/js/script.js",
 							"settings":
 							{
-								"buffer_size": 7008,
+								"buffer_size": 7157,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										349,
-										349
+										301,
+										301
 									]
 								],
 								"settings":
@@ -5273,27 +4709,20 @@
 								"zoom_level": 1.0
 							},
 							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 0,
-					"sheets":
-					[
+						},
 						{
-							"buffer": 8,
-							"file": "/D/www/joinus/css/page.css",
+							"buffer": 5,
 							"settings":
 							{
-								"buffer_size": 3672,
+								"buffer_size": 873,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										705,
+										705
 									]
 								],
 								"settings":
@@ -5342,7 +4771,6 @@
 										"bh_single_quote_open",
 										"bh_single_quote_close"
 									],
-									"buffer_scroll_name": "4a3f5ccf",
 									"codeintel": true,
 									"codeintel_config":
 									{
@@ -5446,34 +4874,38 @@
 										"Python Django": "Python"
 									},
 									"incomplete_sync": null,
-									"origin_encoding": "ASCII",
-									"remote_loading": false,
+									"is_xml": false,
 									"sublime_auto_complete": true,
-									"synced": false,
-									"syntax": "Packages/CSS/CSS.tmLanguage",
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 352.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
-						},
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
 						{
-							"buffer": 9,
+							"buffer": 6,
 							"file": "/D/www/actPublish/css/page.css",
 							"settings":
 							{
-								"buffer_size": 8302,
+								"buffer_size": 9620,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										882,
-										882
+										9617,
+										9617
 									]
 								],
 								"settings":
@@ -5635,13 +5067,13 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 5668.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
-							"buffer": 10,
+							"buffer": 7,
 							"file": "/D/www/actPublish/css/common.css",
 							"settings":
 							{
@@ -5652,8 +5084,8 @@
 								"selection":
 								[
 									[
-										192,
-										192
+										0,
+										0
 									]
 								],
 								"settings":
@@ -5850,7 +5282,7 @@
 				"cols":
 				[
 					0.0,
-					0.5,
+					0.75,
 					1.0
 				],
 				"rows":
@@ -5872,7 +5304,7 @@
 			{
 				"height": 0.0
 			},
-			"position": "0,2,3,-1,-1,-1,-1,1046,2025,135,3945",
+			"position": "0,2,3,-32000,-32000,-1,-1,1046,2025,135,3945",
 			"replace":
 			{
 				"height": 76.0
@@ -5883,6 +5315,10 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						"jqtra",
+						"actPublish/css/jqtransform.css"
+					],
 					[
 						"commo",
 						"actPublish/css/common.css"
@@ -6390,10 +5826,6 @@
 					[
 						"footer.css",
 						"0929/css/footer.css"
-					],
-					[
-						"content.css",
-						"0929/css/content.css"
 					]
 				],
 				"width": 0.0

@@ -8,6 +8,11 @@
 	},
 
 	{
+		"caption": "Emmet: Wrap With Abbreviation",
+		"command": "wrap_as_you_type"
+	},
+
+	{
 		"caption": "Emmet: Match Pair (outward)",
 		"command": "run_emmet_action",
 		"args": {
@@ -20,6 +25,14 @@
 		"command": "run_emmet_action",
 		"args": {
 			"action": "match_pair_inward"
+		}
+	},
+
+	{
+		"caption": "Emmet: Go to Matching Pair",
+		"command": "run_emmet_action",
+		"args": {
+			"action": "matching_pair"
 		}
 	},
 
@@ -170,5 +183,10 @@
 	{
 		"caption": "Emmet: Rename Tag",
 		"command": "rename_tag"
+	},
+
+	{
+		"caption": "Emmet: Reload Extensions",
+		"command": "emmet_reset_context"
 	}
 ]

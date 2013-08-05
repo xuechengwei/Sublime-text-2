@@ -147,31 +147,116 @@
     ]
   },
   {
+      "keys": [
+          "shift+ctrl+,"
+      ],
+      "args": {
+          "action": "select_previous_item"
+      },
+      "command": "run_emmet_action",
+      "context": [
+          {
+              "key": "emmet_action_enabled.select_previous_item"
+          }
+      ]
+  },
+  {
+      "keys": [
+          "shift+ctrl+g"
+      ],
+      "command": "wrap_as_you_type",
+      "context": [
+          {
+              "operand": false,
+              "operator": "equal",
+              "match_all": true,
+              "key": "setting.is_widget"
+          },
+          {
+              "match_all": true,
+              "key": "emmet_action_enabled.wrap_as_you_type"
+          }
+      ]
+  },
+  {
+      "keys": [
+          "ctrl+alt+right"
+      ],
+      "args": {
+          "action": "next_edit_point"
+      },
+      "command": "run_emmet_action",
+      "context": [
+          {
+              "key": "emmet_action_enabled.next_edit_point"
+          }
+      ]
+  },
+  {
+      "keys": [
+          "ctrl+alt+left"
+      ],
+      "args": {
+          "action": "prev_edit_point"
+      },
+      "command": "run_emmet_action",
+      "context": [
+          {
+              "key": "emmet_action_enabled.prev_edit_point"
+          }
+      ]
+  },
+  {
+      "keys": [
+          "ctrl+,"
+      ],
+      "args": {
+          "action": "match_pair_outward"
+      },
+      "command": "run_emmet_action",
+      "context": [
+          {
+              "key": "emmet_action_enabled.match_pair_outward"
+          }
+      ]
+  },
+  {
         "keys": [
-            "shift+ctrl+,"
+            "shift+ctrl+a"
         ],
-        "args": {
-            "action": "select_previous_item"
-        },
-        "command": "run_emmet_action",
+        "command": "rename_tag",
         "context": [
             {
-                "key": "emmet_action_enabled.select_previous_item"
+                "key": "emmet_action_enabled.rename_tag"
             }
         ]
     },
-    {
+  {
         "keys": [
-            "shift+ctrl+."
+            "ctrl+."
         ],
         "args": {
-            "action": "select_next_item"
+            "action": "match_pair_inward"
         },
         "command": "run_emmet_action",
         "context": [
             {
-                "key": "emmet_action_enabled.select_next_item"
+                "key": "emmet_action_enabled.match_pair_inward"
             }
         ]
-    }
+    },
+  {
+      "keys": [
+          "shift+ctrl+."
+      ],
+      "args": {
+          "action": "select_next_item"
+      },
+      "command": "run_emmet_action",
+      "context": [
+          {
+              "key": "emmet_action_enabled.select_next_item"
+          }
+      ]
+  }
 ]

@@ -1218,7 +1218,7 @@ var emmet = (function(global) {
 			if (!abbr) return '';
 			
 			syntax = syntax || defaultSyntax;
-			profile = profile || defaultProfile;
+//			profile = profile || defaultProfile;
 			
 			var filters = r('filters');
 			var parser = r('abbreviationParser');
@@ -1231,10 +1231,10 @@ var emmet = (function(global) {
 				syntax: syntax, 
 				contextNode: contextNode
 			});
+			
 			var filtersList = filters.composeList(syntax, profile, data[1]);
 			filters.apply(outputTree, filtersList, profile);
 			return outputTree.toString();
-//			return this.require('utils').replaceVariables(outputTree.toString());
 		},
 		
 		/**
@@ -1277,6 +1277,11 @@ if (typeof exports !== 'undefined') {
 		exports = module.exports = emmet;
 	}
 	exports.emmet = emmet;
+}
+
+// export as Require.js module
+if (typeof define !== 'undefined') {
+	define(emmet);
 }/**
  * Emmet abbreviation parser.
  * Takes string abbreviation and recursively parses it into a tree. The parsed 
@@ -1298,8 +1303,8 @@ if (typeof exports !== 'undefined') {
  * @param {Underscore} _
  */
 emmet.define('abbreviationParser', function(require, _) {
-	var reValidName = /^[\w\-\$\:@\!]+\+?$/i;
-	var reWord = /[\w\-:\$]/;
+	var reValidName = /^[\w\-\$\:@\!%]+\+?$/i;
+	var reWord = /[\w\-:\$@]/;
 	
 	var pairs = {
 		'[': ']',
@@ -1428,6 +1433,8 @@ emmet.define('abbreviationParser', function(require, _) {
 			_.each(this.children, function(child) {
 				child.updateProperty(name, value);
 			});
+			
+			return this;
 		},
 		
 		/**
@@ -2026,16 +2033,18 @@ emmet.define('abbreviationParser', function(require, _) {
 	 * @returns {AbbreviationNode}
 	 */
 	function unroll(node) {
-		for (var i = node.children.length - 1, j, child; i >= 0; i--) {
+		for (var i = node.children.length - 1, j, child, maxCount; i >= 0; i--) {
 			child = node.children[i];
 			
 			if (child.isRepeating()) {
-				j = child.repeatCount;
+				maxCount = j = child.repeatCount;
 				child.repeatCount = 1;
 				child.updateProperty('counter', 1);
+				child.updateProperty('maxCount', maxCount);
 				while (--j > 0) {
 					child.parent.addChild(child.clone(), i + 1)
-						.updateProperty('counter', j + 1);
+						.updateProperty('counter', j + 1)
+						.updateProperty('maxCount', maxCount);
 				}
 			}
 		}
@@ -2070,7 +2079,7 @@ emmet.define('abbreviationParser', function(require, _) {
 	
 	function isAllowedChar(ch) {
 		var charCode = ch.charCodeAt(0);
-		var specialChars = '#.*:$-_!@|';
+		var specialChars = '#.*:$-_!@|%';
 		
 		return (charCode > 64 && charCode < 91)       // uppercase letter
 				|| (charCode > 96 && charCode < 123)  // lowercase letter
@@ -2080,7 +2089,7 @@ emmet.define('abbreviationParser', function(require, _) {
 	
 	// XXX add counter replacer function as output processor
 	outputProcessors.push(function(text, node) {
-		return require('utils').replaceCounter(text, node.counter);
+		return require('utils').replaceCounter(text, node.counter, node.maxCount);
 	});
 	
 	return {
@@ -2439,7 +2448,7 @@ emmet.exec(function(require, _) {
 			}
 			
 			item.data('paste', null);
-			return !_.isUndefined(pastedContentObj);
+			return !!pastedContentObj;
 		});
 		
 		if (!targets.length && options.pastedContent) {
@@ -2634,19 +2643,30 @@ var walker, tokens = [], isOp, isNameChar, isDigit;
             conf = getConf();    
      
         cnext = w.nextChar();
-        
-        if (cnext !== '*') {
+
+        if (cnext === '/') {
+            // inline comment in SCSS and such
+            token += cnext;
+            var pk = w.peek();
+            while (pk && pk !== '\n') {
+                token += cnext;
+                cnext = w.nextChar();
+                pk = w.peek();
+            }
+        } else if (cnext === '*') {
+            // multiline CSS commment
+            while (!(c === "*" && cnext === "/")) {
+                token += cnext;
+                c = cnext;
+                cnext = w.nextChar();        
+            }            
+        } else {
             // oops, not a comment, just a /
             conf.charend = conf['char'];
             conf.lineend = conf.line;
             return tokener(token, token, conf);
         }
-    
-        while (!(c === "*" && cnext === "/")) {
-            token += cnext;
-            c = cnext;
-            cnext = w.nextChar();        
-        }
+        
         token += cnext;
         w.nextChar();
         tokener(token, 'comment', conf);
@@ -3227,7 +3247,125 @@ emmet.define('xmlParser', function(require, _) {
 		}		
 	};
 });
+/*!
+ * string_score.js: String Scoring Algorithm 0.1.10 
+ *
+ * http://joshaven.com/string_score
+ * https://github.com/joshaven/string_score
+ *
+ * Copyright (C) 2009-2011 Joshaven Potter <yourtech@gmail.com>
+ * Special thanks to all of the contributors listed here https://github.com/joshaven/string_score
+ * MIT license: http://www.opensource.org/licenses/mit-license.php
+ *
+ * Date: Tue Mar 1 2011
+*/
+
 /**
+ * Scores a string against another string.
+ *  'Hello World'.score('he');     //=> 0.5931818181818181
+ *  'Hello World'.score('Hello');  //=> 0.7318181818181818
+ */
+emmet.define('string-score', function(require, _) {
+	return {
+		score: function(string, abbreviation, fuzziness) {
+			// If the string is equal to the abbreviation, perfect match.
+			  if (string == abbreviation) {return 1;}
+			  //if it's not a perfect match and is empty return 0
+			  if(abbreviation == "") {return 0;}
+
+			  var total_character_score = 0,
+			      abbreviation_length = abbreviation.length,
+			      string_length = string.length,
+			      start_of_string_bonus,
+			      abbreviation_score,
+			      fuzzies=1,
+			      final_score;
+			  
+			  // Walk through abbreviation and add up scores.
+			  for (var i = 0,
+			         character_score/* = 0*/,
+			         index_in_string/* = 0*/,
+			         c/* = ''*/,
+			         index_c_lowercase/* = 0*/,
+			         index_c_uppercase/* = 0*/,
+			         min_index/* = 0*/;
+			     i < abbreviation_length;
+			     ++i) {
+			    
+			    // Find the first case-insensitive match of a character.
+			    c = abbreviation.charAt(i);
+			    
+			    index_c_lowercase = string.indexOf(c.toLowerCase());
+			    index_c_uppercase = string.indexOf(c.toUpperCase());
+			    min_index = Math.min(index_c_lowercase, index_c_uppercase);
+			    index_in_string = (min_index > -1) ? min_index : Math.max(index_c_lowercase, index_c_uppercase);
+			    
+			    if (index_in_string === -1) { 
+			      if (fuzziness) {
+			        fuzzies += 1-fuzziness;
+			        continue;
+			      } else {
+			        return 0;
+			      }
+			    } else {
+			      character_score = 0.1;
+			    }
+			    
+			    // Set base score for matching 'c'.
+			    
+			    // Same case bonus.
+			    if (string[index_in_string] === c) { 
+			      character_score += 0.1; 
+			    }
+			    
+			    // Consecutive letter & start-of-string Bonus
+			    if (index_in_string === 0) {
+			      // Increase the score when matching first character of the remainder of the string
+			      character_score += 0.6;
+			      if (i === 0) {
+			        // If match is the first character of the string
+			        // & the first character of abbreviation, add a
+			        // start-of-string match bonus.
+			        start_of_string_bonus = 1; //true;
+			      }
+			    }
+			    else {
+			  // Acronym Bonus
+			  // Weighing Logic: Typing the first character of an acronym is as if you
+			  // preceded it with two perfect character matches.
+			  if (string.charAt(index_in_string - 1) === ' ') {
+			    character_score += 0.8; // * Math.min(index_in_string, 5); // Cap bonus at 0.4 * 5
+			  }
+			    }
+			    
+			    // Left trim the already matched part of the string
+			    // (forces sequential matching).
+			    string = string.substring(index_in_string + 1, string_length);
+			    
+			    total_character_score += character_score;
+			  } // end of for loop
+			  
+			  // Uncomment to weigh smaller words higher.
+			  // return total_character_score / string_length;
+			  
+			  abbreviation_score = total_character_score / abbreviation_length;
+			  //percentage_of_matched_string = abbreviation_length / string_length;
+			  //word_score = abbreviation_score * percentage_of_matched_string;
+			  
+			  // Reduce penalty for longer strings.
+			  //final_score = (word_score + abbreviation_score) / 2;
+			  final_score = ((abbreviation_score * (abbreviation_length / string_length)) + abbreviation_score) / 2;
+			  
+			  final_score = final_score / fuzzies;
+			  
+			  if (start_of_string_bonus && (final_score + 0.15 < 1)) {
+			    final_score += 0.15;
+			  }
+			  
+			  return final_score;
+		}
+	};
+});/**
  * Utility module for Emmet
  * @param {Function} require
  * @param {Underscore} _
@@ -3389,6 +3527,23 @@ emmet.define('utils', function(require, _) {
 		},
 		
 		/**
+		 * Returns list of paddings that should be used to align passed string
+		 * @param {Array} strings
+		 * @returns {Array}
+		 */
+		getStringsPads: function(strings) {
+			var lengths = _.map(strings, function(s) {
+				return _.isString(s) ? s.length : +s;
+			});
+			
+			var max = _.max(lengths);
+			return _.map(lengths, function(l) {
+				var pad = max - l;
+				return pad ? this.repeatString(' ', pad) : '';
+			}, this);
+		},
+		
+		/**
 		 * Indents text with padding
 		 * @param {String} text Text to indent
 		 * @param {String} pad Padding size (number) or padding itself (string)
@@ -3523,16 +3678,22 @@ emmet.define('utils', function(require, _) {
 		
 		/**
 		 * Replaces '$' character in string assuming it might be escaped with '\'
-		 * @param {String} str String where caracter should be replaced
-		 * @param {String} value Replace value. Might be a <code>Function</code>
+		 * @param {String} str String where character should be replaced
+		 * @param {String} value New value
 		 * @return {String}
 		 */
-		replaceCounter: function(str, value) {
+		replaceCounter: function(str, value, total) {
 			var symbol = '$';
 			// in case we received strings from Java, convert the to native strings
 			str = String(str);
 			value = String(value);
+			
+			if (/^\-?\d+$/.test(value)) {
+				value = +value;
+			}
+			
 			var that = this;
+			
 			return this.replaceUnescapedSymbol(str, symbol, function(str, symbol, pos, matchNum){
 				if (str.charAt(pos + 1) == '{' || that.isNumeric(str.charAt(pos + 1)) ) {
 					// it's a variable, skip it
@@ -3542,7 +3703,27 @@ emmet.define('utils', function(require, _) {
 				// replace sequense of $ symbols with padded number  
 				var j = pos + 1;
 				while(str.charAt(j) == '$' && str.charAt(j + 1) != '{') j++;
-				return [str.substring(pos, j), that.zeroPadString(value, j - pos)];
+				var pad = j - pos;
+				
+				// get counter base
+				var base = 0, decrement = false, m;
+				if (m = str.substr(j).match(/^@(\-?)(\d*)/)) {
+					j += m[0].length;
+					
+					if (m[1]) {
+						decrement = true;
+					}
+					
+					base = parseInt(m[2] || 1) - 1;
+				}
+				
+				if (decrement && total && _.isNumber(value)) {
+					value = total - value + 1;
+				}
+				
+				value += base;
+				
+				return [str.substring(pos, j), that.zeroPadString(value + '', pad)];
 			});
 		},
 		
@@ -3798,6 +3979,27 @@ emmet.define('utils', function(require, _) {
  * @param {Underscore} _
  */
 emmet.define('range', function(require, _) {
+	function cmp(a, b, op) {
+		switch (op) {
+			case 'eq':
+			case '==':
+				return a === b;
+			case 'lt':
+			case '<':
+				return a < b;
+			case 'lte':
+			case '<=':
+				return a <= b;
+			case 'gt':
+			case '>':
+				return a > b;
+			case 'gte':
+			case '>=':
+				return a >= b;
+		}
+	}
+	
+	
 	/**
 	 * @type Range
 	 * @constructor
@@ -3830,7 +4032,8 @@ emmet.define('range', function(require, _) {
 		 * @returns {Boolean}
 		 */
 		equal: function(range) {
-			return this.start === range.start && this.end === range.end;
+			return this.cmp(range, 'eq', 'eq');
+//			return this.start === range.start && this.end === range.end;
 		},
 		
 		/**
@@ -3889,7 +4092,17 @@ emmet.define('range', function(require, _) {
 		 * @param {Number} loc
 		 */
 		inside: function(loc) {
-			return this.start <= loc && this.end > loc;
+			return this.cmp(loc, 'lte', 'gt');
+//			return this.start <= loc && this.end > loc;
+		},
+		
+		/**
+		 * Returns a Boolean value that indicates whether a specified position 
+		 * is in a given range, but not equals bounds.
+		 * @param {Number} loc
+		 */
+		contains: function(loc) {
+			return this.cmp(loc, 'lt', 'gt');
 		},
 		
 		/**
@@ -3898,7 +4111,26 @@ emmet.define('range', function(require, _) {
 		 * @returns {Boolean} 
 		 */
 		include: function(r) {
-			return this.start <= r.start && this.end >= r.end;
+			return this.cmp(loc, 'lte', 'gte');
+//			return this.start <= r.start && this.end >= r.end;
+		},
+		
+		/**
+		 * Low-level comparision method
+		 * @param {Number} loc
+		 * @param {String} left Left comparison operator
+		 * @param {String} right Right comaprison operator
+		 */
+		cmp: function(loc, left, right) {
+			var a, b;
+			if (loc instanceof Range) {
+				a = loc.start;
+				b = loc.end;
+			} else {
+				a = b = loc;
+			}
+			
+			return cmp(this.start, a, left || '<=') && cmp(this.end, b, right || '>');
 		},
 		
 		/**
@@ -4410,6 +4642,15 @@ emmet.define('resources', function(require, _) {
 		}
 	}
 	
+	/**
+	 * Normalizes snippet key name for better fuzzy search
+	 * @param {String} str
+	 * @returns {String}
+	 */
+	function normalizeName(str) {
+		return str.replace(/:$/, '').replace(/:/g, '-');
+	}
+	
 	return {
 		/**
 		 * Sets new unparsed data for specified settings vocabulary
@@ -4437,7 +4678,7 @@ emmet.define('resources', function(require, _) {
 		/**
 		 * Returns resource (abbreviation, snippet, etc.) matched for passed 
 		 * abbreviation
-		 * @param {TreeNode} node
+		 * @param {AbbreviationNode} node
 		 * @param {String} syntax
 		 * @returns {Object}
 		 */
@@ -4544,7 +4785,7 @@ emmet.define('resources', function(require, _) {
 		 * Definition is searched inside `snippets` and `abbreviations` 
 		 * subsections  
 		 * @param {String} syntax Top-level section name (syntax)
-		 * @param {Snippet name} name
+		 * @param {String} name Snippet name
 		 * @returns {Object}
 		 */
 		findSnippet: function(syntax, name, memo) {
@@ -4577,6 +4818,76 @@ emmet.define('resources', function(require, _) {
 			}
 			
 			return matchedItem;
+		},
+		
+		/**
+		 * Performs fuzzy search of snippet definition
+		 * @param {String} syntax Top-level section name (syntax)
+		 * @param {String} name Snippet name
+		 * @returns
+		 */
+		fuzzyFindSnippet: function(syntax, name, minScore) {
+			minScore = minScore || 0.3;
+			
+			var payload = this.getAllSnippets(syntax);
+			var sc = require('string-score');
+			
+			name = normalizeName(name);
+			var scores = _.map(payload, function(value, key) {
+				return {
+					key: key,
+					score: sc.score(value.nk, name, 0.1)
+				};
+			});
+			
+			var result = _.last(_.sortBy(scores, 'score'));
+			if (result && result.score >= minScore) {
+				var k = result.key;
+				return payload[k].parsedValue;
+//				return parseItem(k, payload[k].value, payload[k].type);
+			}
+		},
+		
+		/**
+		 * Returns plain dictionary of all available abbreviations and snippets
+		 * for specified syntax with respect of inheritance
+		 * @param {String} syntax
+		 * @returns {Object}
+		 */
+		getAllSnippets: function(syntax) {
+			var cacheKey = 'all-' + syntax;
+			if (!cache[cacheKey]) {
+				var stack = [], sectionKey = syntax;
+				var memo = [];
+				
+				do {
+					var section = this.getSection(sectionKey);
+					if (!section)
+						break;
+					
+					_.each(['snippets', 'abbreviations'], function(sectionName) {
+						var stackItem = {};
+						_.each(section[sectionName] || null, function(v, k) {
+							stackItem[k] = {
+								nk: normalizeName(k),
+								value: v,
+								parsedValue: parseItem(k, v, sectionName),
+								type: sectionName
+							};
+						});
+						
+						stack.push(stackItem);
+					});
+					
+					memo.push(sectionKey);
+					sectionKey = section['extends'];
+				} while (sectionKey && !_.include(memo, sectionKey));
+				
+				
+				cache[cacheKey] = _.extend.apply(_, stack.reverse());
+			}
+			
+			return cache[cacheKey];
 		}
 	};
 });/**
@@ -4783,7 +5094,12 @@ emmet.define('profile', function(require, _) {
 		self_closing_tag: 'xhtml',
 		
 		// Profile-level output filters, re-defines syntax filters 
-		filters: ''
+		filters: '',
+		
+		// Additional filters applied to abbreviation.
+		// Unlike "filters", this preference doesn't override default filters
+		// but add the instead every time given profile is chosen
+		extraFilters: ''
 	};
 	
 	/**
@@ -4879,7 +5195,7 @@ emmet.define('profile', function(require, _) {
 		createProfile('html', {self_closing_tag: false});
 		createProfile('xml', {self_closing_tag: true, tag_nl: true});
 		createProfile('plain', {tag_nl: false, indent: false, place_cursor: false});
-		createProfile('line', {tag_nl: false, indent: false});
+		createProfile('line', {tag_nl: false, indent: false, extraFilters: 's'});
 	}
 	
 	createDefaultProfiles();
@@ -4909,7 +5225,7 @@ emmet.define('profile', function(require, _) {
 		 * @returns {Object}
 		 */
 		get: function(name, syntax) {
-			if (syntax && _.isString(name)) {
+			if (!name && syntax) {
 				// search in user resources first
 				var profile = require('resources').findItem(syntax, 'profile');
 				if (profile) {
@@ -4917,14 +5233,17 @@ emmet.define('profile', function(require, _) {
 				}
 			}
 			
-			if (!name)
+			if (!name) {
 				return profiles.plain;
+			}
 			
-			if (name instanceof OutputProfile)
+			if (name instanceof OutputProfile) {
 				return name;
+			}
 			
-			if (_.isString(name) && name.toLowerCase() in profiles)
+			if (_.isString(name) && name.toLowerCase() in profiles) {
 				return profiles[name.toLowerCase()];
+			}
 			
 			return this.create(name);
 		},
@@ -4999,10 +5318,15 @@ emmet.define('editorUtils', function(require, _) {
 		 * @param {String} profile
 		 */
 		outputInfo: function(editor, syntax, profile) {
+			// most of this code makes sense for Java/Rhino environment
+			// because string that comes from Java are not actually JS string
+			// but Java String object so the have to be explicitly converted
+			// to native string
+			profile = profile || editor.getProfileName();
 			return  {
 				/** @memberOf outputInfo */
 				syntax: String(syntax || editor.getSyntax()),
-				profile: String(profile || editor.getProfileName()),
+				profile: profile || null,
 				content: String(editor.getContent())
 			};
 		},
@@ -5180,26 +5504,24 @@ emmet.define('actionUtils', function(require, _) {
 			var allowedSyntaxes = {'html': 1, 'xml': 1, 'xsl': 1};
 			var syntax = String(editor.getSyntax());
 			if (syntax in allowedSyntaxes) {
-				var tags = require('html_matcher').getTags(
-						String(editor.getContent()), 
-						editor.getCaretPos(), 
-						String(editor.getProfileName()));
+				var content = String(editor.getContent());
+				var tag = require('htmlMatcher').find(content, editor.getCaretPos());
 				
-				if (tags && tags[0] && tags[0].type == 'tag') {
-					var reAttr = /([\w\-:]+)(?:\s*=\s*(?:(?:"((?:\\.|[^"])*)")|(?:'((?:\\.|[^'])*)')|([^>\s]+)))?/g;
-					var startTag = tags[0];
-					var tagAttrs = startTag.full_tag.replace(/^<[\w\-\:]+/, '');
+				if (tag && tag.type == 'tag') {
+					var startTag = tag.open;
 					var contextNode = {
 						name: startTag.name,
 						attributes: []
 					};
 					
 					// parse attributes
-					var m;
-					while (m = reAttr.exec(tagAttrs)) {
-						contextNode.attributes.push({
-							name: m[1],
-							value: m[2]
+					var tagTree = require('xmlEditTree').parse(startTag.range.substring(content));
+					if (tagTree) {
+						contextNode.attributes = _.map(tagTree.getAll(), function(item) {
+							return {
+								name: item.name(),
+								value: item.value()
+							};
 						});
 					}
 					
@@ -5250,6 +5572,105 @@ emmet.define('actionUtils', function(require, _) {
 			}
 			
 			return false;
+		},
+		
+		/**
+		 * Common syntax detection method for editors that doesn’t provide any
+		 * info about current syntax scope. 
+		 * @param {IEmmetEditor} editor Current editor
+		 * @param {String} hint Any syntax hint that editor can provide 
+		 * for syntax detection. Default is 'html'
+		 * @returns {String} 
+		 */
+		detectSyntax: function(editor, hint) {
+			var syntax = hint || 'html';
+			
+			if (!require('resources').hasSyntax(syntax)) {
+				syntax = 'html';
+			}
+			
+			if (syntax == 'html' && (this.isStyle(editor) || this.isInlineCSS(editor))) {
+				syntax = 'css';
+			}
+			
+			return syntax;
+		},
+		
+		/**
+		 * Common method for detecting output profile
+		 * @param {IEmmetEditor} editor
+		 * @returns {String}
+		 */
+		detectProfile: function(editor) {
+			var syntax = editor.getSyntax();
+			
+			// get profile from syntax definition
+			var profile = require('resources').findItem(syntax, 'profile');
+			if (profile) {
+				return profile;
+			}
+			
+			switch(syntax) {
+				case 'xml':
+				case 'xsl':
+					return 'xml';
+				case 'css':
+					if (this.isInlineCSS(editor)) {
+						return 'line';
+					}
+					break;
+				case 'html':
+					var profile = require('resources').getVariable('profile');
+					if (!profile) { // no forced profile, guess from content
+						// html or xhtml?
+						profile = this.isXHTML(editor) ? 'xhtml': 'html';
+					}
+
+					return profile;
+			}
+
+			return 'xhtml';
+		},
+		
+		/**
+		 * Tries to detect if current document is XHTML one.
+		 * @param {IEmmetEditor} editor
+		 * @returns {Boolean}
+		 */
+		isXHTML: function(editor) {
+			return editor.getContent().search(/<!DOCTYPE[^>]+XHTML/i) != -1;
+		},
+		
+		/**
+		 * Check if current caret position is inside &lt;style&gt; tag
+		 * @param {IEmmetEditor} editor
+		 * @returns
+		 */
+		isStyle: function(editor) {
+			var content = String(editor.getContent());
+			var caretPos = editor.getCaretPos();
+			var tag = require('htmlMatcher').tag(content, caretPos);
+			return tag && tag.open.name.toLowerCase() == 'style' 
+				&& tag.innerRange.cmp(caretPos, 'lte', 'gte');
+		},
+		
+		/**
+		 * Check if current caret position is inside "style" attribute of HTML
+		 * element
+		 * @param {IEmmetEditor} editor
+		 * @returns {Boolean}
+		 */
+		isInlineCSS: function(editor) {
+			var content = String(editor.getContent());
+			var caretPos = editor.getCaretPos();
+			var tree = require('xmlEditTree').parseFromPosition(content, caretPos, true);
+            if (tree) {
+                var attr = tree.itemFromPosition(caretPos, true);
+                return attr && attr.name().toLowerCase() == 'style' 
+                	&& attr.valueRange(true).cmp(caretPos, 'lte', 'gte');
+            }
+            
+            return false;
 		}
 	};
 });/**
@@ -5275,11 +5696,12 @@ emmet.define('abbreviationUtils', function(require, _) {
 		 * @return {Boolean}
 		 */
 		isUnary: function(node) {
-			var r = node.matchedResource();
-			if (node.children.length || this.isSnippet(node))
+			if (node.children.length || node._text || this.isSnippet(node)) {
 				return false;
+			}
 			
-			return r && r.is_empty || require('tagName').isEmptyElement(node.name());
+			var r = node.matchedResource();
+			return r && r.is_empty;
 		},
 		
 		/**
@@ -5299,8 +5721,16 @@ emmet.define('abbreviationUtils', function(require, _) {
 		 * @return {Boolean}
 		 */
 		isBlock: function(node) {
-			return require('elements').is(node.matchedResource(), 'snippet') 
-				|| !this.isInline(node);
+			return this.isSnippet(node) || !this.isInline(node);
+		},
+		
+		/**
+		 * Test if given node is a snippet
+		 * @param {AbbreviationNode} node
+		 * @return {Boolean}
+		 */
+		isSnippet: function(node) {
+			return require('elements').is(node.matchedResource(), 'snippet');
 		},
 		
 		/**
@@ -5450,305 +5880,283 @@ emmet.define('base64', function(require, _) {
 		}
 	};
 });/**
- * @author Sergey Chikuyonok (serge.che@gmail.com)
- * @link http://chikuyonok.ru
- */(function(){
+ * HTML matcher: takes string and searches for HTML tag pairs for given position 
+ * 
+ * Unlike “classic” matchers, it parses content from the specified 
+ * position, not from the start, so it may work even outside HTML documents
+ * (for example, inside strings of programming languages like JavaScript, Python 
+ * etc.)
+ * @constructor
+ * @memberOf __htmlMatcherDefine
+ */
+emmet.define('htmlMatcher', function(require, _) {
 	// Regular Expressions for parsing tags and attributes
-	var start_tag = /^<([\w\:\-]+)((?:\s+[\w\-:]+(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*(\/?)>/,
-		end_tag = /^<\/([\w\:\-]+)[^>]*>/,
-		attr = /([\w\-:]+)(?:\s*=\s*(?:(?:"((?:\\.|[^"])*)")|(?:'((?:\\.|[^'])*)')|([^>\s]+)))?/g;
-		
-	// Empty Elements - HTML 4.01
-	var empty = makeMap("area,base,basefont,br,col,frame,hr,img,input,isindex,link,meta,param,embed");
-
-	// Block Elements - HTML 4.01
-	var block = makeMap("address,applet,blockquote,button,center,dd,dir,div,dl,dt,fieldset,form,frameset,hr,iframe,isindex,li,map,menu,noframes,noscript,object,ol,p,pre,script,table,tbody,td,tfoot,th,thead,tr,ul");
-
-	// Inline Elements - HTML 4.01
-	var inline = makeMap("a,abbr,acronym,applet,b,basefont,bdo,big,br,button,cite,code,del,dfn,em,font,i,iframe,img,input,ins,kbd,label,map,object,q,s,samp,select,small,span,strike,strong,sub,sup,textarea,tt,u,var");
-
-	// Elements that you can, intentionally, leave open
-	// (and which close themselves)
-	var close_self = makeMap("colgroup,dd,dt,li,options,p,td,tfoot,th,thead,tr");
+	var reOpenTag = /^<([\w\:\-]+)((?:\s+[\w\-:]+(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*(\/?)>/;
+	var reCloseTag = /^<\/([\w\:\-]+)[^>]*>/;
 	
-	/** Current matching mode */
-	var cur_mode = 'xhtml';
-	
-	/** Last matched HTML pair */
-	var last_match = {
-		opening_tag: null, // tag() or comment() object
-		closing_tag: null, // tag() or comment() object
-		start_ix: -1,
-		end_ix: -1
-	};
-	
-	function setMode(new_mode) {
-		if (!new_mode || new_mode != 'html')
-			new_mode = 'xhtml';
-			
-		cur_mode = new_mode;
-	}
-	
-	function tag(match, ix) {
-		var name = match[1].toLowerCase();
-		return  {
-			name: name,
-			full_tag: match[0],
-			start: ix,
-			end: ix + match[0].length,
-			unary: Boolean(match[3]) || (name in empty && cur_mode == 'html'),
-			has_close: Boolean(match[3]),
-			type: 'tag',
-			close_self: (name in close_self && cur_mode == 'html')
+	function openTag(i, match) {
+		return {
+			name: match[1],
+			selfClose: !!match[3],
+			/** @type Range */
+			range: require('range').create(i, match[0]),
+			type: 'open'
 		};
 	}
 	
-	function comment(start, end) {
+	function closeTag(i, match) {
 		return {
-			start: start,
-			end: end,
+			name: match[1],
+			/** @type Range */
+			range: require('range').create(i, match[0]),
+			type: 'close'
+		};
+	}
+	
+	function comment(i, match) {
+		return {
+			/** @type Range */
+			range: require('range').create(i, _.isNumber(match) ? match - i : match[0]),
 			type: 'comment'
 		};
 	}
 	
-	function makeMap(str){
-		var obj = {}, items = str.split(",");
-		for ( var i = 0; i < items.length; i++ )
-			obj[ items[i] ] = true;
-		return obj;
-	}
-	
 	/**
-	 * Makes selection ranges for matched tag pair
-	 * @param {tag} opening_tag
-	 * @param {tag} closing_tag
-	 * @param {Number} ix
-	 */
-	function makeRange(opening_tag, closing_tag, ix) {
-		ix = ix || 0;
-		
-		var start_ix = -1, 
-			end_ix = -1;
-		
-		if (opening_tag && !closing_tag) { // unary element
-			start_ix = opening_tag.start;
-			end_ix = opening_tag.end;
-		} else if (opening_tag && closing_tag) { // complete element
-			if (
-				(opening_tag.start < ix && opening_tag.end > ix) || 
-				(closing_tag.start <= ix && closing_tag.end > ix)
-			) {
-				start_ix = opening_tag.start;
-				end_ix = closing_tag.end;
-			} else {
-				start_ix = opening_tag.end;
-				end_ix = closing_tag.start;
-			}
-		}
-		
-		return [start_ix, end_ix];
-	}
-	
-	/**
-	 * Save matched tag for later use and return found indexes
-	 * @param {tag} opening_tag
-	 * @param {tag} closing_tag
-	 * @param {Number} ix
-	 * @return {Array}
-	 */
-	function saveMatch(opening_tag, closing_tag, ix) {
-		ix = ix || 0;
-		last_match.opening_tag = opening_tag; 
-		last_match.closing_tag = closing_tag;
-		
-		var range = makeRange(opening_tag, closing_tag, ix);
-		last_match.start_ix = range[0];
-		last_match.end_ix = range[1];
-		
-		return last_match.start_ix != -1 ? [last_match.start_ix, last_match.end_ix] : null;
-	}
-	
-	/**
-	 * Handle unary tag: find closing tag if needed
+	 * Creates new tag matcher session
 	 * @param {String} text
-	 * @param {Number} ix
-	 * @param {tag} open_tag
-	 * @return {tag|null} Closing tag (or null if not found) 
 	 */
-	function handleUnaryTag(text, ix, open_tag) {
-		if (open_tag.has_close)
-			return null;
-		else {
-			// TODO finish this method
-		}
+	function createMatcher(text) {
+		var memo = {}, m;
+		return {
+			/**
+			 * Test if given position matches opening tag
+			 * @param {Number} i
+			 * @returns {Object} Matched tag object
+			 */
+			open: function(i) {
+				var m = this.matches(i);
+				return m && m.type == 'open' ? m : null;
+			},
+			
+			/**
+			 * Test if given position matches closing tag
+			 * @param {Number} i
+			 * @returns {Object} Matched tag object
+			 */
+			close: function(i) {
+				var m = this.matches(i);
+				return m && m.type == 'close' ? m : null;
+			},
+			
+			/**
+			 * Matches either opening or closing tag for given position
+			 * @param i
+			 * @returns
+			 */
+			matches: function(i) {
+				var key = 'p' + i;
+				
+				if (!(key in memo)) {
+					if (text.charAt(i) == '<') {
+						var substr = text.slice(i);
+						if (m = substr.match(reOpenTag)) {
+							memo[key] = openTag(i, m);
+						} else if (m = substr.match(reCloseTag)) {
+							memo[key] = closeTag(i, m);
+						} else {
+							// remember that given position contains no valid tag
+							memo[key] = false;
+						}
+					}
+				}
+				
+				return memo[key];
+			},
+			
+			/**
+			 * Returns original text
+			 * @returns {String}
+			 */
+			text: function() {
+				return text;
+			}
+		};
+	}
+	
+	function matches(text, pos, pattern) {
+		return text.substring(pos, pos + pattern.length) == pattern;
 	}
 	
 	/**
-	 * Search for matching tags in <code>html</code>, starting from 
-	 * <code>start_ix</code> position
-	 * @param {String} html Code to search
-	 * @param {Number} start_ix Character index where to start searching pair 
-	 * (commonly, current caret position)
-	 * @param {Function} action Function that creates selection range
-	 * @return {Array}
+	 * Search for closing pair of opening tag
+	 * @param {Object} open Open tag instance
+	 * @param {Object} matcher Matcher instance
 	 */
-	function findPair(html, start_ix, mode, action) {
-		action = action || makeRange;
-		setMode(mode);
+	function findClosingPair(open, matcher) {
+		var stack = [], tag = null;
+		var text = matcher.text();
 		
-		var forward_stack = [],
-			backward_stack = [],
-			/** @type {tag()} */
-			opening_tag = null,
-			/** @type {tag()} */
-			closing_tag = null,
-			html_len = html.length,
-			m,
-			ix,
-			tmp_tag;
-			
-		forward_stack.last = backward_stack.last = function() {
-			return this[this.length - 1];
-		};
-		
-		function hasMatch(str, start) {
-			if (arguments.length == 1)
-				start = ix;
-			return html.substr(start, str.length) == str;
-		}
-		
-		function searchCommentStart(from) {
-			while (from--) {
-				if (html.charAt(from) == '<' && hasMatch('<!--', from))
-					break;
-			}
-			
-			return from;
-		}
-		
-		// find opening tag
-		ix = start_ix;
-		while (ix-- && ix >= 0) {
-			var ch = html.charAt(ix);
-			if (ch == '<') {
-				var check_str = html.substring(ix, html_len);
-				
-				if ( (m = check_str.match(end_tag)) ) { // found closing tag
-					tmp_tag = tag(m, ix);
-					if (tmp_tag.start < start_ix && tmp_tag.end > start_ix) // direct hit on searched closing tag
-						closing_tag = tmp_tag;
-					else
-						backward_stack.push(tmp_tag);
-				} else if ( (m = check_str.match(start_tag)) ) { // found opening tag
-					tmp_tag = tag(m, ix);
-					
-					if (tmp_tag.unary) {
-						if (tmp_tag.start < start_ix && tmp_tag.end > start_ix) // exact match
-							// TODO handle unary tag 
-							return action(tmp_tag, null, start_ix);
-					} else if (backward_stack.last() && backward_stack.last().name == tmp_tag.name) {
-						backward_stack.pop();
-					} else { // found nearest unclosed tag
-						opening_tag = tmp_tag;
+		for (var pos = open.range.end, len = text.length; pos < len; pos++) {
+			if (matches(text, pos, '<!--')) {
+				// skip to end of comment
+				for (var j = pos; j < len; j++) {
+					if (matches(text, j, '-->')) {
+						pos = j + 3;
 						break;
 					}
-				} else if (check_str.indexOf('<!--') == 0) { // found comment start
-					var end_ix = check_str.search('-->') + ix + 3;
-					if (ix < start_ix && end_ix >= start_ix)
-						return action( comment(ix, end_ix) );
 				}
-			} else if (ch == '-' && hasMatch('-->')) { // found comment end
-				// search left until comment start is reached
-				ix = searchCommentStart(ix);
 			}
-		}
-		
-		if (!opening_tag)
-			return action(null);
-		
-		// find closing tag
-		if (!closing_tag) {
-			for (ix = start_ix; ix < html_len; ix++) {
-				var ch = html.charAt(ix);
-				if (ch == '<') {
-					var check_str = html.substring(ix, html_len);
+			
+			if (tag = matcher.matches(pos)) {
+				if (tag.type == 'open' && !tag.selfClose) {
+					stack.push(tag.name);
+				} else if (tag.type == 'close') {
+					if (!stack.length) { // found valid pair?
+						return tag.name == open.name ? tag : null;
+					}
 					
-					if ( (m = check_str.match(start_tag)) ) { // found opening tag
-						tmp_tag = tag(m, ix);
-						if (!tmp_tag.unary)
-							forward_stack.push( tmp_tag );
-					} else if ( (m = check_str.match(end_tag)) ) { // found closing tag
-						var tmp_tag = tag(m, ix);
-						if (forward_stack.last() && forward_stack.last().name == tmp_tag.name)
-							forward_stack.pop();
-						else { // found matched closing tag
-							closing_tag = tmp_tag;
-							break;
+					// check if current closing tag matches previously opened one
+					if (_.last(stack) == tag.name) {
+						stack.pop();
+					} else {
+						var found = false;
+						while (stack.length && !found) {
+							var last = stack.pop();
+							if (last == tag.name) {
+								found = true;
+							}
 						}
-					} else if (hasMatch('<!--')) { // found comment
-						ix += check_str.search('-->') + 2;
-					}
-				} else if (ch == '-' && hasMatch('-->')) {
-					// looks like cursor was inside comment with invalid HTML
-					if (!forward_stack.last() || forward_stack.last().type != 'comment') {
-						var end_ix = ix + 3;
-						return action(comment( searchCommentStart(ix), end_ix ));
+						
+						if (!stack.length && !found) {
+							return tag.name == open.name ? tag : null;
+						}
 					}
 				}
 			}
+			
 		}
-		
-		return action(opening_tag, closing_tag, start_ix);
 	}
 	
-	/**
-	 * Search for matching tags in <code>html</code>, starting 
-	 * from <code>start_ix</code> position. The result is automatically saved in 
-	 * <code>last_match</code> property
-	 * 
-	 * @return {Array|null}
-	 */
-	var HTMLPairMatcher = function(/* String */ html, /* Number */ start_ix, /*  */ mode){
-		return findPair(html, start_ix, mode, saveMatch);
+	return {
+		/**
+		 * Main function: search for tag pair in <code>text</code> for given 
+		 * position
+		 * @memberOf htmlMatcher
+		 * @param {String} text 
+		 * @param {Number} pos
+		 * @returns {Object}
+		 */
+		find: function(text, pos) {
+			var range = require('range');
+			var matcher = createMatcher(text); 
+			var open = null, close = null;
+			
+			for (var i = pos; i >= 0; i--) {
+				if (open = matcher.open(i)) {
+					// found opening tag
+					if (open.selfClose) {
+						if (open.range.cmp(pos, 'lt', 'gt')) {
+							// inside self-closing tag, found match
+							break;
+						}
+						
+						// outside self-closing tag, continue
+						continue;
+					}
+					
+					close = findClosingPair(open, matcher);
+					if (close) {
+						// found closing tag.
+						var r = range.create2(open.range.start, close.range.end);
+						if (r.contains(pos)) {
+							break;
+						}
+					} else if (open.range.contains(pos)) {
+						// we inside empty HTML tag like <br>
+						break;
+					}
+					
+					open = null;
+				} else if (matches(text, i, '-->')) {
+					// skip back to comment start
+					for (var j = i - 1; j >= 0; j--) {
+						if (matches(text, j, '-->')) {
+							// found another comment end, do nothing
+							break;
+						} else if (matches(text, j, '<!--')) {
+							i = j;
+							break;
+						}
+					}
+				} else if (matches(text, i, '<!--')) {
+					// we're inside comment, match it
+					var j = i + 4, jl = text.length;
+					for (; j < jl; j++) {
+						if (matches(text, j, '-->')) {
+							j += 3;
+							break;
+						}
+					}
+					
+					open = comment(i, j);
+					break;
+				}
+			}
+			
+			if (open) {
+				var outerRange = null;
+				var innerRange = null;
+				
+				if (close) {
+					outerRange = range.create2(open.range.start, close.range.end);
+					innerRange = range.create2(open.range.end, close.range.start);
+				} else {
+					outerRange = innerRange = range.create2(open.range.start, open.range.end);
+				}
+				
+				if (open.type == 'comment') {
+					// adjust positions of inner range for comment
+					var _c = outerRange.substring(text);
+					innerRange.start += _c.length - _c.replace(/^<\!--\s*/, '').length;
+					innerRange.end -= _c.length - _c.replace(/\s*-->$/, '').length;
+				}
+				
+				return {
+					open: open,
+					close: close,
+					type: open.type == 'comment' ? 'comment' : 'tag',
+					innerRange: innerRange,
+					innerContent: function() {
+						return this.innerRange.substring(text);
+					},
+					outerRange: outerRange,
+					outerContent: function() {
+						return this.outerRange.substring(text);
+					},
+					range: !innerRange.length() || !innerRange.cmp(pos, 'lte', 'gte') ? outerRange : innerRange,
+					content: function() {
+						return this.range.substring(text);
+					},
+					source: text
+				};
+			}
+		},
+		
+		/**
+		 * The same as <code>find()</code> method, but restricts matched result 
+		 * to <code>tag</code> type
+		 * @param {String} text 
+		 * @param {Number} pos
+		 * @returns {Object}
+		 */
+		tag: function(text, pos) {
+			var result = this.find(text, pos);
+			if (result && result.type == 'tag') {
+				return result;
+			}
+		}
 	};
-	
-	HTMLPairMatcher.start_tag = start_tag;
-	HTMLPairMatcher.end_tag = end_tag;
-	
-	/**
-	 * Search for matching tags in <code>html</code>, starting from 
-	 * <code>start_ix</code> position. The difference between 
-	 * <code>HTMLPairMatcher</code> function itself is that <code>find</code> 
-	 * method doesn't save matched result in <code>last_match</code> property.
-	 * This method is generally used for lookups 
-	 */
-	HTMLPairMatcher.find = function(html, start_ix, mode) {
-		return findPair(html, start_ix, mode);
-	};
-	
-	/**
-	 * Search for matching tags in <code>html</code>, starting from 
-	 * <code>start_ix</code> position. The difference between 
-	 * <code>HTMLPairMatcher</code> function itself is that <code>getTags</code> 
-	 * method doesn't save matched result in <code>last_match</code> property 
-	 * and returns array of opening and closing tags
-	 * This method is generally used for lookups 
-	 */
-	HTMLPairMatcher.getTags = function(html, start_ix, mode) {
-		return findPair(html, start_ix, mode, function(opening_tag, closing_tag){
-			return [opening_tag, closing_tag];
-		});
-	};
-	
-	HTMLPairMatcher.last_match = last_match;
-	
-	try {
-		emmet.define('html_matcher', function() {
-			return HTMLPairMatcher;
-		});
-	} catch(e){}
-	
-})();/**
+});/**
  * Utility module for handling tabstops tokens generated by Emmet's 
  * "Expand Abbreviation" action. The main <code>extract</code> method will take
  * raw text (for example: <i>${0} some ${1:text}</i>), find all tabstops 
@@ -6040,8 +6448,9 @@ emmet.define('tabStops', function(require, _) {
 					return require('utils').getCaretPlaceholder();
 				
 				var attr = node.attribute(varName);
-				if (!_.isUndefined(attr))
+				if (!_.isUndefined(attr) && attr !== str) {
 					return attr;
+				}
 				
 				var varValue = res.getVariable(varName);
 				if (varValue)
@@ -6053,11 +6462,6 @@ emmet.define('tabStops', function(require, _) {
 					
 				return '${' + placeholderMemo[varName] + ':' + varName + '}';
 			};
-		},
-		
-		resetPlaceholderCounter: function() {
-			console.log('deprecated');
-			startPlaceholderNum = 100;
 		},
 		
 		/**
@@ -6167,7 +6571,9 @@ emmet.define('preferences', function(require, _) {
 							v = parseInt(v + '', 10) || 0;
 							break;
 						default: // convert to string
-							v += '';
+							if (v !== null) {
+								v += '';
+							}
 					}
 
 					preferences[k] = v;
@@ -6201,10 +6607,13 @@ emmet.define('preferences', function(require, _) {
 		 */
 		getArray: function(name) {
 			var val = this.get(name);
-			if (!_.isUndefined(val)) {
-				val = _.map(val.split(','), require('utils').trim);
-				if (!val.length)
-					val = null;
+			if (_.isUndefined(val) || val === null || val === '')  {
+				return null;
+			}
+
+			val = _.map(val.split(','), require('utils').trim);
+			if (!val.length) {
+				return null;
 			}
 			
 			return val;
@@ -6381,13 +6790,19 @@ emmet.define('filters', function(require, _) {
 		composeList: function(syntax, profile, additionalFilters) {
 			profile = require('profile').get(profile);
 			var filters = list(profile.filters || require('resources').findItem(syntax, 'filters') || basicFilters);
+			
+			if (profile.extraFilters) {
+				filters = filters.concat(list(profile.extraFilters));
+			}
 				
-			if (additionalFilters)
+			if (additionalFilters) {
 				filters = filters.concat(list(additionalFilters));
+			}
 				
-			if (!filters || !filters.length)
+			if (!filters || !filters.length) {
 				// looks like unknown syntax, apply basic filters
 				filters = list(basicFilters);
+			}
 				
 			return filters;
 		},
@@ -6415,7 +6830,7 @@ emmet.define('filters', function(require, _) {
  */
 emmet.define('elements', function(require, _) {
 	var factories = {};
-	var reAttrs = /([\w\-]+)\s*=\s*(['"])(.*?)\2/g;
+	var reAttrs = /([\w\-:]+)\s*=\s*(['"])(.*?)\2/g;
 	
 	var result = {
 		/**
@@ -7748,26 +8163,26 @@ emmet.define('expandAbbreviation', function(require, _) {
 	 * @param {String} profile Output profile name (html, xml, xhtml)
 	 */
 	actions.add('expand_abbreviation_with_tab', function(editor, syntax, profile) {
-		// do nothing if there is a selection
-		var sel = !!editor.getSelection();
+		var sel = editor.getSelection();
 		var indent = require('resources').getVariable('indentation');
-//		TODO create indentation
-//		if (sel) {
-//			// create a proper indentation, if there’s a selection that
-//			// spans multiple lines
-//			if (/[\r\n]/.test(sel)) {
-//				var info = require('editorUtils').outputInfo(editor, syntax);
-//				var selRange = require('range').create(editor.getSelectionRange());
-//				
-//			}
-//			
-//			return;
-//		}
+		if (sel) {
+			// indent selection
+			var utils = require('utils');
+			var selRange = require('range').create(editor.getSelectionRange());
+			var content = utils.padString(sel, indent);
+			
+			editor.replaceContent(indent + '${0}', editor.getCaretPos());
+			var replaceRange = require('range').create(editor.getCaretPos(), selRange.length());
+			editor.replaceContent(content, replaceRange.start, replaceRange.end, true);
+			editor.createSelection(replaceRange.start, replaceRange.start + content.length);
+			return true;
+		}
 		
-		
-		if (sel || !actions.run('expand_abbreviation', editor, syntax, profile)) {
+		if (!actions.run('expand_abbreviation', editor, syntax, profile)) {
 			editor.replaceContent(indent, editor.getCaretPos());
 		}
+		
+		return true;
 	}, {hidden: true});
 	
 	// XXX setup default handler
@@ -7861,8 +8276,6 @@ emmet.define('wrapWithAbbreviation', function(require, _) {
 		var utils = require('utils');
 		/** @type emmet.editorUtils */
 		var editorUtils = require('editorUtils');
-		var matcher = require('html_matcher');
-		
 		abbr = abbr || editor.prompt("Enter abbreviation");
 		
 		if (!abbr) 
@@ -7870,30 +8283,25 @@ emmet.define('wrapWithAbbreviation', function(require, _) {
 		
 		abbr = String(abbr);
 		
-		var range = editor.getSelectionRange();
-		var startOffset = range.start;
-		var endOffset = range.end;
+		var range = require('range').create(editor.getSelectionRange());
 		
-		if (startOffset == endOffset) {
+		if (!range.length()) {
 			// no selection, find tag pair
-			range = matcher(info.content, startOffset, info.profile);
-			
-			if (!range || range[0] == -1) // nothing to wrap
+			var match = require('htmlMatcher').tag(info.content, range.start);
+			if (!match) {  // nothing to wrap
 				return false;
+			}
 			
-			/** @type Range */
-			var narrowedSel = utils.narrowToNonSpace(info.content, range[0], range[1] - range[0]);
-			startOffset = narrowedSel.start;
-			endOffset = narrowedSel.end;
+			range = utils.narrowToNonSpace(info.content, match.range);
 		}
 		
-		var newContent = utils.escapeText(info.content.substring(startOffset, endOffset));
+		var newContent = utils.escapeText(range.substring(info.content));
 		var result = module
 			.wrap(abbr, editorUtils.unindent(editor, newContent), info.syntax, 
 					info.profile, require('actionUtils').captureContext(editor));
 		
 		if (result) {
-			editor.replaceContent(result, startOffset, endOffset);
+			editor.replaceContent(result, range.start, range.end);
 			return true;
 		}
 		
@@ -7920,7 +8328,7 @@ emmet.define('wrapWithAbbreviation', function(require, _) {
 			var utils = require('utils');
 			
 			syntax = syntax || emmet.defaultSyntax();
-			profile = profile || emmet.defaultProfile();
+			profile = require('profile').get(profile, syntax);
 			
 			require('tabStops').resetTabstopIndex();
 			
@@ -7962,10 +8370,9 @@ emmet.exec(function(require, _) {
 			
 		if (!range.length()) {
 			// no selection, find matching tag
-			var pair = require('html_matcher').getTags(info.content, editor.getCaretPos(), info.profile);
-			if (pair && pair[0]) { // found pair
-				range.start = pair[0].start;
-				range.end = pair[1] ? pair[1].end : pair[0].end;
+			var tag = require('htmlMatcher').tag(info.content, editor.getCaretPos());
+			if (tag) { // found pair
+				range = tag.outerRange;
 			}
 		}
 		
@@ -8138,9 +8545,8 @@ emmet.exec(function(require, _) {
 			// current token, we have to make sure that cursor is not inside
 			// 'style' attribute of html element
 			var caretPos = editor.getCaretPos();
-			var pair = require('html_matcher').getTags(info.content, caretPos);
-			if (pair && pair[0] && pair[0].type == 'tag' && 
-					pair[0].start <= caretPos && pair[0].end >= caretPos) {
+			var tag = require('htmlMatcher').tag(info.content, caretPos);
+			if (tag && tag.open.range.inside(caretPos)) {
 				info.syntax = 'html';
 			}
 		}
@@ -8254,8 +8660,12 @@ emmet.exec(function(require, _) {
 	 */
 	actions.add('next_edit_point', function(editor) {
 		var newPoint = findNewEditPoint(editor, 1);
-		if (newPoint != -1)
+		if (newPoint != -1) {
 			editor.setCaretPos(newPoint);
+			return true;
+		}
+		
+		return false;
 	});
 });/**
  * Actions that use stream parsers and tokenizers for traversing:
@@ -8729,7 +9139,8 @@ emmet.exec(function(require, _) {
 emmet.exec(function(require, _) {
 	/** @type emmet.actions */
 	var actions = require('actions');
-	var matcher = require('html_matcher');
+	var matcher = require('htmlMatcher');
+	var lastMatch = null;
 	
 	/**
 	 * Find and select HTML tag pair
@@ -8737,54 +9148,60 @@ emmet.exec(function(require, _) {
 	 * @param {String} direction Direction of pair matching: 'in' or 'out'. 
 	 * Default is 'out'
 	 */
-	function matchPair(editor, direction, syntax) {
+	function matchPair(editor, direction) {
 		direction = String((direction || 'out').toLowerCase());
-		var info = require('editorUtils').outputInfo(editor, syntax);
-		syntax = info.syntax;
+		var info = require('editorUtils').outputInfo(editor);
 		
 		var range = require('range');
 		/** @type Range */
-		var selRange = range.create(editor.getSelectionRange());
+		var sel = range.create(editor.getSelectionRange());
 		var content = info.content;
-		/** @type Range */
-		var tagRange = null;
-		/** @type Range */
-		var _r;
 		
-		var oldOpenTag = matcher.last_match['opening_tag'];
-		var oldCloseTag = matcher.last_match['closing_tag'];
-			
-		if (direction == 'in' && oldOpenTag && selRange.length()) {
-//			user has previously selected tag and wants to move inward
-			if (!oldCloseTag) {
-//				unary tag was selected, can't move inward
-				return false;
-			} else if (oldOpenTag.start == selRange.start) {
-				if (content.charAt(oldOpenTag.end) == '<') {
-//					test if the first inward tag matches the entire parent tag's content
-					_r = range.create(matcher.find(content, oldOpenTag.end + 1, syntax));
-					if (_r.start == oldOpenTag.end && _r.end == oldCloseTag.start) {
-						tagRange = range.create(matcher(content, oldOpenTag.end + 1, syntax));
-					} else {
-						tagRange = range.create(oldOpenTag.end, oldCloseTag.start - oldOpenTag.end);
-					}
-				} else {
-					tagRange = range.create(oldOpenTag.end, oldCloseTag.start - oldOpenTag.end);
-				}
-			} else {
-				var newCursor = content.substring(0, oldCloseTag.start).indexOf('<', oldOpenTag.end);
-				var searchPos = newCursor != -1 ? newCursor + 1 : oldOpenTag.end;
-				tagRange = range.create(matcher(content, searchPos, syntax));
-			}
-		} else {
-			tagRange = range.create(matcher(content, selRange.end, syntax));
+		// validate previous match
+		if (lastMatch && !lastMatch.range.equal(sel)) {
+			lastMatch = null;
 		}
 		
-		if (tagRange && tagRange.start != -1) {
-			editor.createSelection(tagRange.start, tagRange.end);
+		if (lastMatch && sel.length()) {
+			if (direction == 'in') {
+				// user has previously selected tag and wants to move inward
+				if (lastMatch.type == 'tag' && !lastMatch.close) {
+					// unary tag was selected, can't move inward
+					return false;
+				} else {
+					if (lastMatch.range.equal(lastMatch.outerRange)) {
+						lastMatch.range = lastMatch.innerRange;
+					} else {
+						var narrowed = require('utils').narrowToNonSpace(content, lastMatch.innerRange);
+						lastMatch = matcher.find(content, narrowed.start + 1);
+						if (lastMatch && lastMatch.range.equal(sel) && lastMatch.outerRange.equal(sel)) {
+							lastMatch.range = lastMatch.innerRange;
+						}
+					}
+				}
+			} else {
+				if (
+						!lastMatch.innerRange.equal(lastMatch.outerRange) 
+						&& lastMatch.range.equal(lastMatch.innerRange) 
+						&& sel.equal(lastMatch.range)) {
+					lastMatch.range = lastMatch.outerRange;
+				} else {
+					lastMatch = matcher.find(content, sel.start);
+					if (lastMatch && lastMatch.range.equal(sel) && lastMatch.innerRange.equal(sel)) {
+						lastMatch.range = lastMatch.outerRange;
+					}
+				}
+			}
+		} else {
+			lastMatch = matcher.find(content, sel.start);
+		}
+		
+		if (lastMatch && !lastMatch.range.equal(sel)) {
+			editor.createSelection(lastMatch.range.start, lastMatch.range.end);
 			return true;
 		}
 		
+		lastMatch = null;
 		return false;
 	}
 	
@@ -8809,22 +9226,15 @@ emmet.exec(function(require, _) {
 			// looks like caret is outside of tag pair  
 			caretPos++;
 			
-		var tags = matcher.getTags(content, caretPos, String(editor.getProfileName()));
-			
-		if (tags && tags[0]) {
-			// match found
-			var openTag = tags[0];
-			var closeTag = tags[1];
-				
-			if (closeTag) { // exclude unary tags
-				if (openTag.start <= caretPos && openTag.end >= caretPos) {
-					editor.setCaretPos(closeTag.start);
-					return true;
-				} else if (closeTag.start <= caretPos && closeTag.end >= caretPos){
-					editor.setCaretPos(openTag.start);
-					return true;
-				}
+		var tag = matcher.tag(content, caretPos);
+		if (tag && tag.close) { // exclude unary tags
+			if (tag.open.range.inside(caretPos)) {
+				editor.setCaretPos(tag.close.range.start);
+			} else {
+				editor.setCaretPos(tag.open.range.start);
 			}
+			
+			return true;
 		}
 		
 		return false;
@@ -8841,22 +9251,22 @@ emmet.exec(function(require, _) {
 		var info = require('editorUtils').outputInfo(editor);
 		
 		// search for tag
-		var pair = require('html_matcher').getTags(info.content, editor.getCaretPos(), info.profile);
-		if (pair && pair[0]) {
-			if (!pair[1]) {
+		var tag = require('htmlMatcher').tag(info.content, editor.getCaretPos());
+		if (tag) {
+			if (!tag.close) {
 				// simply remove unary tag
-				editor.replaceContent(utils.getCaretPlaceholder(), pair[0].start, pair[0].end);
+				editor.replaceContent(utils.getCaretPlaceholder(), tag.range.start, tag.range.end);
 			} else {
 				// remove tag and its newlines
 				/** @type Range */
-				var tagContentRange = utils.narrowToNonSpace(info.content, pair[0].end, pair[1].start - pair[0].end);
+				var tagContentRange = utils.narrowToNonSpace(info.content, tag.innerRange);
 				/** @type Range */
 				var startLineBounds = utils.findNewlineBounds(info.content, tagContentRange.start);
 				var startLinePad = utils.getLinePadding(startLineBounds.substring(info.content));
 				var tagContent = tagContentRange.substring(info.content);
 				
 				tagContent = utils.unindentString(tagContent, startLinePad);
-				editor.replaceContent(utils.getCaretPlaceholder() + utils.escapeText(tagContent), pair[0].start, pair[1].end);
+				editor.replaceContent(utils.getCaretPlaceholder() + utils.escapeText(tagContent), tag.outerRange.start, tag.outerRange.end);
 			}
 			
 			return true;
@@ -8878,56 +9288,61 @@ emmet.exec(function(require, _) {
 	/**
 	 * @param {IEmmetEditor} editor
 	 * @param {Object} profile
-	 * @param {Object} htmlMatch
+	 * @param {Object} tag
 	 */
-	function joinTag(editor, profile, htmlMatch) {
+	function joinTag(editor, profile, tag) {
 		/** @type emmet.utils */
 		var utils = require('utils');
 		
-		var closingSlash = (profile.self_closing_tag === true) ? '/' : ' /';
-		var content = htmlMatch[0].full_tag.replace(/\s*>$/, closingSlash + '>');
+		// empty closing slash is a nonsense for this action
+		var slash = profile.selfClosing() || ' /';
+		var content = tag.open.range.substring(tag.source).replace(/\s*>$/, slash + '>');
 		
-		// add caret placeholder
-		if (content.length + htmlMatch[0].start < editor.getCaretPos())
-			content += utils.getCaretPlaceholder();
-		else {
-			var d = editor.getCaretPos() - htmlMatch[0].start;
-			content = utils.replaceSubstring(content, utils.getCaretPlaceholder(), d);
+		var caretPos = editor.getCaretPos();
+		
+		// update caret position
+		if (content.length + tag.outerRange.start < caretPos) {
+			caretPos = content.length + tag.outerRange.start;
 		}
 		
-		editor.replaceContent(content, htmlMatch[0].start, htmlMatch[1].end);
+		content = utils.escapeText(content);
+		editor.replaceContent(content, tag.outerRange.start, tag.outerRange.end);
+		editor.setCaretPos(caretPos);
 		return true;
 	}
 	
-	function splitTag(editor, profile, htmlMatch) {
+	function splitTag(editor, profile, tag) {
 		/** @type emmet.utils */
 		var utils = require('utils');
 		
 		var nl = utils.getNewline();
 		var pad = require('resources').getVariable('indentation');
-		var caret = utils.getCaretPlaceholder();
+		var caretPos = editor.getCaretPos();
 		
 		// define tag content depending on profile
-		var tagContent = (profile.tag_nl === true) ? nl + pad + caret + nl : caret;
-				
-		var content = htmlMatch[0].full_tag.replace(/\s*\/>$/, '>') + tagContent + '</' + htmlMatch[0].name + '>';
-		editor.replaceContent(content, htmlMatch[0].start, htmlMatch[0].end);
+		var tagContent = (profile.tag_nl === true) ? nl + pad + nl : '';
+		var content = tag.outerContent().replace(/\s*\/>$/, '>');
+		caretPos = tag.outerRange.start + content.length;
+		content += tagContent + '</' + tag.open.name + '>';
+		
+		content = utils.escapeText(content);
+		editor.replaceContent(content, tag.outerRange.start, tag.outerRange.end);
+		editor.setCaretPos(caretPos);
 		return true;
 	}
 	
 	require('actions').add('split_join_tag', function(editor, profileName) {
-		var matcher = require('html_matcher');
+		var matcher = require('htmlMatcher');
 		
 		var info = require('editorUtils').outputInfo(editor, null, profileName);
 		var profile = require('profile').get(info.profile);
 		
 		// find tag at current position
-		var pair = matcher.getTags(info.content, editor.getCaretPos(), info.profile);
-		if (pair && pair[0]) {
-			if (pair[1]) { // join tag
-				return joinTag(editor, profile, pair);
-			}
-			return splitTag(editor, profile, pair);
+		var tag = matcher.tag(info.content, editor.getCaretPos());
+		if (tag) {
+			return tag.close 
+				? joinTag(editor, profile, tag) 
+				: splitTag(editor, profile, tag);
 		}
 		
 		return false;
@@ -9237,9 +9652,8 @@ emmet.exec(function(require, _) {
 		if (_.include(['html', 'xml', 'xsl'], info.syntax)) {
 			var pad = res.getVariable('indentation');
 			// let's see if we're breaking newly created tag
-			var pair = require('html_matcher').getTags(info.content, caretPos, info.profile);
-			
-			if (pair[0] && pair[1] && pair[0].type == 'tag' && pair[0].end == caretPos && pair[1].start == caretPos) {
+			var tag = require('htmlMatcher').tag(info.content, caretPos);
+			if (tag && !tag.innerRange.length()) {
 				editor.replaceContent(nl + pad + utils.getCaretPlaceholder() + nl, caretPos);
 				return true;
 			}
@@ -9328,7 +9742,7 @@ emmet.exec(function(require, _) {
  */
 emmet.exec(function(require, _) {
 	require('actions').add('merge_lines', function(editor) {
-		var matcher = require('html_matcher');
+		var matcher = require('htmlMatcher');
 		var utils = require('utils');
 		var editorUtils = require('editorUtils');
 		var info = editorUtils.outputInfo(editor);
@@ -9337,10 +9751,9 @@ emmet.exec(function(require, _) {
 		var selection = require('range').create(editor.getSelectionRange());
 		if (!selection.length()) {
 			// find matching tag
-			var pair = matcher(info.content, editor.getCaretPos(), info.profile);
+			var pair = matcher.find(info.content, editor.getCaretPos());
 			if (pair) {
-				selection.start = pair[0];
-				selection.end = pair[1];
+				selection = pair.outerRange;
 			}
 		}
 		
@@ -9354,8 +9767,10 @@ emmet.exec(function(require, _) {
 			}
 			
 			text = lines.join('').replace(/\s{2,}/, ' ');
+			var textLen = text.length;
+			text = utils.escapeText(text);
 			editor.replaceContent(text, selection.start, selection.end);
-			editor.createSelection(selection.start, selection.start + text.length);
+			editor.createSelection(selection.start, selection.start + textLen);
 			
 			return true;
 		}
@@ -9446,15 +9861,23 @@ emmet.exec(function(require, _) {
 			throw "Can't find " + imgPath + ' file';
 		}
 		
-		var b64 = require('base64').encode(String(file.read(realImgPath)));
-		if (!b64) {
-			throw "Can't encode file content to base64";
-		}
-		
-		b64 = 'data:' + (actionUtils.mimeTypes[String(file.getExt(realImgPath))] || defaultMimeType) +
-			';base64,' + b64;
+		file.read(realImgPath, function(err, content) {
+			if (err) {
+				throw 'Unable to read ' + realImgPath + ': ' + err;
+			}
 			
-		editor.replaceContent('$0' + b64, pos, pos + imgPath.length);
+			var b64 = require('base64').encode(String(content));
+			if (!b64) {
+				throw "Can't encode file content to base64";
+			}
+			
+			b64 = 'data:' + (actionUtils.mimeTypes[String(file.getExt(realImgPath))] || defaultMimeType) +
+				';base64,' + b64;
+				
+			editor.replaceContent('$0' + b64, pos, pos + imgPath.length);
+		});
+		
+		
 		return true;
 	}
 
@@ -9501,21 +9924,19 @@ emmet.exec(function(require, _) {
 		var info = require('editorUtils').outputInfo(editor);
 		var xmlElem = require('xmlEditTree').parseFromPosition(info.content, offset, true);
 		if (xmlElem && (xmlElem.name() || '').toLowerCase() == 'img') {
-			
-			var size = getImageSizeForSource(editor, xmlElem.value('src'));
-			if (size) {
-				var compoundData = xmlElem.range(true);
-				xmlElem.value('width', size.width);
-				xmlElem.value('height', size.height, xmlElem.indexOf('width') + 1);
-				
-				return _.extend(compoundData, {
-					data: xmlElem.toString(),
-					caret: offset
-				});
-			}
+			getImageSizeForSource(editor, xmlElem.value('src'), function(size) {
+				if (size) {
+					var compoundData = xmlElem.range(true);
+					xmlElem.value('width', size.width);
+					xmlElem.value('height', size.height, xmlElem.indexOf('width') + 1);
+					
+					require('actionUtils').compoundUpdate(editor, _.extend(compoundData, {
+						data: xmlElem.toString(),
+						caret: offset
+					}));
+				}
+			});
 		}
-		
-		return null;
 	}
 	
 	/**
@@ -9532,21 +9953,20 @@ emmet.exec(function(require, _) {
 			// check if there is property with image under caret
 			var prop = cssRule.itemFromPosition(offset, true), m;
 			if (prop && (m = /url\((["']?)(.+?)\1\)/i.exec(prop.value() || ''))) {
-				var size = getImageSizeForSource(editor, m[2]);
-				if (size) {
-					var compoundData = cssRule.range(true);
-					cssRule.value('width', size.width + 'px');
-					cssRule.value('height', size.height + 'px', cssRule.indexOf('width') + 1);
-					
-					return _.extend(compoundData, {
-						data: cssRule.toString(),
-						caret: offset
-					});
-				}
+				getImageSizeForSource(editor, m[2], function(size) {
+					if (size) {
+						var compoundData = cssRule.range(true);
+						cssRule.value('width', size.width + 'px');
+						cssRule.value('height', size.height + 'px', cssRule.indexOf('width') + 1);
+						
+						require('actionUtils').compoundUpdate(editor, _.extend(compoundData, {
+							data: cssRule.toString(),
+							caret: offset
+						}));
+					}
+				});
 			}
 		}
-		
-		return null;
 	}
 	
 	/**
@@ -9554,35 +9974,43 @@ emmet.exec(function(require, _) {
 	 * @param {IEmmetEditor} editor
 	 * @param {String} src Image source (path or data:url)
 	 */
-	function getImageSizeForSource(editor, src) {
+	function getImageSizeForSource(editor, src, callback) {
 		var fileContent;
+		var au = require('actionUtils');
 		if (src) {
 			// check if it is data:url
 			if (/^data:/.test(src)) {
 				fileContent = require('base64').decode( src.replace(/^data\:.+?;.+?,/, '') );
-			} else {
-				var file = require('file');
-				var absPath = file.locateFile(editor.getFilePath(), src);
-				if (absPath === null) {
-					throw "Can't find " + src + ' file';
-				}
-				
-				fileContent = String(file.read(absPath));
+				return callback(au.getImageSize(fileContent));
 			}
 			
-			return require('actionUtils').getImageSize(fileContent);
+			var file = require('file');
+			var absPath = file.locateFile(editor.getFilePath(), src);
+			if (absPath === null) {
+				throw "Can't find " + src + ' file';
+			}
+			
+			file.read(absPath, function(err, content) {
+				if (err) {
+					throw 'Unable to read ' + absPath + ': ' + err;
+				}
+				
+				content = String(content);
+				callback(au.getImageSize(content));
+			});
 		}
 	}
 	
 	require('actions').add('update_image_size', function(editor) {
-		var result;
-		if (String(editor.getSyntax()) == 'css') {
-			result = updateImageSizeCSS(editor);
+		// this action will definitely won’t work in SASS dialect,
+		// but may work in SCSS or LESS
+		if (_.include(['css', 'less', 'scss'], String(editor.getSyntax()))) {
+			updateImageSizeCSS(editor);
 		} else {
-			result = updateImageSizeHTML(editor);
+			updateImageSizeHTML(editor);
 		}
 		
-		return require('actionUtils').compoundUpdate(editor, result);
+		return true;
 	});
 });/**
  * Resolver for fast CSS typing. Handles abbreviations with the following 
@@ -9656,10 +10084,21 @@ emmet.define('cssResolver', function(require, _) {
 		},
 		
 		/**
-		 * @type {Array} List of unprefixed CSS properties that supported by 
-		 * current prefix. This list is used to generate all-prefixed property 
+		 * List of unprefixed CSS properties that supported by 
+		 * current prefix. This list is used to generate all-prefixed property
+		 * @returns {Array} 
 		 */
-		supports: null
+		properties: function() {
+			return getProperties('css.' + this.prefix + 'Properties') || [];
+		},
+		
+		/**
+		 * Check if given property is supported by current prefix
+		 * @param name
+		 */
+		supports: function(name) {
+			return _.include(this.properties(), name);
+		}
 	};
 	
 	
@@ -9705,7 +10144,7 @@ emmet.define('cssResolver', function(require, _) {
 		+ 'abbreviations. Empty list means that all possible CSS values may ' 
 		+ 'have <code><%= vendor %></code> prefix.');
 	
-	var descAddonTemplate = _.template('A comma-separated list of <em>additions</em> CSS properties ' 
+	var descAddonTemplate = _.template('A comma-separated list of <em>additional</em> CSS properties ' 
 			+ 'for <code>css.<%= vendor %>Preperties</code> preference. ' 
 			+ 'You should use this list if you want to add or remove a few CSS ' 
 			+ 'properties to original set. To add a new property, simply write its name, '
@@ -9735,13 +10174,40 @@ emmet.define('cssResolver', function(require, _) {
 	prefs.define('css.keywords', 'auto, inherit', 
 			'A comma-separated list of valid keywords that can be used in CSS abbreviations.');
 	
-	prefs.define('css.keywordAliases', 'a:auto, i:inherit', 
+	prefs.define('css.keywordAliases', 'a:auto, i:inherit, s:solid, da:dashed, do:dotted, t:transparent', 
 			'A comma-separated list of keyword aliases, used in CSS abbreviation. '
 			+ 'Each alias should be defined as <code>alias:keyword_name</code>.');
 	
 	prefs.define('css.unitAliases', 'e:em, p:%, x:ex, r:rem', 
 			'A comma-separated list of unit aliases, used in CSS abbreviation. '
 			+ 'Each alias should be defined as <code>alias:unit_value</code>.');
+	
+	prefs.define('css.color.short', true, 
+			'Should color values like <code>#ffffff</code> be shortened to '
+			+ '<code>#fff</code> after abbreviation with color was expanded.');
+	
+	prefs.define('css.color.case', 'keep', 
+			'Letter case of color values generated by abbreviations with color '
+			+ '(like <code>c#0</code>). Possible values are <code>upper</code>, '
+			+ '<code>lower</code> and <code>keep</code>.');
+	
+	prefs.define('css.fuzzySearch', true, 
+			'Enable fuzzy search among CSS snippet names. When enabled, every ' 
+			+ '<em>unknown</em> snippet will be scored against available snippet '
+			+ 'names (not values or CSS properties!). The match with best score '
+			+ 'will be used to resolve snippet value. For example, with this ' 
+			+ 'preference enabled, the following abbreviations are equal: '
+			+ '<code>ov:h</code> == <code>ov-h</code> == <code>o-h</code> == '
+			+ '<code>oh</code>');
+	
+	prefs.define('css.fuzzySearchMinScore', 0.3, 
+			'The minium score (from 0 to 1) that fuzzy-matched abbreviation should ' 
+			+ 'achive. Lower values may produce many false-positive matches, '
+			+ 'higher values may reduce possible matches.');
+	
+	prefs.define('css.alignVendor', false, 
+			'If set to <code>true</code>, all generated vendor-prefixed properties ' 
+			+ 'will be aligned by real property name.');
 	
 	
 	function isNumeric(ch) {
@@ -9778,6 +10244,72 @@ emmet.define('cssResolver', function(require, _) {
 		return snippet.split(':').length == 2;
 	}
 	
+	/**
+	 * Normalizes abbreviated value to final CSS one
+	 * @param {String} value
+	 * @returns {String}
+	 */
+	function normalizeValue(value) {
+		if (value.charAt(0) == '-' && !/^\-[\.\d]/.test(value)) {
+			value = value.replace(/^\-+/, '');
+		}
+		
+		if (value.charAt(0) == '#') {
+			return normalizeHexColor(value);
+		}
+		
+		return getKeyword(value);
+	}
+	
+	function normalizeHexColor(value) {
+		var hex = value.replace(/^#+/, '') || '0';
+		if (hex.toLowerCase() == 't') {
+			return 'transparent';
+		}
+		
+		var repeat = require('utils').repeatString;
+		var color = null;
+		switch (hex.length) {
+			case 1:
+				color = repeat(hex, 6);
+				break;
+			case 2:
+				color = repeat(hex, 3);
+				break;
+			case 3:
+				color = hex.charAt(0) + hex.charAt(0) + hex.charAt(1) + hex.charAt(1) + hex.charAt(2) + hex.charAt(2);
+				break;
+			case 4:
+				color = hex + hex.substr(0, 2);
+				break;
+			case 5:
+				color = hex + hex.charAt(0);
+				break;
+			default:
+				color = hex.substr(0, 6);
+		}
+		
+		// color must be shortened?
+		if (prefs.get('css.color.short')) {
+			var p = color.split('');
+			if (p[0] == p[1] && p[2] == p[3] && p[4] == p[5]) {
+				color = p[0] + p[2] + p[4];
+			}
+		}
+		
+		// should transform case?
+		switch (prefs.get('css.color.case')) {
+			case 'upper':
+				color = color.toUpperCase();
+				break;
+			case 'lower':
+				color = color.toLowerCase();
+				break;
+		}
+		
+		return '#' + color;
+	}
+	
 	function getKeyword(name) {
 		var aliases = prefs.getDict('css.keywordAliases');
 		return name in aliases ? aliases[name] : name;
@@ -9793,30 +10325,6 @@ emmet.define('cssResolver', function(require, _) {
 	}
 	
 	/**
-	 * Split snippet into a CSS property-value pair
-	 * @param {String} snippet
-	 */
-	function splitSnippet(snippet) {
-		var utils = require('utils');
-		snippet = utils.trim(snippet);
-		if (snippet.indexOf(':') == -1) {
-			return {
-				name: snippet,
-				value: defaultValue
-			};
-		}
-		
-		var pair = snippet.split(':');
-		
-		return {
-			name: utils.trim(pair.shift()),
-			// replace ${0} tabstop to produce valid vendor-prefixed values
-			// where possible
-			value: utils.trim(pair.join(':')).replace(/^(\$\{0\}|\$0)(\s*;?)$/, '${1}$2')
-		};
-	}
-	
-	/**
 	 * Check if passed CSS property support specified vendor prefix 
 	 * @param {String} property
 	 * @param {String} prefix
@@ -9829,7 +10337,7 @@ emmet.define('cssResolver', function(require, _) {
 				return data.prefix == prefix;
 			});
 		
-		return info && info.supports && _.include(info.supports, property);
+		return info && info.supports(property);
 	}
 	
 	/**
@@ -9912,14 +10420,6 @@ emmet.define('cssResolver', function(require, _) {
 		}
 		
 		return formatProperty(snippet, syntax);
-		
-		// format value separator
-		var ix = snippet.indexOf(':');
-		snippet = snippet.substring(0, ix).replace(/\s+$/, '') 
-			+ prefs.get('css.valueSeparator')
-			+ require('utils').trim(snippet.substring(ix + 1));
-		
-		return snippet;
 	}
 	
 	/**
@@ -9948,21 +10448,19 @@ emmet.define('cssResolver', function(require, _) {
 		return list;
 	}
 	
+	
+	// TODO refactor, this looks awkward now
 	addPrefix('w', {
-		prefix: 'webkit',
-		supports: getProperties('css.webkitProperties')
+		prefix: 'webkit'
 	});
 	addPrefix('m', {
-		prefix: 'moz',
-		supports: getProperties('css.mozProperties')
+		prefix: 'moz'
 	});
 	addPrefix('s', {
-		prefix: 'ms',
-		supports: getProperties('css.msProperties')
+		prefix: 'ms'
 	});
 	addPrefix('o', {
-		prefix: 'o',
-		supports: getProperties('css.oProperties')
+		prefix: 'o'
 	});
 	
 	// I think nobody uses it
@@ -10142,7 +10640,7 @@ emmet.define('cssResolver', function(require, _) {
 			var i = 0, il = abbr.length, value = '', ch;
 			while (i < il) {
 				ch = abbr.charAt(i);
-				if (isNumeric(ch) || (ch == '-' && isNumeric(abbr.charAt(i + 1)))) {
+				if (isNumeric(ch) || ch == '#' || (ch == '-' && isNumeric(abbr.charAt(i + 1)))) {
 					value = abbr.substring(i);
 					break;
 				}
@@ -10169,45 +10667,34 @@ emmet.define('cssResolver', function(require, _) {
 			return keywords.join('-') + value;
 		},
 		
-		/**
-		 * Parses values defined in abbreviations
-		 * @param {String} abbrValues Values part of abbreviations (can be 
-		 * extracted with <code>findValuesInAbbreviation</code>)
-		 * @returns {Array}
-		 */
-		parseValues: function(abbrValues) {
-			var valueStack = '';
+		parseValues: function(str) {
+			/** @type StringStream */
+			var stream = require('stringStream').create(str);
 			var values = [];
-			var i = 0, il = abbrValues.length, ch, nextCh;
+			var ch = null;
 			
-			while (i < il) {
-				ch = abbrValues.charAt(i);
-				if (ch == '-' && valueStack) {
-					// next value found
-					values.push(valueStack);
-					valueStack = '';
-					i++;
-					continue;
-				}
-				
-				valueStack += ch;
-				i++;
-				
-				nextCh = abbrValues.charAt(i);
-				if (ch != '-' && !isNumeric(ch) && (isNumeric(nextCh) || nextCh == '-')) {
-					if (isValidKeyword(valueStack)) {
-						i++;
+			while (ch = stream.next()) {
+				if (ch == '#') {
+					stream.match(/^t|[0-9a-f]+/i, true);
+					values.push(stream.current());
+				} else if (ch == '-') {
+					if (isValidKeyword(_.last(values)) || 
+							( stream.start && isNumeric(str.charAt(stream.start - 1)) )
+						) {
+						stream.start = stream.pos;
 					}
-					values.push(valueStack);
-					valueStack = '';
+					
+					stream.match(/^\-?[0-9]*(\.[0-9]+)?[a-z%\.]*/, true);
+					values.push(stream.current());
+				} else {
+					stream.match(/^[0-9]*(\.[0-9]*)?[a-z%]*/, true);
+					values.push(stream.current());
 				}
+				
+				stream.start = stream.pos;
 			}
 			
-			if (valueStack) {
-				values.push(valueStack);
-			}
-			
-			return _.map(values, getKeyword);
+			return _.map(_.compact(values), normalizeValue);
 		},
 		
 		/**
@@ -10246,7 +10733,7 @@ emmet.define('cssResolver', function(require, _) {
 					return val;
 				
 				if (!unit)
-					return val + prefs.get(~val.indexOf('.') ? 'css.floatUnit' : 'css.intUnit');
+					return val.replace(/\.$/, '') + prefs.get(~val.indexOf('.') ? 'css.floatUnit' : 'css.intUnit');
 				
 				return val + getUnit(unit);
 			});
@@ -10282,14 +10769,15 @@ emmet.define('cssResolver', function(require, _) {
 			var valuesData = this.extractValues(prefixData.property);
 			var abbrData = _.extend(prefixData, valuesData);
 			
-			snippet = resources.findSnippet(syntax, abbrData.property);
+			if (!snippet) {
+				snippet = resources.findSnippet(syntax, abbrData.property);
+			} else {
+				abbrData.values = null;
+			}
 			
-			// fallback to some old snippets like m:a
-			if (!snippet && ~abbrData.property.indexOf(':')) {
-				var parts = abbrData.property.split(':');
-				var propertyName = parts.shift();
-				snippet = resources.findSnippet(syntax, propertyName) || propertyName;
-				abbrData.values = this.parseValues(parts.join(':'));
+			if (!snippet && prefs.get('css.fuzzySearch')) {
+				// let’s try fuzzy search
+				snippet = resources.fuzzyFindSnippet(syntax, abbrData.property, parseFloat(prefs.get('css.fuzzySearchMinScore')));
 			}
 			
 			if (!snippet) {
@@ -10302,7 +10790,7 @@ emmet.define('cssResolver', function(require, _) {
 				return snippet;
 			}
 			
-			var snippetObj = splitSnippet(snippet);
+			var snippetObj = this.splitSnippet(snippet);
 			var result = [];
 			if (!value && abbrData.values) {
 				value = _.map(abbrData.values, function(val) {
@@ -10316,24 +10804,33 @@ emmet.define('cssResolver', function(require, _) {
 				? findPrefixes(snippetObj.name, autoInsertPrefixes && abbrData.prefixes != 'all')
 				: abbrData.prefixes;
 				
+				
+			var names = [], propName;
 			_.each(prefixes, function(p) {
 				if (p in vendorPrefixes) {
-					result.push(transformSnippet(
-							vendorPrefixes[p].transformName(snippetObj.name) 
-							+ ':' + snippetObj.value,
+					propName = vendorPrefixes[p].transformName(snippetObj.name);
+					names.push(propName);
+					result.push(transformSnippet(propName + ':' + snippetObj.value,
 							isImportant, syntax));
-					
 				}
 			});
 			
 			// put the original property
 			result.push(transformSnippet(snippetObj.name + ':' + snippetObj.value, isImportant, syntax));
+			names.push(snippetObj.name);
+			
+			if (prefs.get('css.alignVendor')) {
+				var pads = require('utils').getStringsPads(names);
+				result = _.map(result, function(prop, i) {
+					return pads[i] + prop;
+				});
+			}
 			
 			return result;
 		},
 		
 		/**
-		 * Same as <code>expand</code> method but transforms output into a 
+		 * Same as <code>expand</code> method but transforms output into 
 		 * Emmet snippet
 		 * @param {String} abbr
 		 * @param {String} syntax
@@ -10351,7 +10848,32 @@ emmet.define('cssResolver', function(require, _) {
 			return String(snippet);
 		},
 		
-		getSyntaxPreference: getSyntaxPreference
+		/**
+		 * Split snippet into a CSS property-value pair
+		 * @param {String} snippet
+		 */
+		splitSnippet: function(snippet) {
+			var utils = require('utils');
+			snippet = utils.trim(snippet);
+			if (snippet.indexOf(':') == -1) {
+				return {
+					name: snippet,
+					value: defaultValue
+				};
+			}
+			
+			var pair = snippet.split(':');
+			
+			return {
+				name: utils.trim(pair.shift()),
+				// replace ${0} tabstop to produce valid vendor-prefixed values
+				// where possible
+				value: utils.trim(pair.join(':')).replace(/^(\$\{0\}|\$0)(\s*;?)$/, '${1}$2')
+			};
+		},
+		
+		getSyntaxPreference: getSyntaxPreference,
+		transformSnippet: transformSnippet
 	};
 });
 /**
@@ -10485,6 +11007,29 @@ emmet.define('cssGradient', function(require, _) {
 	}
 	
 	/**
+	 * Resolves property name (abbreviation): searches for snippet definition in 
+	 * 'resources' and returns new name of matched property
+	 */
+	function resolvePropertyName(name, syntax) {
+		var res = require('resources');
+		var prefs = require('preferences');
+		var snippet = res.findSnippet(syntax, name);
+		
+		if (!snippet && prefs.get('css.fuzzySearch')) {
+			snippet = res.fuzzyFindSnippet(syntax, name, 
+					parseFloat(prefs.get('css.fuzzySearchMinScore')));
+		}
+		
+		if (snippet) {
+			if (!_.isString(snippet)) {
+				snippet = snippet.data;
+			}
+			
+			return require('cssResolver').splitSnippet(snippet).name;
+		}
+	}
+	
+	/**
 	 * Fills-out implied positions in color-stops. This function is useful for
 	 * old Webkit gradient definitions
 	 */
@@ -10551,9 +11096,12 @@ emmet.define('cssGradient', function(require, _) {
 	
 	function getPrefixedNames(name) {
 		var prefixes = prefs.getArray('css.gradient.prefixes');
-		var names = _.map(prefixes, function(p) {
-			return '-' + p + '-' + name;
-		});
+		var names = prefixes 
+			? _.map(prefixes, function(p) {
+				return '-' + p + '-' + name;
+			}) 
+			: [];
+		
 		names.push(name);
 		
 		return names;
@@ -10609,14 +11157,41 @@ emmet.define('cssGradient', function(require, _) {
 	function pasteGradient(property, gradient, valueRange) {
 		var rule = property.parent;
 		var utils = require('utils');
+		var alignVendor = require('preferences').get('css.alignVendor');
+		
+		// we may have aligned gradient definitions: find the smallest value
+		// separator
+		var sep = property.styleSeparator;
+		var before = property.styleBefore;
 		
 		// first, remove all properties within CSS rule with the same name and
 		// gradient definition
 		_.each(rule.getAll(getPrefixedNames(property.name())), function(item) {
 			if (item != property && /gradient/i.test(item.value())) {
+				if (item.styleSeparator.length < sep.length) {
+					sep = item.styleSeparator;
+				}
+				if (item.styleBefore.length < before.length) {
+					before = item.styleBefore;
+				}
 				rule.remove(item);
 			}
 		});
+		
+		if (alignVendor) {
+			// update prefix
+			if (before != property.styleBefore) {
+				var fullRange = property.fullRange();
+				rule._updateSource(before, fullRange.start, fullRange.start + property.styleBefore.length);
+				property.styleBefore = before;
+			}
+			
+			// update separator value
+			if (sep != property.styleSeparator) {
+				rule._updateSource(sep, property.nameRange().end, property.valueRange().start);
+				property.styleSeparator = sep;
+			}
+		}
 		
 		var value = property.value();
 		if (!valueRange)
@@ -10631,6 +11206,28 @@ emmet.define('cssGradient', function(require, _) {
 		
 		// create list of properties to insert
 		var propsToInsert = getPropertiesForGradient(gradient, property.name());
+		
+		// align prefixed values
+		if (alignVendor) {
+			var values = _.pluck(propsToInsert, 'value');
+			var names = _.pluck(propsToInsert, 'name');
+			values.push(property.value());
+			names.push(property.name());
+			
+			var valuePads = utils.getStringsPads(_.map(values, function(v) {
+				return v.substring(0, v.indexOf('('));
+			}));
+			
+			var namePads = utils.getStringsPads(names);
+			property.name(_.last(namePads) + property.name());
+			
+			_.each(propsToInsert, function(prop, i) {
+				prop.name = namePads[i] + prop.name;
+				prop.value = valuePads[i] + prop.value;
+			});
+			
+			property.value(_.last(valuePads) + property.value());
+		}
 		
 		// put vendor-prefixed definitions before current rule
 		_.each(propsToInsert, function(prop) {
@@ -10697,6 +11294,16 @@ emmet.define('cssGradient', function(require, _) {
 			
 			var sep = css.getSyntaxPreference('valueSeparator', syntax);
 			var end = css.getSyntaxPreference('propertyEnd', syntax);
+			
+			if (require('preferences').get('css.alignVendor')) {
+				var pads = require('utils').getStringsPads(_.map(props, function(prop) {
+					return prop.value.substring(0, prop.value.indexOf('('));
+				}));
+				_.each(props, function(prop, i) {
+					prop.value = pads[i] + prop.value;
+				});
+			}
+			
 			props = _.map(props, function(item) {
 				return item.name + sep + item.value + end;
 			});
@@ -10778,6 +11385,12 @@ emmet.define('cssGradient', function(require, _) {
 				
 				// make sure current property has terminating semicolon
 				css.property.end(';');
+				
+				// resolve CSS property name
+				var resolvedName = resolvePropertyName(css.property.name(), syntax);
+				if (resolvedName) {
+					css.property.name(resolvedName);
+				}
 				
 				pasteGradient(css.property, g.gradient, g.valueRange);
 				editor.replaceContent(css.rule.toString(), ruleStart, ruleEnd, true);
@@ -10967,7 +11580,8 @@ emmet.exec(function(require, _) {
  */
 emmet.define('tagName', function(require, _) {
 	var elementTypes = {
-		empty: 'area,base,basefont,br,col,frame,hr,img,input,isindex,link,meta,param,embed,keygen,command'.split(','),
+//		empty: 'area,base,basefont,br,col,frame,hr,img,input,isindex,link,meta,param,embed,keygen,command'.split(','),
+		empty: [],
 		blockLevel: 'address,applet,blockquote,button,center,dd,del,dir,div,dl,dt,fieldset,form,frameset,hr,iframe,ins,isindex,li,link,map,menu,noframes,noscript,object,ol,p,pre,script,table,tbody,td,tfoot,th,thead,tr,ul,h1,h2,h3,h4,h5,h6'.split(','),
 		inlineLevel: 'a,abbr,acronym,applet,b,basefont,bdo,big,br,button,cite,code,del,dfn,em,font,i,iframe,img,input,ins,kbd,label,map,object,q,s,samp,select,small,span,strike,strong,sub,sup,textarea,tt,u,var'.split(',')
 	};
@@ -11514,7 +12128,24 @@ emmet.exec(function(require, _) {
 emmet.exec(function(require, _){
 	var placeholder = '%s';
 	
-	function getIndentation() {
+	/** @type preferences */
+	var prefs = require('preferences');
+	prefs.define('format.noIndentTags', 'html', 
+			'A comma-separated list of tag names that should not get inner indentation.');
+	
+	prefs.define('format.forceIndentationForTags', 'body', 
+		'A comma-separated list of tag names that should <em>always</em> get inner indentation.');
+	
+	/**
+	 * Get indentation for given node
+	 * @param {AbbreviationNode} node
+	 * @returns {String}
+	 */
+	function getIndentation(node) {
+		if (_.include(prefs.getArray('format.noIndentTags') || [], node.name())) {
+			return '';
+		}
+		
 		return require('resources').getVariable('indentation');
 	}
 	
@@ -11550,17 +12181,8 @@ emmet.exec(function(require, _){
 			return false;
 		
 		// check if there are required amount of adjacent inline element
-		var nodeCount = 0;
-		return !!_.find(node.parent.children, function(child) {
-			if (child.isTextNode() || !abbrUtils.isInline(child))
-				nodeCount = 0;
-			else if (abbrUtils.isInline(child))
-				nodeCount++;
-			
-			if (nodeCount >= profile.inline_break)
-				return true;
-		});
-	}
+		return shouldFormatInline(node.parent, profile);
+}
 	
 	/**
 	 * Need to add newline because <code>item</code> has too many inline children
@@ -11573,6 +12195,24 @@ emmet.exec(function(require, _){
 		return node.children.length && shouldAddLineBreak(node.children[0], profile);
 	}
 	
+	function shouldFormatInline(node, profile) {
+		var nodeCount = 0;
+		var abbrUtils = require('abbreviationUtils');
+		return !!_.find(node.children, function(child) {
+			if (child.isTextNode() || !abbrUtils.isInline(child))
+				nodeCount = 0;
+			else if (abbrUtils.isInline(child))
+				nodeCount++;
+			
+			if (nodeCount >= profile.inline_break)
+				return true;
+		});
+	}
+	
+	function isRoot(item) {
+		return !item.parent;
+	}
+	
 	/**
 	 * Processes element with matched resource of type <code>snippet</code>
 	 * @param {AbbreviationNode} item
@@ -11580,11 +12220,37 @@ emmet.exec(function(require, _){
 	 * @param {Number} level Depth level
 	 */
 	function processSnippet(item, profile, level) {
-		if (!isVeryFirstChild(item)) {
-			item.start = require('utils').getNewline() + item.start;
+		item.start = item.end = '';
+		if (!isVeryFirstChild(item) && profile.tag_nl !== false && shouldAddLineBreak(item, profile)) {
+			// check if we’re not inside inline element
+			if (isRoot(item.parent) || !require('abbreviationUtils').isInline(item.parent)) {
+				item.start = require('utils').getNewline() + item.start;
+			}
 		}
 		
 		return item;
+	}
+	
+	/**
+	 * Check if we should add line breaks inside inline element
+	 * @param {AbbreviationNode} node
+	 * @param {OutputProfile} profile
+	 * @return {Boolean}
+	 */
+	function shouldBreakInsideInline(node, profile) {
+		var abbrUtils = require('abbreviationUtils');
+		var hasBlockElems = _.any(node.children, function(child) {
+			if (abbrUtils.isSnippet(child))
+				return false;
+			
+			return !abbrUtils.isInline(child);
+		});
+		
+		if (!hasBlockElems) {
+			return shouldFormatInline(node, profile);
+		}
+		
+		return true;
 	}
 	
 	/**
@@ -11599,10 +12265,14 @@ emmet.exec(function(require, _){
 		var abbrUtils = require('abbreviationUtils');
 		var isUnary = abbrUtils.isUnary(item);
 		var nl = utils.getNewline();
+		var indent = getIndentation(item);
 			
 		// formatting output
 		if (profile.tag_nl !== false) {
 			var forceNl = profile.tag_nl === true && (profile.tag_nl_leaf || item.children.length);
+			if (!forceNl) {
+				forceNl = _.include(prefs.getArray('format.forceIndentationForTags') || [], item.name());
+			}
 			
 			// formatting block-level elements
 			if (!item.isTextNode()) {
@@ -11616,14 +12286,14 @@ emmet.exec(function(require, _){
 						item.end = nl + item.end;
 						
 					if (abbrUtils.hasTagsInContent(item) || (forceNl && !item.children.length && !isUnary))
-						item.start += nl + getIndentation();
+						item.start += nl + indent;
 				} else if (abbrUtils.isInline(item) && hasBlockSibling(item) && !isVeryFirstChild(item)) {
 					item.start = nl + item.start;
-				} else if (abbrUtils.isInline(item) && abbrUtils.hasBlockChildren(item)) {
+				} else if (abbrUtils.isInline(item) && shouldBreakInsideInline(item, profile)) {
 					item.end = nl + item.end;
 				}
 				
-				item.padding = getIndentation() ;
+				item.padding = indent;
 			}
 		}
 		
@@ -11836,8 +12506,15 @@ emmet.exec(function(require, _) {
 		item.start = utils.replaceSubstring(item.start, start, item.start.indexOf(placeholder), placeholder);
 		item.end = utils.replaceSubstring(item.end, end, item.end.indexOf(placeholder), placeholder);
 		
-		if (!item.children.length && !isUnary && item.content.indexOf(cursor) == -1)
+		// should we put caret placeholder after opening tag?
+		if (
+				!item.children.length 
+				&& !isUnary 
+				&& !~item.content.indexOf(cursor)
+				&& !require('tabStops').extract(item.content).tabstops.length
+			) {
 			item.start += cursor;
+		}
 		
 		return item;
 	}
@@ -11988,35 +12665,11 @@ emmet.exec(function(require, _) {
  * @constructor
  * @memberOf __loremIpsumGeneratorDefine
  */
-emmet.exec(function(require, _) {
-	/**
-	 * @param {AbbreviationNode} tree
-	 * @param {Object} options
-	 */
-	require('abbreviationParser').addPreprocessor(function(tree, options) {
-		var re = /^(?:lorem|lipsum)(\d*)$/i, match;
-		
-		/** @param {AbbreviationNode} node */
-		tree.findAll(function(node) {
-			if (node._name && (match = node._name.match(re))) {
-				var wordCound = match[1] || 30;
-				
-				// force node name resolving if node should be repeated
-				// or contains attributes. In this case, node should be outputed
-				// as tag, otherwise as text-only node
-				node._name = '';
-				node.data('forceNameResolving', node.isRepeating() || node.attributeList().length);
-				node.data('pasteOverwrites', true);
-				node.data('paste', function(i, content) {
-					return paragraph(wordCound, !i);
-				});
-			}
-		});
-	});
-	
-	var COMMON_P = 'lorem ipsum dolor sit amet consectetur adipisicing elit'.split(' ');
-	
-	var WORDS = ['exercitationem', 'perferendis', 'perspiciatis', 'laborum', 'eveniet',
+emmet.define('lorem', function(require, _) {
+	var langs = {
+		en: {
+			common: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipisicing', 'elit'],
+			words: ['exercitationem', 'perferendis', 'perspiciatis', 'laborum', 'eveniet',
 	             'sunt', 'iure', 'nam', 'nobis', 'eum', 'cum', 'officiis', 'excepturi',
 	             'odio', 'consectetur', 'quasi', 'aut', 'quisquam', 'vel', 'eligendi',
 	             'itaque', 'non', 'odit', 'tempore', 'quaerat', 'dignissimos',
@@ -12044,7 +12697,67 @@ emmet.exec(function(require, _) {
 	             'optio', 'dolor', 'labore', 'temporibus', 'repellat', 'veniam',
 	             'architecto', 'est', 'esse', 'mollitia', 'nulla', 'a', 'similique',
 	             'eos', 'alias', 'dolore', 'tenetur', 'deleniti', 'porro', 'facere',
-	             'maxime', 'corrupti'];
+	             'maxime', 'corrupti']
+		},
+		ru: {
+			common: ['далеко-далеко', 'за', 'словесными', 'горами', 'в стране', 'гласных', 'и согласных', 'живут', 'рыбные', 'тексты'],
+			words: ['вдали', 'от всех', 'они', 'буквенных', 'домах', 'на берегу', 'семантика', 
+		            'большого', 'языкового', 'океана', 'маленький', 'ручеек', 'даль', 
+		            'журчит', 'по всей', 'обеспечивает', 'ее','всеми', 'необходимыми', 
+		            'правилами', 'эта', 'парадигматическая', 'страна', 'которой', 'жаренные', 
+		            'предложения', 'залетают', 'прямо', 'рот', 'даже', 'всемогущая', 
+		            'пунктуация', 'не', 'имеет', 'власти', 'над', 'рыбными', 'текстами', 
+		            'ведущими', 'безорфографичный', 'образ', 'жизни', 'однажды', 'одна', 
+		            'маленькая', 'строчка','рыбного', 'текста', 'имени', 'lorem', 'ipsum', 
+		            'решила', 'выйти', 'большой', 'мир', 'грамматики', 'великий', 'оксмокс', 
+		            'предупреждал', 'о', 'злых', 'запятых', 'диких', 'знаках', 'вопроса', 
+		            'коварных', 'точках', 'запятой', 'но', 'текст', 'дал', 'сбить', 
+		            'себя', 'толку', 'он', 'собрал', 'семь', 'своих', 'заглавных', 'букв', 
+		            'подпоясал', 'инициал', 'за', 'пояс', 'пустился', 'дорогу', 
+		            'взобравшись', 'первую', 'вершину', 'курсивных', 'гор', 'бросил', 
+		            'последний', 'взгляд', 'назад', 'силуэт', 'своего', 'родного', 'города', 
+		            'буквоград', 'заголовок', 'деревни', 'алфавит', 'подзаголовок', 'своего', 
+		            'переулка', 'грустный', 'реторический', 'вопрос', 'скатился', 'его', 
+		            'щеке', 'продолжил', 'свой', 'путь', 'дороге', 'встретил', 'рукопись', 
+		            'она', 'предупредила',  'моей', 'все', 'переписывается', 'несколько', 
+		            'раз', 'единственное', 'что', 'меня', 'осталось', 'это', 'приставка', 
+		            'возвращайся', 'ты', 'лучше', 'свою', 'безопасную', 'страну', 'послушавшись', 
+		            'рукописи', 'наш', 'продолжил', 'свой', 'путь', 'вскоре', 'ему', 
+		            'повстречался', 'коварный', 'составитель', 'рекламных', 'текстов', 
+		            'напоивший', 'языком', 'речью', 'заманивший', 'свое', 'агенство', 
+		            'которое', 'использовало', 'снова', 'снова', 'своих', 'проектах', 
+		            'если', 'переписали', 'то', 'живет', 'там', 'до', 'сих', 'пор']
+		}
+	};
+
+	var prefs = require('preferences');
+	prefs.define('lorem.defaultLang', 'en');
+
+	/**
+	 * @param {AbbreviationNode} tree
+	 * @param {Object} options
+	 */
+	require('abbreviationParser').addPreprocessor(function(tree, options) {
+		var re = /^(?:lorem|lipsum)([a-z]{2})?(\d*)$/i, match;
+		
+		/** @param {AbbreviationNode} node */
+		tree.findAll(function(node) {
+			if (node._name && (match = node._name.match(re))) {
+				var wordCound = match[2] || 30;
+				var lang = match[1] || prefs.get('lorem.defaultLang') || 'en';
+				
+				// force node name resolving if node should be repeated
+				// or contains attributes. In this case, node should be outputed
+				// as tag, otherwise as text-only node
+				node._name = '';
+				node.data('forceNameResolving', node.isRepeating() || node.attributeList().length);
+				node.data('pasteOverwrites', true);
+				node.data('paste', function(i, content) {
+					return paragraph(lang, wordCound, !i);
+				});
+			}
+		});
+	});
 	
 	/**
 	 * Returns random integer between <code>from</code> and <code>to</code> values
@@ -12107,9 +12820,11 @@ emmet.exec(function(require, _) {
 		} else {
 			totalCommas = randint(1, 4);
 		}
-		
-		_.each(sample(_.range(totalCommas)), function(ix) {
-			words[ix] += ',';
+
+		_.each(_.range(totalCommas), function(ix) {
+			if (ix < words.length - 1) {
+				words[ix] += ',';
+			}
 		});
 	}
 	
@@ -12120,15 +12835,20 @@ emmet.exec(function(require, _) {
 	 * "lorem ipsum" sentence.
 	 * @returns {String}
 	 */
-	function paragraph(wordCount, startWithCommon) {
+	function paragraph(lang, wordCount, startWithCommon) {
+		var data = langs[lang];
+		if (!data) {
+			return '';
+		}
+
 		var result = [];
 		var totalWords = 0;
 		var words;
 		
 		wordCount = parseInt(wordCount, 10);
 		
-		if (startWithCommon) {
-			words = COMMON_P.slice(0, wordCount);
+		if (startWithCommon && data.common) {
+			words = data.common.slice(0, wordCount);
 			if (words.length > 5)
 				words[4] += ',';
 			totalWords += words.length;
@@ -12136,13 +12856,32 @@ emmet.exec(function(require, _) {
 		}
 		
 		while (totalWords < wordCount) {
-			words = sample(WORDS, Math.min(randint(3, 12) * randint(1, 5), wordCount - totalWords));
+			words = sample(data.words, Math.min(randint(3, 12) * randint(1, 5), wordCount - totalWords));
 			totalWords += words.length;
 			insertCommas(words);
 			result.push(sentence(words));
 		}
 		
 		return result.join(' ');
+	}
+
+	return {
+		/**
+		 * Adds new language words for Lorem Ipsum generator
+		 * @param {String} lang Two-letter lang definition
+		 * @param {Object} data Words for language. Maight be either a space-separated 
+		 * list of words (String), Array of words or object with <code>text</code> and
+		 * <code>common</code> properties
+		 */
+		addLang: function(lang, data) {
+			if (_.isString(data)) {
+				data = {words: _.compact(data.split(' '))};
+			} else if (_.isArray(data)) {
+				data = {words: data};
+			}
+
+			langs[lang] = data;
+		}
 	}
 });/**
  * A back-end bootstrap module with commonly used methods for loading user data
@@ -12170,6 +12909,28 @@ emmet.define('bootstrap', function(require, _) {
 	function getBasePath(path) {
 		return path.substring(0, path.length - getFileName(path).length);
 	}
+
+	/**
+	 * Normalizes profile definition: converts some
+	 * properties to valid data types
+	 * @param {Object} profile
+	 * @return {Object}
+	 */
+	function normalizeProfile(profile) {
+		if (_.isObject(profile)) {
+			if ('indent' in profile) {
+				profile.indent = !!profile.indent;
+			}
+
+			if ('self_closing_tag' in profile) {
+				if (_.isNumber(profile.self_closing_tag)) {
+					profile.self_closing_tag = !!profile.self_closing_tag;
+				}
+			}
+		}
+
+		return profile;
+	}
 	
 	return {
 		/**
@@ -12189,38 +12950,56 @@ emmet.define('bootstrap', function(require, _) {
 			var payload = {};
 			var utils = require('utils');
 			var userSnippets = null;
+			var that = this;
 			
-			_.each(fileList, function(f) {
-				switch (file.getExt(f)) {
-					case 'js':
-						try {
-							eval(file.read(f));
-						} catch (e) {
-							emmet.log('Unable to eval "' + f + '" file: '+ e);
+			var reader = _.bind(file.readText || file.read, file);
+			
+			var next = function() {
+				if (fileList.length) {
+					var f = fileList.shift();
+					reader(f, function(err, content) {
+						if (err) {
+							emmet.log('Unable to read "' + f + '" file: '+ err);
+							return next();
 						}
-						break;
-					case 'json':
-						var fileName = getFileName(f).toLowerCase().replace(/\.json$/, '');
-						if (/^snippets/.test(fileName)) {
-							if (fileName === 'snippets') {
-								// data in snippets.json is more important to user
-								userSnippets = this.parseJSON(file.read(f));
-							} else {
-								payload.snippets = utils.deepMerge(payload.snippets || {}, this.parseJSON(file.read(f)));
-							}
-						} else {
-							payload[fileName] = file.read(f);
+												
+						switch (file.getExt(f)) {
+							case 'js':
+								try {
+									eval(content);
+								} catch (e) {
+									emmet.log('Unable to eval "' + f + '" file: '+ e);
+								}
+								break;
+							case 'json':
+								var fileName = getFileName(f).toLowerCase().replace(/\.json$/, '');
+								if (/^snippets/.test(fileName)) {
+									if (fileName === 'snippets') {
+										// data in snippets.json is more important to user
+										userSnippets = that.parseJSON(content);
+									} else {
+										payload.snippets = utils.deepMerge(payload.snippets || {}, that.parseJSON(content));
+									}
+								} else {
+									payload[fileName] = content;
+								}
+								
+								break;
 						}
 						
-						break;
+						next();
+					});
+				} else {
+					// complete
+					if (userSnippets) {
+						payload.snippets = utils.deepMerge(payload.snippets || {}, userSnippets);
+					}
+					
+					that.loadUserData(payload);
 				}
-			}, this);
+			};
 			
-			if (userSnippets) {
-				payload.snippets = utils.deepMerge(payload.snippets || {}, userSnippets);
-			}
-			
-			this.loadUserData(payload);
+			next();
 		},
 		
 		/**
@@ -12282,8 +13061,9 @@ emmet.define('bootstrap', function(require, _) {
 				this.loadProfiles(data.profiles);
 			}
 			
-			if (data.syntaxprofiles) {
-				this.loadSyntaxProfiles(data.syntaxprofiles);
+			var profiles = data.syntaxProfiles || data.syntaxprofiles;
+			if (profiles) {
+				this.loadSyntaxProfiles(profiles);
 			}
 		},
 		
@@ -12309,7 +13089,7 @@ emmet.define('bootstrap', function(require, _) {
 				if (!(syntax in snippets)) {
 					snippets[syntax] = {};
 				}
-				snippets[syntax].profile = options;
+				snippets[syntax].profile = normalizeProfile(options);
 			});
 			
 			this.loadSnippets(snippets);
@@ -12322,7 +13102,7 @@ emmet.define('bootstrap', function(require, _) {
 		loadProfiles: function(profiles) {
 			var profile = require('profile');
 			_.each(this.parseJSON(profiles), function(options, name) {
-				profile.create(name, options);
+				profile.create(name, normalizeProfile(options));
 			});
 		},
 		
