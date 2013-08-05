@@ -29,6 +29,36 @@
 			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
 		}
 	},
+  // Go to left bracket
+  {
+      "keys": ["alt+up"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["__all__"],
+              "command": "bh_modules.bracketselect",
+              "args": {"select": "left"}
+          }
+      }
+  },
+  // Go to right bracket
+  {
+      "keys": ["alt+down"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["__all__"],
+              "command": "bh_modules.bracketselect",
+              "args": {"select": "right"}
+          }
+      }
+  },
 	{
       "keys": ["ctrl+shift+alt+h"], "command": "sublime_tmpl",
       "args": {"type": "html"}

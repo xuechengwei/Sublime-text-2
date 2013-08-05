@@ -1,6 +1,6 @@
 {
 	"D:/www":{
-		"url_testing":"http://localhost/over",
-		"url_production":"file:///D:/www/over"
+		"url_testing":"http://localhost/",
+		"url_production":"file:///D:/www/"
 	}
 }
