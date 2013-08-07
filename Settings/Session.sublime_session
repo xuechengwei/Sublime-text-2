@@ -2224,6 +2224,10 @@
 				"selected_items":
 				[
 					[
+						"remo",
+						"removeClass  (function)"
+					],
+					[
 						"新版",
 						"新版发布页剩余任务"
 					],
@@ -2730,10 +2734,6 @@
 					[
 						"url",
 						"url(image-url.gif)"
-					],
-					[
-						"helvetica",
-						"Arial, Helvetica, sans-serif"
 					]
 				]
 			},
@@ -2759,15 +2759,7 @@
 					"file": "/D/www/actPublish/index.html",
 					"settings":
 					{
-						"buffer_size": 24440,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
-					"settings":
-					{
-						"buffer_size": 12989,
+						"buffer_size": 23990,
 						"line_ending": "Unix"
 					}
 				},
@@ -2775,23 +2767,15 @@
 					"file": "/D/www/actPublish/js/script.js",
 					"settings":
 					{
-						"buffer_size": 7157,
+						"buffer_size": 7273,
 						"line_ending": "Unix"
-					}
-				},
-				{
-					"contents": "function $F(func, args, script) {\n    var run = function() {\n        var argc = args.length,\n            s = '';\n        for (i = 0; i < argc; i++) {\n            s += ',args[' + i + ']';\n        }\n        eval('var check = typeof ' + func + ' == \\'function\\'');\n        if (check) {\n            eval(func + '(' + s.substr(1) + ')');\n        } else {\n            setTimeout(function() {\n                checkrun();\n            }, 50);\n        }\n    };\n    var checkrun = function() {\n        if (JSLOADED[src]) {\n            run();\n        } else {\n            setTimeout(function() {\n                checkrun();\n            }, 50);\n        }\n    };\n    script = script || 'common_extra';\n    src = JSPATH + script + '.js?' + VERHASH;\n    if (!JSLOADED[src]) {\n        appendscript(src);\n    }\n    checkrun();\n}\n\n\nfunction showTip(ctrlobj) {\n    $F('_showTip', arguments);\n}",
-					"settings":
-					{
-						"buffer_size": 873,
-						"line_ending": "Windows"
 					}
 				},
 				{
 					"file": "/D/www/actPublish/css/page.css",
 					"settings":
 					{
-						"buffer_size": 9620,
+						"buffer_size": 9948,
 						"line_ending": "Unix"
 					}
 				},
@@ -2807,9 +2791,21 @@
 			"build_system": "Packages/HTML Compressor/HTML Compressor.sublime-build",
 			"command_palette":
 			{
-				"height": 255.0,
+				"height": 375.0,
 				"selected_items":
 				[
+					[
+						"find",
+						"FindKeyConflicts: All Conflicts"
+					],
+					[
+						"finde",
+						"FindKeyConflicts: All Conflicts"
+					],
+					[
+						"emmet",
+						"Emmet: Rename Tag"
+					],
 					[
 						"listpa",
 						"Package Control: List Packages"
@@ -2977,10 +2973,6 @@
 					[
 						"remov",
 						"Emmet: Remove Tag"
-					],
-					[
-						"emmet",
-						"Emmet: Match Pair (outward)"
 					],
 					[
 						"pretty",
@@ -3247,10 +3239,6 @@
 						"Set Syntax: CSS"
 					],
 					[
-						"find",
-						"FindKeyConflicts: All Conflicts"
-					],
-					[
 						"color",
 						"Color picker"
 					],
@@ -3317,10 +3305,6 @@
 					[
 						"pinsp",
 						"Package Control: Install Package"
-					],
-					[
-						"Package Control: ",
-						"Package Control: Discover Packages"
 					]
 				],
 				"width": 522.0
@@ -3340,11 +3324,14 @@
 			},
 			"file_history":
 			[
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/emmet/snippets.json",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/John the whisler/Desktop/act/eventshow.htm",
+				"/C/Users/John the whisler/Desktop/jiaoben638/jiaoben638/index.html",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Example.sublime-keymap",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Default.sublime-keymap",
-				"/C/Users/John the whisler/Desktop/act/eventshow.htm",
 				"/D/www/actPublish/css/jqtransform.css",
 				"/D/www/actPublish/js/jquery.jqtransform.js",
 				"/C/Users/John the whisler/Desktop/DropKick/example/jquery.dropkick-1.0.3.js",
@@ -3464,10 +3451,7 @@
 				"/D/workspace/lvye_cms/lvyecms/settings.py",
 				"/D/workspace/library/huodong/templates/huodong/index.html",
 				"/D/workspace/library/huodong/templates/huodong/base.html",
-				"/D/www/pay.lvye.cn/application/views/layout/layout.php",
-				"/D/www/actPublish/js/index.html",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/HTML Compressor/HTML Compressor.sublime-build",
-				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme"
+				"/D/www/pay.lvye.cn/application/views/layout/layout.php"
 			],
 			"find":
 			{
@@ -3519,6 +3503,29 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"applyinfo",
+					"<input type=\"checkbox\" name=\"\" id=\"\">",
+					"<input type=\"checkbox\" name=\"\" id=\"\" disabled checked>",
+					";",
+					"bg",
+					"inset",
+					"<input type=\"checkbox\" name=\"\" id=\"\">",
+					"登山",
+					"#",
+					"ctrl+.",
+					"match_pair_outward",
+					"shift+ctrl+.",
+					"ctrl+shift+,",
+					"emmet",
+					"ctrl",
+					"ctrl+.",
+					"ctrl",
+					"shift",
+					"shift+0",
+					"shift",
+					"shift+0",
+					"ctrl+shift+0",
+					"ctrl+shift+o",
 					"disable",
 					"emmet_action_enabled.select_next_item",
 					"outward",
@@ -3623,30 +3630,7 @@
 					"donkey",
 					"bye",
 					"defualt",
-					"再见",
-					"emot",
-					"trai",
-					",",
-					"2",
-					"22",
-					"2",
-					",",
-					"webeditorwrap",
-					".breadcrumbs",
-					"全部活动",
-					"没有找到相关活动，我们为您推荐了以下活动",
-					"inorout clearfix",
-					"30",
-					"没有找到相关活动，我们为您推荐了以下活动",
-					"picshow",
-					"8",
-					"-13",
-					"picshow",
-					"-13",
-					".showmethod",
-					".ascent",
-					".orderblock",
-					"filterbar"
+					"再见"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -3807,7 +3791,7 @@
 			"groups":
 			[
 				{
-					"selected": 4,
+					"selected": 0,
 					"sheets":
 					[
 						{
@@ -3821,8 +3805,8 @@
 								"selection":
 								[
 									[
-										108,
-										108
+										128,
+										128
 									]
 								],
 								"settings":
@@ -4168,15 +4152,15 @@
 							"file": "/D/www/actPublish/index.html",
 							"settings":
 							{
-								"buffer_size": 24440,
+								"buffer_size": 23990,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2531,
-										2531
+										8159,
+										8159
 									]
 								],
 								"settings":
@@ -4338,205 +4322,25 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 1250.0,
+								"translation.y": 4675.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 3,
-							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
-							"settings":
-							{
-								"buffer_size": 12989,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1878,
-										1878
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"buffer_scroll_name": "9c3e3d39",
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"incomplete_sync": null,
-									"origin_encoding": "ASCII",
-									"remote_loading": false,
-									"sublime_auto_complete": true,
-									"synced": false,
-									"syntax": "Packages/JavaScript/JSON.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1228.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
 							"file": "/D/www/actPublish/js/script.js",
 							"settings":
 							{
-								"buffer_size": 7157,
+								"buffer_size": 7273,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										301,
-										301
+										1234,
+										1234
 									]
 								],
 								"settings":
@@ -4705,183 +4509,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"settings":
-							{
-								"buffer_size": 873,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										705,
-										705
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"incomplete_sync": null,
-									"is_xml": false,
-									"sublime_auto_complete": true,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 832.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -4893,19 +4521,19 @@
 					"sheets":
 					[
 						{
-							"buffer": 6,
+							"buffer": 4,
 							"file": "/D/www/actPublish/css/page.css",
 							"settings":
 							{
-								"buffer_size": 9620,
+								"buffer_size": 9948,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										9617,
-										9617
+										7051,
+										7051
 									]
 								],
 								"settings":
@@ -5067,13 +4695,13 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 5668.0,
+								"translation.y": 4772.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
-							"buffer": 7,
+							"buffer": 5,
 							"file": "/D/www/actPublish/css/common.css",
 							"settings":
 							{
@@ -5282,7 +4910,7 @@
 				"cols":
 				[
 					0.0,
-					0.75,
+					0.594884488449,
 					1.0
 				],
 				"rows":

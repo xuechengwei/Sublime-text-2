@@ -2224,6 +2224,14 @@
 				"selected_items":
 				[
 					[
+						"remov",
+						"removeClass  (function)"
+					],
+					[
+						"remo",
+						"removeClass  (function)"
+					],
+					[
 						"新版",
 						"新版发布页剩余任务"
 					],
@@ -2726,24 +2734,16 @@
 					[
 						"searh",
 						"search-form"
-					],
-					[
-						"url",
-						"url(image-url.gif)"
-					],
-					[
-						"helvetica",
-						"Arial, Helvetica, sans-serif"
 					]
 				]
 			},
 			"buffers":
 			[
 				{
-					"contents": "上周五:\n	1. 新版发布页按照设计样式制作(40%)\n	2. 新招聘页面制作\n今天:\n	1. 剩余新版发布页按照设计样式制作\n	2. 修改discuz活动页面日历控件bug、活动展示页面副领队是否接受邀请图标bug\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	\n	1.新版发布页剩余任务(主要是和后端衔接)\n	2.活动搜索2.1剩一点点了  得等张狄出来后我才能加样式\n	3.用户中心系统\n	4.绿野整站头部变更\n	5.APP汇总页",
+					"contents": "昨天:\n	1. 新版发布页页面样式剩余10%\n	2. 根据后端给的name表 填到各个对应的字段里\n今天:\n	1. 发布页出发和到达省市select级联\n	2. 发布页浏览器兼容调整\n\n\n\n\n\n\n\n\n\n\n\n\n	1.新版发布页剩余任务(主要是和后端衔接)\n	2.活动搜索2.1剩一点点了  得等张狄出来后我才能加样式\n	3.用户中心系统\n	4.绿野整站头部变更\n	5.APP汇总页",
 					"settings":
 					{
-						"buffer_size": 216,
+						"buffer_size": 189,
 						"line_ending": "Unix"
 					}
 				},
@@ -2759,7 +2759,24 @@
 					"file": "/D/www/actPublish/index.html",
 					"settings":
 					{
-						"buffer_size": 23645,
+						"buffer_size": 24090,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "没填name的：\n	图片\n	活动分类(类型)\n\n\n\n\n有疑问的\n	没有总必付金额\n	活动性质\n	必须保险\n	保险计划:\n	出行方式\n	领队公司\n#子类型:\n#Attachment ID:\n#Attachment URL:\n#日期类型:\n#出发日类型:\n#额外福利:\n	费用类型\n\n	不需要领队字段:谁发的就是谁",
+					"settings":
+					{
+						"buffer_size": 155,
+						"line_ending": "Windows",
+						"name": "没填name的："
+					}
+				},
+				{
+					"file": "/D/www/actPublish/draft.html",
+					"settings":
+					{
+						"buffer_size": 148239,
 						"line_ending": "Unix"
 					}
 				},
@@ -2767,26 +2784,15 @@
 					"file": "/D/www/actPublish/js/script.js",
 					"settings":
 					{
-						"buffer_size": 7157,
+						"buffer_size": 7883,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"contents": "function $F(func, args, script) {\n    var run = function() {\n        var argc = args.length,\n            s = '';\n        for (i = 0; i < argc; i++) {\n            s += ',args[' + i + ']';\n        }\n        eval('var check = typeof ' + func + ' == \\'function\\'');\n        if (check) {\n            eval(func + '(' + s.substr(1) + ')');\n        } else {\n            setTimeout(function() {\n                checkrun();\n            }, 50);\n        }\n    };\n    var checkrun = function() {\n        if (JSLOADED[src]) {\n            run();\n        } else {\n            setTimeout(function() {\n                checkrun();\n            }, 50);\n        }\n    };\n    script = script || 'common_extra';\n    src = JSPATH + script + '.js?' + VERHASH;\n    if (!JSLOADED[src]) {\n        appendscript(src);\n    }\n    checkrun();\n}\n\n\nfunction showTip(ctrlobj) {\n    $F('_showTip', arguments);\n}",
-					"settings":
-					{
-						"buffer_size": 873,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "/* header top module begin */\n/* -------------------------------------------------------------------------- */\n\nbody{\n 	color: #4B4B4B;\n	font-size: 12px;\n 	font-family:'simsun' ,'Microsoft Yahei';\n 	background-color: #F7F7F7;\n}\na:link{\n	color: #000;\n	text-decoration: none;\n}\na:visited{\n	color: #6D6D6D;\n	text-decoration: none;\n}\na:link{\n	color: #5D5D5D;\n}\na:hover{\n	color: #369000;\n	text-decoration: none;\n}\ninput:focus, select:focus, textarea:focus{\n	outline: none;\n}\n.nomr{\n	margin-right:0!important;\n}\n.nomb{\n  margin-bottom: 0!important;\n}\n.vat{\n	vertical-align: top;\n}\n.tac{\n	text-align: center;\n}\ninput[type=\"text\"]:focus {\n	border-color: #F80!important;\n	box-shadow: 0 0 5px rgba(255,136,0,.5)\n}\n\n/* style selectbox begin */\n/* -------------------------------------------------------------------------- */\n/*label.styledselect{\n	position: relative;\n	display: block;\n	float: left;\n	border:1px solid #ccc;\n	margin-right: 10px;\n}\nlabel.styledselect:before{\n	position: absolute;\n	content: '';\n	right:6px;\n	top:0;\n	width:20px;\n	height: 26px;\n	background-color: #fff;\n	display: block;\n	pointer-events: none;\n}\nlabel.styledselect:after {\n	content: url(../images/selectbg.jpg);\n	position: absolute;\n	pointer-events: none;\n	right:15px;\n	width:10px;\n	top:2px;\n	display: block;\n	background: url(../images/selectbg.jpg) right center no-repeat;\n	height: 28px;\n	background-color: rgba(0, 0, 0, 0);\nbackground-image: none;\n	-webkit-appearance: none;\n	border: none;\n	box-shadow: none;\n}\nlabel.styledselect select {\n	display: block;\n	height: 28px;\n	border:none;\n	outline:none;\n	-webkit-appearance: none;\n	-moz-appearance: none;\n	appearance: none;\n	cursor:pointer;\n	padding: 0 25px 0 0;\n	line-height: 28px;\n	margin: 0;\n}\n.ie7 label.styledselect {\n	border:none;\n}*/\n/* style selectbox end */\n/* -------------------------------------------------------------------------- */\n\n\n/* global styles begin */\n/* -------------------------------------------------------------------------- */\n.splitline { margin: 30px 0; height: 0; border-top: 1px dashed #ddd; }\n.datefield { width: 100px; border: 1px solid #AEAEAF; background: #fff url(../images/canlendico.png) 92px center no-repeat; }\n.datehmfield { width: 128px; height: 24px; border: 1px solid #AEAEAF; background: #fff url(../images/canlendico.jpg) 116px center no-repeat; }\n\n.deputyleader { float: left; margin-top: 5px!important; }\n.mustfill { color: red;  font-weight: normal; font-size: 12px; }\n/* global styles end */\n/* -------------------------------------------------------------------------- */\n\n\n\n.container{ margin: 50px auto;	 width: 960px; }\n.breadcrumb{ padding: 8px 12px; border:1px solid #ddd; background-color: #fff; }\n.breadcrumb ul{ overflow:hidden; }\n.breadcrumb ul li { float:left; color: #09C;}\n.breadcrumb ul li a { color:#09C;}\n.bread_home { padding-left: 25px; background:url(../images/bread_home.png) 0 center no-repeat; }\n.publishactwrap{ padding: 0 12px; border:1px solid #ddd; margin-top:10px; background-color: #fff; color: #616161;}\n.breadcrumb .spacer { padding:0 8px }\n\n.pubtitle { font-size: 18px; color: #690; font-weight:bold; }\n.draftbox { float:right; }\n.draftbox a {  color:#616161; }\n.tophgroup { margin-bottom: 10px; }\n	.tophgroup h3, .tophgroup h4 { line-height: 40px;}\n	.tophgroup h3 { border-bottom: 1px solid #ddd; }\n	.tophgroup h4 { font-size: 14px; }\n.tmplist { display: none; }\n.tmplist table { width: 100%; }\n.tmplist table tr { background-color:#EEE; }\n.tmplist table tr:hover{ background-color:#fff; }\n.tmplist th { background-color: #E6E6E6; border:1px solid #999; text-align: center;}\n.tmplist td { border:1px solid #999; padding: 5px;}\n.tmptitle .tmpup { background: url(../images/arrowup.png) 0 0 no-repeat; }\n.tmptitle .tmpdown { background: url(../images/arrowdown.png) 0 0 no-repeat; }\n.selecttmp,.deletetmp { display: block; padding: 0 5px; margin: 2px 0 0 9px;  color: #fff!important; float: left; height: 20px; line-height: 20px; border-radius: 3px;  }\n.selecttmp { background-color:#09C; margin-right: 5px;}\n.selecttmp:hover{ background-color:#690; }\n.deletetmp { background-color:#ccc; }\n.deletetmp:hover { background-color:#F80; }\n.limitwidth640 { width: 640px; }\n\n.container table { line-height: 30px; width: 100%;}\n	.headtable th, .leaderinfo th, .feiinfo th, .actproperties th, .detailinfo th, .otherinfotb th,.feewrapper th { width: 100px; font-size: 14px; text-align: right; padding-right: 10px;}\n	.container table input[type=\"checkbox\"] { margin-right: 5px; vertical-align: -3px; }\n	.container table input[type=\"radio\"] { margin-right: 5px; vertical-align: -2px; }\n	.container table input[type=\"text\"] { height: 20px; padding: 3px 5px; line-height: 20px; border: 1px solid #CCC;}\n	/*.container table select { padding-right: 0; }*/\n.\n/* 1st table module begin */\n/* -------------------------------------------------------------------------- */\n.headtable {  }\n	.headtable td { height: 45px;}\n.titleinput { float: left; margin-top: 5px!important; margin-left: 0!important; width: 620px; }\n.actfeaturefield { padding: 5px; width: 620px; height: 82px; border: 1px solid #ccc; display: block;}\n/* 1st table module end */\n/* -------------------------------------------------------------------------- */\n\n/* 2nd table module begin */\n/* -------------------------------------------------------------------------- */\n.actproperties {  }\n	.actproperties td { width: 340px; }\n/* 2nd table module end */\n/* -------------------------------------------------------------------------- */\n\n/* 3rd table module begin */\n/* -------------------------------------------------------------------------- */\n.detailinfo {  }\n	.detailinfo td { width: 340px; }\n/* 3rd table module end */\n/* -------------------------------------------------------------------------- */\n\n\n/* 4th table module begin */\n/* -------------------------------------------------------------------------- */\n.feiinfo {\n    font-size: 12px;\n  }\n	.feiinfo th { background-color: #f2f2f2; text-align: center; font-size: 12px; width: auto;}\n	.feiinfo td, .feiinfo th { padding:0 10px; height: 40px; border: 1px solid #ddd;}\n#feeitemerror { color:red; margin-top: 10px; }\n/* 4th table module end */\n/* -------------------------------------------------------------------------- */\n\n/* 5th table module begin */\n/* -------------------------------------------------------------------------- */\n.actcatewrap  h5{ overflow: hidden; margin-bottom: 10px; width: 110px; text-align: right;}\n.actcategory {float: left; width: 110px; }\n.actcategory p{ margin: 10px 0; font-size: 14px; width: 100px; padding-right: 10px; text-align: right;}\n.actcate { margin-top: -5px; }\n.actcate td { padding-right: 10px; }\n.categoryul { overflow: hidden; float: left; width: 820px;margin-bottom: 10px; }\n.categoryul li{ float: left; line-height: 25px; margin-right: 10px; }\n.categoryul li input[type=\"checkbox\"]{ vertical-align: -3px; margin-right: 5px; }\n/* 5th table module end */\n/* -------------------------------------------------------------------------- */\n\n\n/* 6th table module begin */\n/* -------------------------------------------------------------------------- */\n.otherinfotb { margin: 10px 0; }\n.acttag { display: block; width: 470px; float: left; margin-right: 10px;}\n/* 6th table module end */\n/* -------------------------------------------------------------------------- */\n\n/* tabs module begin */\n/* -------------------------------------------------------------------------- */\n.idTabs { overflow: hidden; height: 25px;  }\n	.idTabs li{ float: left; margin-right: 1px; }\n	.idTabs a{\n		display: block;\n		padding: 5px 10px;\n		border: 1px solid #eee; -webkit-border-radius: 3px 3px 0 0;\n		-moz-border-radius: 3px 3px 0 0;\n		border-radius: 3px 3px 0 0;\n		background-color: #f2f2f2;\n		color: #000;\n	}\n	.idTabs a.selected{\n		padding: 5px 10px;\n		background-color: #fff;\n	}\n.tabcontent{\n	margin-top: -1px;\n	padding: 10px;\n	border: 1px solid #eee;\n}\n.weibo{\n	margin: 20px 0;\n}\n.publishcheck {\n	margin-right: 10px;\n	vertical-align: -3px;\n}\n/* tabs module end */\n/* -------------------------------------------------------------------------- */\n\n.uploadwrap { position: relative; }\n.uploadbtn { width: 81px; height: 25px; background: #09C; text-align: center; line-height: 25px; cursor: pointer; border-radius: 3px; color: #FFF; float: left; margin-right: 70px; margin-top: 3px;}\n.uploadinput { position: absolute; top: 3px; left: 0; z-index: 1; display: block; width: 81px; height: 25px; opacity: 0; filter:alpha(opacity=0); cursor: pointer; }\n.uploadpreview { float:left; padding:3px;border:1px solid #ccc; }\n.uploadpreview img{ display:block; }\n\n\n/* vehicle module begin */\n/* -------------------------------------------------------------------------- */\n#othervehicle {\n	display: none;\n}\n#businfo, #othervehicle {\n	margin-left: 10px;\n}\n/* vehicle module end */\n/* -------------------------------------------------------------------------- */\n\n/* data validate module begin */\n/* -------------------------------------------------------------------------- */\n#releaseactform .error{\n	border:1px solid #E77776;\n	background: #F8DBDB;\n}\n/* data validate module end */\n/* -------------------------------------------------------------------------- */\n#tmplistslide { cursor: pointer; float: left; height: 4px; width: 7px; margin: 18px 0 0 10px;  }\n#ajaxuploadbtn { padding: 3px 10px; margin: 0; position: absolute; left: 90px; top: 3px; }\n#pub_pubbtn { padding: 5px 10px; cursor: pointer; }\n\n\n\n\n#webeditorroute, #webeditorjourney, #webeditorequipment, #webeditorjoin{\n	width:100%;\n	height:300px;\n}\n#actdestination {\n	width:620px;\n}\n.fielddesc {\n	color: #F80;\n}\n.freegowith {\n	font-size: 14px;\n}\n.attrselected {\n	bg\n}",
 					"file": "/D/www/actPublish/css/page.css",
-					"file_size": 9620,
-					"file_write_time": 130201627953742768,
 					"settings":
 					{
-						"buffer_size": 9642,
+						"buffer_size": 10364,
 						"line_ending": "Unix"
 					}
 				},
@@ -2806,6 +2812,18 @@
 				"selected_items":
 				[
 					[
+						"bracket",
+						"BracketHighlighter: Select Bracket Content"
+					],
+					[
+						"htmlpre",
+						"HTMLPrettify: Prettify"
+					],
+					[
+						"list",
+						"Package Control: List Packages"
+					],
+					[
 						"find",
 						"FindKeyConflicts: All Conflicts"
 					],
@@ -2824,10 +2842,6 @@
 					[
 						"upg",
 						"Package Control: Upgrade Package"
-					],
-					[
-						"bracket",
-						"BracketHighlighter: Jump to Right Bracket"
 					],
 					[
 						"key",
@@ -2860,10 +2874,6 @@
 					[
 						"htmpre",
 						"HTMLPrettify: Prettify"
-					],
-					[
-						"list",
-						"Package Control: List Packages"
 					],
 					[
 						"bh",
@@ -2999,10 +3009,6 @@
 					],
 					[
 						"html pre",
-						"HTMLPrettify: Prettify"
-					],
-					[
-						"htmlpre",
 						"HTMLPrettify: Prettify"
 					],
 					[
@@ -3335,9 +3341,12 @@
 			},
 			"file_history":
 			[
+				"/C/Users/John the whisler/Desktop/act/timeCountDown.js",
+				"/C/Users/John the whisler/Desktop/act/eventshow.htm",
+				"/D/workspace/lvyetopic/nanjing2013/models.py",
+				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/emmet/snippets.json",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-				"/C/Users/John the whisler/Desktop/act/eventshow.htm",
 				"/C/Users/John the whisler/Desktop/jiaoben638/jiaoben638/index.html",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Example.sublime-keymap",
@@ -3381,7 +3390,6 @@
 				"/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 				"/C/Users/John the whisler/Desktop/2.js",
 				"/D/workspace/lvyetopic/nanjing2013/views.py",
-				"/D/workspace/lvyetopic/nanjing2013/models.py",
 				"/D/workspace/lvyetopic/nanjing2013/static/nanjing2013/css/page.css",
 				"/D/workspace/lvyetopic/nanjing2013/urls.py",
 				"/D/workspace/lvyetopic/lvyetopic/urls.py",
@@ -3460,9 +3468,7 @@
 				"/D/workspace/library/huodong/templates/huodong/generate/index.html",
 				"/D/workspace/lvye_cms/lvyecms/settings.py",
 				"/D/workspace/library/huodong/templates/huodong/index.html",
-				"/D/workspace/library/huodong/templates/huodong/base.html",
-				"/D/www/pay.lvye.cn/application/views/layout/layout.php",
-				"/D/www/actPublish/js/index.html"
+				"/D/workspace/library/huodong/templates/huodong/base.html"
 			],
 			"find":
 			{
@@ -3514,6 +3520,40 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"type=\"checkbox\"",
+					"发布活动",
+					"class=\"fee_choose\"",
+					"click",
+					"checked",
+					"poshytip",
+					"距离报名截止只有",
+					"timecountdown",
+					"报名必填选项",
+					"applyinfo",
+					"装备情况",
+					"690",
+					"真实姓名",
+					"报名范围",
+					"强度",
+					"发起名义",
+					"报名限制",
+					"开始时间",
+					"开始日期",
+					"出发日期",
+					"1",
+					"poshytip",
+					"690",
+					"console",
+					"报名截止日期",
+					"faqtip",
+					"rr",
+					"$(this)",
+					"applyinfo",
+					"<input type=\"checkbox\" name=\"\" id=\"\">",
+					"<input type=\"checkbox\" name=\"\" id=\"\" disabled checked>",
+					";",
+					"bg",
+					"inset",
 					"<input type=\"checkbox\" name=\"\" id=\"\">",
 					"登山",
 					"#",
@@ -3607,41 +3647,7 @@
 					"xheTestInput",
 					"xheSave",
 					"jSave",
-					"jTest",
-					"loadBookmark",
-					"side bar",
-					"endblock",
-					"template_dirs",
-					"append_slash",
-					"append",
-					"webeditor",
-					"xheSave",
-					"根据订单类型对账",
-					"待确认的活动退款交易列表",
-					"付款给绿野交易",
-					"付款给绿野交易列表",
-					"根据支付类型对账",
-					"table-list",
-					"<!--提现交易-->",
-					"submitzuji",
-					"测试showDialog",
-					"addMap",
-					"show",
-					"pageInit",
-					"test.css",
-					"qq",
-					"40",
-					"24",
-					"donkey",
-					"bye",
-					"defualt",
-					"再见",
-					"emot",
-					"trai",
-					",",
-					"2",
-					"22",
-					"2"
+					"jTest"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -3802,22 +3808,22 @@
 			"groups":
 			[
 				{
-					"selected": 2,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
 							"settings":
 							{
-								"buffer_size": 216,
+								"buffer_size": 189,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										108,
-										108
+										94,
+										94
 									]
 								],
 								"settings":
@@ -3992,8 +3998,8 @@
 								"selection":
 								[
 									[
-										853,
-										853
+										852,
+										852
 									]
 								],
 								"settings":
@@ -4163,15 +4169,15 @@
 							"file": "/D/www/actPublish/index.html",
 							"settings":
 							{
-								"buffer_size": 23645,
+								"buffer_size": 24090,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										7389,
-										7401
+										7807,
+										7807
 									]
 								],
 								"settings":
@@ -4333,25 +4339,382 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 16100.0,
+								"translation.y": 5084.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 3,
-							"file": "/D/www/actPublish/js/script.js",
 							"settings":
 							{
-								"buffer_size": 7157,
+								"buffer_size": 155,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										301,
-										301
+										46,
+										46
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"auto_name": "没填name的：",
+									"bh_regions":
+									[
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"codeintel": true,
+									"codeintel_config":
+									{
+										"JavaScript":
+										{
+											"codeintel_max_recursive_dir_depth": 2.0,
+											"codeintel_scan_files_in_project": false,
+											"javascriptExtraPaths":
+											[
+											]
+										},
+										"PHP":
+										{
+											"codeintel_max_recursive_dir_depth": 5.0,
+											"codeintel_scan_files_in_project": false,
+											"phpExtraPaths":
+											[
+											]
+										},
+										"Python":
+										{
+											"env":
+											{
+											}
+										}
+									},
+									"codeintel_enabled_languages":
+									[
+										"JavaScript",
+										"Mason",
+										"XBL",
+										"XUL",
+										"RHTML",
+										"SCSS",
+										"Python",
+										"HTML",
+										"Ruby",
+										"Python3",
+										"XML",
+										"Sass",
+										"XSLT",
+										"Django",
+										"HTML5",
+										"Perl",
+										"CSS",
+										"Twig",
+										"Less",
+										"Smarty",
+										"Node.js",
+										"Tcl",
+										"TemplateToolkit",
+										"PHP"
+									],
+									"codeintel_live": true,
+									"codeintel_live_enabled_languages":
+									[
+										"JavaScript",
+										"Mason",
+										"XBL",
+										"XUL",
+										"RHTML",
+										"SCSS",
+										"Python",
+										"HTML",
+										"Ruby",
+										"Python3",
+										"XML",
+										"Sass",
+										"XSLT",
+										"Django",
+										"HTML5",
+										"Perl",
+										"CSS",
+										"Twig",
+										"Less",
+										"Smarty",
+										"Node.js",
+										"Tcl",
+										"TemplateToolkit",
+										"PHP"
+									],
+									"codeintel_max_recursive_dir_depth": 10.0,
+									"codeintel_scan_exclude_dir":
+									{
+										"JavaScript":
+										[
+											"/build/",
+											"/min/"
+										]
+									},
+									"codeintel_scan_files_in_project": true,
+									"codeintel_selected_catalogs":
+									[
+										"PyWin32",
+										"jQuery",
+										"Rails"
+									],
+									"codeintel_snippets": true,
+									"codeintel_syntax_map":
+									{
+										"Python Django": "Python"
+									},
+									"incomplete_sync": null,
+									"is_xml": false,
+									"sublime_auto_complete": true,
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/D/www/actPublish/draft.html",
+							"settings":
+							{
+								"buffer_size": 148239,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										233,
+										233
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"buffer_scroll_name": "b655a7e8",
+									"codeintel": true,
+									"codeintel_config":
+									{
+										"JavaScript":
+										{
+											"codeintel_max_recursive_dir_depth": 2.0,
+											"codeintel_scan_files_in_project": false,
+											"javascriptExtraPaths":
+											[
+											]
+										},
+										"PHP":
+										{
+											"codeintel_max_recursive_dir_depth": 5.0,
+											"codeintel_scan_files_in_project": false,
+											"phpExtraPaths":
+											[
+											]
+										},
+										"Python":
+										{
+											"env":
+											{
+											}
+										}
+									},
+									"codeintel_enabled_languages":
+									[
+										"JavaScript",
+										"Mason",
+										"XBL",
+										"XUL",
+										"RHTML",
+										"SCSS",
+										"Python",
+										"HTML",
+										"Ruby",
+										"Python3",
+										"XML",
+										"Sass",
+										"XSLT",
+										"Django",
+										"HTML5",
+										"Perl",
+										"CSS",
+										"Twig",
+										"Less",
+										"Smarty",
+										"Node.js",
+										"Tcl",
+										"TemplateToolkit",
+										"PHP"
+									],
+									"codeintel_live": true,
+									"codeintel_live_enabled_languages":
+									[
+										"JavaScript",
+										"Mason",
+										"XBL",
+										"XUL",
+										"RHTML",
+										"SCSS",
+										"Python",
+										"HTML",
+										"Ruby",
+										"Python3",
+										"XML",
+										"Sass",
+										"XSLT",
+										"Django",
+										"HTML5",
+										"Perl",
+										"CSS",
+										"Twig",
+										"Less",
+										"Smarty",
+										"Node.js",
+										"Tcl",
+										"TemplateToolkit",
+										"PHP"
+									],
+									"codeintel_max_recursive_dir_depth": 10.0,
+									"codeintel_scan_exclude_dir":
+									{
+										"JavaScript":
+										[
+											"/build/",
+											"/min/"
+										]
+									},
+									"codeintel_scan_files_in_project": true,
+									"codeintel_selected_catalogs":
+									[
+										"PyWin32",
+										"jQuery",
+										"Rails"
+									],
+									"codeintel_snippets": true,
+									"codeintel_syntax_map":
+									{
+										"Python Django": "Python"
+									},
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"sublime_auto_complete": true,
+									"synced": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 132.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/D/www/actPublish/js/script.js",
+							"settings":
+							{
+								"buffer_size": 7883,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1949,
+										1949
 									]
 								],
 								"settings":
@@ -4520,183 +4883,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"settings":
-							{
-								"buffer_size": 873,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										705,
-										705
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close"
-									],
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"incomplete_sync": null,
-									"is_xml": false,
-									"sublime_auto_complete": true,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 1498.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -4708,19 +4895,19 @@
 					"sheets":
 					[
 						{
-							"buffer": 5,
+							"buffer": 6,
 							"file": "/D/www/actPublish/css/page.css",
 							"settings":
 							{
-								"buffer_size": 9642,
+								"buffer_size": 10364,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										9640,
-										9640
+										10362,
+										10362
 									]
 								],
 								"settings":
@@ -4770,7 +4957,6 @@
 										"bh_single_quote_close"
 									],
 									"buffer_scroll_name": "3ed8a6f8",
-									"check_times": 0.0,
 									"clone_numbers": 1,
 									"codeintel": true,
 									"codeintel_config":
@@ -4883,13 +5069,13 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 5514.0,
+								"translation.y": 7203.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
-							"buffer": 6,
+							"buffer": 7,
 							"file": "/D/www/actPublish/css/common.css",
 							"settings":
 							{
@@ -5098,7 +5284,7 @@
 				"cols":
 				[
 					0.0,
-					0.25,
+					0.485767986503,
 					1.0
 				],
 				"rows":
@@ -5120,7 +5306,7 @@
 			{
 				"height": 0.0
 			},
-			"position": "0,2,3,-32000,-32000,-1,-1,1046,2025,135,3945",
+			"position": "0,0,1,-32000,-32000,-1,-1,1046,2224,135,3917",
 			"replace":
 			{
 				"height": 76.0
