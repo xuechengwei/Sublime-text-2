@@ -9,14 +9,6 @@
 	"highlight_line": false,
 	"ignored_packages":
 	[
-
-	],
-	"indent_guide_options":
-	[
-		"draw_active"
-	],
-	"rulers":
-	[
 		"CTags",
 		"Clipboard History",
 		"D",
@@ -45,6 +37,12 @@
 		"YUI Compressor",
 		"ZenCoding"
 	],
+	"indent_guide_options":
+	[
+		"draw_active"
+	],
+	"rulers":
+	[],
 	"theme": "Nexus.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,

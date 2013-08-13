@@ -2770,13 +2770,10 @@
 					}
 				},
 				{
-					"contents": "<!doctype html>\n<html>\n<head>\n	<meta charset=\"UTF-8\">\n	<title></title>\n	<meta name=\"robots\" content=\"index, follow\">\n	<meta name=\"keywords\" content=\"\">\n	<meta name=\"description\" content=\"\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n	<link rel=\"stylesheet\" href=\"http://www.lvye.cn/libs/css/common.css\">\n	<link rel=\"stylesheet\" href=\"css/page.css\">\n	<!--[if lt IE 9]>\n		<script src=\"http://www.lvye.cn/libs/js/html5.js\"></script>\n	<![endif]-->\n	<!--[if lte IE 6]>\n		<script src=\"http://www.lvye.cn/libs/js/DD_belatedPNG_0.0.8a-min.js\"></script>\n		<script>\n			DD_belatedPNG.fix('.');\n		</script>\n	<![endif]-->\n	<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>\n</head>\n<body>\n	<!-- header begin -->\n	<header class=\"header\">\n		<div class=\"topbar\">\n			<div class=\"inner-topbar\">\n				\n			</div>\n		</div>\n		<div class=\"main-header clearfix\">\n			<div class=\"inner-mheader\">\n				<h1><a href=\"\"><img src=\"\" alt=\"\"></a></h1>\n			</div>\n		</div>\n	</header>\n	<!-- header end -->\n\n	<!-- container begin -->\n	<div class=\"container clearfix\">\n\n	</div>\n	<!-- container end -->\n\n	<!-- footer begin -->\n	<footer class=\"footer\">\n		<div class=\"inner-footer clearfix\">\n\n		</div>\n	</footer>\n	<!-- footer end -->\n</body>\n</html>",
 					"file": "/D/www/wholesite/index.html",
-					"file_size": 1119,
-					"file_write_time": 130208494883027429,
 					"settings":
 					{
-						"buffer_size": 1256,
+						"buffer_size": 1345,
 						"line_ending": "Unix"
 					}
 				},
@@ -2800,7 +2797,7 @@
 					"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 949,
+						"buffer_size": 946,
 						"line_ending": "Unix"
 					}
 				},
@@ -2838,12 +2835,20 @@
 					}
 				}
 			],
-			"build_system": "Packages/HTML Compressor/HTML Compressor.sublime-build",
+			"build_system": "",
 			"command_palette":
 			{
-				"height": 375.0,
+				"height": 147.0,
 				"selected_items":
 				[
+					[
+						"disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"dis",
+						"Package Control: Disable Package"
+					],
 					[
 						"enable",
 						"Package Control: Enable Package"
@@ -2865,20 +2870,12 @@
 						"Package Control: Disable Package"
 					],
 					[
-						"disable",
-						"Package Control: Disable Package"
-					],
-					[
 						"listpa",
 						"Package Control: List Packages"
 					],
 					[
 						"pip",
 						"Package Control: Install Package"
-					],
-					[
-						"dis",
-						"Package Control: Disable Package"
 					],
 					[
 						"remove pa",
@@ -3357,7 +3354,7 @@
 						"Set Syntax: JavaScript"
 					]
 				],
-				"width": 522.0
+				"width": 514.0
 			},
 			"console":
 			{
@@ -3554,6 +3551,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"a href",
 					"ignore",
 					"topbar",
 					"SublimeLinter",
@@ -3680,8 +3678,7 @@
 					"poshytip",
 					"690",
 					"console",
-					"报名截止日期",
-					"faqtip"
+					"报名截止日期"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -3842,7 +3839,7 @@
 			"groups":
 			[
 				{
-					"selected": 4,
+					"selected": 3,
 					"sheets":
 					[
 						{
@@ -4558,15 +4555,15 @@
 							"file": "/D/www/wholesite/index.html",
 							"settings":
 							{
-								"buffer_size": 1256,
+								"buffer_size": 1345,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										657,
-										657
+										1106,
+										1106
 									]
 								],
 								"settings":
@@ -4831,8 +4828,8 @@
 								"selection":
 								[
 									[
-										3932,
-										3932
+										3775,
+										3775
 									]
 								],
 								"settings":
@@ -5354,15 +5351,15 @@
 							"file": "/C/Users/John the whisler/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 							"settings":
 							{
-								"buffer_size": 949,
+								"buffer_size": 946,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										743,
-										743
+										364,
+										364
 									]
 								],
 								"settings":
@@ -5609,7 +5606,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 75.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -6409,6 +6406,7 @@
 										"bh_single_quote_close"
 									],
 									"buffer_scroll_name": "3ed8a6f8",
+									"check_times": 0.0,
 									"class_or_id": "mustfill",
 									"clone_numbers": 1,
 									"codeintel": true,
@@ -6641,7 +6639,7 @@
 				"cols":
 				[
 					0.0,
-					0.530528052805,
+					0.605512687101,
 					1.0
 				],
 				"rows":
