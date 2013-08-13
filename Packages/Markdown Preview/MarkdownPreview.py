@@ -4,14 +4,31 @@ import sublime_plugin
 
 import os
 import sys
+import traceback
 import tempfile
 import re
 import json
-import urllib2
 
-import desktop
-import markdown2
+if sublime.version() >= '3000':
+    from . import desktop
+    from . import markdown2
+    from . import markdown
+    from .helper import INSTALLED_DIRECTORY
+    from urllib.request import urlopen
+    from urllib.error import HTTPError, URLError
+    
+    def Request(url, data, headers):
+        ''' Adapter for urllib2 used in ST2 '''
+        import urllib.request
+        return urllib.request.Request(url, data=data, headers=headers)
 
+else: # ST2
+    import desktop
+    import markdown2
+    import markdown
+    from helper import INSTALLED_DIRECTORY
+    from urllib2 import Request, urlopen, HTTPError, URLError
+    
 def getTempMarkdownPreviewPath(view):
     ''' return a permanent full path of the temp markdown preview file '''
 
@@ -42,25 +59,30 @@ def load_utf8(filename):
     else: # 2.x
         return open(filename, 'r').read().decode('utf-8')
 
-
 def load_resource(name):
     ''' return file contents for files within the package root folder '''
     v = sublime.version()
     if v >= '3000':
+        filename = '/'.join(['Packages', INSTALLED_DIRECTORY, name])
         try:
-            filename = 'Packages/Markdown Preview/'+name
             return sublime.load_resource(filename)
         except:
+            print("Error while load_resource('%s')" % filename)
+            traceback.print_exc()
             return ''
+            
     else: # 2.x
-        filename = os.path.join(sublime.packages_path(), 'Markdown Preview', name)
+        filename = os.path.join(sublime.packages_path(), INSTALLED_DIRECTORY, name)
 
-        if os.path.isfile(filename):
+        if not os.path.isfile(filename):
+            print('Error while lookup resources file: %s', name)
+            return ''
+
+        try:
             return open(filename, 'r').read().decode('utf-8')
-        else:
-            filename = os.path.join(sublime.packages_path(), 'sublimetext-markdown-preview', name) ## why is this ?
-            if os.path.isfile(filename):
-                return open(filename, 'r').read().decode('utf-8')
+        except:
+            print("Error while load_resource('%s')" % filename)
+            traceback.print_exc()
             return ''
 
 def new_scratch_view(window, text):
@@ -110,19 +132,26 @@ class MarkdownCheatsheetCommand(sublime_plugin.TextCommand):
 class MarkdownPreviewCommand(sublime_plugin.TextCommand):
     ''' preview file contents with python-markdown and your web browser '''
 
-    def getCSS(self):
-        ''' return the correct CSS file based on parser and settings '''
-        config_parser = self.settings.get('parser')
-        config_css = self.settings.get('css')
+    def getCSSOnSearchPath(self):
+        css_name = self.settings.get('css', 'default')
+        if os.path.isabs(css_name):
+            return u"<link href='%s' rel='stylesheet' type='text/css'>" % css_name
 
-        styles = ''
-        if config_css and config_css != 'default':
-            styles += u"<link href='%s' rel='stylesheet' type='text/css'>" % config_css
-        else:
-            css_filename = 'markdown.css'
-            if config_parser and config_parser == 'github':
-                css_filename = 'github.css'
-            styles += u"<style>%s</style>" % load_resource(css_filename)
+        if css_name == 'default':
+            css_name = 'github.css' if self.settings.get('parser', 'default') == 'github' else 'markdown.css'
+
+        # Try the local folder for css file.
+        mdfile = self.view.file_name()
+        if mdfile is not None:
+            css_path = os.path.join(os.path.dirname(mdfile), css_name)
+            if os.path.isfile(css_path):
+                return u"<style>%s</style>" % load_utf8(css_path)
+
+        # Try the build-in css files.
+        return u"<style>%s</style>" % load_resource(css_name)
+
+    def getOverrideCSS(self):
+        ''' handls allow_css_overrides setting. '''
 
         if self.settings.get('allow_css_overrides'):
             filename = self.view.file_name()
@@ -133,9 +162,30 @@ class MarkdownPreviewCommand(sublime_plugin.TextCommand):
                     if filename.endswith(filetype):
                         css_filename = filename.rpartition(filetype)[0] + '.css'
                         if (os.path.isfile(css_filename)):
-                            styles += u"<style>%s</style>" % load_utf8(css_filename)
+                            return u"<style>%s</style>" % load_utf8(css_filename)
+        return ''
 
-        return styles
+    def getCSS(self):
+        ''' return the correct CSS file based on parser and settings '''
+        return self.getCSSOnSearchPath() + self.getOverrideCSS()
+
+    def getJS(self):
+        js_files = self.settings.get('js')
+        scripts = ''
+
+        if js_files is not None:
+            # Ensure string values become a list.
+            if isinstance(js_files, str) or isinstance(js_files, unicode):
+                js_files = [js_files]
+            # Only load scripts if we have a list.
+            if isinstance(js_files, list):
+                for js_file in js_files:
+                    if os.path.isabs(js_file):
+                        # Load the script inline to avoid cross-origin.
+                        scripts += u"<script>%s</script>" % load_utf8(js_file)
+                    else:
+                        scripts += u"<script type='text/javascript' src='%s'></script>" % js_file
+        return scripts
 
     def getMathJax(self):
         ''' return the MathJax script if enabled '''
@@ -218,19 +268,27 @@ class MarkdownPreviewCommand(sublime_plugin.TextCommand):
                 data = json.dumps(data).encode('utf-8')
                 url = "https://api.github.com/markdown"
                 sublime.status_message(url)
-                request = urllib2.Request(url, data, headers)
-                markdown_html = urllib2.urlopen(request).read().decode('utf-8')
-            except urllib2.HTTPError, e:
+                request = Request(url, data, headers)
+                markdown_html = urlopen(request).read().decode('utf-8')
+            except HTTPError:
+                e = sys.exc_info()[1]
                 if e.code == 401:
                     sublime.error_message('github API auth failed. Please check your OAuth token.')
                 else:
                     sublime.error_message('github API responded in an unfashion way :/')
-            except urllib2.URLError:
+            except URLError:
                 sublime.error_message('cannot use github API to convert markdown. SSL is not included in your Python installation')
             except:
                 sublime.error_message('cannot use github API to convert markdown. Please check your settings.')
             else:
                 sublime.status_message('converted markdown with github API successfully')
+
+        elif config_parser and config_parser == 'markdown':
+            sublime.status_message('converting markdown with Python markdown...')
+            config_extensions = self.get_config_extensions(['extra', 'toc'])
+            markdown_html = markdown.markdown(markdown_text, extensions=config_extensions)
+            markdown_html = self.postprocessor(markdown_html)
+
         else:
             # convert the markdown
             enabled_extras = set(self.get_config_extensions(['footnotes', 'toc', 'fenced-code-blocks', 'cuddled-lists']))
@@ -266,6 +324,7 @@ class MarkdownPreviewCommand(sublime_plugin.TextCommand):
         full_html = u'<!DOCTYPE html>'
         full_html += '<html><head><meta charset="utf-8">'
         full_html += self.getCSS()
+        full_html += self.getJS()
         full_html += self.getHighlight()
         full_html += self.getMathJax()
         full_html += self.get_title()

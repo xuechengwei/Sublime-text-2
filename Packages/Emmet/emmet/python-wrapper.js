@@ -1,11 +1,5 @@
-var console = {
-	log: function(msg) {
-		log(msg);
-	}
-};
-
 /**
- * Simple function alias to run Emmet action.
+ * Simple function alias to run Zen Coding action.
  * <code>editorProxy</code> object should be defined
  * in concrete plugin implementation.
  */
@@ -22,7 +16,6 @@ function pyLoadUserData(data) {
 }
 
 function pyLoadExtensions(fileList) {
-	fileList = _.toArray(fileList);
 	emmet.require('bootstrap').loadExtensions(fileList);
 }
 
@@ -32,49 +25,10 @@ function pyResetUserData() {
 
 emmet.define('file', function(require, _) {
 	return {
-		_parseParams: function(args) {
-			var params = {
-				path: args[0],
-				size: -1
-			};
-
-			args = _.rest(args);
-			params.callback = _.last(args);
-			args = _.initial(args);
-			if (args.length) {
-				params.size = args[0];
-			}
-
-			return params;
-		},
-
-		read: function(path, size, callback) {
-			var params = this._parseParams(arguments);
-
-			try {
-				pyFile.read(params.path, params.size, function(err, content) {
-					if (err) {
-						return params.callback(err, content);
-					}
-
-					content = _.map(content || [], function(b) {
-						return String.fromCharCode(b);
-					}).join('');
-					params.callback(null, content);
-				});
-			} catch(e) {
-				params.callback(e);
-			}
-		},
-
-		readText: function() {
-			var params = this._parseParams(arguments);
-			try {
-				pyFile.read_text(params.path, params.size, params.callback);	
-			} catch(e) {
-				params.callback(e);
-			}
-			
+		read: function(path) {
+			return _.map(pyFile.read(path) || [], function(b) {
+				return String.fromCharCode(b);
+			}).join('');
 		},
 
 		locateFile: function(editorFile, fileName) {

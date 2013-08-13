@@ -258,5 +258,19 @@
               "key": "emmet_action_enabled.select_next_item"
           }
       ]
+  },
+  // Select text between brackets
+  {
+      "keys": ["ctrl+shift+space"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["__all__"],
+              "command": "bh_modules.bracketselect"
+          }
+      }
   }
 ]

@@ -7,7 +7,7 @@
 		"--remove-intertag-spaces",
 		"--compress-js",
 		"--compress-css",
-		"-o", "${file_base_name}.min.${file_extension}",
+		"-o", "compressed/${file_base_name}.${file_extension}",
 		"$file"
 	],
     "windows": {
@@ -19,7 +19,7 @@
 			"--remove-intertag-spaces",
 			"--compress-js",
 			"--compress-css",
-			"-o", "${file_base_name}.min.${file_extension}",
+			"-o", "compressed/${file_base_name}.${file_extension}",
 			"$file"
 		]
     },
@@ -38,7 +38,7 @@
     },
     "linux": {
         "cmd": [
-        	"java -jar '${packages}/HTML Compressor/bin/htmlcompressor-1.5.3.jar' --remove-intertag-spaces --compress-js --compress-css $file -o compressed/${file_base_name}.${file_extension}"
+        	"java -jar '${packages}/HTML Compressor/bin/htmlcompressor-1.5.3.jar' --remove-intertag-spaces --compress-js --compress-css $file -o compressed/${file_base_name}.${file_extension}"	
 		],
 		"shell": true
     },

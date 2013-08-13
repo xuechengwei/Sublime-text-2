@@ -5,16 +5,16 @@ import copy
 keymap = {
 	"expand_abbreviation": "ctrl+e",
 	"match_pair_outward": {"mac": "ctrl+d", "pc": "ctrl+,"},
-	"match_pair_inward": {"mac": "ctrl+j", "pc": "ctrl+shift+0"},
+	"match_pair_inward": {"mac": "ctrl+j", "pc": "ctrl+alt+,"},
 	"matching_pair": {"mac": "ctrl+shift+t", "pc": "ctrl+alt+j"},
 	"next_edit_point": "ctrl+alt+right",
 	"prev_edit_point": "ctrl+alt+left",
 	"toggle_comment": {
-		"mac": "alt+shift+forward_slash",
+		"mac": "super+shift+forward_slash",
 		"pc": "ctrl+shift+forward_slash",
 		"context": [{
 			"key": "selector", 
-			"operand": "source.css - source.css.less, text.xml, text.html - source",
+			"operand": "source.css -source.css.less, text.xml, text.html - source",
 			"operator": "equal"
 		}]
 	},
@@ -63,13 +63,8 @@ addon = [
 			{
 				"key": "selector",
 				"match_all": True,
-				"operand": "source.css, source.sass, source.less, source.scss, source.stylus, text.xml, text.html, text.haml, text.scala.html, source string",
+				"operand": "source.css, source.sass, source.less, source.scss, source.stylus, text.xml, text.html - source - keyword.control.php, text.haml, string",
 				"operator": "equal"
-			}, {
-				"key": "selector",
-				"operand": "text.html source.php, text.html source.js, storage.type.templatetag.django",
-				"operator": "not_equal",
-				"match_all": True
 			}, {
 				"key": "selection_empty",
 				"match_all": True
@@ -103,13 +98,8 @@ addon = [
 			{
 				"key": "selector",
 				"match_all": True,
-				"operand": "source.css, source.sass, source.less, source.scss, source.stylus, text.xml, text.html, text.haml, text.scala.html, source string",
+				"operand": "source.css, source.sass, source.less, source.scss, source.stylus, text.xml, text.html - source - keyword.control.php, text.haml, string",
 				"operator": "equal"
-			}, {
-				"key": "selector",
-				"operand": "text.html source.php, text.html source.js, storage.type.templatetag.django",
-				"operator": "not_equal",
-				"match_all": True
 			}, {
 				"key": "selection_empty",
 				"match_all": True
@@ -137,25 +127,18 @@ addon = [
 
 	# insert linebreak with formatting
 	{
-		"keys": ["enter"], 
-		"command": "insert_snippet",
-		"args": {"contents": "\n\t${0}\n"},
+		"keys": ["enter"],
+		"command": "handle_enter_key",
 		"context": [
 			{
 				"key": "selector",
-				"operand": "meta.scope.between-tag-pair.html, meta.scope.between-tag-pair.xml", 
-				"match_all": True
+				"operand": "text.html -source, text.xml"
 			}, {
 				"key": "auto_complete_visible",
-				"operand": False, 
-				"match_all": True
-			}, {
-				"key": "clear_fields_on_enter_key",
-				"match_all": True
+				"operand": False
 			}, {
 				"key": "setting.disable_formatted_linebreak",
-				"operand": False,
-				"match_all": True
+				"operand": False
 			}
 		]
 	},

@@ -1,6 +1,6 @@
 #
 # ElementTree
-# $Id$
+# $Id: SimpleXMLTreeBuilder.py 1862 2004-06-18 07:31:02Z Fredrik $
 #
 # A simple XML tree builder, based on Python's xmllib
 #
@@ -57,8 +57,7 @@
 # how unreliable it is on your Python version).
 ##
 
-import xmllib
-import string
+import xmllib, string
 
 import ElementTree
 
@@ -66,7 +65,6 @@ import ElementTree
 # ElementTree builder for XML source data.
 #
 # @see elementtree.ElementTree
-
 
 class TreeBuilder(xmllib.XMLParser):
 
@@ -143,3 +141,4 @@ if __name__ == "__main__":
             print "-", bug
     else:
         print "congratulations; no problems found in xmllib"
+

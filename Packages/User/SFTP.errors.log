@@ -1,0 +1,28 @@
+2013-08-09 15:08:37
+Traceback (most recent call last):
+  File ".\sublime_plugin.py", line 205, in on_activated
+    callback.__module__, "on_activated", EVENT_TIMEOUT)
+  File ".\sublime_plugin.py", line 154, in run_timed_function
+    ret = f()
+  File ".\sublime_plugin.py", line 204, in <lambda>
+    run_timed_function(lambda: callback.on_activated(v),
+  File "./sftp/listeners.py", line 106, in on_activated
+  File "./sftp/listeners.py", line 99, in do_find_window
+  File "./sftp/listeners.py", line 37, in find_window
+  File "./sftp/listeners.py", line 96, in try_sync
+  File ".\threading.py", line 474, in start
+error: can't start new thread
+2013-08-12 09:43:48
+Traceback (most recent call last):
+  File ".\sublime_plugin.py", line 205, in on_activated
+    callback.__module__, "on_activated", EVENT_TIMEOUT)
+  File ".\sublime_plugin.py", line 154, in run_timed_function
+    ret = f()
+  File ".\sublime_plugin.py", line 204, in <lambda>
+    run_timed_function(lambda: callback.on_activated(v),
+  File "./sftp/listeners.py", line 106, in on_activated
+  File "./sftp/listeners.py", line 99, in do_find_window
+  File "./sftp/listeners.py", line 37, in find_window
+  File "./sftp/listeners.py", line 96, in try_sync
+  File ".\threading.py", line 474, in start
+error: can't start new thread

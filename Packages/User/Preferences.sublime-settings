@@ -1,5 +1,5 @@
 {
-	"auto_complete_selector": "source, text",
+	"auto_complete_selector": "source",
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
@@ -9,17 +9,7 @@
 	"highlight_line": false,
 	"ignored_packages":
 	[
-		"JSLint",
-		"Git",
-		"Gist",
-		"ZenCoding",
-		"SublimeBlockCursor",
-		"PHPUnit",
-		"CTags",
-		"CodeIgniter Snippets",
-		"FileDiffs",
-		"SublimeLinter",
-		"Clipboard History"
+
 	],
 	"indent_guide_options":
 	[
@@ -27,6 +17,33 @@
 	],
 	"rulers":
 	[
+		"CTags",
+		"Clipboard History",
+		"D",
+		"Erlang",
+		"FTPSync",
+		"FileDiffs",
+		"Gist",
+		"Git",
+		"Graphviz",
+		"Groovy",
+		"JSLint",
+		"KeymapManager",
+		"LaTex",
+		"LiveStyle",
+		"Matlab",
+		"OCaml",
+		"PHPUnit",
+		"R",
+		"Scala",
+		"ShellScript",
+		"SublimeLinter",
+		"SyncedSideBar",
+		"TCL",
+		"Theme - Nil",
+		"Tomorrow Color Schemes",
+		"YUI Compressor",
+		"ZenCoding"
 	],
 	"theme": "Nexus.sublime-theme",
 	"trim_trailing_white_space_on_save": true,

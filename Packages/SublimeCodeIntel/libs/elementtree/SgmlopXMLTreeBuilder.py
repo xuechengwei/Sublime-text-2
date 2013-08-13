@@ -60,7 +60,6 @@ import ElementTree
 #
 # @see elementtree.ElementTree
 
-
 class TreeBuilder:
 
     def __init__(self, html=0):

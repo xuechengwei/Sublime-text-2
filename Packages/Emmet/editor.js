@@ -1,8 +1,8 @@
-function activeView() {
-	return sublime.active_window().active_view();
-}
-
 var editorProxy = emmet.exec(function(require, _) {
+	function activeView() {
+		return sublime.active_window().active_view();
+	}
+
 	return {
 		getSelectionRange: function() {
 			var view = activeView();
@@ -65,34 +65,49 @@ var editorProxy = emmet.exec(function(require, _) {
 		},
 
 		getSyntax: function() {
-			return pyGetSyntax();
+			var view = activeView();
+			var scope = view.syntax_name(view.sel()[0].begin());
+
+			if (~scope.indexOf('xsl')) {
+				return 'xsl';
+			}
+
+			// detect CSS-like syntaxes independently, 
+			// since it may cause collisions with some highlighters
+			if (/\b(less|scss|sass|css|stylus)\b/.test(scope)) {
+				return RegExp.$1;
+			}
+
+			if (/\b(html|xml|haml)\b/.test(scope)) {
+				return RegExp.$1;
+			}
+
+			return 'html';
 		},
 
 		getProfileName: function() {
 			var view = activeView();
+
+			var profile = view.settings()['emmet.profile'] || null;
+			if (profile)
+				return profile;
+
 			var pos = this.getCaretPos();
 
-			if (view.match_selector(pos, 'text.html') 
-				&& sublimeGetOption('autodetect_xhtml', false)
-				&& require('actionUtils').isXHTML(this)) {
-				return 'xhtml';
-			}
+			if (view.match_selector(pos, 'text.xml') || view.match_selector(pos, 'xsl'))
+				return 'xml';
 
-			if (view.match_selector(pos, 'string.quoted.double.block.python')
-				|| view.match_selector(pos, 'source.coffee string')
-				|| view.match_selector(pos, 'string.unquoted.heredoc')) {
-				// use html's default profile for:
-				// * Python's multiline block
-				// * CoffeeScript string
-				// * PHP heredoc
-				return pyDetectProfile();
-			}
-
-			if (view.score_selector(pos, 'source string')) {
+			if (view.match_selector(pos, 'source')) {
 				return 'line';
 			}
 
-			return pyDetectProfile();
+			if (view.match_selector(pos, 'text.html')) {
+				if (~view.substr(new sublime.Region(0, 200)).toLowerCase().indexOf('xhtml')) {
+					return 'xhtml';
+				}
+			}
+			
+			return 'html';
 		},
 
 		prompt: function(title) {
@@ -109,8 +124,6 @@ var editorProxy = emmet.exec(function(require, _) {
 		}
 	};
 });
-
-var _completions = {};
 
 function require(name) {
 	return emmet.require(name);
@@ -161,10 +174,8 @@ function pyPreprocessText(value) {
 
 	value = ts.processText(value, tabstopOptions);
 
-	if (sublimeGetOption('insert_final_tabstop', false) && !/\$\{0\}$/.test(value)) {
-		value += '${0}';
-	} else if (lastZero) {
-		value = require('utils').replaceSubstring(value, '${0}', lastZero);
+	if (lastZero) {
+		value = require('utils').replaceSubstring(value, '$0', lastZero);
 	}
 	
 	return value;
@@ -172,26 +183,16 @@ function pyPreprocessText(value) {
 
 function pyExpandAbbreviationAsYouType(abbr) {
 	var info = require('editorUtils').outputInfo(editorProxy);
-	try {
-		var result = emmet.expandAbbreviation(abbr, info.syntax, info.profile, 
+	var result = emmet.expandAbbreviation(abbr, info.syntax, info.profile, 
 					require('actionUtils').captureContext(editorProxy));
-		return pyPreprocessText(result);
-	} catch (e) {
-		return '';
-	}
-	
+	return pyPreprocessText(result);
 }
 
 function pyWrapAsYouType(abbr, content) {
 	var info = require('editorUtils').outputInfo(editorProxy);
 	content = require('utils').escapeText(content);
-	var ctx = require('actionUtils').captureContext(editorProxy);
-	try {
-		var result = require('wrapWithAbbreviation').wrap(abbr, content, info.syntax, info.profile, ctx);
-		return pyPreprocessText(result);
-	} catch(e) {
-		return '';
-	}
+	var result = require('wrapWithAbbreviation').wrap(abbr, content, info.syntax, info.profile);
+	return pyPreprocessText(result);
 }
 
 function pyCaptureWrappingRange() {
@@ -202,15 +203,15 @@ function pyCaptureWrappingRange() {
 	
 	if (startOffset == endOffset) {
 		// no selection, find tag pair
-		var match = require('htmlMatcher').find(info.content, startOffset);
-		if (!match) {
-			// nothing to wrap
+		var matcher = require('html_matcher');
+		range = matcher(info.content, startOffset, info.profile);
+		
+		if (!range || range[0] == -1) // nothing to wrap
 			return null;
-		}
 		
 		/** @type Range */
 		var utils = require('utils');
-		var narrowedSel = utils.narrowToNonSpace(info.content, match.range);
+		var narrowedSel = utils.narrowToNonSpace(info.content, range[0], range[1] - range[0]);
 		startOffset = narrowedSel.start;
 		endOffset = narrowedSel.end;
 	}
@@ -218,20 +219,20 @@ function pyCaptureWrappingRange() {
 	return [startOffset, endOffset];
 }
 
-function pyGetTagNameRanges(pos) {
+function pyGetTagNameRanges() {
 	var ranges = [];
 	var info = require('editorUtils').outputInfo(editorProxy);
 		
 	// search for tag
 	try {
-		var tag = require('htmlMatcher').tag(info.content, pos);
-		if (tag) {
-			var open = tag.open.range;
-			var tagName = /^<([\w\-\:]+)/i.exec(open.substring(info.content))[1];
-			ranges.push([open.start + 1, open.start + 1 + tagName.length]);
+		var pair = require('html_matcher').getTags(info.content, editorProxy.getCaretPos(), info.profile);
+		if (pair && pair[0]) {
+			var openingTag = info.content.substring(pair[0].start, pair[0].end);
+			var tagName = /^<([\w\-\:]+)/i.exec(openingTag)[1];
+			ranges.push([pair[0].start + 1, pair[0].start + 1 + tagName.length]);
 
-			if (tag.close) {
-				ranges.push([tag.close.range.start + 2, tag.close.range.start + 2 + tagName.length]);
+			if (pair[1]) {
+				ranges.push([pair[1].start + 2, pair[1].start + 2 + tagName.length]);
 			}
 		}
 	} catch (e) {}
@@ -245,11 +246,11 @@ function pyGetTagRanges() {
 		
 	// search for tag
 	try {
-		var tag = require('htmlMatcher').tag(info.content, editorProxy.getCaretPos());
-		if (tag) {
-			ranges.push(tag.open.range.toArray());
-			if (tag.close) {
-				ranges.push(tag.close.range.toArray());
+		var pair = require('html_matcher').getTags(info.content, editorProxy.getCaretPos(), info.profile);
+		if (pair && pair[0]) {
+			ranges.push([pair[0].start, pair[0].end]);
+			if (pair[1]) {
+				ranges.push([pair[1].start, pair[1].end]);
 			}
 		}
 	} catch (e) {}
@@ -263,63 +264,4 @@ function pyExtractAbbreviation() {
 
 function pyHasSnippet(name) {
 	return !!emmet.require('resources').findSnippet(editorProxy.getSyntax(), name);
-}
-
-/**
- * Get all available CSS completions. This method is optimized for CSS
- * only since it should contain snippets only so it's not required
- * to do extra parsing
- */
-function pyGetCSSCompletions(dialect) {
-	dialect = dialect || pyGetSyntax();
-
-	if (!_completions[dialect]) {
-		var all = require('resources').getAllSnippets(dialect);
-		var css = require('cssResolver');
-		_completions[dialect] = _.map(all, function(v, k) {
-			var snippetValue = typeof v.parsedValue == 'object' 
-				? v.parsedValue.data
-				: v.value;
-			var snippet = css.transformSnippet(snippetValue, false, dialect);
-			return {
-				k: v.nk,
-				label: snippet.replace(/\:\s*\$\{0\}\s*;?$/, ''),
-				v: css.expandToSnippet(v.nk, dialect)
-			};
-		});
-	}
-
-	return _completions[dialect];
-}
-
-/**
- * Returns current syntax name
- * @return {String}
- */
-function pyGetSyntax() {
-	var view = activeView();
-	var pt = view.sel()[0].begin();
-	var scope = 'scope_name' in view ? view.scope_name(pt) : view.syntax_name(pt);
-
-	if (~scope.indexOf('xsl')) {
-		return 'xsl';
-	}
-
-	var syntax = 'html';
-
-	if (!/\bstring\b/.test(scope) && /\bsource\.([\w\-]+)/.test(scope) && require('resources').hasSyntax(RegExp.$1)) {
-		syntax = RegExp.$1;
-	} else if (/\b(less|scss|sass|css|stylus)\b/.test(scope)) {
-		// detect CSS-like syntaxes independently, 
-		// since it may cause collisions with some highlighters
-		syntax = RegExp.$1;
-	} else if (/\b(html|xml|haml)\b/.test(scope)) {
-		syntax = RegExp.$1;
-	}
-
-	return require('actionUtils').detectSyntax(editorProxy, syntax);
-}
-
-function pyDetectProfile(argument) {
-	return require('actionUtils').detectProfile(editorProxy);
 }

@@ -1,6 +1,6 @@
 #
 # SimpleXMLWriter
-# $Id$
+# $Id: SimpleXMLWriter.py 2312 2005-03-02 18:13:39Z fredrik $
 #
 # a simple XML writer
 #
@@ -87,9 +87,7 @@
 # </pre>
 ##
 
-import re
-import sys
-import string
+import re, sys, string
 
 try:
     unicode("")
@@ -97,12 +95,11 @@ except NameError:
     def encode(s, encoding):
         # 1.5.2: application must use the right encoding
         return s
-    _escape = re.compile(r"[&<>\"\x80-\xff]+")  # 1.5.2
+    _escape = re.compile(r"[&<>\"\x80-\xff]+") # 1.5.2
 else:
     def encode(s, encoding):
         return s.encode(encoding)
     _escape = re.compile(eval(r'u"[&<>\"\u0080-\uffff]+"'))
-
 
 def encode_entity(text, pattern=_escape):
     # map reserved and non-ascii characters to numerical entities
@@ -119,7 +116,6 @@ del _escape
 # the following functions assume an ascii-compatible encoding
 # (or "utf-16")
 
-
 def escape_cdata(s, encoding=None, replace=string.replace):
     s = replace(s, "&", "&amp;")
     s = replace(s, "<", "&lt;")
@@ -130,7 +126,6 @@ def escape_cdata(s, encoding=None, replace=string.replace):
         except UnicodeError:
             return encode_entity(s)
     return s
-
 
 def escape_attrib(s, encoding=None, replace=string.replace):
     s = replace(s, "&", "&amp;")
@@ -152,7 +147,6 @@ def escape_attrib(s, encoding=None, replace=string.replace):
 #    a <b>write</b> method that takes an 8-bit string.
 # @param encoding Optional encoding.
 
-
 class XMLWriter:
 
     def __init__(self, file, encoding="us-ascii"):
@@ -161,7 +155,7 @@ class XMLWriter:
         self.__write = file.write
         if hasattr(file, "flush"):
             self.flush = file.flush
-        self.__open = 0  # true if start tag is open
+        self.__open = 0 # true if start tag is open
         self.__tags = []
         self.__data = []
         self.__encoding = encoding
@@ -245,7 +239,7 @@ class XMLWriter:
         if tag:
             assert self.__tags, "unbalanced end(%s)" % tag
             assert escape_cdata(tag, self.__encoding) == self.__tags[-1],\
-                "expected end(%s), got %s" % (self.__tags[-1], tag)
+                   "expected end(%s), got %s" % (self.__tags[-1], tag)
         else:
             assert self.__tags, "unbalanced end()"
         tag = self.__tags.pop()
@@ -282,4 +276,4 @@ class XMLWriter:
     # Flushes the output stream.
 
     def flush(self):
-        pass  # replaced by the constructor
+        pass # replaced by the constructor

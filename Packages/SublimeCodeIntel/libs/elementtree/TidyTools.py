@@ -1,6 +1,6 @@
 #
 # ElementTree
-# $Id$
+# $Id: TidyTools.py 1862 2004-06-18 07:31:02Z Fredrik $
 #
 # tools to run the "tidy" command on an HTML or XHTML file, and return
 # the contents as an XHTML element tree.
@@ -19,10 +19,7 @@
 # utility.
 ##
 
-import glob
-import string
-import os
-import sys
+import glob, string, os, sys
 
 from ElementTree import ElementTree, Element
 
@@ -37,7 +34,6 @@ NS_XHTML = "{http://www.w3.org/1999/xhtml}"
 #     inline tags.
 # @return An element tree, or None if not successful.
 
-
 def tidy(file, new_inline_tags=None):
 
     command = ["tidy", "-qn", "-asxml"]
@@ -51,7 +47,7 @@ def tidy(file, new_inline_tags=None):
     # convert
     os.system(
         "%s %s >%s.out 2>%s.err" % (string.join(command), file, file, file)
-    )
+        )
     # check that the result is valid XML
     try:
         tree = ElementTree()
@@ -76,7 +72,6 @@ def tidy(file, new_inline_tags=None):
 #
 # @param file Filename.
 # @return A <b>body</b> element, or None if not successful.
-
 
 def getbody(file, **options):
     # get clean body from text file
@@ -108,7 +103,6 @@ def getbody(file, **options):
 #
 # @param file Filename.
 # @return A <b>body</b> element, or None if not successful.
-
 
 def getzonebody(file, **options):
 
